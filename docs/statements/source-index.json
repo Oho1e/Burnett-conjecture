@@ -1,0 +1,1944 @@
+{
+  "schema_version": "burnett-source-intake-1",
+  "release_date": "2026-11-15",
+  "purpose": "initial_project_structure_inventory",
+  "source": {
+    "filename": "burnett.tex",
+    "size_bytes": 176424,
+    "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "encoding": "UTF-8",
+    "newline": "LF",
+    "line_count": 3475,
+    "line_numbering": "1-based inclusive; exact hashed source; no LaTeX compilation",
+    "title_tex": "High-frequency vacuum limits with bounded first derivatives:\\\\ a variational approach to the forward Burnett conjecture",
+    "author_field": "empty",
+    "date_field": "empty",
+    "source_status": "anonymous_manuscript_proposed_proof",
+    "original_modified": false,
+    "snapshot_path": "paper/burnett.tex"
+  },
+  "intake_status": {
+    "activity": "structure_inventory_only",
+    "mathematical_audit": "not_performed",
+    "independent_lean_correspondence_review": "not_performed",
+    "formalization": "not_started",
+    "source_proofs": "proposed_and_unverified",
+    "full_text_read_intervals": [
+      [
+        1,
+        180
+      ],
+      [
+        181,
+        700
+      ],
+      [
+        701,
+        1200
+      ],
+      [
+        1201,
+        1700
+      ],
+      [
+        1701,
+        2200
+      ],
+      [
+        2201,
+        2700
+      ],
+      [
+        2701,
+        3150
+      ],
+      [
+        3151,
+        3475
+      ]
+    ],
+    "method": "Read entire fixed source; use command/environment locators and manually reconcile narrative assertions and prose definitions. Counts and references are locators, not a proof of semantic or formalization coverage."
+  },
+  "scope": {
+    "target": "forward Burnett conjecture in the stated smooth four-dimensional limit class",
+    "hypothesis_locator": {
+      "source_line": 90,
+      "source_endline": 112,
+      "label": "eq:admissible"
+    },
+    "main_result_label": "thm:main",
+    "transport_claim_label": "thm:variational-transport",
+    "source_exclusions": [
+      "reverse approximation/converse Burnett construction",
+      "nonsmooth limiting metrics",
+      "concentration beyond the stated first-derivative bound",
+      "nonzero cosmological constant",
+      "dimensions other than four"
+    ],
+    "exclusion_locator": {
+      "source_line": 178,
+      "source_endline": 190
+    },
+    "global_hyperbolicity_role": "full-momentum realization only; source states ray measure and transport globally without this hypothesis",
+    "all_listed_items_modeling_status": "pending_modeling",
+    "all_listed_items_lean_status": "not_formalized"
+  },
+  "inventory_counts": {
+    "main_sections": 6,
+    "appendix_sections": 5,
+    "formal_results": 17,
+    "formal_result_kinds": {
+      "theorem": 3,
+      "proposition": 6,
+      "lemma": 6,
+      "corollary": 2
+    },
+    "remarks": 2,
+    "explicit_definition_environments": 0,
+    "explicit_problem_environments": 0,
+    "proof_environments": 16,
+    "unnumbered_candidates": 33,
+    "definition_candidates": 15,
+    "labels": 87,
+    "bibliography_entries": 6,
+    "count_interpretation": "Syntactic counts for this hashed source, reconciled during full read; not mathematical completeness, dependency closure, semantic review, or Lean coverage."
+  },
+  "structural_ranges": {
+    "front_matter": {
+      "source_line": 1,
+      "source_endline": 85
+    },
+    "main_text": {
+      "source_line": 86,
+      "source_endline": 3113
+    },
+    "appendix_switch_line": 3115,
+    "appendices": {
+      "source_line": 3116,
+      "source_endline": 3463
+    },
+    "reference_block": {
+      "source_line": 3464,
+      "source_endline": 3474
+    },
+    "bibliography": {
+      "source_line": 3467,
+      "source_endline": 3474
+    },
+    "document_end_line": 3475
+  },
+  "numbering_notes": [
+    "The theorem/proposition/lemma/corollary/definition/problem/remark environments share one counter reset by section (source lines 41-48).",
+    "The two introductory remarks use numbers 1.2 and 1.3; they are not counted as formal results here.",
+    "Displayed result numbers are inferred from the source counter rules, not read from a compiled PDF.",
+    "Theorem thm:quadratic is followed by a narrative argument, not a proof environment; this explains 17 formal results versus 16 proof environments.",
+    "Appendix E has no section label in the original; no label has been inserted."
+  ],
+  "headings": [
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "1",
+      "title_tex": "Introduction",
+      "label": "sec:introduction",
+      "source_line": 86,
+      "is_appendix": false,
+      "source_endline": 351,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "1.1",
+      "title_tex": "Main results and remarks",
+      "label": null,
+      "source_line": 88,
+      "is_appendix": false,
+      "source_endline": 204,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "1.2",
+      "title_tex": "Previous results",
+      "label": null,
+      "source_line": 205,
+      "is_appendix": false,
+      "source_endline": 271,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "1.3",
+      "title_tex": "Sketch of the proof",
+      "label": null,
+      "source_line": 272,
+      "is_appendix": false,
+      "source_endline": 330,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "1.4",
+      "title_tex": "Notations",
+      "label": null,
+      "source_line": 331,
+      "is_appendix": false,
+      "source_endline": 351,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "2",
+      "title_tex": "Preliminaries",
+      "label": "sec:quadratic",
+      "source_line": 352,
+      "is_appendix": false,
+      "source_endline": 518,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "2.1",
+      "title_tex": "Exact connection difference and compactness",
+      "label": null,
+      "source_line": 358,
+      "is_appendix": false,
+      "source_endline": 389,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "2.2",
+      "title_tex": "A common microlocal measure and the Ricci constraint",
+      "label": null,
+      "source_line": 390,
+      "is_appendix": false,
+      "source_endline": 429,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "2.3",
+      "title_tex": "The full quadratic algebra",
+      "label": null,
+      "source_line": 430,
+      "is_appendix": false,
+      "source_endline": 466,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "2.4",
+      "title_tex": "Construction, positivity, and compatibility",
+      "label": null,
+      "source_line": 467,
+      "is_appendix": false,
+      "source_endline": 518,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "3",
+      "title_tex": "Analytic estimates for cubic energies",
+      "label": "sec:analytic",
+      "source_line": 519,
+      "is_appendix": false,
+      "source_endline": 1591,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "3.1",
+      "title_tex": "First-order commutators and cubic continuity",
+      "label": null,
+      "source_line": 564,
+      "is_appendix": false,
+      "source_endline": 892,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "3.2",
+      "title_tex": "Angular localization and normalized trilinear symbols",
+      "label": null,
+      "source_line": 893,
+      "is_appendix": false,
+      "source_endline": 1245,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "3.3",
+      "title_tex": "Scalar corrections and Lipschitz coefficients",
+      "label": null,
+      "source_line": 1246,
+      "is_appendix": false,
+      "source_endline": 1591,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "4",
+      "title_tex": "A bounded physical source in arbitrary coordinates",
+      "label": "sec:general-projection",
+      "source_line": 1592,
+      "is_appendix": false,
+      "source_endline": 1719,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "5",
+      "title_tex": "The variational transport identity and cubic cancellation",
+      "label": "sec:variational-transport",
+      "source_line": 1720,
+      "is_appendix": false,
+      "source_endline": 2642,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "5.1",
+      "title_tex": "The density Hessian and the exact cubic residual",
+      "label": null,
+      "source_line": 1745,
+      "is_appendix": false,
+      "source_endline": 2010,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "5.2",
+      "title_tex": "Physical and gauge fields and the frozen Ward identity",
+      "label": null,
+      "source_line": 2011,
+      "is_appendix": false,
+      "source_endline": 2262,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "5.3",
+      "title_tex": "The two corrections and the physical near sum",
+      "label": null,
+      "source_line": 2263,
+      "is_appendix": false,
+      "source_endline": 2642,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "6",
+      "title_tex": "Proof of Theorem~\\ref{thm:main}",
+      "label": "sec:completion",
+      "source_line": 2643,
+      "is_appendix": false,
+      "source_endline": 3115,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "6.1",
+      "title_tex": "The transport equation on a variable background",
+      "label": null,
+      "source_line": 2645,
+      "is_appendix": false,
+      "source_endline": 2986,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "6.2",
+      "title_tex": "Full-momentum realization and completion",
+      "label": null,
+      "source_line": 2987,
+      "is_appendix": false,
+      "source_endline": 3115,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "A",
+      "title_tex": "A harmonic-coordinate example with an unbounded source",
+      "label": "sec:shear",
+      "source_line": 3116,
+      "is_appendix": true,
+      "source_endline": 3172,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "B",
+      "title_tex": "Characteristic localization and cubic interactions",
+      "label": "sec:cubic",
+      "source_line": 3173,
+      "is_appendix": true,
+      "source_endline": 3212,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "C",
+      "title_tex": "Conservation and positive null moments do not give transport",
+      "label": "sec:rotating",
+      "source_line": 3213,
+      "is_appendix": true,
+      "source_endline": 3304,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "C.1",
+      "title_tex": "A smooth metric whose actual Einstein tensor is not kinetic",
+      "label": null,
+      "source_line": 3241,
+      "is_appendix": true,
+      "source_endline": 3304,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "D",
+      "title_tex": "The Rosen plane-wave class",
+      "label": "sec:rosen",
+      "source_line": 3305,
+      "is_appendix": true,
+      "source_endline": 3424,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "subsection",
+      "level": 2,
+      "number": "D.1",
+      "title_tex": "Rigidity of flat sequences",
+      "label": null,
+      "source_line": 3388,
+      "is_appendix": true,
+      "source_endline": 3424,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "section",
+      "level": 1,
+      "number": "E",
+      "title_tex": "Auxiliary identities and coordinate oscillations",
+      "label": null,
+      "source_line": 3425,
+      "is_appendix": true,
+      "source_endline": 3463,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "paragraph",
+      "level": 3,
+      "number": null,
+      "title_tex": "Multiscale flat pullback.",
+      "label": null,
+      "source_line": 3430,
+      "is_appendix": true,
+      "source_endline": 3440,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "paragraph",
+      "level": 3,
+      "number": null,
+      "title_tex": "Spacelike raw defect.",
+      "label": null,
+      "source_line": 3441,
+      "is_appendix": true,
+      "source_endline": 3443,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "paragraph",
+      "level": 3,
+      "number": null,
+      "title_tex": "Weak energy is insufficient even algebraically.",
+      "label": null,
+      "source_line": 3444,
+      "is_appendix": true,
+      "source_endline": 3446,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "paragraph",
+      "level": 3,
+      "number": null,
+      "title_tex": "The second-derivative product identity.",
+      "label": null,
+      "source_line": 3447,
+      "is_appendix": true,
+      "source_endline": 3460,
+      "index_status": "source_structure_only"
+    },
+    {
+      "kind": "paragraph",
+      "level": 3,
+      "number": null,
+      "title_tex": "Change of unit section.",
+      "label": null,
+      "source_line": 3461,
+      "is_appendix": true,
+      "source_endline": 3463,
+      "index_status": "source_structure_only"
+    }
+  ],
+  "formal_results": [
+    {
+      "kind": "theorem",
+      "number_from_source_counter_rules": "1.1",
+      "label": "thm:main",
+      "title_tex": "Forward kinetic limit in the smooth-limit class",
+      "source_line": 139,
+      "source_endline": 168,
+      "section_number": "1",
+      "section_label": "sec:introduction",
+      "is_appendix": false,
+      "summary_zh_CN": "光滑四维真空度规序列在局部一致收敛及一阶导数局部一致有界假设下，提出全局正零锥射线测度、Einstein 二阶矩与 Hamilton 输运；全动量实现另在全局双曲开子时空上给出。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3046,
+        "source_endline": 3061,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": [
+        "lem:lift",
+        "thm:quadratic",
+        "thm:variational-transport"
+      ]
+    },
+    {
+      "kind": "theorem",
+      "number_from_source_counter_rules": "2.1",
+      "label": "thm:quadratic",
+      "title_tex": "Positive null second moments, without transport",
+      "source_line": 354,
+      "source_endline": 356,
+      "section_number": "2",
+      "section_label": "sec:quadratic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出从完整度规梯度缺陷构造正零锥二阶矩测度及标量曲率为零；陈述明确不包含输运。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "associated_narrative_argument_without_proof_environment",
+        "source_line": 358,
+        "source_endline": 485,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "corollary",
+      "number_from_source_counter_rules": "2.2",
+      "label": "cor:base-marginal",
+      "title_tex": "Base marginal and angular disintegration",
+      "source_line": 487,
+      "source_endline": 506,
+      "section_number": "2",
+      "section_label": "sec:quadratic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出物理测度的光滑非负基底边缘与角向解体，并陈述真空开区域上物理测度消失。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 507,
+        "source_endline": 517,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": [
+        "thm:quadratic"
+      ]
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "3.1",
+      "label": "lem:commutator",
+      "title_tex": "Lipschitz-small coefficients in a symmetric energy pairing",
+      "source_line": 566,
+      "source_endline": 575,
+      "section_number": "3",
+      "section_label": "sec:analytic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出对称能量配对中 Lipschitz 小系数的交换子估计，以及标量测试下的矩阵系数版本。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 577,
+        "source_endline": 592,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "3.2",
+      "label": "lem:cubic-continuity",
+      "title_tex": "Continuity of the complete cubic energy",
+      "source_line": 613,
+      "source_endline": 623,
+      "section_number": "3",
+      "section_label": "sec:analytic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出完整极化三次能量在三个梯度 L^3 范数下的连续性；含固定非齐次正则化版本。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 625,
+        "source_endline": 716,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "3.3",
+      "label": "lem:freezing",
+      "title_tex": "Quantitative freezing of a complete cubic energy",
+      "source_line": 736,
+      "source_endline": 764,
+      "section_number": "3",
+      "section_label": "sec:analytic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出完整三次作用能量冻结系数与测试符号时的定量误差估计。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 766,
+        "source_endline": 891,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "3.4",
+      "label": "lem:analytic-near",
+      "title_tex": "All-scale transfer and angular summation",
+      "source_line": 1026,
+      "source_endline": 1057,
+      "section_number": "3",
+      "section_label": "sec:analytic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出全频率尺度三线性乘子的传递估计，以及相邻零锥角帽的角向求和估计。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 1059,
+        "source_endline": 1244,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "3.5",
+      "label": "lem:analytic-correction-bounds",
+      "title_tex": "Bounds for the correction and its rough commutator",
+      "source_line": 1380,
+      "source_endline": 1394,
+      "section_number": "3",
+      "section_label": "sec:analytic",
+      "is_appendix": false,
+      "summary_zh_CN": "提出低高频标量修正、导数交换子和 Lipschitz 粗系数交换子的有限指数范数界，含高槽伴随版本。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 1396,
+        "source_endline": 1474,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "4.1",
+      "label": "prop:general-projection",
+      "title_tex": "A projected source without a coordinate condition",
+      "source_line": 1600,
+      "source_endline": 1616,
+      "section_number": "4",
+      "section_label": "sec:general-projection",
+      "is_appendix": false,
+      "summary_zh_CN": "提出任意坐标下固定 Fourier 物理投影的标量散度波方程有界源；保留物理角测度。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 1618,
+        "source_endline": 1710,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "theorem",
+      "number_from_source_counter_rules": "5.1",
+      "label": "thm:variational-transport",
+      "title_tex": "Transport under the original first-derivative hypotheses",
+      "source_line": 1729,
+      "source_endline": 1735,
+      "section_number": "5",
+      "section_label": "sec:variational-transport",
+      "is_appendix": false,
+      "summary_zh_CN": "在原始一阶导数假设下提出同一正零锥测度的完整一齐次测试 Hamilton 输运。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 2647,
+        "source_endline": 2969,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": [
+        "lem:freezing",
+        "lem:lift",
+        "prop:general-projection",
+        "thm:quadratic"
+      ]
+    },
+    {
+      "kind": "lemma",
+      "number_from_source_counter_rules": "6.1",
+      "label": "lem:lift",
+      "title_tex": "Local-moment version of the globally hyperbolic lift",
+      "source_line": 2989,
+      "source_endline": 2991,
+      "section_number": "6",
+      "section_label": "sec:completion",
+      "is_appendix": false,
+      "summary_zh_CN": "以二阶矩和输运为条件，在光滑全局双曲时空上提出具有局部有限二阶矩的全动量零锥表示。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 2992,
+        "source_endline": 3041,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "corollary",
+      "number_from_source_counter_rules": "6.2",
+      "label": "cor:strong",
+      "title_tex": "Vacuum limits and strong physical compactness",
+      "source_line": 3063,
+      "source_endline": 3078,
+      "section_number": "6",
+      "section_label": "sec:completion",
+      "is_appendix": false,
+      "summary_zh_CN": "提出真空极限等价于全序列物理投影梯度的局部 L^2 强收敛；原文说明仅依赖二次构造。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3079,
+        "source_endline": 3113,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": [
+        "cor:base-marginal",
+        "prop:general-projection",
+        "thm:quadratic"
+      ]
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "A.1",
+      "label": "prop:shear",
+      "title_tex": "Failure of a background $L^2$ source estimate",
+      "source_line": 3121,
+      "source_endline": 3123,
+      "section_number": "A",
+      "section_label": "sec:shear",
+      "is_appendix": true,
+      "summary_zh_CN": "提出平直、精确调和坐标的容许序列，其背景波算子的固定紧集 L^2 源范数无界。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3124,
+        "source_endline": 3169,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "B.1",
+      "label": "prop:cubic",
+      "title_tex": "An auxiliary trilinear counterexample",
+      "source_line": 3175,
+      "source_endline": 3181,
+      "section_number": "B",
+      "section_label": "sec:cubic",
+      "is_appendix": true,
+      "summary_zh_CN": "提出标量序列在二次特征局部化下仍有非零三次分布极限的辅助反例。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3182,
+        "source_endline": 3209,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "C.1",
+      "label": "prop:bianchi",
+      "title_tex": "Geometric nonrepresentability without vacuum approximation",
+      "source_line": 3245,
+      "source_endline": 3247,
+      "section_number": "C",
+      "section_label": "sec:rotating",
+      "is_appendix": true,
+      "summary_zh_CN": "提出无真空逼近前提的光滑度规：其 Einstein 张量有正零锥点态分解，但不存在兼具矩与输运的正射线测度。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3248,
+        "source_endline": 3301,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "D.1",
+      "label": "prop:rosen",
+      "title_tex": "Two-polarization Rosen closure",
+      "source_line": 3307,
+      "source_endline": 3312,
+      "section_number": "D",
+      "section_label": "sec:rosen",
+      "is_appendix": true,
+      "summary_zh_CN": "在两极化 Rosen 平面波真空容许类中提出完整无质量动理表示，无二阶导数尺度假设。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3313,
+        "source_endline": 3358,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    },
+    {
+      "kind": "proposition",
+      "number_from_source_counter_rules": "D.2",
+      "label": "prop:flat-rigidity",
+      "title_tex": "Flat admissible sequences have flat smooth limits",
+      "source_line": 3390,
+      "source_endline": 3392,
+      "section_number": "D",
+      "section_label": "sec:rosen",
+      "is_appendix": true,
+      "summary_zh_CN": "提出处处平直的容许序列之光滑极限亦具有零全曲率。",
+      "claim_status": "source_proposed_claim_not_mathematically_assessed",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "semantic_correspondence_status": "not_reviewed",
+      "argument_locator": {
+        "kind": "explicit_proof_environment",
+        "source_line": 3393,
+        "source_endline": 3421,
+        "coverage_status": "locator_only_not_proof_audit"
+      },
+      "selected_source_result_references": []
+    }
+  ],
+  "remarks": [
+    {
+      "kind": "remark",
+      "number_from_source_counter_rules": "1.2",
+      "label": "rmk:status",
+      "title_tex": "Status of the main claim",
+      "source_line": 170,
+      "source_endline": 176,
+      "section_number": "1",
+      "section_label": "sec:introduction",
+      "is_appendix": false,
+      "inventory_status": "source_remark_only"
+    },
+    {
+      "kind": "remark",
+      "number_from_source_counter_rules": "1.3",
+      "label": "rmk:scope",
+      "title_tex": "What the conclusion would settle",
+      "source_line": 178,
+      "source_endline": 190,
+      "section_number": "1",
+      "section_label": "sec:introduction",
+      "is_appendix": false,
+      "inventory_status": "source_remark_only"
+    }
+  ],
+  "unnumbered_result_candidates": [
+    {
+      "candidate_id": "unnum:ricci-compactness",
+      "title_zh_CN": "线性化 Ricci 的局部 H^{-1} 紧性/强消失",
+      "source_line": 360,
+      "source_endline": 388,
+      "source_labels": [
+        "eq:E",
+        "eq:ricci-exact",
+        "eq:weak-ricci",
+        "eq:ricci-Hminus"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:microlocal-extraction",
+      "title_zh_CN": "共同微局部缺陷测度、单一子序列与 Ricci 核约束",
+      "source_line": 392,
+      "source_endline": 428,
+      "source_labels": [
+        "eq:ricci-symbol",
+        "eq:sigma"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:quadratic-symbol-algebra",
+      "title_zh_CN": "完整二次代数、非零锥纯规范消除及零锥商正性",
+      "source_line": 432,
+      "source_endline": 465,
+      "source_labels": [
+        "eq:B-algebra",
+        "eq:B-null"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:physical-measure-construction",
+      "title_zh_CN": "物理测度构造及辅助度量改变时的加权变换",
+      "source_line": 469,
+      "source_endline": 485,
+      "source_labels": [
+        "eq:mu-invariant",
+        "eq:norm-change"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:coefficient-continuity",
+      "title_zh_CN": "三次能量的光滑系数差估计",
+      "source_line": 719,
+      "source_endline": 734,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:triad-partition",
+      "title_zh_CN": "低高频/可比三元组分割及相邻角帽几何",
+      "source_line": 895,
+      "source_endline": 951,
+      "source_labels": [
+        "eq:analytic-triad-partition"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:individual-caps",
+      "title_zh_CN": "角帽乘子有限指数界与角指标 L^3 求和界",
+      "source_line": 953,
+      "source_endline": 992,
+      "source_labels": [
+        "eq:analytic-cap-bounds"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:phase-gap",
+      "title_zh_CN": "分离物理方向上的精确标量相位隙",
+      "source_line": 994,
+      "source_endline": 1016,
+      "source_labels": [
+        "eq:analytic-phase-gap"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:bs1-extension",
+      "title_zh_CN": "独立低角变量展开、BS^1 符号与有限导数阈值",
+      "source_line": 1248,
+      "source_endline": 1377,
+      "source_labels": [
+        "eq:analytic-extension",
+        "eq:analytic-bs-expansion"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:quartic-commutator",
+      "title_zh_CN": "散度算子与修正的四次交换子估计",
+      "source_line": 1476,
+      "source_endline": 1504,
+      "source_labels": [
+        "eq:analytic-quartic-bound"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:exact-correction",
+      "title_zh_CN": "精确修正算子恒等式与有界源配对",
+      "source_line": 1506,
+      "source_endline": 1526,
+      "source_labels": [
+        "eq:analytic-exact-correction",
+        "eq:analytic-far-pairing"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:correction-approximation",
+      "title_zh_CN": "角向有限和与上频率截断在固定 n 下的移除说明",
+      "source_line": 1528,
+      "source_endline": 1590,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:density-hessian",
+      "title_zh_CN": "密度型 Hessian 的精确 Hermitian 主符号式及规范压缩",
+      "source_line": 1747,
+      "source_endline": 1809,
+      "source_labels": [
+        "eq:var-hessian-form"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:transport-residual",
+      "title_zh_CN": "Hessian 交换子、非线性余项配对与完整三次输运剩余",
+      "source_line": 1811,
+      "source_endline": 1904,
+      "source_labels": [
+        "eq:var-commutator",
+        "eq:var-cubic-residual"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:complete-cubic-vertex",
+      "title_zh_CN": "完整三次变分的低阶项处理、循环 Fourier 顶点和极化连续性",
+      "source_line": 1906,
+      "source_endline": 2009,
+      "source_labels": [
+        "eq:var-cyclic"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:screen-projection",
+      "title_zh_CN": "冻结屏幕投影的显式矩阵式及物理相位抽取",
+      "source_line": 2053,
+      "source_endline": 2107,
+      "source_labels": [
+        "eq:var-screen",
+        "eq:var-screen-matrix"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:ward-and-gauge-classification",
+      "title_zh_CN": "off-shell Ward 恒等式及一/二/三规范因子分类",
+      "source_line": 2109,
+      "source_endline": 2261,
+      "source_labels": [
+        "eq:var-ward",
+        "eq:var-low-gauge-identity",
+        "eq:var-cyclic-extension"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:gauge-correction",
+      "title_zh_CN": "低规范修正、Hermitian 对称与独立变量延拓",
+      "source_line": 2265,
+      "source_endline": 2341,
+      "source_labels": [
+        "eq:var-gauge-correction"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:near-test-gain",
+      "title_zh_CN": "完整物理近角相互作用的测试符号二次角增益与算子估计",
+      "source_line": 2343,
+      "source_endline": 2502,
+      "source_labels": [
+        "eq:var-near-test-gain",
+        "eq:var-near-normalized-kernel",
+        "eq:var-near-bound"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:physical-far-correction",
+      "title_zh_CN": "物理远角低高频相互作用的精确相位除法与延拓",
+      "source_line": 2504,
+      "source_endline": 2555,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:correction-energy",
+      "title_zh_CN": "两种修正和原始投影场标量波方程的配对估计",
+      "source_line": 2557,
+      "source_endline": 2590,
+      "source_labels": [
+        "eq:var-correction-energy"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:frozen-assembly",
+      "title_zh_CN": "完整冻结三次项的近角/修正/物理相位精确装配",
+      "source_line": 2592,
+      "source_endline": 2641,
+      "source_labels": [
+        "eq:var-full-assembly"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:variable-localization",
+      "title_zh_CN": "变背景的三次局部化与定量冻结",
+      "source_line": 2647,
+      "source_endline": 2729,
+      "source_labels": [
+        "eq:var-freezing-error",
+        "eq:var-local-volume"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:global-defect-norm",
+      "title_zh_CN": "全空间投影梯度范数的缺陷测度表达",
+      "source_line": 2731,
+      "source_endline": 2758,
+      "source_labels": [
+        "eq:var-global-defect-norm"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:frozen-projection-error",
+      "title_zh_CN": "冻结屏幕与相位误差及有限指数插值",
+      "source_line": 2760,
+      "source_endline": 2841,
+      "source_labels": [
+        "eq:var-projection-error"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:final-transport-bound",
+      "title_zh_CN": "补丁求和、最终剩余估计及顺序极限",
+      "source_line": 2843,
+      "source_endline": 2985,
+      "source_labels": [
+        "eq:var-final-bound"
+      ],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:rotating-null-moment-example",
+      "title_zh_CN": "平直背景上的旋转正零锥矩张量：守恒不能推出输运",
+      "source_line": 3215,
+      "source_endline": 3239,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:rosen-multiscale-example",
+      "title_zh_CN": "显式多尺度 Rosen 真空序列及精确零源坐标例",
+      "source_line": 3360,
+      "source_endline": 3386,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:flat-pullback-example",
+      "title_zh_CN": "多尺度平直拉回例",
+      "source_line": 3430,
+      "source_endline": 3439,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:spacelike-raw-defect",
+      "title_zh_CN": "类空原始梯度缺陷而物理测度为零的例",
+      "source_line": 3441,
+      "source_endline": 3442,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:weak-energy-example",
+      "title_zh_CN": "弱能量等代数性质不足以给出正实余向量二阶矩的例",
+      "source_line": 3444,
+      "source_endline": 3445,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:second-derivative-product",
+      "title_zh_CN": "二阶导数乘积的分布/H^{-1} 恒等式",
+      "source_line": 3447,
+      "source_endline": 3459,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    },
+    {
+      "candidate_id": "unnum:change-unit-section",
+      "title_zh_CN": "改变单位截面的二齐次测试权重",
+      "source_line": 3461,
+      "source_endline": 3462,
+      "source_labels": [],
+      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "audit_status": "not_mathematically_reviewed"
+    }
+  ],
+  "definition_candidates": [
+    {
+      "candidate_id": "defcand:admissible-data",
+      "title_zh_CN": "四维光滑背景、容许真空序列、辅助度量与导数范数",
+      "source_line": 90,
+      "source_endline": 112,
+      "source_labels": [
+        "eq:admissible"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:ray-phase-space",
+      "title_zh_CN": "非零余切丛、正射线单位截面、Hamiltonian 与 Hamilton 向量场",
+      "source_line": 114,
+      "source_endline": 125,
+      "source_labels": [
+        "eq:hamiltonian"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:moment-transport",
+      "title_zh_CN": "Einstein 二阶矩、射线测度输运与一齐次测试类",
+      "source_line": 126,
+      "source_endline": 135,
+      "source_labels": [
+        "eq:moment",
+        "eq:transport"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:full-momentum-representation",
+      "title_zh_CN": "全动量测度、局部二阶矩和紧支撑输运测试",
+      "source_line": 150,
+      "source_endline": 167,
+      "source_labels": [
+        "eq:full-moment-bound",
+        "eq:full-equations"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:notation-pairing",
+      "title_zh_CN": "指标、有序对称指标求和、体积密度、内积和局部坐标范数",
+      "source_line": 331,
+      "source_endline": 350,
+      "source_labels": [],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:defect-covariance",
+      "title_zh_CN": "张量缺陷测度、协方差矩阵约定、Ricci 符号核及物理商",
+      "source_line": 392,
+      "source_endline": 428,
+      "source_labels": [
+        "eq:ricci-symbol",
+        "eq:sigma"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:fourier-multilinear",
+      "title_zh_CN": "Fourier 约定、双线性乘子及三线性形式",
+      "source_line": 539,
+      "source_endline": 562,
+      "source_labels": [],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:frequency-angular-data",
+      "title_zh_CN": "三元组低高频分割、角帽、薄锥厚度与归一化变量",
+      "source_line": 895,
+      "source_endline": 1024,
+      "source_labels": [
+        "eq:analytic-triad-partition",
+        "eq:analytic-phase-gap"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:correction-symbol-interface",
+      "title_zh_CN": "修正的独立变量延拓、球谐展开和 BS^1 符号半范数",
+      "source_line": 1248,
+      "source_endline": 1377,
+      "source_labels": [
+        "eq:analytic-extension",
+        "eq:analytic-bs-expansion"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:euclidean-gauge-projection",
+      "title_zh_CN": "Euclidean 规范补投影及固定红外正则化",
+      "source_line": 1621,
+      "source_endline": 1642,
+      "source_labels": [],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:variational-objects",
+      "title_zh_CN": "Einstein-Hilbert 作用、密度型 Euler 式、Hessian 与物理收缩",
+      "source_line": 1747,
+      "source_endline": 1788,
+      "source_labels": [
+        "eq:var-hessian-form"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:complete-vertex",
+      "title_zh_CN": "完整三次变分、冻结 Fourier 顶点及循环测试因子",
+      "source_line": 1917,
+      "source_endline": 2009,
+      "source_labels": [
+        "eq:var-cyclic"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:physical-gauge-screen",
+      "title_zh_CN": "高频物理/规范分解、规范势与屏幕投影",
+      "source_line": 2013,
+      "source_endline": 2107,
+      "source_labels": [
+        "eq:var-gauge-potential",
+        "eq:var-screen",
+        "eq:var-screen-matrix"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:two-corrections",
+      "title_zh_CN": "规范修正、物理远角修正与完整冻结能量分解",
+      "source_line": 2265,
+      "source_endline": 2641,
+      "source_labels": [
+        "eq:var-gauge-correction",
+        "eq:var-full-assembly"
+      ],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    },
+    {
+      "candidate_id": "defcand:global-hyperbolic-section",
+      "title_zh_CN": "Cauchy 截面的齐次能量、流不变截面与加权推前测度",
+      "source_line": 2993,
+      "source_endline": 3039,
+      "source_labels": [],
+      "candidate_status": "prose_definition_or_notation_candidate",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized"
+    }
+  ],
+  "source_label_index": [
+    {
+      "label": "sec:introduction",
+      "source_line": 86
+    },
+    {
+      "label": "eq:admissible",
+      "source_line": 91
+    },
+    {
+      "label": "eq:hamiltonian",
+      "source_line": 111
+    },
+    {
+      "label": "eq:moment",
+      "source_line": 122
+    },
+    {
+      "label": "eq:transport",
+      "source_line": 128
+    },
+    {
+      "label": "thm:main",
+      "source_line": 140
+    },
+    {
+      "label": "eq:full-moment-bound",
+      "source_line": 153
+    },
+    {
+      "label": "eq:full-equations",
+      "source_line": 158
+    },
+    {
+      "label": "rmk:status",
+      "source_line": 170
+    },
+    {
+      "label": "rmk:scope",
+      "source_line": 178
+    },
+    {
+      "label": "eq:literature-scale",
+      "source_line": 240
+    },
+    {
+      "label": "eq:optimized-exponents",
+      "source_line": 309
+    },
+    {
+      "label": "sec:quadratic",
+      "source_line": 352
+    },
+    {
+      "label": "thm:quadratic",
+      "source_line": 354
+    },
+    {
+      "label": "eq:E",
+      "source_line": 366
+    },
+    {
+      "label": "eq:ricci-exact",
+      "source_line": 372
+    },
+    {
+      "label": "eq:weak-ricci",
+      "source_line": 377
+    },
+    {
+      "label": "eq:ricci-Hminus",
+      "source_line": 385
+    },
+    {
+      "label": "eq:ricci-symbol",
+      "source_line": 415
+    },
+    {
+      "label": "eq:sigma",
+      "source_line": 422
+    },
+    {
+      "label": "eq:B-algebra",
+      "source_line": 446
+    },
+    {
+      "label": "eq:B-null",
+      "source_line": 455
+    },
+    {
+      "label": "eq:mu-invariant",
+      "source_line": 470
+    },
+    {
+      "label": "eq:norm-change",
+      "source_line": 482
+    },
+    {
+      "label": "cor:base-marginal",
+      "source_line": 488
+    },
+    {
+      "label": "eq:base-marginal",
+      "source_line": 491
+    },
+    {
+      "label": "sec:analytic",
+      "source_line": 519
+    },
+    {
+      "label": "lem:commutator",
+      "source_line": 566
+    },
+    {
+      "label": "eq:lip-estimate",
+      "source_line": 568
+    },
+    {
+      "label": "lem:cubic-continuity",
+      "source_line": 613
+    },
+    {
+      "label": "eq:cubic-continuity",
+      "source_line": 615
+    },
+    {
+      "label": "lem:freezing",
+      "source_line": 737
+    },
+    {
+      "label": "eq:freezing-statement-1",
+      "source_line": 742
+    },
+    {
+      "label": "eq:freezing-quantitative",
+      "source_line": 753
+    },
+    {
+      "label": "eq:analytic-triad-partition",
+      "source_line": 901
+    },
+    {
+      "label": "eq:analytic-cap-bounds",
+      "source_line": 955
+    },
+    {
+      "label": "eq:analytic-phase-gap",
+      "source_line": 1008
+    },
+    {
+      "label": "lem:analytic-near",
+      "source_line": 1026
+    },
+    {
+      "label": "eq:analytic-near-statement-2",
+      "source_line": 1038
+    },
+    {
+      "label": "eq:analytic-near-bound",
+      "source_line": 1051
+    },
+    {
+      "label": "eq:analytic-extension",
+      "source_line": 1254
+    },
+    {
+      "label": "eq:analytic-bs-expansion",
+      "source_line": 1269
+    },
+    {
+      "label": "lem:analytic-correction-bounds",
+      "source_line": 1381
+    },
+    {
+      "label": "eq:analytic-correction-bounds",
+      "source_line": 1383
+    },
+    {
+      "label": "eq:analytic-quartic-bound",
+      "source_line": 1487
+    },
+    {
+      "label": "eq:analytic-exact-correction",
+      "source_line": 1513
+    },
+    {
+      "label": "eq:analytic-far-pairing",
+      "source_line": 1517
+    },
+    {
+      "label": "sec:general-projection",
+      "source_line": 1592
+    },
+    {
+      "label": "prop:general-projection",
+      "source_line": 1601
+    },
+    {
+      "label": "eq:general-bounded-source",
+      "source_line": 1608
+    },
+    {
+      "label": "eq:general-explicit-source",
+      "source_line": 1686
+    },
+    {
+      "label": "sec:variational-transport",
+      "source_line": 1721
+    },
+    {
+      "label": "thm:variational-transport",
+      "source_line": 1730
+    },
+    {
+      "label": "eq:var-hessian-form",
+      "source_line": 1776
+    },
+    {
+      "label": "eq:var-commutator",
+      "source_line": 1831
+    },
+    {
+      "label": "eq:var-cubic-residual",
+      "source_line": 1901
+    },
+    {
+      "label": "eq:var-cyclic",
+      "source_line": 1977
+    },
+    {
+      "label": "eq:var-gauge-potential",
+      "source_line": 2043
+    },
+    {
+      "label": "eq:var-screen",
+      "source_line": 2056
+    },
+    {
+      "label": "eq:var-screen-matrix",
+      "source_line": 2062
+    },
+    {
+      "label": "eq:var-ward",
+      "source_line": 2113
+    },
+    {
+      "label": "eq:var-low-gauge-identity",
+      "source_line": 2139
+    },
+    {
+      "label": "eq:var-cyclic-extension",
+      "source_line": 2165
+    },
+    {
+      "label": "eq:var-gauge-correction",
+      "source_line": 2280
+    },
+    {
+      "label": "eq:var-near-test-gain",
+      "source_line": 2351
+    },
+    {
+      "label": "eq:var-near-normalized-kernel",
+      "source_line": 2409
+    },
+    {
+      "label": "eq:var-near-bound",
+      "source_line": 2492
+    },
+    {
+      "label": "eq:var-correction-energy",
+      "source_line": 2576
+    },
+    {
+      "label": "eq:var-full-assembly",
+      "source_line": 2619
+    },
+    {
+      "label": "sec:completion",
+      "source_line": 2643
+    },
+    {
+      "label": "eq:var-freezing-error",
+      "source_line": 2700
+    },
+    {
+      "label": "eq:var-local-volume",
+      "source_line": 2722
+    },
+    {
+      "label": "eq:var-global-defect-norm",
+      "source_line": 2738
+    },
+    {
+      "label": "eq:var-projection-error",
+      "source_line": 2804
+    },
+    {
+      "label": "eq:var-final-bound",
+      "source_line": 2947
+    },
+    {
+      "label": "lem:lift",
+      "source_line": 2989
+    },
+    {
+      "label": "cor:strong",
+      "source_line": 3064
+    },
+    {
+      "label": "eq:physical-strong-criterion",
+      "source_line": 3068
+    },
+    {
+      "label": "sec:shear",
+      "source_line": 3116
+    },
+    {
+      "label": "prop:shear",
+      "source_line": 3121
+    },
+    {
+      "label": "sec:cubic",
+      "source_line": 3173
+    },
+    {
+      "label": "prop:cubic",
+      "source_line": 3175
+    },
+    {
+      "label": "sec:rotating",
+      "source_line": 3213
+    },
+    {
+      "label": "prop:bianchi",
+      "source_line": 3245
+    },
+    {
+      "label": "sec:rosen",
+      "source_line": 3305
+    },
+    {
+      "label": "prop:rosen",
+      "source_line": 3307
+    },
+    {
+      "label": "prop:flat-rigidity",
+      "source_line": 3390
+    }
+  ],
+  "bibliography_index": [
+    {
+      "key": "BenyiOh",
+      "source_line": 3468,
+      "verification_status": "not_externally_checked"
+    },
+    {
+      "key": "Burnett1989",
+      "source_line": 3469,
+      "verification_status": "not_externally_checked"
+    },
+    {
+      "key": "GW2011",
+      "source_line": 3470,
+      "verification_status": "not_externally_checked"
+    },
+    {
+      "key": "GTC",
+      "source_line": 3471,
+      "verification_status": "not_externally_checked"
+    },
+    {
+      "key": "HLelliptic",
+      "source_line": 3472,
+      "verification_status": "not_externally_checked"
+    },
+    {
+      "key": "HLwave",
+      "source_line": 3473,
+      "verification_status": "not_externally_checked"
+    }
+  ],
+  "limitations": [
+    "This inventory does not assess correctness of any theorem, proof, example, estimate, or cited work.",
+    "It does not compare a mathematical statement with a Lean type; no Lean declarations were inspected or produced.",
+    "Unnumbered and definition candidates are an initial planning inventory and need later assumption, dependency, and modeling review.",
+    "No source rewrite, proof repair, reverse-conjecture expansion, external lookup, installation, publication, or Burnett project mutation is performed by this intake."
+  ],
+  "project_copy_note": "Project copy replaces the original machine-specific path by paper/burnett.tex; hashed source bytes and all indexed locators are unchanged."
+}

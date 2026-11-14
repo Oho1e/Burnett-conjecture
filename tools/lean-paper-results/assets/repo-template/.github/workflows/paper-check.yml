@@ -1,0 +1,38 @@
+name: Lean proof checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proof-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare pinned Lean and dependencies
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          mk_all-check: 'false'
+          use-mathlib-cache: 'auto'
+          use-github-cache: 'false'
+      - name: Build declared targets and audit their proof dependencies
+        run: python scripts/check_paper.py --repo .
+      - name: Preserve this run's evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-proof-evidence-${{ github.sha }}
+          path: .paper-verification/
+          include-hidden-files: true
+          if-no-files-found: warn

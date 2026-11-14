@@ -1,0 +1,3475 @@
+% !TeX program = xelatex
+% Anonymous standalone source; bibliography is embedded.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath,microtype,xcolor}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{bookmark,enumitem,fancyhdr}
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{2}
+\setlist[enumerate]{leftmargin=2em,itemsep=4pt,topsep=5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small High-frequency vacuum limits}
+\fancyhead[R]{\small A variational approach}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\renewcommand{\headrulewidth}{0pt}
+\hypersetup{pdftitle={High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture},pdfauthor={},pdfsubject={Anonymous manuscript; proposed proof}}
+
+\setlength{\emergencystretch}{3em}
+\allowdisplaybreaks
+\newcommand{\Ric}{\operatorname{Ric}}
+\newcommand{\Scal}{\operatorname{Scal}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\loc}{\mathrm{loc}}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\R}{\mathbb R}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\Op}{\operatorname{Op}}
+\newcommand{\dV}{\dd V_g}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\ls}{\lesssim}
+\newcommand{\ii}{\mathrm{i}}
+\DeclareMathOperator{\Rea}{Re}
+\renewcommand{\Im}{\operatorname{Im}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{remark}[theorem]{Remark}
+\title{High-frequency vacuum limits with bounded first derivatives:\\
+a variational approach to the forward Burnett conjecture}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+\begin{abstract}
+We present a proposed proof of the forward Burnett conjecture for smooth
+vacuum metrics on a four-dimensional manifold which converge locally
+uniformly to a smooth Lorentzian metric and have locally uniformly bounded
+first derivatives. No coordinate condition, spacetime symmetry, or bound
+relating second derivatives to the amplitude is imposed. The claimed
+conclusion is that the limiting Einstein tensor is the second moment of a
+nonnegative null measure satisfying the massless Hamilton transport equation.
+The quadratic part of the argument constructs this measure on the bundle
+of positive cotangent rays and eliminates pure coordinate oscillations.
+For transport, the Einstein-Hilbert Hessian reduces the problem to the
+complete cubic variation of the action. A diffeomorphism identity, angular
+estimates, and scalar normal-form corrections are then used to cancel this
+residual. A projected wave equation provides the bounded source required
+by the corrections, without estimating the background wave operator of
+the original metric perturbation. On globally hyperbolic regions, a
+characteristic section produces a full-momentum realization with finite
+local second moments. The unrestricted transport argument is the central
+claim of this proposed proof; reverse approximation and nonsmooth limits
+are outside its scope.
+\end{abstract}
+\noindent\textbf{Keywords.} Einstein vacuum equations; Burnett conjecture;
+microlocal defect measures; massless Vlasov equation; compensated compactness.
+
+\smallskip
+\noindent\textbf{2020 Mathematics Subject Classification.} 83C05, 35B27, 35L70, 35S05.
+
+\tableofcontents
+\clearpage
+
+\section{Introduction}\label{sec:introduction}
+
+\subsection{Main results and remarks}
+
+We consider the high-frequency limit of the vacuum Einstein equations:
+\begin{equation}\label{eq:admissible}
+\begin{gathered}
+\Ric(g_n)=0,\qquad
+h_n\longrightarrow0\ \hbox{in }C^0_{\loc}(M),\\
+\sup_n\|Dh_n\|_{L^\infty(K;r)}<\infty
+\quad(K\Subset M).
+\end{gathered}
+\end{equation}
+Here $M$ is a smooth, Hausdorff, second countable four-manifold,
+$g_n$ are smooth Lorentzian metrics, and $h_n=g_n-g$.
+The limit $g$ is smooth and time-oriented, with signature $(-,+,+,+)$.
+We fix a smooth auxiliary Riemannian metric $r$ and set $D=\nabla^r$.
+The norm in \eqref{eq:admissible} uses $r$ on the compact set $K$.
+
+The cosmological constant is zero and $8\pi G_{\mathrm N}=1$.
+Replacing $Dh_n$ by $Dg_n$ gives the same class. Changing $r$, or applying
+a fixed smooth coordinate change, also leaves the hypotheses unchanged.
+No estimate for $D^2g_n$ is assumed.
+
+Let $\pi:T^*M\setminus0\to M$ be the bundle projection, and put
+\begin{equation}\label{eq:hamiltonian}
+\begin{gathered}
+S_r^*M=\{(x,\xi)\in T^*M:|\xi|_r=1\},\qquad
+P(x,\xi)=\f12g^{ab}(x)\xi_a\xi_b,\\
+H_P=g^{ab}\xi_b\partial_{x^a}
+-\f12\partial_{x^c}g^{ab}\xi_a\xi_b\partial_{\xi_c}.
+\end{gathered}
+\end{equation}
+The unit cosphere represents positive rays, namely the quotient by
+$\xi\mapsto t\xi$ for $t>0$; it retains both time orientations.
+For a measure $\mu$ on this section, the Einstein moment identity is
+\begin{equation}\label{eq:moment}
+\int_M G(g)_{ab}S^{ab}\,\dV
+=\int_{S_r^*M}S^{ab}(x)\xi_a\xi_b\,\dd\mu,
+\quad S\in C_c^\infty(M;\operatorname{Sym}^2TM),
+\end{equation}
+where $G(g)=\Ric(g)-\f12\Scal(g)g$. Its transport equation is
+\begin{equation}\label{eq:transport}
+\int_{S_r^*M}H_Pa\,\dd\mu=0
+\end{equation}
+for every smooth $a:T^*M\setminus0\to\R$ with compact base support and
+$a(x,t\xi)=t\,a(x,\xi)$ for $t>0$. The Hamilton derivative is taken
+before restriction to the unit section; it is homogeneous of degree two.
+Here ``positively homogeneous'' refers to positive scaling and imposes
+no sign condition on $a$.
+
+Our main result is stated as follows.
+
+\begin{theorem}[Forward kinetic limit in the smooth-limit class]
+\label{thm:main}
+Assume \eqref{eq:admissible}. After passage to one subsequence, there exists
+a nonnegative Radon measure $\mu$ on $S_r^*M$ such that:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item $\mu$ is locally finite over the base and supported on $P=0$;
+\item the Einstein moment identity \eqref{eq:moment} holds, and
+$\Scal(g)=0$;
+\item the same measure satisfies \eqref{eq:transport} for every smooth
+positively one-homogeneous test with compact base support.
+\end{enumerate}
+Moreover, on every globally hyperbolic open subspacetime $U\subset M$
+there is a nonnegative Radon measure $\nu$ on $T^*U\setminus0$, supported
+on its null cone, with
+\begin{equation}\label{eq:full-moment-bound}
+\int_{\pi^{-1}(K)}|\xi|_r^2\,\dd\nu<\infty
+\qquad(K\Subset U),
+\end{equation}
+and
+\begin{equation}\label{eq:full-equations}
+\begin{gathered}
+\int_U G(g)_{ab}S^{ab}\,\dV
+=\int_{T^*U\setminus0}S^{ab}\xi_a\xi_b\,\dd\nu,\\
+\int_{T^*U\setminus0}H_Pb\,\dd\nu=0
+\qquad(b\in C_c^\infty(T^*U\setminus0)).
+\end{gathered}
+\end{equation}
+The first equality holds for all compactly supported smooth symmetric
+contravariant tensors $S$ on $U$.
+\end{theorem}
+
+\begin{remark}[Status of the main claim]\label{rmk:status}
+This version presents a complete proposed proof of Theorem~\ref{thm:main}.
+The decisive assertion is the unrestricted transport estimate in
+Sections~\ref{sec:variational-transport}-\ref{sec:completion}, not merely
+the existence of positive null second moments. The theorem and its technical lemmas are presented for independent
+mathematical assessment.
+\end{remark}
+
+\begin{remark}[What the conclusion would settle]\label{rmk:scope}
+Theorem~\ref{thm:main}, if its proof is correct, establishes the full
+forward conclusion for the class \eqref{eq:admissible}, in arbitrary
+coordinates and without symmetry. It is not restricted to a prescribed
+finite family of oscillation phases. The kinetic object is a measure,
+not necessarily a smooth density. No uniqueness of this measure is
+asserted. The theorem does not address the reverse problem of constructing
+vacuum approximations of prescribed kinetic solutions, nonsmooth limiting
+metrics, concentration beyond the stated derivative bound, nonzero
+cosmological constant, or dimensions other than four. Global hyperbolicity
+is used only for the full-momentum realization, not for the global ray
+measure or its transport equation.
+\end{remark}
+
+The proof also gives two independently stated intermediate results.
+Theorem~\ref{thm:quadratic} constructs a positive null measure with the
+Einstein moments directly from the full metric-gradient defect, including
+its coordinate part. Proposition~\ref{prop:general-projection} gives a
+scalar wave equation with bounded source for a fixed projection of the
+metric perturbation. Neither result by itself establishes Vlasov
+transport. The remaining step is exactly the vanishing of the cubic
+residual in \eqref{eq:var-cubic-residual}.
+Two consequences of the quadratic construction require no transport:
+Corollary~\ref{cor:base-marginal} identifies the smooth base marginal
+of the physical measure, and Corollary~\ref{cor:strong} characterizes
+vacuum limits by strong convergence of the projected physical gradients.
+
+\subsection{Previous results}
+
+Weak limits of vacuum spacetimes need not satisfy the vacuum Einstein
+equations. Although the metric perturbation may converge uniformly to
+zero, its first derivatives can oscillate and leave a nonzero quadratic
+stress in the limiting equation. The forward Burnett conjecture asks
+whether this stress always has the dynamics of collisionless massless
+matter. A kinetic description has two distinct components: a positive
+null second-moment representation of the Einstein tensor and propagation
+of its angular measure by the null geodesic flow. The latter is stronger
+than covariant conservation of the stress tensor.
+
+The weak-limit framework originates in Burnett's work
+\cite{Burnett1989}. Green-Wald \cite{GW2011} established trace and energy
+properties of the effective stress in their framework. Huneau-Luk
+\cite{HLelliptic} proved a kinetic limit theorem with $\mathbb U(1)$
+symmetry in elliptic gauge, using trilinear compensated compactness.
+Guerra-Teixeira da Costa \cite{GTC} subsequently weakened the regularity
+assumptions in that setting. Without symmetry, Huneau-Luk
+\cite{HLwave} proved the conjecture in generalized wave coordinates under
+quantitative convergence and derivative assumptions. These results identify
+nonlinear transport, rather than the formal weak limit of the Einstein
+equation, as the main analytical difficulty.
+
+This paper addresses the forward problem with a smooth limiting metric
+and only a uniform local bound on first derivatives. The main argument
+is variational: it uses the complete third variation of the
+Einstein-Hilbert action to retain the symmetry between all three
+oscillatory factors. This permits a separate treatment of the physical
+polarizations and the coordinate directions in the microlocal defect.
+
+
+
+The hypothesis comparison requires some care. In
+\cite[Assumptions 1.2]{HLwave}, a parameter $\lambda_n\to0$ satisfies
+\begin{equation}\label{eq:literature-scale}
+|g_n-g|\leq\lambda_n,\qquad |\partial g_n|\leq C,
+\qquad |\partial^2g_n|\leq C\lambda_n^{-1}.
+\end{equation}
+There are also quantitative assumptions on
+$H^a(k)=k^{bc}\Gamma^a_{bc}(k)$: convergence of $H(g_n)$ to $H(g)$ at a
+positive power of $\lambda_n$, together with a first derivative bound
+on $H(g_n)$. Remark 1.3 of that paper distinguishes its quadratic
+conclusions from transport when the second-derivative and source-derivative
+bounds are removed, with the remaining wave-gauge assumptions retained.
+Our proposed transport argument uses neither a
+coordinate condition nor \eqref{eq:literature-scale}.
+
+The theorem of Guerra-Teixeira da Costa \cite{GTC} is formulated in
+$\mathbb U(1)$ symmetry and elliptic gauge. Its published
+Hypotheses 1.2(c) retain a product bound involving the uniform difference
+of the inverse base metrics and the $L^4$ norm of second derivatives of
+the reduced wave-map fields. Their first-derivative assumptions on those
+fields are also weaker than the full-metric $W^{1,\infty}_{\loc}$ bound
+used here. Accordingly, Theorem~\ref{thm:main} should not be described as
+weakening every hypothesis of that result. The proposed advance concerns
+removal of the symmetry, coordinate, and derivative-scale restrictions
+in the overlapping smooth-limit class.
+
+The distinction between positivity and transport is essential.
+Covariant conservation of a positive null second moment tests only a
+small subclass of the angular transport equation. Appendix~\ref{sec:rotating}
+gives an explicit illustration. Conversely, failure of a commonly used
+auxiliary estimate is not a counterexample to the kinetic limit theorem:
+the exact flat sequence in Appendix~\ref{sec:shear} has an unbounded
+background wave operator but has zero physical defect measure.
+
+\subsection{Sketch of the proof}
+
+The argument has three stages. First, the exact connection-difference
+formula and microlocal compactness give a tensor-valued derivative defect
+whose range lies in the kernel of the linearized Ricci symbol. Away from
+the null cone that kernel is pure gauge and contributes no effective
+stress. On the cone the relevant contraction is nonnegative on the
+two-dimensional physical polarization space. This yields the global
+measure $\mu$.
+
+Second, set $E(g)^{ab}=\sqrt{|\det g|}\,G(g)^{ab}$.
+A scalar order-one test of the density-valued Einstein-Hilbert Hessian gives
+\begin{equation*}
+4\int_{S_r^*M}H_Pa\,\dd\mu
+=-\lim_n\Im
+\ip{E''_g[h_n,h_n]}{B_ah_n}.
+\end{equation*}
+Here the formula is localized in one coordinate chart, the pairing uses
+Lebesgue density, and $B_a$ is a scalar self-adjoint pseudodifferential
+operator of order one with principal symbol $a$.
+The entire third variation is retained. For frozen coefficients its
+Fourier vertex is multiplied by the cyclic factor
+$a(p)+a(q)+a(r)$, where $p+q+r=0$. Near a common null direction this
+factor gains two angular powers. When a gauge factor is present,
+diffeomorphism invariance converts the vertex into physical characteristic
+factors and an exact scalar phase difference.
+
+Third, Hermitian normal-form corrections handle the remaining separated
+interactions. They are paired with a scalar equation for the projected
+physical field. The coefficients of that equation are the original
+inverse metrics and remain uniformly Lipschitz. The final estimate is
+\begin{equation*}
+\left|4\int_{S_r^*M}H_Pa\,\dd\mu\right|
+\leq C_{\kappa,p_*}\delta^{\beta_*}
+ +C_{\delta,p_*}\ell^{\alpha_*}+C_\delta\ell,
+\end{equation*}
+For any fixed finite exponent $p_*>3$, the exponents are
+\begin{equation}\label{eq:optimized-exponents}
+\beta_* = \f{2(p_*-3)}{p_*-2},\qquad
+\alpha_* = \f{2(p_*-3)}{3(p_*-2)}.
+\end{equation}
+For example, $p_*=4$ gives $(\beta_*,\alpha_*)=(1,1/3)$,
+and $p_*=12$ gives $(9/5,3/5)$.
+The parameter $\kappa$ fixes the separation between low/high and comparable
+frequencies. The sequence limit is taken first, at fixed angular width
+$\delta$ and spatial patch size $\ell$. Sending $\ell\to0$ and then $\delta\to0$
+gives the asserted transport equation. No sequence-dependent upper
+frequency cutoff or second-derivative estimate enters this limit order.
+
+Section~\ref{sec:quadratic} constructs the physical measure.
+Section~\ref{sec:analytic} supplies the analytic estimates used for
+cubic energies and normal forms, and Section~\ref{sec:general-projection}
+establishes the projected wave equation.
+Section~\ref{sec:variational-transport} identifies and estimates the
+variational residual. Section~\ref{sec:completion} completes the
+localization argument and proves Theorem~\ref{thm:main}.
+The appendices give exact examples and auxiliary identities.
+
+\begin{samepage}
+\subsection{Notations}
+
+\begin{description}[leftmargin=1.5em,labelsep=0.5em,itemsep=3pt]
+\item[$\blacktriangleright$] $a,b,c\in\{0,1,2,3\}$ are tensor indices; repeated indices are summed.
+\item[$\blacktriangleright$] $\tr_g$ is the Lorentzian trace; symmetric contractions sum over all ordered pairs.
+\item[$\blacktriangleright$] $|\cdot|_r$ is the positive tensor length induced by the auxiliary metric $r$.
+\item[$\blacktriangleright$] $\dV=\sqrt{|\det g|}\,\dd x$ is the geometric volume density.
+\item[$\blacktriangleright$] $\ip{u}{v}=\int_{\R^4}u(x)\cdot\overline{v(x)}\,\dd x$ is linear in $u$ in a coordinate chart.
+\item[$\blacktriangleright$] $L^p_x$, $H^s_x$, and $W^{s,p}_x$ denote the corresponding spaces on $\R^4$.
+\item[$\blacktriangleright$] $P$ and $H_P$ are the Hamiltonian and vector field in \eqref{eq:hamiltonian}.
+\item[$\blacktriangleright$] $\lambda_p=|p|$, $\lambda_q=|q|$, and $\lambda_r=|r|$ are Euclidean frequency magnitudes.
+\item[$\blacktriangleright$] $A\ls B$ means $A\leq CB$ with the dependencies specified below.
+\end{description}
+\end{samepage}
+Component lengths use an orthonormal frame for the specified positive metric;
+the corresponding $L^2$ norms use the sum of squared component lengths.
+Localized coordinate fields are extended by zero when a full-space norm is used.
+Constants may depend on fixed compact sets, the smooth background,
+the test symbol, and the first-derivative bound in \eqref{eq:admissible}.
+They never depend on an unassumed bound for higher derivatives of $g_n$.
+
+\section{Preliminaries}\label{sec:quadratic}
+
+\begin{theorem}[Positive null second moments, without transport]\label{thm:quadratic}
+Assume \eqref{eq:admissible}. After extraction of one subsequence, there is a globally defined nonnegative Radon measure $\mu$ on $S_r^*M$, locally finite over compact base sets and supported on $P=0$, such that \eqref{eq:moment} holds. In particular $\Scal(g)=0$. The construction is compatible with fixed smooth coordinate changes. The transport equation is not part of this intermediate theorem.
+\end{theorem}
+
+\subsection{Exact connection difference and compactness}
+
+Use $\nabla=\nabla^g$. The difference $\nabla h_n-Dh_n$ is a smooth coefficient times $h_n$, hence is strongly zero in local $L^\infty$. Define
+\begin{equation*}
+C_n{}^a{}_{bc}=\f12g_n^{ad}(\nabla_bh_{n,cd}+\nabla_ch_{n,bd}-\nabla_dh_{n,bc})
+=L(\nabla h_n)^a{}_{bc}+E_n{}^a{}_{bc},
+\end{equation*}
+where $L$ uses $g^{ad}$ in place of $g_n^{ad}$. On a fixed compact set $K\Subset M$, inverses are uniformly bounded for all sufficiently large $n$, and
+\begin{equation}\label{eq:E}
+\|E_n\|_{L^\infty(K)}\leq C\|h_n\|_{L^\infty(K)}\|\nabla h_n\|_{L^\infty(K)}\longrightarrow0.
+\end{equation}
+All constants here and below may depend on the fixed compact sets, the smooth background, and the given first-derivative bound, but not on higher derivatives of $g_n$.
+
+The exact curvature-difference formula gives
+\begin{equation}\label{eq:ricci-exact}
+0=\Ric(g)_{bc}+\nabla_aC_n{}^a{}_{bc}-\nabla_cC_n{}^a{}_{ba}
++C_n{}^a{}_{ae}C_n{}^e{}_{bc}-C_n{}^a{}_{ce}C_n{}^e{}_{ba}.
+\end{equation}
+Distributional differentiation of $h_n\to0$ and the derivative bound imply $\nabla h_n\rightharpoonup^*0$ in local $L^\infty$. Consequently $C_n\rightharpoonup0$ in local $L^2$. Testing \eqref{eq:ricci-exact} against a fixed smooth compactly supported tensor, with density $\dV$, and integrating the derivatives by parts yields
+\begin{equation}\label{eq:weak-ricci}
+\Ric(g)_{bc}=\mathop{\mathrm{w\!-!lim}}_n
+\bigl(L(\nabla h_n)^a{}_{ce}L(\nabla h_n)^e{}_{ba}
+-L(\nabla h_n)^a{}_{ae}L(\nabla h_n)^e{}_{bc}\bigr).
+\end{equation}
+Every replacement of $C_n$ by $L(\nabla h_n)$ has a strongly vanishing local $L^\infty$ error by \eqref{eq:E}. Thus no second derivative has been discarded from a product with a sequence-dependent test.
+
+Let $\mathcal Lh=\nabla_aL(\nabla h)^a{}_{bc}-\nabla_cL(\nabla h)^a{}_{ba}$. Equation~\eqref{eq:ricci-exact} writes $\mathcal Lh_n$ as the sum of a bounded local $L^2$ sequence and the derivative of a strongly zero local $L^2$ sequence. On a bounded chart, with nested compact cutoffs, the first part is precompact in $H^{-1}$ by Rellich duality, and the second part is strongly zero in $H^{-1}$. Derivatives of the fixed cutoffs are bounded local $L^2$ terms. Since independently $\mathcal Lh_n\to0$ distributionally, all its $H^{-1}$ cluster points are zero. Therefore
+\begin{equation}\label{eq:ricci-Hminus}
+\mathcal Lh_n\longrightarrow0\quad\text{strongly in }H^{-1}_{\loc}.
+\end{equation}
+This does not say that the quadratic terms in \eqref{eq:weak-ricci} vanish.
+
+\subsection{A common microlocal measure and the Ricci constraint}
+
+Apply the standard positive microlocal-defect compactness theorem
+\cite[Theorem~5.5]{HLelliptic} to the global tensor $u_n=Dh_n$, using
+the positive $r$ fiber inner product and density $\dV$.
+Here defect tests are classical order-zero operators: their smooth
+principal symbols are homogeneous of degree zero away from the origin,
+with fixed infrared regularization and an order-minus-one remainder.
+A countable relatively compact atlas, a compact exhaustion, and
+countable dense families of these principal symbols on compact
+cosphere sets give a single diagonal subsequence. Local $L^2$ bounds
+and order-zero operator bounds, using finitely many symbol derivatives,
+extend its quadratic limits to every such smooth compactly based
+principal symbol. Localized order-minus-one remainders are compact
+and have zero limit. This produces a positive Hermitian bundle-valued
+measure $M_E$ on $S_r^*M$, where
+$E=T^*M\otimes\operatorname{Sym}^2T^*M$.
+No simultaneous convergence for arbitrary nonhomogeneous
+$S^0_{1,0}$ symbols is asserted. The homogeneous projections and
+normalized phase symbols used below belong to this defect-test class;
+general multipliers used only in norm estimates need no defect limit.
+
+The localization fact needed here, also stated in \cite[Theorem~5.6]{HLelliptic}, can be checked directly: if a smooth first-order system $A$ satisfies $Au_n\to0$ in $H^{-1}_{\loc}$, apply a fixed elliptic inverse of order $-1$ and insert nested cutoffs. The resulting order-zero operator applied to $u_n$ tends strongly to zero in $L^2$; the cutoff commutators have order $-1$ and are compact. Its principal symbol is $a_1(x,\xi)/|\xi|_r$. Positivity then implies that the range of the density of $M_E$ lies in $\ker a_1$ almost everywhere.
+
+Apply this fact first to the curl of $Dh_n$. Its right-hand side is the fixed curvature of $D$ acting on $h_n$, and tends strongly to zero. Thus the density takes values in tensors $u_{\alpha,ab}=\xi_\alpha k_{ab}$. Apply it next to \eqref{eq:ricci-Hminus}, viewed as a first-order constraint on $Dh_n$. Smooth lower-order terms are strongly zero in $H^{-1}$, because they are weakly zero and bounded in $L^2$ on a bounded chart. The remaining constraint is
+\begin{equation}\label{eq:ricci-symbol}
+\mathcal R_\xi(k)_{ab}=\f12\bigl(s k_{ab}+\xi_a\xi_b t-\xi_aq_b-\xi_bq_a\bigr)=0,
+\quad s=g^{ab}\xi_a\xi_b,\quad t=\tr_gk,\quad q_b=\xi^ak_{ab}.
+\end{equation}
+An overall Fourier sign does not change its kernel.
+
+Since $|\xi|_r=1$, the map $j_\xi:k\mapsto\xi\otimes k$ is an $r$-isometry. There is therefore a positive Hermitian measure $\sigma$ on symmetric two-tensors such that $M_E=j_\xi\sigma j_\xi^*$. Its density has range in $\ker\mathcal R_\xi$. This operator identity uses $r$ to identify each fiber with its dual. In the coordinate formulas below, $\sigma_{ab,cd}$ denotes the corresponding covariance tensor: if $G_F$ is the fiber Gram matrix, its matrix is $\sigma_{\rm op}G_F^{-1}$, rather than the endomorphism matrix $\sigma_{\rm op}$ itself. This convention also applies when changing the auxiliary metric. For a coordinate chart $U$ containing the base support of $A$,
+\begin{equation}\label{eq:sigma}
+\lim_n\ip{\partial_\alpha h_{n,ab}}{A\partial_\beta h_{n,cd}}_{L^2(U,\dV)}
+=\int_{S_r^*U} a_0(x,\xi)\xi_\alpha\xi_\beta\,\dd\sigma_{ab,cd},
+\end{equation}
+for classical order-zero $A$ with real scalar principal symbol $a_0$;
+complex tests follow by conjugate-linearity in $A$ in the stated
+inner-product convention. Tensor contractions here sum over all ordered index pairs, so the off-diagonal multiplicities of symmetric tensors are included. Replacing $D$ by coordinate derivatives changes only strongly zero terms. Tensor component changes and conjugation of a fixed pseudodifferential operator transform the principal symbol naturally; lower-order terms have zero quadratic limit. The local descriptions thus describe one global object, rather than unrelated representations glued by a partition of unity.
+
+\subsection{The full quadratic algebra}
+
+At a fixed point, set
+\begin{equation*}
+c(k)^a{}_{bc}=\f12(\xi_bk_c{}^a+\xi_ck_b{}^a-\xi^ak_{bc}),\quad
+B_{bc}(k,k)=c(k)^a{}_{ce}c(k)^e{}_{ba}-c(k)^a{}_{ae}c(k)^e{}_{bc}.
+\end{equation*}
+Write $K_2=k_{ab}k^{ab}$ and $(k^2)_{bc}=k_b{}^ak_{ac}$. Expanding the first product, its nine terms, before division by four, are
+\begin{equation*}
+\begin{gathered}
+\xi_b\xi_cK_2,\quad \xi_c(kq)_b,\quad-\xi_c(kq)_b,\\
+\xi_b(kq)_c,\quad q_bq_c,\quad-s(k^2)_{bc},\\
+-\xi_b(kq)_c,\quad-s(k^2)_{bc},\quad q_bq_c.
+\end{gathered}
+\end{equation*}
+Also $c(k)^a{}_{ae}=\xi_et/2$. It follows that
+\begin{equation}\label{eq:B-algebra}
+4B_{bc}(k,k)=\xi_b\xi_cK_2+2q_bq_c-2s(k^2)_{bc}
+-t(\xi_bq_c+\xi_cq_b-sk_{bc}).
+\end{equation}
+The associated Hermitian forms follow by polarization of this real identity.
+
+If $s\ne0$, \eqref{eq:ricci-symbol} gives $k=\xi\otimes v+v\otimes\xi$ with $v=(q-t\xi/2)/s$. For this pure gauge tensor, $c(k)^a{}_{bc}=\xi_b\xi_cv^a$, and both products in $B$ equal $\xi_b\xi_c(\xi^av_a)^2$. Thus $B$ vanishes on the whole kernel, including all mixed terms by polarization.
+
+If $s=0$, \eqref{eq:ricci-symbol} is equivalent to $q=t\xi/2$, and \eqref{eq:B-algebra} reduces to
+\begin{equation}\label{eq:B-null}
+B_{bc}(k,k)=\f14\xi_b\xi_c F(k,k),\quad
+F(k,k)=k_{ab}k^{ab}-\f12(\tr_gk)^2.
+\end{equation}
+For every $k$ in that kernel and every gauge tensor $\ell=\xi\otimes v+v\otimes\xi$,
+\begin{equation*}
+F(k,\ell)=2q^av_a-(\tr_gk)\xi^av_a=0.
+\end{equation*}
+This verifies physical/gauge cross cancellation, not just pure-gauge self cancellation.
+
+Choose a null frame $L=\xi^\sharp,\underline L,e_1,e_2$ with $g(L,\underline L)=-2$ and orthonormal screen. The constraint gives $k_{LL}=k_{LA}=0$ and $k_{11}+k_{22}=0$. Gauge additions independently set $k_{L\underline L},k_{\underline LA},k_{\underline L\underline L}$ to zero. The remaining tensor is a trace-free symmetric screen tensor, so $F(k,k)=\sum_{A,B}|k_{AB}|^2\geq0$. This proves nonnegativity on the physical quotient and invariance under the chosen representative.
+
+\subsection{Construction, positivity, and compatibility}
+
+Let $Z=\{P=0\}\cap S_r^*M$. Define
+\begin{equation}\label{eq:mu-invariant}
+\dd\mu=\f14\mathbf1_Z\bigl(g^{ac}g^{bd}-\f12g^{ab}g^{cd}\bigr)\dd\sigma_{ab,cd}.
+\end{equation}
+Restriction to the closed set $Z$ is a Borel restriction of a measure; no nonsmooth pseudodifferential projection is being asserted. Off $Z$, the unrestricted contraction need not be nonnegative and must not be used.
+
+Dominate $\sigma$ by its positive $r$ trace measure. Its positive Hermitian density can be diagonalized in each finite-dimensional fiber, and every nonzero eigenvector belongs to $\ker\mathcal R_\xi$. On $Z$, each contribution to \eqref{eq:mu-invariant} is nonnegative by \eqref{eq:B-null}. Smooth coefficients are bounded on compact unit-cosphere sets, proving local finiteness. Equation~\eqref{eq:weak-ricci}, together with \eqref{eq:B-algebra} off $Z$ and \eqref{eq:B-null} on $Z$, proves
+\begin{equation*}
+\int_M\Ric(g)_{ab}S^{ab}\dV=\int_{S_r^*M}S^{ab}\xi_a\xi_b\,\dd\mu.
+\end{equation*}
+Testing with $S^{ab}=\phi g^{ab}$ gives $\Scal(g)=0$, proving Theorem~\ref{thm:quadratic}.
+
+For another auxiliary metric $r'$, let $s_0(x,\xi)=|\xi|_{r'}$ on $S_r^*M$ and $F_0(x,\xi)=(x,\xi/s_0)$. The covariance of the full angular symbol functional in \eqref{eq:sigma}, and the factorization $M_E=\xi\otimes\xi\otimes\sigma$, give
+\begin{equation}\label{eq:norm-change}
+\sigma'=F_{0*}(s_0^2\sigma),\qquad \mu'=F_{0*}(s_0^2\mu).
+\end{equation}
+This argument uses all angular symbols. Equality of stress second moments alone would not establish this transformation, since those moments do not determine a measure uniquely.
+
+\begin{corollary}[Base marginal and angular disintegration]
+\label{cor:base-marginal}
+Under the hypotheses of Theorem~\ref{thm:quadratic}, put
+$e_r=r^{ab}G(g)_{ab}$. Then $e_r$ is smooth and nonnegative, and
+\begin{equation}\label{eq:base-marginal}
+\pi_*\mu=e_r\,\dV.
+\end{equation}
+There is a measurable family of nonnegative finite measures $\mu_x$ on
+the unit null covectors at $x$, defined for almost every $x$, such that
+\begin{equation*}
+\dd\mu(x,\xi)=\dd\mu_x(\xi)\,\dV(x),\qquad
+\mu_x(S_{r,x}^*M)=e_r(x),\qquad
+G(g)_{ab}(x)=\int_{S_{r,x}^*M}\xi_a\xi_b\,\dd\mu_x(\xi).
+\end{equation*}
+No angular regularity or determination by the moment tensor alone is asserted.
+For a fixed $\mu$, disintegration has its usual almost-everywhere uniqueness.
+In particular,
+the physical measure has no concentration in its base marginal, and it
+vanishes over every open vacuum region of $g$.
+\end{corollary}
+\begin{proof}
+In \eqref{eq:moment} take $S^{ab}=\phi r^{ab}$, with
+$\phi\in C_c^\infty(M)$. On the unit section $r^{ab}\xi_a\xi_b=1$,
+which proves \eqref{eq:base-marginal}. Positivity and smoothness give
+$e_r\geq0$ everywhere. Disintegrate the locally finite positive measure
+over its base marginal, first on a compact exhaustion; the fiber
+probability measures, multiplied by $e_r(x)$, give $\mu_x$ relative to
+$\dV$. Set $\mu_x=0$ where $e_r=0$. Testing each tensor component of
+\eqref{eq:moment} gives the last identity almost everywhere.
+None of these assertions uses transport.
+\end{proof}
+
+\section{Analytic estimates for cubic energies}\label{sec:analytic}
+
+We collect estimates whose constants are independent of the number of
+dyadic frequency scales. All fields in this section take values in a
+fixed finite-dimensional real vector space, complexified when Fourier
+transforms are used. All coordinate variables range over $\R^4$; fields supported in a chart
+are extended by zero. In proofs, $L^p_x=L^p(\R^4,\dd x)$ and
+$W^{j,p}_x=W^{j,p}(\R^4)$. Here $\partial$ is the full coordinate gradient;
+$D_j=-\ii\partial_j$ and $b(D)$ are Fourier multiplier notation.
+Smooth coefficients are extended with fixed nested cutoffs when global
+norms are used. Pairings use Lebesgue density and the fixed Euclidean
+fiber inner product. The metric $m$ is a
+constant Lorentz form in a compact family of nondegenerate metrics, and
+$q_m(\xi)=m^{ab}\xi_a\xi_b$; for covectors we write
+$m(p,\xi)=m^{ab}p_a\xi_b$. All infrared regularizations are fixed.
+The constants in the continuity, transfer, and correction estimates are
+uniform on bounded sets of the finitely many normalized symbol derivatives
+used in their proofs. In the angular estimate those bounds are uniform
+in the cap index and in $\delta$.
+
+For $f\in\mathcal S(\R^4)$, the Fourier convention is
+\begin{equation*}
+\begin{gathered}
+\widehat f(\xi)=\int_{\R^4}e^{-\ii x\cdot\xi}f(x)\,\dd x,\\
+f(x)=(2\pi)^{-4}\int_{\R^4}e^{\ii x\cdot\xi}\widehat f(\xi)\,\dd\xi.
+\end{gathered}
+\end{equation*}
+A bilinear symbol $b$ acts initially on Schwartz fields by
+\begin{equation*}
+T_b(f,g)(x)=(2\pi)^{-8}\int_{\R^4\times\R^4}
+ e^{\ii x\cdot(p+\xi)}b(p,\xi)\widehat f(p)\widehat g(\xi)
+ \,\dd p\,\dd\xi.
+\end{equation*}
+Tensor components are contracted according to $b$; we also write $B_b=T_b$.
+The corresponding trilinear form, with bilinear rather than Hermitian
+contraction in its last factor, is
+\begin{equation*}
+\begin{aligned}
+\mathcal T_b(f,g,w)
+&=\int_{\R^4} T_b(f,g)(x)w(x)\,\dd x\\
+&=(2\pi)^{-8}\int_{\R^4\times\R^4}
+ b(p,q)\widehat f(p)\widehat g(q)\widehat w(-p-q)\,\dd p\,\dd q.
+\end{aligned}
+\end{equation*}
+
+\subsection{First-order commutators and cubic continuity}
+
+\begin{lemma}[Lipschitz-small coefficients in a symmetric energy pairing]\label{lem:commutator}
+Let $u$ be a compactly supported smooth vector-valued function, let $r^{ab}=r^{ba}$ be real smooth scalar coefficients in the field indices, and let $B=B^*$ be a fixed properly supported matrix pseudodifferential operator of order one with smooth $S^1_{1,0}$ symbol. Then
+\begin{equation}\label{eq:lip-estimate}
+\bigl|2\Im\ip{r^{ab}\partial_{ab}u}{Bu}\bigr|
+\leq C_B\|r\|_{W^{1,\infty}(\R^4)}\|u\|_{H^1(\R^4)}^2.
+\end{equation}
+The constant is independent of second derivatives of $r$ or $u$.
+The same estimate holds for matrix coefficients $R^{ab}$ with
+$(R^{ab})^*=R^{ba}$ if $B$ is scalar at every symbol order.
+\end{lemma}
+
+\begin{proof}
+Use the inner product linear in its first entry and initially Lebesgue density. Set $L_r=-\partial_a(r^{ab}\partial_b)$, which is formally self-adjoint. The difference $r^{ab}\partial_{ab}+L_r=-(\partial_ar^{ab})\partial_b$ obeys \eqref{eq:lip-estimate} directly. For the other part,
+\begin{equation*}
+2\Im\ip{L_ru}{Bu}=\ip{\ii [L_r,B]u}{u},
+\end{equation*}
+and the exact operator identity is
+\begin{equation*}
+[L_r,B]=-\partial_a\circ r^{ab}\circ[\partial_b,B]
+-\partial_a\circ[r^{ab},B]\circ\partial_b-[\partial_a,B]\circ r^{ab}\circ\partial_b.
+\end{equation*}
+In the first and third terms, move the outside first-order operator to the other factor; $[\partial_a,B]$ has order one, giving a bound by $C\|r\|_{L^{\infty}_x}\|u\|_{H^1_x}^2$. In the middle term, move $\partial_a$ and use the order-one Calder\'on commutator bound
+\begin{equation*}
+\|[r^{ab},B]v\|_{L^2_x}\leq C_B\|r\|_{W^{1,\infty}_x}\|v\|_{L^2_x}.
+\end{equation*}
+This is the classical Lipschitz commutator theorem, stated for $S^1_{1,0}$ operators in \cite[Theorem A]{BenyiOh}; it applies entry by entry to the fixed matrix operator. It uses no higher coefficient derivative. Conjugation by the square root of a fixed positive smooth density reduces that case to the one proved, introducing only bounded lower-order terms.
+\end{proof}
+
+
+The matrix-coefficient version also holds when
+$(R^{ab})^*=R^{ba}$ and $B$ is scalar at every symbol order. In that case
+$-\partial_a(R^{ab}\partial_b)$ is self-adjoint and the same proof
+applies entry by entry. Scalarity prevents an algebraic matrix
+commutator in $[R^{ab},B]$.
+
+For the next lemma, let $A^{ab}$ be constant linear maps from the field
+space to its endomorphisms, with
+$(A^{ab}(H))^{\mathsf T}=A^{ba}(H)$ for every real field value $H$.
+Let $\mathcal Q$ be any fixed constant-coefficient bilinear expression
+in first derivatives, and let $B=a(D)\Id$ have a real smooth homogeneous
+degree-one symbol. Define
+\begin{equation*}
+\mathcal E(u)=2\Im\left\langle
+A^{ab}(u)\partial_{ab}u+\mathcal Q(\partial u,\partial u),Bu
+\right\rangle.
+\end{equation*}
+
+\begin{lemma}[Continuity of the complete cubic energy]\label{lem:cubic-continuity}
+For smooth compactly supported fields,
+\begin{equation}\label{eq:cubic-continuity}
+|\mathcal E(u)-\mathcal E(v)|
+\leq C\|\partial(u-v)\|_{L^3(\R^4)}
+(\|\partial u\|_{L^3(\R^4)}+\|\partial v\|_{L^3(\R^4)})^2.
+\end{equation}
+With fixed inhomogeneous regularizations, the corresponding estimate
+holds with $W^{1,3}(\R^4)$ norms. The estimate applies to the complete
+polarized energy; it does not estimate isolated unsymmetrized pairings.
+\end{lemma}
+
+\begin{proof}
+The finite-exponent first-order commutator estimate needed here is
+\begin{equation*}
+\|[b(D),f]v\|_{L^r_x}\leq C_b\|\partial f\|_{L^p_x}\|v\|_{L^s_x},
+\qquad 1<p,s,r<\infty,\qquad r^{-1}=p^{-1}+s^{-1},
+\end{equation*}
+for a smooth homogeneous degree-one $b$. Here is a direct global
+Coifman-Meyer decomposition, including arbitrarily small product
+frequencies. Let $\eta$ be the frequency of $f$, and choose a smooth
+degree-zero cutoff $\chi(\eta,\xi)$ equal to one when
+$|\eta|\leq|\xi|/8$ and supported where $|\eta|\leq|\xi|/4$.
+Put $\varrho=1-\chi$, $D_j=-\ii \partial_j$, and
+$c_j(\zeta)=b(\zeta)\zeta_j/|\zeta|^2$ for $\zeta\ne0$.
+Writing $T_m$ for the bilinear multiplier with symbol $m$, define
+\begin{equation*}
+ m_j=\chi\int_0^1\partial_jb(\xi+t\eta)\,\dd t,
+ \qquad M_j=\varrho\f{\eta_j+\xi_j}{|\eta|},
+ \qquad N_j=\varrho\f{\xi_j}{|\eta|}.
+\end{equation*}
+All three are global order-zero Coifman-Meyer symbols. On the support
+of $\chi$, the integration segment stays a fixed fraction of
+$|\eta|+|\xi|$ away from zero. On the support of $\varrho$,
+$|\eta|\geq c(|\eta|+|\xi|)$; hence $M_j,N_j$ extend smoothly by zero
+near $\eta=0$ on the joint unit sphere. These facts bound every fixed
+number of Cartesian symbol derivatives, including on the axes and at
+$\eta+\xi=0$. The exact identity is
+\begin{equation*}
+[b(D),f]v
+=\sum_j T_{m_j}(D_jf,v)
+ +\sum_j c_j(D)T_{M_j}(|D|f,v)
+ -\sum_j T_{N_j}(|D|f,c_j(D)v).
+\end{equation*}
+Indeed the first sum is the integral formula for the difference of
+$b$ on the $\chi$ region, while the other sums use
+$b(\zeta)=\sum_j\zeta_jc_j(\zeta)$ on its complement.
+The bilinear Coifman-Meyer theorem, the linear Mikhlin theorem,
+and the Riesz-transform bounds give
+\begin{equation*}
+\begin{aligned}
+\|[b(D),f]v\|_{L^r_x}
+&\leq\sum_{j=0}^3\bigg(
+ \|T_{m_j}(D_jf,v)\|_{L^r_x}
+ +\|c_j(D)T_{M_j}(|D|f,v)\|_{L^r_x}
+ +\|T_{N_j}(|D|f,c_j(D)v)\|_{L^r_x}\bigg)\\
+&\leq C_b\bigg(\sum_{j=0}^3\|D_jf\|_{L^p_x}
+                   +\||D|f\|_{L^p_x}\bigg)\|v\|_{L^s_x}
+ \leq C_b\|\partial f\|_{L^p_x}\|v\|_{L^s_x}.
+\end{aligned}
+\end{equation*}
+Only finitely many derivatives of $b$ on the unit sphere enter the
+constant. The multiplier on the product is kept outside the bilinear symbol;
+no differentiability at zero of $c_j$ and no summation over independent
+low/high gaps is required.
+
+For a real field $H$ put
+$L_H=-\partial_a(A^{ab}(H)\partial_b)$. The operator is self-adjoint, and
+$A^{ab}(H)\partial_{ab}=-L_H-(\partial_aA^{ab}(H))\partial_b$.
+Since $B$ commutes with coordinate derivatives,
+\begin{equation*}
+[L_H,B]=-\partial_a[A^{ab}(H),B]\partial_b.
+\end{equation*}
+Apply the commutator estimate with $p=s=3$, $r=3/2$,
+and move the outer derivative by integration by parts. H\"older's inequality gives
+\begin{equation*}
+\begin{aligned}
+\big|2\Im\ip{A^{ab}(H)\partial_{ab}u}{Bu}\big|
+&\leq \sum_{a,b}\|[A^{ab}(H),B]\partial_bu\|_{L^{3/2}_x}
+                    \|\partial_au\|_{L^3_x}
+       +C\|\partial H\|_{L^3_x}\|\partial u\|_{L^3_x}\|Bu\|_{L^3_x}\\
+&\leq C\|\partial H\|_{L^3_x}\|\partial u\|_{L^3_x}^2.
+\end{aligned}
+\end{equation*}
+Polarize the two $u$ factors together before estimating the cross terms.
+The semilinear energy is bounded by H\"older's inequality in the same spaces.
+
+Let $\mathfrak E$ be the real symmetric trilinear polarization of $\mathcal E$.
+The preceding bounds give
+\begin{equation*}
+|\mathfrak E(H,u,v)|
+\leq C\|\partial H\|_{L^3_x}\|\partial u\|_{L^3_x}\|\partial v\|_{L^3_x}.
+\end{equation*}
+Since $\mathcal E(u)=\mathfrak E(u,u,u)$, telescoping its three factors yields
+\begin{equation*}
+\begin{aligned}
+|\mathcal E(u)-\mathcal E(v)|
+&\leq|\mathfrak E(u-v,u,u)|+|\mathfrak E(v,u-v,u)|
+       +|\mathfrak E(v,v,u-v)|\\
+&\leq C\|\partial(u-v)\|_{L^3_x}
+       \bigg(\|\partial u\|_{L^3_x}+\|\partial v\|_{L^3_x}\bigg)^2.
+\end{aligned}
+\end{equation*}
+\end{proof}
+
+
+The same argument gives a useful coefficient estimate. For a real smooth
+scalar $f$, apply the commutator bound to $fA^{ab}(H)$.
+The product rule and the same divergence-form estimate give
+\begin{equation*}
+\begin{split}
+\left|2\Im\langle f A^{ab}(H)\partial_{ab}u,Bu\rangle\right|
+\leq C\bigl(&\|f\|_{L^{\infty}_x}\|\partial H\|_{L^3_x}
++\|\partial f\|_{L^{\infty}_x}\|H\|_{L^3_x}\bigr)\|\partial u\|_{L^3_x}^2.
+\end{split}
+\end{equation*}
+Polarization gives the corresponding estimate with distinct factors.
+Thus an $O(\ell)$ coefficient difference gives an $O(\ell)$ leading
+error; derivatives of that difference multiply an undifferentiated
+field, which tends to zero at fixed localization scale. Smooth spatial
+coefficients of a pseudodifferential test are treated by a summable
+spatial and angular symbol expansion using this estimate.
+
+\begin{lemma}[Quantitative freezing of a complete cubic energy]
+\label{lem:freezing}
+Work in a fixed relatively compact chart in $\mathbb R^4$ with a fixed
+finite-dimensional real field space. Let $\mathcal T$ be a real symmetric
+trilinear action form whose principal cubic polynomial is, up to its
+fixed normalization,
+\begin{equation}\label{eq:freezing-statement-1}
+ P_C(z)=\int_{\R^4} C_{IJK}^{ab}(x)z^I\partial_a z^J\partial_b z^K\,\dd x,
+ \qquad C_{IJK}^{ab}=C_{IKJ}^{ba},
+\end{equation}
+and whose remaining terms have at most one field derivative in total.
+All coefficients are fixed and smooth. Let $B$ be a scalar self-adjoint
+order-one test with real odd principal symbol $a(x,\xi)$, chosen so that
+$Q=-\ii B$ preserves real fields. Use one fixed infrared regularization.
+For $x_0$ in a fixed compact subset let $\mathcal T_0$ retain just the
+principal coefficients frozen at $x_0$, and put $Q_0=-\ii a(x_0,D)$.
+For real $z\in C_c^\infty(B(x_0,R\ell))$, $0<\ell\leq\ell_0\leq1$,
+\begin{equation}\label{eq:freezing-quantitative}
+ \big|\mathcal T(z,z,Qz)-\mathcal T_0(z,z,Q_0z)\big|
+ \leq A\ell\|\partial z\|_{L^3(\R^4)}^3+B_\ell\|z\|_{L^3(\R^4)}\|\partial z\|_{L^3(\R^4)}^2.
+\end{equation}
+Here $A$ depends only on $R$, the field dimension, and finitely many
+fixed smooth coefficient and normalized test-symbol seminorms.
+It is independent of $\ell$, $x_0$, the number of patches, and the
+frequencies of $z$. For each fixed $\ell$, $B_\ell$ is finite and
+uniform in $x_0$, with the same independence from the frequencies of
+$z$; it may depend on further fixed smooth seminorms and on $\ell^{-1}$.
+No second derivative of $z$ is present in the estimate.
+\end{lemma}
+
+\begin{proof}
+Set $R^{ab}_{JK}(z)=C_{IJK}^{ab}z^I$. We first estimate
+$\mathcal E_{C,Q}(z)=\dd P_C(z)[Qz]$.
+The third derivative $P_C'''(z,z,Qz)$ is exactly
+$2\mathcal E_{C,Q}(z)$, so this choice changes only a fixed numerical
+factor in the action form. Expanding the three test placements gives
+$\partial_bQz=Q\partial_bz+[\partial_b,Q]z$.
+The combined $(a,J),(b,K)$ symmetry and $Q^*=-Q$ imply
+\begin{equation*}
+\begin{aligned}
+2\int_{\R^4}(\partial_a z)^J R^{ab}_{JK}(z)Q(\partial_b z)^K\,\dd x
+&=-\int_{\R^4}(\partial_a z)^J[Q,R^{ab}_{JK}(z)](\partial_b z)^K\,\dd x.
+\end{aligned}
+\end{equation*}
+Thus the apparent second derivative cancels before estimation:
+\begin{equation*}
+\begin{split}
+\mathcal E_{C,Q}(z)
+={}&\int_{\R^4} C_{IJK}^{ab}(Qz)^I\partial_a z^J\partial_b z^K\,\dd x\\
+ &-\int_{\R^4} \partial_a z^J[Q,R^{ab}_{JK}(z)]\partial_b z^K\,\dd x\\
+ &+2\int_{\R^4} R^{ab}_{JK}(z)\partial_a z^J[\partial_b,Q]z^K\,\dd x.
+\end{split}
+\end{equation*}
+
+For a real odd degree-one symbol $b$ put $Q_b=-\ii b(D)$ and
+$Q_{f,b}=(fQ_b+Q_bf)/2$, where $f$ is real. Let $\mathfrak m_N(b)$
+be a fixed finite normalized symbol seminorm controlling the $L^3$
+multiplier bound and the $(3,3,3/2)$ commutator bound proved above;
+the derivative count $N$ is fixed once and for all.
+Since $f$ is scalar,
+\begin{equation*}
+\begin{gathered}
+[Q_{f,b},R]=\f12\big(f[Q_b,R]+[Q_b,R]f\big),\\
+[\partial_a,Q_{f,b}]=\f12\big((\partial_af)Q_b+Q_b(\partial_af)\big).
+\end{gathered}
+\end{equation*}
+The product rule gives
+\begin{equation*}
+\|\partial(Cz)\|_{L^3_x}
+\leq\|C\|_{L^\infty_x}\|\partial z\|_{L^3_x}
+    +\|\partial C\|_{L^\infty_x}\|z\|_{L^3_x}.
+\end{equation*}
+Using this estimate in the commutator identity and applying H\"older's
+inequality gives
+\begin{equation*}
+\begin{split}
+|\mathcal E_{C,Q_{f,b}}(z)|\leq c\mathfrak m_N(b)\big[&
+ \|C\|_{L^{\infty}_x}\|f\|_{L^{\infty}_x} \|\partial z\|_{L^3_x}^3\\
+ &+(\|C\|_{L^{\infty}_x}\|\partial f\|_{L^{\infty}_x}
+       +\|\partial C\|_{L^{\infty}_x}\|f\|_{L^{\infty}_x})\|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2\\
+ &+\|C\|_{L^{\infty}_x}\|\partial^2f\|_{L^{\infty}_x} \|z\|_{L^3_x}^2\|\partial z\|_{L^3_x}\big].
+\end{split}
+\end{equation*}
+Every differentiated coefficient multiplies an undifferentiated field.
+Since $z$ is supported in $B(x_0,R\ell)$, Poincar\'e's inequality gives
+\begin{equation*}
+\|z\|_{L^3_x}\leq c_R\ell\|\partial z\|_{L^3_x}.
+\end{equation*}
+
+Insert nested cutoffs $\theta_\ell$ equal to one near $\supp z$.
+Replacing $Q-Q_0$ by $\theta_\ell(Q-Q_0)\theta_\ell$ leaves its action
+energy unchanged. Its principal symbol is $-\ii s_\ell$, where the
+real underlying symbol is
+$s_\ell=\theta_\ell^2(a(x,\xi)-a(x_0,\xi))$.
+After $y=(x-x_0)/\ell$, every fixed $y$ and angular derivative of
+$s_\ell(x_0+\ell y,\omega)$ is $O(\ell)$, uniformly in $x_0$:
+the zeroth derivative uses the mean-value theorem, and each positive
+$y$ derivative of $a$ supplies a factor $\ell$.
+A real spatial Fourier expansion on a fixed $y$ cube therefore gives
+$s_\ell=\sum_k f_{k,\ell}(x)b_{k,\ell}(\xi)$, with real $f_{k,\ell}$
+and real odd degree-one $b_{k,\ell}$, such that for every fixed $L$
+\begin{equation*}
+\begin{gathered}
+\mathfrak m_N(b_{k,\ell})\leq c\ell\mathcal A_{L,N}(a)(1+|k|)^{-L},\\
+\|\partial^rf_{k,\ell}\|_{L^\infty_x}\leq c_r\ell^{-r}(1+|k|)^r
+\quad(0\leq r\leq2).
+\end{gathered}
+\end{equation*}
+Here $\mathcal A_{L,N}(a)$ is a finite fixed smooth-symbol seminorm;
+the spatial profiles include fixed rescaled support cutoffs.
+Taking $L>7$ makes the following sums uniform in every truncation:
+\begin{equation*}
+\begin{gathered}
+\sum_k\mathfrak m_N(b_{k,\ell})\|f_{k,\ell}\|_{L^\infty_x}
+\leq c\ell\mathcal A_{L,N}(a),\\
+\sum_k\mathfrak m_N(b_{k,\ell})
+ (\|\partial f_{k,\ell}\|_{L^\infty_x}+\ell\|\partial^2f_{k,\ell}\|_{L^\infty_x})
+ \leq c\mathcal A_{L,N}(a).
+\end{gathered}
+\end{equation*}
+The sum of the skew-adjoint operators $Q_{f_{k,\ell},b_{k,\ell}}$
+has principal symbol $-\ii s_\ell$. Its difference from
+$\theta_\ell(Q-Q_0)\theta_\ell$ is order zero by smooth symbol
+calculus. At each fixed $\ell$ its $L^3$ and $W^{1,3}$ operator norms
+are uniformly bounded in $x_0$. An order-zero test $R_0$ contributes
+at most $c_\ell \|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2$: expand the three action placements and use
+$\|R_0z\|_{L^3_x}\leq c_\ell \|z\|_{L^3_x}$ and
+$\|\partial R_0z\|_{L^3_x}\leq c_\ell(\|\partial z\|_{L^3_x}+\|z\|_{L^3_x})$. This also treats the fixed infrared
+and quantization remainders. Thus the weighted sums above bound
+test freezing by $c\ell\|C\|_{L^{\infty}_x}\mathcal A_{L,N}(a)\|\partial z\|_{L^3_x}^3+c_\ell \|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2$.
+
+For coefficient freezing, extend $C-C(x_0)$ with a nested cutoff.
+Its supremum is at most $c\ell\|\partial C\|_{L^{\infty}_x}$, and its first derivative
+is at most $c\|\partial C\|_{L^{\infty}_x}$. The separated estimate with $f=1$ and
+$b=a(x_0,\cdot)$ applies. In particular one may take the leading
+constant to be a fixed multiple of
+\begin{equation*}
+\|C\|_{L^{\infty}_x}\mathcal A_{L,N}(a)
++\|\partial C\|_{L^{\infty}_x}\sup_{x_0}\mathfrak m_N(a(x_0,\cdot)).
+\end{equation*}
+Finally, lower action terms containing $z^2\partial(Qz)$ are integrated once
+by parts; all resulting terms have an undifferentiated $z$ and obey
+the $B_\ell \|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2$ bound. All their coefficients belong to the fixed
+smooth background. Collecting the coefficient and test differences gives
+\begin{equation*}
+\begin{aligned}
+\big|\mathcal T(z,z,Qz)-\mathcal T_0(z,z,Q_0z)\big|
+&\leq c\sum_k|\mathcal E_{C,Q_{f_{k,\ell},b_{k,\ell}}}(z)|
+       +c|\mathcal E_{C-C(x_0),Q_0}(z)|
+       +c_\ell\|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2\\
+&\leq A\ell\|\partial z\|_{L^3_x}^3
+       +B_\ell\|z\|_{L^3_x}\|\partial z\|_{L^3_x}^2.
+\end{aligned}
+\end{equation*}
+This proves \eqref{eq:freezing-quantitative}.
+\end{proof}
+
+\subsection{Angular localization and normalized trilinear symbols}
+
+Fix once and for all $0<\kappa<1/16$, which separates low/high from
+comparable frequencies. Here and below a low/high boundary is understood
+up to the following fixed numerical constants. Choose
+$\vartheta\in C^\infty([0,\infty);[0,1])$ equal to one on $[0,1/4]$
+and zero on $[1,\infty)$. For a nonzero triad $p+q+r=0$ set
+$\lambda_p=|p|$, $\lambda_q=|q|$, $\lambda_r=|r|$, and define
+\begin{equation}\label{eq:analytic-triad-partition}
+L_p=\vartheta\!\left(\f{\lambda_p^2}{\kappa^2(\lambda_q^2+\lambda_r^2)}\right),
+\quad L_q,L_r\ \hbox{cyclically},\qquad
+L_{\rm comp}=1-L_p-L_q-L_r.
+\end{equation}
+At most one low cutoff is nonzero. Indeed $L_p,L_q\ne0$ would give
+$\lambda_p^2+\lambda_q^2<\kappa^2(\lambda_p^2+\lambda_q^2+2\lambda_r^2)\leq5\kappa^2(\lambda_p^2+\lambda_q^2)$.
+Thus all four cutoffs are nonnegative and sum to one. On $L_p\ne0$,
+$\lambda_p/\lambda_q\leq2\kappa$ and $1-2\kappa\leq \lambda_r/\lambda_q\leq1+2\kappa$;
+on $L_{\rm comp}\ne0$, $\min(\lambda_p,\lambda_q,\lambda_r)/\max(\lambda_p,\lambda_q,\lambda_r)\geq\kappa/2$.
+The low piece is invariant under interchange of its high slots and
+under high adjunction $(p,q,r)\mapsto(-p,-r,-q)$.
+
+For the three-physical low pieces we also fix the angular partition
+explicitly. Put
+\begin{equation*}
+\mathfrak d(p,q)=\f{|p\wedge q|^2}{\lambda_p^2\lambda_q^2},\qquad
+N_p=\vartheta\!\left(\f{\mathfrak d(p,q)}{\delta^2}\right)
+    \vartheta\!\left(\f{\mathfrak d(p,r)}{\delta^2}\right).
+\end{equation*}
+Use $L_pN_p$ for the near piece and $L_p(1-N_p)$ for the far piece.
+These cutoffs have the same high-slot symmetries. On the far support,
+at least one of the two squared projective separations is at least
+$\delta^2/4$; the identity
+$\mathfrak d(p,r)=(\lambda_q^2/\lambda_r^2)\mathfrak d(p,q)$ shows that both are
+bounded below by a fixed multiple of $\delta^2$.
+
+For $0<\delta<\delta_0$ set
+$\eta=c\kappa\delta^2$, with $c>0$ sufficiently small and fixed.
+Cover the projective null directions by $N_\delta\leq C\delta^{-2}$ caps
+of radius $\delta$, with bounded overlap, using both signed lifts to the
+two sheets. Take smooth multipliers $P_\gamma$ supported in these caps
+and in $|q_m(\xi)|\leq C\eta|\xi|^2$, forming a partition on a smaller
+cone neighborhood. These multipliers are constructed from fixed smooth
+profiles in the parabolically rescaled cap coordinates, with uniform
+bounds for every required normalized derivative. Bounded enlargements
+$P_\gamma^+$ will always be used on fields when a symbol is
+supported in a cap. They equal one on that support, including its
+thin-cone profile, and have bounded frequency overlap.
+
+For clarity, the cap localization of a trilinear form uses only one
+partition: insert $\sum_\gamma P_\gamma(p)=1$ in one designated slot.
+On the near support, the triad geometry puts both other slots in a
+fixed enlargement of that same projective cap. Choose $P_\gamma^+$
+equal to one on all three resulting slot supports, retaining both
+signed lifts. Thus each localized form acts on
+$(P_\gamma^+f,P_\gamma^+g,P_\gamma^+w)$. A maximal $\delta$-separated
+net on the two-dimensional projective null set gives
+$N_\delta\leq C\delta^{-2}$ and uniformly bounded overlap even after
+this fixed enlargement. In particular, no independent sum over three
+cap indices is introduced.
+
+The individual bounds, and the angular sequence estimate needed here,
+are
+\begin{equation}\label{eq:analytic-cap-bounds}
+\begin{gathered}
+\|P_\gamma f\|_{L^p_x}\leq C_p\|f\|_{L^p_x}\quad(1<p<\infty),\\
+\bigg(\sum_\gamma\|P_\gamma f\|_{L^3_x}^3\bigg)^{1/3}
+\leq C_{p_*} N_\delta^{1/(3(p_*-2))}\|f\|_{L^3_x}
+\quad(3<p_*<\infty).
+\end{gathered}
+\end{equation}
+The same estimates hold for $P_\gamma^+$.
+To verify the uniform first bound, rotate the cap center and use null
+coordinates $(s,t,z)$ in frequency space, with two screen coordinates
+$z$ and $q_m=-st+|z|^2$. On the cap,
+$|z|\ls\delta|s|$ and $|t|\ls\delta^2|s|$.
+The invertible linear change
+$(s,t,z)\mapsto(s,t/\delta^2,z/\delta)$ puts its symbol in a fixed cone
+with uniform Mikhlin seminorms. Its determinant cancels under conjugation
+on $L^p$. Constants may depend on the fixed $\kappa,c$ and the enlargement,
+but not on $\delta$. Give the finite cap set $\Gamma_\delta$ counting
+measure and regard $Tf(x,\gamma)=P_\gamma f(x)$ as a linear operator
+into functions on $\R^4\times\Gamma_\delta$. Plancherel and bounded
+frequency overlap give
+\begin{equation*}
+\|Tf\|_{L^2(\dd x\times\#)}^2
+=\sum_\gamma\|P_\gamma f\|_{L^2_x}^2\leq C\|f\|_{L^2_x}^2.
+\end{equation*}
+For every fixed finite $p_*>3$, the individual cap estimates give
+\begin{equation*}
+\|Tf\|_{L^{p_*}(\dd x\times\#)}^{p_*}
+=\sum_\gamma\|P_\gamma f\|_{L^{p_*}_x}^{p_*}
+\leq C_{p_*}^{p_*}N_\delta\|f\|_{L^{p_*}_x}^{p_*}.
+\end{equation*}
+Riesz-Thorin interpolation between these two ordinary $L^p$ estimates
+uses $1/3=(1-\theta_*)/2+\theta_*/p_*$, hence
+$\theta_*=p_*/(3(p_*-2))$. Its counting factor is
+$N_\delta^{\theta_*/p_*}=N_\delta^{1/(3(p_*-2))}$, proving
+\eqref{eq:analytic-cap-bounds}. This is an $L^3(\dd x\times\#)$
+estimate; no angular $\ell^2$ bound at $L^3$ or $L^\infty$ multiplier
+estimate is needed. All exponents remain finite.
+
+Consider a nonzero triad $(p,\xi,-p-\xi)$ whose three frequencies satisfy
+$|q_m(\zeta)|\leq C\eta|\zeta|^2$, and choose $p$ to have least
+Euclidean magnitude. Write $\lambda_p=|p|$, $\lambda_q=|\xi|$; the two high magnitudes
+are comparable. The identity
+\begin{equation*}
+q_m(p+\xi)=q_m(p)+q_m(\xi)+2m(p,\xi)
+\end{equation*}
+implies, on the comparable piece $\lambda_p/\lambda_q\geq\kappa/2$, that the three projective directions are
+in boundedly adjacent $\delta$ caps: their squared angular separation is
+at most $C\eta/\kappa$. Indeed the cone bounds first give
+$|m(p,\xi)|/(\lambda_p\lambda_q)\leq C\eta/\kappa$; on two near-null sheets the absolute
+normalized Lorentz product controls squared projective angle, up to
+$O(\eta)$. On the low pieces $\lambda_p/\lambda_q\leq2\kappa$, use the near/far
+partition above. In the separated region
+\begin{equation}\label{eq:analytic-phase-gap}
+\Delta(p,\xi):=q_m(\xi+p)-q_m(\xi)
+=2m(p,\xi)+q_m(p),\qquad
+|\Delta(p,\xi)|\geq c_1\delta^2\lambda_p\lambda_q.
+\end{equation}
+Here $|m(p,\xi)|\geq c_2\delta^2\lambda_p\lambda_q$, whereas
+$|q_m(p)|\leq C\eta \lambda_p^2$ is absorbable by the fixed choice of $c$.
+Only the angular comparison identifies antipodal directions; signed
+frequencies and the exact phase are retained in every Fourier calculation.
+
+
+The following transfer statement separates the symbol calculation from
+its operator estimate. ``Normalized cap variables'' means the variables
+obtained from the common parabolic linear change used above, with each
+radial frequency divided by its own magnitude. Smoothness in the ratio
+$\rho=\lambda_p/\lambda_q$ is required down to $\rho=0$, not only on a finite range
+of frequency gaps.
+
+\begin{lemma}[All-scale transfer and angular summation]\label{lem:analytic-near}
+Suppose a translation-invariant trilinear Fourier multiplier on
+$p+q+r=0$ has, after factoring the three first-derivative weights,
+a symbol $m$ homogeneous of degree zero under simultaneous positive
+dilation of its three frequencies. On each piece of a fixed smooth
+homogeneous low/high partition, require
+$m=M(\omega,\theta,\rho)$, where $\omega=p/\lambda_p$, $\theta=q/\lambda_q$, and
+$\rho=\lambda_p/\lambda_q$. Let $\mathfrak A_{100}$ bound its $C^{100}$ extension to
+$\rho=0$ in a fixed finite angular atlas, together with the
+$C^{100}$ extension norms of the comparable pieces to fixed normalized
+annular boxes. Fixed factorwise infrared cutoffs are allowed separately.
+For the three differentiated factors $f,g,w$, the form satisfies
+\begin{equation}\label{eq:analytic-near-statement-2}
+|\mathcal T_m(f,g,w)|
+\leq C_\kappa\mathfrak A_{100}
+\|f\|_{L^3(\R^4)}\|g\|_{L^3(\R^4)}\|w\|_{L^3(\R^4)}.
+\end{equation}
+The constant is uniform in
+finite smooth dyadic truncations of the factors and does not depend on their
+highest frequency or number of scales.
+
+If in addition the symbol is supported on adjacent null caps and equals
+$\delta^2$ times a symbol with $\mathfrak A_{100}\leq A$ uniformly in
+normalized cap variables, including the ratio endpoint, then, for
+every fixed $p_*>3$,
+\begin{equation}\label{eq:analytic-near-bound}
+|\mathcal T^{\mathrm{near}}(f,g,w)|
+\leq C_{\kappa,p_*}A\delta^{\beta_*}\|f\|_{L^3(\R^4)}\|g\|_{L^3(\R^4)}\|w\|_{L^3(\R^4)}.
+\end{equation}
+Thin-cone multipliers are included in the individual cap symbols. The
+right-hand side contains no norm of the full thin-cone projection.
+\end{lemma}
+
+\begin{proof}
+We give the symbol-to-operator step. More generally, suppose a trilinear
+symbol, after factoring its three first-derivative weights, is $\delta^2$
+times a uniformly smooth symbol in normalized cap variables, smooth also
+in $\rho=\lambda_p/\lambda_q$ down to zero on the low/high part.
+We claim that the contribution of one enlarged cap satisfies
+\begin{equation*}
+|\mathcal T_{m,\gamma}(f,g,w)|\leq C_\kappa A\delta^2
+\|P_\gamma^+f\|_{L^3_x}\|P_\gamma^+g\|_{L^3_x}\|P_\gamma^+w\|_{L^3_x}.
+\end{equation*}
+Indeed, the common parabolic change acts on the differentiated factors;
+componentwise one may take $f=|D_x|u$, using Riesz transforms to compare
+its norm with $\|\partial u\|_{L^3_x}$. Let
+$\mathcal A=E_\gamma\operatorname{diag}(1,\delta^2,\delta,\delta)$
+map a fixed enlarged cone to the physical cap, where $E_\gamma$ is a
+uniformly bounded and invertible null frame. For $F(y)=f(\mathcal A^{-\mathsf T}y)$
+and likewise $G,W$, the change of variables gives
+\begin{equation*}
+\mathcal T_m(f,g,w)=|\det\mathcal A|^{-1}
+ \mathcal T_{m(\mathcal A\cdot,\mathcal A\cdot)}(F,G,W),
+\qquad \|F\|_{L^3_x}=|\det\mathcal A|^{1/3}\|f\|_{L^3_x}.
+\end{equation*}
+Thus the determinant factors cancel exactly. On the enlarged fixed cone
+$|s|\geq c|\zeta|$, so
+$b_\delta(\zeta)=|\mathcal A\zeta|/|\zeta|$ and its reciprocal have
+uniform homogeneous symbol seminorms. This is a cone-restricted
+statement, not uniform invertibility of $\mathcal A$ on all frequencies.
+Write $p'=\mathcal A^{-1}p$, $q'=\mathcal A^{-1}q$,
+$\lambda_p'=|p'|$, $\lambda_q'=|q'|$, $\omega'=p'/\lambda_p'$, $\theta'=q'/\lambda_q'$.
+If $\rho'=\lambda_p'/\lambda_q'$ is the transformed radial ratio, then
+\begin{equation*}
+\rho=\rho'\f{b_\delta(\omega')}{b_\delta(\theta')}.
+\end{equation*}
+This preserves all required endpoint and annular derivative bounds.
+Numerical low/high thresholds may change by fixed factors; their
+transition pieces have finitely many relative radial shifts. It remains
+to prove a fixed-cone estimate for the transformed normalized symbol.
+In that argument we write $M,f,g,w,\omega,\theta$ for the transformed
+symbol, factors and angles, while $\rho$ retains the physical ratio.
+Radial annuli may be taken in the transformed magnitudes, which are
+uniformly comparable to the physical ones on this cone.
+
+For one already partitioned low/high symbol put
+$M_0(\omega,\theta)=M(\omega,\theta,0)$. Choose a fixed smooth ratio
+cutoff $\chi_0$ equal to one near zero and supported in a sufficiently
+small low/high region. The exact split is
+\begin{equation*}
+M=\chi_0(\rho)M_0+\rho R,\qquad
+R=\f{M-\chi_0(\rho)M_0}{\rho}.
+\end{equation*}
+Near zero, $R=\int_0^1\partial_\rho M(\omega,\theta,t\rho)\,\dd t$.
+Away from zero the quotient is harmless, so $R$ has a uniform
+$C^{99}$ bound and fixed low/high support. Fixed transition regions
+are again included among the finitely many relative annular shifts.
+No vanishing of $M_0$ is assumed. A separated angular expansion of
+$M_0$ has coefficients bounded
+by $C\mathfrak A_{100}(1+|a|+|b|)^{-40}$; its angular multiplier norms
+grow at most as $(1+|a|)^6$ and $(1+|b|)^6$. These fixed derivative
+counts suffice in dimension four and are not claimed to be optimal.
+There is a cutoff correction in identifying its radial paraproduct.
+On $\lambda_q'\sim2^j$, choose
+$S_{<j-C}$ with symbol $\psi(2^{C-j}p')$, where $\psi=1$ on the
+unit ball and is supported in the ball of radius two. A fixed large
+$C$ puts its support where $\chi_0(\rho)=1$, uniformly in the
+two angles. Both cutoffs equal one when $\lambda_p'/\lambda_q'$ is sufficiently
+small. Their difference has $c_\kappa\leq \lambda_p/\lambda_q\leq C_\kappa$, so only
+finitely many relative annular shifts occur; these are estimated below.
+The remaining endpoint terms are exactly paraproducts of the form
+\begin{equation*}
+\sum_j\int_{\R^4}
+(S_{<j-C}R_1f)(\Delta_jR_2g)(\widetilde\Delta_jw)\,\dd x.
+\end{equation*}
+Here $\widetilde\Delta_j$ is a fixed thick annulus equal to one on
+the possible product frequencies $-p'-q'$; low/high separation makes
+this insertion exact. The maximal-function bound, the two square-function
+bounds, and H\"older's inequality give
+\begin{equation*}
+\begin{aligned}
+\bigg|\sum_j\int_{\R^4}
+ (S_{<j-C}R_1f)(\Delta_jR_2g)(\widetilde\Delta_jw)\,\dd x\bigg|
+&\leq\int_{\R^4}\sup_j|S_{<j-C}R_1f|
+ \bigg(\sum_j|\Delta_jR_2g|^2\bigg)^{1/2}
+ \bigg(\sum_j|\widetilde\Delta_jw|^2\bigg)^{1/2}\,\dd x\\
+&\leq C\|R_1f\|_{L^3_x}\|R_2g\|_{L^3_x}\|w\|_{L^3_x}.
+\end{aligned}
+\end{equation*}
+The angular coefficients sum the polynomial norms of $R_1,R_2$.
+No separate sum over low/high gaps is applied to $M_0$.
+
+For $\rho R$, fix a radial gap $s\geq C$. The factor $\rho$ is bounded
+by $C2^{-s}$. More precisely, on transformed annuli
+$p'=2^{j-s}\zeta$, $q'=2^j\upsilon$ one has
+$\rho=2^{-s}|\mathcal A\zeta|/|\mathcal A\upsilon|$.
+Every required annular derivative of this expression is $O(2^{-s})$;
+the remaining symbol has smooth bounds uniform in $s$ and $\delta$.
+Before separating the frequency variables, insert a thick product-frequency
+annular cutoff equal to one on the original block support. The two
+high magnitudes are comparable, so the product-frequency cutoff is a fixed
+enlargement of the $j$th annulus, uniformly in $s$. Keep this cutoff
+on the third factor during the following expansion.
+Extend the normalized two-factor symbol to a fixed eight-dimensional
+box and expand it in a Fourier series. Its coefficients obey
+\begin{equation*}
+|c_{s,a,b}|\leq C\mathfrak A_{100}\,2^{-s}
+(1+|a|+|b|)^{-40},\qquad a,b\in\mathbb Z^4.
+\end{equation*}
+Each separated term consists of annular
+multipliers translated at their own scales. Their square-function bounds
+grow at most as $(1+|a|)^6$ or $(1+|b|)^6$, uniformly in $s$: randomize
+the annular signs, apply Mikhlin using bounded annular overlap, and use
+Khintchine's inequality. More explicitly, on a multiplier at scale
+$2^{j-s}$, each normalized derivative of
+$\exp(\ii 2^{-(j-s)}a\cdot\xi)$ costs at most $C(1+|a|)$.
+Only boundedly many randomized annuli meet any nonzero frequency,
+independently of $s$ and the finite index set. The required derivatives
+are all controlled by $\mathfrak A_{100}$.
+Use
+\begin{equation*}
+\sum_j|f_jg_jw_j|
+\leq\bigg(\sum_j|f_j|^2\bigg)^{1/2}
+     \bigg(\sum_j|g_j|^2\bigg)^{1/2}
+     \bigg(\sum_j|w_j|^2\bigg)^{1/2}
+\end{equation*}
+and H\"older. The Fourier coefficients are absolutely summable with
+these multiplier losses, since
+\begin{equation*}
+\sum_{a,b\in\mathbb Z^4}
+(1+|a|+|b|)^{-40}(1+|a|)^6(1+|b|)^6
+\leq C\sum_{n\in\mathbb Z^8}(1+|n|)^{-28}<\infty.
+\end{equation*}
+Let $\mathcal T_s$ be the part with transformed radial gap $s$.
+The annular expansion and these square-function bounds yield
+\begin{equation*}
+\begin{aligned}
+|\mathcal T_s(f,g,w)|
+&\leq C\sum_{a,b\in\mathbb Z^4}|c_{s,a,b}|
+ (1+|a|)^6(1+|b|)^6
+ \|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}\\
+&\leq C\mathfrak A_{100}2^{-s}
+ \|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}.
+\end{aligned}
+\end{equation*}
+Summing every radial gap gives
+\begin{equation*}
+\begin{aligned}
+|\mathcal T_{\rho R}(f,g,w)|
+&\leq\sum_{s\geq C}|\mathcal T_s(f,g,w)|\\
+&\leq C\mathfrak A_{100}\sum_{s\geq C}2^{-s}
+ \|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}
+ \leq C\mathfrak A_{100}\|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}.
+\end{aligned}
+\end{equation*}
+On the comparable
+region there are only $O_\kappa(1)$ relative radial shifts; the same
+annular expansion and three square functions apply directly. Here too
+the thick product-frequency annulus must be inserted before the expansion: a
+single separated Fourier term need not retain the original exclusion
+of $p'+q'=0$. The third cutoff retains that exclusion and the third-factor
+square-function bound term by term. These
+arguments initially apply to finite radial sums and give constants
+independent of their length, hence also their limits. More precisely,
+finite truncations of the factors $\sum_{j\in E}\epsilon_j\Delta_j$, with
+$|\epsilon_j|\leq1$, have uniformly bounded Mikhlin norms by annular
+overlap and may be absorbed into each factor. No arbitrary independent
+weight on every pair of dyadic indices is being allowed. They cover each
+low-slot choice and the boundedly many adjacent caps and high-index shifts.
+
+H\"older's inequality in the cap index and \eqref{eq:analytic-cap-bounds}
+give the full target estimate:
+\begin{equation*}
+\begin{aligned}
+|\mathcal T^{\mathrm{near}}(f,g,w)|
+&\leq C_\kappa A\delta^2\sum_{\gamma\in\Gamma_\delta}
+ \|P_\gamma^+f\|_{L^3_x}\|P_\gamma^+g\|_{L^3_x}\|P_\gamma^+w\|_{L^3_x}\\
+&\leq C_\kappa A\delta^2
+ \prod_{F\in\{f,g,w\}}\bigg(\sum_{\gamma\in\Gamma_\delta}
+                    \|P_\gamma^+F\|_{L^3_x}^3\bigg)^{1/3}\\
+&\leq C_{\kappa,p_*}A\delta^2N_\delta^{1/(p_*-2)}
+       \|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}\\
+&\leq C_{\kappa,p_*}A\delta^{2(p_*-3)/(p_*-2)}
+       \|f\|_{L^3_x}\|g\|_{L^3_x}\|w\|_{L^3_x}.
+\end{aligned}
+\end{equation*}
+This proves \eqref{eq:analytic-near-bound}. Omitting the cap localization
+and its prefactor in the radial argument proves the first assertion.
+\end{proof}
+
+\subsection{Scalar corrections and Lipschitz coefficients}
+
+Consider a translation-invariant bilinear operator $T_Hu=T_t(H,u)$, with low-frequency
+factor $H$ and high-frequency factor $u$. Assume its symbol is supported in
+$|p|<C\kappa|\xi|$, with $C\kappa<1/2$, and vanishes outside this
+region after a smooth
+cutoff. On that support suppose its
+Fourier-shift symbol has the form
+\begin{equation}\label{eq:analytic-extension}
+t(p,\xi)=\lambda_\xi M(\omega,z,\theta),\qquad
+\lambda_\xi=|\xi|,\quad \omega=p/|p|,\quad z=p/\lambda_\xi,\quad \theta=\xi/\lambda_\xi,
+\end{equation}
+where $M$ extends smoothly to independent variables
+$(\omega,z,\theta)\in S^3\times\mathcal K$, where $\mathcal K$ is a
+fixed compact $(z,\theta)$ domain containing $\{0\}\times S^3$.
+Low/high cutoffs are smooth in $|z|^2$ and high frequencies are
+regularized near zero. Fixed cutoffs at low absolute frequency are
+placed on $H$. This independent-variable extension is a hypothesis;
+smoothness in the ratio $|p|/|\xi|$ alone does not imply it.
+The symbol may depend on a fixed angular parameter $\delta$;
+constants $C_\delta$ below depend on finitely many of its seminorms.
+
+Expand only the independent variable $\omega$ into spherical harmonics:
+\begin{equation}\label{eq:analytic-bs-expansion}
+M(\omega,z,\theta)
+=\sum_\nu Y_\nu(\omega)c_{\nu,\delta}(z,\theta).
+\end{equation}
+For every finite derivative order in $(z,\theta)$ and every $N$, the
+coefficients have bounds $C_{N,\delta}(1+\nu)^{-N}$, with any fixed
+enumeration whose eigenvalues and multiplicities grow polynomially.
+Extend the low angular factors smoothly outside the supporting region and
+move $Y_\nu(p/|p|)$ onto the low-frequency factor, writing $R_\nu H=Y_\nu(D)H$.
+For each fixed $1<s<\infty$, the $L^s$ multiplier norms of $R_\nu$ grow
+at most polynomially in $\nu$. The remaining bilinear symbol
+\begin{equation*}
+b_{\nu,\delta}(p,\xi)
+=\lambda_\xi c_{\nu,\delta}(p/\lambda_\xi,\xi/\lambda_\xi)
+\end{equation*}
+with the smooth low/high cutoff belongs to $BS^1_{1,0}$ after high-frequency
+infrared regularization. Any fixed infrared cutoff in the \emph{low}
+frequency is placed on $H$ (and hence on $R_\nu H$), not in this
+Cartesian symbol. Keeping such a cutoff inside the symbol would fail the
+required low-derivative bounds when $|p|$ is fixed and $\lambda_\xi$ is large.
+The smooth $z=0$ extension requires no low cutoff inside the symbol. Indeed each Cartesian $p$ derivative costs
+$\lambda_\xi^{-1}$, as does each $\xi$ derivative; since $|p|\ls \lambda_\xi$,
+\begin{equation*}
+|\partial_p^\alpha\partial_\xi^\beta b_{\nu,\delta}|
+\leq C_{N,\alpha,\beta,\delta}(1+\nu)^{-N}
+       (1+|p|+|\xi|)^{1-|\alpha|-|\beta|}.
+\end{equation*}
+Thus \eqref{eq:analytic-bs-expansion} is an absolutely summable expansion in
+every required operator seminorm. In particular it is not an assertion
+that the unexpanded low angular symbol is Cartesian smooth at $p=0$.
+
+The dependence on finitely many derivatives can be made explicit.
+For a translation-invariant order-one bilinear symbol set
+\begin{equation*}
+ \mathfrak p_K(b)=
+ \max_{|\alpha|+|\beta|\leq K}
+ \sup_{p,\xi}(1+|p|+|\xi|)^{|\alpha|+|\beta|-1}
+ |\partial_p^\alpha\partial_\xi^\beta b(p,\xi)|.
+\end{equation*}
+Fix a finite derivative threshold $K$ large enough for the
+order-zero Coifman-Meyer estimate and the two exponent triples
+$(4,4,2)$ and $(4,2,4/3)$ in \cite[Theorem~1]{BenyiOh}.
+That theorem's commutator norm is bounded by
+$C\mathfrak p_K(b)\|\partial d\|_{L^{\infty}_x}$.
+Here is a functional-analytic justification of the uniform finite
+threshold, without assuming a quantitative version of that theorem.
+Let $X$ be the Fr\'echet space of translation-invariant $BS^1_{1,0}$
+symbols, $Y$ the Banach space of Lipschitz functions modulo constants,
+and $Z_r=\mathcal B(L^4(\R^4)\times L^r(\R^4),L^s(\R^4))$, where
+$(r,s)=(4,2)$ or $(2,4/3)$. Write
+$C(b,d)(f,g)=B_b(f,dg)-dB_b(f,g)$.
+The cited theorem supplies an element of $Z_r$ for every $(b,d)$.
+To verify its distributional continuity, set
+$\Lambda^2=1+|p|^2+|\xi|^2$ and use the exact decomposition
+\begin{equation*}
+b=b_0+\sum_{j=0}^3p_jb_j+\sum_{j=0}^3\xi_jc_j,
+\qquad
+b_0=\f b{\Lambda^2},\quad
+b_j=\f{p_jb}{\Lambda^2},\quad
+c_j=\f{\xi_jb}{\Lambda^2}.
+\end{equation*}
+All these coefficient symbols belong to $BS^0_{1,0}$. The ordinary
+Coifman-Meyer estimate therefore bounds $B_b$ by one derivative on
+either factor, using a fixed finite symbol seminorm. Choose $d(0)=0$.
+Then $|d(x)|\leq\|d\|_Y|x|$, so $dg\in W^{1,r}$ and
+$d\phi\in L^{s'}$ for Schwartz $g,\phi$.
+Consequently the pairing of $C(b,d)(f,g)$ with any Schwartz $\phi$
+depends continuously on $b\in X$ and $d\in Y$; its bound uses
+$\mathfrak p_{K_0}(b)\|d\|_Y$ and fixed weighted Schwartz seminorms
+of the three factors. This identifies every graph limit in $Z_r$.
+The closed graph theorem now makes $b\mapsto C(b,d)$ and
+$d\mapsto C(b,d)$ continuous separately. The latter continuity
+makes $\{b\mapsto C(b,d):\|d\|_Y\leq1\}$ pointwise bounded;
+uniform boundedness on the Fr\'echet space $X$ makes this family
+equicontinuous. Hence one finite $\mathfrak p_K$ bounds the whole
+family. Take the larger threshold for the two exponent triples and
+for the order-zero estimate. This proves the asserted uniform bound.
+
+Index real orthonormal harmonics on the round $S^3$ by degree
+$l\geq0$ and $1\leq k\leq(l+1)^2$, with eigenvalue $l(l+2)$.
+Their coefficients are
+\begin{equation*}
+c_{l,k,\delta}(z,\theta)
+=\int_{S^3}M(\omega,z,\theta)Y_{l,k}(\omega)\,\dd S(\omega).
+\end{equation*}
+Integration by parts with $(1-\Delta_{S^3})^6$ gives
+\begin{equation*}
+ \|c_{l,k,\delta}\|_{C^K(\mathcal K)}
+ \leq C(1+l)^{-12}\|M\|_{C^{K+12}(S^3\times\mathcal K)}.
+\end{equation*}
+The Mikhlin theorem and $H^7(S^3)\hookrightarrow C^5(S^3)$ give
+\begin{equation*}
+ \|Y_{l,k}(D)\|_{L^s(\R^4)\to L^s(\R^4)}\leq C_s(1+l)^7,
+ \qquad 1<s<\infty.
+\end{equation*}
+Combining these estimates with the Cartesian chain rule bounds the
+full operator constant by
+\begin{equation*}
+ C\|M\|_{C^{K+12}(S^3\times\mathcal K)}
+ \sum_{l\geq0}(l+1)^2(l+1)^7(l+1)^{-12}<\infty.
+\end{equation*}
+In particular one fixed finite norm controls the full series and all
+of its angular partial sums. Truncating at harmonic degree $L$ leaves
+an operator-norm tail at most $C(1+L)^{-2}\|M\|_{C^{K+12}(S^3\times\mathcal K)}$ in each
+of the spaces used below. Smooth upper-frequency truncations at
+scale $\lambda_{\max}$ may be placed symmetrically on the high-frequency
+factor and product. Their differentiated supports have
+$|\xi|\asymp\lambda_{\max}$, so the same seminorms are uniform above
+the fixed infrared scale; convergence of these truncations is proved below.
+
+
+\begin{lemma}[Bounds for the correction and its rough commutator]
+\label{lem:analytic-correction-bounds}
+An operator satisfying \eqref{eq:analytic-extension} obeys
+\begin{equation}\label{eq:analytic-correction-bounds}
+\begin{gathered}
+\|T_Hu\|_{L^2(\R^4)}\leq C_\delta\|H\|_{L^4(\R^4)}\|\partial u\|_{L^4(\R^4)},\\
+\|[\partial_a,T_H]u\|_{L^2(\R^4)}
+\leq C_\delta\|\partial_aH\|_{L^4(\R^4)}\|\partial u\|_{L^4(\R^4)},\\
+\|[d,T_H]v\|_{L^2(\R^4)}
+\leq C_\delta\|\partial d\|_{L^{\infty}(\R^4)}\|H\|_{L^4(\R^4)}\|v\|_{L^4(\R^4)}
+\end{gathered}
+\end{equation}
+for real scalar Lipschitz $d$. The analogous bound for the formal adjoint
+pieces holds. Inhomogeneous variants add only lower-order norms of $u$.
+\end{lemma}
+
+\begin{proof}
+For the first estimate divide each high symbol in
+\eqref{eq:analytic-bs-expansion} by the high-frequency weight $|\xi|$. Its support is low/high
+and its order-zero Cartesian derivatives have the Coifman-Meyer bounds.
+The low/high paraproduct theorem gives $L^4\times L^4\to L^2$ after
+putting $|D|u$ in the high-frequency factor. Equivalently, the radial proof bounds a
+lowpass maximal function times a high square function, using Plancherel
+for the annular product and H\"older with exponents $4,4$. Smooth normalized
+annular expansions handle its ratio dependence. The two high frequencies
+remain comparable on taking the adjoint, so its high derivative can also
+be divided by the high-frequency weight. The harmonic coefficient bounds therefore give
+\begin{equation*}
+\begin{aligned}
+\|T_Hu\|_{L^2_x}
+&\leq\sum_{l=0}^\infty\sum_{k=1}^{(l+1)^2}
+       \|B_{b_{l,k,\delta}}(Y_{l,k}(D)H,u)\|_{L^2_x}\\
+&\leq C\|M\|_{C^{K+12}(S^3\times\mathcal K)}
+       \sum_{l=0}^\infty(l+1)^2(1+l)^{-12}(1+l)^7
+       \|H\|_{L^4_x}\|\partial u\|_{L^4_x}\\
+&\leq C_\delta\|H\|_{L^4_x}\|\partial u\|_{L^4_x}.
+\end{aligned}
+\end{equation*}
+Translation invariance gives $[\partial_a,T_H]=T_{\partial_aH}$, hence
+\begin{equation*}
+\|[\partial_a,T_H]u\|_{L^2_x}
+=\|T_{\partial_aH}u\|_{L^2_x}
+\leq C_\delta\|\partial_aH\|_{L^4_x}\|\partial u\|_{L^4_x}.
+\end{equation*}
+
+For the last estimate apply \cite[Theorem 1]{BenyiOh}: a symbol in
+$BS^1_{1,0}$, commuted with a Lipschitz multiplier in either bilinear factor,
+defines a bilinear Calder\'on-Zygmund operator. Its finite-exponent
+boundedness includes $L^4\times L^4\to L^2$, with constant controlled by
+the Lipschitz seminorm and finitely many symbol seminorms. Apply it in
+the high-frequency factor of each $b_{\nu,\delta}(R_\nu H,\cdot)$. Rapid coefficient
+decay sums the polynomial multiplier norms of $R_\nu$:
+\begin{equation*}
+\begin{aligned}
+\|[d,T_H]v\|_{L^2_x}
+&\leq\sum_\nu\|[d,B_{b_{\nu,\delta}}(R_\nu H,\cdot)]v\|_{L^2_x}\\
+&\leq C\|\partial d\|_{L^\infty_x}\|v\|_{L^4_x}
+       \sum_\nu\mathfrak p_K(b_{\nu,\delta})\|R_\nu H\|_{L^4_x}\\
+&\leq C_\delta\|\partial d\|_{L^\infty_x}\|H\|_{L^4_x}\|v\|_{L^4_x}.
+\end{aligned}
+\end{equation*}
+For clarity, if $A_Fu=B_b(F,u)$, its high adjoint has symbol
+\begin{equation*}
+ b^\dagger(p,\xi)=\overline{b(-p,\xi+p)}^{\mathsf T},
+ \qquad A_F^*u=B_{b^\dagger}(\overline F,u).
+\end{equation*}
+On its support the high-frequency factor and product remain comparable.
+Consequently $b^\dagger/|\xi|$ has the same finite order-zero bounds,
+and the low harmonic is only replaced by its conjugate at $-\omega$.
+Thus the first estimate also holds for the high adjoint. Moreover,
+\begin{equation*}
+ [\partial_a,T_H]=T_{\partial_aH},\qquad
+ [\partial_a,T_H^*]=[\partial_a,T_H]^*.
+\end{equation*}
+For the rough commutator, $d$ is real scalar and
+$[d,T_H^*]=-[d,T_H]^*$. The second exponent triple and duality give
+\begin{equation*}
+\begin{aligned}
+\|[d,T_H^*]v\|_{L^2_x}
+&=\sup_{\substack{w\in\mathcal S(\R^4)\\\|w\|_{L^2_x}=1}}
+       |\langle[d,T_H^*]v,w\rangle|\\
+&\leq\sup_{\|w\|_{L^2_x}=1}
+       \|v\|_{L^4_x}\|[d,T_H]w\|_{L^{4/3}_x}\\
+&\leq C_\delta\|\partial d\|_{L^\infty_x}
+       \|H\|_{L^4_x}\|v\|_{L^4_x}.
+\end{aligned}
+\end{equation*}
+The multiplier $d$
+occurs only in the high slot, so no commutator with a low angular
+transform is introduced. If an exact energy identity is first proved
+for a finite angular sum, use its Hermitian part; the bounds are
+uniform and the full Hermitian correction is recovered in operator
+norm.
+
+\end{proof}
+
+For real symmetric scalar Lipschitz coefficients $d^{ab}=d^{ba}$, set
+$L_d=-\partial_a(d^{ab}\partial_b)$.
+Its exact operator commutator is
+\begin{equation*}
+[L_d,T_H]=
+-\partial_a\circ d^{ab}\circ[\partial_b,T_H]
+-\partial_a\circ[d^{ab},T_H]\circ\partial_b
+-[\partial_a,T_H]\circ d^{ab}\circ\partial_b.
+\end{equation*}
+Move the outer derivative in the first two terms and use the adjoint
+bound in the third. Lemma~\ref{lem:analytic-correction-bounds} gives
+\begin{equation}\label{eq:analytic-quartic-bound}
+\begin{aligned}
+|\ip{\ii [L_d,T_H]u}{u}|
+&\leq\sum_{a,b}\bigg(
+ \|d\|_{L^\infty_x}\|[\partial_b,T_H]u\|_{L^2_x}\|\partial_au\|_{L^2_x}
+ +\|[d^{ab},T_H]\partial_bu\|_{L^2_x}\|\partial_au\|_{L^2_x}\\
+&\hspace{35mm}
+ +\|d\|_{L^\infty_x}\|\partial_bu\|_{L^2_x}
+                         \|[\partial_a,T_H]^*u\|_{L^2_x}\bigg)\\
+&\leq C_\delta\bigg(
+ \|d\|_{L^\infty_x}\|\partial u\|_{L^2_x}
+                      \|\partial H\|_{L^4_x}\|\partial u\|_{L^4_x}\\
+&\hspace{23mm}
+ +\|\partial d\|_{L^\infty_x}\|\partial u\|_{L^2_x}
+                      \|H\|_{L^4_x}\|\partial u\|_{L^4_x}\bigg).
+\end{aligned}
+\end{equation}
+No second derivative of $d$ or $u$ occurs in this estimate.
+
+The relevant energy identity is exact. If $T_H=T_H^*$ and
+$P_0=-m^{ab}\partial_{ab}$, define $S_H=\ii [P_0,T_H]$. Its Fourier-shift
+symbol is $\ii \Delta t$, where
+$\Delta=q_m(\xi+p)-q_m(\xi)$. Conversely, a Hermitian numerator
+$\sigma$ can be divided by $\ii \Delta$ on a region where $\Delta\ne0$,
+provided the resulting quotient has the extension
+\eqref{eq:analytic-extension}. Thus
+\begin{equation}\label{eq:analytic-exact-correction}
+\ii [P_0,T_H]=S_H.
+\end{equation}
+For $P_n=P_0+L_d$, formal Hermitian symmetry gives
+\begin{equation}\label{eq:analytic-far-pairing}
+\langle S_Hu,u\rangle
+=2\Im\langle P_nu,T_Hu\rangle
+-\langle \ii [L_d,T_H]u,u\rangle.
+\end{equation}
+Consequently an $L^2$ bound for $P_nu$, smallness of $H$ in $L^4$,
+and the commutator estimate \eqref{eq:analytic-quartic-bound} control this
+correction using only first derivatives of $d$ and of the fields.
+The application below constructs two such corrections and verifies
+their independent-variable extensions separately.
+
+There is no operator-domain approximation implicit in this application.
+For each fixed $n$ and each fixed localization scale, the original field
+$z=\chi h_n$ is smooth and compactly supported. Its projected physical
+and gauge fields are Schwartz: their complete Fourier symbols are smooth
+of order zero and vanish near frequency zero. The same holds after the
+fixed screen and cone multipliers are applied. A low angular multiplier
+also preserves this property because the low-frequency factor retains its fixed
+infrared cutoff. The coefficient $d$ used below is smooth and compactly
+supported. The low/high support and polynomial bounds on symbol
+derivatives also show that $T_Hu$ is Schwartz. Hence the Fourier identities, formal adjoints, and integrations
+by parts above are valid on these fields for each $n$. Their Schwartz
+seminorms need not be uniform in $n$; only the norms on the right sides
+of the proved estimates are used when passing to the sequence limit.
+In particular, let $A_L$ be the spherical-harmonic sum through degree
+$L$ in \eqref{eq:analytic-bs-expansion}, and set
+$T_L=(A_L+A_L^*)/2$. The independent-variable extension need not obey
+the high-adjoint identity away from the actual frequency graph, so
+$A_L$ itself need not be Hermitian. For the full Hermitian $T_H$,
+the tail estimate and its adjoint version give
+\begin{equation*}
+\|(T_L-T_H)u\|_{L^2_x}
+\leq C_\delta(1+L)^{-2}\|H\|_{L^4_x}\|\partial u\|_{L^4_x},
+\end{equation*}
+with the same tail factor in the derivative and rough-commutator
+bounds. At fixed $n$, $P_0u\in L^2(\R^4)$, and Hermitian symmetry gives
+\begin{equation*}
+\big|\langle \ii [P_0,T_L-T_H]u,u\rangle\big|
+\leq2\|P_0u\|_{L^2_x}\|(T_L-T_H)u\|_{L^2_x}\longrightarrow0.
+\end{equation*}
+This removes angular partial sums in operator norm at each fixed $n$.
+The same angular-tail bound applies to all three rough-commutator pairings.
+
+For upper-frequency truncation, choose real even $\chi\in C_c^\infty(\R^4)$,
+equal to one near zero, and put
+\begin{equation*}
+J_{\lambda_{\max}}=\chi(D/\lambda_{\max}),\qquad
+T_{L,\lambda_{\max}}=J_{\lambda_{\max}}T_LJ_{\lambda_{\max}}.
+\end{equation*}
+For fixed $n,L$, the Schwartz fields and the correction bound give
+\begin{equation*}
+\begin{aligned}
+\|(T_{L,\lambda_{\max}}-T_L)u\|_{L^2_x}
+&\leq\|J_{\lambda_{\max}}T_L(J_{\lambda_{\max}}-I)u\|_{L^2_x}
+       +\|(J_{\lambda_{\max}}-I)T_Lu\|_{L^2_x}\\
+&\leq C_\delta\|H\|_{L^4_x}
+       \|\partial(J_{\lambda_{\max}}-I)u\|_{L^4_x}
+       +\|(J_{\lambda_{\max}}-I)T_Lu\|_{L^2_x}
+ \longrightarrow0.
+\end{aligned}
+\end{equation*}
+The same argument applies to $\partial_aH$, $\partial_bu$ and
+$d\partial_bu$, giving convergence of the three rough-commutator pairings.
+Since $P_0u\in L^2(\R^4)$ at fixed $n$, Hermitian symmetry gives
+\begin{equation*}
+\big|\langle \ii [P_0,T_{L,\lambda_{\max}}-T_L]u,u\rangle\big|
+\leq2\|P_0u\|_{L^2_x}
+        \|(T_{L,\lambda_{\max}}-T_L)u\|_{L^2_x}
+\longrightarrow0.
+\end{equation*}
+Thus upper-frequency cutoffs converge strongly at fixed $n,L$;
+then $L\to\infty$ recovers the full correction. These limits precede
+$n\to\infty$. No uniform operator-norm tail in $\lambda_{\max}$,
+uniform bound for $P_0u_n$, or sequence-dependent cutoff is required.
+
+\section{A bounded physical source in arbitrary coordinates}\label{sec:general-projection}
+
+The correction identity \eqref{eq:analytic-far-pairing} requires a scalar
+wave equation with a bounded source. We obtain it by removing the
+symmetrized-gradient directions through a fixed Fourier projection.
+This preserves the physical angular measure while retaining the original
+Lipschitz inverse-metric coefficients in the wave operator.
+
+\begin{proposition}[A projected source without a coordinate condition]
+\label{prop:general-projection}
+Under \eqref{eq:admissible}, fix a chart $U\Subset\R^4$ and
+$\chi\in C_c^\infty(U)$. Extend $\chi h_n$ by zero to $\R^4$. There is a fixed real even order-zero matrix Fourier multiplier
+$\Pi$ such that $u_n=\Pi(\chi h_n)$ has the following properties.
+For every fixed $1<p<\infty$, $\partial u_n$ is bounded in $L^p(\R^4)$ and
+$u_n\to0$ in $L^p(\R^4)$ and $L^\infty(\R^4)$. If $a_n^{ab}$ is a smooth uniformly
+Lipschitz extension to $\R^4$ of $g_n^{ab}$ from a neighborhood of $\supp\chi$, then
+\begin{equation}\label{eq:general-bounded-source}
+\big\|-\partial_a(a_n^{ab}\partial_bu_n)\big\|_{L^2(\R^4)}\leq C_\chi.
+\end{equation}
+The constant may depend on the uniform Lipschitz bound of the chosen
+extension family; no bound on its second derivatives is required.
+Over the region where $\chi=1$, the derivative defect of $u_n$ is null,
+Lorenz polarized, and has exactly the physical scalar measure
+\eqref{eq:mu-invariant}.
+\end{proposition}
+
+\begin{proof}
+In local Fourier calculations, $x\in\R^4$ and
+$L^p_x=L^p(\R^4,\dd x)$; $H^1_x$ and $W^{1,\infty}_x$
+have the same domain. Use an auxiliary Euclidean inner product on coordinate components, and
+for $\xi\ne0$ set
+\begin{equation*}
+\begin{gathered}
+P_\xi=I-\f{\xi\xi^{\mathsf T}}{|\xi|_E^2},\\
+\Pi_E(\xi)H=P_\xi H P_\xi.
+\end{gathered}
+\end{equation*}
+This is the orthogonal projection onto the complement of
+$\{\xi\otimes v+v\otimes\xi:v\in\R^4\}$. Indeed
+\begin{equation*}
+H-P_\xi H P_\xi=\xi\otimes v+v\otimes\xi,\qquad
+v=\f{H\xi}{|\xi|_E^2}
+ -\f{\xi^{\mathsf T}H\xi}{2|\xi|_E^4}\xi.
+\end{equation*}
+Multiply the symbol by a fixed smooth radial cutoff vanishing near zero
+and equal to one at high frequencies, obtaining $\Pi$. Even after this
+regularization,
+\begin{equation*}
+\Pi(\partial_\mu V_\nu+\partial_\nu V_\mu)=0
+\end{equation*}
+for every compactly supported distributional covector $V$.
+
+Define $H^\rho(k)=k^{ab}\Gamma^\rho_{ab}(k)$. The coordinate Ricci
+formula, without a gauge condition, is
+\begin{equation*}
+2\Ric(k)_{\mu\nu}
+=-k^{ab}\partial_{ab}k_{\mu\nu}
+ +2k_{\rho(\mu}\partial_{\nu)}H^\rho(k)
+ +H^\rho(k)\partial_\rho k_{\mu\nu}
+ +\mathcal Q_{\mu\nu}(k)(\partial k,\partial k).
+\end{equation*}
+Here $\mathcal Q(k)$ is a smooth coefficient bilinear form in first
+derivatives, obtained by collecting the Christoffel-symbol products;
+its detailed coefficients are not needed for this estimate.
+The potentially unbounded gauge term can be rewritten as
+\begin{equation*}
+2k_{\rho(\mu}\partial_{\nu)}H^\rho(k)
+=2\partial_{(\mu}\big(k_{\nu)\rho}H^\rho(k)\big)
+ -2(\partial_{(\mu}k_{\nu)\rho})H^\rho(k).
+\end{equation*}
+Here $H(g_n)$ is bounded because it uses only first derivatives.
+Multiply the vacuum equation by $\chi$, subtract the smooth-background
+second derivatives, and move $\chi$ inside the symmetrized gauge gradient.
+The resulting derivative is killed exactly by $\Pi$; the cutoff error is
+bounded. Every other term is a bounded product of first derivatives, smooth
+background derivatives, inverse metrics, or fixed cutoff derivatives.
+Writing $z_n=\chi h_n$ and $Q_n=a_n^{ab}\partial_{ab}$ therefore gives
+\begin{equation*}
+\|\Pi Q_nz_n\|_{L^2_x}\leq C_\chi.
+\end{equation*}
+This is not a bound for $Q_nz_n$ itself.
+
+For a scalar Lipschitz coefficient $f$ and an $L^2(\R^4)$ field $w$, the exact
+identity
+\begin{equation*}
+[\Pi,f]\partial_bw=[\Pi\partial_b,f]w-\Pi((\partial_bf)w)
+\end{equation*}
+and the first-order Calder\'on commutator bound imply
+\begin{equation*}
+\|[\Pi,f]\partial_bw\|_{L^2_x}
+\leq C\|\partial f\|_{L^\infty_x}\|w\|_{L^2_x}.
+\end{equation*}
+Apply this with $w=\partial_a z_n$ to $[Q_n,\Pi]z_n$.
+In particular the full global source is given explicitly by
+\begin{equation}\label{eq:general-explicit-source}
+-\partial_a(a_n^{ab}\partial_bu_n)
+=-\Pi Q_nz_n+[\Pi,a_n^{ab}]\partial_{ab}z_n
+ -(\partial_aa_n^{ab})\partial_bu_n.
+\end{equation}
+Each term on the right is bounded in $L^2(\R^4)$, proving
+\eqref{eq:general-bounded-source}. The second derivatives of $z_n$
+occur only inside the controlled commutator. These are global estimates
+on the localized chart extended to Euclidean space; the source includes
+the noncompact tails of $\Pi z_n$.
+
+Finite-$L^p$ multiplier bounds give the stated norms. Uniform convergence
+also follows: $z_n\to0$ in every fixed noninteger $C^\alpha$, $0<\alpha<1$,
+by interpolation between uniform smallness and the Lipschitz bound, and
+$\Pi$ is bounded on these spaces. No $L^\infty$ bound for $\partial u_n$
+is asserted.
+
+The original defect takes values in $\ker\mathcal R_\xi$.
+Subtracting a gauge tensor preserves that kernel. Off the null cone the
+kernel is entirely gauge and $\Pi_E$ kills it. On the cone its image
+remains Lorenz polarized. Finally \eqref{eq:B-null} and its gauge cross
+identity show that the physical contraction is unchanged by this
+subtraction. The equality is an equality of full angular measures,
+not merely of second moments.
+\end{proof}
+
+The bounded source in \eqref{eq:general-bounded-source} still contains
+quadratic terms in the original $h_n$ and the commutator with $\Pi$.
+The removed gauge field can have a non-null defect; it cannot be discarded
+by strong convergence of its derivative.
+The variational identity in the next section accounts for that field
+and cancels the complete nonlinear energy, including all its frequency
+placements.
+
+\section{The variational transport identity and cubic cancellation}
+\label{sec:variational-transport}
+
+We derive the transport residual for the global physical measure and
+analyze its frozen cubic symbol using the density-valued variational
+equation and its complete cubic symmetry. The proof is completed in Section~\ref{sec:completion}. The scalar source needed for the nonlinear
+correction is supplied by Proposition~\ref{prop:general-projection}; no
+coordinate normalization is constructed or assumed.
+
+\begin{theorem}[Transport under the original first-derivative hypotheses]
+\label{thm:variational-transport}
+Under \eqref{eq:admissible}, the invariant nonnegative measure of
+Theorem~\ref{thm:quadratic} satisfies \eqref{eq:transport} for every smooth
+positively one-homogeneous test with compact base support. 
+No coordinate condition and no second-derivative scale are assumed.
+\end{theorem}
+
+Fix a coordinate chart $U\Subset\R^4$. Localized fields are extended
+by zero to $\R^4$, and the subscripts $x$ use $\R^4$ with Lebesgue measure. Use lower metric
+components as affine field coordinates. Pairings use fixed Lebesgue density
+and ordered symmetric-index summation, so that off-diagonal components have
+their usual multiplicity two. Equivalently one can use an orthonormal basis
+of the space of symmetric tensors. A partition of the compact base support
+of the test gives the global assertion after the local proof.
+
+\subsection{The density Hessian and the exact cubic residual}
+
+For a smooth metric $k$ on $U$ and variations in
+$C_c^\infty(U;\operatorname{Sym}^2\R^4)$, set
+\begin{equation*}
+\mathcal S(k)=-\int_U R(k)\sqrt{|\det k|}\,\dd x,\qquad
+E(k)^{ab}=\sqrt{|\det k|}\,G(k)^{ab}.
+\end{equation*}
+The sign is chosen so that $\mathcal S'(k)=E(k)$ for variations of the
+\emph{lower} metric components. Boundary terms are immaterial for these
+variations. The Hessian $E'_g$ is formally self-adjoint for every smooth
+background, including a background that is not vacuum. This follows by
+commuting two affine variations of the action. One may equivalently use
+its local first-order Christoffel-symbol Lagrangian, modulo a divergence.
+
+Put $w=\sqrt{|\det g|}$. The Hamiltonian satisfies
+$2P=g^{ab}\xi_a\xi_b$. Define
+\begin{equation*}
+\mathcal G_\xi(k)_b=\xi^ak_{ab}-\f12\tr_gk\,\xi_b,\qquad
+\mathsf C_g(k,l)=\f14(k_{ab}\overline l^{ab}
+                       -\f12\tr_gk\,\overline{\tr_gl}).
+\end{equation*}
+The Fourier principal symbol $A(x,\xi)$ of $E'_g$, with
+$\partial\mapsto \ii \xi$, is the trace reversal and raising of the Ricci
+symbol:
+\begin{equation*}
+(Ak)^{ab}=w\bigl(\mathcal R_\xi(k)^{ab}
+                  -\f12g^{ab}\tr_g\mathcal R_\xi(k)\bigr).
+\end{equation*}
+Direct contraction of \eqref{eq:ricci-symbol} gives the exact Hermitian
+identity
+\begin{equation}\label{eq:var-hessian-form}
+k\cdot Ak
+=w\bigl(4P\mathsf C_g(k,k)
+        -g^{ab}\mathcal G_\xi(k)_a
+                    \overline{\mathcal G_\xi(k)_b}\bigr).
+\end{equation}
+For a frozen metric $m$, write $\mathsf C_m$ and $A_m$ for these
+objects with $g$ replaced by $m$; all raising operations and traces
+then use $m$. The same notation denotes the associated map
+\begin{equation*}
+(\mathsf C_m J)^{ab}=\f14
+\bigl(J^{ab}-\f12m^{ab}\tr_mJ\bigr).
+\end{equation*}
+The second term in \eqref{eq:var-hessian-form} is a Lorentzian
+contraction, with no positivity assertion.
+Varying density and raising factors in $E$ only produces order-zero terms
+times background curvature, so none is missing from this principal symbol.
+
+On the null Ricci kernel, $P=0$ and $\mathcal G_\xi(k)=0$.
+Differentiate \eqref{eq:var-hessian-form} in any phase-space direction,
+holding the coordinate components of $k$ fixed. All differentiated terms
+except $4w(\dd P)\mathsf C_g(k,k)$ vanish. Thus
+\begin{equation*}
+k\cdot\{A,a\}k=4w H_Pa\,\mathsf C_g(k,k)
+\quad(P=0,\ \mathcal R_\xi(k)=0).
+\end{equation*}
+Polarization gives this identity on the whole Hermitian null kernel,
+including physical/gauge mixed terms. Off the cone the Ricci kernel
+consists of gauge tensors $K_\xi(v)=\xi\otimes v+v\otimes\xi$.
+The identity $A(x,\xi)K_\xi(v)=0$ holds for every $(x,\xi)$.
+Differentiate it and pair with another vector in this gauge kernel;
+self-adjointness of $A$ removes the differentiated gauge vector. Hence
+the compression of $\{A,a\}$ to the off-null Ricci kernel is zero.
+This accounts for the full raw defect, including its off-null part.
+
+Choose nested real compact cutoffs $\theta,\rho$ with $\theta=1$
+near the base support of $a$ and $\rho=1$ near $\supp\theta$.
+Take $B_a=\theta\Op^w(a)\theta$, with a fixed infrared regularization.
+It is scalar and self-adjoint, has principal symbol $a$, and is scalar
+at every symbol order. Replacing $h_n$ by $\rho h_n$ in the following
+pairings is exact: $B_a(\rho h_n)=B_ah_n$, and the local differential
+expressions agree near the support of $B_ah_n$. This also applies to
+the cubic action pairing. We suppress this outer compact cutoff below.
+Then
+\begin{equation*}
+2\Im\ip{E'_gh_n}{B_ah_n}
+=\ip{\ii [E'_g,B_a]h_n}{h_n}.
+\end{equation*}
+The order-three product symbols commute because $B_a$ is scalar, and
+the order-two symbol is $\{A,a\}$. The order-one part of $E'_g$, and
+every scalar lower-order part of $B_a$, contributes at most order one
+to this commutator; its pairing tends to zero by $h_n\to0$ in $L^2(\R^4)$
+and boundedness in $H^1(\R^4)$. Thus no subprincipal propagation term is omitted.
+The defect with Lebesgue density is $w^{-1}\sigma$ for the
+$\dd V_g$ normalization, and consequently
+\begin{equation}\label{eq:var-commutator}
+\lim_n2\Im\ip{E'_gh_n}{B_ah_n}=4\int_{S_r^*U} H_Pa\,\dd\mu.
+\end{equation}
+The factor four follows from \eqref{eq:var-hessian-form}; it differs
+from the factor two in the reduced scalar-wave identity.
+
+We justify the nonlinear expansion in this pairing. Choose a fixed
+Euclidean orthonormal basis of symmetric tensors. In its field coordinates
+$I,J\in\{1,\ldots,10\}$, with coordinate indices $a,b\in\{0,1,2,3\}$,
+a first-order representative of the action is
+\begin{equation*}
+\mathcal S(k)=\f12\int_U C_{IJ}^{ab}(k)
+                       \partial_ak^I\partial_bk^J\,\dd x,
+\qquad C_{IJ}^{ab}=C_{JI}^{ba}.
+\end{equation*}
+Its Euler expression is
+\begin{equation*}
+E_I(k)=-\partial_a(C_{IJ}^{ab}(k)\partial_bk^J)
++\f12\f{\partial C_{JK}^{ab}}{\partial k^I}(k)
+                    \partial_ak^J\partial_bk^K.
+\end{equation*}
+Taylor expansion of these smooth coefficient functions gives
+\begin{equation*}
+E(g+h_n)=E(g)+E'_gh_n+\f12E''_g[h_n,h_n]+R_n.
+\end{equation*}
+Separate the full remainder from its principal coefficient matrices:
+write $C^{ab}=(C_{IJ}^{ab})$ and
+\begin{equation*}
+\begin{split}
+R_n&=A_n^{ab}\partial_{ab}h_n+r_n,\\
+A_n^{ab}
+&=-\bigl(C^{ab}(g+h_n)-C^{ab}(g)
+                    -\mathrm d C^{ab}_g[h_n]\bigr)\\
+&=-\int_0^1(1-t)\,
+       \mathrm d^2C^{ab}_{g+t h_n}[h_n,h_n]\,\dd t.
+\end{split}
+\end{equation*}
+Here $\mathrm d C$ differentiates the metric field variables.
+After extracting $A_n^{ab}\partial_{ab}h_n$, Taylor's formula gives
+\begin{equation*}
+\begin{split}
+|r_n|\leq C\bigl(&\|h_n\|_{L^\infty_x}^3
+                     (|\partial^2g|+|\partial g|^2)\\
+&+\|h_n\|_{L^\infty_x}^2|\partial g||\partial h_n|
+ +\|h_n\|_{L^\infty_x}|\partial h_n|^2\bigr).
+\end{split}
+\end{equation*}
+Smoothness of $C$ and the original first-derivative bound therefore give
+\begin{equation*}
+\begin{gathered}
+\|A_n\|_{L^\infty_x}=O(\|h_n\|_{L^\infty_x}^2),\\
+\|\partial A_n\|_{L^\infty_x}+\|r_n\|_{L^\infty_x}
+=O(\|h_n\|_{L^\infty_x}).
+\end{gathered}
+\end{equation*}
+The symmetry $(A_n^{ab})^*=A_n^{ba}$ makes
+$-\partial_a(A_n^{ab}\partial_b)$ self-adjoint.
+Since $B_a$ is scalar, its divergence commutator is controlled entry
+by entry by Lemma~\ref{lem:commutator}. Therefore
+\begin{equation*}
+\left|2\Im\ip{A_n^{ab}\partial_{ab}h_n}{B_ah_n}\right|
+\leq C_a\|A_n\|_{W^{1,\infty}_x}\|h_n\|_{H^1_x}^2\longrightarrow0.
+\end{equation*}
+This argument uses no second derivative of $A_n$ or $h_n$.
+The $r_n$ pairing tends to zero by its local $L^\infty$ bound and
+the bounded $L^2$ norm of $B_ah_n$. The full remainder $R_n$ is
+controlled only in this imaginary energy pairing; a small norm for
+$R_n$ itself is neither needed nor asserted.
+The smooth $E(g)$ pairing also vanishes. Combining this with
+\eqref{eq:var-commutator} gives the ungauged identity
+\begin{equation}\label{eq:var-cubic-residual}
+4\int_{S_r^*U} H_Pa\,\dd\mu
+=-\lim_n\Im\ip{E''_g[h_n,h_n]}{B_ah_n}.
+\end{equation}
+
+For real fields the scalar measure $\mu$ is invariant under
+$\xi\mapsto-\xi$ (the matrix defect is conjugated), and
+$H_Pa$ is odd when $a$ is even. It suffices to treat real odd $a$.
+Choose scalar Weyl quantization with real odd full symbol and symmetric
+localization, so that $B_a$ anticommutes with complex conjugation.
+Then $-\ii B_ah$ is real for real $h$. If
+$\mathcal T_g=\mathcal S'''_g$ is the symmetric real third variation,
+extended complex multilinearly, the right side of
+\eqref{eq:var-cubic-residual} is
+$\lim_n\mathcal T_g(h_n,h_n,-\ii B_ah_n)$.
+
+For $j\in\{1,2,3\}$, symmetric tensor fields $f_1,\ldots,f_j$,
+and tensor-valued covectors $A,B$, define
+\begin{equation*}
+C_g^{(j)}[f_1,\ldots,f_j](A,B)
+=\sum_{a,b=0}^3\sum_{I,J,K_1,\ldots,K_j=1}^{10}
+\f{\partial^j C_{IJ}^{ab}}{\partial k^{K_1}\cdots\partial k^{K_j}}(g)
+f_1^{K_1}\cdots f_j^{K_j} A_a^I B_b^J.
+\end{equation*}
+Commuting three variations of the first-order action gives
+\begin{equation*}
+\begin{split}
+\mathcal T_g(f_1,f_2,f_3)=\int_U\Bigl[&
+ \sum_{\mathrm{cyc}} C_g^{(1)}[f_i](\partial f_j,\partial f_k)\\
+&+\sum_{\mathrm{cyc}} C_g^{(2)}[f_j,f_k](\partial f_i,\partial g)
+ +\f12 C_g^{(3)}[f_1,f_2,f_3](\partial g,\partial g)\Bigr]\,\dd x.
+\end{split}
+\end{equation*}
+Here the cyclic triples are $(1,2,3),(2,3,1),(3,1,2)$.
+Put $Q=-\ii B_a$ and $(f_1,f_2,f_3)=(h,h,Qh)$.
+For the sole term containing $\partial(Qh)$, namely
+$C_g^{(2)}[h,h](\partial(Qh),\partial g)$, integrate once by parts.
+The derivative then falls only on the fixed background coefficients,
+the two $h$ factors, or $\partial g$, leaving $Qh$ times
+$O_g(h\partial h)+O_g(h^2)$. The outer compact cutoff removes
+boundary terms. H\"older's inequality and the order-one bound for $Q$ give
+\begin{equation*}
+\begin{aligned}
+&\left|\mathcal T_g(h,h,Qh)
+-\int_U\sum_{\mathrm{cyc}}
+ C_g^{(1)}[f_i](\partial f_j,\partial f_k)\,\dd x\right|\\
+&\quad\leq C_g\|h\|_{L^\infty_x}
+ \bigg(\|\partial h\|_{L^2_x}+\|h\|_{L^2_x}\bigg)
+ \|Qh\|_{L^2_x}\\
+&\quad\leq C_{g,a}\|h\|_{L^\infty_x}\|h\|_{H^1_x}^2.
+\end{aligned}
+\end{equation*}
+Thus all background-derivative contributions vanish
+for the admissible sequence, without estimating $\partial(Qh)$ or
+assuming that the smooth background is vacuum. The first cyclic sum,
+with coefficients frozen at a constant metric $m$, is exactly the
+principal third-variation vertex used next.
+
+For frozen $m$, define the translation-invariant trilinear form on
+Schwartz tensor fields by the whole-space integral
+\begin{equation*}
+\mathcal T_m(f_1,f_2,f_3)
+=\int_{\R^4}\sum_{\mathrm{cyc}}
+ C_m^{(1)}[f_i](\partial f_j,\partial f_k)\,\dd x.
+\end{equation*}
+It agrees with the localized frozen third variation on compactly
+supported fields, and also on $(h,h,Qh)$ when $h\in C_c^\infty(U)$.
+For $(p_1,H_1)=(p,H)$, $(p_2,H_2)=(q,J)$,
+$(p_3,H_3)=(r,L)$, define the full vertex by
+\begin{equation*}
+\Gamma_m(p,H;q,J;r,L)
+=-\sum_{\mathrm{cyc}}C_m^{(1)}[H_i]
+                  (p_j\otimes H_j,p_k\otimes H_k).
+\end{equation*}
+It is symmetric in the three pairs and has frequency degree two.
+Set $r=-p-q$ and $\alpha_a(p,q,r)=a(p)+a(q)+a(r)$. Fourier inversion gives
+\begin{equation}\label{eq:var-cyclic}
+\begin{split}
+\mathcal T_m(h,h,-\ii a(D)h)
+=-\f{\ii}{3(2\pi)^8}\int_{\R^4\times\R^4}
+ \alpha_a(p,q,-p-q)\\
+\qquad\qquad\qquad\times
+ \Gamma_m(p,\widehat h(p);q,\widehat h(q);-p-q,\widehat h(-p-q))
+ \,\dd p\,\dd q.
+\end{split}
+\end{equation}
+The factor $(2\pi)^{-8}$ is the product-integral normalization in four
+dimensions; $1/3$ averages the three equal test placements.
+
+To make the polarization precise, for $Q=-\ii B_a$ define
+\begin{equation*}
+\mathcal V_Q(f_1,f_2,f_3)=\f13\bigl(
+\mathcal T_g(Qf_1,f_2,f_3)+\mathcal T_g(f_1,Qf_2,f_3)
++\mathcal T_g(f_1,f_2,Qf_3)\bigr).
+\end{equation*}
+It is symmetric and satisfies
+$\mathcal V_Q(h,h,h)=\mathcal T_g(h,h,Qh)$. For frozen coefficients
+its Fourier representation is \eqref{eq:var-cyclic} with distinct fields.
+All subsequent replacements and expansions use this complete polarized
+form. It is continuous in three $W^{1,3}(\R^4)$ factors in the sense of
+Lemma~\ref{lem:cubic-continuity}; no such estimate is asserted for an
+individual test placement. To verify the extension to the present
+matrix equation, polarize the coefficient-linear principal term. Its two
+high slots form a symmetric matrix divergence operator. The scalar test
+allows the finite-exponent commutator estimate in that lemma entry by
+entry, with $(3,3,3/2)$ exponents. Its drift and semilinear terms have
+three $L^3$ factors. Fixed inhomogeneous or differentiated background
+terms add undifferentiated factors, which vanish for this sequence. In
+particular the continuity bound has no largest-frequency parameter.
+
+\subsection{Physical and gauge fields and the frozen Ward identity}
+
+Use the smooth Euclidean gauge-complement projection of
+Proposition~\ref{prop:general-projection}:
+\begin{equation*}
+\Pi_E(\xi)H=P_E(\xi)HP_E(\xi),\qquad
+P_E(\xi)=\Id-\f{\xi\otimes\xi}{|\xi|_E^2}.
+\end{equation*}
+Choose a fixed real even high-frequency cutoff $\chi_{\rm hi}$,
+vanishing near zero and equal to one outside a fixed ball. Its support
+is chosen outside the infrared transition of the frozen multiplier
+test, whose symbol there is exactly homogeneous. Lower-order terms of
+the variable test have already been included in the freezing error.
+Choose a second real even cutoff $\chi_{\rm reg}$ which vanishes in a
+smaller ball and equals one on $\supp\chi_{\rm hi}$. Every infrared
+regularization of a correction at either high-frequency slot below uses
+$\chi_{\rm reg}$. In particular
+$\chi_{\rm reg}\chi_{\rm hi}=\chi_{\rm hi}$: regularizing a correction
+does not insert an unwanted second factor of $\chi_{\rm hi}$ into the
+exact cubic identity. More precisely, its symbols $t$ and $\sigma$
+are both multiplied by $\chi_{\rm reg}(q)\chi_{\rm reg}(p+q)$.
+Thus $\ii [P_0,T_{\rm reg}]=S_{\rm reg}$ is an operator identity, while
+the pairing on $u$ agrees with the unregularized energy because
+$\chi_{\rm reg}(D)u=u$. The same nested choice applies to the original
+high-frequency gauge field when it occupies a low slot.
+For a localized
+field $z$ put $z^{\rm hi}=\chi_{\rm hi}(D)z$ and
+$u=\Pi_E(D)z^{\rm hi}$, $G=(\Id-\Pi_E(D))z^{\rm hi}$, with
+$\Pi_E$ homogeneous in these two formulas. Then $G$ is exactly pure gauge
+and $u$ is exactly the regularized projector of
+Proposition~\ref{prop:general-projection} applied to the original compactly supported
+field $z$. The omitted $z-z^{\rm hi}$ tends strongly to zero in $W^{1,p}(\R^4)$ for every fixed $1<p<\infty$. The gauge part satisfies, for $p\ne0$,
+\begin{equation}\label{eq:var-gauge-potential}
+\widehat G(p)=K_p(v(p)),\qquad
+K_p(v)=p\otimes v+v\otimes p,\qquad
+v(p)=\f{\widehat G(p)p}{|p|^2}
+-\f{p\,p^{\mathsf T}\widehat G(p)p}{2|p|^4}.
+\end{equation}
+Thus $|p|v(p)$ depends smoothly on $p/|p|$ and linearly on $\widehat G(p)$.
+The gauge factor need not be null. Both $u,G$ tend to zero in
+$L^p(\R^4)$ and have bounded gradients there for each $1<p<\infty$.
+
+For a frozen Lorentz metric $m$ choose a smooth degree-zero screen
+projection $\Pi_T(\xi)$ on a fixed wide neighborhood of its null cone.
+Its range consists of tensors $J$ satisfying
+\begin{equation}\label{eq:var-screen}
+J\xi=0,\qquad Jm^{-1}\xi=0,\qquad\tr_mJ=0.
+\end{equation}
+Here the first equation uses the coordinate Euclidean identification.
+An explicit construction will also quantify its dependence on $m$.
+Set $B=m^{-1}$, $e=\xi/|\xi|_E$, and
+\begin{equation}\label{eq:var-screen-matrix}
+\begin{gathered}
+w=Be-(e^TBe)e,\qquad
+Q=\Id-ee^T-\f{ww^T}{|w|_E^2},\\
+\mathsf A=QBQ+(\Id-Q),\qquad
+\mathsf R=Q\mathsf A^{-1}Q,\\
+\Pi_{T,m}(\xi)H=QHQ-\f12\operatorname{tr}(BQHQ)\mathsf R.
+\end{gathered}
+\end{equation}
+On the null cone $|w|_E=|Be|_E$ is nonzero. The range
+$W=\operatorname{ran}Q=(\operatorname{span}\{e,Be\})^{\perp_E}$
+is two-dimensional, and $B|_W$ is positive definite: the restriction of
+$B$ to $e^{\perp_B}$ is positive semidefinite with radical $\R e$,
+whereas $W\cap\R e=\{0\}$. On a compact family of nondegenerate
+Lorentz metrics, $|w|_E$ and the least eigenvalue of $B|_W$ have
+uniform positive lower bounds on the unit null set. They retain such
+bounds on a fixed wide neighborhood. Thus \eqref{eq:var-screen-matrix}
+is smooth, even, and degree zero there, with all fixed-order symbol and
+metric derivatives uniformly bounded.
+Since $Q\mathsf R=\mathsf RQ=\mathsf R$ and
+$QB\mathsf R=Q$, we have $\operatorname{tr}(B\mathsf R)=2$.
+Consequently \eqref{eq:var-screen-matrix} has range
+\eqref{eq:var-screen} and fixes every tensor in that range, so
+$\Pi_{T,m}^2=\Pi_{T,m}$. Multiplying by a smooth cutoff equal to one
+on a smaller fixed wide cone gives the global order-zero multiplier
+used below; its finite-$L^p$ bounds are uniform in $m$.
+We write $\Pi_T=\Pi_{T,m}$ when $m$ is fixed. On a null covector its range equals
+$\Pi_E(\xi)\ker\mathcal R_{m,\xi}$: Euclidean transversality and the
+Lorenz constraint force first the trace and then the second contraction
+in \eqref{eq:var-screen} to vanish. Consequently the screen for the
+actual metric fixes the physical defect at each point. Replacing it
+by the screen for a frozen metric need not fix that defect.
+Section~\ref{sec:completion} quantifies this error and uses the complete
+$W^{1,3}(\R^4)$ continuity above to insert the frozen screen in physical slots.
+
+Write $J_q,L_r$ for actual Fourier tensors in the ranges
+\eqref{eq:var-screen}, even when $q,r$ are slightly off cone. They obey
+the exact identity
+\begin{equation*}
+A_m(q)J_q=\f12w_m q_m(q)J_q^{\sharp\sharp}
+        =2w_m q_m(q)\mathsf C_mJ_q,
+\qquad w_m=\sqrt{|\det m|}.
+\end{equation*}
+This is the phase-extraction identity used below. The underlying scalar
+equation will always be applied to the original $u$, with additional
+screen/cone projections retained inside the multiplier in its high-frequency slots.
+
+For a fixed compactly supported vector field $X$, diffeomorphism
+invariance gives $\mathcal S'_g[\mathcal L_Xg]=0$.
+Twice differentiating in fixed metric directions $J,L$ gives the exact
+off-shell Ward identity
+\begin{equation}\label{eq:var-ward}
+\mathcal S'''_g[J,L,\mathcal L_Xg]
++\mathcal S''_g[J,\mathcal L_XL]
++\mathcal S''_g[L,\mathcal L_XJ]=0.
+\end{equation}
+There is no third term involving $\mathcal S'_g$: the generator is
+linear in the metric, so its second variation vanishes. In particular
+this identity does not assume $E(g)=0$ for the smooth limit.
+
+For frozen $m$, put $G_p=K_p(v)$ and set $V=m^{-1}v$ for the
+corresponding vector. Thus the potential in
+\eqref{eq:var-gauge-potential} has lower components, whereas Lie
+derivatives below use $V$. Put $\Delta=q_m(r)-q_m(q)$. The highest-derivative Fourier component of
+\eqref{eq:var-ward} gives
+\begin{equation*}
+\begin{split}
+\Gamma_m(p,G;q,J;r,L)=-J\cdot A_m(q)
+ \bigl((V\cdot r)L+K_p(L(V,\cdot))\bigr)\\
+{}-L\cdot A_m(r)
+ \bigl((V\cdot q)J+K_p(J(V,\cdot))\bigr).
+\end{split}
+\end{equation*}
+This formula is bilinearly complexified, not Hermitian, with
+$p+q+r=0$. It follows by using a Fourier vector generator; all factors
+$\ii$ cancel from its three terms. For two screen tensors, use the bilinear extension of $\mathsf C_m$. The exact expression
+symmetric in the two physical slots is
+\begin{equation}\label{eq:var-low-gauge-identity}
+\begin{split}
+\Gamma_m(p,G;q,J;r,L)
+={}&-w_m\Delta\,V\cdot(q-r)\mathsf C_m(J,L)\\
+&+w_m(V\cdot p)(q_m(q)+q_m(r))\mathsf C_m(J,L)\\
+&-2w_mq_m(q)\mathsf C_m(J,K_p(L(V,\cdot)))\\
+ -2w_mq_m(r)\mathsf C_m(L,K_p(J(V,\cdot))).
+\end{split}
+\end{equation}
+To see every coefficient without suppressing a physical phase, the
+transport part of the Ward formula is
+$-2w_m[q_m(q)(V\cdot r)+q_m(r)(V\cdot q)]\mathsf C_m(J,L)$. Since $p+q+r=0$,
+\begin{equation*}
+-2[q_m(q)(V\cdot r)+q_m(r)(V\cdot q)]
+=-\Delta V\cdot(q-r)+(q_m(q)+q_m(r))V\cdot p.
+\end{equation*}
+The remaining two terms are obtained directly from
+$A_m(q)J=2w_mq_m(q)\mathsf C_mJ$ and its $r$ counterpart.
+This exact symmetric form isolates a Hermitian correction.
+
+For the initial low-slot calculation, relabel the triad so that $p$ is
+its low covector, and set
+$\lambda_p=|p|$, $\lambda_q=|q|$, $\lambda_r=|r|$.
+The two high magnitudes are comparable. Use the partition
+\eqref{eq:analytic-triad-partition}. On a low piece $\lambda_p\leq2\kappa \lambda_q$,
+put $p=\lambda_p\omega$, $q=\lambda_q\theta$, $z=p/\lambda_q$. Then
+\begin{equation}\label{eq:var-cyclic-extension}
+\f{\alpha_a}{\lambda_p}
+=a(\omega)-\int_0^1\omega\cdot\partial a(\theta+tz)\,\dd t.
+\end{equation}
+The formula is smooth in independent $(\omega,z,\theta)$, including
+$z=0$. In particular $\alpha_a=O(\lambda_p)$, with all normalized derivatives.
+For comparable frequencies the same bound and derivative statement
+hold on a compact partition of annular variables; the nonzero third
+frequency is bounded below by the choice of the smallest slot.
+
+For a low gauge leg, \eqref{eq:var-gauge-potential} gives
+\begin{equation*}
+|V|\ls\f{|G|}{\lambda_p},\qquad
+|V\cdot p|\ls |G|,\qquad
+|K_p(L(V,\cdot))|\ls |G||L|.
+\end{equation*}
+Thus each of the last three terms in \eqref{eq:var-low-gauge-identity},
+after multiplication by $\alpha_a$, is
+$\lambda_p\lambda_q^2$ times a smooth bounded normalized symbol with one factor
+$q_m(q)/\lambda_q^2$ or $q_m(r)/|r|^2$ on its own physical factor.
+There is no negative power of $\lambda_p/\lambda_q$.
+The first term contains the exact scalar phase difference $\Delta$
+and will be handled as a correction below.
+
+For one high gauge leg, relabel the factors as physical $(p,H),(q,J)$
+and gauge $(r,K_r(v))$, with $V=m^{-1}v$. Screen transversality gives
+\begin{equation*}
+\begin{gathered}
+\mathsf C_m(H,K_r(J(V,\cdot)))
+=-\f12H^{ab}q_aJ_{bc}V^c,\\
+\mathsf C_m(J,K_r(H(V,\cdot)))
+=-\f12J^{ab}p_aH_{bc}V^c.
+\end{gathered}
+\end{equation*}
+Substituting these contractions into the Ward identity yields
+\begin{equation*}
+\begin{split}
+\Gamma_m(p,H;q,J;r,K_r(v))
+={}&-2w_m(q_m(p)V\cdot q+q_m(q)V\cdot p)\mathsf C_m(H,J)\\
+&+w_mq_m(p)H^{ab}q_aJ_{bc}V^c
+ +w_mq_m(q)J^{ab}p_aH_{bc}V^c.
+\end{split}
+\end{equation*}
+If $p$ is low, write $\rho=\lambda_p/\lambda_q$. Since $|V|\ls \lambda_q^{-1}|G|$,
+the coefficient $\alpha_a\Gamma_m/(\lambda_p\lambda_q^2)$ is a sum of smooth
+bounded normalized symbols times $\rho^2q_m(p)/\lambda_p^2$ and
+$\rho q_m(q)/\lambda_q^2$, respectively. Formula
+\eqref{eq:var-cyclic-extension} makes these symbols smooth in the
+independent angles and $\rho$ down to zero.
+
+For two gauge legs the corresponding exact identity is
+\begin{equation*}
+\Gamma_m(p,H;q,K_q(v_q);r,K_r(v_r))
+=w_mq_m(p)\bigl(v_r\cdot m^{-1}v_q\bigr)H^{ab}q_aq_b.
+\end{equation*}
+To obtain it, use the $r$ leg as generator. The other gauge Hessian
+vanishes, while its Lie derivative is
+$-(m^{-1}v_r\cdot q)K_p(v_q)
+ +(v_r\cdot m^{-1}v_q)K_r(q)$; the first term pairs to zero with
+the physical Hessian. If the physical leg is low, set
+$\rho=\lambda_p/\lambda_q$; the normalized coefficient gains
+$\rho^2$ times its own phase $q_m(p)/\lambda_p^2$.
+If a gauge leg is low, interchange $q,r$ so that $q$ is low and set
+$\rho=\lambda_q/\lambda_p$. The identity
+$H^{ab}q_aq_b=H^{ab}r_ar_b$ puts the low covector in both factors.
+After normalization by $\lambda_q\lambda_p^2$, the coefficient gains
+$\rho$ times $q_m(p)/\lambda_p^2$. These formulas have
+the same smooth angular and radial extensions. With three gauge
+legs both Hessians vanish, so the frozen vertex is exactly zero.
+On the comparable piece every frequency is bounded below by
+$c_\kappa \lambda_q$; a gauge generator may therefore be chosen in any fixed
+gauge slot, including the least one, with smooth annular bounds.
+
+The right side of \eqref{eq:var-cyclic} defines a symmetric trilinear
+energy functional in its three fields. Substituting $h=u+G$ gives its
+terms with zero, one, two and three gauge fields with coefficients
+$1,3,3,1$. Each term was classified above; no reduced-equation or
+selected semilinear vertex is substituted for the action vertex.
+
+Every normalized physical-phase term obeys an all-scale trilinear
+estimate by three gradient $L^3$ norms, one of them replaced by
+\begin{equation*}
+\left\|\f{q_m(D)}{|D|^2}\,\partial v_{\rm phys}\right\|_{L^3_x}.
+\end{equation*}
+The precise multiplier interface is the first assertion of
+Lemma~\ref{lem:analytic-near}.
+After relabeling the least-frequency factor, the remaining symbol is
+smooth in two angular variables and the ratio $\rho=\lambda_p/\lambda_q$ down to zero.
+Its value at $\rho=0$ is a separated angular expansion of a lowpass/high
+paraproduct. Its remainder is $\rho R$, summed over gaps using
+$\sum_s2^{-s}<\infty$ and annular Fourier expansion. Comparable-frequency factors
+have finitely many relative shifts and the three square-function bound.
+The physical phase is moved to its own factor before these operations.
+Consequently this estimate has no maximum-frequency dependence and
+requires no smallness of a cone-multiplier norm. Strong phase localization
+therefore removes these terms at fixed frozen parameters, up to the
+explicit freezing error below.
+
+\subsection{The two corrections and the physical near sum}
+
+For the remaining one-low-gauge term, consider first a single symmetric
+trilinear energy in \eqref{eq:var-cyclic}, with the gauge field put in
+the first slot. Its transport coefficient from
+\eqref{eq:var-low-gauge-identity} is
+\begin{equation*}
+\sigma_G=\f{\ii w_m}{3}\alpha_a\Delta\,
+              V\cdot(q-r)\mathsf C_m.
+\end{equation*}
+The low Fourier amplitude is understood in $V=m^{-1}v$, and the two
+screen projections are understood on the high arguments of $\mathsf C_m$.
+Thus in a fixed tensor basis the high-slot matrix is
+$\Pi_{T,m}(-r)^T\mathsf C_m\Pi_{T,m}(q)$, multiplied by the displayed
+scalar; the projection at $p+q$ is transposed even when the screen
+projection is not Euclidean self-adjoint.
+Define its correction by the symbol
+\begin{equation}\label{eq:var-gauge-correction}
+t_G=\f{w_m}{3}\alpha_a V\cdot(q-r)\mathsf C_m.
+\end{equation}
+With high factor frequency $q$ and product frequency $p+q=-r$,
+$\sigma_G=\ii(q_m(p+q)-q_m(q))t_G$. Consequently
+\begin{equation*}
+S_G=\ii [P_0,T_G],\qquad P_0=-m^{ab}\partial_{ab},
+\end{equation*}
+\emph{including at $\Delta=0$}; the factor is cancelled algebraically
+and no nonresonance division occurs. The other physical-phase terms in
+\eqref{eq:var-low-gauge-identity} need not vanish at $\Delta=0$;
+only the transport term is represented by this commutator.
+The contribution with exactly one
+gauge field is three copies of this symmetric trilinear form, so its
+correction has the same factor three. No further Taylor factorial is used.
+
+We claim that these high-slot operators are Hermitian.
+Indeed, under high adjunction
+$(p,q)\mapsto(-p,p+q)$ the signed triad changes to $(-p,-r,-q)$.
+Oddness of $a$ changes the sign of $\alpha_a$. Reality of $G$ and
+\eqref{eq:var-gauge-potential} give $V(-p)=-\overline{V(p)}$, while
+$q-r$ remains the same. The two minus signs cancel, and the real
+contraction, the even high projections, and the symmetric cutoffs
+transpose to one another. Thus $T_G=T_G^*$ exactly. This verification
+uses the already symmetrized $V\cdot(q-r)$; it does not infer the
+adjunction of an isolated summand from that of the entire energy.
+
+The symbol in \eqref{eq:var-gauge-correction} is order one in the high
+frequency with a regular
+low/high extension. In the variables of
+\eqref{eq:var-cyclic-extension}, its coefficient on the low tensor is
+$\lambda_q M_a(\omega,z,\theta)$: $\alpha_a/\lambda_p$ has that exact integral
+extension, $\lambda_p V$ is smooth angular in the low tensor, and
+$(q-r)/\lambda_q=2\theta+z$. High projections depend smoothly on $\theta$ and
+$\theta+z$. This holds for \emph{every} low direction $\omega$;
+there is no low-gauge cone restriction. Choose radial cutoffs smooth
+in $|z|^2$, with their high-slot symmetric counterparts.
+
+To state precisely why the bilinear commutator theorem applies, expand
+only the independent low angle:
+\begin{equation*}
+M_a(\omega,z,\theta)
+=\sum_\nu Y_\nu(\omega)c_\nu(z,\theta).
+\end{equation*}
+All required $z,\theta$ derivatives of $c_\nu$ decay faster than any
+power of the spherical-harmonic index. Move $Y_\nu(p/\lambda_p)$ to the low
+field $G$. Its fixed finite-$L^p$ norms grow only polynomially in that
+index. The remaining symbol $\lambda_q c_\nu(p/\lambda_q,q/\lambda_q)$ has Cartesian low and
+high derivatives bounded by
+\begin{equation*}
+C_{N,\alpha,\beta}(1+\nu)^{-N}
+(1+|p|+|q|)^{1-|\alpha|-|\beta|},
+\end{equation*}
+after fixed high-frequency infrared regularization. Every fixed
+\emph{low}-frequency cutoff is placed on $G$, before its angular
+multipliers, and is not part of the Cartesian symbol. This is essential:
+a cutoff derivative at fixed $|p|$ would not gain $\lambda_q^{-1}$ as
+$\lambda_q\to\infty$. With the smooth $z=0$ extension the remaining symbol
+belongs to $BS^1_{1,0}$, including at $p=0$. The series is summable in every seminorm used in
+Lemma~\ref{lem:analytic-correction-bounds}. In particular, no low angular
+factor with derivatives $|p|^{-1}$ is left inside a claimed Cartesian
+$BS^1$ symbol.
+
+There remain the three-physical terms. Fix a cap width $\delta$ and
+cone thickness $\eta=c\kappa\delta^2$ as in Section~\ref{sec:analytic}.
+Triad geometry in \eqref{eq:analytic-phase-gap} places every comparable
+physical triad in adjacent projective null caps. Split low/high
+physical triads into near and separated directions.
+
+On the near region the test factor alone has the quadratic angular
+gain
+\begin{equation}\label{eq:var-near-test-gain}
+\alpha_a=\delta^2\lambda_p M,
+\end{equation}
+where $M$ has uniform smooth normalized cap derivatives and is smooth
+at $\lambda_p/\lambda_q=0$. To prove this at the symbol level, use the parabolic map
+$\mathcal A$ from the transfer lemma and take its central ray
+$e_\gamma=E_\gamma(1,0,0,0)$. Enlarge its fixed cone once more, if
+needed, to contain the low/high interpolation segments
+$\theta'+t p'/|q'|$ for $0\leq t\leq1$. Low/high separation keeps their
+longitudinal coordinate away from zero, so this enlargement is fixed
+independently of $\delta$. On that cone set
+\begin{equation*}
+\widetilde a_\delta(\zeta)=\delta^{-2}
+ \bigl[a(\mathcal A\zeta)-\partial_\xi a(e_\gamma)\cdot\mathcal A\zeta\bigr].
+\end{equation*}
+Oddness and homogeneity give the same linear first jet on both signed
+central rays. More explicitly, for $\zeta=(s,t,z)$ put
+$v_\delta=E_\gamma(0,\delta t,z)$, so that
+$\mathcal A\zeta=s e_\gamma+\delta v_\delta$. Taylor's integral formula
+and Euler's homogeneous identity give the exact extension
+\begin{equation*}
+\widetilde a_\delta(\zeta)
+=\int_0^1(1-\tau)D^2a(s e_\gamma+\tau\delta v_\delta)
+                         [v_\delta,v_\delta]\,\dd\tau.
+\end{equation*}
+The longitudinal component $s$ is bounded away from zero on every
+normalized annulus of the enlarged cone, for either sign of $s$.
+The segment therefore stays away from the origin. This formula makes
+$\widetilde a_\delta$ an odd degree-one symbol with uniform normalized
+seminorms and a smooth extension to $\delta=0$. For
+$p=\mathcal A p'$, $q=\mathcal A q'$, $r=\mathcal A r'$,
+the subtracted linear terms sum to zero exactly, so
+\begin{equation*}
+\alpha_a=\delta^2\bigl[
+\widetilde a_\delta(p')+\widetilde a_\delta(q')
+                         +\widetilde a_\delta(r')\bigr].
+\end{equation*}
+Applying the integral identity \eqref{eq:var-cyclic-extension} to
+this uniformly bounded symbol gives the low factor $|p'|$ and its
+smooth extension to zero radial ratio. The transfer lemma's uniform
+bound for $|\mathcal A p'|/|p'|$ converts it to $\lambda_p$.
+The comparable pieces lie on compact annular boxes with all three
+magnitudes bounded below. This proves every required normalized
+derivative in \eqref{eq:var-near-test-gain}, not only a pointwise bound.
+
+Here is the full normalized kernel, including the actual screen tensors.
+Set $\lambda_p'=|p'|$, $\lambda_q'=|q'|$,
+$p'=\lambda_p'\omega$, $q'=\lambda_q'\theta$, $\rho'=\lambda_p'/\lambda_q'$ and
+$v=\theta+\rho'\omega$, and put
+$\mathsf S_\delta(\zeta)=\Pi_{T,m}(\mathcal A\zeta)$. For independent
+tensors $H,J,L$ define
+\begin{equation*}
+\mathfrak G_\delta=
+\Gamma_m(\rho'\mathcal A\omega,\mathsf S_\delta(\omega)H;
+         \mathcal A\theta,\mathsf S_\delta(\theta)J;
+         -\mathcal A v,\mathsf S_\delta(v)L).
+\end{equation*}
+On a sufficiently small fixed $\rho'$ interval the normalized kernel is
+\begin{equation}\label{eq:var-near-normalized-kernel}
+\f{\alpha_a\Gamma_m}{\delta^2\lambda_p\lambda_q\lambda_r}
+=\f{\mathfrak G_\delta}
+ {|\mathcal A\omega|\,|\mathcal A\theta|\,|\mathcal A v|}
+ \bigg[\widetilde a_\delta(\omega)
+ -\int_0^1 D\widetilde a_\delta(\theta+t\rho'\omega)
+                         \cdot\omega\,\dd t\bigg],
+\end{equation}
+The vertex on the left has those same screen tensors
+at the original frequencies. Its vertex factor is
+$\lambda_q'^2\mathfrak G_\delta$, its cyclic factor is $\delta^2\lambda_p'$ times
+the bracket, and $\lambda_p\lambda_q\lambda_r=\lambda_p'\lambda_q'^2|\mathcal A\omega|\,
+|\mathcal A\theta|\,|\mathcal A v|$. All three denominators and
+the longitudinal coordinate of $\theta+t\rho'\omega$ are bounded
+away from zero on the enlarged fixed cone. The residual transition
+region $\rho'\geq\rho_0>0$ has only finitely many relative radial
+shifts and is handled by the normalized annular boxes.
+
+The actual angular cutoffs have the same uniform extension.
+For fixed transformed covectors $u,v$ set
+$\mathfrak D_\delta(u,v)=\delta^{-1}(\mathcal A u\wedge\mathcal A v)$.
+It is polynomial in $\delta$, since the powers in the wedge of
+$\operatorname{diag}(1,\delta^2,\delta,\delta)$ are all at least one.
+Writing $q_{\rm std}(s,t,z)=-st+|z|^2$, we have
+\begin{equation*}
+\f{\mathfrak d(\mathcal A u,\mathcal A v)}{\delta^2}
+=\f{|\mathfrak D_\delta(u,v)|^2}
+ {|\mathcal A u|^2|\mathcal A v|^2},\qquad
+\f{q_m(\mathcal A u)}{c\kappa\delta^2|\mathcal A u|^2}
+=\f{q_{\rm std}(u)}{c\kappa|\mathcal A u|^2}.
+\end{equation*}
+The cone-restricted lower bounds for $|\mathcal A u|/|u|$, and the
+uniform matrix bounds in \eqref{eq:var-screen-matrix}, therefore give
+smooth extensions to $\delta=0$ for the near cutoffs, the thin-cone
+profiles, and the screen symbols. Together with
+\eqref{eq:var-near-normalized-kernel}, this gives their simultaneous
+normalized derivative bounds, including at $\rho'=0$.
+
+On comparable annular blocks the third cap and the annulus of the product frequency
+are retained before any extension of the bilinear symbol. With
+normalized covectors $\zeta,\upsilon$, their support gives
+$|\zeta+\upsilon|\geq c_\kappa$ and
+$|s(\zeta+\upsilon)|\geq c|\zeta+\upsilon|$. Thus the third screen
+and the third test symbol are evaluated away from their zero-frequency
+singularity, uniformly in $\delta$. Choose slightly larger fixed
+cutoffs preserving both lower bounds, define the symbols there, and
+extend their products by zero to the annular boxes. This supplies
+the extension required by Lemma~\ref{lem:analytic-near}; it does not
+infer product-frequency localization from the two factor caps alone. The same
+argument treats the fixed low/high transition blocks.
+For the chosen profiles and a compact family $\mathcal K$ of frozen
+metrics, each cap-localized block in its normalized variables obeys
+\begin{equation*}
+\mathfrak A_{100}(\delta^{-2}m_{\mathrm{near}})
+\leq C_{\mathcal K,\kappa}\|a\|_{C^{103}(\mathbb S^3)},
+\end{equation*}
+where $m_{\mathrm{near}}$ is that block's full multiplier after removing
+its three first-derivative weights, and the norm on $a$ is that of its
+degree-one homogeneous restriction to the Euclidean unit sphere.
+The two derivatives in Taylor's formula and the additional derivative
+in the cyclic integral explain this sufficient, nonoptimal order.
+These are frequency bounds uniform over the cap centers; the discrete
+cap covering is not differentiated with respect to $\delta$.
+Fixed infrared cutoffs on the factors are kept outside this homogeneous core.
+
+The action vertex $\Gamma_m/\lambda_q^2$ is smooth in these variables: it is a
+finite sum of metric contractions with two differentiated covectors
+and three tensor factors, and the fixed-wide screen symbols are smooth.
+Moreover, $\Gamma_m$ has degree two and $\alpha_a$ degree one under
+simultaneous frequency dilation. After the three gradient weights are
+removed, the core symbol therefore has degree zero, as required by
+Lemma~\ref{lem:analytic-near}. All projectors, cap cutoffs and normalized
+physical phases have degree zero as well. Fixed absolute-frequency
+cutoffs act on the fields and do not change this homogeneous core.
+Thus the full energy has the $\delta^2\lambda_p\lambda_q^2$ symbol hypothesis of
+Lemma~\ref{lem:analytic-near}. Its transfer proof applies unchanged: in
+one cap the common parabolic linear map preserves the trilinear norm;
+the $\rho=0$ part is a lowpass/high paraproduct, the $\rho R$ part has
+a summable gap factor, and comparable blocks have finitely many radial
+shifts. There are $O(\delta^{-2})$ caps. Each individual cap has uniform
+$L^p$ bounds, while its $L^3(\dd x\times\#)$ norm loses at most
+$N_\delta^{1/(3(p_*-2))}$ per factor by the $L^2/L^{p_*}$ interpolation
+in \eqref{eq:analytic-cap-bounds}. Hence
+\begin{equation}\label{eq:var-near-bound}
+\begin{split}
+|\mathcal E^{\mathrm{near}}_{\rm physical}|
+&\leq C_{\kappa,p_*}\delta^2N_\delta^{1/(p_*-2)}
+                         \|\partial u\|_{L^3_x}^3\\
+&\leq C_{\kappa,p_*}\delta^{\beta_*}\|\partial u\|_{L^3_x}^3.
+\end{split}
+\end{equation}
+Only the fixed-wide projected field occurs on the right; the thin
+cutoff is inside individual caps. There is no norm of the full
+thin-cone projection multiplying $\delta^{\beta_*}$.
+
+For separated physical low/high triads, the complete high-slot
+Hermitian numerator has normalized size $\lambda_p\lambda_q^2$ by
+\eqref{eq:var-cyclic-extension}. Divide it by the exact
+$\ii \Delta=\ii(q_m(p+q)-q_m(q))$ using
+\eqref{eq:analytic-exact-correction}. The support obeys
+$|\Delta|\geq c_\delta \lambda_p\lambda_q$. The required symbol extension is explicit:
+\begin{equation*}
+\f\Delta{\lambda_p\lambda_q}
+=2m(\omega,\theta)+(\omega\cdot z)q_m(\omega).
+\end{equation*}
+The numerator divided by $\lambda_p\lambda_q^2$ extends smoothly in independent
+$\omega,z,\theta$: its cyclic factor is
+\eqref{eq:var-cyclic-extension}, its vertex is polynomial in the
+normalized covectors, and every symbol at the product frequency is smooth at
+$\theta+z$. The actual denominator bound is initially known only on
+the physical set $z=\rho\omega$. To justify an independent-variable
+extension, write
+\begin{equation*}
+d_m(\omega,z,\theta)
+=2m(\omega,\theta)+(\omega\cdot z)q_m(\omega).
+\end{equation*}
+The low cutoff extends as
+$\vartheta(|z|^2/[\kappa^2(1+|\theta+z|^2)])$; the two angular
+arguments extend as
+\begin{equation*}
+1-(\omega\cdot\theta)^2,\qquad
+1-\f{[\omega\cdot(\theta+z)]^2}{|\theta+z|^2}.
+\end{equation*}
+They are smooth on a fixed compact extension domain with $|z|<1/2$.
+By \eqref{eq:analytic-phase-gap}, including its $\rho=0$ limit, there
+is $c_0>0$ with $|d_m|\geq c_0\delta^2$ on the entire physical far
+support. Set
+\begin{equation*}
+\psi_\delta=1-\vartheta\!\left(\f{d_m^2}{c_0^2\delta^4}\right).
+\end{equation*}
+Then $\psi_\delta=1$ on that support and vanishes where
+$|d_m|\leq c_0\delta^2/2$. Replacing the reciprocal denominator in
+the extension by $\psi_\delta/d_m$, extended by zero at its zeros,
+gives a smooth function with finite $C_\delta$ seminorms. It agrees
+with the exact quotient on every physical frequency used by the
+operator. Therefore the exact correction is
+$\lambda_q M_\delta(\omega,z,\theta)$ and has the same convergent low-angular
+and Cartesian $BS^1$ expansion just proved for $T_G$.
+Hermitian symmetry follows from the Hermitian numerator and the sign
+change of the real $\Delta$ under high adjunction. The other two physical
+low-slot placements follow by permutation; their equal contributions
+are counted explicitly in \eqref{eq:var-full-assembly} below.
+
+Finite angular sums need not retain the original far support; they
+retain the symmetric low/high support needed for the operator bounds.
+The exact numerator is identified only after the full correction is
+recovered, and no further division by $\Delta$ is performed on these sums.
+
+Both corrections can now be paired with the scalar equation from
+Proposition~\ref{prop:general-projection}. On a patch take the original
+$u=\Pi_E(D)\chi_{\rm hi}(D)(\chi h_n)$ in the high-frequency slot and write its global extended
+operator as $P_n=P_0+L_d$, where $L_d=-\partial_a(d^{ab}\partial_b)$.
+The low field $H$ is a fixed angular projection of either $G$ or $u$.
+For either correction, the preceding symbol bounds and Lemma~\ref{lem:analytic-correction-bounds} give
+\begin{equation*}
+\|T_Hu\|_{L^2_x}\leq C_\delta\|H\|_{L^4_x}\|\partial u\|_{L^4_x}
+\end{equation*}
+and the complete estimate \eqref{eq:analytic-quartic-bound}. Specifically,
+\cite[Theorem 1]{BenyiOh} applies to each $BS^1_{1,0}$ term in the
+high-frequency slot with $L^4\times L^4\to L^2$; the other high adjoint uses
+$L^4\times L^2\to L^{4/3}$ and duality. Translation invariance gives
+$[\partial,T_H]=T_{\partial H}$. Summing the rapidly decaying angular
+series gives all three divergence commutator terms.
+Lemma~\ref{lem:analytic-correction-bounds} removes angular sums in
+operator norm and upper-frequency cutoffs strongly at fixed $n$.
+The sequence limit is taken only after both cutoffs have been removed.
+The source identity and the three commutator estimates give
+\begin{equation}\label{eq:var-correction-energy}
+\begin{split}
+|\ip{S_Hu}{u}|
+\leq{}&2\|P_nu\|_{L^2_x}\|T_Hu\|_{L^2_x}\\
+&+C_\delta\|d\|_{L^\infty_x}\|\partial u\|_{L^2_x}
+                         \|\partial H\|_{L^4_x}\|\partial u\|_{L^4_x}\\
+&+C_\delta\|\partial d\|_{L^\infty_x}\|\partial u\|_{L^2_x}
+                         \|H\|_{L^4_x}\|\partial u\|_{L^4_x}.
+\end{split}
+\end{equation}
+The second line controls the first and third divergence commutators,
+and the last controls the middle one. This is applied to the full
+Hermitian correction. In particular no equation is applied to a gauge
+field, and the matrix Einstein Hessian is not used as the nonlinear
+wave operator in this step.
+
+We record the complete frozen assembly explicitly. Let
+$\mathcal F_\chi(f_1,f_2,f_3)$ denote the right side of
+\eqref{eq:var-cyclic} with distinct fields and an additional multiplier
+$\chi(p,q,r)$. Put $v=S(D)u$, where $S$ is the frozen screen and
+thin-cone multiplier used in the physical replacement, and set
+\begin{equation*}
+\mathcal N_a=\mathcal F_{L_{\rm comp}+L_pN_p+L_qN_q+L_rN_r}(v,v,v).
+\end{equation*}
+The near profiles $N_q,N_r$ are defined cyclically. Let
+$\mathcal F^{\rm ph}_{L_p}(G,v,v)$ retain the same factor
+$-\ii \alpha_a/3$ and cutoff, but replace the vertex by the last three
+terms of \eqref{eq:var-low-gauge-identity}. Define
+\begin{equation*}
+\mathcal P_a=3\bigl[
+ \mathcal F^{\rm ph}_{L_p}(G,v,v)
+ +\mathcal F_{L_q+L_r+L_{\rm comp}}(G,v,v)
+ +\mathcal F_1(v,G,G)\bigr].
+\end{equation*}
+Choose $T_F(u)$ to represent the single physical-low far piece
+$\mathcal F_{L_p(1-N_p)}(v,v,v)$, and $T_G(G)$ to represent the
+transport part of $\mathcal F_{L_p}(G,v,v)$.
+In $T_F(u)$ the low amplitude is $\widehat u(p)$ and the symbol
+contains $S$ exactly once in each of its three slots; in $T_G(G)$
+only the two high slots contain $S$. This convention avoids applying
+the generally nonidempotent thin-cone profile twice to a low factor.
+All infrared cutoffs on the high factor and product frequencies remain the nested ones
+specified above. The exact identity is
+\begin{equation}\label{eq:var-full-assembly}
+\begin{split}
+\mathcal F_1(v+G,v+G,v+G)
+={}&\mathcal N_a+3\ip{\ii [P_0,T_F(u)]u}{u}\\
+&+3\ip{\ii [P_0,T_G(G)]u}{u}+\mathcal P_a.
+\end{split}
+\end{equation}
+The first factor three counts the three equivalent physical low slots;
+the second comes from the one-gauge term in the field expansion.
+The two-gauge term is entirely in $\mathcal P_a$, and the three-gauge
+vertex vanishes. For the comparable one-gauge part, including a least
+gauge leg, use the original Ward formula to extract the physical
+phases directly; no low/high correction is applied there.
+The preceding phase classification and all-scale transfer give
+\begin{equation*}
+|\mathcal P_a|\leq C_{\delta,\kappa,a,m}
+ \left\|\f{q_m(D)}{|D|^2}\partial v\right\|_{L^3_x}
+ \bigg(\|\partial v\|_{L^3_x}+\|\partial G\|_{L^3_x}\bigg)^2.
+\end{equation*}
+Thus every frozen principal cubic term is accounted for by a near
+term, one of the two corrections, or a physical phase on its own
+factor. These are identities and estimates at fixed fields and
+parameters; no separate limit of the individual summands is assumed.
+
+\section{Proof of Theorem~\ref{thm:main}}\label{sec:completion}
+
+\subsection{The transport equation on a variable background}
+
+\begin{proof}[Proof of Theorem~\ref{thm:variational-transport}]
+Fix compact sets $K\Subset K^+$ in the chart, with the test based in
+$K$. In this proof $L^p_x=L^p(\R^4,\dd x)$ and
+$W^{1,p}_x=W^{1,p}(\R^4)$ refer to zero-extended coordinate fields.
+The Euclidean tensor and derivative component norms are used throughout. Fix a finite $p_*>3$ and the exponents in
+\eqref{eq:optimized-exponents}. Hold $\kappa$ fixed, then fix $\delta$ and
+$\eta=c\kappa\delta^2$. Choose $\ell$ sufficiently small relative to
+this fixed cone thickness. Take nonnegative
+bounded-overlap cutoffs with
+\begin{equation*}
+\sum_j\chi_j^3=1\quad\hbox{near }K,\qquad
+\supp\chi_j\subset B(x_j,C\ell),\qquad
+|\partial^\alpha\chi_j|\leq C_\alpha\ell^{-|\alpha|}.
+\end{equation*}
+Choose nested nonnegative cutoffs $\chi_j^+$ equal to one on a
+$c\ell$-neighborhood of $\supp\chi_j$, with bounded-overlap supports
+$K_j^+\Subset K^+$ and
+\begin{equation*}
+K_j^+\subset B(x_j,C_+\ell),\qquad
+|\partial^\alpha\chi_j^+|\leq C_\alpha^+\ell^{-|\alpha|}.
+\end{equation*}
+These choices are obtained from fixed nested cutoffs at scale $\ell$;
+all constants are independent of $j$ and $\ell$. Put
+$z_{n,j}=\chi_jh_n$ and $m_j=g(x_j)$.
+
+Insert the three equal factors in the complete cubic action energy in
+\eqref{eq:var-cubic-residual}. At fixed $\ell$ this changes it by
+$o_n(1)$. To account for the nonlocal test outside the partition region,
+put $\tau=1-\sum_j\chi_j^3$. Since $\tau a=0$, after the fixed outer
+compact localization one has $\tau Q\in\Psi^0$ and
+$\tau\partial_bQ\in\Psi^1$, where the derivative acts on the function obtained by applying $Q$. Their remaining action placements are bounded by
+$C_\ell\|h_n\|_{L^3_x}\|h_n\|_{W^{1,3}_x}^2=o_n(1)$.
+The action's principal third variation has two derivatives
+distributed over its three factors. A cutoff derivative in it gives an
+undifferentiated $h_n$; commuting $B_a$ through a cutoff gives an
+order-zero operator on $h_n$. If its differentiated test factor appears
+to give a second derivative, use the symmetric principal divergence
+form before estimating. More explicitly, $[Q,\chi_j]$ is order zero;
+its three placements are controlled as in Lemma~\ref{lem:freezing}.
+A remaining term of type $(D\chi_j)h_n^2D(Qh_n)$ is integrated once
+by parts, leaving terms $h_nDh_nQh_n$ or $h_n^2Qh_n$ with fixed
+coefficient derivatives. The resulting terms contain an undifferentiated
+$h_n$ and bounded finite-exponent gradient factors. They vanish as
+$n\to\infty$. This is the same finite-exponent commutator argument
+used above, now with fixed cutoff derivatives. Lower terms in the third
+variation have fewer than two field derivatives and obey this estimate
+directly. Properly supported off-diagonal kernels with separated nested
+cutoffs are smoothing. There are finitely many patches at each fixed
+$\ell$, so all these $o_n(1)$ terms can be summed before changing
+$\ell$.
+
+Freeze the principal action coefficients, density, and scalar test
+symbol at $x_j$. The error is
+\begin{equation}\label{eq:var-freezing-error}
+C_\delta\ell\|\partial z_{n,j}\|_{L^3_x}^3+o_n(1).
+\end{equation}
+Apply Lemma~\ref{lem:freezing} to the complete third variation, with
+$Q=-\ii B_a$. At fixed $\ell$ its second term satisfies
+\begin{equation*}
+B_\ell\|z_{n,j}\|_{L^3_x}\|\partial z_{n,j}\|_{L^3_x}^2=o_n(1).
+\end{equation*}
+Its first term is precisely the leading bound in
+\eqref{eq:var-freezing-error}. The lemma includes the density,
+quantization, and lower background terms and gives constants uniform
+in the patch index. All differentiated coefficients belong to the
+fixed smooth background or test. No second derivative of $g_n$ is used.
+
+Now decompose the \emph{already localized} field globally in Fourier
+space:
+\begin{equation*}
+z_{n,j}^{\rm hi}=\chi_{\rm hi}(D)z_{n,j},\qquad
+u_{n,j}=\Pi_E(D)z_{n,j}^{\rm hi},\qquad
+G_{n,j}=(\Id-\Pi_E(D))z_{n,j}^{\rm hi}.
+\end{equation*}
+Finite-$L^p$ multiplier bounds and the original gradient bound give
+\begin{equation}\label{eq:var-local-volume}
+\limsup_n\bigl(\|\partial u_{n,j}\|_{L^p_x}+
+                      \|\partial G_{n,j}\|_{L^p_x}\bigr)
+\leq C_p|K_j^+|^{1/p},\qquad 1<p<\infty.
+\end{equation}
+Both undifferentiated fields tend to zero in these norms. Their
+noncompact tails are part of these global multiplier estimates; no
+copy of a global field norm is charged to each patch.
+
+All $L^2$ defect bounds below are global and follow directly from the
+same quadratic measure. More generally, let $\chi$ be a fixed real
+compactly supported cutoff and $T(D)$ a fixed classical order-zero
+matrix multiplier, smooth at zero, with homogeneous principal symbol
+$t_0$. Write $\dd\sigma_{dx}=w^{-1}\dd\sigma$, where
+$w=\sqrt{|\det g|}$, and express this covariance in a fixed Euclidean
+orthonormal frame of symmetric tensors. Then
+\begin{equation}\label{eq:var-global-defect-norm}
+\lim_n\|\partial T(D)(\chi h_n)\|_{L^2(\mathbb R^4)}^2
+=\int_{S_r^*M}\chi^2|\xi|_E^2
+       \operatorname{tr}\bigl(t_0\,\dd\sigma_{dx}\,t_0^*\bigr).
+\end{equation}
+The integrand is supported in the coordinate chart; the derivative
+and the norm on the left are Euclidean coordinate ones. Indeed,
+$\partial T(D)(\chi h_n)=T(D)(\chi\partial h_n)+o_{L^2_x}(1)$.
+Its squared norm is the quadratic pairing with
+$\chi T(D)^*T(D)\chi$, whose kernel is supported in
+$\supp\chi\times\supp\chi$. This is a properly supported classical
+order-zero operator with principal symbol $\chi^2t_0^*t_0$;
+its lower-order remainder has zero defect limit. Apply
+\eqref{eq:sigma}, with the density conversion above, and sum over
+the derivative components. This proves the formula without
+discarding any nonlocal tail. In particular it applies to
+every wide-screen, normalized-phase and thin-cone-complement error
+used below. At each fixed $\ell,\delta$ all these multipliers and
+cutoffs are fixed tests of the already extracted measure. No
+uniform symbol bound as $\ell,\delta\to0$, and no further subsequence,
+is required for this quadratic-limit identity.
+
+We quantify the screen and phase errors for the frozen metric. At an
+actual $g(x)$-null covector over $K_j^+$ the range of the defect of
+$u_{n,j}$ is the Euclidean gauge-complement representative of the
+actual Ricci kernel. More precisely, for
+$k\in\ker\mathcal R_{g(x),\xi}$ on this cone, the matrix construction
+\eqref{eq:var-screen-matrix} and its uniform metric derivative bound give
+\begin{equation*}
+\begin{split}
+|(\Id-\Pi_{T,m_j}(\xi))\Pi_E(\xi)k|_E
+&=|(\Pi_{T,g(x)}(\xi)-\Pi_{T,m_j}(\xi))\Pi_E(\xi)k|_E\\
+&\leq C|g(x)^{-1}-m_j^{-1}|_E|k|_E
+\leq C\ell|k|_E.
+\end{split}
+\end{equation*}
+The wide cutoffs equal one on these directions for small $\ell$.
+This is an operator bound on the original defect range, so its
+quadratic compression is $O(\ell^2)$. Also
+$q_{m_j}(\xi)/|\xi|^2=O(\ell)$ there. Use the global wide extension of $\Pi_{T,m_j}$ from
+Section~\ref{sec:variational-transport}. Define the two gradient errors by
+\begin{equation*}
+\begin{gathered}
+E_{n,j}^{(1)}=(\Id-\Pi_{T,m_j}(D))\partial u_{n,j},\\
+E_{n,j}^{(2)}=\f{q_{m_j}(D)}{|D|^2}
+                  \Pi_{T,m_j}(D)\partial u_{n,j}.
+\end{gathered}
+\end{equation*}
+Their symbols have size $O(\ell)$ on the defect range. The local
+gradient bound and \eqref{eq:var-global-defect-norm} therefore give,
+for $r\in\{1,2\}$,
+\begin{equation*}
+\begin{gathered}
+\limsup_n\|E_{n,j}^{(r)}\|_{L^2_x}
+\leq C\ell|K_j^+|^{1/2},\\
+\limsup_n\|E_{n,j}^{(r)}\|_{L^{p_*}_x}
+\leq C_{p_*}|K_j^+|^{1/p_*}.
+\end{gathered}
+\end{equation*}
+The second bound follows from the fixed-wide multiplier estimates and
+\eqref{eq:var-local-volume}. Choose the interpolation exponent by
+\begin{equation*}
+\f13=\f{\alpha_*}{2}+\f{1-\alpha_*}{p_*},
+\qquad \alpha_* = \f{2(p_*-3)}{3(p_*-2)}.
+\end{equation*}
+H\"older's inequality then yields
+\begin{equation}\label{eq:var-projection-error}
+\begin{aligned}
+\limsup_n\|E_{n,j}^{(r)}\|_{L^3_x}
+&\leq\limsup_n
+ \|E_{n,j}^{(r)}\|_{L^2_x}^{\alpha_*}
+ \|E_{n,j}^{(r)}\|_{L^{p_*}_x}^{1-\alpha_*}\\
+&\leq C_{p_*}\ell^{\alpha_*}
+ |K_j^+|^{\alpha_*/2+(1-\alpha_*)/p_*}
+ =C_{p_*}\ell^{\alpha_*}|K_j^+|^{1/3}.
+\end{aligned}
+\end{equation}
+This argument uses defect compression for the $L^2$ estimate and
+finite-$L^{p_*}$ bounds for the upgrade. It does not claim an $O(\ell)$
+$L^3$ error from quadratic localization alone.
+
+For sufficiently small $\ell$ the frozen thin-cone cutoff equals one
+on every actual null direction over $K_j^+$. Its complementary defect
+is then zero, and its gradient complement is strongly zero in $L^3$
+by the same fixed $L^2/L^{p_*}$ interpolation, with constants allowed to
+depend on $\delta$. Set $v_{n,j}=S_j(D)u_{n,j}$, where $S_j$ is the frozen screen and
+thin-cone symbol $S$ in \eqref{eq:var-full-assembly} for $m=m_j$.
+Combining
+\eqref{eq:var-projection-error}, these facts, and fixed
+multiplier bounds gives
+\begin{equation*}
+\begin{gathered}
+\limsup_n\|\partial(u_{n,j}-v_{n,j})\|_{L^3_x}
+\leq C_{\delta,p_*}\ell^{\alpha_*}|K_j^+|^{1/3},\\
+\limsup_n\left\|\f{q_{m_j}(D)}{|D|^2}
+                            \partial v_{n,j}\right\|_{L^3_x}
+\leq C_{\delta,p_*}\ell^{\alpha_*}|K_j^+|^{1/3}.
+\end{gathered}
+\end{equation*}
+The bounded-frequency regularizations add $o_n(1)$ only. The complete
+$W^{1,3}$ continuity estimate therefore permits replacement of every
+physical factor at cost $C_{\delta,p_*}\ell^{\alpha_*}|K_j^+|$ in the limsup.
+Every phase term in the Ward classification has the same bound by
+the all-scale normalized phase estimate proved above.
+
+Estimate the three-physical near part by
+\eqref{eq:var-near-bound}, with the fixed-wide screen projection on
+the right. Its limsup is at most
+$C_{\kappa,p_*}\delta^{\beta_*}|K_j^+|$. In particular the constants in this
+bound are uniform in $\ell$ on the compact smooth family of frozen
+metrics. Projection errors have already been treated at fixed
+$\delta$; a possibly large norm of the total thin-cone multiplier
+does not appear in this near estimate.
+
+For both corrections use the actual global scalar coefficient
+\begin{equation*}
+a_{n,j}^{ab}=m_j^{ab}+d_{n,j}^{ab},\qquad
+d_{n,j}^{ab}=\chi_j^+(g_n^{ab}-m_j^{ab}),\qquad
+P_{n,j}=-\partial_a(a_{n,j}^{ab}\partial_b).
+\end{equation*}
+The coefficient $a_{n,j}$ equals the inverse metric near
+$\supp z_{n,j}$. Proposition~\ref{prop:general-projection} gives a global
+source bound, including the projection tails.
+The projection annihilates the symmetrized derivative of the lowered
+gauge source; its commutator uses only the coefficient's Lipschitz norm.
+In particular the equation is applied to $u_{n,j}$ itself, while every
+additional screen or cone projection remains in the correction.
+By \eqref{eq:general-explicit-source} and the scaled cutoff bounds,
+for $\|h_n\|_{L^\infty(K^+)}\leq1$,
+\begin{equation*}
+\|P_{n,j}u_{n,j}\|_{L^2_x}
+\leq C|K_j^+|^{1/2}
+ \bigl(1+\ell^{-1}+\ell^{-2}\|h_n\|_{L^\infty(K^+)}\bigr).
+\end{equation*}
+Here $C$ is independent of $j,n,\ell$. One cutoff derivative multiplies
+a bounded gauge source or first derivative; two multiply $h_n$.
+The global commutator and divergence drift obey the same bound, since
+\begin{equation*}
+\bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}{\ell}\bigg)^2
+\leq C\bigl(1+\ell^{-1}+\ell^{-2}\|h_n\|_{L^\infty(K^+)}\bigr).
+\end{equation*}
+The extensions satisfy
+\begin{equation*}
+\begin{gathered}
+\|d_{n,j}\|_{L^\infty_x}
+ \leq C\bigl(\ell+\|h_n\|_{L^\infty(K^+)}\bigr),\\
+\|\partial d_{n,j}\|_{L^\infty_x}
+ \leq C\bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg).
+\end{gathered}
+\end{equation*}
+For the physical and gauge corrections, let $H_{n,j}$ denote the
+corresponding low tensor in \eqref{eq:var-correction-energy}.
+After summing its angular expansion, the multiplier bounds give
+\begin{equation*}
+\begin{gathered}
+\|H_{n,j}\|_{L^4_x}
+ \leq C_\delta\|h_n\|_{L^\infty(K^+)}|K_j^+|^{1/4},\\
+\|\partial u_{n,j}\|_{L^p_x}+\|\partial H_{n,j}\|_{L^p_x}
+ \leq C_{\delta,p}
+ \bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg)|K_j^+|^{1/p},
+ \qquad 1<p<\infty.
+\end{gathered}
+\end{equation*}
+For each correction the three terms of
+\eqref{eq:var-correction-energy} carry the same volume factor
+$|K_j^+|^{1/2}|K_j^+|^{1/4}|K_j^+|^{1/4}=|K_j^+|$.
+Denote their complete quadratic forms by
+\begin{equation*}
+\mathcal C_{n,j}^{\sigma}
+ =\bigl\langle
+ \ii[P_{0,j},T_{\sigma,n,j}]u_{n,j},u_{n,j}\bigr\rangle_{L^2(\R^4)},
+\qquad \sigma\in\{F,G\},
+\end{equation*}
+where $P_{0,j}=-m_j^{ab}\partial_a\partial_b$ and
+$T_{F,n,j}$, $T_{G,n,j}$ are the actual two corrections from
+\eqref{eq:var-full-assembly}, with frozen metric $m_j$.
+Substitution in \eqref{eq:var-correction-energy}, followed by
+$\sum_j|K_j^+|\leq C|K^+|$, gives
+\begin{equation*}
+\begin{aligned}
+\sum_j\sum_{\sigma\in\{F,G\}}|\mathcal C_{n,j}^{\sigma}|
+&\leq C_\delta\sum_j|K_j^+|
+ \bigg[\|h_n\|_{L^\infty(K^+)}
+ \bigl(1+\ell^{-1}+\ell^{-2}\|h_n\|_{L^\infty(K^+)}\bigr)\\
+&\hspace{42mm}\times
+ \bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg)\\
+&\hspace{19mm}
+ +\bigl(\ell+2\|h_n\|_{L^\infty(K^+)}\bigr)
+ \bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg)^3\bigg]\\
+&\leq C_\delta|K^+|
+ \bigg[\|h_n\|_{L^\infty(K^+)}
+ \bigl(1+\ell^{-1}+\ell^{-2}\|h_n\|_{L^\infty(K^+)}\bigr)\\
+&\hspace{42mm}\times
+ \bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg)\\
+&\hspace{19mm}
+ +\bigl(\ell+2\|h_n\|_{L^\infty(K^+)}\bigr)
+ \bigg(1+\f{\|h_n\|_{L^\infty(K^+)}}\ell\bigg)^3\bigg].
+\end{aligned}
+\end{equation*}
+At fixed $\ell,\delta$ its limsup is at most
+$C_\delta\ell|K^+|$. In particular all negative powers of $\ell$
+in the source term disappear before the spatial scale changes.
+The constants have no dependence on the number of patches, the
+angular truncation, or the number of radial scales.
+
+Finally bounded overlap gives $\sum_j|K_j^+|\leq C|K^+|$.
+Sum all near, phase, correction, replacement, and freezing bounds
+after taking the sequence limit. Equation~\eqref{eq:var-cubic-residual}
+then gives
+\begin{equation}\label{eq:var-final-bound}
+\left|4\int_{S_r^*M}H_Pa\,\dd\mu\right|
+\leq C_{\kappa,p_*}\delta^{\beta_*}
+   +C_{\delta,p_*}\ell^{\alpha_*}+C_\delta\ell.
+\end{equation}
+All constants may depend on the fixed compact set, the smooth limit,
+the test, and the original first-derivative bound. The first constant
+is uniform in $\ell$, while the other constants may depend on the
+fixed $\delta$. Every quadratic limit used here is a test of the
+single defect measure already extracted in Section~\ref{sec:quadratic}.
+Changing the fixed test or the fixed localization parameters does not
+require another subsequence. Individual cubic summands need not converge:
+their limsup bounds suffice because the total residual has the limit in
+\eqref{eq:var-cubic-residual}. Thus the left side of
+\eqref{eq:var-final-bound} is the same number for every allowed fixed
+$\ell,\delta$. In that numerical inequality let $\ell\to0$, then
+$\delta\to0$, with $\kappa$ fixed. This proves the local
+transport identity for odd real
+tests. Scalar parity and complex linearity give all degree-one tests,
+and a base partition together with the invariant construction gives
+the stated global identity. The full-momentum conclusion follows
+from Lemma~\ref{lem:lift} after this transport step.
+\end{proof}
+
+The strengthened exponents do not give a convergence rate in $n$:
+the hypotheses prescribe no such rate. They improve the auxiliary
+angular and spatial errors after the sequence limit. Every
+$0<\beta_*<2$ is available, while $\alpha_*\uparrow2/3$ as
+$p_*\to\infty$; neither endpoint is claimed, because the finite-exponent
+multiplier constants are not controlled at infinity.
+
+The order of limits is $n\to\infty$, then $\ell\to0$, then
+$\delta\to0$. There is no sequence-dependent cone width, largest
+frequency, or second-derivative assumption. The source estimates used here come from the physical projection and
+require no coordinate condition. The normal forms act on the scalar
+divergence equation for the projected physical field, with the original
+inverse-metric coefficient still uniformly Lipschitz. The density
+Hessian is used for the variational residual and its smooth-background
+commutator.
+
+\subsection{Full-momentum realization and completion}
+
+\begin{lemma}[Local-moment version of the globally hyperbolic lift]\label{lem:lift}
+Suppose a smooth globally hyperbolic spacetime has a nonnegative locally finite measure on $S_r^*M$, supported on $P=0$, satisfying both \eqref{eq:moment} and \eqref{eq:transport}. Then it has a full null cotangent representation $\nu$ with $\int_{\pi^{-1}(K)}|\xi|_r^2\,\dd\nu<\infty$ for every $K\Subset M$.
+\end{lemma}
+\begin{proof}
+This is the construction of \cite[Lemma 2.5]{HLelliptic} with its local
+finiteness made explicit. Fix a smooth spacelike Cauchy hypersurface
+$\Sigma$. Every nonzero null Hamilton orbit meets $T^*M|_\Sigma$ exactly
+once along its inextendible projected geodesic. Denote its covector at
+that crossing by $\xi_\Sigma$, and put
+$\mathcal E(x,\xi)=|\xi_\Sigma|_r$. Transversality to $\Sigma$ and
+smooth dependence of the geodesic equation make $\mathcal E$ smooth
+and positive on the nonzero null cone. Hamilton-flow scaling gives
+$\mathcal E(x,t\xi)=t\mathcal E(x,\xi)$ for $t>0$, and its definition
+gives $H_P\mathcal E=0$. Thus
+$s(x,\omega)=\mathcal E(x,\omega)^{-1}$ defines a smooth positive scale
+on the null unit-ray bundle, and the section
+$L(x,\omega)=(x,s(x,\omega)\omega)$ has invariant image
+$\{\mathcal E=1\}$. No affine completeness or compactness of
+$\Sigma$ is used.
+
+Define $\nu=L_*(s^{-2}\mu)$. This is a nonnegative Radon measure: $s$ and its reciprocal are bounded on each compact base unit-null bundle. Its second moments equal those of $\mu$, and, exactly,
+\begin{equation*}
+\int_{\pi^{-1}(K)}|\xi|_r^2\,\dd\nu=\mu(\pi^{-1}(K)\cap S_r^*M)<\infty.
+\end{equation*}
+For $b\in C_c^\infty(T^*M\setminus0)$, define the degree-one
+extension on the null cone by
+\begin{equation*}
+a(x,\rho\omega)=\f{\rho}{s(x,\omega)}
+ b\bigl(x,s(x,\omega)\omega\bigr),
+\qquad \rho>0,\quad |\omega|_r=1,\quad P(x,\omega)=0.
+\end{equation*}
+A smooth angular extension off the null cone preserves compact base
+support. A partition of unity extends this same function on the cone.
+Since $a=b$ on the invariant section $L$, tangency and homogeneity give
+\begin{equation*}
+\int_{T^*M\setminus 0}H_Pb\,\dd\nu
+=\int_{S_r^*M}s^{-2}(H_Pa)\circ L\,\dd\mu
+=\int_{S_r^*M}H_Pa\,\dd\mu=0.
+\end{equation*}
+One can also verify the weight directly in radial coordinates on the
+null cone. Write $\xi=\rho\omega$, $|\omega|_r=1$, and
+$H_P=\rho X+\rho^2 k\partial_\rho$, where $X$ is tangent to the
+unit-null bundle and $k$ is smooth there. Tangency of $\rho=s$ means
+$Xs=ks$. For $B=b\circ L$ and $f=B/s$, the homogeneous extension
+$a=\rho f$ therefore satisfies
+\begin{equation*}
+ (H_Pa)|_{\rho=1}=Xf+kf=s^{-1}XB,
+ \qquad (H_Pb)\circ L=sXB.
+\end{equation*}
+These formulas recover exactly the factor $s^{-2}$ and include the
+radial drift caused by the varying unit normalization.
+This proves full transport and all local moment requirements.
+\end{proof}
+
+Lemma~\ref{lem:lift} is conditional on transport. Applying it to Theorem~\ref{thm:quadratic} alone would be invalid. The formal radial lift $\rho^{-3}\dd\rho\,\dd\mu$ has divergent second moment $\int_0^\infty\dd\rho/\rho$ and cannot replace this construction on a general spacetime.
+
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Apply Theorem~\ref{thm:quadratic} to obtain one global positive null
+measure $\mu$, with the moment identity and $\Scal(g)=0$.
+Theorem~\ref{thm:variational-transport} establishes transport for this
+same measure. Its proof uses the same subsequence and does not choose
+new measures for different test functions or charts. For a test whose
+base support meets several charts, decompose the test by a smooth base
+partition of unity. Since the resulting tests sum to the original one,
+their Hamilton derivatives also sum to its Hamilton derivative.
+This proves the global equation \eqref{eq:transport}.
+
+Restrict $\mu$ to a globally hyperbolic open subspacetime $U$.
+Lemma~\ref{lem:lift} supplies $\nu$, proves
+\eqref{eq:full-moment-bound}, and yields both equations in
+\eqref{eq:full-equations}. These are all the assertions of the theorem.
+\end{proof}
+
+\begin{corollary}[Vacuum limits and strong physical compactness]
+\label{cor:strong}
+Assume \eqref{eq:admissible}, and let $U\subset M$ be open. Then
+$\Ric(g)=0$ on $U$ if and only if, for every coordinate chart in $U$
+and every $\chi\in C_c^\infty$ of that chart,
+\begin{equation}\label{eq:physical-strong-criterion}
+\|\partial\Pi_E(D)(\chi h_n)\|_{L^2(\R^4)}\longrightarrow0.
+\end{equation}
+Here the compactly supported tensor $\chi h_n$ is extended by zero, and $\Pi_E$ is
+the homogeneous Euclidean gauge-complement projection from
+Proposition~\ref{prop:general-projection}; its value at frequency zero
+is immaterial. The convergence holds for the entire sequence.
+In particular, $Dh_n\to0$ strongly in $L^2_{\loc}(U)$ implies
+$\mu|_{S_r^*U}=0$ and $\Ric(g)=0$ on $U$. The converse need only hold after the physical
+projection: pure coordinate oscillations may remain.
+\end{corollary}
+\begin{proof}
+Suppose first that $\Ric(g)=0$ on $U$. By
+Corollary~\ref{cor:base-marginal}, every subsequential physical measure
+vanishes over $U$. Off the null cone the Ricci-symbol kernel is pure
+gauge and is annihilated by $\Pi_E$. On the null cone, $\Pi_E$ identifies
+the quotient by gauge with a complementary subspace on which $F$ in
+\eqref{eq:B-null} is positive definite. On a compact unit-null bundle,
+finite-dimensional compactness gives a uniform constant $c>0$ such that
+\begin{equation*}
+F(k,k)=F(\Pi_E k,\Pi_E k)\geq c|\Pi_E k|_E^2
+\quad\text{for }k\in\ker\mathcal R_\xi.
+\end{equation*}
+Consequently the projected tensor-gradient defect is zero everywhere
+over $\supp\chi$.
+
+There is no loss at spatial infinity from the nonlocal projection.
+Since $\Pi_E^*\Pi_E=\Pi_E$ and it commutes with derivatives, Parseval gives
+\begin{equation*}
+\|\partial\Pi_E(D)(\chi h_n)\|_{L^2(\R^4)}^2
+=\sum_{a=0}^3\bigl\langle\Pi_E(D)\partial_a(\chi h_n),
+                         \partial_a(\chi h_n)\bigr\rangle_{L^2(\R^4)}.
+\end{equation*}
+The second factor has fixed compact support. Its derivatives of $\chi$
+multiply $h_n$ and converge strongly to zero; the remaining limit is
+exactly the vanishing projected defect just computed. Every subsequence
+has a further subsequence with this zero limit, proving
+\eqref{eq:physical-strong-criterion} for the full sequence.
+
+Conversely, \eqref{eq:physical-strong-criterion} annihilates the physical
+part of every local derivative defect. Gauge invariance of $F$ then
+gives $\mu=0$ on $U$, and the quadratic moment identity gives
+$\Ric(g)=0$ there. Taking strong convergence of all derivatives is a
+sufficient special case. This proof uses only
+Theorem~\ref{thm:quadratic}, and is independent of the transport argument.
+\end{proof}
+
+\appendix
+\section{A harmonic-coordinate example with an unbounded source}\label{sec:shear}
+
+In this appendix $m=\operatorname{diag}(-1,1,1,1)$ is the Minkowski
+metric, and $\Box_m=m^{ab}\partial_a\partial_b$.
+
+\begin{proposition}[Failure of a background $L^2$ source estimate]\label{prop:shear}
+There are globally smooth flat metrics $g_n$ on $\R^4$, satisfying \eqref{eq:admissible} with $g=m$, and satisfying $H(g_n)=H(m)=0$ exactly, for which $\|\Box_mh_n\|_{L^2(K)}\to\infty$ on a fixed compact set $K$.
+\end{proposition}
+\begin{proof}
+In Minkowski coordinates $y$, put $\varepsilon=n^{-1}$, $\delta=n^{-3}$,
+\begin{equation*}
+f(p)=\varepsilon^2\sin(p/\varepsilon),\quad j(q)=\delta^2\sin(q/\delta),
+\end{equation*}
+and define the harmonic coordinate map
+\begin{equation*}
+x^0=y^0,\quad x^3=y^3,\quad
+x^1=y^1+f(y^0-y^3),\quad x^2=y^2+j(y^0-y^1).
+\end{equation*}
+Each $x^a(y)$ is Minkowski harmonic. The triangular map has determinant one and a global inverse. With $t=x^0$, $z=x^3$, $p=t-z$ and $s=t-x^1+f(p)$, that inverse is
+\begin{equation*}
+y^0=t,\quad y^3=z,\quad y^1=x^1-f(p),\quad y^2=x^2-j(s).
+\end{equation*}
+Set $g_n=(y(x))^*m$. It is flat and has $H(g_n)=0$, since the inverse coordinate functions $x^a(y)$ are harmonic. Moreover
+\begin{equation*}
+g_n=-\dd t^2+\bigl(\dd x^1-f'(p)\dd p\bigr)^2
++\bigl(\dd x^2-j'(s)\dd s\bigr)^2+\dd z^2.
+\end{equation*}
+First derivatives of $f,j$ have sizes $\varepsilon,\delta$, and their second derivatives are bounded by one. The inverse Jacobian tends uniformly to the identity; its first derivative is uniformly bounded, including the term $j' f''$. Thus $g_n\to m$ uniformly and its first derivatives are uniformly bounded.
+
+The $21$ component is exactly $h_{n,21}=j'(s)$. Directly,
+\begin{equation*}
+m^{-1}(\dd s,\dd s)=-2f'(p),\quad \Box_ms=0,
+\end{equation*}
+so
+\begin{equation*}
+\Box_mh_{n,21}=j'''(s)(-2f'(p))
+=\f{2\varepsilon}{\delta}\cos(p/\varepsilon)\cos(s/\delta).
+\end{equation*}
+Use coordinates $(t,x^2,p,q)$, with $q=t-x^1$, whose Jacobian
+has absolute determinant one. Let $K$ be the image of
+$[0,1]^2\times[0,2\pi]^2$ under this fixed linear coordinate change.
+Since $\varepsilon^{-1}=n$ and $\delta^{-1}=n^3$ are integers,
+\begin{equation*}
+\begin{aligned}
+\|\Box_mh_{n,21}\|_{L^2(K)}^2
+&=\f{4\varepsilon^2}{\delta^2}
+ \int_0^1\int_0^1\int_0^{2\pi}\int_0^{2\pi}
+ \cos^2(p/\varepsilon)\cos^2((q+f(p))/\delta)
+ \,\dd q\,\dd p\,\dd x^2\,\dd t\\
+&=\f{4\varepsilon^2}{\delta^2}\pi^2=4\pi^2n^4.
+\end{aligned}
+\end{equation*}
+This proves the claim on a fixed compact parallelepiped, and hence on a larger compact coordinate box.
+\end{proof}
+
+The limit has the kinetic representation $\mu=0$. Thus the bound \cite[(3.16)]{HLwave} need not hold after its derivative-scale hypothesis is removed; it does not refute Burnett's conjecture. In particular it explains why merely assuming an exact wave source does not restore the hypothesis of that paper's Lemma~5.2.
+
+\section{Characteristic localization and cubic interactions}\label{sec:cubic}
+
+\begin{proposition}[An auxiliary trilinear counterexample]\label{prop:cubic}
+There are smooth scalar $f_n,w_n\to0$ locally uniformly with uniformly bounded first derivatives and $\Box_m f_n,\Box_mw_n\to0$ strongly in $H^{-1}_{\loc}(\R^4)$ such that
+\begin{equation*}
+Q_0(\dd f_n,\dd w_n)\partial_tf_n\rightharpoonup-\f14
+\end{equation*}
+in distributions. Here $Q_0(\dd f,\dd w)=m^{ab}\partial_af\partial_bw$.
+\end{proposition}
+\begin{proof}
+In coordinates $(t,x,y,z)\in\R^4$, set $u=t-x$, $v=t+x$,
+$\lambda_{1,n}=n^2$, $\lambda_{2,n}=n$, and
+\begin{equation*}
+f_n=\lambda_{1,n}^{-1}\cos(\lambda_{2,n}v)\sin(\lambda_{1,n}u),\qquad
+w_n=(2\lambda_{2,n})^{-1}\sin(2\lambda_{2,n}v).
+\end{equation*}
+The asserted amplitude and gradient bounds follow by differentiation. Since $\Box_m=-4\partial_u\partial_v$ on these functions,
+\begin{equation*}
+\Box_mf_n=4\lambda_{2,n}\sin(\lambda_{2,n}v)\cos(\lambda_{1,n}u),\qquad \Box_mw_n=0.
+\end{equation*}
+Each localized Fourier mode of the first expression has frequency comparable to $\lambda_{1,n}$, hence its $H^{-1}(\R^4)$ norm is $O(\lambda_{2,n}/\lambda_{1,n})$. The tails introduced by a fixed smooth cutoff decay faster than every power. Cutoff commutators are bounded in $L^2(\R^4)$ and weakly zero, hence strongly zero in $H^{-1}_{\loc}(\R^4)$. For every fixed compact localization, all fixed off-null conic projections of the localized gradients therefore tend strongly to zero in $L^2(\R^4)$.
+
+Nevertheless
+\begin{equation*}
+Q_0(\dd f_n,\dd w_n)=-2\cos(\lambda_{2,n}v)\cos(\lambda_{1,n}u)\cos(2\lambda_{2,n}v),
+\end{equation*}
+Differentiation also gives
+\begin{equation*}
+\partial_tf_n=\cos(\lambda_{2,n}v)\cos(\lambda_{1,n}u)
+ +O(\lambda_{2,n}/\lambda_{1,n}).
+\end{equation*}
+Thus the trilinear product equals
+\begin{equation*}
+-2\cos^2(\lambda_{2,n}v)\cos(2\lambda_{2,n}v)\cos^2(\lambda_{1,n}u)+o(1).
+\end{equation*}
+The means of the $v$ and $u$ factors are $1/4$ and $1/2$. Every other trigonometric mode has frequency tending to infinity, and vanishes against a fixed compact smooth test by integration by parts. The limit is $-1/4$.
+\end{proof}
+
+These scalar functions have not been realized as exact Einstein solutions. The proposition rules out a generic null-form lemma based only on quadratic characteristic localization. The coupled Einstein equations and their entire physical contraction must supply information beyond those hypotheses.
+
+\section{Conservation and positive null moments do not give transport}\label{sec:rotating}
+
+On Minkowski space fix $c>0$ and $v(t)=(\cos t,\sin t,0)$. Define
+\begin{equation*}
+T_{00}=2c,\quad T_{0i}=0,\quad T_{ij}=2c v_i(t)v_j(t).
+\end{equation*}
+This tensor is smooth, positive semidefinite as an ordinary quadratic form, trace-free in $m$, and divergence-free. Pointwise it is the sum $c(k_+^2+k_-^2)$ with $k_\pm=(-1,\pm v(t))$ null. Nevertheless it has no transported positive null ray representation on a time interval about zero.
+
+To prove this, fold a proposed measure to the future sheet. With Euclidean unit cotangent normalization, all null covectors have $\xi_0=-1/\sqrt2$. Vanishing moments on spatial vectors perpendicular to $v$ force $\xi_{\rm sp}\parallel v$ almost everywhere, by positivity. Thus only $\omega_\pm=(-1,\pm v)/\sqrt2$ remain. The $00$ and $0i$ moments force each branch to have mass $2c\dd t\dd x$. These are measure identities: the $00$ identity fixes the base marginal, after which the mixed identities fix both conditional branch weights.
+
+Fix an interval $I$ about zero and nonnegative
+$\chi\in C_c^\infty(I)$, $\eta\in C_c^\infty(\R^3)$.
+Choose a smooth degree-one angular extension of
+$F(\xi)=\xi_1\xi_2/(-\xi_0)$ from the future null shell and set
+$a=\chi\eta F$. The spatial terms cancel between the two branches, so
+\begin{equation*}
+\begin{aligned}
+\int_{S_r^*(I\times\R^3)}H_Pa\,\dd\mu
+&=2c\bigg(\int_{\R^3}\eta(x)\,\dd x\bigg)
+ \int_I\chi'(t)\cos t\sin t\,\dd t\\
+&=-2c\bigg(\int_{\R^3}\eta(x)\,\dd x\bigg)
+ \int_I\chi(t)\cos(2t)\,\dd t.
+\end{aligned}
+\end{equation*}
+It is nonzero for nonnegative nonzero cutoffs near $t=0$. Folding is legitimate because the antipodal map preserves quadratic moments and reverses the Hamilton field, so a zero transport integral remains zero. This contradicts transport.
+
+Here $T$ is not $G(m)$, and no vacuum sequence with this tensor as its effective stress has been constructed. The example establishes precisely the failure of the proposed implication from tensor conservation and all pointwise positivity properties to kinetic transport.
+
+\subsection{A smooth metric whose actual Einstein tensor is not kinetic}
+
+The preceding obstruction can be realized by the Einstein tensor of a smooth metric. The missing condition remains vacuum approximation, so the following proposition is still not a vacuum-limit counterexample to Theorem~\ref{thm:main}.
+
+\begin{proposition}[Geometric nonrepresentability without vacuum approximation]\label{prop:bianchi}
+There exists a smooth Lorentzian metric on a product interval times $\R^3$ whose Einstein tensor is trace-free, positive semidefinite, and pointwise a positive sum of two null squares, but which admits no nonnegative null ray measure satisfying both its Einstein identity and Hamilton transport.
+\end{proposition}
+\begin{proof}
+Let $p(t)=(\cos t,\sin t,0)^T$. For symmetric positive definite $\gamma$ and symmetric $A$, put
+\begin{equation*}
+K=\gamma^{-1}A,\quad\theta=\tr K,\quad d=p^T\gamma^{-1}p,\quad
+W=\f{\gamma^{-1}pp^T}{d}.
+\end{equation*}
+Fix $H>0$ and solve the smooth finite-dimensional system
+\begin{equation*}
+\begin{gathered}
+\gamma'=2A,\\
+A'=2A\gamma^{-1}A-\theta A+\rho\f{pp^T}{d},\\
+\rho'=-\rho\bigl(\theta+\tr(KW)\bigr),\\
+\gamma(0)=I,\quad A(0)=HI,\quad\rho(0)=3H^2.
+\end{gathered}
+\end{equation*}
+The vector field preserves symmetry and is smooth where $\gamma$ is positive definite. Ordinary local existence supplies an interval $|t|<\tau<\pi/4$ with $\gamma>0$ and $\rho>0$. On this interval $K'=\rho W-\theta K$ and $\theta'=\rho-\theta^2$, since $\tr W=1$. Direct differentiation gives
+\begin{equation*}
+\f{\dd}{\dd t}\bigl(\theta^2-\tr(K^2)-2\rho\bigr)
+=-2\theta\bigl(\theta^2-\tr(K^2)-2\rho\bigr).
+\end{equation*}
+Its initial value is zero, so the constraint persists.
+
+For $g=-\dd t^2+\gamma_{ij}(t)\dd x^i\dd x^j$, the nonzero connection coefficients are $\Gamma^0_{ij}=A_{ij}$ and $\Gamma^i_{0j}=K^i{}_j$. Inserting these in the Ricci formula yields
+\begin{equation*}
+\Ric_{00}=-\theta'-\tr(K^2)=\rho,\quad
+\Ric_{0i}=0,\quad
+\Ric_{ij}=\bigl[\gamma(K'+\theta K)\bigr]_{ij}=\rho\f{p_ip_j}{d}.
+\end{equation*}
+The scalar curvature is $-\rho+\rho\tr W=0$, so these are also the components of $G$. With $k_\pm=(-\sqrt d,\pm p)$,
+\begin{equation*}
+G=\f{\rho}{2d}\bigl(k_+\otimes k_++k_-\otimes k_-\bigr),
+\end{equation*}
+which proves the stated pointwise properties. The usual Bianchi identity also gives divergence zero.
+
+Suppose a transported positive null ray representation existed, and fold it to the future sheet. Spatial vectors perpendicular in the ordinary Euclidean sense to $p$ have zero $G$ moment. Nonnegativity therefore forces $\xi_{\rm sp}\parallel p(t)$ almost everywhere. In particular $\xi_1\ne0$ on the support, since $\cos t>0$ and a nonzero null covector cannot have zero spatial part.
+
+Set $I=(-\tau,\tau)$ and $M=I\times\R^3$.
+For nonnegative nonzero $\chi\in C_c^\infty(I)$ and
+$\eta\in C_c^\infty(\R^3)$, choose a degree-one test equal near
+the future null shell to
+\begin{equation*}
+a(t,x,\xi)=\chi(t)\eta(x)
+\f{\xi_1\xi_2-\tan(t)\xi_1^2}{-\xi_0}.
+\end{equation*}
+A smooth homogeneous angular cutoff extends it to the entire nonzero cotangent bundle. On the forced support its numerator vanishes, as do all terms obtained by differentiating the base cutoffs and the denominator. Spatial translation invariance of $g$ means the Hamilton field has no $\partial_{\xi_i}$ components. Therefore, on this support,
+\begin{equation*}
+H_Pa=-\chi\eta\sec^2(t)\xi_1^2.
+\end{equation*}
+Using the $11$ Einstein moment, the transport integral is exactly
+\begin{equation*}
+\int_{S_r^*M}H_Pa\,\dd\mu=-\int_{I\times\R^3}\chi(t)\eta(x)\f{\rho(t)}{d(t)}\dd V_g<0,
+\end{equation*}
+a contradiction. This excludes every positive representation, including those initially using both time sheets.
+\end{proof}
+
+Proposition~\ref{prop:bianchi} shows that the second-moment conclusion of Theorem~\ref{thm:quadratic}, even together with an actual smooth Einstein tensor and the Bianchi identity, does not imply the missing transport. No sequence satisfying \eqref{eq:admissible} and converging to the metric of Proposition~\ref{prop:bianchi} has been constructed.
+
+\section{The Rosen plane-wave class}\label{sec:rosen}
+
+\begin{proposition}[Two-polarization Rosen closure]\label{prop:rosen}
+Let $I\subset\R$ be an interval and
+$g_n=-2\dd u\dd v+\gamma_{n,AB}(u)\dd y^A\dd y^B$ on
+$M=I\times\R^3$, with $A,B\in\{1,2\}$ and $\gamma_n$ smooth
+positive definite on $I$. Suppose \eqref{eq:admissible} holds with smooth positive definite $\gamma$. Then $g$ has a full massless kinetic representation, without any second-derivative scale assumption.
+\end{proposition}
+\begin{proof}
+Put $L_n=\gamma_n^{-1}\gamma_n'/2$ and $\tau_n=\tr L_n$. The nonzero connection coefficients are
+\begin{equation*}
+\Gamma^A_{uB}=(L_n)^A{}_B,\qquad \Gamma^v_{AB}=\gamma'_{n,AB}/2.
+\end{equation*}
+The only possibly nonzero Ricci component is
+\begin{equation*}
+\Ric(g_n)_{uu}=-\tau_n'-\tr(L_n^2).
+\end{equation*}
+Define the real symmetric matrices
+\begin{equation*}
+S_n=\f12\gamma_n^{-1/2}\gamma_n'\gamma_n^{-1/2},\qquad
+S=\f12\gamma^{-1/2}\gamma'\gamma^{-1/2}.
+\end{equation*}
+Uniform convergence of $\gamma_n$ and the derivative bound imply
+\begin{equation*}
+S_n\rightharpoonup^* S\quad\hbox{in }L^\infty_{\loc}(I),\qquad
+-\tau_n'=\tr(L_n^2)=|S_n|_F^2.
+\end{equation*}
+Pass to a weak-* limit $|S_n|_F^2\rightharpoonup^*Q$ in
+$L^\infty_{\loc}(I)$. The vacuum identity gives $Q=-\tau'$.
+For $0\leq\varphi\in C_c^\infty(I)$, weak lower semicontinuity yields
+\begin{equation*}
+\int_I\varphi(u)|S(u)|_F^2\,\dd u
+\leq\liminf_n\int_I\varphi(u)|S_n(u)|_F^2\,\dd u
+=\int_I\varphi(u)Q(u)\,\dd u.
+\end{equation*}
+Consequently
+\begin{equation*}
+\Ric(g)=\rho(u)\dd u^2,\qquad \rho=-\tau'-|S|_F^2\geq0.
+\end{equation*}
+Smoothness of the limit makes $\rho$ smooth. At $\xi=\dd u$, one has $P=0$ and $H_P=-\partial_v$, with no vertical component. Thus
+\begin{equation*}
+\nu=\rho(u)\dd V_g(x)\,\delta_{\dd u(x)}(\dd\xi)
+\end{equation*}
+has the required second moment. For $b\in C_c^\infty(T^*M\setminus0)$,
+integration in $v$ gives
+\begin{equation*}
+\int_{T^*M\setminus0}H_Pb\,\dd\nu
+=-\int_{I\times\R^3}\rho(u)
+ \partial_vb(x,\dd u(x))\sqrt{\det\gamma(u)}
+ \,\dd u\,\dd v\,\dd y^1\,\dd y^2=0.
+\end{equation*}
+The density and $r$-length of $\dd u$ are bounded on compact sets,
+so all local second moments are finite.
+\end{proof}
+
+For an explicit nonzero example take $\lambda_n=e^n$,
+\begin{equation*}
+\psi_n(u)=\f{\sin(nu)}n+\f{\sin(\lambda_n u)}{\lambda_n},\quad
+B_n''+(\psi_n')^2B_n=0,\quad B_n(0)=1,\ B_n'(0)=0.
+\end{equation*}
+On $I=(-1/4,1/4)$, comparison with $\cos(2u)$ gives $B_n\geq\cos(2u)>0$, and $|B_n'|,|B_n''|$ are uniformly bounded. Since $(\psi_n')^2\rightharpoonup^*1$ in $L^\infty(I)$,
+compactness in $C^1(\overline I)$ and uniqueness for the limiting ODE
+give $B_n\to\cos u$ in $C^1(\overline I)$. Hence the exact vacuum metrics
+\begin{equation*}
+g_n=-2\dd u\dd v+B_n^2(e^{2\psi_n}\dd x^2+e^{-2\psi_n}\dd z^2)
+\end{equation*}
+converge to $g=-2\dd u\dd v+\cos^2u(\dd x^2+\dd z^2)$, with $\Ric(g)=2\dd u^2$ and $\nu=2\dd V_g\delta_{\dd u}$.
+
+Fix a closed interval $I_0\Subset I$ containing zero in its interior.
+The screen ratio $g_{n,xx}/g_{n,zz}=e^{4\psi_n}$, evaluated at $u=\pi/(2n)$, gives $\|g_n-g\|_{L^\infty(I_0\times[-1,1]^3)}\geq c/n$ for all sufficiently large $n$. At $u=\pi/(2\lambda_n)$, $|\psi_n''|\geq \lambda_n$, whereas the remaining terms in $\partial_u^2g_{n,xx}$ are bounded. Thus $\|\partial^2g_n\|_{L^\infty(I_0\times[-1,1]^3)}\geq c\lambda_n-C$. No common amplitude parameter can satisfy the pair of estimates in \eqref{eq:literature-scale}.
+
+This example also lies in an exact zero-source gauge. Set $v=B_n(u)V$ and pull back to the fixed product coordinates $(u,V,x,z)$:
+\begin{equation*}
+\widetilde g_n=-2B_n\dd u\dd V-2B_n'V\dd u^2
++B_n^2(e^{2\psi_n}\dd x^2+e^{-2\psi_n}\dd z^2).
+\end{equation*}
+Its volume density is $B_n^3$ and $\widetilde g_n^{uV}=-B_n^{-1}$, $\widetilde g_n^{VV}=2B_n'V/B_n^2$, $\widetilde g_n^{uu}=0$. Therefore
+\begin{equation*}
+\partial_u(B_n^3\widetilde g_n^{Vu})+\partial_V(B_n^3\widetilde g_n^{VV})
+=-2B_nB_n'+2B_nB_n'=0,
+\end{equation*}
+and every other contracted source is zero as well. Convergence and the first-derivative bound persist because $B_n\to B$ in $C^1(\overline I)$ and $B_n''$ is bounded. The same ratio and second-derivative arguments rule out a fixed scale. The limit has $H_P=-B^{-1}\partial_V$ at $\dd u$, so $2\dd V_{\widetilde g}\delta_{\dd u}$ again gives full transport.
+
+\subsection{Rigidity of flat sequences}
+
+\begin{proposition}[Flat admissible sequences have flat smooth limits]\label{prop:flat-rigidity}
+If, in addition to \eqref{eq:admissible}, the full curvature of every $g_n$ vanishes, then the full curvature of $g$ vanishes.
+\end{proposition}
+\begin{proof}
+Let $B\Subset\R^4$ be a simply connected coordinate ball.
+Uniform inverse-metric convergence and weak-* convergence of first
+derivatives give
+\begin{equation*}
+\sup_n\|\Gamma_n\|_{L^\infty(B)}<\infty,\qquad
+\Gamma_n\rightharpoonup^*\Gamma\quad\hbox{in }L^\infty(B).
+\end{equation*}
+Flatness gives a parallel frame $E_n$ with a fixed invertible value
+at the center. Gronwall's inequality along radial segments gives
+\begin{equation*}
+\sup_n\bigl(\|E_n\|_{L^\infty(B)}
+             +\|E_n^{-1}\|_{L^\infty(B)}\bigr)<\infty.
+\end{equation*}
+Path independence gives the derivative equation and hence
+\begin{equation*}
+\partial_aE_n=-\Gamma_{n,a}E_n,\qquad
+\sup_n\|\partial E_n\|_{L^\infty(B)}<\infty.
+\end{equation*}
+A subsequence converges uniformly to an invertible frame $E$.
+Uniform convergence of $E_n$ and weak-* convergence of $\Gamma_n$
+allow passage to the distributional equation
+\begin{equation*}
+\partial_aE=-\Gamma_aE.
+\end{equation*}
+Since $\Gamma$ is smooth, this equation makes $E$ smooth.
+Commuting derivatives gives $\operatorname{Rm}(g)E=0$; invertibility
+of $E$ implies $\operatorname{Rm}(g)=0$ on $B$. Such balls cover $M$.
+\end{proof}
+
+This excludes all flat pure-coordinate sequences as sources of a nonvacuum smooth limit in the admissible class; no near-identity assumption on the original coordinate maps is needed.
+
+\section{Auxiliary identities and coordinate oscillations}
+
+We record elementary examples and identities used to distinguish the
+physical measure from the unprojected derivative defect.
+
+\paragraph{Multiscale flat pullback.}
+For $n\geq3$, set $F_n(s)=s+n^{-2}\sin(ns)+e^{-2n}\sin(e^ns)$. Then
+\begin{equation*}
+\begin{gathered}
+F_n'=1+n^{-1}\cos(ns)+e^{-n}\cos(e^ns)>0,\\
+F_n''=-\sin(ns)-\sin(e^ns),\qquad
+F_n'''=-n\cos(ns)-e^n\cos(e^ns).
+\end{gathered}
+\end{equation*}
+The bound $F_n^\prime\geq1-1/3-e^{-3}>0$ and bounded displacement make $F_n$ a global diffeomorphism. The pullback metric differs from Minkowski only in $g_{11}=(F_n')^2$, is exactly flat, has amplitude $O(n^{-1})$ and bounded first derivatives. At zero its amplitude is at least $2/n$ and its second derivative is $-2(1+n^{-1}+e^{-n})(n+e^n)$. Thus no common parameter can bound amplitude by $C\lambda_n$ and the second derivative by $C/\lambda_n$.
+
+\paragraph{Spacelike raw defect.}
+For the same sequence, $\partial_1h_{11}=-2(\sin(nx_1)+\sin(e^nx_1))+o(1)$ uniformly on compact sets. Each sine square has weak mean $1/2$, while the mixed frequencies $e^n\pm n$ tend to infinity. Hence $|\partial_1h_{11}|^2\rightharpoonup4$ and its raw directional defect lies at $\pm\dd x^1$, which are spacelike. Formula~\eqref{eq:mu-invariant} gives zero physical measure, as it must.
+
+\paragraph{Weak energy is insufficient even algebraically.}
+The constant covariant tensor $\operatorname{diag}(3,-1,2,2)$ has Lorentz trace zero and zero divergence. For timelike $(t,x)$, $3t^2-x_1^2+2x_2^2+2x_3^2>0$. It is not a positive real-covector second moment because its value on $\partial_{x_1}$ is negative.
+
+\paragraph{The second-derivative product identity.}
+If $f_n\to0$ uniformly and $\partial f_n$ is bounded in $L^\infty_{\loc}(\R^4)$, then
+\begin{equation*}
+f_n\partial_{ab}f_n=\partial_a(f_n\partial_bf_n)-\partial_af_n\partial_bf_n.
+\end{equation*}
+The divergence term tends strongly to zero in $H^{-1}_{\loc}(\R^4)$ since $f_n\partial_bf_n\to0$ in $L^2(K)$ for every compact $K\subset\R^4$. For $\chi\in C_c^\infty(\R^4)$, put $K=\supp\chi$.
+H\"older's inequality gives
+\begin{equation*}
+\left|\int_{\R^4}(\partial_a\chi)f_n\partial_bf_n\,\dd x\right|
+\leq\|\partial_a\chi\|_{L^1(\R^4)}
+ \|f_n\|_{L^\infty(K)}\|\partial_bf_n\|_{L^\infty(K)}\longrightarrow0.
+\end{equation*}
+No conclusion follows for arbitrary sequence-dependent high-frequency tests from this fact alone.
+
+\paragraph{Change of unit section.}
+For $F_0(x,\xi)=(x,\xi/s_0)$ as in \eqref{eq:norm-change}, every degree-two test $b$ obeys $b\circ F_0=s_0^{-2}b$. Thus $F_{0*}(s_0^2\mu)$ preserves both the stress tests and the tests $H_Pa$. Unweighted pushforward generally does not.
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}\raggedright
+\bibitem{BenyiOh} \'A. B\'enyi and T. Oh. Smoothing of commutators for a H\"ormander class of bilinear pseudodifferential operators. \emph{Journal of Fourier Analysis and Applications} 20 (2014), 282-300.
+\bibitem{Burnett1989} G. A. Burnett. The high-frequency limit in general relativity. \emph{Journal of Mathematical Physics} 30 (1989), 90-96.
+\bibitem{GW2011} S. R. Green and R. M. Wald. New framework for analyzing the effects of small scale inhomogeneities in cosmology. \emph{Physical Review D} 83 (2011), 084020.
+\bibitem{GTC} A. Guerra and R. Teixeira da Costa. Oscillations in wave map systems and homogenization of the Einstein equations in symmetry. \emph{Archive for Rational Mechanics and Analysis} 249 (2025), Article 9.
+\bibitem{HLelliptic} C. Huneau and J. Luk. Trilinear compensated compactness and Burnett's conjecture in general relativity. \emph{Annales scientifiques de l'\'Ecole normale sup\'erieure} (4) 57 (2024), 385-472.
+\bibitem{HLwave} C. Huneau and J. Luk. Burnett's conjecture in generalized wave coordinates. arXiv:2403.03470v1 (2024).
+\end{thebibliography}
+\end{document}

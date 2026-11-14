@@ -1,0 +1,906 @@
+{
+  "schema_version": 1,
+  "status": "development",
+  "standard": {
+    "id": "paper-results",
+    "version": "1.2",
+    "document_sha256": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0"
+  },
+  "paper": {
+    "title": "High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture",
+    "version": "Anonymous undated source snapshot received 2026-11-15",
+    "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "source_record": "paper/source.json"
+  },
+  "scope": {
+    "kind": "paper-results",
+    "coverage": "formal-results-and-dependency-closure",
+    "description": "全部正式数学结果、关键未编号结果及必要定义和证明依赖；本轮仅初始化原文索引，全部待建模"
+  },
+  "trust_policy": {
+    "decision": "pending-user-decision",
+    "implemented_checker_profile": "standard-three-axioms"
+  },
+  "targets": [],
+  "inventory": [
+    {
+      "claim_id": "thm:main",
+      "kind": "theorem",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "thm:main",
+        "line": 139,
+        "endline": 168
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t01"
+    },
+    {
+      "claim_id": "thm:quadratic",
+      "kind": "theorem",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "thm:quadratic",
+        "line": 354,
+        "endline": 356
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t02"
+    },
+    {
+      "claim_id": "cor:base-marginal",
+      "kind": "corollary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "cor:base-marginal",
+        "line": 487,
+        "endline": 506
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t03"
+    },
+    {
+      "claim_id": "lem:commutator",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:commutator",
+        "line": 566,
+        "endline": 575
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t04"
+    },
+    {
+      "claim_id": "lem:cubic-continuity",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:cubic-continuity",
+        "line": 613,
+        "endline": 623
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t05"
+    },
+    {
+      "claim_id": "lem:freezing",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:freezing",
+        "line": 736,
+        "endline": 764
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t06"
+    },
+    {
+      "claim_id": "lem:analytic-near",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:analytic-near",
+        "line": 1026,
+        "endline": 1057
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t07"
+    },
+    {
+      "claim_id": "lem:analytic-correction-bounds",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:analytic-correction-bounds",
+        "line": 1380,
+        "endline": 1394
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t08"
+    },
+    {
+      "claim_id": "prop:general-projection",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:general-projection",
+        "line": 1600,
+        "endline": 1616
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t09"
+    },
+    {
+      "claim_id": "thm:variational-transport",
+      "kind": "theorem",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "thm:variational-transport",
+        "line": 1729,
+        "endline": 1735
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t10"
+    },
+    {
+      "claim_id": "lem:lift",
+      "kind": "lemma",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "lem:lift",
+        "line": 2989,
+        "endline": 2991
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t11"
+    },
+    {
+      "claim_id": "cor:strong",
+      "kind": "corollary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "cor:strong",
+        "line": 3063,
+        "endline": 3078
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t12"
+    },
+    {
+      "claim_id": "prop:shear",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:shear",
+        "line": 3121,
+        "endline": 3123
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t13"
+    },
+    {
+      "claim_id": "prop:cubic",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:cubic",
+        "line": 3175,
+        "endline": 3181
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t14"
+    },
+    {
+      "claim_id": "prop:bianchi",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:bianchi",
+        "line": 3245,
+        "endline": 3247
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t15"
+    },
+    {
+      "claim_id": "prop:rosen",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:rosen",
+        "line": 3307,
+        "endline": 3312
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t16"
+    },
+    {
+      "claim_id": "prop:flat-rigidity",
+      "kind": "proposition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "label": "prop:flat-rigidity",
+        "line": 3390,
+        "endline": 3392
+      },
+      "disposition": "formalize",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/main.md#t17"
+    },
+    {
+      "claim_id": "unnum:ricci-compactness",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 388
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:microlocal-extraction",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 428
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:quadratic-symbol-algebra",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:physical-measure-construction",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 485
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:coefficient-continuity",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 719,
+        "endline": 734
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:triad-partition",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 895,
+        "endline": 951
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:individual-caps",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 953,
+        "endline": 992
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:phase-gap",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 994,
+        "endline": 1016
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:bs1-extension",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1248,
+        "endline": 1377
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:quartic-commutator",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1476,
+        "endline": 1504
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:exact-correction",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1506,
+        "endline": 1526
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:correction-approximation",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1528,
+        "endline": 1590
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:density-hessian",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1747,
+        "endline": 1809
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:transport-residual",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1811,
+        "endline": 1904
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:complete-cubic-vertex",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1906,
+        "endline": 2009
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:screen-projection",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2053,
+        "endline": 2107
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:ward-and-gauge-classification",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2109,
+        "endline": 2261
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:gauge-correction",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2265,
+        "endline": 2341
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:near-test-gain",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2343,
+        "endline": 2502
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:physical-far-correction",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2555
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:correction-energy",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2590
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:frozen-assembly",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2592,
+        "endline": 2641
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:variable-localization",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2647,
+        "endline": 2729
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:global-defect-norm",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2731,
+        "endline": 2758
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:frozen-projection-error",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2760,
+        "endline": 2841
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:final-transport-bound",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2843,
+        "endline": 2985
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:rotating-null-moment-example",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:rosen-multiscale-example",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3386
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:flat-pullback-example",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3430,
+        "endline": 3439
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:spacelike-raw-defect",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3441,
+        "endline": 3442
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:weak-energy-example",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3444,
+        "endline": 3445
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:second-derivative-product",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3447,
+        "endline": 3459
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "unnum:change-unit-section",
+      "kind": "unnumbered-result-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3461,
+        "endline": 3462
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:admissible-data",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 90,
+        "endline": 112
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:ray-phase-space",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 114,
+        "endline": 125
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:moment-transport",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 126,
+        "endline": 135
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:full-momentum-representation",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 150,
+        "endline": 167
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:notation-pairing",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 331,
+        "endline": 350
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:defect-covariance",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 428
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:fourier-multilinear",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 539,
+        "endline": 562
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:frequency-angular-data",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 895,
+        "endline": 1024
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:correction-symbol-interface",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1248,
+        "endline": 1377
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:euclidean-gauge-projection",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1621,
+        "endline": 1642
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:variational-objects",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1747,
+        "endline": 1788
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:complete-vertex",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1917,
+        "endline": 2009
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:physical-gauge-screen",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2013,
+        "endline": 2107
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:two-corrections",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2265,
+        "endline": 2641
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "defcand:global-hyperbolic-section",
+      "kind": "definition-candidate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2993,
+        "endline": 3039
+      },
+      "disposition": "pending-scope-review",
+      "modeling_status": "pending_modeling",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/source-index.json"
+    }
+  ],
+  "coverage_review": {
+    "status": "pending-independent-review",
+    "formal_environment_index": "docs/statements/source-index.json",
+    "unnumbered_results": "pending-independent-review",
+    "necessary_definitions_and_dependencies": "pending-independent-review"
+  },
+  "engineering": {
+    "mathlib": "not-selected",
+    "external_dependencies": "none-at-initialization",
+    "target_repository": {
+      "owner": "Oho1e",
+      "name": "Burnett-conjecture",
+      "visibility": "private",
+      "remote_status": "private-repository-created",
+      "url": "https://github.com/Oho1e/Burnett-conjecture"
+    }
+  }
+}

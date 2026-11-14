@@ -1,0 +1,6 @@
+name = "burnett_conjecture"
+version = "0.1.0"
+defaultTargets = ["Burnett"]
+
+[[lean_lib]]
+name = "Burnett"

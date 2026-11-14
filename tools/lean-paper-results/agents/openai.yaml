@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lean 论文形式化·结果全覆盖"
+  short_description: "形式化论文全部正式数学结果及必要依赖，双向核验后交作者确认"
+  default_prompt: "使用 $lean-paper-results 按 paper-results 第1.2版推进这篇论文的全部正式结果及必要依赖，并按本轮约定交付可复核成果。"

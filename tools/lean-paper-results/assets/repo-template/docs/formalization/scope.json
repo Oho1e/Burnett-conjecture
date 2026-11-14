@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "development",
+  "standard": {
+    "id": "paper-results",
+    "version": "1.2",
+    "document_sha256": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0"
+  },
+  "paper": {
+    "title": "填写实际文章标题",
+    "version": "填写实际版本号或日期",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "url": "",
+    "source_record": "docs/formalization/review.md"
+  },
+  "scope": {
+    "kind": "paper-results",
+    "coverage": "formal-results-and-dependency-closure",
+    "description": "全部正式数学结果、关键未编号结果及必要定义和证明依赖；按原文建立实际清单"
+  },
+  "trust_policy": {
+    "decision": "pending-user-decision",
+    "implemented_checker_profile": "standard-three-axioms"
+  },
+  "targets": [
+    {
+      "claim_id": "T1",
+      "module": "Paper.Main",
+      "declaration": "Paper.main_theorem"
+    }
+  ],
+  "inventory": [
+    {
+      "claim_id": "T1",
+      "kind": "theorem",
+      "source_ref": "填写原文定理编号及版本位置",
+      "disposition": "formalize",
+      "statement_record": "docs/statements/main.md"
+    }
+  ]
+}
