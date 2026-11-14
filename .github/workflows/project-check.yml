@@ -27,7 +27,12 @@ jobs:
           use-mathlib-cache: 'false'
           use-github-cache: 'false'
       - name: Check the current project stage
-        run: python scripts/check_project.py --repo .
+        # This cache request is restricted to the current algebra imports.
+        # Keep it in sync with new imports when further fragments are added.
+        # Sources and versions are fixed by the project manifest.
+        run: |
+          lake exe cache get Mathlib.Data.Real.Basic Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Tactic.FieldSimp Mathlib.Tactic.Linarith Mathlib.Tactic.Ring
+          python scripts/check_project.py --repo .
       - name: Preserve this run's evidence
         if: always()
         uses: actions/upload-artifact@v4

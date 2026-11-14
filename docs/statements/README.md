@@ -2,11 +2,13 @@
 
 锁定原文：`paper/burnett.tex`，SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`。行号为该源文件的1起算行号，不是PDF页码。
 
-当前已定位17个正式结果环境（3 theorem、6 lemma、6 proposition、2 corollary），并登记33项未编号结果候选、15项定义候选。所有条目均待建模；候选范围、必要依赖闭包和独立语义对应仍待核对。环境编号按TeX计数器推得，尚未经编译PDF核验。
+初始索引定位17个正式结果环境（3 theorem、6 lemma、6 proposition、2 corollary），并登记33项未编号结果候选、15项定义候选。现已实现完整二次代数依赖中的实数非特征子片段；17项正式结果仍待完成，父依赖仍仅部分形式化。候选范围及必要依赖闭包继续核对。环境编号按TeX计数器推得，尚未经编译PDF核验。
 
 - [逐项原文陈述与未来Lean对照](main.md)
 - [机器可读完整索引](source-index.json)
 - [初始结构清点及候选说明](intake.zh-CN.md)
+- [主定理的精确接口](main-interface.md)
+- [首个 Ricci 符号片段](ricci-symbol.md)及[独立实际声明回读](ricci-symbol-review.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

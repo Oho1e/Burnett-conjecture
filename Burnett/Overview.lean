@@ -1,8 +1,9 @@
 /-!
 # Burnett conjecture: project entry
 
-This module reserves the project namespace. Mathematical definitions and paper
-targets have not yet been modeled. A successful build checks project setup only.
+The first implemented dependency is the real, noncharacteristic Ricci-symbol
+algebra in `Burnett.Algebra.RicciSymbol`. The null-cone, polarization, measure,
+transport and geometric parts of the manuscript remain open.
 -/
 
 namespace Burnett

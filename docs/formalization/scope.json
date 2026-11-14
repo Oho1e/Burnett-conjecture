@@ -21,7 +21,33 @@
     "decision": "pending-user-decision",
     "implemented_checker_profile": "standard-three-axioms"
   },
-  "targets": [],
+  "targets": [
+    {
+      "claim_id": "ricci:kernel-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.kernel_eq_pureGauge"
+    },
+    {
+      "claim_id": "ricci:raise-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.raiseSecond_pureGauge"
+    },
+    {
+      "claim_id": "ricci:connection-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.connectionSymbol_pureGauge"
+    },
+    {
+      "claim_id": "ricci:quadratic-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_pureGauge"
+    },
+    {
+      "claim_id": "ricci:quadratic-kernel",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel"
+    }
+  ],
   "inventory": [
     {
       "claim_id": "thm:main",
@@ -289,16 +315,17 @@
     },
     {
       "claim_id": "unnum:quadratic-symbol-algebra",
-      "kind": "unnumbered-result-candidate",
+      "kind": "proof-dependency",
       "source_ref": {
         "path": "paper/burnett.tex",
         "line": 432,
         "endline": 465
       },
-      "disposition": "pending-scope-review",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/source-index.json"
+      "disposition": "formalize",
+      "modeling_status": "partially_modeled",
+      "lean_status": "partially_formalized",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "remaining": "Full B expansion, polarization, null branch and physical quotient positivity remain open."
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -884,6 +911,96 @@
       "modeling_status": "pending_modeling",
       "lean_status": "not_formalized",
       "statement_record": "docs/statements/source-index.json"
+    },
+    {
+      "claim_id": "ricci:kernel-pure-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 415,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.kernel_eq_pureGauge",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "semantic_review_record": "docs/statements/ricci-symbol-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-source-readback-and-project-rebuild-passed"
+    },
+    {
+      "claim_id": "ricci:raise-pure-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 434,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.raiseSecond_pureGauge",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "semantic_review_record": "docs/statements/ricci-symbol-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-source-readback-and-project-rebuild-passed"
+    },
+    {
+      "claim_id": "ricci:connection-pure-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 434,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.connectionSymbol_pureGauge",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "semantic_review_record": "docs/statements/ricci-symbol-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-source-readback-and-project-rebuild-passed"
+    },
+    {
+      "claim_id": "ricci:quadratic-pure-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 435,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_pureGauge",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "semantic_review_record": "docs/statements/ricci-symbol-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-source-readback-and-project-rebuild-passed"
+    },
+    {
+      "claim_id": "ricci:quadratic-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 452,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel",
+      "statement_record": "docs/statements/ricci-symbol.md",
+      "semantic_review_record": "docs/statements/ricci-symbol-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-source-readback-and-project-rebuild-passed"
     }
   ],
   "coverage_review": {
@@ -893,8 +1010,12 @@
     "necessary_definitions_and_dependencies": "pending-independent-review"
   },
   "engineering": {
-    "mathlib": "not-selected",
-    "external_dependencies": "none-at-initialization",
+    "mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "lean": "4.24.0"
+    },
+    "external_dependencies": "Mathlib and eight pinned transitive packages; see lake-manifest.json",
     "target_repository": {
       "owner": "Oho1e",
       "name": "Burnett-conjecture",

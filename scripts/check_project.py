@@ -108,6 +108,7 @@ def main() -> int:
         result["runtime"] = {"lake": lake_version.stdout.strip(), "lean": lean_version.stdout.strip(), "toolchain": pin}
         result["paper_target_count"] = len(targets)
         result["scope_status"] = scope.get("status")
+        command([args.lake, "build", "Burnett"], "build.log")
         if targets:
             # The original checker still rejects empty targets. Do not alter it.
             checker = Path(__file__).with_name("check_paper.py")
@@ -116,10 +117,11 @@ def main() -> int:
             target_result = load_json(repo / ".paper-verification" / "result.json")
             if target_result.get("status") != "machine-check-passed":
                 raise ValueError("Target checker did not produce machine-check-passed")
+            result["target_check_receipt_sha256"] = digest(repo / ".paper-verification" / "result.json")
+            result["target_check_input_fingerprint"] = target_result["inputs"]["input_fingerprint"]
             result["status"] = "machine-check-passed"
             result["check_scope"] = "Declared paper targets and their transitive axioms; semantic and complete-coverage review remain separate"
         else:
-            command([args.lake, "build", "Burnett"], "build.log")
             result["status"] = "project-setup-passed"
             result["check_scope"] = "Source hash, configuration, pinned runtime and library startup build only; no paper theorem checked"
         dependency_path = repo / "lake-manifest.json"
