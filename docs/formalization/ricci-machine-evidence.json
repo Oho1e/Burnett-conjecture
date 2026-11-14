@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-15",
+  "scope": "Real noncharacteristic Ricci-symbol kernel and diagonal quadratic cancellation; supporting fragment only",
+  "source_path": "Burnett/Algebra/RicciSymbol.lean",
+  "source_sha256": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "lean": "4.24.0",
+  "mathlib_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "registered_supporting_targets": [
+    {
+      "claim_id": "ricci:kernel-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.kernel_eq_pureGauge"
+    },
+    {
+      "claim_id": "ricci:raise-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.raiseSecond_pureGauge"
+    },
+    {
+      "claim_id": "ricci:connection-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.connectionSymbol_pureGauge"
+    },
+    {
+      "claim_id": "ricci:quadratic-pure-gauge",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_pureGauge"
+    },
+    {
+      "claim_id": "ricci:quadratic-kernel",
+      "module": "Burnett.Algebra.RicciSymbol",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel"
+    }
+  ],
+  "actual_transitive_axioms": {
+    "Burnett.RicciSymbol.kernel_eq_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.raiseSecond_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionSymbol_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.quadraticSymbol_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "local_project_status": "machine-check-passed",
+  "local_target_status": "machine-check-passed",
+  "local_target_input_fingerprint": "636a0a368af052858a160f53718f752eb0327ee090e904be02e916109aaaffc5",
+  "local_audit_log_sha256": "5de1058a06a5b2c584c7bc3bc570266c036aa9a2744494fbb5b94bccf85b3819",
+  "independent_reverse_review": {
+    "record": "docs/statements/ricci-symbol-review.md",
+    "record_sha256": "8ac210ff2773be04380e8e393d3001582aa5ebf3dff37f57ab85df238c5e070e",
+    "status": "passed-for-this-fragment; final source rebuilt in project environment"
+  },
+  "human_semantic_confirmation": "pending-request-issued",
+  "trust_policy_decision": "pending-user-decision",
+  "ci": {
+    "head_sha": "3f3aaf20a6a71be488de20f23a81aab628e064a2",
+    "commit_url": "https://github.com/Oho1e/Burnett-conjecture/commit/3f3aaf20a6a71be488de20f23a81aab628e064a2",
+    "run_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43628291772",
+    "ci_status": "completed",
+    "ci_conclusion": "success",
+    "registered_supporting_targets": 5
+  },
+  "parent_dependency": "unnum:quadratic-symbol-algebra remains partially_formalized",
+  "numbered_paper_results_completed": 0,
+  "paper_formalization_verified": false,
+  "record_binding": "CI points to the checked source commit, not the later commit containing this evidence file."
+}

@@ -18,7 +18,7 @@
 
 独立代理先从实际代码和类型写出数学含义，再读原文比较，局部语义核对通过；详细范围、一般实系数与真实逆Lorentz分量的适用关系、探针路径和未覆盖项见[独立回读](../statements/ricci-symbol-review.md)。上述只读探针不替代本项目独立Lake构建或真实CI。
 
-本项目已固定Lean4.24.0与Mathlib `f897ebcf72cd16f89ab4577d0c826cd14afaafc7`，另8包固定于manifest。依赖源经独立Git对象/工作树检出，official origin与固定rev核对；没有复制父工程构建缓存或修改共享源。官方定向缓存917文件已实际取得并解压。项目自身固定环境已完成根入口构建、5个目标的存在性/来源与传递公理审计，实际退出0；独立复核者也在本项目依赖路径上重编译最终源码，退出0，类型和公理输出一致。机器记录见 `.project-verification/` 与 `.paper-verification/`；最终提交前再次刷新绑定。
+本项目已固定Lean4.24.0与Mathlib `f897ebcf72cd16f89ab4577d0c826cd14afaafc7`，另8包固定于manifest。依赖源经独立Git对象/工作树检出，official origin与固定rev核对；没有复制父工程构建缓存或修改共享源。官方定向缓存917文件已实际取得并解压。项目自身固定环境已完成根入口构建、5个目标的存在性/来源与传递公理审计，实际退出0；独立复核者也在本项目依赖路径上重编译最终源码，退出0，类型和公理输出一致。机器记录见 `.project-verification/` 与 `.paper-verification/`，最终本地输入绑定已刷新并实际核对一致。
 
 用户/作者对本片段普通数学解释的确认：已提交具体问题，等待实际答复。最终信任政策沿用scope当前待决记录；实际三公理报告本身不冒充政策批准。临时数学条件接口：当前片段没有；其他尚未实现的主线接口保持开放。
 
@@ -26,4 +26,4 @@
 
 仓库 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture) 已实际创建并通过API核实为私有。此前[首次初始化CI记录](remote-evidence.json)仍是对应旧源码提交的有效历史，检查时没有论文目标。
 
-本轮证明与依赖变更推送后的固定提交和CI须另按实际记录；旧初始化绿色不移用为新片段已通过。本工程未发布整篇已验证标签。
+本轮源码提交 `3f3aaf20a6a71be488de20f23a81aab628e064a2` 已推送，[实际5目标CI运行](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43628291772)成功。完整库构建、目标来源及传递公理审计均执行；远程原文与证明源码SHA核对一致。详见 [ricci-machine-evidence.json](ricci-machine-evidence.json)，该记录绑定已检查源码提交，避免自引用。初始CI保留为历史，不用作新片段的证据。本工程未发布整篇已验证标签。
