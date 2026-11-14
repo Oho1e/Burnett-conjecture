@@ -25,3 +25,5 @@ CI配置为运行相同入口；实际执行与结论见 [GitHub Actions](https:
 ## 远程发布
 
 用户指定：owner `Oho1e`，名称 `Burnett-conjecture`，私有。已使用用户完成登录的账号创建 [私有仓库](https://github.com/Oho1e/Burnett-conjecture)，并通过 GitHub API 再次确认 private=true。初始代码推送与 CI 的固定提交/运行记录以 GitHub 及本轮工程证据为准。建库和工程检查不表示论文已形式化；没有发布论文已验证标签。
+
+首次初始化 CI 已实际通过：固定源码提交与运行记录见 [remote-evidence.json](remote-evidence.json)。该记录引用已检查的源码提交，避免自引用。其检查范围为原文身份、固定工具链与工程构建；论文目标仍为0，数学形式化未完成。

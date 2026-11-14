@@ -1,0 +1,16 @@
+{
+  "repository": "Oho1e/Burnett-conjecture",
+  "private": true,
+  "repository_url": "https://github.com/Oho1e/Burnett-conjecture",
+  "head_sha": "abd60d228c9d5fab14200a2a71db4d8295d03790",
+  "commit_url": "https://github.com/Oho1e/Burnett-conjecture/commit/abd60d228c9d5fab14200a2a71db4d8295d03790",
+  "remote_paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "run_id": 43619388089,
+  "run_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43619388089",
+  "ci_status": "completed",
+  "ci_conclusion": "success",
+  "ci_scope": "project initialization and source/config/runtime checks; zero paper theorem targets",
+  "paper_formalization_verified": false,
+  "record_kind": "First successful initialization run, bound to its tested source commit; not a self-reference to the commit containing this record.",
+  "paper_theorem_target_count": 0
+}
