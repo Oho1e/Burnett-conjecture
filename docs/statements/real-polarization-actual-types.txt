@@ -1,0 +1,196 @@
+@[reducible] def Burnett.RicciSymbol.Index : Type :=
+Fin 4
+@[reducible] def Burnett.RicciSymbol.Tensor2 : Type :=
+Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ
+@[reducible] def Burnett.RicciSymbol.Covector : Type :=
+Burnett.RicciSymbol.Index → ℝ
+def Burnett.RicciSymbol.connectionCrossSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 →
+      Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ :=
+fun gInv ξ k l b c =>
+  ∑ a,
+    ∑ e,
+      (Burnett.RicciSymbol.connectionSymbol gInv ξ k a c e * Burnett.RicciSymbol.connectionSymbol gInv ξ l e b a -
+        Burnett.RicciSymbol.connectionSymbol gInv ξ k a a e * Burnett.RicciSymbol.connectionSymbol gInv ξ l e b c)
+def Burnett.RicciSymbol.mixedQuadraticSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 →
+      Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ :=
+fun gInv ξ k l b c =>
+  (Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k l b c +
+      Burnett.RicciSymbol.connectionCrossSymbol gInv ξ l k b c) /
+    2
+def Burnett.RicciSymbol.physicalPairing : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Tensor2 → ℝ :=
+fun gInv k l =>
+  Burnett.RicciSymbol.tensorPairing gInv k l -
+    Burnett.RicciSymbol.metricTrace gInv k * Burnett.RicciSymbol.metricTrace gInv l / 2
+def Burnett.RicciSymbol.tensorPairing : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Tensor2 → ℝ :=
+fun gInv k l => ∑ a, ∑ b, ∑ c, ∑ d, gInv a c * gInv b d * k a b * l c d
+def Burnett.RicciSymbol.ricciSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ :=
+fun gInv ξ k a b =>
+  (Burnett.RicciSymbol.symbolNorm gInv ξ * k a b + ξ a * ξ b * Burnett.RicciSymbol.metricTrace gInv k -
+        ξ a * Burnett.RicciSymbol.contracted gInv ξ k b -
+      ξ b * Burnett.RicciSymbol.contracted gInv ξ k a) /
+    2
+def Burnett.RicciSymbol.connectionSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 →
+      Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ :=
+fun gInv ξ k a b c =>
+  (ξ b * Burnett.RicciSymbol.raiseSecond gInv k c a + ξ c * Burnett.RicciSymbol.raiseSecond gInv k b a -
+      Burnett.RicciSymbol.raiseCovector gInv ξ a * k b c) /
+    2
+Burnett.RicciSymbol.connectionCrossSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 →
+      Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ
+'Burnett.RicciSymbol.connectionCrossSymbol' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol : Burnett.RicciSymbol.Tensor2 →
+  Burnett.RicciSymbol.Covector →
+    Burnett.RicciSymbol.Tensor2 →
+      Burnett.RicciSymbol.Tensor2 → Burnett.RicciSymbol.Index → Burnett.RicciSymbol.Index → ℝ
+'Burnett.RicciSymbol.mixedQuadraticSymbol' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.metricTrace_add : ∀ (gInv k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.metricTrace gInv (k + l) =
+    Burnett.RicciSymbol.metricTrace gInv k + Burnett.RicciSymbol.metricTrace gInv l
+'Burnett.RicciSymbol.metricTrace_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.metricTrace_smul : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (r : ℝ) (k : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.metricTrace gInv (r • k) = r * Burnett.RicciSymbol.metricTrace gInv k
+'Burnett.RicciSymbol.metricTrace_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.contracted_add : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector)
+  (k l : Burnett.RicciSymbol.Tensor2) (b : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.contracted gInv ξ (k + l) b =
+    Burnett.RicciSymbol.contracted gInv ξ k b + Burnett.RicciSymbol.contracted gInv ξ l b
+'Burnett.RicciSymbol.contracted_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.contracted_smul : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector) (r : ℝ)
+  (k : Burnett.RicciSymbol.Tensor2) (b : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.contracted gInv ξ (r • k) b = r * Burnett.RicciSymbol.contracted gInv ξ k b
+'Burnett.RicciSymbol.contracted_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionSymbol_add : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector)
+  (k l : Burnett.RicciSymbol.Tensor2) (a b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionSymbol gInv ξ (k + l) a b c =
+    Burnett.RicciSymbol.connectionSymbol gInv ξ k a b c + Burnett.RicciSymbol.connectionSymbol gInv ξ l a b c
+'Burnett.RicciSymbol.connectionSymbol_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionSymbol_smul : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector)
+  (r : ℝ) (k : Burnett.RicciSymbol.Tensor2) (a b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionSymbol gInv ξ (r • k) a b c = r * Burnett.RicciSymbol.connectionSymbol gInv ξ k a b c
+'Burnett.RicciSymbol.connectionSymbol_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionCrossSymbol_add_left : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l m : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionCrossSymbol gInv ξ (k + l) m b c =
+    Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k m b c + Burnett.RicciSymbol.connectionCrossSymbol gInv ξ l m b c
+'Burnett.RicciSymbol.connectionCrossSymbol_add_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionCrossSymbol_add_right : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l m : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k (l + m) b c =
+    Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k l b c + Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k m b c
+'Burnett.RicciSymbol.connectionCrossSymbol_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionCrossSymbol_smul_left : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (r : ℝ) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionCrossSymbol gInv ξ (r • k) l b c =
+    r * Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k l b c
+'Burnett.RicciSymbol.connectionCrossSymbol_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.connectionCrossSymbol_smul_right : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (r : ℝ) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k (r • l) b c =
+    r * Burnett.RicciSymbol.connectionCrossSymbol gInv ξ k l b c
+'Burnett.RicciSymbol.connectionCrossSymbol_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_comm : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c = Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ l k b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_add_left : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l m : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ (k + l) m b c =
+    Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k m b c + Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ l m b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_add_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_add_right : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l m : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k (l + m) b c =
+    Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c + Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k m b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_smul_left : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (r : ℝ) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ (r • k) l b c =
+    r * Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_smul_right : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (r : ℝ) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k (r • l) b c =
+    r * Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_diag : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k k b c = Burnett.RicciSymbol.quadraticSymbol gInv ξ k b c
+'Burnett.RicciSymbol.mixedQuadraticSymbol_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_polarization : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l : Burnett.RicciSymbol.Tensor2) (b c : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c =
+    (Burnett.RicciSymbol.quadraticSymbol gInv ξ (k + l) b c - Burnett.RicciSymbol.quadraticSymbol gInv ξ k b c -
+        Burnett.RicciSymbol.quadraticSymbol gInv ξ l b c) /
+      2
+'Burnett.RicciSymbol.mixedQuadraticSymbol_polarization' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.ricciSymbol_add : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector)
+  (k l : Burnett.RicciSymbol.Tensor2) (a b : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.ricciSymbol gInv ξ (k + l) a b =
+    Burnett.RicciSymbol.ricciSymbol gInv ξ k a b + Burnett.RicciSymbol.ricciSymbol gInv ξ l a b
+'Burnett.RicciSymbol.ricciSymbol_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.ricciSymbol_smul : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (ξ : Burnett.RicciSymbol.Covector) (r : ℝ)
+  (k : Burnett.RicciSymbol.Tensor2) (a b : Burnett.RicciSymbol.Index),
+  Burnett.RicciSymbol.ricciSymbol gInv ξ (r • k) a b = r * Burnett.RicciSymbol.ricciSymbol gInv ξ k a b
+'Burnett.RicciSymbol.ricciSymbol_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_eq_zero_of_noncharacteristic_kernel : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.symbolNorm gInv ξ ≠ 0 →
+    (∀ (a b : Burnett.RicciSymbol.Index), Burnett.RicciSymbol.ricciSymbol gInv ξ k a b = 0) →
+      (∀ (a b : Burnett.RicciSymbol.Index), Burnett.RicciSymbol.ricciSymbol gInv ξ l a b = 0) →
+        ∀ (b c : Burnett.RicciSymbol.Index), Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c = 0
+'Burnett.RicciSymbol.mixedQuadraticSymbol_eq_zero_of_noncharacteristic_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Burnett.RicciSymbol.tensorPairing_comm : ∀ (gInv k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.IsSymmetricTensor gInv →
+    Burnett.RicciSymbol.tensorPairing gInv k l = Burnett.RicciSymbol.tensorPairing gInv l k
+'Burnett.RicciSymbol.tensorPairing_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.physicalPairing_comm : ∀ (gInv k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.IsSymmetricTensor gInv →
+    Burnett.RicciSymbol.physicalPairing gInv k l = Burnett.RicciSymbol.physicalPairing gInv l k
+'Burnett.RicciSymbol.physicalPairing_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.physicalPairing_add_left : ∀ (gInv k l m : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.physicalPairing gInv (k + l) m =
+    Burnett.RicciSymbol.physicalPairing gInv k m + Burnett.RicciSymbol.physicalPairing gInv l m
+'Burnett.RicciSymbol.physicalPairing_add_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.physicalPairing_add_right : ∀ (gInv k l m : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.physicalPairing gInv k (l + m) =
+    Burnett.RicciSymbol.physicalPairing gInv k l + Burnett.RicciSymbol.physicalPairing gInv k m
+'Burnett.RicciSymbol.physicalPairing_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.physicalPairing_smul_left : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (r : ℝ)
+  (k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.physicalPairing gInv (r • k) l = r * Burnett.RicciSymbol.physicalPairing gInv k l
+'Burnett.RicciSymbol.physicalPairing_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.physicalPairing_smul_right : ∀ (gInv : Burnett.RicciSymbol.Tensor2) (r : ℝ)
+  (k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.physicalPairing gInv k (r • l) = r * Burnett.RicciSymbol.physicalPairing gInv k l
+'Burnett.RicciSymbol.physicalPairing_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+Burnett.RicciSymbol.mixedQuadraticSymbol_eq_physicalPairing_of_null_kernel : ∀ (gInv : Burnett.RicciSymbol.Tensor2)
+  (ξ : Burnett.RicciSymbol.Covector) (k l : Burnett.RicciSymbol.Tensor2),
+  Burnett.RicciSymbol.IsSymmetricTensor gInv →
+    Burnett.RicciSymbol.IsSymmetricTensor k →
+      Burnett.RicciSymbol.IsSymmetricTensor l →
+        ξ ≠ 0 →
+          Burnett.RicciSymbol.symbolNorm gInv ξ = 0 →
+            (∀ (a b : Burnett.RicciSymbol.Index), Burnett.RicciSymbol.ricciSymbol gInv ξ k a b = 0) →
+              (∀ (a b : Burnett.RicciSymbol.Index), Burnett.RicciSymbol.ricciSymbol gInv ξ l a b = 0) →
+                ∀ (b c : Burnett.RicciSymbol.Index),
+                  Burnett.RicciSymbol.mixedQuadraticSymbol gInv ξ k l b c =
+                    ξ b * ξ c * Burnett.RicciSymbol.physicalPairing gInv k l / 4
+'Burnett.RicciSymbol.mixedQuadraticSymbol_eq_physicalPairing_of_null_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT_CODE=0

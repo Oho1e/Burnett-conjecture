@@ -1,0 +1,200 @@
+{
+  "observed_at": "2026-11-15T15:51:13.094076+00:00",
+  "baseline": "6880f4ab31b423e14a173c18e45fa3cf0a9c9103",
+  "skill_workflow_version": "1.3",
+  "mathematical_standard": "paper-results1.2",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "frozen_new_module_sha256": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
+  "project_source_sha256": {
+    "Burnett.lean": "34e6411d204d1577bece4f8cece686fb4cf603770df9118755d2b440ea81c3aa",
+    "Burnett/Algebra/NullKernel.lean": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d",
+    "Burnett/Algebra/NullQuadratic.lean": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7",
+    "Burnett/Algebra/QuadraticDefs.lean": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09",
+    "Burnett/Algebra/QuadraticExpansion.lean": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c",
+    "Burnett/Algebra/RealPolarization.lean": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
+    "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "Burnett/Overview.lean": "9640b4cd42b93f3999a49d00d57a998ab256810c7cd4ca843f82d586483bbea8"
+  },
+  "scope_sha256": "33b9364afaf5561e854e21e410d95f871b9861fdc93b980411af3f688c44ce72",
+  "slices_sha256": "ae444bcb40341b135d1a16088f80fc4e309fe072b3ca6f84ab22b7621aa5101e",
+  "standard_sha256": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0",
+  "toolchain_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+  "dependency_lock_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "skill_sha256": "78c0d23d7b80a30405fffaf2d624101f5dde021b6fa0d819a041fedfdae9a811",
+  "checker_sha256": "4d1d817a6d361a4c7377d1b6b30733d1261e38d0fa9421d9cb1c40cb599f7c15",
+  "project_check": {
+    "status": "machine-check-passed",
+    "started_at": "2026-11-15T15:47:03.974887+00:00",
+    "finished_at": "2026-11-15T15:47:36.724082+00:00",
+    "target_count": 21,
+    "receipt_sha256": "e68e8dc410130ab65e074b24150c3ec04fa76eacef83c9758c1dc4c3bc388748"
+  },
+  "target_check": {
+    "status": "machine-check-passed",
+    "target_count": 21,
+    "build_returncode": 0,
+    "audit_returncode": 0,
+    "receipt_sha256": "bf3439d22cbd0793647ae37eb0da32afc3d360dc640e6bfca46af42750e370a4",
+    "local_input_fingerprint": "9c32f2ac2552cc3227e4f309cdb81a198800a5d908cadb80e009c7ab430ef762"
+  },
+  "new_module_public_declarations": 29,
+  "actual_type_probe_exit_code": 0,
+  "actual_type_log": "docs/statements/real-polarization-actual-types.txt",
+  "actual_type_log_sha256": "7e0217ebe02a221f984824db990c3e2a9397aab32895aa22569f5df0c7095de2",
+  "new_declaration_axioms": {
+    "Burnett.RicciSymbol.connectionCrossSymbol": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.metricTrace_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.metricTrace_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.contracted_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.contracted_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionSymbol_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionSymbol_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionCrossSymbol_add_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionCrossSymbol_add_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionCrossSymbol_smul_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionCrossSymbol_smul_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_add_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_add_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_diag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_polarization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.ricciSymbol_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.ricciSymbol_smul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_zero_of_noncharacteristic_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.tensorPairing_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_add_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_add_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_smul_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_smul_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_physicalPairing_of_null_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "semantic_review_record": "docs/statements/real-polarization-review.md",
+  "semantic_review_sha256": "fc4f02ad8f5e99e4956b209f6439098fe69d9a6e04edf980277ef059c18c9b8d",
+  "explanation_sha256": "de1ca6bda24b85980fe45968869841696bac314187c83ddd8eeb63ad60d19edc",
+  "local_snapshot_note": {
+    "temporary_Lean_files_in_local_fingerprint": 32,
+    "meaning": "Local whole-source fingerprint includes ignored probes and historical copies; it is not claimed equal to clean CI. Compare committed project sources/pins/targets and exact PR candidate separately."
+  },
+  "paper_formalization_verified": false,
+  "whole_F06_complete": false
+}
