@@ -1124,9 +1124,16 @@
     "target_repository": {
       "owner": "Oho1e",
       "name": "Burnett-conjecture",
-      "visibility": "private",
-      "remote_status": "private-repository-created",
-      "url": "https://github.com/Oho1e/Burnett-conjecture"
+      "visibility": "public",
+      "remote_status": "public-repository-with-protected-main",
+      "url": "https://github.com/Oho1e/Burnett-conjecture",
+      "workflow_record": "docs/formalization/github-workflow.md",
+      "settings_record": "docs/formalization/github-settings.json"
+    },
+    "skill_workflow": {
+      "name": "lean-paper-results",
+      "version": "1.3",
+      "mathematical_standard_unchanged": "paper-results 1.2"
     }
   },
   "planning": {
