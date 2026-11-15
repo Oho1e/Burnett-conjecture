@@ -14,6 +14,7 @@ import json
 import os
 from pathlib import Path
 import re
+import stat
 import subprocess
 import sys
 from typing import Any
@@ -26,6 +27,7 @@ SHA256 = re.compile(r"[0-9a-fA-F]{64}\Z")
 STANDARD_TOOLCHAIN = re.compile(r"leanprover/lean4:v([0-9]+\.[0-9]+\.[0-9]+(?:-rc[0-9]+)?)\Z")
 ALLOWED_AXIOMS = ["propext", "Classical.choice", "Quot.sound"]
 EXCLUDED_DIRECTORIES = {".git", ".lake", ".paper-verification", ".tools", ".references"}
+DEPENDENCY_MARKER = "CHECK_PAPER_LOADED_MODULES "
 
 
 class CheckError(Exception):
@@ -195,7 +197,36 @@ def prepare_output(repo: Path, output: Path) -> None:
     )
 
 
-def source_snapshot(repo: Path, output: Path) -> dict[str, str]:
+def path_alias(path: Path) -> bool:
+    """Reject symlinks and Windows junction/reparse aliases at input boundaries."""
+    if path.is_symlink():
+        return True
+    try:
+        attributes = getattr(path.lstat(), "st_file_attributes", 0)
+    except FileNotFoundError:
+        return False
+    return bool(attributes & getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0))
+
+
+def generated_directories(repo: Path, values: list[str], protected: list[Path]) -> tuple[Path, ...]:
+    roots = []
+    for value in values:
+        supplied = Path(require_text(value, "generated-root"))
+        raw = supplied if supplied.is_absolute() else repo / supplied
+        if raw.parent != repo or raw.name in EXCLUDED_DIRECTORIES or raw.name in ("", ".", ".."):
+            raise CheckError("Generated root must be a dedicated root-level directory outside reserved paths")
+        if path_alias(raw):
+            raise CheckError(f"Generated root cannot be a filesystem alias: {raw}")
+        root = inside(repo, raw, "Generated root")
+        if root.exists() and not root.is_dir():
+            raise CheckError("Generated root must be a directory")
+        if any(p.resolve() == root or p.resolve().is_relative_to(root) for p in protected):
+            raise CheckError("Generated root overlaps project configuration or a declared module source")
+        roots.append(root)
+    return tuple(sorted(set(roots)))
+
+
+def source_snapshot(repo: Path, output: Path, generated: tuple[Path, ...] = ()) -> dict[str, str]:
     sources: dict[str, str] = {}
     for current, dirs, files in os.walk(repo, followlinks=False):
         folder = Path(current)
@@ -204,27 +235,30 @@ def source_snapshot(repo: Path, output: Path) -> dict[str, str]:
             child = folder / dirname
             if dirname in EXCLUDED_DIRECTORIES or child.resolve() == output:
                 continue
-            if child.is_symlink():
+            if path_alias(child):
                 raise CheckError(f"Cannot snapshot a symlinked source directory: {child}")
+            if child in generated:
+                continue
             kept.append(dirname)
         dirs[:] = kept
         for filename in files:
             if not filename.endswith(".lean"):
                 continue
             source = folder / filename
-            if source.is_symlink():
+            if path_alias(source):
                 raise CheckError(f"Cannot snapshot a symlinked Lean source: {source}")
             sources[source.relative_to(repo).as_posix()] = digest(source)
     return dict(sorted(sources.items()))
 
 
-def input_snapshot(repo: Path, output: Path, manifest_path: Path) -> dict[str, Any]:
+def input_snapshot(repo: Path, output: Path, manifest_path: Path,
+                   generated: tuple[Path, ...] = (), entry_modules: tuple[str, ...] = ()) -> dict[str, Any]:
     required = (repo / "lean-toolchain", repo / "lake-manifest.json", manifest_path)
     for path in required:
         inside(repo, path, "Input")
         if not path.is_file():
             raise CheckError(f"Required input missing: {path}")
-    sources = source_snapshot(repo, output)
+    sources = source_snapshot(repo, output, generated)
     result: dict[str, Any] = {
         "manifest_path": manifest_path.relative_to(repo).as_posix(),
         "manifest_sha256": digest(manifest_path),
@@ -236,6 +270,13 @@ def input_snapshot(repo: Path, output: Path, manifest_path: Path) -> dict[str, A
         "lean_sources_fingerprint": fingerprint(sources),
         "source_hash_excluded_directories": sorted(EXCLUDED_DIRECTORIES),
         "checker_sha256": digest(Path(__file__).resolve()),
+        "snapshot_policy": {
+            "version": 2,
+            "generated_roots": [p.relative_to(repo).as_posix() for p in generated],
+            "additional_entry_modules": list(entry_modules),
+            "untracked_and_gitignored_sources": "included outside explicit generated/dependency boundaries",
+            "generated_import_guard": bool(generated),
+        },
     }
     if not result["lean_toolchain"]:
         raise CheckError("lean-toolchain is empty")
@@ -245,11 +286,24 @@ def input_snapshot(repo: Path, output: Path, manifest_path: Path) -> dict[str, A
     return result
 
 
-def audit_source(targets: list[dict[str, str]]) -> str:
-    modules = sorted({target["module"] for target in targets})
+def audit_source(targets: list[dict[str, str]], entry_modules: tuple[str, ...] = (),
+                 trace_dependencies: bool = False) -> str:
+    modules = sorted({target["module"] for target in targets} | set(entry_modules))
     imports = "\n".join(f"import {module}" for module in modules)
     target_pairs = ",\n    ".join(f"(`{target['declaration']}, `{target['module']})" for target in targets)
     checks = "\n".join(f"#check @{target['declaration']}\n#print axioms {target['declaration']}" for target in targets)
+    dependency_trace = """
+  let sourceSearchPath ← getSrcSearchPath
+  let mut modulePaths : Array Json := #[]
+  for moduleName in env.header.moduleNames do
+    let objectPath ← findOLean moduleName
+    let sourcePath ← findLean sourceSearchPath moduleName
+    modulePaths := modulePaths.push (Json.mkObj [
+      ("module", toJson moduleName.toString),
+      ("olean", toJson objectPath.toString),
+      ("source", toJson sourcePath.toString)])
+  IO.println ("CHECK_PAPER_LOADED_MODULES " ++ (Json.arr modulePaths).compress)
+""" if trace_dependencies else ""
     return f"""{AUDIT_HEADER}
 -- A plain file intentionally imports private proof data; do not add `module`.
 {imports}
@@ -265,6 +319,7 @@ open Lean Elab Command
 
 run_cmd do
   let env ← getEnv
+{dependency_trace}
   let allowed : List Name := [``propext, ``Classical.choice, ``Quot.sound]
   let targets : List (Name × Name) := [
     {target_pairs}]
@@ -287,6 +342,53 @@ run_cmd do
 
 {checks}
 """
+
+
+def verify_loaded_boundaries(log: Path, repo: Path, output: Path, generated: tuple[Path, ...],
+                             sources: dict[str, str]) -> dict[str, Any]:
+    """Check actual transitive imported module paths emitted by the Lean audit."""
+    markers = [line[len(DEPENDENCY_MARKER):] for line in log.read_text(encoding="utf-8").splitlines()
+               if line.startswith(DEPENDENCY_MARKER)]
+    if len(markers) != 1:
+        raise CheckError("Expected exactly one loaded-module boundary receipt from Lean")
+    try:
+        modules = json.loads(markers[0])
+    except ValueError as error:
+        raise CheckError("Invalid loaded-module boundary receipt") from error
+    if not isinstance(modules, list) or not modules:
+        raise CheckError("Empty loaded-module boundary receipt")
+    names = set()
+    local_sources = set()
+    forbidden = (*generated, output)
+    for item in modules:
+        if not isinstance(item, dict):
+            raise CheckError("Invalid loaded-module entry")
+        name = require_text(item.get("module"), "loaded module")
+        if name in names:
+            raise CheckError("Duplicate loaded-module entry")
+        names.add(name)
+        for kind in ("olean", "source"):
+            text_path = Path(require_text(item.get(kind), "loaded module " + kind))
+            raw = text_path if text_path.is_absolute() else repo / text_path
+            if any(raw == root or raw.is_relative_to(root) for root in forbidden):
+                raise CheckError(f"Loaded module {name} uses generated evidence as {kind}: {raw}")
+            resolved = raw.resolve()
+            if any(resolved == root or resolved.is_relative_to(root) for root in forbidden):
+                raise CheckError(f"Loaded module {name} resolves into generated evidence: {resolved}")
+            if kind != "source" or not resolved.is_relative_to(repo):
+                continue
+            # Fixed dependency packages and the pinned SDK retain their existing
+            # library/runtime trust; they are not project-source snapshot entries.
+            if resolved.is_relative_to(repo / ".lake" / "packages") or resolved.is_relative_to(repo / ".tools"):
+                continue
+            relative = resolved.relative_to(repo).as_posix()
+            if not resolved.is_file() or relative not in sources:
+                raise CheckError(f"Loaded project source is outside the input snapshot: {relative}")
+            if path_alias(raw) or digest(resolved) != sources[relative]:
+                raise CheckError(f"Loaded project source differs from the input snapshot: {relative}")
+            local_sources.add(relative)
+    return {"status": "passed", "loaded_module_count": len(names),
+            "checked_local_sources": sorted(local_sources), "module_paths_sha256": fingerprint(modules)}
 
 
 def command(argv: list[str], repo: Path, log: Path, timeout: int) -> int:
@@ -373,10 +475,18 @@ def run(args: argparse.Namespace) -> int:
         result["paper"] = manifest["paper"]
         result["scope"] = manifest["scope"]
         result["targets"] = manifest["targets"]
-        before = input_snapshot(repo, output, manifest_path)
+        entry_modules = tuple(sorted(set(getattr(args, "entry_module", []))))
+        for module in entry_modules:
+            if not isinstance(module, str) or not LEAN_NAME.fullmatch(module):
+                raise CheckError("Entry module must be an ASCII dotted Lean identifier")
+        modules = sorted({target["module"] for target in manifest["targets"]} | set(entry_modules))
+        module_sources = [repo.joinpath(*module.split(".")).with_suffix(".lean") for module in modules]
+        protected = [manifest_path, repo / "lean-toolchain", repo / "lake-manifest.json",
+                     repo / "lakefile.lean", repo / "lakefile.toml", *module_sources]
+        generated = generated_directories(repo, getattr(args, "generated_root", []), protected)
+        before = input_snapshot(repo, output, manifest_path, generated, entry_modules)
         result["inputs"] = before
         runtime_versions(args, repo, output, before["lean_toolchain"], result)
-        modules = sorted({target["module"] for target in manifest["targets"]})
         for module in modules:
             module_path = repo.joinpath(*module.split(".")).with_suffix(".lean")
             if not module_path.is_file() or not module_path.resolve().is_relative_to(repo):
@@ -387,14 +497,17 @@ def run(args: argparse.Namespace) -> int:
         if result["build_returncode"] != 0:
             raise CheckError(f"Lean build failed; see {output / 'build.log'}")
         audit = output / "CheckTargets.lean"
-        audit.write_text(audit_source(manifest["targets"]), encoding="utf-8", newline="\n")
+        audit.write_text(audit_source(manifest["targets"], entry_modules, bool(generated)), encoding="utf-8", newline="\n")
         result["audit_sha256"] = digest(audit)
         audit_command = [args.lake, "env", "lean", str(audit)]
         result["audit_command"] = audit_command
         result["audit_returncode"] = command(audit_command, repo, output / "audit.log", args.timeout)
         if result["audit_returncode"] != 0:
             raise CheckError(f"Lean theorem or axiom audit failed; see {output / 'audit.log'}")
-        after = input_snapshot(repo, output, manifest_path)
+        if generated:
+            result["dependency_boundary"] = verify_loaded_boundaries(
+                output / "audit.log", repo, output, generated, before["lean_sources"])
+        after = input_snapshot(repo, output, manifest_path, generated, entry_modules)
         if before != after:
             result["inputs_after"] = after
             raise CheckError("Inputs changed during verification; rerun against an unchanged source tree")
@@ -420,6 +533,10 @@ def main() -> int:
     parser.add_argument("--manifest", default="docs/formalization/scope.json", help="Manifest path inside repository")
     parser.add_argument("--lake", default="lake", help="Lake executable or path; executed without a shell")
     parser.add_argument("--output", default=".paper-verification", help="Dedicated generated directory inside repository")
+    parser.add_argument("--generated-root", action="append", default=[],
+                        help="Explicit root-level generated evidence directory; imported-source boundaries are audited")
+    parser.add_argument("--entry-module", action="append", default=[],
+                        help="Additional local library entry to build and include in the import boundary audit")
     parser.add_argument("--timeout", type=int, default=1800, help="Maximum seconds per Lean command (default: 1800)")
     args = parser.parse_args()
     if args.timeout <= 0:

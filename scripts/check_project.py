@@ -16,6 +16,8 @@ import re
 import subprocess
 import sys
 
+from check_paper import path_alias
+
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -38,8 +40,8 @@ def main() -> int:
         parser.error("--timeout must be positive")
     repo = Path(args.repo).resolve()
     output = repo / ".project-verification"
-    if output.is_symlink():
-        print("ERROR: Refusing a symlinked project evidence directory", file=sys.stderr)
+    if path_alias(output):
+        print("ERROR: Refusing a symlinked or reparse project evidence directory", file=sys.stderr)
         return 1
     output.mkdir(parents=True, exist_ok=True)
     result = {
@@ -113,6 +115,7 @@ def main() -> int:
             # The original checker still rejects empty targets. Do not alter it.
             checker = Path(__file__).with_name("check_paper.py")
             command([sys.executable, str(checker), "--repo", str(repo), "--lake", args.lake,
+                     "--generated-root", ".project-verification", "--entry-module", "Burnett",
                      "--timeout", str(args.timeout)], "paper-target-check.log")
             target_result = load_json(repo / ".paper-verification" / "result.json")
             if target_result.get("status") != "machine-check-passed":
