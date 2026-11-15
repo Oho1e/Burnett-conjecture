@@ -38,9 +38,9 @@ jobs:
       - name: Check offline PR and policy decisions
         run: python scripts/test_pr_readiness.py
       - name: Check snapshot boundaries with real Lean fixtures
-        run: python scripts/test_snapshot_policy.py --lake lake --validation-dir .project-verification/maintenance-ci/snapshots
+        run: python scripts/test_snapshot_policy.py --lake "$(elan which lake)" --validation-dir .project-verification/maintenance-ci/snapshots
       - name: Preserve the original checker rejection behavior
-        run: python tools/lean-paper-results/scripts/test_check_paper.py --lake lake --validation-dir .project-verification/maintenance-ci/checker
+        run: python tools/lean-paper-results/scripts/test_check_paper.py --lake "$(elan which lake)" --validation-dir .project-verification/maintenance-ci/checker
       - name: Preserve maintenance evidence
         if: always()
         uses: actions/upload-artifact@v4
