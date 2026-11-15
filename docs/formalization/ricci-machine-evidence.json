@@ -66,7 +66,7 @@
   "local_audit_log_sha256": "5de1058a06a5b2c584c7bc3bc570266c036aa9a2744494fbb5b94bccf85b3819",
   "independent_reverse_review": {
     "record": "docs/statements/ricci-symbol-review.md",
-    "record_sha256": "8ac210ff2773be04380e8e393d3001582aa5ebf3dff37f57ab85df238c5e070e",
+    "record_sha256": "083bc98abac8e4cf59c042a547df869d39f2c694b7e35685dff3b0b1b2952a64",
     "status": "passed-for-this-fragment; final source rebuilt in project environment"
   },
   "human_semantic_confirmation": "pending-request-issued",
@@ -82,5 +82,30 @@
   "parent_dependency": "unnum:quadratic-symbol-algebra remains partially_formalized",
   "numbered_paper_results_completed": 0,
   "paper_formalization_verified": false,
-  "record_binding": "CI points to the checked source commit, not the later commit containing this evidence file."
+  "record_binding": "CI points to the checked source commit, not the later commit containing this evidence file.",
+  "additional_semantic_review": {
+    "date": "2026-11-15",
+    "reason": "User requested further subagent discussion instead of giving semantic confirmation",
+    "reviewers": [
+      "ricci_type_readback_v2",
+      "ricci_paper_adversary_v2"
+    ],
+    "method": "Separate fresh-context source/type and paper-first reviews, followed by cross-challenges and exact scope examples",
+    "record": "docs/statements/ricci-symbol-review.md",
+    "source_sha256": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "status": "passed-for-real-noncharacteristic-diagonal-subclaim-only",
+    "new_math_assumptions_required": false,
+    "lean_source_changed": false,
+    "new_lean_targets": 0,
+    "exact_boundary_tests": {
+      "script": ".project-verification/ricci-cross-review/exact_checks.py",
+      "script_sha256": "926517974b73ccac64123dc7559435cd18ecd6f06781b30be28c15ad0cc10ba2",
+      "exit_code": 0,
+      "case_count": 3,
+      "scope": "finite exact rational examples, not a universal proof"
+    },
+    "human_reply": "找子代理讨论核对",
+    "human_reply_interpretation": "request-for-further-review; semantic-confirmation-remains-pending"
+  }
 }
