@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "meaning": "Reviewed workflow input snapshot; excludes this record and review narratives to avoid self-reference",
+  "sha256": {
+    "AGENTS.md": "ac50deefc592397a8e2d502f9bf853b741d1d9463ad424428c69a708833c5279",
+    "README.md": "c2a2d976bab01640e981fa1841095e7f0964ded72e89a030861752af2ffd7c50",
+    ".github/workflows/project-check.yml": "d3858b7e3f4683b36893cb12b3ed32b0c3a4a205491dfb823ff49c7915330fa2",
+    ".github/pull_request_template.md": "1fca1ad2f4e2fbb021f110bec143e719de6d4ad3c316baea9ebbf616b6cd885c",
+    "docs/formalization/github-workflow.md": "4c3c0c879bf1a97b86738b5722967c8a52661089be2dc02f6a04d9a225605535",
+    "docs/formalization/github-settings.json": "72b5fead4b1c4c4c58123293077993b9e9e01b889929f73ef47ab70e02281b34",
+    "docs/formalization/parallel-workflow.md": "422dabdff853c8042af2b286b2ad209a0af2f885e92ba192ea139d84d5c3d76f",
+    "docs/formalization/scope.json": "96392a7fdc9dbd4677927a952589c6ae0dc620cf82b65cb319606f4b10350ea2",
+    "paper/source.json": "393cbc2b25a9cf1f59ed15ff8e00d138a5b85563c00b5898d7dceb84f3064730",
+    "tools/lean-paper-results/agents/openai.yaml": "1ceefd8c7bd2fcdfcd29ec3e3c03c76e3367b14b143755e7d1f0af916e913189",
+    "tools/lean-paper-results/assets/repo-template/.gitattributes": "d5f24f1c4b6eefb7c7a7b1b3dfd5f877a077f29b6541c9f59e14c332b7cd78ef",
+    "tools/lean-paper-results/assets/repo-template/.github/pull_request_template.md": "ccb83ae9e744988ab2ee7a487e3c7b5e3f816b142cedb33104b42ade7637ed04",
+    "tools/lean-paper-results/assets/repo-template/.github/workflows/paper-check.yml": "dc33bdeca5bdba4a285ec1553f44a32e967a810c78059412f6746e207e0639ab",
+    "tools/lean-paper-results/assets/repo-template/.gitignore": "2bb523502c3d459c6ac8b3b456a78a37710c11fefeaa613ae1e435c7e6d3b904",
+    "tools/lean-paper-results/assets/repo-template/docs/formalization/review.md": "7377c70538e08404f62b283d00bcaa903528a7bb62c6c92617350c2071800288",
+    "tools/lean-paper-results/assets/repo-template/docs/formalization/scope.json": "9744b640ad774e2db0fdc14e4d857a184b3b91554f19ab48100b4765e49450a0",
+    "tools/lean-paper-results/assets/repo-template/docs/statements/main.md": "240a6747134c9063343e3c63c1aaac41ac11c9bafcfc1583e1b359fcd6dea0e0",
+    "tools/lean-paper-results/assets/repo-template/README.md": "d8a8c04d6da23c9d7ab36f39e64648e55ac3d3c3b67cd9317c98d0adf45cb549",
+    "tools/lean-paper-results/references/engineering.zh-CN.md": "7008a9708354f96fadfa27ac0b2eb599050cf5592a372c1c40933613c8462951",
+    "tools/lean-paper-results/references/github-pr.zh-CN.md": "8f00f5178a83e46109d6d60c70c1887a2a7b3eed9747a992b68a4a6018b8d4d1",
+    "tools/lean-paper-results/references/sources.zh-CN.md": "21795a27190eb097d700976fa736bdd22ae65176c7470b25eeb09e782b408630",
+    "tools/lean-paper-results/references/standard.zh-CN.md": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0",
+    "tools/lean-paper-results/references/trust.zh-CN.md": "594878a86bfe0ec5c2ebcc72740cb95d3e72832b5c1e6d7229ebccf93875a7ed",
+    "tools/lean-paper-results/references/workflow.zh-CN.md": "d4ae2d10b85ca3ccc0845375bcc1a2e68be708d624116960f3f88b1553ba2b6f",
+    "tools/lean-paper-results/scripts/check_paper.py": "4d1d817a6d361a4c7377d1b6b30733d1261e38d0fa9421d9cb1c40cb599f7c15",
+    "tools/lean-paper-results/scripts/test_check_paper.py": "310b363e074b6f5755521bc3d62e10d3f184bdcfa9ef5c390e90a71062386afb",
+    "tools/lean-paper-results/SKILL.md": "78c0d23d7b80a30405fffaf2d624101f5dde021b6fa0d819a041fedfdae9a811"
+  },
+  "unchanged_math_inputs": {
+    "lean-toolchain": true,
+    "lake-manifest.json": true,
+    "paper/burnett.tex": true,
+    "Burnett.lean": true,
+    "scripts/check_project.py": true,
+    "scripts/check_paper.py": true
+  }
+}
