@@ -19,8 +19,19 @@
     "description": "全部正式数学结果、已确认的关键未编号结果及必要定义和证明依赖；全文切片组织工作，不替代逐项建模和证明核验。"
   },
   "trust_policy": {
-    "decision": "pending-user-decision",
-    "implemented_checker_profile": "standard-three-axioms"
+    "decision": "approved-dependency-closure",
+    "implemented_checker_profile": "standard-three-axioms",
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "unformalized_external_math_for_final_verified_status": "not-accepted",
+    "confirmation": {
+      "actor": "user",
+      "date": "2026-11-16",
+      "instruction": "A：依赖全部闭合（推荐）"
+    }
   },
   "targets": [
     {
@@ -127,6 +138,291 @@
       "claim_id": "polarization:physical-real-smul-right",
       "module": "Burnett.Algebra.RealPolarization",
       "declaration": "Burnett.RicciSymbol.physicalPairing_smul_right"
+    },
+    {
+      "claim_id": "f06:complexpolarization:complexRicci-kernel-iff",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.complexRicci_kernel_iff"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-conj-symm",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_conj_symm"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-conj-symm",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_conj_symm"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-real-diagonal",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_real_diagonal"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-ofReal",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_ofReal"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-left",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_add_left"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-right",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_add_right"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-left",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_smul_left"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-right",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_smul_right"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-left",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_left"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-right",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_right"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-left",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_smul_left"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-right",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_smul_right"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-zero-of-noncharacteristic-kernel",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_eq_zero_of_noncharacteristic_kernel"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-physicalPairing-of-null-kernel",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_eq_physicalPairing_of_null_kernel"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-pureGauge-eq-zero-of-null-kernel",
+      "module": "Burnett.Algebra.ComplexPolarization",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_pureGauge_eq_zero_of_null_kernel"
+    },
+    {
+      "claim_id": "f06:nullscreen:kernel-decomposition",
+      "module": "Burnett.Algebra.NullScreen",
+      "declaration": "Burnett.RicciSymbol.NullScreen.kernel_decomposition"
+    },
+    {
+      "claim_id": "f06:nullscreen:physicalPairing-eq-screen",
+      "module": "Burnett.Algebra.NullScreen",
+      "declaration": "Burnett.RicciSymbol.NullScreen.physicalPairing_eq_screen"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:ricciSymbol-pureGauge-eq-zero",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.ricciSymbol_pureGauge_eq_zero"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:complexRicciSymbol-pureGauge-eq-zero",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.complexRicciSymbol_pureGauge_eq_zero"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:physicalPairing-add-pureGauge-both",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_add_pureGauge_both"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:hermitianPhysicalPairing-add-pureGauge-both",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_pureGauge_both"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complexScreenTensor-kernel",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.complexScreenTensor_kernel"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.hermitianPhysicalPairing_self_eq_zero_iff_pureGauge"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complex-kernel-decomposition",
+      "module": "Burnett.Algebra.HermitianScreen",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.complex_kernel_decomposition"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-eq-gaugeFixed-sum-squares",
+      "module": "Burnett.Algebra.MinkowskiNull",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_eq_gaugeFixed_sum_squares"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-nonneg",
+      "module": "Burnett.Algebra.MinkowskiNull",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_self_nonneg"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-eq-zero-iff-pureGauge",
+      "module": "Burnett.Algebra.MinkowskiNull",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_self_eq_zero_iff_pureGauge"
+    },
+    {
+      "claim_id": "f06:tensorframe:metricTrace-transform",
+      "module": "Burnett.Algebra.TensorFrame",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.metricTrace_transform"
+    },
+    {
+      "claim_id": "f06:tensorframe:tensorPairing-transform",
+      "module": "Burnett.Algebra.TensorFrame",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.tensorPairing_transform"
+    },
+    {
+      "claim_id": "f06:tensorframe:physicalPairing-transform",
+      "module": "Burnett.Algebra.TensorFrame",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.physicalPairing_transform"
+    },
+    {
+      "claim_id": "f06:tensorframe:null-kernel-transform",
+      "module": "Burnett.Algebra.TensorFrame",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.null_kernel_transform"
+    },
+    {
+      "claim_id": "f06:tensorframe:tensor-injective",
+      "module": "Burnett.Algebra.TensorFrame",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.tensor_injective"
+    },
+    {
+      "claim_id": "f06:complexframe:hermitianPhysicalPairing-transform",
+      "module": "Burnett.Algebra.ComplexFrame",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.hermitianPhysicalPairing_transform"
+    },
+    {
+      "claim_id": "f06:complexframe:complex-null-kernel-transform",
+      "module": "Burnett.Algebra.ComplexFrame",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.complex_null_kernel_transform"
+    },
+    {
+      "claim_id": "f06:complexframe:complexTensor-injective",
+      "module": "Burnett.Algebra.ComplexFrame",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.complexTensor_injective"
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-re-nonneg",
+      "module": "Burnett.Algebra.ComplexFrame",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.minkowski_hermitianPhysicalPairing_self_re_nonneg"
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "module": "Burnett.Algebra.ComplexFrame",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.minkowski_hermitianPhysicalPairing_self_eq_zero_iff_pureGauge"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:metric-symmetric",
+      "module": "Burnett.Algebra.LorentzPhysical",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.metric_symmetric"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-nonneg",
+      "module": "Burnett.Algebra.LorentzPhysical",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.physicalPairing_self_nonneg"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-eq-zero-iff-pureGauge",
+      "module": "Burnett.Algebra.LorentzPhysical",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.physicalPairing_self_eq_zero_iff_pureGauge"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-re-nonneg",
+      "module": "Burnett.Algebra.LorentzHermitian",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_re_nonneg"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-im-eq-zero",
+      "module": "Burnett.Algebra.LorentzHermitian",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_im_eq_zero"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-eq-zero-iff-pureGauge",
+      "module": "Burnett.Algebra.LorentzHermitian",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_eq_zero_iff_pureGauge"
+    },
+    {
+      "claim_id": "f06:framecomposition:inverseMetric-compose-of-lorentz",
+      "module": "Burnett.Algebra.FrameComposition",
+      "declaration": "Burnett.RicciSymbol.FrameComposition.inverseMetric_compose_of_lorentz"
+    },
+    {
+      "claim_id": "f06:framecomposition:covector-composeFrames",
+      "module": "Burnett.Algebra.FrameComposition",
+      "declaration": "Burnett.RicciSymbol.FrameComposition.covector_composeFrames"
+    },
+    {
+      "claim_id": "f06:minkowskinormalize:exists-normalizing-frame",
+      "module": "Burnett.Algebra.MinkowskiNormalize",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNormalize.exists_normalizing_frame"
+    },
+    {
+      "claim_id": "f06:nullframe:exists-normalized-frame",
+      "module": "Burnett.Algebra.NullFrame",
+      "declaration": "Burnett.RicciSymbol.NullFrame.exists_normalized_frame"
+    },
+    {
+      "claim_id": "f06:nullframe:normalizedFrame-frequency",
+      "module": "Burnett.Algebra.NullFrame",
+      "declaration": "Burnett.RicciSymbol.NullFrame.normalizedFrame_frequency"
+    },
+    {
+      "claim_id": "f06:nullnormalform:same-screenCoordinates-iff-gauge",
+      "module": "Burnett.Algebra.NullNormalForm",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.same_screenCoordinates_iff_gauge"
+    },
+    {
+      "claim_id": "f06:nullnormalform:screenCoordinates-surjective",
+      "module": "Burnett.Algebra.NullNormalForm",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.screenCoordinates_surjective"
+    },
+    {
+      "claim_id": "f06:nullnormalform:hermitianPhysicalPairing-eq-coordinates",
+      "module": "Burnett.Algebra.NullNormalForm",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.hermitianPhysicalPairing_eq_coordinates"
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-add",
+      "module": "Burnett.Algebra.PhysicalQuotient",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.coordinates_add"
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-smul",
+      "module": "Burnett.Algebra.PhysicalQuotient",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.coordinates_smul"
+    },
+    {
+      "claim_id": "f06:physicalquotient:gauge-iff-coordinates",
+      "module": "Burnett.Algebra.PhysicalQuotient",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.gauge_iff_coordinates"
+    },
+    {
+      "claim_id": "f06:physicalquotient:all-coordinates-realized",
+      "module": "Burnett.Algebra.PhysicalQuotient",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.all_coordinates_realized"
+    },
+    {
+      "claim_id": "f06:physicalquotient:pairing-eq-coordinates",
+      "module": "Burnett.Algebra.PhysicalQuotient",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.pairing_eq_coordinates"
     }
   ],
   "inventory": [
@@ -405,8 +701,8 @@
       "disposition": "formalize",
       "modeling_status": "partially_modeled",
       "lean_status": "partially_formalized",
-      "statement_record": "docs/statements/quadratic-real-algebra.md",
-      "remaining": "Complex Hermitian extension, null-frame/physical-quotient nonnegativity and geometric/measure bridges remain open; real mixed polarization now has explicit supporting declarations."
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "remaining": "Pointwise complex Hermitian identities, Lorentz-frame positivity, actual gauge radical and two-coordinate physical-class classification are implemented. The geometric Lorentz data must supply the explicit pointwise frame certificate; F05/F07 covariance and measure instantiation, and new user/author semantic confirmation, remain separate. No global smooth frame choice or uniform parameter estimate is asserted."
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -1382,6 +1678,1032 @@
       "semantic_review_record": "docs/statements/real-polarization-review.md",
       "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
       "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:complexRicci-kernel-iff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.complexRicci_kernel_iff",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-conj-symm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_conj_symm",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-conj-symm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_conj_symm",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-real-diagonal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_real_diagonal",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-ofReal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_ofReal",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_add_left",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_add_right",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_smul_left",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_smul_right",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_left",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_right",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_smul_left",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_smul_right",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-zero-of-noncharacteristic-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_eq_zero_of_noncharacteristic_kernel",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-physicalPairing-of-null-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianQuadraticSymbol_eq_physicalPairing_of_null_kernel",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-pureGauge-eq-zero-of-null-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_pureGauge_eq_zero_of_null_kernel",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullscreen:kernel-decomposition",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullScreen.kernel_decomposition",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullscreen:physicalPairing-eq-screen",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullScreen.physicalPairing_eq_screen",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:ricciSymbol-pureGauge-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ricciSymbol_pureGauge_eq_zero",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:complexRicciSymbol-pureGauge-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.complexRicciSymbol_pureGauge_eq_zero",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:physicalPairing-add-pureGauge-both",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_add_pureGauge_both",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:hermitianPhysicalPairing-add-pureGauge-both",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.hermitianPhysicalPairing_add_pureGauge_both",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complexScreenTensor-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.complexScreenTensor_kernel",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.hermitianPhysicalPairing_self_eq_zero_iff_pureGauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complex-kernel-decomposition",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.HermitianScreen.complex_kernel_decomposition",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-eq-gaugeFixed-sum-squares",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_eq_gaugeFixed_sum_squares",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_self_nonneg",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-eq-zero-iff-pureGauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNull.physicalPairing_self_eq_zero_iff_pureGauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:tensorframe:metricTrace-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.metricTrace_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:tensorframe:tensorPairing-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.tensorPairing_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:tensorframe:physicalPairing-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.physicalPairing_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:tensorframe:null-kernel-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.null_kernel_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:tensorframe:tensor-injective",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.TensorFrame.tensor_injective",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexframe:hermitianPhysicalPairing-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.hermitianPhysicalPairing_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexframe:complex-null-kernel-transform",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.complex_null_kernel_transform",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexframe:complexTensor-injective",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.complexTensor_injective",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-re-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.minkowski_hermitianPhysicalPairing_self_re_nonneg",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ComplexFrame.minkowski_hermitianPhysicalPairing_self_eq_zero_iff_pureGauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:metric-symmetric",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.metric_symmetric",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.physicalPairing_self_nonneg",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-eq-zero-iff-pureGauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzPhysical.physicalPairing_self_eq_zero_iff_pureGauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-re-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_re_nonneg",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-im-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_im_eq_zero",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-eq-zero-iff-pureGauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.LorentzHermitian.physicalPairing_self_eq_zero_iff_pureGauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:framecomposition:inverseMetric-compose-of-lorentz",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.FrameComposition.inverseMetric_compose_of_lorentz",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:framecomposition:covector-composeFrames",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.FrameComposition.covector_composeFrames",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:minkowskinormalize:exists-normalizing-frame",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.MinkowskiNormalize.exists_normalizing_frame",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullframe:exists-normalized-frame",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullFrame.exists_normalized_frame",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullframe:normalizedFrame-frequency",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullFrame.normalizedFrame_frequency",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullnormalform:same-screenCoordinates-iff-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.same_screenCoordinates_iff_gauge",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullnormalform:screenCoordinates-surjective",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.screenCoordinates_surjective",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:nullnormalform:hermitianPhysicalPairing-eq-coordinates",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.NullNormalForm.hermitianPhysicalPairing_eq_coordinates",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-add",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.coordinates_add",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-smul",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.coordinates_smul",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:physicalquotient:gauge-iff-coordinates",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.gauge_iff_coordinates",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:physicalquotient:all-coordinates-realized",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.all_coordinates_realized",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "f06:physicalquotient:pairing-eq-coordinates",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 465,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-pointwise-hermitian-lorentz-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.PhysicalQuotient.pairing_eq_coordinates",
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
+      "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
     }
   ],
   "coverage_review": {
@@ -1435,6 +2757,92 @@
       "expected_github_policy": "docs/formalization/github-policy.json",
       "current_maintenance_authority": "prepare-pr-only",
       "future_merge_actor": "pending-user-choice"
+    },
+    "f06_pointwise_complex_semantic_confirmation": {
+      "date": "2026-11-16",
+      "user_instruction": "委托你和独立代理确认（推荐）",
+      "confirmation_actors": [
+        "root",
+        "independent-reverse-agent"
+      ],
+      "scope": "pointwise complex Hermitian Ricci-symbol algebra, Lorentz-frame positivity, gauge radical and complete two-complex-coordinate physical classification",
+      "claim_ids": [
+        "f06:complexframe:complex-null-kernel-transform",
+        "f06:complexframe:complexTensor-injective",
+        "f06:complexframe:hermitianPhysicalPairing-transform",
+        "f06:complexframe:minkowski-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+        "f06:complexframe:minkowski-hermitianPhysicalPairing-self-re-nonneg",
+        "f06:complexpolarization:complexRicci-kernel-iff",
+        "f06:complexpolarization:hermitianPhysicalPairing-add-left",
+        "f06:complexpolarization:hermitianPhysicalPairing-add-right",
+        "f06:complexpolarization:hermitianPhysicalPairing-conj-symm",
+        "f06:complexpolarization:hermitianPhysicalPairing-ofReal",
+        "f06:complexpolarization:hermitianPhysicalPairing-pureGauge-eq-zero-of-null-kernel",
+        "f06:complexpolarization:hermitianPhysicalPairing-smul-left",
+        "f06:complexpolarization:hermitianPhysicalPairing-smul-right",
+        "f06:complexpolarization:hermitianQuadraticSymbol-add-left",
+        "f06:complexpolarization:hermitianQuadraticSymbol-add-right",
+        "f06:complexpolarization:hermitianQuadraticSymbol-conj-symm",
+        "f06:complexpolarization:hermitianQuadraticSymbol-eq-physicalPairing-of-null-kernel",
+        "f06:complexpolarization:hermitianQuadraticSymbol-eq-zero-of-noncharacteristic-kernel",
+        "f06:complexpolarization:hermitianQuadraticSymbol-real-diagonal",
+        "f06:complexpolarization:hermitianQuadraticSymbol-smul-left",
+        "f06:complexpolarization:hermitianQuadraticSymbol-smul-right",
+        "f06:framecomposition:covector-composeFrames",
+        "f06:framecomposition:inverseMetric-compose-of-lorentz",
+        "f06:hermitianscreen:HermitianScreen-complex-kernel-decomposition",
+        "f06:hermitianscreen:HermitianScreen-complexScreenTensor-kernel",
+        "f06:hermitianscreen:HermitianScreen-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+        "f06:hermitianscreen:complexRicciSymbol-pureGauge-eq-zero",
+        "f06:hermitianscreen:hermitianPhysicalPairing-add-pureGauge-both",
+        "f06:hermitianscreen:physicalPairing-add-pureGauge-both",
+        "f06:hermitianscreen:ricciSymbol-pureGauge-eq-zero",
+        "f06:lorentzhermitian:physicalPairing-self-eq-zero-iff-pureGauge",
+        "f06:lorentzhermitian:physicalPairing-self-im-eq-zero",
+        "f06:lorentzhermitian:physicalPairing-self-re-nonneg",
+        "f06:lorentzphysical:metric-symmetric",
+        "f06:lorentzphysical:physicalPairing-self-eq-zero-iff-pureGauge",
+        "f06:lorentzphysical:physicalPairing-self-nonneg",
+        "f06:minkowskinormalize:exists-normalizing-frame",
+        "f06:minkowskinull:physicalPairing-eq-gaugeFixed-sum-squares",
+        "f06:minkowskinull:physicalPairing-self-eq-zero-iff-pureGauge",
+        "f06:minkowskinull:physicalPairing-self-nonneg",
+        "f06:nullframe:exists-normalized-frame",
+        "f06:nullframe:normalizedFrame-frequency",
+        "f06:nullnormalform:hermitianPhysicalPairing-eq-coordinates",
+        "f06:nullnormalform:same-screenCoordinates-iff-gauge",
+        "f06:nullnormalform:screenCoordinates-surjective",
+        "f06:nullscreen:kernel-decomposition",
+        "f06:nullscreen:physicalPairing-eq-screen",
+        "f06:physicalquotient:all-coordinates-realized",
+        "f06:physicalquotient:coordinates-add",
+        "f06:physicalquotient:coordinates-smul",
+        "f06:physicalquotient:gauge-iff-coordinates",
+        "f06:physicalquotient:pairing-eq-coordinates",
+        "f06:tensorframe:metricTrace-transform",
+        "f06:tensorframe:null-kernel-transform",
+        "f06:tensorframe:physicalPairing-transform",
+        "f06:tensorframe:tensor-injective",
+        "f06:tensorframe:tensorPairing-transform"
+      ],
+      "statement_record": "docs/statements/hermitian-null-algebra.md",
+      "statement_sha256": "2614508baa30818cc27bb35a518fd97130e0186f5f164e9289e1656b2a0b6302",
+      "source_bindings": "docs/statements/f06-hermitian-source-bindings.json",
+      "human_personally_read_and_confirmed_lean": false,
+      "does_not_verify_whole_paper": true
+    },
+    "current_pr_merge_executor": {
+      "date": "2026-11-16",
+      "user_selection": "3A",
+      "prs": [
+        3,
+        4
+      ],
+      "executor": "human",
+      "pr3_merge_commit": "b422864a789cf86a058f0adc7eb55a8f7d8fd08d",
+      "pr4_agent_role": "prepare/review/retest candidate; do not merge",
+      "authorizes_pr5_merge": false,
+      "does_not_select_permanent_global_default": true
     }
   },
   "planning": {

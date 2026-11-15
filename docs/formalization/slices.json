@@ -191,11 +191,11 @@
         "选择g(L,L_under)=-2及二维正交屏幕的零标架，核约束与规范消去留下无迹对称屏幕张量；F(k,k)=Σ_{A,B}|k_AB|²≥0，物理商二维且与代表无关；需把实证明准确延伸到正Hermitian协方差。"
       ],
       "risks": [
-        "已有注册支持目标覆盖实非特征消去、完整实B展开、实零锥核/公式、实规范交叉，以及实对称混合极化、双线性和两类核混合结论；复Hermitian与物理商正性仍开放，父项仍部分完成。",
+        "已实现实/复非特征消去、完整B及Hermitian混合公式、规范代表不变、任意非零零方向正性、一般Lorentz点态证书协变及完整两复参数分类；几何Lorentz数据到证书、F05/F07协方差与测度实例化及本轮新数学解释确认仍须分别核实，不据此关闭父二次定理。",
         "核、规范商与屏幕正范数需严格区分；非零锥上不应宣称F非负。",
         "不能仅证明B(k,k)=0而漏掉协方差所需混合项。"
       ],
-      "next_action": "复用实混合极化的原连接交叉定义、对角桥接、双线性与两类核混合公式，推进复Hermitian扩展；并行核零标架与物理商正性及一般Lorentz桥接，最终由同一父项闭合。",
+      "next_action": "把已证点态Lorentz证书、Hermitian型及完整两坐标分类接入F02/F05真实几何与协方差对象，再由F07闭合测度配对正性和二次定理；点态反射选择不自动提供V06需要的光滑性/参数一致界。",
       "supplementary_obligations": [
         {
           "id": "local:full-B-expansion",
@@ -211,7 +211,7 @@
             450,
             452
           ],
-          "description": "实混合极化已有支持声明；复Hermitian扩展子义务仍开放。"
+          "description": "实及复Hermitian混合代数已有原定义桥接、完整两槽规律和两类核结论；见新实际声明与复核。"
         },
         {
           "id": "local:null-gauge-cross-cancellation",
@@ -227,7 +227,7 @@
             465,
             465
           ],
-          "description": "标架存在、规范代表与商正性子义务；必要定义与结论不在旧defcand:defect-covariance范围内。"
+          "description": "点态frame证书、实际双反射归一化、规范代表不变、非负/规范零核及两参数双向分类已有证明；几何/测度实例化与全局光滑选择另核。"
         }
       ]
     },
@@ -2123,6 +2123,348 @@
       "source_slices": [
         "F06"
       ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:complexRicci-kernel-iff",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-conj-symm",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-conj-symm",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-real-diagonal",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-ofReal",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-left",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-add-right",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-left",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-smul-right",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-left",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-add-right",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-left",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-smul-right",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-zero-of-noncharacteristic-kernel",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianQuadraticSymbol-eq-physicalPairing-of-null-kernel",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexpolarization:hermitianPhysicalPairing-pureGauge-eq-zero-of-null-kernel",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullscreen:kernel-decomposition",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullscreen:physicalPairing-eq-screen",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:ricciSymbol-pureGauge-eq-zero",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:complexRicciSymbol-pureGauge-eq-zero",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:physicalPairing-add-pureGauge-both",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:hermitianPhysicalPairing-add-pureGauge-both",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complexScreenTensor-kernel",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:hermitianscreen:HermitianScreen-complex-kernel-decomposition",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-eq-gaugeFixed-sum-squares",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-nonneg",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:minkowskinull:physicalPairing-self-eq-zero-iff-pureGauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:tensorframe:metricTrace-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:tensorframe:tensorPairing-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:tensorframe:physicalPairing-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:tensorframe:null-kernel-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:tensorframe:tensor-injective",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexframe:hermitianPhysicalPairing-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexframe:complex-null-kernel-transform",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexframe:complexTensor-injective",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-re-nonneg",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:complexframe:minkowski-hermitianPhysicalPairing-self-eq-zero-iff-pureGauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzphysical:metric-symmetric",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-nonneg",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzphysical:physicalPairing-self-eq-zero-iff-pureGauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-re-nonneg",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-im-eq-zero",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:lorentzhermitian:physicalPairing-self-eq-zero-iff-pureGauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:framecomposition:inverseMetric-compose-of-lorentz",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:framecomposition:covector-composeFrames",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:minkowskinormalize:exists-normalizing-frame",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullframe:exists-normalized-frame",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullframe:normalizedFrame-frequency",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullnormalform:same-screenCoordinates-iff-gauge",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullnormalform:screenCoordinates-surjective",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:nullnormalform:hermitianPhysicalPairing-eq-coordinates",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-add",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:physicalquotient:coordinates-smul",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:physicalquotient:gauge-iff-coordinates",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:physicalquotient:all-coordinates-realized",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:physicalquotient:pairing-eq-coordinates",
+      "source_slices": [
+        "F06"
+      ]
     }
   ],
   "edges": [
@@ -3548,7 +3890,7 @@
       ],
       "closure_slice": "F07",
       "shared_obligations": [
-        "完整Ricci/B代数含混合/Hermitian和零锥商正性；当前5条实对角子证明只属F06的局部支持。",
+        "完整Ricci/B实及Hermitian代数、点态Lorentz正性与两参数规范类分类已有证明；几何/协方差对象实例化及F04/F05/F07共同测度构造仍待闭合。",
         "同一全局子列和全部经典角测试的协方差；不得仅用应力矩唯一性代替全角对象自然性。"
       ]
     },
@@ -3909,11 +4251,12 @@
     "新展开的子义务包括共同子列/Gram自然性、有限指数交换子、全尺度低频端点、闭图有限半范数、投影后全角测度、矩阵Taylor虚部余项、实奇测试恢复与全部Ward槽型；这些都不是新增已证结果。",
     "跨区复核已补A06→V08、A08→V11、V04→C01等细边；声明/普通交叉引用不自动作为证明输入。",
     "L01为一般条件引理，F07/C04是应用来源；C04末尾提到提升不是以提升证明输运。L03采用直接Parseval，不需要整条输运工具链。",
-    "F06的实非特征、完整实B展开、实零锥核/公式及实规范交叉已有支持目标；一般极化/复Hermitian及商正性仍开放，不能视为父二次定理闭合。",
+    "历史清点时：F06的实非特征、完整实B展开、实零锥核/公式及实规范交叉已有支持目标；一般极化/复Hermitian及商正性仍开放，不能视为父二次定理闭合。 后续点态复扩展见2026-11-16新增记录。",
     "附录辅助f_n乘积的正则性/弱导数解释在进入精确Lean建模前需按消费者核清；发现确实需补条件时交用户逐项决定。",
     "精确外部定理版本及固定Mathlib接口保持待核；没有联网阅读外部文献，也未将它们作为已批准公理。",
     "第二轮由未参与构造的三位新代理从锁定原文独立复核，并交换反驳；修正A04远角前提、定义/证明边、P01全空间Calderón开放接口、范围索引同步及附录工具消费者。详见slicing-review.md；这不是开放证明的正确性认证。",
-    "多代理并行试运行新增4个真实实代数子目标（含主代理合并的零锥B公式）；原文、依赖版本及整体范围未改。独立回读与机器证据见quadratic-real-algebra-review.md及parallel-workflow.md，作者确认仍待定。"
+    "多代理并行试运行新增4个真实实代数子目标（含主代理合并的零锥B公式）；原文、依赖版本及整体范围未改。独立回读与机器证据见quadratic-real-algebra-review.md及parallel-workflow.md，作者确认仍待定。",
+    "2026-11-16新增F06点态复Hermitian、Lorentz正性、实际反射归一化及两坐标双向分类；57个新注册支持目标仍归同一父项，不计入17项正式结果完成。原文、数学标准及135条依赖边未改；几何/协方差/测度接入与新解释确认分别保留。用户最终信任政策已明确选择A依赖闭合。"
   ],
   "integration_unmapped_items": []
 }
