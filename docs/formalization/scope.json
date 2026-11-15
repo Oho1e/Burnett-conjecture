@@ -67,6 +67,66 @@
       "claim_id": "quadratic:null-real-gauge-cross",
       "module": "Burnett.Algebra.NullKernel",
       "declaration": "Burnett.RicciSymbol.physicalPairing_pureGauge_eq_zero_of_null_kernel"
+    },
+    {
+      "claim_id": "polarization:real-symmetry",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_comm"
+    },
+    {
+      "claim_id": "polarization:real-add-left",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_add_left"
+    },
+    {
+      "claim_id": "polarization:real-add-right",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_add_right"
+    },
+    {
+      "claim_id": "polarization:real-smul-left",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_left"
+    },
+    {
+      "claim_id": "polarization:real-smul-right",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_right"
+    },
+    {
+      "claim_id": "polarization:real-diagonal",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_diag"
+    },
+    {
+      "claim_id": "polarization:real-polarization",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_polarization"
+    },
+    {
+      "claim_id": "polarization:real-noncharacteristic-mixed",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_zero_of_noncharacteristic_kernel"
+    },
+    {
+      "claim_id": "polarization:real-null-mixed",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_physicalPairing_of_null_kernel"
+    },
+    {
+      "claim_id": "polarization:ricci-real-smul",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.ricciSymbol_smul"
+    },
+    {
+      "claim_id": "polarization:physical-real-smul-left",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_smul_left"
+    },
+    {
+      "claim_id": "polarization:physical-real-smul-right",
+      "module": "Burnett.Algebra.RealPolarization",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_smul_right"
     }
   ],
   "inventory": [
@@ -346,7 +406,7 @@
       "modeling_status": "partially_modeled",
       "lean_status": "partially_formalized",
       "statement_record": "docs/statements/quadratic-real-algebra.md",
-      "remaining": "General real polarization and complex Hermitian extension, null-frame/physical-quotient nonnegativity and geometric/measure bridges remain open."
+      "remaining": "Complex Hermitian extension, null-frame/physical-quotient nonnegativity and geometric/measure bridges remain open; real mixed polarization now has explicit supporting declarations."
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -1106,6 +1166,222 @@
       "semantic_review_record": "docs/statements/quadratic-real-algebra-review.md",
       "human_semantic_confirmation": "pending",
       "semantic_review": "independent-frozen-source-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-symmetry",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_comm",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-add-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_add_left",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-add-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_add_right",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-smul-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_left",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_smul_right",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-diagonal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 435,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_diag",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-polarization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 450
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_polarization",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-noncharacteristic-mixed",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 452,
+        "endline": 452
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_zero_of_noncharacteristic_kernel",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:real-null-mixed",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 454,
+        "endline": 457
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.mixedQuadraticSymbol_eq_physicalPairing_of_null_kernel",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:ricci-real-smul",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 450,
+        "endline": 454
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.ricciSymbol_smul",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:physical-real-smul-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 457,
+        "endline": 461
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_smul_left",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "polarization:physical-real-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 457,
+        "endline": 461
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_smul_right",
+      "statement_record": "docs/statements/real-polarization.md",
+      "semantic_review_record": "docs/statements/real-polarization-review.md",
+      "human_semantic_confirmation": "delegated-to-agents-for-this-local-delivery",
+      "semantic_review": "independent-actual-type-readback-passed"
     }
   ],
   "coverage_review": {
@@ -1134,6 +1410,19 @@
       "name": "lean-paper-results",
       "version": "1.3",
       "mathematical_standard_unchanged": "paper-results 1.2"
+    },
+    "f06_local_semantic_confirmation": {
+      "user_instruction": "带子代理你来确认",
+      "scope": "This F06 real mixed-polarization delivery only",
+      "mode": "user-delegated-agent-confirmation",
+      "confirmed_by": [
+        "coordinator",
+        "independent actual-type readback agent"
+      ],
+      "statement_record": "docs/statements/real-polarization.md",
+      "statement_sha256": "de1ca6bda24b85980fe45968869841696bac314187c83ddd8eeb63ad60d19edc",
+      "human_personally_read_and_confirmed": false,
+      "does_not_select_trust_policy_or_verify_whole_paper": true
     }
   },
   "planning": {
