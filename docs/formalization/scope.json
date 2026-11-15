@@ -423,6 +423,126 @@
       "claim_id": "f06:physicalquotient:pairing-eq-coordinates",
       "module": "Burnett.Algebra.PhysicalQuotient",
       "declaration": "Burnett.RicciSymbol.PhysicalQuotient.pairing_eq_coordinates"
+    },
+    {
+      "claim_id": "prop:cubic",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.auxiliary_trilinear_counterexample"
+    },
+    {
+      "claim_id": "x02:nonzero-cubic-limit",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.cubic_unitTest_not_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:f-local-negative-norm",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.f_wave_strongHminusLocalZero"
+    },
+    {
+      "claim_id": "x02:w-local-negative-norm",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.w_wave_strongHminusLocalZero"
+    },
+    {
+      "claim_id": "x02:f-smooth",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.fSequence_smooth"
+    },
+    {
+      "claim_id": "x02:w-smooth",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.wSequence_smooth"
+    },
+    {
+      "claim_id": "x02:f-gradient-bound",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.D_fSequence_abs_le_two"
+    },
+    {
+      "claim_id": "x02:w-gradient-bound",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.D_wSequence_abs_le_one"
+    },
+    {
+      "claim_id": "x02:actual-wave-divergence",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.waveOperator_waveF_eq_actual_flux_divergence"
+    },
+    {
+      "claim_id": "x02:f-uniform-limit",
+      "module": "Burnett.Analysis.Cubic.FrequencyBounds",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_fSequence"
+    },
+    {
+      "claim_id": "x02:w-uniform-limit",
+      "module": "Burnett.Analysis.Cubic.FrequencyBounds",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_wSequence"
+    },
+    {
+      "claim_id": "x02:dense-dual-uniqueness",
+      "module": "Burnett.Analysis.Sobolev.GraphDual",
+      "declaration": "Burnett.X02.GraphDual.testRestriction_injective"
+    },
+    {
+      "claim_id": "x02:actual-jet-add",
+      "module": "Burnett.Analysis.Sobolev.TestJet",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_add"
+    },
+    {
+      "claim_id": "x02:actual-jet-smul",
+      "module": "Burnett.Analysis.Sobolev.TestJet",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_smul"
+    },
+    {
+      "claim_id": "x02:actual-test-pairing",
+      "module": "Burnett.Analysis.Sobolev.Pairing",
+      "declaration": "Burnett.X02.TestJetPairing.coefficientFunctional_test_of_memLp"
+    },
+    {
+      "claim_id": "x02:localized-divergence-ibp",
+      "module": "Burnett.Analysis.IBP.LocalizedIBP",
+      "declaration": "Burnett.X02.LocalizedIBP.integral_localized_divergence"
+    },
+    {
+      "claim_id": "x02:l2-strong-coefficient-bound",
+      "module": "Burnett.Analysis.Sobolev.L2Bounds",
+      "declaration": "Burnett.X02.L2Bounds.toLp_tendsto_zero_of_bound"
+    },
+    {
+      "claim_id": "x02:actual-source-identification",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_eq_smallFunctional"
+    },
+    {
+      "claim_id": "x02:source-strong-dual-limit",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:source-explicit-norm-limit",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.norm_sourceFunctional_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:cubic-distribution-limit",
+      "module": "Burnett.Analysis.Cubic.Distribution",
+      "declaration": "Burnett.CubicDistribution.cubic_integral_tendsto"
+    },
+    {
+      "claim_id": "x02:actual-cubic-integrability",
+      "module": "Burnett.Analysis.Cubic.Distribution",
+      "declaration": "Burnett.CubicDistribution.cubic_integrable"
+    },
+    {
+      "claim_id": "x02:unit-test-integral",
+      "module": "Burnett.Analysis.Sobolev.NonzeroTest",
+      "declaration": "Burnett.X02.NonzeroTest.unitTest_integral"
+    },
+    {
+      "claim_id": "x02:nonzero-test-existence",
+      "module": "Burnett.Analysis.Sobolev.NonzeroTest",
+      "declaration": "Burnett.X02.NonzeroTest.exists_test_integral_ne_zero"
     }
   ],
   "inventory": [
@@ -618,9 +738,14 @@
         "endline": 3181
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t14"
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "declaration": "Burnett.CubicCounterexample.auxiliary_trilinear_counterexample",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
     },
     {
       "claim_id": "prop:bianchi",
@@ -2704,6 +2829,615 @@
       "semantic_review_record": "docs/statements/hermitian-null-algebra-review.md",
       "human_semantic_confirmation": "delegated-to-root-and-independent-agent-for-this-pointwise-delivery",
       "semantic_review": "independent-actual-type-readback-passed"
+    },
+    {
+      "claim_id": "x02:nonzero-cubic-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3178,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicCounterexample.cubic_unitTest_not_tendsto_zero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:f-local-negative-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicCounterexample.f_wave_strongHminusLocalZero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:w-local-negative-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicCounterexample.w_wave_strongHminusLocalZero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:f-smooth",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicExplicit.fSequence_smooth",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:w-smooth",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicExplicit.wSequence_smooth",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:f-gradient-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicExplicit.D_fSequence_abs_le_two",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:w-gradient-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicExplicit.D_wSequence_abs_le_one",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-wave-divergence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3189,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicExplicit.waveOperator_waveF_eq_actual_flux_divergence",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:f-uniform-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_fSequence",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:w-uniform-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_wSequence",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:dense-dual-uniqueness",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.GraphDual.testRestriction_injective",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-jet-add",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3176
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_add",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-jet-smul",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3176
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_smul",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-test-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.TestJetPairing.coefficientFunctional_test_of_memLp",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:localized-divergence-ibp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3189,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.LocalizedIBP.integral_localized_divergence",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:l2-strong-coefficient-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.L2Bounds.toLp_tendsto_zero_of_bound",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-source-identification",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_eq_smallFunctional",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:source-strong-dual-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_tendsto_zero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:source-explicit-norm-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.LocalHminus.norm_sourceFunctional_tendsto_zero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:cubic-distribution-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3195,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicDistribution.cubic_integral_tendsto",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:actual-cubic-integrability",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3195,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicDistribution.cubic_integrable",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:unit-test-integral",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3178,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.NonzeroTest.unitTest_integral",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:nonzero-test-existence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3178,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.X02.NonzeroTest.exists_test_integral_ne_zero",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-spacetime-operators",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.CubicExplicit.Space",
+        "Burnett.CubicExplicit.D",
+        "Burnett.CubicExplicit.waveOperator",
+        "Burnett.CubicExplicit.nullForm"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-scalar-sequences",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3189
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.CubicExplicit.N",
+        "Burnett.CubicExplicit.fSequence",
+        "Burnett.CubicExplicit.wSequence"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-smooth-test-jet",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3176
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.X02.SobolevTestJet.Test",
+        "Burnett.X02.SobolevTestJet.J"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-hilbert-dual-model",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.X02.GraphDual.Graph",
+        "Burnett.X02.GraphDual.coefficientFunctional"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-localized-wave-source",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.X02.LocalHminus.localizedWaveSource",
+        "Burnett.X02.LocalHminus.sourceFunctional"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-local-strong-criterion",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3176,
+        "endline": 3176
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.CubicCounterexample.StrongHminusLocalZero"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "x02:def-seven-actual-phases",
+      "kind": "definition",
+      "parent_claim_id": "prop:cubic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3195,
+        "endline": 3208
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-with-delegated-semantic-confirmation",
+      "lean_status": "implemented",
+      "declarations": [
+        "Burnett.CubicFrequencies.phase",
+        "Burnett.CubicFrequencies.coefficient"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
+      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_personally_read_lean": false
+    },
+    {
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "kind": "unnumbered-result",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "user-approved-fixed-fourier-conic-projections",
+      "lean_status": "not_formalized",
+      "statement_record": "docs/statements/cubic-off-null-localization.md",
+      "scope_decision": "2026-11-16 user selected 2A and fixed Fourier conic projections",
+      "same_witnesses": "Burnett.CubicExplicit.fSequence and wSequence",
+      "proof_or_new_hypotheses_approved": false
     }
   ],
   "coverage_review": {
@@ -2843,6 +3577,77 @@
       "pr4_agent_role": "prepare/review/retest candidate; do not merge",
       "authorizes_pr5_merge": false,
       "does_not_select_permanent_global_default": true
+    },
+    "x02_semantic_confirmation": {
+      "status": "confirmed-by-user-delegated-agents",
+      "date": "2026-11-16",
+      "user_selection": "1A",
+      "confirmation_actors": [
+        "root",
+        "independent-reverse-agent"
+      ],
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "statement_sha256": "6c37bae6aac9e2edc154f5d902ccb0af170bb47687c7b07a712cabf4c9cf8d7f",
+      "confirmed_prior_technical_statement_sha256": "f14afaddbcbc8da60012b30d6e73d16c00d132a91414b0720d0779e0dc78df87",
+      "technical_sections_unchanged": true,
+      "human_personally_read_lean": false,
+      "scope_claim_ids": [
+        "prop:cubic",
+        "x02:actual-cubic-integrability",
+        "x02:actual-jet-add",
+        "x02:actual-jet-smul",
+        "x02:actual-source-identification",
+        "x02:actual-test-pairing",
+        "x02:actual-wave-divergence",
+        "x02:cubic-distribution-limit",
+        "x02:dense-dual-uniqueness",
+        "x02:f-gradient-bound",
+        "x02:f-local-negative-norm",
+        "x02:f-smooth",
+        "x02:f-uniform-limit",
+        "x02:l2-strong-coefficient-bound",
+        "x02:localized-divergence-ibp",
+        "x02:nonzero-cubic-limit",
+        "x02:nonzero-test-existence",
+        "x02:source-explicit-norm-limit",
+        "x02:source-strong-dual-limit",
+        "x02:unit-test-integral",
+        "x02:w-gradient-bound",
+        "x02:w-local-negative-norm",
+        "x02:w-smooth",
+        "x02:w-uniform-limit"
+      ],
+      "does_not_confirm_unproved_off_null_assertion": true,
+      "does_not_verify_whole_paper": true
+    },
+    "x02_off_null_scope_decision": {
+      "status": "approved-required-fixed-fourier-conic-projections",
+      "date": "2026-11-16",
+      "user_selections": [
+        "2A",
+        "固定 Fourier 锥投影（推荐）"
+      ],
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "proved_in_current_delivery": false,
+      "projection_depends_on_x": false,
+      "quantifiers": "same f/w; every fixed compact smooth localization, fixed off-null region and fixed projection",
+      "does_not_require_entire_alternate_fourier_rellich_route": true
+    },
+    "current_pr5_merge_handoff": {
+      "status": "prepare-reviewed-pr-only",
+      "merge_executor": "not-yet-selected",
+      "agent_may_merge": false,
+      "prior_human_choice_scope": [
+        3,
+        4
+      ],
+      "pr3_and_pr4_merged_by_user": true,
+      "base_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628"
     }
   },
   "planning": {

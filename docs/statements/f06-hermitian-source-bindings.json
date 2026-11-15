@@ -28,7 +28,7 @@
     "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
     "Burnett/Algebra/TensorFrame.lean": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906",
     "Burnett/Overview.lean": "9640b4cd42b93f3999a49d00d57a998ab256810c7cd4ca843f82d586483bbea8",
-    "Burnett.lean": "20ef137cd7205d24b005dc2c7550d4cd9a0fb5a63c0fe363d816e9d5acd8b5d2"
+    "Burnett.lean": "0e51bc7776f3e21a713dbe53adaa307b2aebb5313fcd11867cdc338dfc71c129"
   },
   "target_declarations": [
     "Burnett.RicciSymbol.complexRicci_kernel_iff",
@@ -89,5 +89,13 @@
     "Burnett.RicciSymbol.PhysicalQuotient.all_coordinates_realized",
     "Burnett.RicciSymbol.PhysicalQuotient.pairing_eq_coordinates"
   ],
-  "does_not_include_own_receipt_or_commit_hash": true
+  "does_not_include_own_receipt_or_commit_hash": true,
+  "combined_entry_update": {
+    "date": "2026-11-16",
+    "parent_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628",
+    "previous_entry_sha256": "20ef137cd7205d24b005dc2c7550d4cd9a0fb5a63c0fe363d816e9d5acd8b5d2",
+    "new_entry_sha256": "0e51bc7776f3e21a713dbe53adaa307b2aebb5313fcd11867cdc338dfc71c129",
+    "reason": "Adds X02 Counterexample import after preserving all F06 imports",
+    "f06_math_modules_statement_and_target_list_unchanged": true
+  }
 }
