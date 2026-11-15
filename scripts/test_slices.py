@@ -10,6 +10,7 @@ import unittest
 from unittest.mock import patch
 
 from check_slices import SliceError, load, validate
+from prepare_slice import build_packet
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -92,6 +93,27 @@ class SlicePlanChecks(unittest.TestCase):
 
     def test_structure_cannot_certify_paper(self):
         self.altered(lambda p: p.__setitem__("paper_formalization_verified", True), "completion:")
+
+    def test_packets_include_their_open_external_interfaces(self):
+        for ident in ("P01", "L01", "X03", "X06"):
+            with self.subTest(slice_id=ident):
+                packet = build_packet(ROOT, ident)
+                self.assertIn("## 外部开放接口", packet)
+                for interface in self.plan["external_interfaces"]:
+                    if ident in interface["consumers"]:
+                        self.assertIn(interface["id"], packet)
+                        self.assertIn(interface["status"], packet)
+                self.assertIn("docs/formalization/library-audit.md", packet)
+
+    def test_packets_preserve_the_exact_source_slice(self):
+        source = (ROOT / self.plan["paper"]["path"]).read_text(encoding="utf-8").splitlines()
+        for ident in ("A04", "X03", "X06"):
+            with self.subTest(slice_id=ident):
+                node = next(n for n in self.plan["slices"] if n["id"] == ident)
+                packet = build_packet(ROOT, ident)
+                exact = "\n".join(source[node["source_start"] - 1:node["source_end"]])
+                self.assertIn("```tex\n" + exact + "\n```", packet)
+                self.assertIn(self.plan["paper"]["sha256"], packet)
 
     def test_failed_run_replaces_previous_success_receipt(self):
         scratch = ROOT / ".project-verification/slicing"

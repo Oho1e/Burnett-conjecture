@@ -29,7 +29,6 @@ flowchart TD
   APPENDIX["附录独立结果与辅助支线"]
   SETUP --> QUAD
   SETUP --> PROJECTION
-  ANALYSIS --> PROJECTION
   QUAD --> VERTEX
   ANALYSIS --> VERTEX
   PROJECTION --> VERTEX
@@ -61,17 +60,17 @@ flowchart TD
 | [A01](#a01) 分析/Fourier规格与Lipschitz一阶交换子能量 | 519–600 | proof-unit | 固定整节分析对象，闭合lem:commutator含标量测试下矩阵系数版本。 | F03（definition） |
 | [A02](#a02) 有限指数交换子、完整三次连续性与系数差 | 601–735 | proof-unit | 闭合完整极化三次能量的L³梯度连续性，并提供冻结用系数差子接口。 | A01（definition） |
 | [A03](#a03) 完整三次作用的定量系数及测试冻结 | 736–892 | proof-unit | 共同闭合lem:freezing，并将频率独立、补丁独立常数写进接口。 | A02（proof-input）, A01（definition） |
-| [A04](#a04) 三元组分割、角帽算子界及精确相位隙 | 893–1025 | proof-unit | 提供后续近角求和与远角除相位共同使用的几何/乘子输入。 | A01（proof-input） |
+| [A04](#a04) 三元组分割、角帽算子界及精确相位隙 | 893–1025 | proof-unit | 提供后续近角求和与远角除相位共同使用的几何/乘子输入。 | A01（definition） |
 | [A05](#a05) 全尺度符号传递、低频端点与近角求和共同闭合 | 1026–1245 | proof-unit | 共同闭合lem:analytic-near的无尺度数损失界及δ^{β_*}近角界。 | A04（proof-input）, A01（definition） |
 | [A06](#a06) 独立低角延拓、球谐分解与统一有限导数阈值 | 1246–1379 | proof-unit | 把修正符号的低角奇性移到低场，给A07与截断恢复可求和的BS¹接口。 | A01（definition） |
 | [A07](#a07) 修正算子、导数/粗系数交换子与高槽伴随界 | 1380–1475 | proof-unit | 共同闭合lem:analytic-correction-bounds含完整伴随版本。 | A06（proof-input） |
 | [A08](#a08) 四次交换子、精确正规形配对与固定n截断恢复 | 1476–1591 | assembly | 把修正算子界装配成只需一阶系数的精确能量接口，并合法移除角和/上频率截断。 | A07（proof-input）, A06（proof-input）, A01（proof-input） |
-| [P01](#p01) 任意坐标中的固定规范补投影与全空间有界源 | 1592–1719 | proof-unit | 完整交付命题4.1：由原始真空一阶假设构造固定实偶order-zero乘子Pi，获得投影场的有限Lp梯度界、Lp及一致趋零、全空间L2散度源，并保持完整物理角测度。 | F02（definition）, F05（proof-input）, F06（proof-input）, F07（proof-input）, A01（proof-input） |
+| [P01](#p01) 任意坐标中的固定规范补投影与全空间有界源 | 1592–1719 | proof-unit | 完整交付命题4.1：由原始真空一阶假设构造固定实偶order-zero乘子Pi，获得投影场的有限Lp梯度界、Lp及一致趋零、全空间L2散度源，并保持完整物理角测度。 | F02（definition）, F05（proof-input）, F06（proof-input）, F07（proof-input） |
 | [V01](#v01) 输运正式目标与局部变分约定 | 1720–1744 | specification | 锁定定理5.1的对象、测试类及局部配对约定；只交付目标声明，不预设输运真值。 | F02（definition）, F07（proof-input） |
 | [V02](#v02) 密度Hessian的Hermitian型与全Ricci核上的压缩 | 1745–1809 | proof-unit | 从Einstein–Hilbert一阶代表建立密度Euler式和自伴Hessian，精确计算其主符号及Poisson括号在零锥/离锥核上的压缩。 | V01（specification）, F05（definition）, F06（proof-input） |
 | [V03](#v03) Hessian交换子、非线性余项与未规范化输运残差 | 1810–1905 | proof-unit | 从原始真空方程得到eq:var-cubic-residual，完整处理非局部测试的外截断、低阶符号和只在虚部能量中消失的Taylor余项。 | V02（proof-input）, F05（proof-input）, A01（proof-input）, F07（definition） |
 | [V04](#v04) 完整三次变分、循环Fourier顶点与极化连续性 | 1906–2010 | proof-unit | 将完整残差转为对称三线性能量，证明背景导数项消失、冻结顶点的所有测试位置及其矩阵W1,3连续性。 | V03（proof-input）, V02（proof-input）, A02（proof-input）, F05（proof-input） |
-| [V05](#v05) 相容红外截断下的物理/规范分解与规范势 | 2011–2052 | specification | 交付可供实际修正算子使用的精确高频分解及其收敛性质，统一原投影、测试与修正的嵌套IR约定。 | P01（definition）, V04（proof-input） |
+| [V05](#v05) 相容红外截断下的物理/规范分解与规范势 | 2011–2052 | specification | 交付可供实际修正算子使用的精确高频分解及其收敛性质，统一原投影、测试与修正的嵌套IR约定。 | P01（definition）, V04（definition） |
 | [V06](#v06) 度量一致的屏幕投影与自身物理相位抽取 | 2053–2108 | proof-unit | 显式构造固定宽零锥邻域上的screen投影，证明其度量参数一致性、真实缺陷保持和离锥screen张量的精确相位公式。 | V02（proof-input）, F05（proof-input）, F06（proof-input）, P01（definition） |
 | [V07](#v07) off-shell Ward恒等式与全部规范腿/频率位置分类 | 2109–2262 | proof-unit | 保留单一共同分类责任：从作用的微分同胚不变性推导精确Ward式，穷尽一/二/三规范腿、低/高/可比频率位置；把每个剩余项归到自身物理相位或唯一低规范transport差相位。 | V04（proof-input）, V05（proof-input）, V06（proof-input）, A04（proof-input）, A05（proof-input） |
 | [V08](#v08) 低规范transport修正的精确性、Hermitian伴随及BS1延拓 | 2263–2342 | proof-unit | 为单个低规范/两物理对称能量构造T_G，严格验证无共振除法、Hermitian性和可供粗交换子定理使用的独立变量符号类。 | V07（proof-input）, V05（proof-input）, V06（proof-input）, A06（proof-input） |
@@ -426,7 +425,7 @@ flowchart TD
 - 矩阵系数版本要求B每一符号阶都标量，只有主符号标量不够。
 - 分析配对dx与几何dV_g转换必须显式；r^{ab}本片系数不能混同全篇辅助度规r。
 
-消费者：A02（definition）、A03（definition）、A04（proof-input）、A05（definition）、A06（definition）、A08（proof-input）、V03（proof-input）、P01（proof-input）
+消费者：A02（definition）、A03（definition）、A04（definition）、A05（definition）、A06（definition）、A08（proof-input）、V03（proof-input）
 
 片内细化义务（不另建完成状态）：
 
@@ -517,19 +516,21 @@ flowchart TD
 - N_p=ϑ(d(p,q)/δ²)ϑ(d(p,r)/δ²)，d=|p∧q|²/(λ_p²λ_q²)；低近/远分割L_pN_p与L_p(1-N_p)；远片两个项目分离均≥固定倍δ²。
 - 射影零集二维帽覆盖N_δ≤Cδ^-2，均有界重叠，使用两个有符号提升；P_γ与固定放大的P_γ^+含薄锥剖面及所需归一化导数一致；近三线性形仅在指定一槽插入一个帽分割，其余两槽落同一固定放大帽。
 - 1<p<∞时||P_γf||_p≤C_p||f||_p，对δ,γ一致；每个固定有限p_*>3，(Σγ||P_γf||_3³)^{1/3}≤C_{p_*}N_δ^{1/[3(p_*-2)]}||f||_3；P_γ^+相同。来自抛物线线性重标度、L²重叠及L^{p_*}计数测度插值。
-- 全部三频薄锥且p为最小频时，可比片三射影方向位于有界相邻δ帽；低高分离片Δ=q_m(ξ+p)-q_m(ξ)=2m(p,ξ)+q_m(p)满足|Δ|≥c_1δ²λ_pλ_q。归一化帽变量与ρ=λ_p/λ_q=0端点接口在1019–1024另作定义。
+- 全部三频满足薄锥条件且p为最小频时，可比片三射影方向位于有界相邻δ帽。仅在低p角远片L_p(1−N_p)≠0上（循环位置同理），signed精确相位Δ=q_m(ξ+p)−q_m(ξ)=2m(p,ξ)+q_m(p)满足|Δ|≥c₁δ²λ_pλ_q；低高频率分离本身不够。归一化帽变量与ρ=λ_p/λ_q=0端点接口在1019–1024另作定义。
 
 需保留的边界：
 
 - 个别帽Lp界不推出整个薄锥投影一致Lp界。
 - 不可比频率方向、小频端点、两个有符号锥片与反点识别须分别保留。
 - 不允许使用L∞乘子端点或L³角向ℓ²界替代原文有限指数论证。
+- 相位下界必须保留角远支撑；共线null三元组可低高分离但Δ=0，不能在near片据此除相位。
 
 消费者：A05（proof-input）、V07（proof-input）、V09（proof-input）、V10（proof-input）、V12（proof-input）
 
 片内细化义务（不另建完成状态）：
 
 - 单一帽指标与放大帽几何子义务，禁止独立三帽计数。（原文928–951行）
+- 将Lp(1−Np)≠0作为精确相位隙的明示前提；频率低高分离不能替代角远支持。（原文921–1014行）
 
 下一步：将三元组几何、单帽构造/有限指数算子界及Δ下界作为可并行子义务，再统一κ,c,δ_0和紧Lorentz族常数。
 
@@ -681,7 +682,7 @@ flowchart TD
 - 原始admissible序列；U相对紧坐标图、chi光滑紧支集；z_n=chi*h_n零延拓。
 - a_n是g_n逆分量在supp chi邻域的光滑一致Lipschitz延拓；最终常数允许依赖该族的一阶界。延拓不是预给定有界源。
 - 原导数缺陷在Ricci符号核中、离锥为纯规范、零锥Lorenz约束和Hermitian规范交叉消去；完整角测度的乘子作用规律。
-- 有限Lp、非整数C-alpha乘子界及一阶Calderon交换子精确接口；均待库实现/外部核验。
+- 固定全空间IR正则Fourier乘子Π所需的Calderón接口保持开放：对标量Lipschitz f与w∈L²，需||[Π∂_b,f]w||₂≤C_Π||∂f||∞||w||₂，再用[Π,f]∂_bw=[Π∂_b,f]w−Π((∂_bf)w)得到原文1674–1684的范数界。不能用A01的虚部能量界代替，不假借proper support或二阶f界；有限Lp及非整数C^α乘子接口同样待核/待实现，归EXT-COMM及EXT-HARMONIC。
 
 输出：
 
@@ -817,7 +818,7 @@ flowchart TD
 - 降背景项和冻结系数是两项不同任务；本片不输出变系数冻结误差率。
 - 矩阵推广是实质依赖，不应只引用标量lem:cubic-continuity而不核对签名。
 
-消费者：V05（proof-input）、V07（proof-input）、V09（proof-input）、V10（proof-input）、V12（proof-input）、C01（proof-input）、C04（proof-input）
+消费者：V05（definition）、V07（proof-input）、V09（proof-input）、V10（proof-input）、V12（proof-input）、C01（proof-input）、C04（proof-input）
 
 片内细化义务（不另建完成状态）：
 
@@ -1176,7 +1177,7 @@ flowchart TD
 
 输出：
 
-- eq:var-final-bound: |4 integral H_P a dmu| <= C_kappa,p* delta^beta_* + C_delta,p* ell^alpha_* + C_delta ell。常数可依赖固定紧集、g、a及原一阶界；第一常数对ell统一，后两常数可依赖固定delta。
+- eq:var-final-bound: |4 integral H_P a dmu| ≤ C_{κ,p*}δ^β* + C_{δ,p*}ℓ^α* + C_δℓ。可依赖固定紧集、g、a及原一阶界；第一常数与δ、ℓ均无关，后两常数可依赖固定δ但与ℓ无关。上述常数也不依赖n、补丁数、角展开截断或径向尺度数；源项负幂和B_ℓ项先在固定参数的n极限中消去。
 - 先在固定ell、delta取n极限/limsup，再在同一个数值不等式中令ell→0，继而delta→0；kappa始终固定。左侧对所有固定允许参数都是同一mu、同一数。单独三次项无需有极限，总残差必须已有极限。
 - 得到实奇测试输运，再以反足对称、标量奇偶及复线性扩至所有一齐次测试；用基空间光滑分割和全局不变measure构造得到全局eq:transport。没有随测试、图册或参数另选子列。
 - alpha_*仅有限p_*取得并趋近2/3，beta_*任意0<beta_*<2可取得，均不含端点；这些是辅助空间/角参数误差，没有n收敛速率。全动量结论交给L01，不能在本片预置。
@@ -1346,7 +1347,7 @@ flowchart TD
 
 输入：
 
-- 已纳入的构造：c>0、v(t)=(cos t,sin t,0)，Minkowski上T00=2c、T0i=0、Tij=2c v_i v_j；一齐次矩与输运定义沿用eq:moment/eq:transport，保留两时间方向。
+- c>0，v(t)=(cos t,sin t,0)，Minkowski上给定T₀₀=2c、T₀ᵢ=0、Tᵢⱼ=2c vᵢvⱼ。本例的矩身份为∀紧支撑光滑对称S，∫T_ab S^{ab}dV_m=∫S^{ab}ξ_aξ_b dμ，即以给定T替换eq:moment左侧的G(m)；T≠G(m)。矩的频率测试为二齐次；输运仍用P_m及正一齐次测试a，并保留两时间方向。
 
 输出：
 
@@ -1360,6 +1361,7 @@ flowchart TD
 - T不是G(m)，不能宣称为真空极限反例。
 - 正measure支撑迫定、两时间方向折叠和分支权重需准确核对。
 - 用户于2026-11-15明确纳入最终形式化目标；这项范围决定不构成证明或语义确认。
+- 本例使用给定T的二阶矩身份；不能误用把左侧固定为G(m)的Einstein专用接口。
 
 消费者：X04（explanation）
 
@@ -1440,7 +1442,7 @@ flowchart TD
 - g_n=-2du dv+B_n²(e^(2ψ_n)dx²+e^(-2ψ_n)dz²)为精确真空容许序列，极限g=-2du dv+cos²u(dx²+dz²)，Ric(g)=2du²，ν=2dV_g δ_du给全动量输运。
 - 固定闭区间I₀紧含于I且0在其内部，固定盒I₀×[-1,1]³；存在c>0、C和N，使所有n≥N有振幅下界c/n、二阶导下界c e^n-C，排除原文eq:literature-scale的共同尺度。两下界分别在u=π/(2n)、u=π/(2e^n)取得。
 - 以v=B_n(u)V拉回固定(u,V,x,z)域，得g̃_n=-2B_n du dV-2B_n′V du²+B_n²(e^(2ψ_n)dx²+e^(-2ψ_n)dz²)。体积密度B_n³，g̃_n^(uV)=-B_n^(-1)，g̃_n^(VV)=2B_n′V/B_n²，g̃_n^(uu)=0；需验证所有收缩坐标源分量严格为零，不只展示的一项。
-- 拉回序列在每个固定紧子集上一致收敛且一阶导统一有界；上述包含u=0内点的固定盒上无共同尺度。极限在du上H_P=-B^(-1)∂_V，ν̃=2dV_g̃ δ_du满足完整输运。该独立构造不因prop:rosen闭合而自动完成。
+- 拉回序列在每个固定紧子集上一致收敛且一阶导统一有界；上述包含u=0内点的固定盒上无共同尺度。B=cos u时极限g̃=−2B du dV−2B′V du²+B²(dx²+dz²)，Ric(g̃)=2du²且收缩坐标源为零。在du上H_{P_g̃}=−B^(-1)∂_V，ν̃=2dV_g̃ δ_du满足完整输运。该独立构造不因prop:rosen闭合而自动完成。
 
 需保留的边界：
 
@@ -1561,12 +1563,12 @@ flowchart TD
 ## 待核外部接口
 
 - **EXT-DEFECT**：Huneau–Luk Theorems 5.5/5.6：正束值微局部提取、经典齐次测试、同一子列和一阶系统定位；原文392–428。 消费者：F05, V03, C02；状态：`exact-version-and-Lean-interface-pending`。
-- **EXT-COMM**：Bényí–Oh Theorem A/1：线性及双线性Lipschitz交换子、(4,4,2)/(4,2,4/3)高槽伴随、有限符号半范数；原文587–591、1308–1345、1425–1465、2567–2571。 消费者：A01, A06, A07, P01, V11；状态：`exact-version-and-Lean-interface-pending`。
+- **EXT-COMM**：Bényí–Oh Theorem A/1：线性及双线性Lipschitz交换子、(4,4,2)/(4,2,4/3)高槽伴随、有限符号半范数；原文587–591、1308–1345、1425–1465、2567–2571。 P01另须准确核对固定全空间Π∂b的梯度型L²交换子范数界（1674–1684）；该开放需求不由A01能量结论提供，不增加完整f的全局有界假设。 消费者：A01, A06, A07, P01, V11；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-LIFT**：Huneau–Luk Lemma2.5的局部二阶矩版及本稿具体s^(-2)构造；原文2993–3040。 消费者：L01；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-HARMONIC**：Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。 消费者：A02, A04, A05, A06, A07, P01, V08, V09；状态：`Lean-interface-pending`。
 - **EXT-MEASURE**：正Hermitian密度、Radon–Nikodym、解体、束上加权推前、支集与矩测试分离。 消费者：F05, F07, F08, L01, L03, X03, X04, X05；状态：`Lean-interface-pending`。
-- **EXT-GEOMETRY**：连接/曲率差、Einstein–Hilbert变分、Lie导数、光滑Cauchy面、零测地线流及自然性桥接。 消费者：F04, F06, V02, V07, L01, X01, X04, X05, X07；状态：`Lean-interface-pending`。
-- **EXT-COMPACTNESS**：Rellich对偶紧性、弱星子列、分布极限识别、紧支集插值与全序列子列反证。 消费者：F04, P01, C01, L03, X07；状态：`Lean-interface-pending`。
+- **EXT-GEOMETRY**：连接/曲率差、Einstein–Hilbert变分、Lie导数、光滑Cauchy面、零测地线流及自然性桥接。 X06需承接坐标拉回的曲率自然性或等价分量计算。 消费者：F04, F06, V02, V07, L01, X01, X04, X05, X07, X06；状态：`Lean-interface-pending`。
+- **EXT-COMPACTNESS**：Rellich对偶紧性、弱星子列、分布极限识别、紧支集插值与全序列子列反证。 附录另含X02局部Rellich/H⁻¹紧性（3193）、X05弱星与加权弱下半连续性（3332–3338）、X06 C¹紧性及弱星ODE系数极限识别（3365–3367）。 消费者：F04, P01, C01, L03, X07, X02, X05, X06；状态：`Lean-interface-pending`。
 - **EXT-ODE**：局部光滑ODE存在唯一性、比较、Gronwall、参数紧性及平行框构造。 消费者：X04, X05, X06, X07；状态：`Lean-interface-pending`。
 
 ## 本次发现与保留项
@@ -1579,3 +1581,4 @@ flowchart TD
 - F06尚缺完整二次展开、混合/Hermitian极化及零锥商正性；已有5条实数非特征支持定理不等于此片或其父二次定理闭合。
 - 附录辅助f_n乘积的正则性/弱导数解释在进入精确Lean建模前需按消费者核清；发现确实需补条件时交用户逐项决定。
 - 精确外部定理版本及固定Mathlib接口保持待核；没有联网阅读外部文献，也未将它们作为已批准公理。
+- 第二轮由未参与构造的三位新代理从锁定原文独立复核，并交换反驳；修正A04远角前提、定义/证明边、P01全空间Calderón开放接口、范围索引同步及附录工具消费者。详见slicing-review.md；这不是开放证明的正确性认证。

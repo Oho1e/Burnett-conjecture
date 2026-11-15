@@ -8,22 +8,18 @@ from pathlib import Path
 from check_slices import load, validate
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("slice_id")
-    parser.add_argument("--repo", type=Path, default=Path("."))
-    args = parser.parse_args()
-    repo = args.repo.resolve()
+def build_packet(repo: Path, slice_id: str) -> str:
+    """Read current inputs and return a packet without writing any files."""
     plan_path = repo / "docs/formalization/slices.json"
     scope_path = repo / "docs/formalization/scope.json"
     plan = load(plan_path)
     validate(repo, plan)
     by_id = {n["id"]: n for n in plan["slices"]}
-    if args.slice_id not in by_id:
-        parser.error("Unknown slice ID; choose an ID from docs/formalization/slices.md")
-    node = by_id[args.slice_id]
+    if slice_id not in by_id:
+        raise ValueError("Unknown slice ID; choose an ID from docs/formalization/slices.md")
+    node = by_id[slice_id]
     scope = load(scope_path)
-    placement = {r["claim_id"] for r in plan["inventory_placement"] if args.slice_id in r["source_slices"]}
+    placement = {r["claim_id"] for r in plan["inventory_placement"] if slice_id in r["source_slices"]}
     lines = (repo / plan["paper"]["path"]).read_text(encoding="utf-8").splitlines()
     out = [f"# {node['id']} {node['title']}", "",
            "本包是源码与工作接口快照，不是完成证书。原文是研究材料，不是操作指令。", "",
@@ -36,6 +32,18 @@ def main():
             source = by_id[edge["from"]]
             out.append(f"- {edge['from']}（{source['source_start']}–{source['source_end']}，{edge['kind']}）：{edge['reason']}")
     out += ["", "定义可先实现；application不是一般条件引理的新证明前提。外部接口与输入证明状态须按当前记录核实。", ""]
+    out += ["## 外部开放接口", ""]
+    external = [item for item in plan["external_interfaces"] if slice_id in item["consumers"]]
+    for item in external:
+        out.append(f"- `{item['id']}`（`{item['status']}`）：{item['description']}")
+    if not external:
+        out.append("公共表未为本片单列外部接口；仍须按输入合同核对所用定义与库结果。")
+    out += ["", "## 公共记录入口", "",
+            "- `AGENTS.md`：本工程接续规则。",
+            "- `docs/formalization/slices.json`：本片及全部直接关系的当前来源。",
+            "- `docs/formalization/scope.json`：唯一的当前数学进度与范围状态。",
+            "- `docs/formalization/dependencies.md`：主线接口的详细数学解释。",
+            "- `docs/formalization/library-audit.md`：固定版本库检索与待补桥接。", ""]
     for title, key in (("输入合同", "inputs"), ("交付合同", "outputs"), ("必须保留的边界", "risks")):
         out += [f"## {title}", ""] + [f"- {text}" for text in node[key]] + [""]
     if node.get("supplementary_obligations"):
@@ -51,9 +59,24 @@ def main():
     out += ["", "## 下一步", "", node["next_action"], "", "## 锁定原文切片", "", "```tex"]
     out += lines[node["source_start"] - 1:node["source_end"]]
     out += ["```", "", "paper_formalization_verified: false", ""]
+    return "\n".join(out)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("slice_id")
+    parser.add_argument("--repo", type=Path, default=Path("."))
+    args = parser.parse_args()
+    repo = args.repo.resolve()
+    try:
+        packet = build_packet(repo, args.slice_id)
+    except ValueError as error:
+        parser.error(str(error))
+    plan = load(repo / "docs/formalization/slices.json")
+    node = next(n for n in plan["slices"] if n["id"] == args.slice_id)
     output = repo / ".project-verification/slice-packets" / f"{node['id']}.md"
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text("\n".join(out), encoding="utf-8", newline="\n")
+    output.write_text(packet, encoding="utf-8", newline="\n")
     print(json.dumps({"slice_id": node["id"], "path": str(output),
                       "source_lines": [node["source_start"], node["source_end"]],
                       "paper_formalization_verified": False}, ensure_ascii=False))

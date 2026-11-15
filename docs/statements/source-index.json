@@ -1298,10 +1298,18 @@
       "source_line": 3215,
       "source_endline": 3239,
       "source_labels": [],
-      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "candidate_status": "user_approved_required_result",
       "modeling_status": "pending_modeling",
       "lean_status": "not_formalized",
-      "audit_status": "not_mathematically_reviewed"
+      "audit_status": "not_mathematically_reviewed",
+      "initial_candidate_status": "inventory_candidate_not_acceptance_scope",
+      "scope_resolution_record": {
+        "path": "docs/formalization/scope.json",
+        "claim_id": "unnum:rotating-null-moment-example",
+        "date": "2026-11-15",
+        "decision": "include-as-required-final-formalization-target",
+        "decider": "user"
+      }
     },
     {
       "candidate_id": "unnum:rosen-multiscale-example",
@@ -1309,10 +1317,18 @@
       "source_line": 3360,
       "source_endline": 3386,
       "source_labels": [],
-      "candidate_status": "inventory_candidate_not_acceptance_scope",
+      "candidate_status": "user_approved_required_result",
       "modeling_status": "pending_modeling",
       "lean_status": "not_formalized",
-      "audit_status": "not_mathematically_reviewed"
+      "audit_status": "not_mathematically_reviewed",
+      "initial_candidate_status": "inventory_candidate_not_acceptance_scope",
+      "scope_resolution_record": {
+        "path": "docs/formalization/scope.json",
+        "claim_id": "unnum:rosen-multiscale-example",
+        "date": "2026-11-15",
+        "decision": "include-as-required-final-formalization-target",
+        "decider": "user"
+      }
     },
     {
       "candidate_id": "unnum:flat-pullback-example",
@@ -1940,5 +1956,6 @@
     "Unnumbered and definition candidates are an initial planning inventory and need later assumption, dependency, and modeling review.",
     "No source rewrite, proof repair, reverse-conjecture expansion, external lookup, installation, publication, or Burnett project mutation is performed by this intake."
   ],
-  "project_copy_note": "Project copy replaces the original machine-specific path by paper/burnett.tex; hashed source bytes and all indexed locators are unchanged."
+  "project_copy_note": "Project copy replaces the original machine-specific path by paper/burnett.tex; hashed source bytes and all indexed locators are unchanged.",
+  "scope_resolution_note": "purpose/intake_status及结构清点保留初始快照身份。个别条目的scope_resolution_record记录后来实际批准的范围决定；initial_candidate_status保留清点时状态。当前证明、语义复核与范围状态统一以docs/formalization/scope.json为准；本附记不宣称数学验证。"
 }
