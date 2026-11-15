@@ -303,11 +303,14 @@ class SnapshotPolicyTests(unittest.TestCase):
                         self.boundary([module])
 
     def test_boundary_rejects_alias_resolving_into_generated_root(self):
+        sources_before_alias = self.snapshot()["lean_sources"]
         alias = self.repo / "evidence-alias"
         if not directory_alias(alias, self.repo / GENERATED):
             self.skipTest("Filesystem does not permit a directory symlink or junction")
+        with self.assertRaisesRegex(checker.CheckError, "symlinked source directory"):
+            self.snapshot()
         with self.assertRaisesRegex(checker.CheckError, "generated evidence"):
-            self.boundary([self.module(source=alias / "Hidden.lean")])
+            self.boundary([self.module(source=alias / "Hidden.lean")], sources=sources_before_alias)
 
     def test_boundary_requires_one_complete_marker(self):
         good = checker.DEPENDENCY_MARKER + json.dumps([self.module()]) + "\n"
