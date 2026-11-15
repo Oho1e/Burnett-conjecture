@@ -4,6 +4,8 @@
 
 当前状态为 `development`：首个实数非特征 Ricci 符号代数片段已有 **5条 Lean 支持定理**。原文17项正式 theorem/lemma/proposition/corollary 仍均未完成；已有支持引理不计作其中一项完成。关键未编号断言、必要定义和依赖的完整覆盖仍待核对，整篇数学与输运主线尚未闭合。
 
+用户另已明确将“旋转零矩张量无输运表示”及“多尺度Rosen真空序列与精确零源坐标”两个未编号结果纳入最终必做目标；它们尚未形式化，分别对应X03、X06。全文工作图共有46片；切片完成了源码归属与接口规划，不表示46项数学证明已经完成。
+
 原文快照为 [`paper/burnett.tex`](paper/burnett.tex)，176424字节，SHA256：
 
 ```text
@@ -32,6 +34,8 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 入口核对原文身份、标准、固定运行时并构建库入口；对当前5个真实支持目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
 
 - [`RicciSymbol.lean`](Burnett/Algebra/RicciSymbol.lean) 实现实数非特征核的显式规范表示和二次消去；[数学解释及实际声明](docs/statements/ricci-symbol.md)、[独立回读](docs/statements/ricci-symbol-review.md)。
+- [`全文切片与依赖图`](docs/formalization/slices.md) 给出每段源码的归属、逐片输入输出、正式结果的陈述与闭合位置、共同闭合组及下一步；[机器清单](docs/formalization/slices.json) 与现有 scope 相连。运行 `python scripts/check_slices.py --repo .` 检查原文身份、分区、结果映射、依赖环和文档一致性；该结构检查不认证数学完备。
+- `python scripts/prepare_slice.py F06 --repo .` 导出指定切片的工作包，含锁定原文、当前清单状态、直接输入及消费者，保存于 `.project-verification/slice-packets/`；换用表中ID即可。每次续接重新导出，避免沿用过期状态。
 - [`主定理接口`](docs/statements/main-interface.md)、[`主线依赖`](docs/formalization/dependencies.md)、[`库调查`](docs/formalization/library-audit.md) 记录当前对象、量词、消费者和实际库证据。
 - [`docs/statements/`](docs/statements/) 保存原文结果索引与未来数学/Lean对照。
 - [`docs/formalization/scope.json`](docs/formalization/scope.json) 是范围与进度的主清单；完整二次代数父项仍为部分完成。
