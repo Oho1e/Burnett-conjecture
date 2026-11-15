@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-15",
+  "purpose": "parallel real-algebra proof pilot, not paper verification",
+  "base_commit": "39fc252c901c3f51a90d0fe2b0036d0565c0ee10",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "lean": "4.24.0",
+  "mathlib_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "source_sha256": {
+    "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "Burnett/Algebra/QuadraticDefs.lean": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09",
+    "Burnett/Algebra/QuadraticExpansion.lean": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c",
+    "Burnett/Algebra/NullKernel.lean": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d",
+    "Burnett/Algebra/NullQuadratic.lean": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7"
+  },
+  "registered_targets": 9,
+  "new_primary_claims": [
+    "quadratic:full-real-expansion",
+    "quadratic:null-kernel-constraint",
+    "quadratic:null-real-formula",
+    "quadratic:null-real-gauge-cross"
+  ],
+  "actual_target_axioms": {
+    "Burnett.RicciSymbol.kernel_eq_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.raiseSecond_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.connectionSymbol_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.quadraticSymbol_pureGauge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.four_quadraticSymbol_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.null_kernel_iff_contracted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.quadraticSymbol_eq_physicalPairing_of_null_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Burnett.RicciSymbol.physicalPairing_pureGauge_eq_zero_of_null_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "local_project_status": "machine-check-passed",
+  "local_target_status": "machine-check-passed",
+  "target_input_fingerprint": "6387e22e1b6d836009a25caaecc000e1c4207e6abf30663d987ea0701d2d65fd",
+  "target_receipt_sha256": "57f304263517241a32d808a1d4f9df460fe651fe5145ff9720c156f38d95ec33",
+  "independent_reviews": [
+    {
+      "reviewer": "parallel_null_reverse",
+      "record": ".project-verification/parallel-pilot/reverse-null/REVERSE_REVIEW.md",
+      "sha256": "d6f95997244e33d91c879beb3e473f4051766908b6a8915291d3481be7b676ab",
+      "scope": "real null-kernel equivalence and real physical/gauge cross cancellation",
+      "verdict": "passed"
+    },
+    {
+      "reviewer": "parallel_b_reverse",
+      "record": ".project-verification/parallel-pilot/reverse-b/review-result.txt",
+      "sha256": "7c15e3018779f187e400b06c279cd03907fd5deab6b0f3b2e3654f581119c9eb",
+      "scope": "complete real B expansion and integrated real null B formula",
+      "verdict": "passed"
+    }
+  ],
+  "human_semantic_confirmation": "pending",
+  "trust_policy_decision": "pending-user-decision",
+  "parent_F06_status": "partially_formalized",
+  "numbered_paper_results_completed": 0,
+  "paper_formalization_verified": false,
+  "serial_baseline_available": false,
+  "speedup_factor": null,
+  "generic_skill_package_changed": false
+}

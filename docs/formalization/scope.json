@@ -47,6 +47,26 @@
       "claim_id": "ricci:quadratic-kernel",
       "module": "Burnett.Algebra.RicciSymbol",
       "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_zero_of_noncharacteristic_kernel"
+    },
+    {
+      "claim_id": "quadratic:full-real-expansion",
+      "module": "Burnett.Algebra.QuadraticExpansion",
+      "declaration": "Burnett.RicciSymbol.four_quadraticSymbol_expansion"
+    },
+    {
+      "claim_id": "quadratic:null-kernel-constraint",
+      "module": "Burnett.Algebra.NullKernel",
+      "declaration": "Burnett.RicciSymbol.null_kernel_iff_contracted"
+    },
+    {
+      "claim_id": "quadratic:null-real-formula",
+      "module": "Burnett.Algebra.NullQuadratic",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_physicalPairing_of_null_kernel"
+    },
+    {
+      "claim_id": "quadratic:null-real-gauge-cross",
+      "module": "Burnett.Algebra.NullKernel",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_pureGauge_eq_zero_of_null_kernel"
     }
   ],
   "inventory": [
@@ -325,8 +345,8 @@
       "disposition": "formalize",
       "modeling_status": "partially_modeled",
       "lean_status": "partially_formalized",
-      "statement_record": "docs/statements/ricci-symbol.md",
-      "remaining": "Full B expansion, polarization, null branch and physical quotient positivity remain open."
+      "statement_record": "docs/statements/quadratic-real-algebra.md",
+      "remaining": "General real polarization and complex Hermitian extension, null-frame/physical-quotient nonnegativity and geometric/measure bridges remain open."
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -1014,6 +1034,78 @@
       "semantic_review_record": "docs/statements/ricci-symbol-review.md",
       "human_semantic_confirmation": "pending",
       "semantic_review": "independent-source-readback-and-project-rebuild-passed"
+    },
+    {
+      "claim_id": "quadratic:full-real-expansion",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 447,
+        "endline": 448
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.four_quadraticSymbol_expansion",
+      "statement_record": "docs/statements/quadratic-real-algebra.md",
+      "semantic_review_record": "docs/statements/quadratic-real-algebra-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-frozen-source-readback-passed"
+    },
+    {
+      "claim_id": "quadratic:null-kernel-constraint",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 454,
+        "endline": 454
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.null_kernel_iff_contracted",
+      "statement_record": "docs/statements/quadratic-real-algebra.md",
+      "semantic_review_record": "docs/statements/quadratic-real-algebra-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-frozen-source-readback-passed"
+    },
+    {
+      "claim_id": "quadratic:null-real-formula",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 454,
+        "endline": 457
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.quadraticSymbol_eq_physicalPairing_of_null_kernel",
+      "statement_record": "docs/statements/quadratic-real-algebra.md",
+      "semantic_review_record": "docs/statements/quadratic-real-algebra-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-frozen-source-readback-passed"
+    },
+    {
+      "claim_id": "quadratic:null-real-gauge-cross",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 459,
+        "endline": 463
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-real-local-algebra",
+      "lean_status": "machine-check-passed",
+      "declaration": "Burnett.RicciSymbol.physicalPairing_pureGauge_eq_zero_of_null_kernel",
+      "statement_record": "docs/statements/quadratic-real-algebra.md",
+      "semantic_review_record": "docs/statements/quadratic-real-algebra-review.md",
+      "human_semantic_confirmation": "pending",
+      "semantic_review": "independent-frozen-source-readback-passed"
     }
   ],
   "coverage_review": {

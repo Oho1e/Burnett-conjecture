@@ -1,6 +1,6 @@
 # 正式结果与数学/Lean对照
 
-以下逐项保留锁定原文17项正式结果环境。原文陈述按其 proposed proof 状态接收；摘录及来源定位不等于数学正确性审查。这些编号结果尚无完整 Lean 陈述与证明；主定理的数学接口已在 [main-interface.md](main-interface.md) 展开，首个未编号代数依赖的实际声明见 [ricci-symbol.md](ricci-symbol.md)。原文中的引用和记号必须连同所在章节阅读。
+以下逐项保留锁定原文17项正式结果环境。原文陈述按其 proposed proof 状态接收；摘录及来源定位不等于数学正确性审查。这些编号结果尚无完整 Lean 陈述与证明；主定理的数学接口已在 [main-interface.md](main-interface.md) 展开，未编号代数依赖的最新实际声明见 [quadratic-real-algebra.md](quadratic-real-algebra.md)，首个非特征片段见 [ricci-symbol.md](ricci-symbol.md)。原文中的引用和记号必须连同所在章节阅读。
 
 ## T01
 
