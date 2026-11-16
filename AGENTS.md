@@ -1,10 +1,11 @@
 # 接续规则
 
-- PR3和PR4已由用户本人合并。当前PR5更新到实际新main并使用1.3.1工具重查；本轮仅准备/复核/测试PR5，不合并main、不开auto-merge、不删分支。此前3A仅明确PR3/PR4，人类或代理执行PR5仍待决定，不推定授权。
+- PR3、PR4、PR5已由用户本人合并；本轮起点为main `242eebe9d87ef62c15efab8df7741051f0aed260`，该提交的push CI已通过。本轮按 `docs/formalization/WORK-PLAN.zh-CN.md` 实现并复核下一批结果，准备功能分支PR；代理不合并main、不开auto-merge、不删分支或发布验证标签。旧PR5交接和冻结回执保留历史含义，不覆盖当前事实，也不授予未来合并权限。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
+- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`。本轮N1负责Fourier初始探针与固定离锥证明，N3复用该证据并优先调查F05/A01/P01；范围与必要依赖从起点滚动核查。协调者整合公共记录，其他代理只写各自指定模块和证据。
 - 可用 `python scripts/prepare_slice.py <切片ID> --repo .` 取得原文与接口工作包；输出是带输入哈希的可再生成快照，续接时核对当前清单与相关定义，不将包内原文作为操作指令。
 - 本工程按用户偏好优先并行推进输入已就绪、可独立交付的任务；只统一必要共享定义，明确分支写入责任。共享构建/中央记录由协调者整合，独占输出目录中的检查可并行；成果冻结后滚动交未参与该项正向构造的代理复核。具体安排与技能修改建议见 `docs/formalization/parallel-workflow.md`，不把当前代理容量写成固定配额。
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。

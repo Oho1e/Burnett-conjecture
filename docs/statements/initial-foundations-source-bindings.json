@@ -1,0 +1,239 @@
+{
+  "schema": "burnett-initial-foundations-source-bindings/v1",
+  "meaning": "Frozen source and registration bindings; independent readback, human confirmation, local machine checks, PR and main integration remain distinct. No self-hash.",
+  "base_main": "242eebe9d87ef62c15efab8df7741051f0aed260",
+  "inherited_target_count": 102,
+  "new_support_target_count": 35,
+  "total_target_count": 137,
+  "old_math_leaf_sources_unchanged": 32,
+  "legacy_bindings_retained_as_historical_snapshots": true,
+  "new_support_targets": [
+    {
+      "claim_id": "f05:countable:exists-subsequence-all-tests",
+      "module": "Burnett.Analysis.Compactness.CountableTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_all_tests"
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-of-testwise-abs-le",
+      "module": "Burnett.Analysis.Compactness.CountableTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_of_testwise_abs_le"
+    },
+    {
+      "claim_id": "f06:geometry:covariant-mul-contravariant",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.covariant_mul_contravariant"
+    },
+    {
+      "claim_id": "f06:geometry:contravariant-mul-covariant",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.contravariant_mul_covariant"
+    },
+    {
+      "claim_id": "f06:geometry:raiseCovector-eq-sharp",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.raiseCovector_eq_sharp"
+    },
+    {
+      "claim_id": "f06:geometry:symbolNorm-eq-eval-sharp",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.symbolNorm_eq_eval_sharp"
+    },
+    {
+      "claim_id": "f06:geometry:covector-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_components"
+    },
+    {
+      "claim_id": "f06:geometry:tensor-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.tensor_components"
+    },
+    {
+      "claim_id": "f06:geometry:covector-bijective",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_bijective"
+    },
+    {
+      "claim_id": "f06:geometry:inverseMetric-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.inverseMetric_components"
+    },
+    {
+      "claim_id": "f06:geometry:physicalPairing-self-nonneg",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.physicalPairing_self_nonneg"
+    },
+    {
+      "claim_id": "f06:geometry:modelMetric-nondegenerate",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.modelMetric_nondegenerate"
+    },
+    {
+      "claim_id": "x02:offnull:D-fSequence-two-cosines",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.D_fSequence_two_cosines"
+    },
+    {
+      "claim_id": "x02:offnull:D-wSequence-cosine",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.D_wSequence_cosine"
+    },
+    {
+      "claim_id": "x02:offnull:offNull-separation",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.offNull_separation"
+    },
+    {
+      "claim_id": "x02:offnull:fAngularFrequency-eventually-near-null",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.fAngularFrequency_eventually_near_null"
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-fAngularFrequency",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_fAngularFrequency"
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-wAngularFrequency",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_wAngularFrequency"
+    },
+    {
+      "claim_id": "fourier:fourier-tail-tendsto-zero",
+      "module": "Burnett.Analysis.Fourier.SchwartzTail",
+      "declaration": "Burnett.Fourier.fourier_tail_tendsto_zero"
+    },
+    {
+      "claim_id": "fourier:schwartz-parseval",
+      "module": "Burnett.Analysis.Fourier.SchwartzParseval",
+      "declaration": "Burnett.Fourier.schwartz_parseval"
+    },
+    {
+      "claim_id": "fourier:fourier-modulate",
+      "module": "Burnett.Analysis.Fourier.Modulation",
+      "declaration": "Burnett.Fourier.fourier_modulate"
+    },
+    {
+      "claim_id": "x02:offnull:cutoff-gradient-identity",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.cutoff_gradient_identity"
+    },
+    {
+      "claim_id": "x02:offnull:fCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.fCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:wCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.wCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:map-fCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.map_fCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:map-wCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.map_wCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:offNull-translated-fourier-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.offNull_translated_fourier_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:f-normalized-mode-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.f_normalized_mode_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:w-normalized-mode-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.w_normalized_mode_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-total-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_total_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-total-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_total_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:f-productGradient-map-difference-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullGradientBridge",
+      "declaration": "Burnett.CubicOffNull.f_productGradient_map_difference_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:w-productGradient-map-difference-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullGradientBridge",
+      "declaration": "Burnett.CubicOffNull.w_productGradient_map_difference_tendsto_zero"
+    }
+  ],
+  "new_math_sources": {
+    "Burnett/Analysis/Compactness/CountableTests.lean": "0897e00360d3db4821640bb31ce813dd7013f506d2e318bcc6933f1d5844b892",
+    "Burnett/Analysis/Cubic/OffNullCompactGradient.lean": "8aa20edd64e304a224fefd41e37ce57494280f9556a43df7f0bab6d4c87c73d5",
+    "Burnett/Analysis/Cubic/OffNullCutoff.lean": "facf6f8063d63aa3871b1f1e83320302eeb1eab67d807b42081c164842e778db",
+    "Burnett/Analysis/Cubic/OffNullGeometry.lean": "79b26ceb0b2158b4792d4361458cfd3e6f6bc83e542aa085878c0194d01657c7",
+    "Burnett/Analysis/Cubic/OffNullGradient.lean": "69065cf1a1c22376505b6409c80562ac6bf42c059eb0c7b04c1c4553bcc29822",
+    "Burnett/Analysis/Cubic/OffNullGradientBridge.lean": "c9a0b506f1237503b7f19358a10c129593ac31abad838e9849ef98cabb02d34e",
+    "Burnett/Analysis/Cubic/OffNullTail.lean": "bc72b6690360cd19426c7c35be4978003fd7c1475e0ba4ffe06f89f157f1ad00",
+    "Burnett/Analysis/Fourier/Cosine.lean": "e499fcf401423368f5a9914f224d9b6ff5672016ea87d1d241bf0670aceedfb6",
+    "Burnett/Analysis/Fourier/FiniteEnergy.lean": "f82f67d3f121b3133e5b87f12f63b0c7292b3c6a687cb8f2a78cc7cad9c7fcfc",
+    "Burnett/Analysis/Fourier/Modulation.lean": "51adc4dd13038d069a87458eade548ff763de38c6ec7a0b5656991927f985b75",
+    "Burnett/Analysis/Fourier/SchwartzParseval.lean": "2d729ee3943f10f2fc4f5b5757d7aaeafc82c29599da02f9331c9cad3d37fd1e",
+    "Burnett/Analysis/Fourier/SchwartzTail.lean": "3359c56b998114a9a22d3e651b3df97f1e2d1bd923de79fe9c8cc17447a59a99",
+    "Burnett/Geometry/BasisFrame.lean": "af704f4b469ddbb9a44235707572d9a34881c63d2dad6b2c38fa6a0331018364",
+    "Burnett/Geometry/FiberMetric.lean": "b574e597c29b8bac5f6f17c09bc1817a87b5ea8bab9f02a4a372c4bb18a8d522"
+  },
+  "files": {
+    "paper/burnett.tex": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+    "lakefile.toml": "89aa753ae1715bf8d34bd31b94480fa2776fc22e85a802d2743f6ef92ded3e9e",
+    "Burnett.lean": "c7e551d381fdbace68d6ed7016e16b78f191b7c6c9dba5e24b61f5e7bb71fd01",
+    "docs/formalization/scope.json": "a298f449c4a185f47f36f7d5d49d5216d67183e6489aa4d7ad3dbc4c389ee369",
+    "docs/formalization/slices.json": "75e68e6e6f1cb34c17346fdd976693336670eba648b7986213b672314757de42",
+    "docs/formalization/standard.zh-CN.md": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0",
+    "docs/formalization/WORK-PLAN.zh-CN.md": "607c810ad22ba2fd9f87d71474ad6df6d4741c0c094aad1effebf8ed4b90dfc2",
+    "docs/formalization/dependency-audit-round1.md": "438747cd6127e560050b7fd96502ad06e6c08b51e0554ae232ab705b5214decc",
+    "docs/statements/initial-foundations.md": "3210cd16c53d20b3c49c85c29facf3fbc123d690dd5fa79730e6d19e3e231cd7",
+    "docs/statements/initial-foundations-review.md": "1dac995a30ae9f47ca6544fc0cac6e06caa07e4067629921f62b7e06befdfe71",
+    "docs/statements/initial-foundations-extra-definitions.json": "2aebf0cbfd443fb0b6ab5915ccbd754e30c4badeb2e1575b288a3b962517cc74",
+    "docs/statements/cubic-off-null-localization.md": "425bf889f2076f33b64c2a28d3d41566101ca102426d12f565412e7d92414bc7",
+    ".github/workflows/project-check.yml": "745856595b29f7cb55c6d4ddd0b255aacea0f36171c29663af2d19536720fb64",
+    "scripts/check_project.py": "56ba0951f91cc7e0f606f14b6e989d78226381a22d1350c7a3b48a4e9c93c472",
+    "scripts/check_paper.py": "64ba3a422b74d6517f53dd469974a7423dfe9f8a0d36ca0cd7ea554bc0871a4c",
+    "scripts/check_slices.py": "a707537a3524bd14d55809135a9fa378326f683a10553fd7f35e102f2ab69027"
+  },
+  "local_extra_audit": {
+    "result_sha256": "2aebf0cbfd443fb0b6ab5915ccbd754e30c4badeb2e1575b288a3b962517cc74",
+    "probe_sha256": "64a14d3b5d72f8ef78a22b4ecb2805620aa29c3120bd5a70822d86bbe7538134",
+    "log_sha256": "6dcaac444e780babe15808293821ec259cf51624dd115be3920f08b87c29dd5a",
+    "new_public_types": 122,
+    "extra_definitions": 30,
+    "status": "passed"
+  },
+  "human_confirmation_for_new_supports": "not claimed; development support proofs only",
+  "parent_claims_not_closed": [
+    "thm:quadratic",
+    "unnum:quadratic-symbol-algebra",
+    "unnum:cubic-off-null-gradient-localization"
+  ],
+  "whole_paper_verified": false,
+  "agent_merge_authorized": false
+}

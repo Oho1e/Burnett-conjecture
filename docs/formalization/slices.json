@@ -1254,7 +1254,7 @@
         "离锥投影强L2不是正式命题的显式结论，但若未来宣称该性质已验证，应纳入其实际依赖。",
         "2026-11-16用户选2A并锁定固定Fourier锥投影；义务已纳入scope及必做未编号映射，尚未证明。局部化次序须有真实L²桥，χ/δ/符号先固定，不能偷换成n依赖截断或一般x依赖Ψ⁰。"
       ],
-      "next_action": "prop:cubic本体已有完整Lean证明及用户委托的数学对应确认；在合并F06后的组合候选重跑机器检查并保持PR5未合并。随后对已批准固定Fourier锥投影新义务实现真实Fourier/L²接口、同一见证与局部化次序桥；不能先宣布该义务或整个X02完成。",
+      "next_action": "以已合并PR5及原同一f/w为基线，继续固定Fourier离零锥梯度义务。实际构造并核对归一化调制、全空间Fourier能量与两种cutoff表述桥；真实L² Fourier扩张和投影模型未闭合时明确保留，不能因基础引理通过提升父项。新证明随入口、登记、独立复核和组合CI准备后续功能PR，不执行main合并。",
       "supplementary_obligations": []
     },
     {
@@ -2653,6 +2653,216 @@
     },
     {
       "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-all-tests",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-of-testwise-abs-le",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:covariant-mul-contravariant",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:contravariant-mul-covariant",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:raiseCovector-eq-sharp",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:symbolNorm-eq-eval-sharp",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:covector-components",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:tensor-components",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:covector-bijective",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:inverseMetric-components",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:physicalPairing-self-nonneg",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "f06:geometry:modelMetric-nondegenerate",
+      "source_slices": [
+        "F06"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:D-fSequence-two-cosines",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:D-wSequence-cosine",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:offNull-separation",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:fAngularFrequency-eventually-near-null",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-fAngularFrequency",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-wAngularFrequency",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "fourier:fourier-tail-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "fourier:schwartz-parseval",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "fourier:fourier-modulate",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:cutoff-gradient-identity",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:fCutoffErrorLp-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:wCutoffErrorLp-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:map-fCutoffErrorLp-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:map-wCutoffErrorLp-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:offNull-translated-fourier-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:f-normalized-mode-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:w-normalized-mode-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-total-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-total-offNull-energy-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:f-productGradient-map-difference-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:offnull:w-productGradient-map-difference-tendsto-zero",
       "source_slices": [
         "X02"
       ]
@@ -4196,7 +4406,7 @@
     },
     {
       "id": "EXT-HARMONIC",
-      "description": "Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。",
+      "description": "Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。 X02原3193已批准固定Fourier离锥目标需要真实Fourier/L²、调制平移及尾积分接口；本次仅补消费者定位，尚未证明该目标。",
       "consumers": [
         "A02",
         "A04",
@@ -4205,7 +4415,8 @@
         "A07",
         "P01",
         "V08",
-        "V09"
+        "V09",
+        "X02"
       ],
       "status": "Lean-interface-pending"
     },
