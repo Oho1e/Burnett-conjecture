@@ -327,6 +327,8 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 
 ## 13. PR7合并后的局部控制及下一输入
 
+本节保留PR8合并前的局部控制交接，当前main及下一步见第14节。
+
 PR7已由用户手动合并为main`d5c3d06e55c39776716f1fc2e4baddebd032ab00`。该[main push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43870473532)成功，真实artifact14227532345的176目标/57源及项目/目标全部输入与原受审2ac候选相同，指纹e2da0f479ce345fc7f118a554669b125851958d0154d64f9584568486b557da2。本地main已快进，不重复询问PR7执行者；该人类操作不扩未来代理merge权限。
 
 本批在新功能分支`formalization/f04-inverse-local-analysis`取得9新模块、24支持目标，合计200目标、271条inventory、66份Lean源。准确数学与冻结版本见[局部控制](../statements/local-metric-control.md)、[独立回读](../statements/local-metric-control-review.md)及[绑定](../statements/local-metric-control-source-bindings.json)。九源78公开声明已经实际独立核签，仅三公理；机器组合及远端CI按当前版本另取，不继承旧176绿色。
@@ -340,3 +342,23 @@ F04已可消费：真实矩阵/FiberMetric逆扰动及吸收、连续逆与紧�
 F05已多取得真实正C_c泛函及子空间在固定支撑的C⁰/order-unit界和实际Urysohn常数。后续继续实际光滑PDO测试一致界、趋零误差正性、光滑子空间cutoff及保共同支撑逼近、兼容正线性延拓到全C_c，才实例化RMK及共同全局测度；不能以四条局部界当PDO正性或测度存在。
 
 本轮先将上述已冻支持代码、入口、登记与说明一并交付功能PR，补当前完整检查及实际main组合CI。就绪后保持人类合并交接，按用户停止条件保存并等待；不自动合并、删分支或发布标签。获得合并通知后先核实际main及push CI，再从本节的原条件桥续接，不反复重做已证局部代数。
+
+## 14. PR8合并后的真实辅助范数与当前续接
+
+PR8由用户手动合并为main`0fa26471900c596e4b6767609be43cb6e94befc1`。该[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43889680267)成功，真实artifact14235474654的200目标/66源、完整目标及项目输入与受审8d09候选相同；main整树相同，输入指纹634a389d3e8cc6dac1f7b4d7a3a325235d7e8185bed27e2b57d325527588e544。旧PR8交接保持历史含义，不重复申请执行者或扩大代理merge权限。
+
+本批在功能分支`formalization/f04-auxiliary-r-norm`增加8模块、27支持目标，合计227目标、298条inventory、74份Lean源。准确数学与源码身份见[辅助r控制](../statements/auxiliary-r-control.md)、[独立回读](../statements/auxiliary-r-control-review.md)及[绑定](../statements/auxiliary-r-control-source-bindings.json)。85条显式声明已实际独立全源/类型/公理核签，仅三基础公理；新组合及远端CI仍按当前候选另取。
+
+当前可消费的真实输入：
+
+- 正定协变r矩阵的二/三张量范数为实际逆r全有序收缩；Gram正定与逆、sqrt能量及真实Hilbert范数对应、由r对角连续和紧性导出的统一Pi sup控制均已有证明。控制因子来自r对角，不能用r逆对角；不重做generic Gram。
+- 实际Γr由r分量/逆/Fréchet一阶jet构造；真实auxiliaryPerturbationJet给Dʳh的坐标表达，compact给Γr界，反解raw jet。不是把Dʳ改名为偏导。
+- 在较大紧S上物理L∞界经真实范数比较和内点连续性提升为K逐点界。S由K⊂U实际构造，不能从restrict K的ae界直接推出K每点界。保同一固定S、同一D对所有n。
+- 正密度保restrict的零集/ae/∞半范数；实际rho=sqrt(detR)构造坐标metricMeasure r，给局部正开集性质并消去任意μ/hpos输入。局部可测、正性均实际证明，无额外全域正性或正下界。
+- 最高层RiemannianVolume.metricConnectionError_uniform_and_LInfinity从该实际measure下的物理Dʳh局部L∞界及原局部正则/度规分量一致收敛，得真实E的uniform趋0，并内部构造其MemLp∞及实际toLp元素的范数趋0。E的输出范数仍为组件sup；并未完成混合(1,2)E物理r范数的识别。
+
+**下一关键任务**：从原流形M的真实r、D=∇r与体积实例化上述局部对象，证明图拉回、张量范数和局部C⁰的自然性，特别是实际流形体积在图下的推前与坐标rho测度的关系；不能用同名或假设字段略过。混合型E范数另按其上下指标构造。固定图/紧集所需比较即可，不额外要求全局光滑标架。已有局部代数、正密度和L∞工具按冻结哈希复用。
+
+几何桥明确后，继续原真空序列的固定紧支撑测试积分分部、弱Ricci识别及嵌套cutoff下H⁻¹紧性；精确二次修正=−旧B的负号保持。F04整片及二次共同闭合组仍OPEN。本批没有增加统一D²gₙ估计，也未关闭F05；F05继续真实PDO一致界、趋零误差正性、保共同支撑逼近/正延拓及同一全局测度。
+
+本轮候选需完整机器检查、实际最新main合并候选CI及独立工程/工件核对后交人类合并；代理不merge、不开auto-merge、不删分支或发验证标签。就绪后按用户停止条件保存并暂停；合并通知后核实际新main及push CI，再从本节续接。新增语义确认仍待记录，合并不提升全文认证。

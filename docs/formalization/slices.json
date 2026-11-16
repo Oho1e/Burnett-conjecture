@@ -3238,6 +3238,168 @@
       "source_slices": [
         "F05"
       ]
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:gramNorm-eq-ofMatrix-norm",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:coordinate-sq-le-inverse-diagonal",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:norm-apply-le-sqrt-inverse-diagonal-mul-gramNorm",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy2-eq-gramEnergy",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy3-eq-gramEnergy",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:norm3-eq-ofMatrix-norm",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm2-control",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm3-control",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-ae-restrict-of-local-pos",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-eLpNorm-top-le-volume",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-memLp-restrict-of-continuousOn-of-ae-bound",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:memLp-top-restrict-of-continuousOn-isCompact",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:continuousOn-auxiliaryPerturbationJet",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:exists-eventual-rawJet-bound-of-auxiliary-bound",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:metricConnectionError-uniform-of-auxiliary-coordinate-bound",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:continuousOn-metricConnectionErrorOn",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-memLp-top",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-exists-tendstoLp",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:nondegenerate-of-posDef-components",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:symmetric-of-posDef-components",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:exists-auxiliary-coordinate-bound-of-physical-LInfinity",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:metricConnectionError-uniform-and-LInfinity-of-local-physical-bounds",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:ae-restrict-withDensity-eq",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:eLpNorm-top-restrict-withDensity-eq",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:withDensity-open-pos-of-forall",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:metricConnectionError-uniform-and-LInfinity",
+      "source_slices": [
+        "F04"
+      ]
     }
   ],
   "edges": [

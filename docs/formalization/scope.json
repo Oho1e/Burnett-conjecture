@@ -1033,6 +1033,141 @@
       "claim_id": "local-control:f05:exists-nonneg-bound-on-compact",
       "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
       "declaration": "Burnett.Microlocal.PositiveFunctional.exists_nonneg_bound_on_compact"
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:gramNorm-eq-ofMatrix-norm",
+      "module": "Burnett.Geometry.GramCoordinateBound",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.gramNorm_eq_ofMatrix_norm"
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:coordinate-sq-le-inverse-diagonal",
+      "module": "Burnett.Geometry.GramCoordinateBound",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.coordinate_sq_le_inverse_diagonal"
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:norm-apply-le-sqrt-inverse-diagonal-mul-gramNorm",
+      "module": "Burnett.Geometry.GramCoordinateBound",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.norm_apply_le_sqrt_inverse_diagonal_mul_gramNorm"
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy2-eq-gramEnergy",
+      "module": "Burnett.Geometry.CovariantTensorNorm",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.energy2_eq_gramEnergy"
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy3-eq-gramEnergy",
+      "module": "Burnett.Geometry.CovariantTensorNorm",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.energy3_eq_gramEnergy"
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:norm3-eq-ofMatrix-norm",
+      "module": "Burnett.Geometry.CovariantTensorNorm",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.norm3_eq_ofMatrix_norm"
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm2-control",
+      "module": "Burnett.Geometry.CovariantTensorNorm",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.exists_uniform_norm2_control"
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm3-control",
+      "module": "Burnett.Geometry.CovariantTensorNorm",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.exists_uniform_norm3_control"
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-ae-restrict-of-local-pos",
+      "module": "Burnett.Analysis.LocalAeBound",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_le_on_of_ae_restrict_of_local_pos"
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-eLpNorm-top-le-volume",
+      "module": "Burnett.Analysis.LocalAeBound",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_le_on_of_eLpNorm_top_le_volume"
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-memLp-restrict-of-continuousOn-of-ae-bound",
+      "module": "Burnett.Analysis.LocalAeBound",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_memLp_restrict_of_continuousOn_of_ae_bound"
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:memLp-top-restrict-of-continuousOn-isCompact",
+      "module": "Burnett.Analysis.LocalAeBound",
+      "declaration": "Burnett.Analysis.LocalAeBound.memLp_top_restrict_of_continuousOn_isCompact"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:continuousOn-auxiliaryPerturbationJet",
+      "module": "Burnett.Geometry.AuxiliaryConnection",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.continuousOn_auxiliaryPerturbationJet"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:exists-eventual-rawJet-bound-of-auxiliary-bound",
+      "module": "Burnett.Geometry.AuxiliaryConnection",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.exists_eventual_rawJet_bound_of_auxiliary_bound"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:metricConnectionError-uniform-of-auxiliary-coordinate-bound",
+      "module": "Burnett.Geometry.AuxiliaryConnection",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.metricConnectionError_uniform_of_auxiliary_coordinate_bound"
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:continuousOn-metricConnectionErrorOn",
+      "module": "Burnett.Geometry.ConnectionErrorLInfinity",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.continuousOn_metricConnectionErrorOn"
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-memLp-top",
+      "module": "Burnett.Geometry.ConnectionErrorLInfinity",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.metricConnectionError_memLp_top"
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-exists-tendstoLp",
+      "module": "Burnett.Geometry.ConnectionErrorLInfinity",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.metricConnectionError_exists_tendstoLp"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:nondegenerate-of-posDef-components",
+      "module": "Burnett.Geometry.AuxiliaryPhysicalBound",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.nondegenerate_of_posDef_components"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:symmetric-of-posDef-components",
+      "module": "Burnett.Geometry.AuxiliaryPhysicalBound",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.symmetric_of_posDef_components"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:exists-auxiliary-coordinate-bound-of-physical-LInfinity",
+      "module": "Burnett.Geometry.AuxiliaryPhysicalBound",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.exists_auxiliary_coordinate_bound_of_physical_LInfinity"
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:metricConnectionError-uniform-and-LInfinity-of-local-physical-bounds",
+      "module": "Burnett.Geometry.AuxiliaryPhysicalBound",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.metricConnectionError_uniform_and_LInfinity_of_local_physical_bounds"
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:ae-restrict-withDensity-eq",
+      "module": "Burnett.Analysis.PositiveDensity",
+      "declaration": "Burnett.Analysis.PositiveDensity.ae_restrict_withDensity_eq"
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:eLpNorm-top-restrict-withDensity-eq",
+      "module": "Burnett.Analysis.PositiveDensity",
+      "declaration": "Burnett.Analysis.PositiveDensity.eLpNorm_top_restrict_withDensity_eq"
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:withDensity-open-pos-of-forall",
+      "module": "Burnett.Analysis.PositiveDensity",
+      "declaration": "Burnett.Analysis.PositiveDensity.withDensity_open_pos_of_forall"
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "module": "Burnett.Geometry.RiemannianVolume",
+      "declaration": "Burnett.Geometry.RiemannianVolume.eLpNorm_top_coordinateMeasure_eq_volume"
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:metricConnectionError-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.RiemannianVolume",
+      "declaration": "Burnett.Geometry.RiemannianVolume.metricConnectionError_uniform_and_LInfinity"
     }
   ],
   "inventory": [
@@ -5778,6 +5913,519 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:gramNorm-eq-ofMatrix-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.gramNorm_eq_ofMatrix_norm",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:coordinate-sq-le-inverse-diagonal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.coordinate_sq_le_inverse_diagonal",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:gramcoordinatebound:norm-apply-le-sqrt-inverse-diagonal-mul-gramNorm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GramCoordinateBound.norm_apply_le_sqrt_inverse_diagonal_mul_gramNorm",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy2-eq-gramEnergy",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.energy2_eq_gramEnergy",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:energy3-eq-gramEnergy",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.energy3_eq_gramEnergy",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:norm3-eq-ofMatrix-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.norm3_eq_ofMatrix_norm",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm2-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.exists_uniform_norm2_control",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:covarianttensornorm:exists-uniform-norm3-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CovariantTensorNorm.exists_uniform_norm3_control",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-ae-restrict-of-local-pos",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_le_on_of_ae_restrict_of_local_pos",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-le-on-of-eLpNorm-top-le-volume",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_le_on_of_eLpNorm_top_le_volume",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:norm-memLp-restrict-of-continuousOn-of-ae-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalAeBound.norm_memLp_restrict_of_continuousOn_of_ae_bound",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:localaebound:memLp-top-restrict-of-continuousOn-isCompact",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalAeBound.memLp_top_restrict_of_continuousOn_isCompact",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:continuousOn-auxiliaryPerturbationJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.continuousOn_auxiliaryPerturbationJet",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:exists-eventual-rawJet-bound-of-auxiliary-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.exists_eventual_rawJet_bound_of_auxiliary_bound",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryconnection:metricConnectionError-uniform-of-auxiliary-coordinate-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryConnection.metricConnectionError_uniform_of_auxiliary_coordinate_bound",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:continuousOn-metricConnectionErrorOn",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.continuousOn_metricConnectionErrorOn",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-memLp-top",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.metricConnectionError_memLp_top",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:connectionerrorlinfinity:metricConnectionError-exists-tendstoLp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionErrorLInfinity.metricConnectionError_exists_tendstoLp",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:nondegenerate-of-posDef-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.nondegenerate_of_posDef_components",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:symmetric-of-posDef-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.symmetric_of_posDef_components",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:exists-auxiliary-coordinate-bound-of-physical-LInfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.exists_auxiliary_coordinate_bound_of_physical_LInfinity",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:auxiliaryphysicalbound:metricConnectionError-uniform-and-LInfinity-of-local-physical-bounds",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryPhysicalBound.metricConnectionError_uniform_and_LInfinity_of_local_physical_bounds",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:ae-restrict-withDensity-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.PositiveDensity.ae_restrict_withDensity_eq",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:eLpNorm-top-restrict-withDensity-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.PositiveDensity.eLpNorm_top_restrict_withDensity_eq",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:positivedensity:withDensity-open-pos-of-forall",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.PositiveDensity.withDensity_open_pos_of_forall",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.RiemannianVolume.eLpNorm_top_coordinateMeasure_eq_volume",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "auxiliary-r:riemannianvolume:metricConnectionError-uniform-and-LInfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.RiemannianVolume.metricConnectionError_uniform_and_LInfinity",
+      "statement_record": "docs/statements/auxiliary-r-control.md",
+      "semantic_review_record": "docs/statements/auxiliary-r-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -6056,6 +6704,36 @@
       "independent_review": "docs/statements/local-metric-control-review.md",
       "source_bindings": "docs/statements/local-metric-control-source-bindings.json",
       "original_auxiliary_D_and_physical_r_bridge": "open",
+      "F04_parent_closed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false
+    },
+    "pr8_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "0fa26471900c596e4b6767609be43cb6e94befc1",
+      "reviewed_pr_head": "8d09b37e9b9b095d87d165462f8b3ed8c895a013",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 43889680267,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43889680267",
+      "main_ci_artifact": 14235474654,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "634a389d3e8cc6dac1f7b4d7a3a325235d7e8185bed27e2b57d325527588e544",
+      "agent_may_merge_next_pr": false
+    },
+    "auxiliary_r_control_delivery": {
+      "base_main": "0fa26471900c596e4b6767609be43cb6e94befc1",
+      "inherited_targets": 200,
+      "new_support_targets": 27,
+      "targets": 227,
+      "inventory_entries": 298,
+      "lean_sources": 74,
+      "new_module_count": 8,
+      "statement": "docs/statements/auxiliary-r-control.md",
+      "independent_review": "docs/statements/auxiliary-r-control-review.md",
+      "source_bindings": "docs/statements/auxiliary-r-control-source-bindings.json",
+      "local_physical_covariant_norm_and_LInfinity_consumer": "implemented",
+      "manifold_chart_pullback_and_mixed_error_physical_norm": "open",
       "F04_parent_closed": false,
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "main_merge_performed_by_agent": false
