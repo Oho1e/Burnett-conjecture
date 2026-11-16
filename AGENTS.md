@@ -1,6 +1,6 @@
 # 接续规则
 
-- 本工程采用 `paper-results` 第1.2版数学标准、1.3版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
+- 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
@@ -9,6 +9,7 @@
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。
 - 沿用 `lean-toolchain` 和依赖锁；新增或调整依赖按本轮任务与已有授权执行，记录选择依据和受影响检查。不要复制父工作区构建缓存或修改共享依赖源码。
 - 运行 `python scripts/check_project.py --repo .`；本地SDK可用 `--lake` 指定。真实目标登记后入口会调用原目标检查器，不能弱化其空目标拒绝行为。
+- 根级 `.project-verification/` 用于生成证据，不作为中央工程源码目录或import来源。工程入口向底层check_paper显式传递 `--generated-root .project-verification --entry-module Burnett`，仍核对真实源依赖；其他未跟踪或Git忽略的真实源码不因此排除。独立探针及日志另保留哈希，实际运行回执与代理转述分别标识。
 - 远程目标为用户已授权公开的 `Oho1e/Burnett-conjecture`。只提交本工程所需文件；排除缓存、临时证据输出、凭据和无关工作区资料。核对实际身份、仓库及本轮授权的可见性；本项目的公开选择不授权公开其他工程。
-- 后续交付按 `docs/formalization/github-workflow.md` 使用功能分支与PR。实现和独立复核可并行，协调者逐个整合并squash；新增结果的库入口、目标登记和状态随成果一起进入候选版本。合并前核对最新main组合检查及实际版本，合并后确认新main的CI；失败时暂停后续合并。平台保护不自动核实数学对应；同账号代理报告不是另一账号的Approve。例行开发合并不增加作者确认要求，也不提升整篇认证状态。
+- 后续交付按 `docs/formalization/github-workflow.md` 使用功能分支与PR。实现和独立复核可并行，协调者负责候选整合与证据；新增结果的库入口、目标登记和状态随成果一起进入候选版本。本轮维护停在可审阅就绪PR，代理不执行main合并；后续长期默认执行者尚待用户选择，不由本轮交接或历史代理合并推定。合并前核对最新main组合检查及实际版本，实际合并后在可观察或获授权续接时确认新main的CI；失败时暂停后续合并。平台保护不自动核实数学对应，也不凭同一账号识别人类或代理；同账号代理报告不是另一账号的Approve。例行开发合并不增加作者确认要求，也不提升整篇认证状态。
 - 数学实现、条件接口、机器证据、独立语义复核、作者确认和远程发布分别记录。信任政策待用户决定，不能把工具默认配置当作已批准。

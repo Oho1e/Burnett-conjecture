@@ -1408,7 +1408,7 @@
     },
     "skill_workflow": {
       "name": "lean-paper-results",
-      "version": "1.3",
+      "version": "1.3.1",
       "mathematical_standard_unchanged": "paper-results 1.2"
     },
     "f06_local_semantic_confirmation": {
@@ -1423,6 +1423,18 @@
       "statement_sha256": "de1ca6bda24b85980fe45968869841696bac314187c83ddd8eeb63ad60d19edc",
       "human_personally_read_and_confirmed": false,
       "does_not_select_trust_policy_or_verify_whole_paper": true
+    },
+    "verification_tools": {
+      "snapshot_generated_roots": [
+        ".project-verification"
+      ],
+      "entry_modules": [
+        "Burnett"
+      ],
+      "readiness_tool": "scripts/pr_readiness.py",
+      "expected_github_policy": "docs/formalization/github-policy.json",
+      "current_maintenance_authority": "prepare-pr-only",
+      "future_merge_actor": "pending-user-choice"
     }
   },
   "planning": {

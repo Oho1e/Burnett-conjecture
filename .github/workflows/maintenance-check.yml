@@ -1,0 +1,51 @@
+name: Maintenance regression tests
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/check_paper.py'
+      - 'scripts/check_project.py'
+      - 'scripts/pr_readiness.py'
+      - 'scripts/test_pr_readiness.py'
+      - 'scripts/test_snapshot_policy.py'
+      - 'tools/lean-paper-results/scripts/**'
+      - '.github/workflows/maintenance-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  maintenance-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare pinned Lean
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          mk_all-check: 'false'
+          use-mathlib-cache: 'false'
+          use-github-cache: 'false'
+      - name: Check offline PR and policy decisions
+        run: python scripts/test_pr_readiness.py
+      - name: Check snapshot boundaries with real Lean fixtures
+        run: python scripts/test_snapshot_policy.py --lake "$(elan which lake)" --validation-dir .project-verification/maintenance-ci/snapshots
+      - name: Preserve the original checker rejection behavior
+        run: python tools/lean-paper-results/scripts/test_check_paper.py --lake "$(elan which lake)" --validation-dir .project-verification/maintenance-ci/checker
+      - name: Preserve maintenance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: maintenance-evidence-${{ github.sha }}
+          path: .project-verification/maintenance-ci/
+          include-hidden-files: true
+          if-no-files-found: warn
