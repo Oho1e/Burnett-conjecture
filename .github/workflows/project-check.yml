@@ -38,7 +38,7 @@ jobs:
         # Keep it in sync with new imports when further fragments are added.
         # Sources and versions are fixed by the project manifest.
         run: |
-          lake exe cache get Mathlib.Data.Real.Basic Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Tactic.FieldSimp Mathlib.Tactic.Linarith Mathlib.Tactic.Ring
+          lake exe cache get Mathlib.Data.Real.Basic Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Tactic.FieldSimp Mathlib.Tactic.Linarith Mathlib.Tactic.Ring Mathlib.Data.Complex.Basic Mathlib.Algebra.BigOperators.Fin Mathlib.Tactic.FinCases Mathlib.Tactic.NormNum Mathlib.Algebra.Order.BigOperators.Group.Finset
           python scripts/check_project.py --repo .
       - name: Preserve this run's evidence
         if: always()
