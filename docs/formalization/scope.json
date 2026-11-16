@@ -718,6 +718,201 @@
       "claim_id": "x02:offnull:w-productGradient-map-difference-tendsto-zero",
       "module": "Burnett.Analysis.Cubic.OffNullGradientBridge",
       "declaration": "Burnett.CubicOffNull.w_productGradient_map_difference_tendsto_zero"
+    },
+    {
+      "claim_id": "round2:x02:schwartz-toLp-denseRange",
+      "module": "Burnett.Analysis.Fourier.SchwartzDensity",
+      "declaration": "Burnett.Fourier.schwartz_toLp_denseRange"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-schwartz",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2CLM_schwartz"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-norm",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2CLM_norm"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2-surjective",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2_surjective"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_schwartz"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_symm_schwartz"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz-ae",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_schwartz_ae"
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz-ae",
+      "module": "Burnett.Analysis.Fourier.L2Extension",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_symm_schwartz_ae"
+    },
+    {
+      "claim_id": "round2:f04:christoffel-torsion-free",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_torsion_free"
+    },
+    {
+      "claim_id": "round2:f04:christoffel-metric-compatible",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_metric_compatible"
+    },
+    {
+      "claim_id": "round2:f04:christoffel-difference",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_difference"
+    },
+    {
+      "claim_id": "round2:f04:coordinateJet-congr",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.coordinateJet_congr"
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.metricConnection_difference"
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference-on",
+      "module": "Burnett.Geometry.ConnectionDifference",
+      "declaration": "Burnett.Geometry.ConnectionDifference.metricConnection_difference_on"
+    },
+    {
+      "claim_id": "round2:f04:covariant-contraction",
+      "module": "Burnett.Geometry.CurvatureDifference",
+      "declaration": "Burnett.Geometry.CurvatureDifference.covariant_contraction"
+    },
+    {
+      "claim_id": "round2:f04:ricci-difference",
+      "module": "Burnett.Geometry.CurvatureDifference",
+      "declaration": "Burnett.Geometry.CurvatureDifference.ricci_difference"
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-difference",
+      "module": "Burnett.Geometry.CurvatureDifference",
+      "declaration": "Burnett.Geometry.CurvatureDifference.coordinateRicci_difference"
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-vacuum-identity",
+      "module": "Burnett.Geometry.CurvatureDifference",
+      "declaration": "Burnett.Geometry.CurvatureDifference.coordinateRicci_vacuum_identity"
+    },
+    {
+      "claim_id": "round2:f04:christoffel-rankOneJet",
+      "module": "Burnett.Geometry.CurvatureSymbolBridge",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.christoffel_rankOneJet"
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-connectionSymbol",
+      "module": "Burnett.Geometry.CurvatureSymbolBridge",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.quadraticDifference_connectionSymbol"
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-rankOneJet",
+      "module": "Burnett.Geometry.CurvatureSymbolBridge",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.quadraticDifference_rankOneJet"
+    },
+    {
+      "claim_id": "round2:f05:mul-conjTranspose-eq-zero-of-compression-eq-zero",
+      "module": "Burnett.Analysis.Microlocal.PositiveKernel",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mul_conjTranspose_eq_zero_of_compression_eq_zero"
+    },
+    {
+      "claim_id": "round2:f05:mul-eq-zero-of-compression-eq-zero",
+      "module": "Burnett.Analysis.Microlocal.PositiveKernel",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mul_eq_zero_of_compression_eq_zero"
+    },
+    {
+      "claim_id": "round2:f05:mulVec-eq-zero-of-compression-eq-zero",
+      "module": "Burnett.Analysis.Microlocal.PositiveKernel",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mulVec_eq_zero_of_compression_eq_zero"
+    },
+    {
+      "claim_id": "round2:f05:range-le-ker-of-compression-eq-zero",
+      "module": "Burnett.Analysis.Microlocal.PositiveKernel",
+      "declaration": "Burnett.Microlocal.PositiveKernel.range_le_ker_of_compression_eq_zero"
+    },
+    {
+      "claim_id": "round2:x02:fourier-fourierMultiplier",
+      "module": "Burnett.Analysis.Fourier.Projection",
+      "declaration": "Burnett.Fourier.fourier_fourierMultiplier"
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-norm-le",
+      "module": "Burnett.Analysis.Fourier.Projection",
+      "declaration": "Burnett.Fourier.fourierMultiplier_norm_le"
+    },
+    {
+      "claim_id": "round2:x02:symbolL2-norm-sq-le-restrict",
+      "module": "Burnett.Analysis.Fourier.Projection",
+      "declaration": "Burnett.Fourier.symbolL2_norm_sq_le_restrict"
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-schwartz-tendsto-zero",
+      "module": "Burnett.Analysis.Fourier.Projection",
+      "declaration": "Burnett.Fourier.fourierMultiplier_schwartz_tendsto_zero"
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-idempotent",
+      "module": "Burnett.Analysis.Fourier.SharpProjection",
+      "declaration": "Burnett.Fourier.sharpFourierProjection_idempotent"
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-orthogonal",
+      "module": "Burnett.Analysis.Fourier.SharpProjection",
+      "declaration": "Burnett.Fourier.sharpFourierProjection_orthogonal"
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-congr-ae",
+      "module": "Burnett.Analysis.Fourier.SharpProjection",
+      "declaration": "Burnett.Fourier.fourierMultiplier_congr_ae"
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-sharp-localization",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_sharp_localization"
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-smooth-localization",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_smooth_localization"
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-gradient-localization",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization"
+    },
+    {
+      "claim_id": "round2:x02:multipliers-eq-of-eq-away-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.multipliers_eq_of_eq_away_zero"
+    },
+    {
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero"
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_unique_bounded_limit_of_dense_tests"
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error"
     }
   ],
   "inventory": [
@@ -3607,14 +3802,19 @@
         "endline": 3193
       },
       "disposition": "formalize",
-      "modeling_status": "fixed-fourier-energy-and-cutoff-L2-bridge-implemented-actual-projection-pending",
-      "lean_status": "partially_formalized",
+      "modeling_status": "implemented-actual-fixed-fourier-projections",
+      "lean_status": "proof-implemented",
       "statement_record": "docs/statements/cubic-off-null-localization.md",
       "scope_decision": "2026-11-16 user selected 2A and fixed Fourier conic projections",
       "same_witnesses": "Burnett.CubicExplicit.fSequence and wSequence",
       "proof_or_new_hypotheses_approved": false,
-      "remaining": "Actual L2 Fourier extension (including Schwartz density and norm compatibility), construction of sharp conic projection and bounded smooth multiplier, and instantiation of the proven cutoff bridge remain open. No operator is assumed to erase the sequence; no parent theorem target is registered.",
-      "supporting_progress": "The same f/w, every fixed real C-infinity compact cutoff and delta>0 have actual whole-space off-cone Fourier energy convergence for all four gradient components; true L2 cutoff placements differ strongly by zero after every fixed CLM."
+      "remaining": "No remaining mathematical sub-obligation in the approved fixed-Fourier scope. New semantic author confirmation, final candidate machine evidence and actual main integration are recorded separately; no paper-level verification follows.",
+      "supporting_progress": "Actual Schwartz density and L2 Fourier isometry, bounded measurable symbol multiplication, sharp orthogonal Fourier projection, smooth-away-zero symbols and actual same-witness whole-space four-component convergence for both cutoff placements are proved. Zero-frequency assignments are a.e. immaterial.",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "source_bindings": "docs/statements/second-foundations-source-bindings.json"
     },
     {
       "claim_id": "f05:countable:exists-subsequence-all-tests",
@@ -4280,6 +4480,728 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:schwartz-toLp-denseRange",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.schwartz_toLp_denseRange",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-schwartz",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2CLM_schwartz",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2CLM_norm",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2-surjective",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2_surjective",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_schwartz",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_symm_schwartz",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz-ae",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_schwartz_ae",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz-ae",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierL2Equiv_symm_schwartz_ae",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:christoffel-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_torsion_free",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:christoffel-metric-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_metric_compatible",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:christoffel-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.christoffel_difference",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:coordinateJet-congr",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.coordinateJet_congr",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.metricConnection_difference",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference-on",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 368
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionDifference.metricConnection_difference_on",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:covariant-contraction",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 375
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureDifference.covariant_contraction",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:ricci-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 375
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureDifference.ricci_difference",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 375
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureDifference.coordinateRicci_difference",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-vacuum-identity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 375
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureDifference.coordinateRicci_vacuum_identity",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:christoffel-rankOneJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.christoffel_rankOneJet",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-connectionSymbol",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.quadraticDifference_connectionSymbol",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-rankOneJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 372,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureSymbolBridge.quadraticDifference_rankOneJet",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:mul-conjTranspose-eq-zero-of-compression-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 425
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mul_conjTranspose_eq_zero_of_compression_eq_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:mul-eq-zero-of-compression-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 425
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mul_eq_zero_of_compression_eq_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:mulVec-eq-zero-of-compression-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 425
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveKernel.mulVec_eq_zero_of_compression_eq_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:range-le-ker-of-compression-eq-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 425
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveKernel.range_le_ker_of_compression_eq_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourier-fourierMultiplier",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourier_fourierMultiplier",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-norm-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierMultiplier_norm_le",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:symbolL2-norm-sq-le-restrict",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.symbolL2_norm_sq_le_restrict",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-schwartz-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierMultiplier_schwartz_tendsto_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-idempotent",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.sharpFourierProjection_idempotent",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-orthogonal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.sharpFourierProjection_orthogonal",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-congr-ae",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourierMultiplier_congr_ae",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-sharp-localization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_sharp_localization",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-smooth-localization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_smooth_localization",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-gradient-localization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:x02:multipliers-eq-of-eq-away-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.multipliers_eq_of_eq_away_zero",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-general-tool-application-inputs-open",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.exists_unique_bounded_limit_of_dense_tests",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-general-tool-application-inputs-open",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -4478,7 +5400,8 @@
       "proved_in_current_delivery": false,
       "projection_depends_on_x": false,
       "quantifiers": "same f/w; every fixed compact smooth localization, fixed off-null region and fixed projection",
-      "does_not_require_entire_alternate_fourier_rellich_route": true
+      "does_not_require_entire_alternate_fourier_rellich_route": true,
+      "record_role": "historical-scope-decision; current proof status is the inventory parent, not the decision-time boolean"
     },
     "current_pr5_merge_handoff": {
       "status": "merged-and-main-ci-passed",
@@ -4499,6 +5422,38 @@
         "base_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628"
       },
       "does_not_select_future_merge_actor": true
+    },
+    "second_foundations_delivery": {
+      "reviewed_dependency_head": "d143c3709466bd2900e098c573c1691d987226da",
+      "dependency_pr": 6,
+      "inherited_targets": 137,
+      "new_support_targets": 38,
+      "new_parent_target": "unnum:cubic-off-null-gradient-localization",
+      "targets": 176,
+      "inventory_entries": 247,
+      "lean_sources": 57,
+      "mathematical_explanation": "docs/statements/second-foundations.md",
+      "independent_review": "docs/statements/second-foundations-review.md",
+      "source_bindings": "docs/statements/second-foundations-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_integration": "not-performed-by-agent",
+      "actual_base_main": "b4b27302556c62617798a46a22e744035fcd4602",
+      "dependency_pr_merged": true,
+      "new_module_count": 10
+    },
+    "pr6_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "b4b27302556c62617798a46a22e744035fcd4602",
+      "reviewed_pr_head": "d143c3709466bd2900e098c573c1691d987226da",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 43861529888,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43861529888",
+      "main_ci_conclusion": "success",
+      "main_ci_artifact": 14224650655,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "46de7e3bbdb62a4f0570d68fe1f3d18e2f9d236487538ac95b84e54852201924",
+      "agent_may_merge_next_pr": false
     }
   },
   "planning": {

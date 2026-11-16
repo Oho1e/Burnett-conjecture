@@ -2866,6 +2866,234 @@
       "source_slices": [
         "X02"
       ]
+    },
+    {
+      "claim_id": "round2:x02:schwartz-toLp-denseRange",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-schwartz",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2CLM-norm",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2-surjective",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-schwartz-ae",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierL2Equiv-symm-schwartz-ae",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:christoffel-torsion-free",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:christoffel-metric-compatible",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:christoffel-difference",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:coordinateJet-congr",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:metricConnection-difference-on",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:covariant-contraction",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:ricci-difference",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-difference",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:coordinateRicci-vacuum-identity",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:christoffel-rankOneJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-connectionSymbol",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f04:quadraticDifference-rankOneJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:mul-conjTranspose-eq-zero-of-compression-eq-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:mul-eq-zero-of-compression-eq-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:mulVec-eq-zero-of-compression-eq-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:range-le-ker-of-compression-eq-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourier-fourierMultiplier",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-norm-le",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:symbolL2-norm-sq-le-restrict",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-schwartz-tendsto-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-idempotent",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:sharpFourierProjection-orthogonal",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fourierMultiplier-congr-ae",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-sharp-localization",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-smooth-localization",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:fixed-offNull-gradient-localization",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:x02:multipliers-eq-of-eq-away-zero",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "source_slices": [
+        "F05"
+      ]
     }
   ],
   "edges": [
