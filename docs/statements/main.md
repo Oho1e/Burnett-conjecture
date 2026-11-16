@@ -357,7 +357,9 @@ in distributions. Here $Q_0(\dd f,\dd w)=m^{ab}\partial_af\partial_bw$.
 \end{proposition}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+数学/Lean对应：同一见证的完整候选已实现，冻结源码的独立实际类型及定义反向复核已通过。用户1A已委托root及独立代理确认本轮技术对应，实际确认者为代理而非用户本人；生产组合机器证据及远程CI分别记载。
+
+本轮完整候选、精确测试/H⁻¹模型和剩余范围见[cubic-counterexample.md](cubic-counterexample.md)；实际声明为 `Burnett.CubicCounterexample.auxiliary_trilinear_counterexample`。同一f/w全出口已实现并获委托对应确认；原3193固定Fourier离锥性质已另列最终必做但仍未证明。
 
 ## T15
 

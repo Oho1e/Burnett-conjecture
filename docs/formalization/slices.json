@@ -1244,16 +1244,17 @@
       ],
       "outputs": [
         "光滑标量f_n,w_n局部一致趋零、一阶导统一有界；Box_m f_n=4lambda2 sin(lambda2 v)cos(lambda1 u)，Box_m w_n=0，二者强趋零于H^(-1)_loc。",
-        "固定紧局部化后每个模式高频~lambda1，H^(-1)量O(lambda2/lambda1)，固定切断的Fourier尾快降；切断交换子L2有界且弱零，因而H^(-1)_loc强零。每个固定离零锥conic梯度投影L2强零是证明中额外依赖候选。",
+        "用户已批准新增必做unnum:cubic-off-null-gradient-localization：同一f/w、固定紧局部化与固定离零锥Fourier投影，梯度投影全空间L²强趋零；该额外性质尚未形式化，不由prop:cubic的替代证明自动取得。原Fourier/Rellich具体路线未作整体认证。",
         "Q0(df_n,dw_n)∂t f_n = -2 cos^2(lambda2 v)cos(2lambda2 v)cos^2(lambda1 u)+o(1)，均值给分布极限-1/4；其余模式对每个固定紧光滑测试积分趋零。",
         "不将f_n,w_n宣称为精确Einstein解，也不把该结论当作完整Einstein物理收缩的反例。"
       ],
       "risks": [
         "分布极限是对每个固定紧光滑测试，不允许任意依赖n的高频测试。",
         "两个尺度与交叉频率都须发散；不能只计算各因子各自弱极限再相乘。",
-        "离锥投影强L2不是正式命题的显式结论，但若未来宣称该性质已验证，应纳入其实际依赖。"
+        "离锥投影强L2不是正式命题的显式结论，但若未来宣称该性质已验证，应纳入其实际依赖。",
+        "2026-11-16用户选2A并锁定固定Fourier锥投影；义务已纳入scope及必做未编号映射，尚未证明。局部化次序须有真实L²桥，χ/δ/符号先固定，不能偷换成n依赖截断或一般x依赖Ψ⁰。"
       ],
-      "next_action": "先实现双尺度三角多项式的固定测试振荡极限，再证明局部Hminus1源小量，最后核对正式存在性命题的所有幅度、导数和分布结论。",
+      "next_action": "prop:cubic本体已有完整Lean证明及用户委托的数学对应确认；在合并F06后的组合候选重跑机器检查并保持PR5未合并。随后对已批准固定Fourier锥投影新义务实现真实Fourier/L²接口、同一见证与局部化次序桥；不能先宣布该义务或整个X02完成。",
       "supplementary_obligations": []
     },
     {
@@ -1598,6 +1599,10 @@
     {
       "claim_id": "unnum:rosen-multiscale-example",
       "closure_slice": "X06"
+    },
+    {
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "closure_slice": "X02"
     }
   ],
   "inventory_placement": [
@@ -2464,6 +2469,192 @@
       "claim_id": "f06:physicalquotient:pairing-eq-coordinates",
       "source_slices": [
         "F06"
+      ]
+    },
+    {
+      "claim_id": "x02:nonzero-cubic-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:f-local-negative-norm",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:w-local-negative-norm",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:f-smooth",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:w-smooth",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:f-gradient-bound",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:w-gradient-bound",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-wave-divergence",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:f-uniform-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:w-uniform-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:dense-dual-uniqueness",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-jet-add",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-jet-smul",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-test-pairing",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:localized-divergence-ibp",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:l2-strong-coefficient-bound",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-source-identification",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:source-strong-dual-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:source-explicit-norm-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:cubic-distribution-limit",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:actual-cubic-integrability",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:unit-test-integral",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:nonzero-test-existence",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-spacetime-operators",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-scalar-sequences",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-smooth-test-jet",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-hilbert-dual-model",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-localized-wave-source",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-local-strong-criterion",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "x02:def-seven-actual-phases",
+      "source_slices": [
+        "X02"
+      ]
+    },
+    {
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_slices": [
+        "X02"
       ]
     }
   ],
@@ -4256,7 +4447,9 @@
     "精确外部定理版本及固定Mathlib接口保持待核；没有联网阅读外部文献，也未将它们作为已批准公理。",
     "第二轮由未参与构造的三位新代理从锁定原文独立复核，并交换反驳；修正A04远角前提、定义/证明边、P01全空间Calderón开放接口、范围索引同步及附录工具消费者。详见slicing-review.md；这不是开放证明的正确性认证。",
     "多代理并行试运行新增4个真实实代数子目标（含主代理合并的零锥B公式）；原文、依赖版本及整体范围未改。独立回读与机器证据见quadratic-real-algebra-review.md及parallel-workflow.md，作者确认仍待定。",
-    "2026-11-16新增F06点态复Hermitian、Lorentz正性、实际反射归一化及两坐标双向分类；57个新注册支持目标仍归同一父项，不计入17项正式结果完成。原文、数学标准及135条依赖边未改；几何/协方差/测度接入与新解释确认分别保留。用户最终信任政策已明确选择A依赖闭合。"
+    "2026-11-16新增F06点态复Hermitian、Lorentz正性、实际反射归一化及两坐标双向分类；57个新注册支持目标仍归同一父项，不计入17项正式结果完成。原文、数学标准及135条依赖边未改；几何/协方差/测度接入与新解释确认分别保留。用户最终信任政策已明确选择A依赖闭合。",
+    "2026-11-16：X02以真实C∞c五重L² jet/H¹闭包及强连续对偶模型给出prop:cubic完整候选，采用显式散度和时间IBP替代原Fourier/Rellich路线；同一f/w及非零测试均已实现。生产机械证据与新语义确认分别记录，原3193额外离锥性质待决，不改文章或整篇verified状态。",
+    "2026-11-16：PR3/PR4用户手动合入后，组合保留F06与X02全部证明；1A委托确认原prop:cubic技术内容，2A及固定Fourier选择把3193性质升为第三项必做未编号结果但仍not_formalized。102目标、174inventory、33Lean及3必做未编号是结构防漏计数，不是完成率。"
   ],
   "integration_unmapped_items": []
 }

@@ -17,3 +17,4 @@ import Burnett.Algebra.MinkowskiNormalize
 import Burnett.Algebra.NullFrame
 import Burnett.Algebra.NullNormalForm
 import Burnett.Algebra.PhysicalQuotient
+import Burnett.Analysis.Cubic.Counterexample

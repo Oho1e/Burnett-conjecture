@@ -1,0 +1,163 @@
+{
+  "schema": "burnett-x02-source-bindings/v1",
+  "meaning": "Exact local source and registration bindings, separate from machine/semantic/author/CI decisions; no self-hash.",
+  "files": {
+    "Burnett/Analysis/Sobolev/GraphDual.lean": "23969ed0f181a613c3f34996faf34be215631552bf9c34518584b81daa1c123b",
+    "Burnett/Analysis/Sobolev/TestJet.lean": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b",
+    "Burnett/Analysis/Sobolev/Pairing.lean": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d",
+    "Burnett/Analysis/Sobolev/L2Bounds.lean": "e9328a9475d253a8be9c79b01f7e0679c25de0cf2609a2113b86555ff6893452",
+    "Burnett/Analysis/IBP/CompactIBP.lean": "d4b039095cde7d2c4ef89eaba49196a2a2fb07a708db34e2b9e0f9ae972f8234",
+    "Burnett/Analysis/IBP/LocalizedIBP.lean": "5807b3e7812ef705c342917797511d6f329cfa316984df091c4d19a3c95ea9f1",
+    "Burnett/Analysis/Cubic/Explicit.lean": "d0539e4bb4e7e5b0cfe46e9c7d7c2f19ea9835d1f0bcc68ce7d22e541096f658",
+    "Burnett/Analysis/Cubic/FrequencyBounds.lean": "b2649a4fefb35ef24e8cb35bff25230c4aaeea5a8bb08637ac34886ae75bc5eb",
+    "Burnett/Analysis/Cubic/Distribution.lean": "7d1719d210497a3ecb314465705195631347e6fbe76ec8b14c375c80fe7edc77",
+    "Burnett/Analysis/Cubic/LocalHminus.lean": "333795a059ad0afefd7ed5d326f35b7eb596b20446053c35182ddf3f706806b4",
+    "Burnett/Analysis/Sobolev/NonzeroTest.lean": "98ecce8b5cdd43d712f2270e6859bad8868747e0f4a1f9e13715b90cba4eb4e3",
+    "Burnett/Analysis/Cubic/Counterexample.lean": "8fa1a023c46305378ae55d0d3e75685384f6257078ba499c236353d9db09ffc9",
+    "Burnett.lean": "0e51bc7776f3e21a713dbe53adaa307b2aebb5313fcd11867cdc338dfc71c129",
+    "docs/formalization/scope.json": "ece89884c9ae019a04207456dd40a87162e7d084e0a0a219082ee725daed70e2",
+    "docs/formalization/slices.json": "52c88cdfed97c5329777d56c90a1edadd89f32ee39e9d40d07a274f62a2e499f",
+    "docs/formalization/standard.zh-CN.md": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0",
+    "paper/burnett.tex": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "89aa753ae1715bf8d34bd31b94480fa2776fc22e85a802d2743f6ef92ded3e9e",
+    "lake-manifest.json": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+    "docs/statements/cubic-counterexample.md": "6c37bae6aac9e2edc154f5d902ccb0af170bb47687c7b07a712cabf4c9cf8d7f",
+    "docs/statements/cubic-off-null-localization.md": "77981214eb4a8cf9b16ef10168be842f17edc74c0d7c7c763e90f15636282310"
+  },
+  "registered_targets": [
+    {
+      "claim_id": "prop:cubic",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.auxiliary_trilinear_counterexample"
+    },
+    {
+      "claim_id": "x02:nonzero-cubic-limit",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.cubic_unitTest_not_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:f-local-negative-norm",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.f_wave_strongHminusLocalZero"
+    },
+    {
+      "claim_id": "x02:w-local-negative-norm",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.w_wave_strongHminusLocalZero"
+    },
+    {
+      "claim_id": "x02:f-smooth",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.fSequence_smooth"
+    },
+    {
+      "claim_id": "x02:w-smooth",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.wSequence_smooth"
+    },
+    {
+      "claim_id": "x02:f-gradient-bound",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.D_fSequence_abs_le_two"
+    },
+    {
+      "claim_id": "x02:w-gradient-bound",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.D_wSequence_abs_le_one"
+    },
+    {
+      "claim_id": "x02:actual-wave-divergence",
+      "module": "Burnett.Analysis.Cubic.Explicit",
+      "declaration": "Burnett.CubicExplicit.waveOperator_waveF_eq_actual_flux_divergence"
+    },
+    {
+      "claim_id": "x02:f-uniform-limit",
+      "module": "Burnett.Analysis.Cubic.FrequencyBounds",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_fSequence"
+    },
+    {
+      "claim_id": "x02:w-uniform-limit",
+      "module": "Burnett.Analysis.Cubic.FrequencyBounds",
+      "declaration": "Burnett.CubicFrequencies.tendstoUniformly_wSequence"
+    },
+    {
+      "claim_id": "x02:dense-dual-uniqueness",
+      "module": "Burnett.Analysis.Sobolev.GraphDual",
+      "declaration": "Burnett.X02.GraphDual.testRestriction_injective"
+    },
+    {
+      "claim_id": "x02:actual-jet-add",
+      "module": "Burnett.Analysis.Sobolev.TestJet",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_add"
+    },
+    {
+      "claim_id": "x02:actual-jet-smul",
+      "module": "Burnett.Analysis.Sobolev.TestJet",
+      "declaration": "Burnett.X02.SobolevTestJet.jet_smul"
+    },
+    {
+      "claim_id": "x02:actual-test-pairing",
+      "module": "Burnett.Analysis.Sobolev.Pairing",
+      "declaration": "Burnett.X02.TestJetPairing.coefficientFunctional_test_of_memLp"
+    },
+    {
+      "claim_id": "x02:localized-divergence-ibp",
+      "module": "Burnett.Analysis.IBP.LocalizedIBP",
+      "declaration": "Burnett.X02.LocalizedIBP.integral_localized_divergence"
+    },
+    {
+      "claim_id": "x02:l2-strong-coefficient-bound",
+      "module": "Burnett.Analysis.Sobolev.L2Bounds",
+      "declaration": "Burnett.X02.L2Bounds.toLp_tendsto_zero_of_bound"
+    },
+    {
+      "claim_id": "x02:actual-source-identification",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_eq_smallFunctional"
+    },
+    {
+      "claim_id": "x02:source-strong-dual-limit",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.sourceFunctional_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:source-explicit-norm-limit",
+      "module": "Burnett.Analysis.Cubic.LocalHminus",
+      "declaration": "Burnett.X02.LocalHminus.norm_sourceFunctional_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:cubic-distribution-limit",
+      "module": "Burnett.Analysis.Cubic.Distribution",
+      "declaration": "Burnett.CubicDistribution.cubic_integral_tendsto"
+    },
+    {
+      "claim_id": "x02:actual-cubic-integrability",
+      "module": "Burnett.Analysis.Cubic.Distribution",
+      "declaration": "Burnett.CubicDistribution.cubic_integrable"
+    },
+    {
+      "claim_id": "x02:unit-test-integral",
+      "module": "Burnett.Analysis.Sobolev.NonzeroTest",
+      "declaration": "Burnett.X02.NonzeroTest.unitTest_integral"
+    },
+    {
+      "claim_id": "x02:nonzero-test-existence",
+      "module": "Burnett.Analysis.Sobolev.NonzeroTest",
+      "declaration": "Burnett.X02.NonzeroTest.exists_test_integral_ne_zero"
+    }
+  ],
+  "statement_sha256": "6c37bae6aac9e2edc154f5d902ccb0af170bb47687c7b07a712cabf4c9cf8d7f",
+  "semantic_confirmation": "confirmed-by-user-delegated-agents",
+  "whole_paper_verified": false,
+  "off_null_projection_proved": false,
+  "off_null_scope": "required-fixed-fourier-conic-projections",
+  "binding_update": {
+    "date": "2026-11-16",
+    "parent_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628",
+    "previous_head": "6465707be138eb1e514f62b48249ad85d77b544e",
+    "prior_technical_statement_sha256": "f14afaddbcbc8da60012b30d6e73d16c00d132a91414b0720d0779e0dc78df87",
+    "technical_sections_and_all12_math_modules_unchanged": true,
+    "root_scope_slices_and_administrative_statement_updated": true
+  }
+}
