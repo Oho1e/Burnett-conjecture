@@ -3094,6 +3094,150 @@
       "source_slices": [
         "F05"
       ]
+    },
+    {
+      "claim_id": "local-control:f04:inverse-sub-inverse",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-inverse-le-of-small",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-sub-inverse",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-estimates-on",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-matrixInverse",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverse",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:matrixInverse-covariant",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-inverseMetric",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverseMetric",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-computedConnection",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-metricConnection",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-christoffel-le",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-eq",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-metricConnectionError-le-of-small",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-covariantJet-le",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn-of-rawJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-rawJet-le-covariantJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-uniform-of-coordinate-bounds",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:norm-toLp-top-restrict-le",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f04:tendsto-toLp-top-of-uniformlyOn-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported-subspace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "local-control:f05:exists-nonneg-bound-on-compact",
+      "source_slices": [
+        "F05"
+      ]
     }
   ],
   "edges": [

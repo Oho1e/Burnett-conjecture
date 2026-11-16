@@ -132,3 +132,11 @@
 本批现为10新模块、38支撑目标及原3193父目标，合计176目标、247条inventory、57份Lean源。具体数学解释、独立角色、准确开放义务和冻结哈希见[第二批声明](../statements/second-foundations.md)、[回读](../statements/second-foundations-review.md)和[绑定](../statements/second-foundations-source-bindings.json)。原9源旧语义回读按相同哈希继承，新增DenseTests另审；新scope/base组合检查及远端CI按本轮实际回执记录，不继承174目标旧绿色。
 
 AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；旧冻结报告不回写。新增数学解释确认仍pending，旧委托范围不扩大。整篇development/verified=false，准备新PR并交接人类合并，未获代理后续合并、自动合并、删分支或标签发布权限。
+
+## 2026-11-16：PR7合并及局部度规控制
+
+用户手动合并PR7，实际main d5c3d06e55c39776716f1fc2e4baddebd032ab00；push CI43870473532成功。下载的artifact14227532345及原始目标回执互绑、176目标/57源、项目与目标输入均与受审2ac候选相同，指纹e2da0f479ce345fc7f118a554669b125851958d0154d64f9584568486b557da2。代理未远端合并；旧待合并与176候选记录保留历史含义。
+
+本批9新源、24支持目标，在此主线形成200目标/271inventory/66源候选。三实现线和root完成实际逆扰动/连续性/紧集界、真实连接误差与最终局部坐标uniform组合、Lp∞桥及正泛函局部C⁰界；九源78公开声明已分别实际完整类型/公理独立核签，仅三基础公理。原InversePerturbation留有一个unused hB警告，未弱化检查或改冻结类型以清理。
+
+范围与角色见[局部控制说明](../statements/local-metric-control.md)及[独立回读](../statements/local-metric-control-review.md)。原文D=∇ʳ及物理r范数/图到坐标条件、a.e.到点态邻域、实际E的物理L∞、弱Ricci/H⁻¹及F05测度均未闭合；本轮没有把local coordinate结论冒认原admissible下全F04。当前候选完整机器和实际组合CI另取回执；新作者确认待记录，整篇verified=false。最终PR合并仍交人类执行。
