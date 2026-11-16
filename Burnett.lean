@@ -32,3 +32,12 @@ import Burnett.Analysis.Fourier.FiniteEnergy
 import Burnett.Analysis.Cubic.OffNullGradient
 import Burnett.Analysis.Cubic.OffNullCompactGradient
 import Burnett.Analysis.Cubic.OffNullGradientBridge
+import Burnett.Analysis.Fourier.SchwartzDensity
+import Burnett.Analysis.Fourier.L2Extension
+import Burnett.Geometry.ConnectionDifference
+import Burnett.Geometry.CurvatureDifference
+import Burnett.Geometry.CurvatureSymbolBridge
+import Burnett.Analysis.Microlocal.PositiveKernel
+import Burnett.Analysis.Fourier.Projection
+import Burnett.Analysis.Fourier.SharpProjection
+import Burnett.Analysis.Cubic.OffNullProjection
