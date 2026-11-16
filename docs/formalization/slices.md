@@ -1339,7 +1339,7 @@ flowchart TD
 消费者：此片未向其他片提供数学输入或应用。
 
 
-下一步：prop:cubic本体已有完整Lean证明及用户委托的数学对应确认；在合并F06后的组合候选重跑机器检查并保持PR5未合并。随后对已批准固定Fourier锥投影新义务实现真实Fourier/L²接口、同一见证与局部化次序桥；不能先宣布该义务或整个X02完成。
+下一步：以已合并PR5及原同一f/w为基线，继续固定Fourier离零锥梯度义务。实际构造并核对归一化调制、全空间Fourier能量与两种cutoff表述桥；真实L² Fourier扩张和投影模型未闭合时明确保留，不能因基础引理通过提升父项。新证明随入口、登记、独立复核和组合CI准备后续功能PR，不执行main合并。
 
 <a id="x03"></a>
 
@@ -1567,7 +1567,7 @@ flowchart TD
 - **EXT-DEFECT**：Huneau–Luk Theorems 5.5/5.6：正束值微局部提取、经典齐次测试、同一子列和一阶系统定位；原文392–428。 消费者：F05, V03, C02；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-COMM**：Bényí–Oh Theorem A/1：线性及双线性Lipschitz交换子、(4,4,2)/(4,2,4/3)高槽伴随、有限符号半范数；原文587–591、1308–1345、1425–1465、2567–2571。 P01另须准确核对固定全空间Π∂b的梯度型L²交换子范数界（1674–1684）；该开放需求不由A01能量结论提供，不增加完整f的全局有界假设。 消费者：A01, A06, A07, P01, V11；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-LIFT**：Huneau–Luk Lemma2.5的局部二阶矩版及本稿具体s^(-2)构造；原文2993–3040。 消费者：L01；状态：`exact-version-and-Lean-interface-pending`。
-- **EXT-HARMONIC**：Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。 消费者：A02, A04, A05, A06, A07, P01, V08, V09；状态：`Lean-interface-pending`。
+- **EXT-HARMONIC**：Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。 X02原3193已批准固定Fourier离锥目标需要真实Fourier/L²、调制平移及尾积分接口；本次仅补消费者定位，尚未证明该目标。 消费者：A02, A04, A05, A06, A07, P01, V08, V09, X02；状态：`Lean-interface-pending`。
 - **EXT-MEASURE**：正Hermitian密度、Radon–Nikodym、解体、束上加权推前、支集与矩测试分离。 消费者：F05, F07, F08, L01, L03, X03, X04, X05；状态：`Lean-interface-pending`。
 - **EXT-GEOMETRY**：连接/曲率差、Einstein–Hilbert变分、Lie导数、光滑Cauchy面、零测地线流及自然性桥接。 X06需承接坐标拉回的曲率自然性或等价分量计算。 消费者：F04, F06, V02, V07, L01, X01, X04, X05, X07, X06；状态：`Lean-interface-pending`。
 - **EXT-COMPACTNESS**：Rellich对偶紧性、弱星子列、分布极限识别、紧支集插值与全序列子列反证。 附录另含X02局部Rellich/H⁻¹紧性（3193）、X05弱星与加权弱下半连续性（3332–3338）、X06 C¹紧性及弱星ODE系数极限识别（3365–3367）。 消费者：F04, P01, C01, L03, X07, X02, X05, X06；状态：`Lean-interface-pending`。

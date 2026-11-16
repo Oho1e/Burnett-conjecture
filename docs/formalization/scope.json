@@ -543,6 +543,181 @@
       "claim_id": "x02:nonzero-test-existence",
       "module": "Burnett.Analysis.Sobolev.NonzeroTest",
       "declaration": "Burnett.X02.NonzeroTest.exists_test_integral_ne_zero"
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-all-tests",
+      "module": "Burnett.Analysis.Compactness.CountableTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_all_tests"
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-of-testwise-abs-le",
+      "module": "Burnett.Analysis.Compactness.CountableTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_of_testwise_abs_le"
+    },
+    {
+      "claim_id": "f06:geometry:covariant-mul-contravariant",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.covariant_mul_contravariant"
+    },
+    {
+      "claim_id": "f06:geometry:contravariant-mul-covariant",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.contravariant_mul_covariant"
+    },
+    {
+      "claim_id": "f06:geometry:raiseCovector-eq-sharp",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.raiseCovector_eq_sharp"
+    },
+    {
+      "claim_id": "f06:geometry:symbolNorm-eq-eval-sharp",
+      "module": "Burnett.Geometry.FiberMetric",
+      "declaration": "Burnett.Geometry.FiberMetric.symbolNorm_eq_eval_sharp"
+    },
+    {
+      "claim_id": "f06:geometry:covector-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_components"
+    },
+    {
+      "claim_id": "f06:geometry:tensor-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.tensor_components"
+    },
+    {
+      "claim_id": "f06:geometry:covector-bijective",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_bijective"
+    },
+    {
+      "claim_id": "f06:geometry:inverseMetric-components",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.inverseMetric_components"
+    },
+    {
+      "claim_id": "f06:geometry:physicalPairing-self-nonneg",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.physicalPairing_self_nonneg"
+    },
+    {
+      "claim_id": "f06:geometry:modelMetric-nondegenerate",
+      "module": "Burnett.Geometry.BasisFrame",
+      "declaration": "Burnett.Geometry.BasisFrame.modelMetric_nondegenerate"
+    },
+    {
+      "claim_id": "x02:offnull:D-fSequence-two-cosines",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.D_fSequence_two_cosines"
+    },
+    {
+      "claim_id": "x02:offnull:D-wSequence-cosine",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.D_wSequence_cosine"
+    },
+    {
+      "claim_id": "x02:offnull:offNull-separation",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.offNull_separation"
+    },
+    {
+      "claim_id": "x02:offnull:fAngularFrequency-eventually-near-null",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.fAngularFrequency_eventually_near_null"
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-fAngularFrequency",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_fAngularFrequency"
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-wAngularFrequency",
+      "module": "Burnett.Analysis.Cubic.OffNullGeometry",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_wAngularFrequency"
+    },
+    {
+      "claim_id": "fourier:fourier-tail-tendsto-zero",
+      "module": "Burnett.Analysis.Fourier.SchwartzTail",
+      "declaration": "Burnett.Fourier.fourier_tail_tendsto_zero"
+    },
+    {
+      "claim_id": "fourier:schwartz-parseval",
+      "module": "Burnett.Analysis.Fourier.SchwartzParseval",
+      "declaration": "Burnett.Fourier.schwartz_parseval"
+    },
+    {
+      "claim_id": "fourier:fourier-modulate",
+      "module": "Burnett.Analysis.Fourier.Modulation",
+      "declaration": "Burnett.Fourier.fourier_modulate"
+    },
+    {
+      "claim_id": "x02:offnull:cutoff-gradient-identity",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.cutoff_gradient_identity"
+    },
+    {
+      "claim_id": "x02:offnull:fCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.fCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:wCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.wCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:map-fCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.map_fCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:map-wCutoffErrorLp-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCutoff",
+      "declaration": "Burnett.CubicOffNull.map_wCutoffErrorLp_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:offNull-translated-fourier-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.offNull_translated_fourier_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:f-normalized-mode-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.f_normalized_mode_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:w-normalized-mode-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullTail",
+      "declaration": "Burnett.CubicOffNull.w_normalized_mode_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-total-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_total_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-total-offNull-energy-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullCompactGradient",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_total_offNull_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:f-productGradient-map-difference-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullGradientBridge",
+      "declaration": "Burnett.CubicOffNull.f_productGradient_map_difference_tendsto_zero"
+    },
+    {
+      "claim_id": "x02:offnull:w-productGradient-map-difference-tendsto-zero",
+      "module": "Burnett.Analysis.Cubic.OffNullGradientBridge",
+      "declaration": "Burnett.CubicOffNull.w_productGradient_map_difference_tendsto_zero"
     }
   ],
   "inventory": [
@@ -827,7 +1002,7 @@
       "modeling_status": "partially_modeled",
       "lean_status": "partially_formalized",
       "statement_record": "docs/statements/hermitian-null-algebra.md",
-      "remaining": "Pointwise complex Hermitian identities, Lorentz-frame positivity, actual gauge radical and two-coordinate physical-class classification are implemented. The geometric Lorentz data must supply the explicit pointwise frame certificate; F05/F07 covariance and measure instantiation, and new user/author semantic confirmation, remain separate. No global smooth frame choice or uniform parameter estimate is asserted."
+      "remaining": "Pointwise F06 algebra is retained. New genuine nondegenerate symmetric metric fibers with a supplied Lorentz-orthonormal basis now produce the old frame certificate. Derivation from an independent geometric Lorentz/signature model, smooth/local/global choice and F05/F07 covariance and measure instantiation remain open; no global smooth frame or uniform parameter estimate is asserted."
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -3432,12 +3607,679 @@
         "endline": 3193
       },
       "disposition": "formalize",
-      "modeling_status": "user-approved-fixed-fourier-conic-projections",
-      "lean_status": "not_formalized",
+      "modeling_status": "fixed-fourier-energy-and-cutoff-L2-bridge-implemented-actual-projection-pending",
+      "lean_status": "partially_formalized",
       "statement_record": "docs/statements/cubic-off-null-localization.md",
       "scope_decision": "2026-11-16 user selected 2A and fixed Fourier conic projections",
       "same_witnesses": "Burnett.CubicExplicit.fSequence and wSequence",
-      "proof_or_new_hypotheses_approved": false
+      "proof_or_new_hypotheses_approved": false,
+      "remaining": "Actual L2 Fourier extension (including Schwartz density and norm compatibility), construction of sharp conic projection and bounded smooth multiplier, and instantiation of the proven cutoff bridge remain open. No operator is assumed to erase the sequence; no parent theorem target is registered.",
+      "supporting_progress": "The same f/w, every fixed real C-infinity compact cutoff and delta>0 have actual whole-space off-cone Fourier energy convergence for all four gradient components; true L2 cutoff placements differ strongly by zero after every fixed CLM."
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-all-tests",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 403
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_all_tests",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable:exists-subsequence-of-testwise-abs-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 403
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.exists_subsequence_of_testwise_abs_le",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:covariant-mul-contravariant",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiberMetric.covariant_mul_contravariant",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:contravariant-mul-covariant",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiberMetric.contravariant_mul_covariant",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:raiseCovector-eq-sharp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiberMetric.raiseCovector_eq_sharp",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:symbolNorm-eq-eval-sharp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiberMetric.symbolNorm_eq_eval_sharp",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:covector-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_components",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:tensor-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.tensor_components",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:covector-bijective",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.covector_bijective",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:inverseMetric-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.inverseMetric_components",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:physicalPairing-self-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.physicalPairing_self_nonneg",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:geometry:modelMetric-nondegenerate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BasisFrame.modelMetric_nondegenerate",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:D-fSequence-two-cosines",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.D_fSequence_two_cosines",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:D-wSequence-cosine",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.D_wSequence_cosine",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:offNull-separation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.offNull_separation",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:fAngularFrequency-eventually-near-null",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.fAngularFrequency_eventually_near_null",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-fAngularFrequency",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_fAngularFrequency",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:tendsto-norm-wAngularFrequency",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3183,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.tendsto_norm_wAngularFrequency",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "fourier:fourier-tail-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourier_tail_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "fourier:schwartz-parseval",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.schwartz_parseval",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "fourier:fourier-modulate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Fourier.fourier_modulate",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:cutoff-gradient-identity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.cutoff_gradient_identity",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:fCutoffErrorLp-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.fCutoffErrorLp_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:wCutoffErrorLp-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.wCutoffErrorLp_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:map-fCutoffErrorLp-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.map_fCutoffErrorLp_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:map-wCutoffErrorLp-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.map_wCutoffErrorLp_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:offNull-translated-fourier-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.offNull_translated_fourier_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:f-normalized-mode-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.f_normalized_mode_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:w-normalized-mode-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.w_normalized_mode_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:compact-fGradient-total-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.compact_fGradient_total_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:compact-wGradient-total-offNull-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.compact_wGradient_total_offNull_energy_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:f-productGradient-map-difference-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.f_productGradient_map_difference_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "x02:offnull:w-productGradient-map-difference-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:cubic-off-null-gradient-localization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3193,
+        "endline": 3193
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.CubicOffNull.w_productGradient_map_difference_tendsto_zero",
+      "statement_record": "docs/statements/initial-foundations.md",
+      "semantic_review_record": "docs/statements/initial-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -3639,20 +4481,30 @@
       "does_not_require_entire_alternate_fourier_rellich_route": true
     },
     "current_pr5_merge_handoff": {
-      "status": "prepare-reviewed-pr-only",
-      "merge_executor": "not-yet-selected",
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human",
+      "merged_main": "242eebe9d87ef62c15efab8df7741051f0aed260",
+      "main_ci_run": 43807809558,
+      "main_ci_conclusion": "success",
       "agent_may_merge": false,
-      "prior_human_choice_scope": [
-        3,
-        4
-      ],
-      "pr3_and_pr4_merged_by_user": true,
-      "base_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628"
+      "historical_pre_merge_handoff": {
+        "status": "prepare-reviewed-pr-only",
+        "merge_executor": "not-yet-selected",
+        "agent_may_merge": false,
+        "prior_human_choice_scope": [
+          3,
+          4
+        ],
+        "pr3_and_pr4_merged_by_user": true,
+        "base_main": "1e88d8c64ed5705d47654317702f00a1d2d5b628"
+      },
+      "does_not_select_future_merge_actor": true
     }
   },
   "planning": {
     "slice_manifest": "docs/formalization/slices.json",
     "slice_view": "docs/formalization/slices.md",
-    "meaning": "source partition and mathematical interfaces; canonical proof status remains in inventory"
+    "meaning": "source partition and mathematical interfaces; canonical proof status remains in inventory",
+    "work_plan": "docs/formalization/WORK-PLAN.zh-CN.md"
   }
 }

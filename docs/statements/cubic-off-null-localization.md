@@ -1,4 +1,4 @@
-# X02：固定Fourier离零锥梯度局部化（必做、尚未证明）
+# X02：固定Fourier离零锥梯度局部化（必做、部分形式化）
 
 源为锁定paper/burnett.tex第3193行最后一句，claim_id为unnum:cubic-off-null-gradient-localization。用户2026-11-16先选2A明确纳入最终目标，随后选择固定Fourier锥投影；没有要求一般依赖位置x的Ψ⁰投影，也没有批准改写整个Fourier/Rellich证明路线。
 
@@ -8,4 +8,6 @@ Fourier乘子须由实际Fourier变换、符号乘法及逆变换构造。锐锥
 
 两种表述A(χ∇h_n)与A(∇(χh_n))之差为A((∇χ)h_n)，应由既有幅度小量和实际L²算子有界性证明等价，不能把χ和非局部投影交换。目标可先用离锥Fourier能量表述，再覆盖固定有界乘子；不存在尚未实现却被当作参数的“会消去该序列”假设。
 
-当前没有对应Lean证明或已注册的伪目标；Lean状态not_formalized，具体Fourier/L²接口与证明尚待实现。现有H¹完成空间连续对偶的源小量或prop:cubic的三次积分极限都不自动代替此义务。若采用Fourier/Bessel负范数路线，需要实际等价桥；若走显式调制频率与L²尾路线，需要实际Plancherel/调制及尾估计。整个论文verified仍为false。
+当前Lean状态为partially_formalized。本轮已为同一fSequence/wSequence、任意原有实C∞c截断及固定δ>0证明实际Fourier全Eδ能量的四分量总和趋零；实际正负频率、2π调制平移、全空间尾及Schwartz Parseval均有Lean证明。另已构造两种cutoff位置的真实L²对象，证明它们在任意固定连续线性映射下之差趋零。实际声明与分批独立回读见[第一批基础证明](initial-foundations.md)及[复核](initial-foundations-review.md)。
+
+本父目标仍未闭合：尚需Schwartz在实际L²中的稠密桥、Fourier等距扩张、真实锐锥正交投影与光滑有界乘子的构造，以及把已证结论接到这些实际算子上。现有泛函对偶H⁻¹源小量不能替代这些内容，任意固定连续线性映射的参数也没有被当成已实现的Fourier算子；不为父项注册伪定理。原范围、三公理政策和整篇verified=false保持不变。
