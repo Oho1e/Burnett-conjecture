@@ -41,3 +41,4 @@ import Burnett.Analysis.Microlocal.PositiveKernel
 import Burnett.Analysis.Fourier.Projection
 import Burnett.Analysis.Fourier.SharpProjection
 import Burnett.Analysis.Cubic.OffNullProjection
+import Burnett.Analysis.Compactness.DenseTests

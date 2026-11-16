@@ -1,16 +1,16 @@
 {
   "schema": "burnett-second-foundations-source-bindings/v1",
   "meaning": "Frozen source and target bindings. Independent readback, human confirmation, generated machine checks and actual main integration remain distinct. No self-hash.",
-  "base_main": "242eebe9d87ef62c15efab8df7741051f0aed260",
+  "base_main": "b4b27302556c62617798a46a22e744035fcd4602",
   "reviewed_dependency_head": "d143c3709466bd2900e098c573c1691d987226da",
   "dependency_pr": 6,
-  "dependency_pr_last_observed_merged": false,
+  "dependency_pr_last_observed_merged": true,
   "inherited_target_count": 137,
-  "new_support_target_count": 36,
+  "new_support_target_count": 38,
   "new_parent_target_count": 1,
-  "total_target_count": 174,
-  "total_inventory_count": 245,
-  "total_lean_source_count": 56,
+  "total_target_count": 176,
+  "total_inventory_count": 247,
+  "total_lean_source_count": 57,
   "inherited_math_leaf_sources_unchanged": [
     {
       "path": "Burnett/Algebra/ComplexFrame.lean",
@@ -233,6 +233,10 @@
     {
       "path": "Burnett/Analysis/Microlocal/PositiveKernel.lean",
       "sha256": "8eb3166fcf1076df9920f94bf1aa2f5dabfd46e5d9df9f1be4c5eefbcd57408a"
+    },
+    {
+      "path": "Burnett/Analysis/Compactness/DenseTests.lean",
+      "sha256": "6677f6d6de3dcb9228373da086718adcb99c54bca3b2ccde354ef8d15483f887"
     }
   ],
   "new_targets": [
@@ -568,9 +572,37 @@
       "is_parent": true,
       "source_start": 3193,
       "source_end": 3193
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_unique_bounded_limit_of_dense_tests",
+      "slice_id": "F05",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 392,
+      "source_end": 410
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error",
+      "slice_id": "F05",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 392,
+      "source_end": 410
     }
   ],
   "independent_review_record": "docs/statements/second-foundations-review.md",
   "human_semantic_confirmation": "not-recorded-for-new-delivery",
-  "paper_formalization_verified": false
+  "paper_formalization_verified": false,
+  "dependency_merge_commit": "b4b27302556c62617798a46a22e744035fcd4602",
+  "dependency_main_ci": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43861529888",
+  "prior_local_candidate": {
+    "commit": "67fa9ad7b8629ac77580b69556376aa0eb28a43b",
+    "base_main": "242eebe9d87ef62c15efab8df7741051f0aed260",
+    "targets": 174,
+    "inventory": 245,
+    "lean_sources": 56,
+    "frozen_evidence_retained": true
+  }
 }

@@ -12,4 +12,4 @@ Fourier乘子须由实际Fourier变换、符号乘法及逆变换构造。锐锥
 
 第二批已实际证明Schwartz在L²中的稠密性、构造Fourier等距同构、真实锐锥正交投影和有界乘子，并接合到原见证。父目标现登记实际声明 `Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero`：对原范围中每个固定有界符号，四个梯度分量的物理全空间正L²强零同时覆盖f/w及两种cutoff位置；非零频率上要求支撑于Eδ，零频任意赋值通过a.e.等价消去。锐/光滑类均有真实实例，正交性及非紧物理输出尾得到处理。
 
-新增九模块范围与独立实际回读见[第二批证明](second-foundations.md)、[复核](second-foundations-review.md)和[源码绑定](second-foundations-source-bindings.json)。本父项的Lean状态是proof-implemented；新增数学解释的人类确认、最终工程检查和主线整合分别记录，旧prop:cubic委托不自动覆盖此次新增解释。原范围、三公理政策和整篇verified=false保持不变。
+本批范围与独立实际回读见[第二批证明](second-foundations.md)、[复核](second-foundations-review.md)和[源码绑定](second-foundations-source-bindings.json)。本父项的Lean状态是proof-implemented；新增数学解释的人类确认、最终工程检查和主线整合分别记录，旧prop:cubic委托不自动覆盖此次新增解释。原范围、三公理政策和整篇verified=false保持不变。

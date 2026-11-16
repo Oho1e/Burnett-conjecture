@@ -903,6 +903,16 @@
       "claim_id": "unnum:cubic-off-null-gradient-localization",
       "module": "Burnett.Analysis.Cubic.OffNullProjection",
       "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero"
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.exists_unique_bounded_limit_of_dense_tests"
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "module": "Burnett.Analysis.Compactness.DenseTests",
+      "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error"
     }
   ],
   "inventory": [
@@ -5154,6 +5164,44 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-general-tool-application-inputs-open",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.exists_unique_bounded_limit_of_dense_tests",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-general-tool-application-inputs-open",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error",
+      "statement_record": "docs/statements/second-foundations.md",
+      "semantic_review_record": "docs/statements/second-foundations-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -5352,7 +5400,8 @@
       "proved_in_current_delivery": false,
       "projection_depends_on_x": false,
       "quantifiers": "same f/w; every fixed compact smooth localization, fixed off-null region and fixed projection",
-      "does_not_require_entire_alternate_fourier_rellich_route": true
+      "does_not_require_entire_alternate_fourier_rellich_route": true,
+      "record_role": "historical-scope-decision; current proof status is the inventory parent, not the decision-time boolean"
     },
     "current_pr5_merge_handoff": {
       "status": "merged-and-main-ci-passed",
@@ -5378,16 +5427,33 @@
       "reviewed_dependency_head": "d143c3709466bd2900e098c573c1691d987226da",
       "dependency_pr": 6,
       "inherited_targets": 137,
-      "new_support_targets": 36,
+      "new_support_targets": 38,
       "new_parent_target": "unnum:cubic-off-null-gradient-localization",
-      "targets": 174,
-      "inventory_entries": 245,
-      "lean_sources": 56,
+      "targets": 176,
+      "inventory_entries": 247,
+      "lean_sources": 57,
       "mathematical_explanation": "docs/statements/second-foundations.md",
       "independent_review": "docs/statements/second-foundations-review.md",
       "source_bindings": "docs/statements/second-foundations-source-bindings.json",
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
-      "main_integration": "not-performed-by-agent"
+      "main_integration": "not-performed-by-agent",
+      "actual_base_main": "b4b27302556c62617798a46a22e744035fcd4602",
+      "dependency_pr_merged": true,
+      "new_module_count": 10
+    },
+    "pr6_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "b4b27302556c62617798a46a22e744035fcd4602",
+      "reviewed_pr_head": "d143c3709466bd2900e098c573c1691d987226da",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 43861529888,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43861529888",
+      "main_ci_conclusion": "success",
+      "main_ci_artifact": 14224650655,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "46de7e3bbdb62a4f0570d68fe1f3d18e2f9d236487538ac95b84e54852201924",
+      "agent_may_merge_next_pr": false
     }
   },
   "planning": {

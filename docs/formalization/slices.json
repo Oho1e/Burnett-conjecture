@@ -3082,6 +3082,18 @@
       "source_slices": [
         "X02"
       ]
+    },
+    {
+      "claim_id": "round2:f05:exists-unique-bounded-limit-of-dense-tests",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
+      "source_slices": [
+        "F05"
+      ]
     }
   ],
   "edges": [
