@@ -1,0 +1,498 @@
+{
+  "schema": "burnett-local-metric-control-bindings/v1",
+  "meaning": "Source and target identity only; not human confirmation, machine certification or main integration. No self-hash.",
+  "base_main": "d5c3d06e55c39776716f1fc2e4baddebd032ab00",
+  "base_pr": 7,
+  "base_main_ci_run": 43870473532,
+  "inherited_targets": 176,
+  "new_support_targets": 24,
+  "total_targets": 200,
+  "total_inventory_entries": 271,
+  "total_lean_sources": 66,
+  "new_sources": [
+    {
+      "path": "Burnett/Geometry/InversePerturbation.lean",
+      "sha256": "9b1e3f6e41ef8a5be72acd5f650955378994ce678a73f2899b4267531c2a4301"
+    },
+    {
+      "path": "Burnett/Geometry/InverseField.lean",
+      "sha256": "d2b4b944e2d6b868d45fe76970b994d011651af0ef71a6c228f07daad9eb4ec6"
+    },
+    {
+      "path": "Burnett/Geometry/InverseSequence.lean",
+      "sha256": "003bfcacb7630068903aea3c8e10d8079d720a6b4bffa84d00e84170017abb7e"
+    },
+    {
+      "path": "Burnett/Geometry/BackgroundConnection.lean",
+      "sha256": "822b71b040e2444b639dec41f03d59789a906cedc00e39c93107ff42cef2a051"
+    },
+    {
+      "path": "Burnett/Geometry/ConnectionError.lean",
+      "sha256": "5ea4303dee135799b3b6cbebc0e8ad41b104897228a0cc72c783fabff25784d1"
+    },
+    {
+      "path": "Burnett/Geometry/PerturbationJet.lean",
+      "sha256": "cc45acac06443a6a35f7a841eb184a9b50d075bc5be659cdf5dd88816e864b52"
+    },
+    {
+      "path": "Burnett/Geometry/ConnectionErrorSequence.lean",
+      "sha256": "17b524378878599eaa5574f82195f1e554f2caf3889a9c39f3e4d913a5e80c23"
+    },
+    {
+      "path": "Burnett/Analysis/UniformLInfinity.lean",
+      "sha256": "5bebbadfeb9b0b08ca02aef27b765aa52e15e85887789794400303b0a2ff7606"
+    },
+    {
+      "path": "Burnett/Analysis/Microlocal/PositiveFunctional.lean",
+      "sha256": "53c907c3c173fb4070f960e8a0508906ab800ad881069985fc7b8fa9f84b9f34"
+    }
+  ],
+  "inherited_leaf_sources_unchanged": [
+    {
+      "path": "Burnett/Algebra/ComplexFrame.lean",
+      "sha256": "3c6518dad59b9732b7dfcf2bb3fa5ae57b024f99db7ad40220b7cb8197406dbf"
+    },
+    {
+      "path": "Burnett/Algebra/ComplexPolarization.lean",
+      "sha256": "249ab6adc719f1eac2a1dadc845914a3f8400a983e0ca47ccd0693371e9a37b6"
+    },
+    {
+      "path": "Burnett/Algebra/FrameComposition.lean",
+      "sha256": "bd71e274305d96e8e90497e2ed76a057708f35b4ad7e0c6f73b01d00267ed92a"
+    },
+    {
+      "path": "Burnett/Algebra/HermitianScreen.lean",
+      "sha256": "ab2e440f28d987ddce05a01d22f3b938fc525b3712d0a947e4b26e8b2060a40d"
+    },
+    {
+      "path": "Burnett/Algebra/LorentzHermitian.lean",
+      "sha256": "a8da70ae4300acc89a0d30a16c3bfaba3a83c0307c6d4a15f0fdf11bbb04bc0b"
+    },
+    {
+      "path": "Burnett/Algebra/LorentzPhysical.lean",
+      "sha256": "73f6dcea54c0b48af7d938b3ef17d6a2fe867cdb81284c5318553a27aed11278"
+    },
+    {
+      "path": "Burnett/Algebra/MinkowskiNormalize.lean",
+      "sha256": "c27e344a006cb7764e0867cc1e4222807c56d52846e7d39c005c2ee31f703207"
+    },
+    {
+      "path": "Burnett/Algebra/MinkowskiNull.lean",
+      "sha256": "277fd0d247072e8edac1247a4fc5e727c35ae5e51fdd337a2de81b80a614a99c"
+    },
+    {
+      "path": "Burnett/Algebra/NullFrame.lean",
+      "sha256": "03fcb693c0143117bf9eac13e0bfcb0498fa758bba5bd880f1dcfb274f8e5dda"
+    },
+    {
+      "path": "Burnett/Algebra/NullKernel.lean",
+      "sha256": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d"
+    },
+    {
+      "path": "Burnett/Algebra/NullNormalForm.lean",
+      "sha256": "3264a89726705660d285dfbf9e79ac3318c7876d6382dafecf26d7d59991c6f1"
+    },
+    {
+      "path": "Burnett/Algebra/NullQuadratic.lean",
+      "sha256": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7"
+    },
+    {
+      "path": "Burnett/Algebra/NullScreen.lean",
+      "sha256": "dce3555ec1dfab4cffbb30b93e94e90536b8024d4f90d58a582abe79ba136c9c"
+    },
+    {
+      "path": "Burnett/Algebra/PhysicalQuotient.lean",
+      "sha256": "e6ef0341168f530ff36591fb8709b24b8a71e45762392b97d0bdfc06cbc08d07"
+    },
+    {
+      "path": "Burnett/Algebra/QuadraticDefs.lean",
+      "sha256": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09"
+    },
+    {
+      "path": "Burnett/Algebra/QuadraticExpansion.lean",
+      "sha256": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c"
+    },
+    {
+      "path": "Burnett/Algebra/RealPolarization.lean",
+      "sha256": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4"
+    },
+    {
+      "path": "Burnett/Algebra/RicciSymbol.lean",
+      "sha256": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8"
+    },
+    {
+      "path": "Burnett/Algebra/TensorFrame.lean",
+      "sha256": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906"
+    },
+    {
+      "path": "Burnett/Analysis/Compactness/CountableTests.lean",
+      "sha256": "0897e00360d3db4821640bb31ce813dd7013f506d2e318bcc6933f1d5844b892"
+    },
+    {
+      "path": "Burnett/Analysis/Compactness/DenseTests.lean",
+      "sha256": "6677f6d6de3dcb9228373da086718adcb99c54bca3b2ccde354ef8d15483f887"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/Counterexample.lean",
+      "sha256": "8fa1a023c46305378ae55d0d3e75685384f6257078ba499c236353d9db09ffc9"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/Distribution.lean",
+      "sha256": "7d1719d210497a3ecb314465705195631347e6fbe76ec8b14c375c80fe7edc77"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/Explicit.lean",
+      "sha256": "d0539e4bb4e7e5b0cfe46e9c7d7c2f19ea9835d1f0bcc68ce7d22e541096f658"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/FrequencyBounds.lean",
+      "sha256": "b2649a4fefb35ef24e8cb35bff25230c4aaeea5a8bb08637ac34886ae75bc5eb"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/LocalHminus.lean",
+      "sha256": "333795a059ad0afefd7ed5d326f35b7eb596b20446053c35182ddf3f706806b4"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullCompactGradient.lean",
+      "sha256": "8aa20edd64e304a224fefd41e37ce57494280f9556a43df7f0bab6d4c87c73d5"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullCutoff.lean",
+      "sha256": "facf6f8063d63aa3871b1f1e83320302eeb1eab67d807b42081c164842e778db"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullGeometry.lean",
+      "sha256": "79b26ceb0b2158b4792d4361458cfd3e6f6bc83e542aa085878c0194d01657c7"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullGradient.lean",
+      "sha256": "69065cf1a1c22376505b6409c80562ac6bf42c059eb0c7b04c1c4553bcc29822"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullGradientBridge.lean",
+      "sha256": "c9a0b506f1237503b7f19358a10c129593ac31abad838e9849ef98cabb02d34e"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullProjection.lean",
+      "sha256": "27173c6934dd64e2a5b111b64bd6e2708bfef179f4a0147de20c2d0aafb640d0"
+    },
+    {
+      "path": "Burnett/Analysis/Cubic/OffNullTail.lean",
+      "sha256": "bc72b6690360cd19426c7c35be4978003fd7c1475e0ba4ffe06f89f157f1ad00"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/Cosine.lean",
+      "sha256": "e499fcf401423368f5a9914f224d9b6ff5672016ea87d1d241bf0670aceedfb6"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/FiniteEnergy.lean",
+      "sha256": "f82f67d3f121b3133e5b87f12f63b0c7292b3c6a687cb8f2a78cc7cad9c7fcfc"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/L2Extension.lean",
+      "sha256": "50a4e0e3c3b88a8328e84284c38373ac5fe069c3b228cdeb156fe8f093250e20"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/Modulation.lean",
+      "sha256": "51adc4dd13038d069a87458eade548ff763de38c6ec7a0b5656991927f985b75"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/Projection.lean",
+      "sha256": "065b0091b2fc7b04f2f1d09be6728c4ee410bf7d5331d58dd81314ed5df641e7"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/SchwartzDensity.lean",
+      "sha256": "d1ceb830ab5c547461ee22b07bd44c368e231895a0f4ae157363a50d0b3fe094"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/SchwartzParseval.lean",
+      "sha256": "2d729ee3943f10f2fc4f5b5757d7aaeafc82c29599da02f9331c9cad3d37fd1e"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/SchwartzTail.lean",
+      "sha256": "3359c56b998114a9a22d3e651b3df97f1e2d1bd923de79fe9c8cc17447a59a99"
+    },
+    {
+      "path": "Burnett/Analysis/Fourier/SharpProjection.lean",
+      "sha256": "793893b17b546d6ce61bdb352dd0f5872b4d208dba5e6e60405064872b058d46"
+    },
+    {
+      "path": "Burnett/Analysis/IBP/CompactIBP.lean",
+      "sha256": "d4b039095cde7d2c4ef89eaba49196a2a2fb07a708db34e2b9e0f9ae972f8234"
+    },
+    {
+      "path": "Burnett/Analysis/IBP/LocalizedIBP.lean",
+      "sha256": "5807b3e7812ef705c342917797511d6f329cfa316984df091c4d19a3c95ea9f1"
+    },
+    {
+      "path": "Burnett/Analysis/Microlocal/PositiveKernel.lean",
+      "sha256": "8eb3166fcf1076df9920f94bf1aa2f5dabfd46e5d9df9f1be4c5eefbcd57408a"
+    },
+    {
+      "path": "Burnett/Analysis/Sobolev/GraphDual.lean",
+      "sha256": "23969ed0f181a613c3f34996faf34be215631552bf9c34518584b81daa1c123b"
+    },
+    {
+      "path": "Burnett/Analysis/Sobolev/L2Bounds.lean",
+      "sha256": "e9328a9475d253a8be9c79b01f7e0679c25de0cf2609a2113b86555ff6893452"
+    },
+    {
+      "path": "Burnett/Analysis/Sobolev/NonzeroTest.lean",
+      "sha256": "98ecce8b5cdd43d712f2270e6859bad8868747e0f4a1f9e13715b90cba4eb4e3"
+    },
+    {
+      "path": "Burnett/Analysis/Sobolev/Pairing.lean",
+      "sha256": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d"
+    },
+    {
+      "path": "Burnett/Analysis/Sobolev/TestJet.lean",
+      "sha256": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b"
+    },
+    {
+      "path": "Burnett/Geometry/BasisFrame.lean",
+      "sha256": "af704f4b469ddbb9a44235707572d9a34881c63d2dad6b2c38fa6a0331018364"
+    },
+    {
+      "path": "Burnett/Geometry/ConnectionDifference.lean",
+      "sha256": "062c62f115043a0a4ade85c06bf096f5474380165a70deeaa2bbd6e3645ee7ae"
+    },
+    {
+      "path": "Burnett/Geometry/CurvatureDifference.lean",
+      "sha256": "557febd907430e4bec86cdd3d842c1f6ae234b46e6e0d69500c0ed65080b7185"
+    },
+    {
+      "path": "Burnett/Geometry/CurvatureSymbolBridge.lean",
+      "sha256": "e128b105a7498c5f658a3e7bf4df95a5200de4d3e8cb614776fd03dcf3a9f08d"
+    },
+    {
+      "path": "Burnett/Geometry/FiberMetric.lean",
+      "sha256": "b574e597c29b8bac5f6f17c09bc1817a87b5ea8bab9f02a4a372c4bb18a8d522"
+    },
+    {
+      "path": "Burnett/Overview.lean",
+      "sha256": "9640b4cd42b93f3999a49d00d57a998ab256810c7cd4ca843f82d586483bbea8"
+    }
+  ],
+  "targets": [
+    {
+      "claim_id": "local-control:f04:inverse-sub-inverse",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.inverse_sub_inverse",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-inverse-le-of-small",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.norm_inverse_le_of_small",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-sub-inverse",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_sub_inverse",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-estimates-on",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_estimates_on",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-matrixInverse",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.continuousOn_matrixInverse",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverse",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.compact_uniform_inverse",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:matrixInverse-covariant",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.matrixInverse_covariant",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-inverseMetric",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.exists_pos_bound_inverseMetric",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverseMetric",
+      "module": "Burnett.Geometry.InverseSequence",
+      "declaration": "Burnett.Geometry.InverseSequence.compact_uniform_inverseMetric",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-computedConnection",
+      "module": "Burnett.Geometry.BackgroundConnection",
+      "declaration": "Burnett.Geometry.BackgroundConnection.continuousOn_computedConnection",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-metricConnection",
+      "module": "Burnett.Geometry.BackgroundConnection",
+      "declaration": "Burnett.Geometry.BackgroundConnection.exists_pos_bound_metricConnection",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-christoffel-le",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_christoffel_le",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-eq",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_eq",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-metricConnectionError-le-of-small",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_metricConnectionError_le_of_small",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_tendstoUniformlyOn",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-covariantJet-le",
+      "module": "Burnett.Geometry.PerturbationJet",
+      "declaration": "Burnett.Geometry.PerturbationJet.norm_covariantJet_le",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn-of-rawJet",
+      "module": "Burnett.Geometry.PerturbationJet",
+      "declaration": "Burnett.Geometry.PerturbationJet.metricConnectionError_tendstoUniformlyOn_of_rawJet",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-rawJet-le-covariantJet",
+      "module": "Burnett.Geometry.ConnectionErrorSequence",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.norm_rawJet_le_covariantJet",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-uniform-of-coordinate-bounds",
+      "module": "Burnett.Geometry.ConnectionErrorSequence",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.metricConnectionError_uniform_of_coordinate_bounds",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:norm-toLp-top-restrict-le",
+      "module": "Burnett.Analysis.UniformLInfinity",
+      "declaration": "Burnett.Analysis.norm_toLp_top_restrict_le",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f04:tendsto-toLp-top-of-uniformlyOn-zero",
+      "module": "Burnett.Analysis.UniformLInfinity",
+      "declaration": "Burnett.Analysis.tendsto_toLp_top_of_uniformlyOn_zero",
+      "slice_id": "F04",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 360,
+      "source_end": 369
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported-subspace",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported_subspace",
+      "slice_id": "F05",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 392,
+      "source_end": 410
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported",
+      "slice_id": "F05",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 392,
+      "source_end": 410
+    },
+    {
+      "claim_id": "local-control:f05:exists-nonneg-bound-on-compact",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.exists_nonneg_bound_on_compact",
+      "slice_id": "F05",
+      "parent_claim_id": "thm:quadratic",
+      "source_start": 392,
+      "source_end": 410
+    }
+  ],
+  "statement": "docs/statements/local-metric-control.md",
+  "independent_review": "docs/statements/local-metric-control-review.md",
+  "human_semantic_confirmation": "not-recorded-for-new-delivery",
+  "paper_formalization_verified": false
+}

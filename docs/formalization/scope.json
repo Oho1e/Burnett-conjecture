@@ -913,6 +913,126 @@
       "claim_id": "round2:f05:pointwise-limit-nonneg-of-vanishing-error",
       "module": "Burnett.Analysis.Compactness.DenseTests",
       "declaration": "Burnett.Analysis.Compactness.pointwise_limit_nonneg_of_vanishing_error"
+    },
+    {
+      "claim_id": "local-control:f04:inverse-sub-inverse",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.inverse_sub_inverse"
+    },
+    {
+      "claim_id": "local-control:f04:norm-inverse-le-of-small",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.norm_inverse_le_of_small"
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-sub-inverse",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_sub_inverse"
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-estimates-on",
+      "module": "Burnett.Geometry.InversePerturbation",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_estimates_on"
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-matrixInverse",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.continuousOn_matrixInverse"
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverse",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.compact_uniform_inverse"
+    },
+    {
+      "claim_id": "local-control:f04:matrixInverse-covariant",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.matrixInverse_covariant"
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-inverseMetric",
+      "module": "Burnett.Geometry.InverseField",
+      "declaration": "Burnett.Geometry.InverseField.exists_pos_bound_inverseMetric"
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverseMetric",
+      "module": "Burnett.Geometry.InverseSequence",
+      "declaration": "Burnett.Geometry.InverseSequence.compact_uniform_inverseMetric"
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-computedConnection",
+      "module": "Burnett.Geometry.BackgroundConnection",
+      "declaration": "Burnett.Geometry.BackgroundConnection.continuousOn_computedConnection"
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-metricConnection",
+      "module": "Burnett.Geometry.BackgroundConnection",
+      "declaration": "Burnett.Geometry.BackgroundConnection.exists_pos_bound_metricConnection"
+    },
+    {
+      "claim_id": "local-control:f04:norm-christoffel-le",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_christoffel_le"
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-eq",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_eq"
+    },
+    {
+      "claim_id": "local-control:f04:norm-metricConnectionError-le-of-small",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_metricConnectionError_le_of_small"
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn",
+      "module": "Burnett.Geometry.ConnectionError",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_tendstoUniformlyOn"
+    },
+    {
+      "claim_id": "local-control:f04:norm-covariantJet-le",
+      "module": "Burnett.Geometry.PerturbationJet",
+      "declaration": "Burnett.Geometry.PerturbationJet.norm_covariantJet_le"
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn-of-rawJet",
+      "module": "Burnett.Geometry.PerturbationJet",
+      "declaration": "Burnett.Geometry.PerturbationJet.metricConnectionError_tendstoUniformlyOn_of_rawJet"
+    },
+    {
+      "claim_id": "local-control:f04:norm-rawJet-le-covariantJet",
+      "module": "Burnett.Geometry.ConnectionErrorSequence",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.norm_rawJet_le_covariantJet"
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-uniform-of-coordinate-bounds",
+      "module": "Burnett.Geometry.ConnectionErrorSequence",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.metricConnectionError_uniform_of_coordinate_bounds"
+    },
+    {
+      "claim_id": "local-control:f04:norm-toLp-top-restrict-le",
+      "module": "Burnett.Analysis.UniformLInfinity",
+      "declaration": "Burnett.Analysis.norm_toLp_top_restrict_le"
+    },
+    {
+      "claim_id": "local-control:f04:tendsto-toLp-top-of-uniformlyOn-zero",
+      "module": "Burnett.Analysis.UniformLInfinity",
+      "declaration": "Burnett.Analysis.tendsto_toLp_top_of_uniformlyOn_zero"
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported-subspace",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported_subspace"
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported"
+    },
+    {
+      "claim_id": "local-control:f05:exists-nonneg-bound-on-compact",
+      "module": "Burnett.Analysis.Microlocal.PositiveFunctional",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.exists_nonneg_bound_on_compact"
     }
   ],
   "inventory": [
@@ -5202,6 +5322,462 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:inverse-sub-inverse",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InversePerturbation.inverse_sub_inverse",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-inverse-le-of-small",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InversePerturbation.norm_inverse_le_of_small",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-sub-inverse",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_sub_inverse",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:fiber-inverse-estimates-on",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InversePerturbation.fiber_inverse_estimates_on",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-matrixInverse",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InverseField.continuousOn_matrixInverse",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverse",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InverseField.compact_uniform_inverse",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:matrixInverse-covariant",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InverseField.matrixInverse_covariant",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-inverseMetric",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InverseField.exists_pos_bound_inverseMetric",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:compact-uniform-inverseMetric",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.InverseSequence.compact_uniform_inverseMetric",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:continuousOn-computedConnection",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BackgroundConnection.continuousOn_computedConnection",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:exists-pos-bound-metricConnection",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.BackgroundConnection.exists_pos_bound_metricConnection",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-christoffel-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_christoffel_le",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_eq",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-metricConnectionError-le-of-small",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionError.norm_metricConnectionError_le_of_small",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionError.metricConnectionError_tendstoUniformlyOn",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-covariantJet-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.PerturbationJet.norm_covariantJet_le",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-tendstoUniformlyOn-of-rawJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.PerturbationJet.metricConnectionError_tendstoUniformlyOn_of_rawJet",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-rawJet-le-covariantJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.norm_rawJet_le_covariantJet",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:metricConnectionError-uniform-of-coordinate-bounds",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionErrorSequence.metricConnectionError_uniform_of_coordinate_bounds",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:norm-toLp-top-restrict-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.norm_toLp_top_restrict_le",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f04:tendsto-toLp-top-of-uniformlyOn-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 360,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.tendsto_toLp_top_of_uniformlyOn_zero",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported-subspace",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported_subspace",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f05:abs-apply-le-of-supported",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.abs_apply_le_of_supported",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "local-control:f05:exists-nonneg-bound-on-compact",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-coordinate-or-explicit-general-tool",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PositiveFunctional.exists_nonneg_bound_on_compact",
+      "statement_record": "docs/statements/local-metric-control.md",
+      "semantic_review_record": "docs/statements/local-metric-control-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -5454,6 +6030,35 @@
       "all_reviewed_candidate_and_main_inputs_equal": true,
       "input_fingerprint": "46de7e3bbdb62a4f0570d68fe1f3d18e2f9d236487538ac95b84e54852201924",
       "agent_may_merge_next_pr": false
+    },
+    "pr7_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "d5c3d06e55c39776716f1fc2e4baddebd032ab00",
+      "reviewed_pr_head": "2ac0c537079654b4916855bc5631abd352ca2f6b",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 43870473532,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43870473532",
+      "main_ci_artifact": 14227532345,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "e2da0f479ce345fc7f118a554669b125851958d0154d64f9584568486b557da2",
+      "agent_may_merge_next_pr": false
+    },
+    "local_metric_control_delivery": {
+      "base_main": "d5c3d06e55c39776716f1fc2e4baddebd032ab00",
+      "inherited_targets": 176,
+      "new_support_targets": 24,
+      "targets": 200,
+      "inventory_entries": 271,
+      "lean_sources": 66,
+      "new_module_count": 9,
+      "statement": "docs/statements/local-metric-control.md",
+      "independent_review": "docs/statements/local-metric-control-review.md",
+      "source_bindings": "docs/statements/local-metric-control-source-bindings.json",
+      "original_auxiliary_D_and_physical_r_bridge": "open",
+      "F04_parent_closed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false
     }
   },
   "planning": {

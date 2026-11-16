@@ -42,3 +42,12 @@ import Burnett.Analysis.Fourier.Projection
 import Burnett.Analysis.Fourier.SharpProjection
 import Burnett.Analysis.Cubic.OffNullProjection
 import Burnett.Analysis.Compactness.DenseTests
+import Burnett.Geometry.InversePerturbation
+import Burnett.Geometry.InverseField
+import Burnett.Geometry.InverseSequence
+import Burnett.Geometry.BackgroundConnection
+import Burnett.Geometry.ConnectionError
+import Burnett.Geometry.PerturbationJet
+import Burnett.Geometry.ConnectionErrorSequence
+import Burnett.Analysis.UniformLInfinity
+import Burnett.Analysis.Microlocal.PositiveFunctional
