@@ -1,5 +1,9 @@
 # 原文索引与陈述入口
 
+[English](README.en.md)
+
+下文保留初始清点时的状态。当前进度见[范围清单](../formalization/scope.json)与[复核记录](../formalization/review.md)。
+
 锁定原文：`paper/burnett.tex`，SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`。行号为该源文件的1起算行号，不是PDF页码。
 
 初始索引定位17个正式结果环境（3 theorem、6 lemma、6 proposition、2 corollary），并登记33项未编号结果候选、15项定义候选。现已实现实非特征消去、完整实B展开、实零锥核/B公式及实规范交叉；一般极化、复Hermitian与商正性仍开放；17项正式结果仍待完成，父依赖仍仅部分形式化。候选范围及必要依赖闭包继续核对。环境编号按TeX计数器推得，尚未经编译PDF核验。
