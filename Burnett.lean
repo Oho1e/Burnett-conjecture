@@ -78,3 +78,15 @@ import Burnett.Geometry.ManifoldVolume
 import Burnett.Geometry.ConnectionCoordinateChange
 import Burnett.Geometry.ManifoldTensorNorm
 import Burnett.Geometry.ManifoldMetricSequence
+import Burnett.Geometry.ActualChartSecondJet
+import Burnett.Geometry.MetricJetNaturality
+import Burnett.Geometry.ConnectionTermNaturality
+import Burnett.Geometry.ChartVectorField
+import Burnett.Geometry.ChartConnectionNaturality
+import Burnett.Geometry.ManifoldVolumeRegularity
+import Burnett.Geometry.SmoothMetricConnection
+import Burnett.Geometry.GlobalCovariantDerivative
+import Burnett.Geometry.ChartDifferential
+import Burnett.Geometry.ChartLieBracket
+import Burnett.Geometry.GlobalLeviCivita
+import Burnett.Geometry.GlobalConnectionLaws

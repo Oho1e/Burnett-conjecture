@@ -1458,6 +1458,201 @@
       "claim_id": "global-geometry:manifoldmetricsequence:chart-conditions-of-global",
       "module": "Burnett.Geometry.ManifoldMetricSequence",
       "declaration": "Burnett.Geometry.ManifoldMetricSequence.chart_conditions_of_global"
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:contDiffOn-chartTransition-infty",
+      "module": "Burnett.Geometry.ActualChartSecondJet",
+      "declaration": "Burnett.Geometry.ActualChartSecondJet.contDiffOn_chartTransition_infty"
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:actualHessian-symmetric",
+      "module": "Burnett.Geometry.ActualChartSecondJet",
+      "declaration": "Burnett.Geometry.ActualChartSecondJet.actualHessian_symmetric"
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateBilinear-jet-change",
+      "module": "Burnett.Geometry.MetricJetNaturality",
+      "declaration": "Burnett.Geometry.MetricJetNaturality.coordinateBilinear_jet_change"
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateMetric-jet-change",
+      "module": "Burnett.Geometry.MetricJetNaturality",
+      "declaration": "Burnett.Geometry.MetricJetNaturality.coordinateMetric_jet_change"
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connection-change",
+      "module": "Burnett.Geometry.ConnectionTermNaturality",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateBilinear_connection_change"
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connectionTerm-change",
+      "module": "Burnett.Geometry.ConnectionTermNaturality",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateBilinear_connectionTerm_change"
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateMetric-connectionTerm-change",
+      "module": "Burnett.Geometry.ConnectionTermNaturality",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateMetric_connectionTerm_change"
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:coordinateVector-change",
+      "module": "Burnett.Geometry.ChartVectorField",
+      "declaration": "Burnett.Geometry.ChartVectorField.coordinateVector_change"
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:derivative-coordinateVector-change-hessian",
+      "module": "Burnett.Geometry.ChartVectorField",
+      "declaration": "Burnett.Geometry.ChartVectorField.derivative_coordinateVector_change_hessian"
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:connectionTerm-actualHessian",
+      "module": "Burnett.Geometry.ChartVectorField",
+      "declaration": "Burnett.Geometry.ChartVectorField.connectionTerm_actualHessian"
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:isSmooth-iff-contDiffOn-coordinateVector",
+      "module": "Burnett.Geometry.ChartVectorField",
+      "declaration": "Burnett.Geometry.ChartVectorField.isSmooth_iff_contDiffOn_coordinateVector"
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:coordinateDerivative-change",
+      "module": "Burnett.Geometry.ChartConnectionNaturality",
+      "declaration": "Burnett.Geometry.ChartConnectionNaturality.coordinateDerivative_change"
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:chartDerivative-eq",
+      "module": "Burnett.Geometry.ChartConnectionNaturality",
+      "declaration": "Burnett.Geometry.ChartConnectionNaturality.chartDerivative_eq"
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:coordinateMeasure-compact-lt-top",
+      "module": "Burnett.Geometry.ManifoldVolumeRegularity",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.coordinateMeasure_compact_lt_top"
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-apply-of-subset-chart",
+      "module": "Burnett.Geometry.ManifoldVolumeRegularity",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_apply_of_subset_chart"
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isOpenPosMeasure",
+      "module": "Burnett.Geometry.ManifoldVolumeRegularity",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_isOpenPosMeasure"
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isLocallyFiniteMeasure",
+      "module": "Burnett.Geometry.ManifoldVolumeRegularity",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_isLocallyFiniteMeasure"
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-compact-lt-top",
+      "module": "Burnett.Geometry.ManifoldVolumeRegularity",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_compact_lt_top"
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-matrixInverse",
+      "module": "Burnett.Geometry.SmoothMetricConnection",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_matrixInverse"
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-computedConnection-field",
+      "module": "Burnett.Geometry.SmoothMetricConnection",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_computedConnection_field"
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-coordinateBilinear-connection",
+      "module": "Burnett.Geometry.SmoothMetricConnection",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_coordinateBilinear_connection"
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:derivative-eq-chart",
+      "module": "Burnett.Geometry.GlobalCovariantDerivative",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.derivative_eq_chart"
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:coordinateVector-derivative",
+      "module": "Burnett.Geometry.GlobalCovariantDerivative",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.coordinateVector_derivative"
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:isSmooth-derivative",
+      "module": "Burnett.Geometry.GlobalCovariantDerivative",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.isSmooth_derivative"
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:tangentFrame-eq-mfderiv-symm",
+      "module": "Burnett.Geometry.ChartDifferential",
+      "declaration": "Burnett.Geometry.ChartDifferential.tangentFrame_eq_mfderiv_symm"
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:frameVector-eq-mfderiv-chart",
+      "module": "Burnett.Geometry.ChartDifferential",
+      "declaration": "Burnett.Geometry.ChartDifferential.frameVector_eq_mfderiv_chart"
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:scalar-mfderiv-eq-coordinate",
+      "module": "Burnett.Geometry.ChartDifferential",
+      "declaration": "Burnett.Geometry.ChartDifferential.scalar_mfderiv_eq_coordinate"
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:coordinateVector-mlieBracket",
+      "module": "Burnett.Geometry.ChartLieBracket",
+      "declaration": "Burnett.Geometry.ChartLieBracket.coordinateVector_mlieBracket"
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:mlieBracket-eq-tangentFrame",
+      "module": "Burnett.Geometry.ChartLieBracket",
+      "declaration": "Burnett.Geometry.ChartLieBracket.mlieBracket_eq_tangentFrame"
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:contMDiff-pairing",
+      "module": "Burnett.Geometry.GlobalLeviCivita",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.contMDiff_pairing"
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-metric-compatible",
+      "module": "Burnett.Geometry.GlobalLeviCivita",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.derivative_metric_compatible"
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-torsion-free",
+      "module": "Burnett.Geometry.GlobalLeviCivita",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.derivative_torsion_free"
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-compatible",
+      "module": "Burnett.Geometry.GlobalLeviCivita",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.metric_derivative_compatible"
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-torsion-free",
+      "module": "Burnett.Geometry.GlobalLeviCivita",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.metric_derivative_torsion_free"
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-left",
+      "module": "Burnett.Geometry.GlobalConnectionLaws",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_add_left"
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-left",
+      "module": "Burnett.Geometry.GlobalConnectionLaws",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_smul_left"
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-right",
+      "module": "Burnett.Geometry.GlobalConnectionLaws",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_add_right"
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-const-smul-right",
+      "module": "Burnett.Geometry.GlobalConnectionLaws",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_const_smul_right"
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-right",
+      "module": "Burnett.Geometry.GlobalConnectionLaws",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_smul_right"
     }
   ],
   "inventory": [
@@ -7818,6 +8013,747 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:contDiffOn-chartTransition-infty",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ActualChartSecondJet.contDiffOn_chartTransition_infty",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:actualHessian-symmetric",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ActualChartSecondJet.actualHessian_symmetric",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateBilinear-jet-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MetricJetNaturality.coordinateBilinear_jet_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateMetric-jet-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MetricJetNaturality.coordinateMetric_jet_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connection-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateBilinear_connection_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connectionTerm-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateBilinear_connectionTerm_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateMetric-connectionTerm-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionTermNaturality.coordinateMetric_connectionTerm_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:coordinateVector-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVectorField.coordinateVector_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:derivative-coordinateVector-change-hessian",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVectorField.derivative_coordinateVector_change_hessian",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:connectionTerm-actualHessian",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVectorField.connectionTerm_actualHessian",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:isSmooth-iff-contDiffOn-coordinateVector",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVectorField.isSmooth_iff_contDiffOn_coordinateVector",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:coordinateDerivative-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartConnectionNaturality.coordinateDerivative_change",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:chartDerivative-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartConnectionNaturality.chartDerivative_eq",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:coordinateMeasure-compact-lt-top",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.coordinateMeasure_compact_lt_top",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-apply-of-subset-chart",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_apply_of_subset_chart",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isOpenPosMeasure",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_isOpenPosMeasure",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isLocallyFiniteMeasure",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_isLocallyFiniteMeasure",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-compact-lt-top",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolumeRegularity.geometricMeasure_compact_lt_top",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-matrixInverse",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_matrixInverse",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-computedConnection-field",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_computedConnection_field",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-coordinateBilinear-connection",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.SmoothMetricConnection.contDiffOn_coordinateBilinear_connection",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:derivative-eq-chart",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.derivative_eq_chart",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:coordinateVector-derivative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.coordinateVector_derivative",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:isSmooth-derivative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalCovariantDerivative.isSmooth_derivative",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:tangentFrame-eq-mfderiv-symm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartDifferential.tangentFrame_eq_mfderiv_symm",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:frameVector-eq-mfderiv-chart",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartDifferential.frameVector_eq_mfderiv_chart",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:scalar-mfderiv-eq-coordinate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartDifferential.scalar_mfderiv_eq_coordinate",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:coordinateVector-mlieBracket",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartLieBracket.coordinateVector_mlieBracket",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:mlieBracket-eq-tangentFrame",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartLieBracket.mlieBracket_eq_tangentFrame",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:contMDiff-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.contMDiff_pairing",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-metric-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.derivative_metric_compatible",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.derivative_torsion_free",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.metric_derivative_compatible",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalLeviCivita.metric_derivative_torsion_free",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_add_left",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-left",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_smul_left",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_add_right",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-const-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_const_smul_right",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_smul_right",
+      "statement_record": "docs/statements/actual-chart-connection.md",
+      "semantic_review_record": "docs/statements/actual-chart-connection-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -8211,6 +9147,52 @@
       "F05_parent_closed": false,
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "main_merge_performed_by_agent": false
+    },
+    "pr11_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "cc13fd23a7d72e9cc05612b389d7f4a5944d761b",
+      "reviewed_pr_head": "e0345b2ed98c7fc2af5569a476acc427326ac333",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44020822875,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/44020822875",
+      "main_ci_artifact": 14301023073,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "b951de598470c3bc48d6f09266fefe1bc3d1ead3776ad52a1ddea287c95e5c77",
+      "agent_may_merge_next_pr": false
+    },
+    "actual_chart_connection_delivery": {
+      "targets": 324,
+      "inventory": 395,
+      "lean_sources": 105,
+      "new_targets": 39,
+      "new_modules": 12,
+      "public_declarations": 102,
+      "declaration_kinds": {
+        "def": 9,
+        "abbrev": 1,
+        "theorem": 92,
+        "lemma": 0
+      },
+      "base_main": "cc13fd23a7d72e9cc05612b389d7f4a5944d761b",
+      "inherited_targets": 285,
+      "statement": "docs/statements/actual-chart-connection.md",
+      "independent_review": "docs/statements/actual-chart-connection-review.md",
+      "source_bindings": "docs/statements/actual-chart-connection-source-bindings.json",
+      "actual_chart_Hessian_and_metric_jet": "implemented",
+      "global_smooth_affine_metric_connection": "implemented-with-metric-compatibility-and-actual-bracket-zero-torsion",
+      "base_geometric_volume_local_finiteness": "implemented-from-smooth-B",
+      "base_volume_open_positivity": "implemented-for-nondegenerate-B",
+      "geometric_volume_Radon_properties_and_maximal_atlas": "open",
+      "original_intrinsic_Dh_and_physical_cov3_norm": "open",
+      "complete_Lorentz_signature_time_orientation_and_full_admissibility": "open",
+      "abstract_global_connection_uniqueness": "not-claimed",
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true,
+      "goal_record": "docs/formalization/GOAL.zh-CN.md"
     }
   },
   "planning": {
