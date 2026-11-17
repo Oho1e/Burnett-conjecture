@@ -4,7 +4,7 @@
 
 更新日期：2026-11-16（经对抗性复核修订）。本文安排后续工作的顺序、并行方式、接口和交付；实际数学状态仍以 [scope.json](scope.json) 及其适用证据为准，登记的切片联系以 [slices.json](slices.json) 为准。
 
-第4节保留早期三线任务约定，第10–15节保留前批交付记录；当前数学续接以第17节为准，并按上述最新GOAL规则自动推进独立后续PR。数学状态仍以scope及其适用证据为准，不重新从初始调查开始。
+第4节保留早期三线任务约定，第10–15节保留前批交付记录；当前数学续接以第18节为准，并按上述最新GOAL规则自动推进独立后续PR。数学状态仍以scope及其适用证据为准，不重新从初始调查开始。
 
 ## 1. 目标、起点和使用方法
 
@@ -420,8 +420,6 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 
 ## 17. PR11合并后的实际图与全局连接续接
 
-本节保留PR12交付前记录；PR12已实际合入main，当前续接见第18节。
-
 用户手动合并PR11为main cc13fd23a7d72e9cc05612b389d7f4a5944d761b，整树等于受审e0345b2。[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/44020822875)成功，artifact14301023073的285目标/93源及全部target/project输入与受审PR11相同，指纹b951de598470c3bc48d6f09266fefe1bc3d1ead3776ad52a1ddea287c95e5c77；ZIP SHA a770db04a40ed0ba0e56ccdabf27c32b7a9c60f94f6d61bd1f72d2548d81c59f。恢复后再次只读核实main、该CI及保护匹配，未发生main变化。代理未远端merge。
 
 本批formalization/actual-chart-connection新增12模块、39支持目标，累计324目标/395inventory/105源，102公开声明均完成逐源独立回读、实际全类型/公理核签；准确对象与未闭合项见[说明](../statements/actual-chart-connection.md)、[复核](../statements/actual-chart-connection-review.md)及[绑定](../statements/actual-chart-connection-source-bindings.json)。原文/锁/标准/三公理、旧285目标/356库存/92数学叶源保持，当前完整机器/组合CI/工件证据另取。
@@ -439,9 +437,30 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 先做当前完整候选机器检查、实际最新main组合CI及工件独审，再交人类合并；就绪本身不暂停整个目标。main变化则刷新受影响候选及检查，不能拿旧绿色冒充新组合。代理不merge/auto-merge/强推/删branch/tag。新作者确认仍待记录，整篇/F04/F05不升级。
 
 
-## 18. 原 intrinsic Dh 与局部弱 Ricci 消费者
+## 18. PR12进入main后的并行续接
 
-PR12实际合入main42508e05，整树等于受审0c96620e；push CI44076390546成功，artifact14325064567全部324目标/105源及target/project输入等于受审版本。代理未远端合并。独立PR13完成X03完整旋转零矩无输运反例及实际CI/工件独审，交接快照13:34:51UTC仍未合并；封存报告在工作区reports/rotating-null-moment-2026-11-17。当前几何分支13:40:30由实际main425创建，不依赖X03；main前进后按真实新base保留已合成果并刷新候选。
+本节保留PR13交付前记录；PR13已实际合入main，当前续接见第19节。
+
+远端API确认PR12于2026-11-17 11:42:12 UTC合入main42508e05fbc45326e15797d978eb531e3484b837，整树等于受审0c96620e。[main push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/44076390546)成功；原始artifact14325064567的324目标/105源及全部target/project输入与受审PR12相同，指纹9dd0759daf4e665e08d8a80c944dbd704eee0afe9b5a5a1d8d1996cf053052b8，ZIP SHA29b985a276da8386f729afade37390721216c7130bd29c9d184dd1034d84dc58。代理未远端merge；旧PR12待人类合并报告是11:39:35观察的历史封存，不回写为合并后证据。
+
+已从实际main自动建立formalization/rotating-null-moments，基线CI成功，无需因等待合并停止。本批数学尚在推进；下面列的是当前真实工作与准确缺口，不表示X03或整篇已经完成。
+
+- X03：已有旋转T的全部点态性质、真实角延拓与canonical Hamilton识别、实际截断/统一导数界/缩放、四维保测分离、真实积分分部及测度积分误差界。单位余球真实测度模型、完整moment→00/12及最后大R矛盾已实现；完整bundle含全部T性质与¬∃μ。10源194声明已独立回读/全类型公理及推广delta核签，登记354目标/424库存/115源（29支持加原父目标）。当前完整候选检查与组合CI另取，不沿用main324/105绿色覆盖新增源。
+- 允许替代证明的既定标准在此适用：选a_R=χ(t)η(x/R)Fodd(ξ)，时间项由12矩和IBP给非零R³，空间误差由00矩界为R²，取大R反证。此法保留两个时间方向和原全部测试，不额外要求支撑分类或分支权重；没有声称已形式核验原文fold/branch那条可选证明路线。X03最终结果及全部T性质仍全部必做，不缩成一个局部代数例子。频率的物理单位条件是euclideanSquare ξ=1，不能拿Covector的Lean sup范数单位球替代。
+- 原几何Dh主线同时继续：私有31声明候选已证明真实dualDerivative/cov3、完整任意fiber图无关及所有preferred图下同r/g1−g0的auxiliaryJet对应，逐源独审在进行。物理cov3 Hilbert范数、tensor bundle光滑及原Dh条件装配仍OPEN；该候选尚未进入本X03分支的生产代码，也不混算main已交付内容。
+- 三子代理分别负责X03剩余模型、物理cov3范数和独立反向复核；协调者负责实际μ反证、公共源码/范围登记/合并候选。各写独占文件或私有目录，公共构建和Git只由协调者操作。一个成果冻结后滚动独审，其余就绪任务继续，避免全局等待屏障。
+
+接续以scope的数学状态及本轮实际源/回执为准。证据入口为工作区proof-scratch/pr12-ready-and-x03-rotating-moments-2026-11-17与各.project-verification独占目录；这些目录只是证据/工作包，不是工程import来源。后继PR最终仍需配套源、入口、登记、准确说明、完整机器检查、最新main组合CI和工件独审；整篇verified=false，新解释作者确认不自动继承。
+
+
+### 本批X03收口与下一分支
+
+父unnum:rotating-null-moment-example现指向NoTransport.rotating_null_moment_counterexample，用户原范围决定和source_ref3215–3239保留。最终4证明实际从原μ条件推出大R矛盾，消除ht/hb等中间输入，真覆盖给定T全部性质。准确模型与替代路线边界见[数学说明](../statements/rotating-null-moment.md)；新解释作者确认仍pending，不能据code合并签发整篇tag。完成当前完整候选/最新组合CI/工件独审后，按GOAL自动转下一可执行交付，不等人类合并暂停。并行intrinsic Dh候选已有31+20+10私有证明，须按其独审/当前main输入核对后在单独分支整合，不能混算为本X03的生产或CI结果。
+
+
+## 19. 原 intrinsic Dh 与局部弱 Ricci 消费者
+
+PR13已于2026-11-17 14:19:12UTC由外部操作合入main e563bad1，整树等于受审01e54的dba4b943。push CI44101803956及原始工件另核后才作就绪交接。PR14首候选1a980的350/421/111本地证据保持历史；当前按新main全部354目标/424库存/115源为基线，追加原26支持目标，形成380/450/121组合。普通本地merge保留原已发head祖先关系，后续normal push，不force或代理合并main。
 
 本批6模块91完整声明，选择26实际支持端点登记；计数见scope和源码绑定。原文、依赖锁、标准1.2/skill1.3.1及三公理保持。新作者确认待记录，整篇及F04/F05不升级。
 

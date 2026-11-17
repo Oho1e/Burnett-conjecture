@@ -1655,6 +1655,156 @@
       "declaration": "Burnett.Geometry.GlobalConnectionLaws.derivative_smul_right"
     },
     {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-homogeneous",
+      "module": "Burnett.Counterexamples.RotatingNull.AngularHamilton",
+      "declaration": "Burnett.RotatingNullMoments.oddAngular_homogeneous"
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-smooth",
+      "module": "Burnett.Counterexamples.RotatingNull.AngularHamilton",
+      "declaration": "Burnett.RotatingNullMoments.oddAngular_smooth"
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:flatHamilton-spatial-error-bound",
+      "module": "Burnett.Counterexamples.RotatingNull.AngularHamilton",
+      "declaration": "Burnett.RotatingNullMoments.flatHamilton_spatial_error_bound"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-components",
+      "module": "Burnett.Counterexamples.RotatingNull.RotatingTensor",
+      "declaration": "Burnett.RotatingNullMoments.tensor_components"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-positive-semidefinite",
+      "module": "Burnett.Counterexamples.RotatingNull.RotatingTensor",
+      "declaration": "Burnett.RotatingNullMoments.tensor_positive_semidefinite"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-trace-free",
+      "module": "Burnett.Counterexamples.RotatingNull.RotatingTensor",
+      "declaration": "Burnett.RotatingNullMoments.tensor_trace_free"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-divergence-free",
+      "module": "Burnett.Counterexamples.RotatingNull.RotatingTensor",
+      "declaration": "Burnett.RotatingNullMoments.tensor_divergence_free"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-time-cutoff",
+      "module": "Burnett.Counterexamples.RotatingNull.ScaledCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.exists_time_cutoff"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-spatial-cutoffs",
+      "module": "Burnett.Counterexamples.RotatingNull.ScaledCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.exists_spatial_cutoffs"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:scaled-spatial-derivative-majorant",
+      "module": "Burnett.Counterexamples.RotatingNull.ScaledCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.scaled_spatial_derivative_majorant"
+    },
+    {
+      "claim_id": "rotating-null:timeintegral:time-integral-identity",
+      "module": "Burnett.Counterexamples.RotatingNull.TimeIntegral",
+      "declaration": "Burnett.RotatingNullTime.time_integral_identity"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:split-measurePreserving",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeSplit",
+      "declaration": "Burnett.RotatingNullSpacetime.split_measurePreserving"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integrable-separated",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeSplit",
+      "declaration": "Burnett.RotatingNullSpacetime.integrable_separated"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integral-separated",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeSplit",
+      "declaration": "Burnett.RotatingNullSpacetime.integral_separated"
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-eq-flatHamilton",
+      "module": "Burnett.Counterexamples.RotatingNull.HamiltonIdentification",
+      "declaration": "Burnett.RotatingNullMoments.CanonicalHamilton.canonicalHamilton_eq_flatHamilton"
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-spatial-error-bound",
+      "module": "Burnett.Counterexamples.RotatingNull.HamiltonIdentification",
+      "declaration": "Burnett.RotatingNullMoments.CanonicalHamilton.canonicalHamilton_spatial_error_bound"
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:integrable-and-integral-error-bound",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureEstimates",
+      "declaration": "Burnett.RotatingNullMoments.MeasureEstimates.integrable_and_integral_error_bound"
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:temporal-integral-bound-of-transport",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureEstimates",
+      "declaration": "Burnett.RotatingNullMoments.MeasureEstimates.temporal_integral_bound_of_transport"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-spatial-majorant",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.phi_spatial_majorant"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-temporal-integral",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.phi_temporal_integral"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:beta-integral",
+      "module": "Burnett.Counterexamples.RotatingNull.SpacetimeCutoffs",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.beta_integral"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:compact-phase-over-base",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.compact_phase_over_base"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-phase-integrable",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.tensor_test_phase_integrable"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-base-integrable",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.tensor_test_base_integrable"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment00",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_moment00"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment12",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_moment12"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-transport",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_transport"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-separated-Hamilton-integrable",
+      "module": "Burnett.Counterexamples.RotatingNull.MeasureModel",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_separated_Hamilton_integrable"
+    },
+    {
+      "claim_id": "rotating-null:notransport:no-exists-transported-positive-representation",
+      "module": "Burnett.Counterexamples.RotatingNull.NoTransport",
+      "declaration": "Burnett.RotatingNullMoments.NoTransport.no_exists_transported_positive_representation"
+    },
+    {
+      "claim_id": "unnum:rotating-null-moment-example",
+      "module": "Burnett.Counterexamples.RotatingNull.NoTransport",
+      "declaration": "Burnett.RotatingNullMoments.NoTransport.rotating_null_moment_counterexample"
+    },
+    {
       "claim_id": "intrinsic-dh:intrinsiccov2-tensor-apply-eq-dualderivative",
       "module": "Burnett.Geometry.IntrinsicCov2",
       "declaration": "Burnett.Geometry.IntrinsicCov2.tensor_apply_eq_dualDerivative"
@@ -2377,15 +2527,21 @@
         "endline": 3239
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/source-index.json",
+      "modeling_status": "implemented-flat-interval-unit-phase-alternative-proof",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rotating-null-moment.md",
       "scope_decision": {
         "date": "2026-11-15",
         "decider": "user",
         "decision": "include-as-required-final-formalization-target",
         "statement_scope": "旋转零矩张量：守恒及正零锥二阶矩不足以推出输运（原文3215–3239）"
-      }
+      },
+      "declaration": "Burnett.RotatingNullMoments.NoTransport.rotating_null_moment_counterexample",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-complete-counterexample-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "original_folding_proof_route_certified": false,
+      "vacuum_sequence_constructed": false
     },
     {
       "claim_id": "unnum:rosen-multiscale-example",
@@ -8886,6 +9042,528 @@
       "does_not_close_parent_claim": true
     },
     {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-homogeneous",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.oddAngular_homogeneous",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-smooth",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.oddAngular_smooth",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:flatHamilton-spatial-error-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.flatHamilton_spatial_error_bound",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-components",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.tensor_components",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-positive-semidefinite",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.tensor_positive_semidefinite",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-trace-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.tensor_trace_free",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-divergence-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.tensor_divergence_free",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-time-cutoff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.exists_time_cutoff",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-spatial-cutoffs",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.exists_spatial_cutoffs",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:scaled-spatial-derivative-majorant",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.ScaledCutoffs.scaled_spatial_derivative_majorant",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:timeintegral:time-integral-identity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullTime.time_integral_identity",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:split-measurePreserving",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullSpacetime.split_measurePreserving",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integrable-separated",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullSpacetime.integrable_separated",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integral-separated",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullSpacetime.integral_separated",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-eq-flatHamilton",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.CanonicalHamilton.canonicalHamilton_eq_flatHamilton",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-spatial-error-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.CanonicalHamilton.canonicalHamilton_spatial_error_bound",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:integrable-and-integral-error-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureEstimates.integrable_and_integral_error_bound",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:temporal-integral-bound-of-transport",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureEstimates.temporal_integral_bound_of_transport",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-spatial-majorant",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.phi_spatial_majorant",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-temporal-integral",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.phi_temporal_integral",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:beta-integral",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.SpacetimeCutoffs.beta_integral",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:compact-phase-over-base",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.compact_phase_over_base",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-phase-integrable",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.tensor_test_phase_integrable",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-base-integrable",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.tensor_test_base_integrable",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment00",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_moment00",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment12",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_moment12",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-transport",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_transport",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-separated-Hamilton-integrable",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.MeasureModel.ambient_separated_Hamilton_integrable",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "rotating-null:notransport:no-exists-transported-positive-representation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rotating-null-moment-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3215,
+        "endline": 3239
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-X03-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.RotatingNullMoments.NoTransport.no_exists_transported_positive_representation",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
       "claim_id": "intrinsic-dh:intrinsiccov2-tensor-apply-eq-dualderivative",
       "kind": "supporting-lemma",
       "parent_claim_id": "thm:quadratic",
@@ -9805,10 +10483,41 @@
       "input_fingerprint": "9dd0759daf4e665e08d8a80c944dbd704eee0afe9b5a5a1d8d1996cf053052b8",
       "agent_may_merge_next_pr": false
     },
+    "rotating_null_moment_delivery": {
+      "targets": 354,
+      "inventory": 424,
+      "lean_sources": 115,
+      "new_targets": 30,
+      "new_support_targets": 29,
+      "new_modules": 10,
+      "public_declarations": 194,
+      "declaration_kinds": {
+        "def": 41,
+        "abbrev": 9,
+        "theorem": 140,
+        "lemma": 0,
+        "instance": 4
+      },
+      "base_main": "42508e05fbc45326e15797d978eb531e3484b837",
+      "inherited_targets": 324,
+      "statement": "docs/statements/rotating-null-moment.md",
+      "independent_review": "docs/statements/rotating-null-moment-review.md",
+      "source_bindings": "docs/statements/rotating-null-moment-source-bindings.json",
+      "X03_mathematical_proof": "implemented-and-independently-reviewed-in-explicit-unit-phase-model",
+      "proof_route": "large-spatial-cutoff-R3-main-term-vs-R2-error",
+      "original_folding_branch_weight_route_certified": false,
+      "original_tensor_properties_all_covered": true,
+      "Einstein_tensor_counterexample_or_vacuum_limit_claimed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true
+    },
     "intrinsic_dh_and_local_weak_delivery": {
-      "targets": 350,
-      "inventory": 421,
-      "lean_sources": 111,
+      "targets": 380,
+      "inventory": 450,
+      "lean_sources": 121,
       "new_targets": 26,
       "new_support_targets": 26,
       "new_modules": 6,
@@ -9820,10 +10529,10 @@
         "lemma": 0,
         "instance": 0
       },
-      "base_main": "42508e05fbc45326e15797d978eb531e3484b837",
-      "inherited_targets": 324,
-      "inherited_inventory": 395,
-      "inherited_lean_sources": 105,
+      "base_main": "e563bad1859629b05f0687dd5df5d5b475bee813",
+      "inherited_targets": 354,
+      "inherited_inventory": 424,
+      "inherited_lean_sources": 115,
       "source_bindings": "docs/statements/intrinsic-dh-geometry-source-bindings.json",
       "intrinsic_cov3_and_physical_norm": "implemented-and-independently-reviewed",
       "original_Dh_to_rawJet_and_E_local_control": "implemented-and-independently-reviewed",
@@ -9833,7 +10542,19 @@
       "F05_parent_closed": false,
       "author_confirmation": "not-recorded-for-new-delivery",
       "main_merge_performed_by_agent": false,
-      "automatic_independent_next_PR": true
+      "automatic_independent_next_PR": true,
+      "previous_reviewed_head": "1a980f855f2db1c7736dd29f36dcf12fa726b3bc",
+      "main_refresh": "ordinary-local-merge-and-normal-push",
+      "earlier_350_target_machine_evidence": "historical-inputs-only"
+    },
+    "pr13_main_integration": {
+      "status": "merged-source-tree-confirmed-push-CI-artifact-required-before-handoff",
+      "merged_main": "e563bad1859629b05f0687dd5df5d5b475bee813",
+      "reviewed_pr_head": "01e54fc28decf2e3ceac6da1e60eaca2dbfd3b17",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44101803956,
+      "agent_remote_merge_performed": false,
+      "main_ci_success_not_inferred_from_prior_PR": true
     }
   },
   "planning": {

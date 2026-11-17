@@ -1,12 +1,12 @@
 {
   "schema": "burnett-intrinsic-dh-local-weak-bindings/v1",
   "meaning": "Source/review identity, not author confirmation or whole-paper certification",
-  "base_main": "42508e05fbc45326e15797d978eb531e3484b837",
-  "base_main_ci": 44076390546,
+  "base_main": "e563bad1859629b05f0687dd5df5d5b475bee813",
+  "base_main_ci": 44101803956,
   "counts": {
-    "targets": 350,
-    "inventory": 421,
-    "lean_sources": 111,
+    "targets": 380,
+    "inventory": 450,
+    "lean_sources": 121,
     "new_targets": 26,
     "new_support_targets": 26,
     "new_modules": 6,
@@ -160,6 +160,16 @@
     "Burnett/Analysis/Sobolev/Pairing.lean": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d",
     "Burnett/Analysis/Sobolev/TestJet.lean": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b",
     "Burnett/Analysis/UniformLInfinity.lean": "5bebbadfeb9b0b08ca02aef27b765aa52e15e85887789794400303b0a2ff7606",
+    "Burnett/Counterexamples/RotatingNull/AngularHamilton.lean": "e9eef02f55c46345e322e511c1b53c0d6d53af07070b176f2587dd2af87c6695",
+    "Burnett/Counterexamples/RotatingNull/HamiltonIdentification.lean": "2afcdd61b37b67c8c200c1b70f6b1e8dbd42fa7f23bb322df5a29f357cee6bde",
+    "Burnett/Counterexamples/RotatingNull/MeasureEstimates.lean": "8a145a736ea367f787f0f534949e4a0af6938a2d00c4465ed9dfde7b6f972720",
+    "Burnett/Counterexamples/RotatingNull/MeasureModel.lean": "e516442a1a6cfef57f4ae6528811a9e2e188c4b6ba53e236952724c1c292ce1d",
+    "Burnett/Counterexamples/RotatingNull/NoTransport.lean": "349340a3dc13fae30ff96a0776f7dd5087e95124cf33632fc4e9867a1e3d318a",
+    "Burnett/Counterexamples/RotatingNull/RotatingTensor.lean": "d4f619987d1b42d064a089d213b1be82313d706767165ddf0c8d8e094621a823",
+    "Burnett/Counterexamples/RotatingNull/ScaledCutoffs.lean": "2f9afaec3b668c2379c0e4252fc64b698253ddc36828b5524f871353d93dec35",
+    "Burnett/Counterexamples/RotatingNull/SpacetimeCutoffs.lean": "ee7fb02c04d78f00a7faae7598b5320112caebb54b17bbe26ab01225f1a623bc",
+    "Burnett/Counterexamples/RotatingNull/SpacetimeSplit.lean": "807600fd0bab46389c24993596707f12e2635acda895e316165fed151f312b66",
+    "Burnett/Counterexamples/RotatingNull/TimeIntegral.lean": "df0c2ad975a7bec45c8ccea69c9bb9328ec4c6b69f78644ce41079c9ec0ea098",
     "Burnett/Geometry/ActualChartSecondJet.lean": "356e69a07b01a4271f7186d5740418f99a50847fed36700cb89f7810e5915bb8",
     "Burnett/Geometry/AffineConnection.lean": "7683b4acb03971876b338e9fa94cafdd117d69584608beee173de4e15b58b56c",
     "Burnett/Geometry/AuxiliaryConnection.lean": "036a0348ad826f478764548e5900ead9a39a63fa729d9858932f7c0290d2d354",
@@ -417,5 +427,7 @@
       "review_kind": "first-independent-mathematical-review-and-production-audit"
     }
   },
-  "whole_paper_verified": false
+  "whole_paper_verified": false,
+  "previous_reviewed_head": "1a980f855f2db1c7736dd29f36dcf12fa726b3bc",
+  "base_push_CI_and_artifact_must_be_verified_before_handoff": true
 }

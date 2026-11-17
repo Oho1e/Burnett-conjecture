@@ -176,6 +176,15 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 当前完整机器/实际main组合CI与工件证据另取，不复用旧285绿色。已按用户新指令把自动独立后继PR规则写入GOAL、AGENTS、工作文件及工程工作流；最终main合并仍人工，PR就绪不再无条件暂停目标。
 
 
+## 2026-11-17：PR12主线确认及X03完整反例
+
+API观测PR12实际合入main42508e05fbc45326e15797d978eb531e3484b837，整树等受审0c96620e。push CI44076390546成功，artifact14325064567全部324目标/105源及全部target/project输入相同，指纹9dd0759daf4e665e08d8a80c944dbd704eee0afe9b5a5a1d8d1996cf053052b8，ZIP SHA29b985a276da8386f729afade37390721216c7130bd29c9d184dd1034d84dc58；代理未远端merge。本地main已ff并从实际新main自动建独立后继分支。
+
+X03本批10源194公开声明（41def、9abbrev、140theorem、4named instances）完整生产源码/类型/公理独审通过，仅三基础公理；完整总定理涵盖原给定旋转T全部性质与无输运正表示。模型只原UnitPhase LF，不偷加ambient边界LF；Euclidean Q=1、两时间方向、完整矩测试和真实canonical输运均核准，主/误差真可积已闭。采用允许的大R替代证明，未冒称原fold/branch路线或真空反例。详情见[说明](../statements/rotating-null-moment.md)、[独审](../statements/rotating-null-moment-review.md)、[绑定](../statements/rotating-null-moment-source-bindings.json)。
+
+29支持目标加原父目标形成354目标/424库存/115源；旧324目标/395库存（该父项实现状态除外）/104数学叶源、文章、锁、标准、信任及旧确认保留。原父项不重复新增，scope_decision保留。当前完整机器/实际最新main组合CI与工件独审另取，作者新解释待确认，整篇/F04/F05仍不升级。GOAL保持自动独立后继与人类最终merge边界。
+
+
 ## 2026-11-17：原 Dh 与局部弱导数/连接误差
 
 PR12实际main42508e05/push CI44076390546/artifact14325064567已核全部324/105输入与受审0c96620e一致；独立PR13 X03完整反例已通过实际组合CI和原工件独审并封存，本分支不依赖其新源，代理均未远端合并。
@@ -183,3 +192,8 @@ PR12实际main42508e05/push CI44076390546/artifact14325064567已核全部324/105
 本批6模块91完整声明、26新增支持目标，350目标/421库存/111源。数学范围见[内禀Dh](../statements/intrinsic-dh-geometry.md)、[局部弱导数](../statements/local-weak-derivative.md)、[误差测试](../statements/local-weak-ricci.md)，所有源和逐项独审见[绑定](../statements/intrinsic-dh-geometry-source-bindings.json)。83项晋升后实际输出与冻结输出相同；新增8项独立数学首审及生产literal核签通过。正向作者不充当自身新数学独审。旧全部目标/库存/数学叶源、原文/锁/标准保持；新作者确认及全文认证未推定。
 
 原Dh/norm/measure到rawJet/E局部控制已闭，不沿用旧报告把它们再列OPEN。全weakRicci、H⁻¹、完整Lorentz包装及F04/F05仍OPEN。当前完整机器和远端组合CI/工件证据另取；最终合并由人类执行，独立后续工作自动继续。
+
+
+## 2026-11-17：PR13合并后的PR14组合刷新
+
+实际main e563bad1与受审PR13整树相同，原X03全部目标、源码、绑定与待确认状态保留。本批6源91及三数学说明字节不变；原26支持项并入新主线后共380目标/450库存/121源。旧350/111证据只对应首候选；新main push CI、当前完整机器/组合CI与原始工件分别核实后才交人类合并。代理仅正常本地merge和normal push，不force、auto-merge或合并远端main。
