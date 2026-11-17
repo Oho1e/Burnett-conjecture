@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `e36882788aade317f0fa35589363ce59de51be2e7336d2bf14b80d43b5fa56d2`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6d09ad0370e7a130e0220d904ca888134590ae467e585583414b75bacf10da80`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -754,7 +754,7 @@ Boundaries:
 
 Consumers: V03 (proof-input), V04 (proof-input), V06 (proof-input)
 
-Next: fix complexification/pairing conventions; first declare explicit finite-dimensional A,G,C and the Hermitian form, then independently model the differential-geometric interface S'=E.
+Next: The finite-dimensional variation of the actual ΓΓ density and the Fourier Hessian–Einstein pairing at η are implemented. Continue the full action and divergence identity, general backgrounds, and Hermitian kernel compression.
 
 <a id="v03"></a>
 
@@ -821,7 +821,7 @@ Refinement obligations within the slice (no separate completion status):
 - Angular-measure evenness from real fields, reduction to odd tests, and reality of Qh connect the variational residual to all final tests; that bridge was not listed separately originally. (Source lines1906–1915.)
 - Full polarized continuity for the current10-component equation is a substantive bridge from the stated lemma, not discharged by an identical citation name. (Source lines1990–2009.)
 
-Next: write C^(j),T_g,Gamma_m,V_Q in a10-component field basis. First formalize three-test-position polarization and Fourier normalization, then check the matrix continuity proof.
+Next: The actual cyclic vertex, three real amplitude linearity laws, and joint frequency degree two are implemented. Continue integral Fourier normalization, the full energy coefficients, and matrix continuity.
 
 <a id="v05"></a>
 
@@ -914,7 +914,7 @@ Boundaries:
 
 Consumers: V08 (proof-input), V09 (proof-input), V10 (proof-input), V12 (proof-input), C02 (proof-input)
 
-Next: create an exhaustive leg-type×frequency-position table with exact algebra, phase owner, rho gain, and later owner for every term. Complete the classification before opening correction consumers.
+Next: At η, the complex-bilinear one-gauge identity, the four-term low-gauge formula with two screens, and three-pure-gauge elimination are implemented. Continue the two-gauge cases, general metric covariance, and phase and symbol estimates for all frequency positions.
 
 <a id="v08"></a>
 

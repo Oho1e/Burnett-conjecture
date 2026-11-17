@@ -14,6 +14,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Precise interface for the main theorem](main-interface.en.md)
 - [First Ricci-symbol fragment](ricci-symbol.en.md) and [independent readback of its actual declarations](ricci-symbol-review.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
+- [Finite-dimensional variation and Ward identities](transport-ward.en.md) and [review](transport-ward-review.en.md)
 
 | Expected source number | Kind | Label | Source lines | Lean status |
 | --- | --- | --- | --- | --- |

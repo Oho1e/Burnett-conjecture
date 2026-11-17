@@ -1,0 +1,1431 @@
+{
+  "schema": "burnett-transport-ward-bindings/v1",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+  "counts": {
+    "targets": 409,
+    "inventory": 479,
+    "lean_sources": 139,
+    "new_targets": 8,
+    "new_modules": 8,
+    "public_declarations": 229
+  },
+  "production_gate_receipt_sha256": "2436202a55b44e65f15f5b317dd056c0e7d8192def9a8ccb31eeb4678987256d",
+  "private_alias_receipt_sha256": "5a38de76e639aa9c730bbf8383c31711e95b6e346d97ab1bc542419c4ce865fc",
+  "proof_plan_sha256": "4f1a90733446569675b40d22756f24116e495b52e8ce37a183cb3b76583219dc",
+  "independent_review_receipt_sha256": {
+    "base48": "1b1ef14be6689a8e3abce391e0f2c1b172dfd6fed5dd2bcaf7075ee805ddbc4b",
+    "three97": "bc50ccf40c0e8968bed22cfdbbba8e11388bf0c3805fb3e83c715850cf60d50a",
+    "hessian121": "0086d0ce3119ea31c36985d4a440b80844a3f927eac9a3bd207afc08bcaa1a57",
+    "oneGauge124-and-realScreen134": "eb924f287e324fb91a0be2b139e09a0a7488c6c0eb9ea0b11ff2b761852c0cd9",
+    "amplitude166": "88a9b7825107d30f9a003ac91eca96c43afb803692060c8ddfe6d7930135cee3",
+    "complex214": "fce9779f5a92c187cae437cb2a7f3fb3bc99ea506f151a324c53d5e8afd26e8a",
+    "complexScreen229": "467b38774172e6335fbd7c5218d2eea87192c50e53ee01024e74c704aeba87b0"
+  },
+  "existing_source_sha256": {
+    "Burnett/Geometry/CurvatureDifference.lean": "557febd907430e4bec86cdd3d842c1f6ae234b46e6e0d69500c0ed65080b7185",
+    "Burnett/Geometry/ConnectionDifference.lean": "062c62f115043a0a4ade85c06bf096f5474380165a70deeaa2bbd6e3645ee7ae",
+    "Burnett/Geometry/FiberMetric.lean": "b574e597c29b8bac5f6f17c09bc1817a87b5ea8bab9f02a4a372c4bb18a8d522",
+    "Burnett/Algebra/TensorFrame.lean": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906",
+    "Burnett/Algebra/RealPolarization.lean": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
+    "Burnett/Algebra/NullQuadratic.lean": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7",
+    "Burnett/Algebra/NullKernel.lean": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d",
+    "Burnett/Algebra/QuadraticDefs.lean": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09",
+    "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "Burnett/Algebra/QuadraticExpansion.lean": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c",
+    "Burnett/Geometry/InverseField.lean": "d2b4b944e2d6b868d45fe76970b994d011651af0ef71a6c228f07daad9eb4ec6",
+    "Burnett/Geometry/InversePerturbation.lean": "9b1e3f6e41ef8a5be72acd5f650955378994ce678a73f2899b4267531c2a4301",
+    "Burnett/Algebra/ComplexPolarization.lean": "249ab6adc719f1eac2a1dadc845914a3f8400a983e0ca47ccd0693371e9a37b6"
+  },
+  "modules": [
+    {
+      "path": "Burnett/Analysis/TransportWard/MetricVariation.lean",
+      "module": "Burnett.Analysis.TransportWard.MetricVariation",
+      "source_sha256": "2e0375e9842c420ede33f9da91184fc0148441f6a9bcf8f9ee4631c084f03d07",
+      "proof_body_sha256": "2e0375e9842c420ede33f9da91184fc0148441f6a9bcf8f9ee4631c084f03d07",
+      "direct_imports": [
+        "Burnett.Geometry.InverseField",
+        "Mathlib.Analysis.Matrix",
+        "Mathlib.Analysis.Calculus.FDeriv.Mul",
+        "Mathlib.Analysis.Calculus.Deriv.Mul",
+        "Mathlib.Analysis.Calculus.Deriv.Comp",
+        "Mathlib.Analysis.SpecialFunctions.Sqrt",
+        "Mathlib.Analysis.Calculus.Deriv.Abs",
+        "Mathlib.Topology.Instances.Matrix",
+        "Mathlib.Analysis.Calculus.Deriv.Add",
+        "Burnett.Geometry.CurvatureDifference"
+      ],
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Burnett.Analysis.TransportWardSymbol.Mat",
+          "proposed_source_line": 20
+        },
+        {
+          "kind": "abbrev",
+          "name": "Burnett.Analysis.TransportWardSymbol.Cov",
+          "proposed_source_line": 21
+        },
+        {
+          "kind": "abbrev",
+          "name": "Burnett.Analysis.TransportWardSymbol.Jet",
+          "proposed_source_line": 22
+        },
+        {
+          "kind": "abbrev",
+          "name": "Burnett.Analysis.TransportWardSymbol.Conn",
+          "proposed_source_line": 23
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseMatrix",
+          "proposed_source_line": 25
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.detMultilinear",
+          "proposed_source_line": 27
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_det_path",
+          "proposed_source_line": 30
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.traceVariation",
+          "proposed_source_line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.det_updateRow_eq_traceTerm",
+          "proposed_source_line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_det_path_of_nonsingular",
+          "proposed_source_line": 56
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricDensity",
+          "proposed_source_line": 67
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricDensity_path",
+          "proposed_source_line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_matrixInverse_entry_path",
+          "proposed_source_line": 101
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.planeJet",
+          "proposed_source_line": 131
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.christoffel_plane",
+          "proposed_source_line": 133
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.christoffel_plane_pureGauge",
+          "proposed_source_line": 141
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.quadraticAction",
+          "proposed_source_line": 148
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient",
+          "proposed_source_line": 152
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaSign",
+          "proposed_source_line": 155
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.eta",
+          "proposed_source_line": 157
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.eta_mul_eta",
+          "proposed_source_line": 159
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.matrixInverse_eta",
+          "proposed_source_line": 167
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.christoffel_eta",
+          "proposed_source_line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.quadraticAction_eta",
+          "proposed_source_line": 174
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kinetic_eta_plane_pureGauge",
+          "proposed_source_line": 180
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseVariation",
+          "proposed_source_line": 199
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseVariation_apply",
+          "proposed_source_line": 201
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionVariation",
+          "proposed_source_line": 208
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_inverseMatrix_entry_path",
+          "proposed_source_line": 211
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_christoffel_inverse_path",
+          "proposed_source_line": 218
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.quadraticConnectionVariation",
+          "proposed_source_line": 226
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_quadraticDifference",
+          "proposed_source_line": 230
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.quadraticActionVariation",
+          "proposed_source_line": 239
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_quadraticAction_inverse_path",
+          "proposed_source_line": 244
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricActionDensity",
+          "proposed_source_line": 258
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.actionDensityVariation",
+          "proposed_source_line": 261
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricActionDensity_path",
+          "proposed_source_line": 265
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricKineticCoefficient",
+          "proposed_source_line": 274
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricKineticCoefficient_eq_polarization",
+          "proposed_source_line": 277
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg",
+          "proposed_source_line": 284
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricKineticCoefficient_path",
+          "proposed_source_line": 287
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex",
+          "proposed_source_line": 299
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_eq_actual_cyclic_variation",
+          "proposed_source_line": 305
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_comm",
+          "proposed_source_line": 316
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_swap_first_two",
+          "proposed_source_line": 321
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_cyclic",
+          "proposed_source_line": 327
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricDensity_eta",
+          "proposed_source_line": 334
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricKineticCoefficient_eta_pureGauge",
+          "proposed_source_line": 337
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/ThreeGauge.lean",
+      "module": "Burnett.Analysis.TransportWard.ThreeGauge",
+      "source_sha256": "dc4872923068d58e65d1e93c85f53a6a09bf87252149611108488925cf17f5f5",
+      "proof_body_sha256": "f55003e0b41bfacd380043dffd33cc5fe63190f9b5fa6a782724e503ff1fdabb",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.MetricVariation"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.koszul_add_jet",
+          "proposed_source_line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.christoffel_add_jet",
+          "proposed_source_line": 17
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross",
+          "proposed_source_line": 22
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.quadraticDifference_add_connections",
+          "proposed_source_line": 25
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross",
+          "proposed_source_line": 32
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_eq_cross",
+          "proposed_source_line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross_add_left",
+          "proposed_source_line": 41
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross_add_right",
+          "proposed_source_line": 47
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_add_left",
+          "proposed_source_line": 53
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_add_right",
+          "proposed_source_line": 58
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_add_left",
+          "proposed_source_line": 63
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_add_right",
+          "proposed_source_line": 68
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.bilinearPair",
+          "proposed_source_line": 73
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.rankOneConnection",
+          "proposed_source_line": 75
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross_rankOne",
+          "proposed_source_line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.contract_raised_eq_bilinearPair",
+          "proposed_source_line": 87
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.weightedPair_factor",
+          "proposed_source_line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_pureGauge",
+          "proposed_source_line": 105
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeMatrix",
+          "proposed_source_line": 129
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeKineticScalar",
+          "proposed_source_line": 131
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_pureGauge",
+          "proposed_source_line": 136
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair",
+          "proposed_source_line": 143
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_eq_sum",
+          "proposed_source_line": 145
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_comm",
+          "proposed_source_line": 149
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_add_left",
+          "proposed_source_line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_add_right",
+          "proposed_source_line": 158
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_neg_left",
+          "proposed_source_line": 161
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_neg_right",
+          "proposed_source_line": 164
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_product",
+          "proposed_source_line": 167
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseVariation_eta_entry",
+          "proposed_source_line": 173
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.bilinearPair_inverseVariation_eta_pureGauge",
+          "proposed_source_line": 180
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.traceVariation_eta",
+          "proposed_source_line": 199
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.traceVariation_eta_pureGauge",
+          "proposed_source_line": 204
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricPair",
+          "proposed_source_line": 212
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricPair_eta",
+          "proposed_source_line": 214
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricPair_path",
+          "proposed_source_line": 219
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricPair_pureGauge_eta",
+          "proposed_source_line": 226
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricDensity_pureGauge_eta",
+          "proposed_source_line": 233
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeMetricScalar",
+          "proposed_source_line": 247
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.metricKineticCoefficient_pureGauge",
+          "proposed_source_line": 252
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaGaugeKinetic",
+          "proposed_source_line": 258
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeMetricScalar_eta",
+          "proposed_source_line": 262
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPairVariation",
+          "proposed_source_line": 266
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaGaugeKineticVariation",
+          "proposed_source_line": 269
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeCubicLegPolynomial",
+          "proposed_source_line": 278
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_gaugeMetricScalar_pureGauge_eta",
+          "proposed_source_line": 281
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_eta_three_gauge_identification",
+          "proposed_source_line": 291
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeCubicLegPolynomial_conserved_sum",
+          "proposed_source_line": 305
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_eta_three_pureGauge",
+          "proposed_source_line": 318
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/HessianPhase.lean",
+      "module": "Burnett.Analysis.TransportWard.HessianPhase",
+      "source_sha256": "344ac7f03b5257e9175c1adc673675e41d1057617d1fb714e69b1db2afb74151",
+      "proof_body_sha256": "8e70174f336ddee1c82b0d0967cb8024129213ac4e3e5f0a91888a852fe4290b",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.ThreeGauge"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCrossVariation",
+          "proposed_source_line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_connectionCross",
+          "proposed_source_line": 16
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCrossVariation",
+          "proposed_source_line": 25
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_gammaCross_inverse_path",
+          "proposed_source_line": 32
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_eq_cross_variation",
+          "proposed_source_line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseMatrix_eta",
+          "proposed_source_line": 62
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_eta_eq_cross_variation",
+          "proposed_source_line": 64
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing",
+          "proposed_source_line": 74
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.lieTensorSymbol",
+          "proposed_source_line": 79
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.lieTensorSymbol_symmetric",
+          "proposed_source_line": 83
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_eta",
+          "proposed_source_line": 96
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionVariation_eta",
+          "proposed_source_line": 101
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCrossVariation_eta",
+          "proposed_source_line": 106
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinSymbolEta",
+          "proposed_source_line": 120
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinPairingEta",
+          "proposed_source_line": 124
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.calibrationTime",
+          "proposed_source_line": 127
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.calibrationScreen",
+          "proposed_source_line": 129
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.calibration_kinetic_coefficient",
+          "proposed_source_line": 131
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.calibration_fourier_hessian",
+          "proposed_source_line": 140
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.calibration_einstein_pairing",
+          "proposed_source_line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_eta_eq_einstein",
+          "proposed_source_line": 151
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_eta_eq_zero_of_ricci_kernel",
+          "proposed_source_line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.ricciSymbol_eta_phase_of_tracefree_contracted",
+          "proposed_source_line": 185
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinSymbolEta_phase_of_tracefree_contracted",
+          "proposed_source_line": 191
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/OneGauge.lean",
+      "module": "Burnett.Analysis.TransportWard.OneGauge",
+      "source_sha256": "3ba281c229c476fec7d8a0a83361a652724779d12005e71a323ece5e5383a690",
+      "proof_body_sha256": "109a77b75833b5fa2a57b9ed16c4bc307b5c8462749040110b7d6a50590de8d8",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.HessianPhase"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionVariation_plane_pureGauge",
+          "proposed_source_line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_eta_one_pureGauge_ward",
+          "proposed_source_line": 17
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_eta_one_gauge_eq_zero_of_ricci_kernels",
+          "proposed_source_line": 45
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/RealScreen.lean",
+      "module": "Burnett.Analysis.TransportWard.RealScreen",
+      "source_sha256": "b9153492aa4980f5d9e854e55755806e90446df11270a7bb843e8e364952f176",
+      "proof_body_sha256": "c29d92ed28e5347c95f15e365f311c80b94b24c3b0d4fb0b7122745e68bbe72c",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.OneGauge"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.screenCoefficientEta",
+          "proposed_source_line": 12
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.gaugeContractionEta",
+          "proposed_source_line": 17
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.eta_raised_contract_eq_pair",
+          "proposed_source_line": 20
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.screenCoefficientEta_comm",
+          "proposed_source_line": 25
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.screenCoefficientEta_add_right",
+          "proposed_source_line": 37
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.screenCoefficientEta_smul_right",
+          "proposed_source_line": 43
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinPairingEta_phase",
+          "proposed_source_line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.screenCoefficientEta_lieTensorSymbol",
+          "proposed_source_line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.etaPair_conserved",
+          "proposed_source_line": 84
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_eta_lowGauge_screen",
+          "proposed_source_line": 100
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/Amplitude.lean",
+      "module": "Burnett.Analysis.TransportWard.Amplitude",
+      "source_sha256": "c531fb40fb1e30bb8711d547afa4d301b2f4732e9afdfe6ae8f57ec767ba13a9",
+      "proof_body_sha256": "7dd3b9655fa5356af6fd41f3089d45bd980e45b30cd68515ef60f9499881a49b",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.HessianPhase"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseVariation_add_metric_direction",
+          "proposed_source_line": 12
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.inverseVariation_smul_metric_direction",
+          "proposed_source_line": 18
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionVariation_add_metric_direction",
+          "proposed_source_line": 34
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionVariation_smul_metric_direction",
+          "proposed_source_line": 40
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.traceVariation_add_metric_direction",
+          "proposed_source_line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.traceVariation_smul_metric_direction",
+          "proposed_source_line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCrossVariation_add_metric_direction",
+          "proposed_source_line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCrossVariation_smul_metric_direction",
+          "proposed_source_line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_add_metric_direction",
+          "proposed_source_line": 102
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_smul_metric_direction",
+          "proposed_source_line": 108
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.koszul_smul_jet",
+          "proposed_source_line": 115
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.christoffel_smul_jet",
+          "proposed_source_line": 120
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross_smul_left",
+          "proposed_source_line": 126
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.connectionCross_smul_right",
+          "proposed_source_line": 137
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_smul_left",
+          "proposed_source_line": 148
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.gammaCross_smul_right",
+          "proposed_source_line": 157
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_smul_left",
+          "proposed_source_line": 166
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.kineticCoefficient_smul_right",
+          "proposed_source_line": 171
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_add_left_jet",
+          "proposed_source_line": 182
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_add_right_jet",
+          "proposed_source_line": 194
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_smul_left_jet",
+          "proposed_source_line": 206
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalLeg_smul_right_jet",
+          "proposed_source_line": 218
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.planeJet_add_amplitude",
+          "proposed_source_line": 230
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.planeJet_smul_amplitude",
+          "proposed_source_line": 235
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.planeJet_smul_covector",
+          "proposed_source_line": 241
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_first_amplitude",
+          "proposed_source_line": 247
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_smul_first_amplitude",
+          "proposed_source_line": 256
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_second_amplitude",
+          "proposed_source_line": 264
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_smul_second_amplitude",
+          "proposed_source_line": 273
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_third_amplitude",
+          "proposed_source_line": 280
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_smul_third_amplitude",
+          "proposed_source_line": 289
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_frequency_homogeneity",
+          "proposed_source_line": 296
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/ComplexWard.lean",
+      "module": "Burnett.Analysis.TransportWard.ComplexWard",
+      "source_sha256": "2daa568ea7c2dcb5070126cc3a7fdd50bf7feecffe0b89f6a0938df0430f7204",
+      "proof_body_sha256": "503ba82dbf8f8a84db8b821303341c5710545dfada9a168dcd0d82c18bbc45aa",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.Amplitude",
+        "Burnett.Analysis.TransportWard.OneGauge",
+        "Burnett.Algebra.ComplexPolarization"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude",
+          "proposed_source_line": 14
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude",
+          "proposed_source_line": 16
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_add",
+          "proposed_source_line": 18
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_add",
+          "proposed_source_line": 23
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_smul",
+          "proposed_source_line": 28
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_smul",
+          "proposed_source_line": 35
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_ofReal",
+          "proposed_source_line": 42
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_ofReal",
+          "proposed_source_line": 46
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_symmetric",
+          "proposed_source_line": 50
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_symmetric",
+          "proposed_source_line": 55
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_zero_first_amplitude",
+          "proposed_source_line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_zero_second_amplitude",
+          "proposed_source_line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalVertex_zero_third_amplitude",
+          "proposed_source_line": 70
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex",
+          "proposed_source_line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_add_first_amplitude",
+          "proposed_source_line": 88
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_smul_first_amplitude",
+          "proposed_source_line": 99
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_swap_first_two",
+          "proposed_source_line": 111
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_cyclic",
+          "proposed_source_line": 119
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_add_second_amplitude",
+          "proposed_source_line": 127
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_smul_second_amplitude",
+          "proposed_source_line": 136
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_add_third_amplitude",
+          "proposed_source_line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_smul_third_amplitude",
+          "proposed_source_line": 153
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_ofReal",
+          "proposed_source_line": 161
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_frequency_homogeneity",
+          "proposed_source_line": 171
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.realGaugePotential",
+          "proposed_source_line": 185
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagGaugePotential",
+          "proposed_source_line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_complexPureGauge",
+          "proposed_source_line": 189
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_complexPureGauge",
+          "proposed_source_line": 196
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complex_re_fin_sum",
+          "proposed_source_line": 203
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complex_im_fin_sum",
+          "proposed_source_line": 206
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinSymbolEta",
+          "proposed_source_line": 210
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta",
+          "proposed_source_line": 214
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinSymbolEta_re",
+          "proposed_source_line": 217
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinSymbolEta_im",
+          "proposed_source_line": 227
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta_re",
+          "proposed_source_line": 237
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta_im",
+          "proposed_source_line": 245
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinPairingEta_add_right",
+          "proposed_source_line": 254
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinPairingEta_sub_right",
+          "proposed_source_line": 258
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.raiseCovector_eta_entry",
+          "proposed_source_line": 262
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexGaugeContractionEta",
+          "proposed_source_line": 266
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexGeneratorPairEta",
+          "proposed_source_line": 269
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexLieTensorSymbolEta",
+          "proposed_source_line": 272
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.realAmplitude_complexLieTensorSymbolEta",
+          "proposed_source_line": 276
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.imagAmplitude_complexLieTensorSymbolEta",
+          "proposed_source_line": 290
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexLieTensorSymbolEta_symmetric",
+          "proposed_source_line": 304
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_pureGauge_ward",
+          "proposed_source_line": 317
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta_eq_zero_of_ricci_kernel",
+          "proposed_source_line": 356
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_gauge_eq_zero_of_ricci_kernels",
+          "proposed_source_line": 362
+        }
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/TransportWard/ComplexScreen.lean",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "source_sha256": "8c48ec2ffd33107d07202d8579a874389d9605e4b273bbf9275dd37f053411cb",
+      "proof_body_sha256": "af8e90d29eb5e223038fea2e15c76c2fcd70f7bda6165717cdadbf26e9623286",
+      "direct_imports": [
+        "Burnett.Analysis.TransportWard.ComplexWard"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_comm",
+          "proposed_source_line": 11
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.einsteinPairingEta_comm",
+          "proposed_source_line": 20
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta_comm",
+          "proposed_source_line": 27
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_pureGauge_ward_paper_order",
+          "proposed_source_line": 43
+        },
+        {
+          "kind": "def",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexScreenCoefficientEta",
+          "proposed_source_line": 54
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexScreenCoefficientEta_comm",
+          "proposed_source_line": 58
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexScreenCoefficientEta_add_right",
+          "proposed_source_line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexScreenCoefficientEta_smul_right",
+          "proposed_source_line": 77
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinSymbolEta_phase",
+          "proposed_source_line": 84
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexEinsteinPairingEta_phase",
+          "proposed_source_line": 107
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexScreenCoefficientEta_lieTensorSymbol",
+          "proposed_source_line": 128
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexGeneratorPairEta_sub_right",
+          "proposed_source_line": 139
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexGeneratorPairEta_conserved",
+          "proposed_source_line": 144
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_lowGauge_screen",
+          "proposed_source_line": 157
+        },
+        {
+          "kind": "theorem",
+          "name": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_three_pureGauge",
+          "proposed_source_line": 188
+        }
+      ]
+    }
+  ],
+  "registered_targets": [
+    {
+      "claim_id": "ward-support:actual-density-metric-variation",
+      "module": "Burnett.Analysis.TransportWard.MetricVariation",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricActionDensity_path",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 1745,
+          "endline": 1758,
+          "slice": "V02",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Actual GammaGamma density derivative; full curvature-action/divergence identification remains open.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:actual-cyclic-principal-vertex",
+      "module": "Burnett.Analysis.TransportWard.MetricVariation",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_eq_actual_cyclic_variation",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 1959,
+          "endline": 1975,
+          "slice": "V04",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Actual negative cyclic metric-kinetic derivative; no integral Fourier normalization claimed.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:eta-fourier-hessian-einstein",
+      "module": "Burnett.Analysis.TransportWard.HessianPhase",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_eta_eq_einstein",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 1766,
+          "endline": 1775,
+          "slice": "V02",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Real canonical eta and ordered lower-index tensor pairing.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-offshell-one-gauge",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_pureGauge_ward_paper_order",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 2123,
+          "endline": 2136,
+          "slice": "V07",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Complex bilinear amplitudes and signed real momenta with conservation; no kernel or null restriction.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-low-gauge-four-terms",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_lowGauge_screen",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 2137,
+          "endline": 2157,
+          "slice": "V07",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Canonical eta, actual symmetric tracefree transverse screen constraints; no normalized frequency estimate.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-three-gauge",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_three_pureGauge",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 2232,
+          "endline": 2233,
+          "slice": "V07",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Signed conserved momenta; no nullness/nonzero requirement.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:real-amplitude-linearity",
+      "module": "Burnett.Analysis.TransportWard.Amplitude",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_first_amplitude",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 1968,
+          "endline": 1975,
+          "slice": "V04",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        },
+        {
+          "path": "paper/burnett.tex",
+          "line": 2237,
+          "endline": 2241,
+          "slice": "V07",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "One representative additive endpoint with inventory retaining all three slot scalar/additive laws; no full energy 1,3,3,1 assertion.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    },
+    {
+      "claim_id": "ward-support:frequency-degree-two",
+      "module": "Burnett.Analysis.TransportWard.Amplitude",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_frequency_homogeneity",
+      "source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 1968,
+          "endline": 1975,
+          "slice": "V04",
+          "sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e"
+        }
+      ],
+      "scope_qualifier": "Common real frequency scaling including zero/negative; no radial/angular norm estimates.",
+      "proposed_only_not_central_registered": true,
+      "new_author_confirmation": "pending"
+    }
+  ]
+}
