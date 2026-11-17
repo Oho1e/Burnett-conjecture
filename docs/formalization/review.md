@@ -148,3 +148,11 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批在该实际main上新增8模块、27支持目标，合227目标、298条inventory、74源。实际物理协变范数、Γr辅助导数、较大紧邻域的ae到逐点、正密度与sqrt(detR)坐标体积及真实E的L∞构造，见[解释](../statements/auxiliary-r-control.md)、[独立回读](../statements/auxiliary-r-control-review.md)和[冻结绑定](../statements/auxiliary-r-control-source-bindings.json)。85公开声明已独立实际核签，仅三公理；原文、锁、65旧叶源、旧确认和−B符号不变。
 
 流形/图、原几何D及体积推前、混合(1,2)E物理r范数、弱Ricci/H⁻¹与F05仍开放；新作者确认未记录，整篇verified=false。当前候选的本地完整检查、最新main合并候选CI与实际工件证据另行取得。就绪后仍交人类合并，不继承代理执行权限，不发标签。
+
+## 2026-11-17：PR9主线确认与真实流形图桥
+
+用户已手动合并PR9为main2ff3d3616db3a99e1c600cc4bf77977a32f31117，树与受审31a2候选相同。push CI43996358073成功，artifact14289189402的全部227目标/74源及项目、目标输入相同；ZIP SHA62723f96848d48053de0b4cc20768e9de370fba62a29eddac99bc464378d1fb4，指纹6e230e9c1d2bf50d569a96bfafd7103bed1603a0d7832be4139f4e61bbe46266。代理未远端merge，本地main快进。
+
+本批新增10模块27支持目标，累计254目标、325库存、84源。真实切丛r图内C1/PosDef、genericB两图矩阵law、张量物理范数不变、(1,2)E物理Lp∞、两类密度的actual-chart局部相容见[图内几何](../statements/chart-geometry.md)、[独立回读](../statements/chart-geometry-review.md)和[冻结绑定](../statements/chart-geometry-source-bindings.json)。105声明已实际独立核签，仅三公理。原文dV_g的绝对det已单独建模，没有误用auxr正定密度。
+
+旧227target/298inventory/73数学叶源及文章、锁、标准、旧确认保留。global volume、intrinsic LC和原全局序列的所有图内接口仍未全部实例化；F04/F05及整篇verified不升级，新作者确认待记录。当前完整机器/实际main组合CI与工件证据另取，最终交人类merge，代理不启auto-merge、删branch或发布tag。

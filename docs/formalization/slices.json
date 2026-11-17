@@ -3400,6 +3400,168 @@
       "source_slices": [
         "F04"
       ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:mixedNorm-eq-ofMatrix-norm",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:continuousOn-mixedNorm",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-mixedNorm-control",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-coordinate-control",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:pullbackMetric-posDef",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm2-pullback",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm3-pullback",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:mixedNorm-exists-tendstoLp",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:physicalError-uniform-and-LInfinity",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-posDef",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents-one",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-nondegenerate",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:tangentFrame-eq-mfderivWithin",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:rho-pullback",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-pullback-coordinateMeasure",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-coordinateMeasure-of-pullback",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldconnectionerror:physicalError-in-chart-uniform-and-LInfinity",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:density-pullback",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:map-chartTransition-pullback-coordinateMeasure",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:det-metricComponents-ne-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:physicalError-uniform-and-LInfinity",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:tangentFrame-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateBilinear-matrix-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateMetric-measure-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "chart-geometry:manifoldlorentzvolume:coordinateBilinear-geometric-measure-change",
+      "source_slices": [
+        "F03"
+      ]
     }
   ],
   "edges": [

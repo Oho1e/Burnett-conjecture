@@ -59,3 +59,13 @@ import Burnett.Geometry.ConnectionErrorLInfinity
 import Burnett.Geometry.AuxiliaryPhysicalBound
 import Burnett.Analysis.PositiveDensity
 import Burnett.Geometry.RiemannianVolume
+import Burnett.Geometry.MixedTensorNorm
+import Burnett.Geometry.TensorCoordinateChange
+import Burnett.Geometry.MixedConnectionError
+import Burnett.Geometry.ManifoldMetric
+import Burnett.Geometry.ChartVolume
+import Burnett.Geometry.ManifoldConnectionError
+import Burnett.Geometry.LorentzVolume
+import Burnett.Geometry.LorentzConnectionError
+import Burnett.Geometry.ManifoldMetricTransition
+import Burnett.Geometry.ManifoldLorentzVolume
