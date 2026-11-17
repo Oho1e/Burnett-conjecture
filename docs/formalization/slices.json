@@ -1269,17 +1269,18 @@
       ],
       "outputs": [
         "固定c>0的T普通正半定、Lorentz迹零、散度零且T=c(k+^2+k-^2)，k±=(-1,±v(t))为null；在t=0附近时间区间无输运正零射线表示。",
-        "未来片Euclidean单位normalization给xi0=-1/sqrt(2)及仅有omega±=(-1,±v)/sqrt(2)；00及0i矩给每支质量2c dt dx，作为measure恒等式证明。",
-        "a=chi(t)eta(x)F(xi)，F=xi1 xi2/(-xi0)作一齐次角延拓；输运积分=-2c(integral eta dx)(integral chi cos(2t)dt)，在0附近非零非负切断时不为0。折叠保持矩且使零输运仍为零。",
+        "原文另一证明路线中的中间断言（本批未宣称形式核验；最终结果已由大R替代证明覆盖）：未来片Euclidean单位normalization给xi0=-1/sqrt(2)及仅有omega±=(-1,±v)/sqrt(2)；00及0i矩给每支质量2c dt dx，作为measure恒等式证明。",
+        "原文另一证明路线中的中间断言（本批未宣称形式核验；最终结果已由大R替代证明覆盖）：a=chi(t)eta(x)F(xi)，F=xi1 xi2/(-xi0)作一齐次角延拓；输运积分=-2c(integral eta dx)(integral chi cos(2t)dt)，在0附近非零非负切断时不为0。折叠保持矩且使零输运仍为零。",
         "T不是G(m)，未构造真空逼近；该候选不替代正式prop:bianchi。"
       ],
       "risks": [
         "T不是G(m)，不能宣称为真空极限反例。",
         "正measure支撑迫定、两时间方向折叠和分支权重需准确核对。",
         "用户于2026-11-15明确纳入最终形式化目标；这项范围决定不构成证明或语义确认。",
-        "本例使用给定T的二阶矩身份；不能误用把左侧固定为G(m)的Einstein专用接口。"
+        "本例使用给定T的二阶矩身份；不能误用把左侧固定为G(m)的Einstein专用接口。",
+        "2026-11-17按既定允许替代证明标准选择大R截断路线；outputs中原future fold/分支权重是原文证明中间断言，不将另一条路线的成功冒称这些中间步骤已核验。"
       ],
-      "next_action": "先证明正矩导致的角支撑迫定及两分支测度权重，再构造固定一齐次测试并计算非零输运积分。",
+      "next_action": "完整旋转张量性质与无输运表示总定理已实现并独审；本轮完成配套登记、当前候选机器/CI及新解释确认记录。采用大R截断替代证明，不将其记为原fold/分支权重路线已形式核验，也不据此关闭X04或宣称真空极限反例。",
       "supplementary_obligations": []
     },
     {
@@ -3981,6 +3982,180 @@
       "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-right",
       "source_slices": [
         "F02"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-homogeneous",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:oddAngular-smooth",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:angularhamilton:flatHamilton-spatial-error-bound",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-components",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-positive-semidefinite",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-trace-free",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:rotatingtensor:tensor-divergence-free",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-time-cutoff",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:exists-spatial-cutoffs",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:scaledcutoffs:scaled-spatial-derivative-majorant",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:timeintegral:time-integral-identity",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:split-measurePreserving",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integrable-separated",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimesplit:integral-separated",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-eq-flatHamilton",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:hamiltonidentification:canonicalHamilton-spatial-error-bound",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:integrable-and-integral-error-bound",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measureestimates:temporal-integral-bound-of-transport",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-spatial-majorant",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:phi-temporal-integral",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:spacetimecutoffs:beta-integral",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:compact-phase-over-base",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-phase-integrable",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:tensor-test-base-integrable",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment00",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-moment12",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-transport",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:measuremodel:ambient-separated-Hamilton-integrable",
+      "source_slices": [
+        "X03"
+      ]
+    },
+    {
+      "claim_id": "rotating-null:notransport:no-exists-transported-positive-representation",
+      "source_slices": [
+        "X03"
       ]
     }
   ],
