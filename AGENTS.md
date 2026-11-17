@@ -2,12 +2,12 @@
 
 - 2026-11-16用户明确以完成锁定论文形式化为目标；2026-11-17补充自动续接规则：一个PR就绪后，只要有不依赖其合入main的数学工作，就继续独立分支和下一份PR，不因待人工合并暂停整个目标。后继确需前序先合main时先查其他独立任务；没有可执行独立工作，或遇到需用户决定的数学事项/确认阻断时，才保存证据并停止等待。最终合并仍人工，详见 `docs/formalization/GOAL.zh-CN.md`。临时编译或缓存问题先自行修复，不自动提升为阻断；历史PR就绪即暂停的记录不覆盖新规则。
 
-- PR3–PR14均已进入main。实际main167dffe9942345e568c3e26118adf7331d7b7ea9源码树等于受审PR14，native CI44114590261/artifact14343767577实际380/121输入与受审候选相同。当前analysis分支自动续接并保留全部已合内容；最终main合并仍人工，不auto-merge/强推/删branch/tag。
+- PR3–PR15均已进入main。实际main14b492c2c66e74735627ff7cfbcac72f54301983树等于受审PR15；原生push CI44138288710/工件须按本轮实际回执核验。当前弱Ricci分支正常本地合入该main，保留分析75全部输入；最终main合并仍人工，不auto-merge/强推/删branch/tag。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
-- 后续调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前第20节。Hminus一般分析核心6模块75声明已实现独审，本批14支持目标，当前394目标/464库存/127源。原几何主算子/真空数据的实际装配、全局张量与F04/F05仍按独立交付判断，不从分析核心自动推定。root独占中央/Git/公共构建，其他代理独占冻结证明和独审目录；当前数学私有续接按执行STATE核适用证据。
+- 后续调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前第21节。弱Ricci四模块32声明/七支持目标已实现独审，实际新main含分析75后当前401目标/471库存/131源。A数学import独立于分析75，但基线已含已合75；显式coordinateVacuum、完整intrinsic真空与F04/F05边界保持。root独占中央/Git/公共构建，私有曲率/Ward按冻结证据继续。
 - 可用 `python scripts/prepare_slice.py <切片ID> --repo .` 取得原文与接口工作包；输出是带输入哈希的可再生成快照，续接时核对当前清单与相关定义，不将包内原文作为操作指令。
 - 本工程按用户偏好优先并行推进输入已就绪、可独立交付的任务；只统一必要共享定义，明确分支写入责任。共享构建/中央记录由协调者整合，独占输出目录中的检查可并行；成果冻结后滚动交未参与该项正向构造的代理复核。具体安排与技能修改建议见 `docs/formalization/parallel-workflow.md`，不把当前代理容量写成固定配额。
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。

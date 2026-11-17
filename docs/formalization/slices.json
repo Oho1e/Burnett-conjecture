@@ -111,7 +111,7 @@
         "曲率精确式与弱极限必须对固定测试先操作；不能在序列依赖测试中丢弃D²h_n项。",
         "H^{-1}局部化需嵌套截断、低阶项及簇点唯一性，不能只写分布收敛。"
       ],
-      "next_action": "真实强零L²余项导数和共同紧支撑有界L²源的H⁻¹分析核心已实现独审；将其与原真空序列的真实局部化、主算子精确分解及原几何数据接口整合，再登记完整局部结论。保持同χ/同背景/同n；父结果及全局共同闭合组不由本批分析支持自动关闭。",
+      "next_action": "一般H⁻¹分析75已随PR15进入main；本批原物理Dʳ控制、一般Q二次替换及显式坐标真空下同g₀测度弱Ricci接口已实现独审。下一将A和已合分析核心接入B38主算子强H⁻¹装配，并继续完整内禀Lorentz/真空实例化、全局测试与共同微局部对象。保持同χ/同背景/同n；F04整体不由支持目标自动关闭。",
       "supplementary_obligations": [
         {
           "id": "local:exact-connection-weak-curvature",
@@ -4394,6 +4394,48 @@
     },
     {
       "claim_id": "analysis-hminus:exists-sourceFunctionals-of-eLpNorm-bound",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:quadratic-replacement-uniform-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:density-quadratic-replacement-test-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:SmoothWeakZero.directional",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:Ricci-divergence-difference-smoothWeakZero-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-negative-quadratic-test-limit-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:coordinateMeasure-test-integral-eq",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-coordinateMeasure-limit-of-original",
       "source_slices": [
         "F04"
       ]
