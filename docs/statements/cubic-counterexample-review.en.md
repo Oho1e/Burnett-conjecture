@@ -1,0 +1,23 @@
+# X02: independent review and production integration record
+
+The initial-delivery account below refers to6465707 and the then-current45 targets; the administrative update at the end governs the later status.
+
+2026-11-16. Two forward-implementation agents and the coordinator constructed different sources. A further agent, uninvolved in forward construction, independently read the locked source, actual types, and important definitions, first reviewing the model and then all12 frozen sources in rolling batches. Implementers and reviewer discussed issues, so this is not described as a fully isolated blind test.
+
+The independent agent personally unfolded the frozen bodies, changing only out-of-tree imports to independently compiled private query modules. All11 actual query batches eventually exited0 without warnings/errors; transitive axioms of key declarations were only propext, Classical.choice, and Quot.sound. Neither12 sources nor11 batches is an article-result count or completion percentage. The aggregate index is ACTUAL-QUERY-INDEX-03.json in the out-of-tree delivery packet; each batch retains source, query, log, exit code, and stable hashes.
+
+Independent verification covered actual derivatives in all four coordinates, Box/Q0 signs, the same f/w, genuine C∞ tests, the fivefold L² norm, a.e. representatives, compact-support integrability, actual IBP, strong operator-norm convergence, seven-mode/remainder limits, and the actual integral-one test and nonvanishing conclusion. Additional independent queries checked the final existence theorem's actual type and the local-integrability guard, and independently proved that the guard in general StrongHminusLocalZero implies integrability of every χT_nφ.
+
+Review found and repaired an ambiguity in the C∞ order in an early unexecuted plan, a missing local-integrability guard in the general negative-norm criterion, and cancellation risks in the time frequencies of the first two mixed phases. The first two were resolved in definitions and actual proofs; the time-frequency bound is taken only for n≥2, enough for the atTop limit. Historical failures are preserved, not rewritten as passes at that time.
+
+The frozen aggregate review is FINAL-PROP-CUBIC-REVIEW.zh-CN.md (SHA256 30fabae74dfefbc777f7f8ec32253065a67c7f0ee19c93e34492f20c86526c1d). Its independent verdict accepts the local mathematical correspondence of prop:cubic, explicitly excluding the unproved extra off-null claim, whole-paper certification, and any claim of personal human confirmation.
+
+Production integration permitted only import rebinding at the start of12 sources and CRLF→LF at449 locations in Explicit and232 in LocalHminus. All newline-normalized mathematical bodies and diagnostic declarations were retained. A different agent who did not write the mapping script adversarially reviewed the script and manifest; after approval the coordinator ran them. Original bytes, transformation offsets, body hashes, and actual disk readback are in the out-of-tree integration receipt. Production combination builds, source/transitive-axiom checks for45 actual registered targets, and remote CI require this batch's machine receipts; out-of-tree success is not treated as execution of those checks.
+
+User/author confirmation of the new explanation was pending at this stage; F06 delegation did not automatically expand to this deliverable. The branch was isolated from main211d31f; PR3 maintenance and PR4 F06 mathematics remained separate. Agent merging into main had not been authorized, and no post-merge main CI for this deliverable existed. Neither a green build nor merging upgrades whole-paper certification.
+
+## User decisions and updated combination with main
+
+On2026-11-16 the user chose1A; root and the original independent agent accepted the delegation and formally confirmed technical content f14afadd…. The original12 sources and three technical sections are unchanged; explanatory administrative status is updated under that decision, without again requiring the user to read Lean personally. The user also chose2A and fixed Fourier cone projections: the3193 property is required but unproved and is not included among the support targets proved here.
+
+PR3/4 are merged. New PR5 takes the union of F06 and X02 onto actual main. The source/standard/dependency locks and both mathematical batches are unchanged; the root entry point and binding hashes change with the combination and are identified explicitly. Separate evidence covers the102-target combination and1.3.1 boundary checks; old45-target receipts do not prove the new candidate. PR5 remains unmerged, and its final merge executor is still to be selected.

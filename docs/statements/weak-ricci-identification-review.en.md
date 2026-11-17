@@ -1,0 +1,14 @@
+# Independent readback of local weak Ricci identification
+
+The constructor was resume_connection_laws. The frozen 32 items and all four current literal production modules were independently reviewed by a non-author. The actual sources, all types, and transitive axioms passed using only propext, Classical.choice, and Quot.sound. Two module names differ from their declaration namespaces; the actual QNames are retained and registered under their true owners.
+
+- Burnett.Analysis.LocalWeakRicciIdentification: 10 declarations; source SHA `5ad8c67ef3ad98abc88ce9e04c12e64d6a45db6ccae35402c74802ad18af7b4f`, independent-review receipt SHA `f50f651adc971f40aa9d48ba19e8035e38c39ca896eabf63d55e2a3b60660f9d`, report SHA `f053ea526bcafc1d79e087d90e719a8e43069f552467a20d1de5172961e00102`.
+- Burnett.Analysis.WeakTestCalculus: 9 declarations; source SHA `542e18855e9a6925ff3cf6c88cf9a7b08001703051996c885725362f16a20359`, independent-review receipt SHA `f50f651adc971f40aa9d48ba19e8035e38c39ca896eabf63d55e2a3b60660f9d`, report SHA `f053ea526bcafc1d79e087d90e719a8e43069f552467a20d1de5172961e00102`.
+- Burnett.Analysis.VacuumWeakRicci: 10 declarations; source SHA `e45bc65bf651fc2958980690dc6edaee162b085ab6ceb983f1b88a6cf669ad79`, independent-review receipt SHA `f50f651adc971f40aa9d48ba19e8035e38c39ca896eabf63d55e2a3b60660f9d`, report SHA `f053ea526bcafc1d79e087d90e719a8e43069f552467a20d1de5172961e00102`.
+- Burnett.Analysis.MeasureWeakRicci: 3 declarations; source SHA `081121c67abdf6275b17ceed40cd6d47c4a83499bcc98cac6f87f91c57252cba`, independent-review receipt SHA `f50f651adc971f40aa9d48ba19e8035e38c39ca896eabf63d55e2a3b60660f9d`, report SHA `f053ea526bcafc1d79e087d90e719a8e43069f552467a20d1de5172961e00102`.
+
+There are 21 differing printed type/axiom segments between production and the originals. Each was checked to differ only by display aliases for ∞/Top and qualified Filter/MeasureTheory names. No claim is made that all 32 raw outputs are byte-identical. Complete actual outputs, per-segment comparisons, and hashes are retained separately; mathematical assumptions, quantifiers, and conclusions are unchanged.
+
+The review checked the same r/g₀/gₙ and chart, the distinction between the original Dʳ bound and Dᵍ⁰ in linear L, general-array Q, the −Q sign, actual ρ₀/coordinateMeasure, integrability for every n, and tests fixed before n. The final conclusion does not assume SmoothWeakZero or the target limit from the caller. Explicit chart-local coordinateVacuum has not been eliminated through a complete intrinsic model; the whole paper or all of F04 cannot be declared proved.
+
+Complete machine checks and actual combined CI for the current 401-target/471-inventory/131-source candidate are obtained separately. New author confirmation is pending; parent results/F05/whole-paper status are unchanged, and the final merge into main remains a human action.
