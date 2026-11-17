@@ -1168,6 +1168,141 @@
       "claim_id": "auxiliary-r:riemannianvolume:metricConnectionError-uniform-and-LInfinity",
       "module": "Burnett.Geometry.RiemannianVolume",
       "declaration": "Burnett.Geometry.RiemannianVolume.metricConnectionError_uniform_and_LInfinity"
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:mixedNorm-eq-ofMatrix-norm",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.mixedNorm_eq_ofMatrix_norm"
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:continuousOn-mixedNorm",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.continuousOn_mixedNorm"
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-mixedNorm-control",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_mixedNorm_control"
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-coordinate-control",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_coordinate_control"
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:pullbackMetric-posDef",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.pullbackMetric_posDef"
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm2-pullback",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm2_pullback"
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm3-pullback",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm3_pullback"
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:mixedNorm-exists-tendstoLp",
+      "module": "Burnett.Geometry.MixedConnectionError",
+      "declaration": "Burnett.Geometry.MixedConnectionError.mixedNorm_exists_tendstoLp"
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:physicalError-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.MixedConnectionError",
+      "declaration": "Burnett.Geometry.MixedConnectionError.physicalError_uniform_and_LInfinity"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-posDef",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_posDef"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents-one",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents_one"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-nondegenerate",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_nondegenerate"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:tangentFrame-eq-mfderivWithin",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.tangentFrame_eq_mfderivWithin"
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:rho-pullback",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.rho_pullback"
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-pullback-coordinateMeasure",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_pullback_coordinateMeasure"
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-coordinateMeasure-of-pullback",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_coordinateMeasure_of_pullback"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldconnectionerror:physicalError-in-chart-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.ManifoldConnectionError",
+      "declaration": "Burnett.Geometry.ManifoldConnectionError.physicalError_in_chart_uniform_and_LInfinity"
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.eLpNorm_top_coordinateMeasure_eq_volume"
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:density-pullback",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.density_pullback"
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:map-chartTransition-pullback-coordinateMeasure",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.map_chartTransition_pullback_coordinateMeasure"
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:det-metricComponents-ne-zero",
+      "module": "Burnett.Geometry.LorentzConnectionError",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.det_metricComponents_ne_zero"
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:physicalError-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.LorentzConnectionError",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.physicalError_uniform_and_LInfinity"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:tangentFrame-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.tangentFrame_change"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateBilinear-matrix-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateBilinear_matrix_change"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateMetric-measure-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateMetric_measure_change"
+    },
+    {
+      "claim_id": "chart-geometry:manifoldlorentzvolume:coordinateBilinear-geometric-measure-change",
+      "module": "Burnett.Geometry.ManifoldLorentzVolume",
+      "declaration": "Burnett.Geometry.ManifoldLorentzVolume.coordinateBilinear_geometric_measure_change"
     }
   ],
   "inventory": [
@@ -6426,6 +6561,519 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:mixedNorm-eq-ofMatrix-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.mixedNorm_eq_ofMatrix_norm",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:continuousOn-mixedNorm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.continuousOn_mixedNorm",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-mixedNorm-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_mixedNorm_control",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-coordinate-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_coordinate_control",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:pullbackMetric-posDef",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.pullbackMetric_posDef",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm2-pullback",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm2_pullback",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm3-pullback",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm3_pullback",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:mixedNorm-exists-tendstoLp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedConnectionError.mixedNorm_exists_tendstoLp",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:physicalError-uniform-and-LInfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MixedConnectionError.physicalError_uniform_and_LInfinity",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-posDef",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 96,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_posDef",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 96,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents-one",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 96,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents_one",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-nondegenerate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 96,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_nondegenerate",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:tangentFrame-eq-mfderivWithin",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 96,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetric.tangentFrame_eq_mfderivWithin",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:rho-pullback",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVolume.rho_pullback",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-pullback-coordinateMeasure",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_pullback_coordinateMeasure",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-coordinateMeasure-of-pullback",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_coordinateMeasure_of_pullback",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldconnectionerror:physicalError-in-chart-uniform-and-LInfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldConnectionError.physicalError_in_chart_uniform_and_LInfinity",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LorentzVolume.eLpNorm_top_coordinateMeasure_eq_volume",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:density-pullback",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LorentzVolume.density_pullback",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:map-chartTransition-pullback-coordinateMeasure",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LorentzVolume.map_chartTransition_pullback_coordinateMeasure",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:det-metricComponents-ne-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.det_metricComponents_ne_zero",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:physicalError-uniform-and-LInfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 352,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.physicalError_uniform_and_LInfinity",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:tangentFrame-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.tangentFrame_change",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateBilinear-matrix-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateBilinear_matrix_change",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateMetric-measure-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 101,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateMetric_measure_change",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "chart-geometry:manifoldlorentzvolume:coordinateBilinear-geometric-measure-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-local-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldLorentzVolume.coordinateBilinear_geometric_measure_change",
+      "statement_record": "docs/statements/chart-geometry.md",
+      "semantic_review_record": "docs/statements/chart-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -6734,6 +7382,45 @@
       "source_bindings": "docs/statements/auxiliary-r-control-source-bindings.json",
       "local_physical_covariant_norm_and_LInfinity_consumer": "implemented",
       "manifold_chart_pullback_and_mixed_error_physical_norm": "open",
+      "F04_parent_closed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false
+    },
+    "pr9_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "2ff3d3616db3a99e1c600cc4bf77977a32f31117",
+      "reviewed_pr_head": "31a2d5596a20b0405c51da59711592d77e65a0ae",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 43996358073,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/43996358073",
+      "main_ci_artifact": 14289189402,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "6e230e9c1d2bf50d569a96bfafd7103bed1603a0d7832be4139f4e61bbe46266",
+      "agent_may_merge_next_pr": false
+    },
+    "chart_geometry_delivery": {
+      "targets": 254,
+      "inventory": 325,
+      "lean_sources": 84,
+      "new_targets": 27,
+      "new_modules": 10,
+      "public_declarations": 105,
+      "declaration_kinds": {
+        "def": 17,
+        "abbrev": 2,
+        "theorem": 86,
+        "lemma": 0
+      },
+      "base_main": "2ff3d3616db3a99e1c600cc4bf77977a32f31117",
+      "inherited_targets": 227,
+      "statement": "docs/statements/chart-geometry.md",
+      "independent_review": "docs/statements/chart-geometry-review.md",
+      "source_bindings": "docs/statements/chart-geometry-source-bindings.json",
+      "local_real_tangent_chart_metric_and_overlap": "implemented",
+      "physical_mixed_error_and_absdet_coordinate_volume": "implemented",
+      "intrinsic_Levi_Civita_naturality_and_global_volume": "open",
+      "original_intrinsic_sequence_hypotheses_to_coordinate_fields": "open",
       "F04_parent_closed": false,
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "main_merge_performed_by_agent": false

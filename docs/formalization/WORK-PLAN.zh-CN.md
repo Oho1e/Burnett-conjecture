@@ -345,6 +345,8 @@ F05已多取得真实正C_c泛函及子空间在固定支撑的C⁰/order-unit�
 
 ## 14. PR8合并后的真实辅助范数与当前续接
 
+本节保留PR9交付前状态；用户已合并PR9，当前事实与下一步见第15节。
+
 PR8由用户手动合并为main`0fa26471900c596e4b6767609be43cb6e94befc1`。该[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43889680267)成功，真实artifact14235474654的200目标/66源、完整目标及项目输入与受审8d09候选相同；main整树相同，输入指纹634a389d3e8cc6dac1f7b4d7a3a325235d7e8185bed27e2b57d325527588e544。旧PR8交接保持历史含义，不重复申请执行者或扩大代理merge权限。
 
 本批在功能分支`formalization/f04-auxiliary-r-norm`增加8模块、27支持目标，合计227目标、298条inventory、74份Lean源。准确数学与源码身份见[辅助r控制](../statements/auxiliary-r-control.md)、[独立回读](../statements/auxiliary-r-control-review.md)及[绑定](../statements/auxiliary-r-control-source-bindings.json)。85条显式声明已实际独立全源/类型/公理核签，仅三基础公理；新组合及远端CI仍按当前候选另取。
@@ -362,3 +364,27 @@ PR8由用户手动合并为main`0fa26471900c596e4b6767609be43cb6e94befc1`。该[
 几何桥明确后，继续原真空序列的固定紧支撑测试积分分部、弱Ricci识别及嵌套cutoff下H⁻¹紧性；精确二次修正=−旧B的负号保持。F04整片及二次共同闭合组仍OPEN。本批没有增加统一D²gₙ估计，也未关闭F05；F05继续真实PDO一致界、趋零误差正性、保共同支撑逼近/正延拓及同一全局测度。
 
 本轮候选需完整机器检查、实际最新main合并候选CI及独立工程/工件核对后交人类合并；代理不merge、不开auto-merge、不删分支或发验证标签。就绪后按用户停止条件保存并暂停；合并通知后核实际新main及push CI，再从本节续接。新增语义确认仍待记录，合并不提升全文认证。
+
+## 15. PR9合并后的真实图、物理误差和当前工作
+
+PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43996358073)成功，artifact14289189402的227目标/74源及全部target/project输入等于受审31a2候选；main整树相同，输入指纹6e230e9c1d2bf50d569a96bfafd7103bed1603a0d7832be4139f4e61bbe46266。代理没有远端merge，本地main已快进；旧交接不扩大未来执行权限。
+
+本轮功能分支`formalization/f04-manifold-chart`新增10模块、27支持目标，合计254目标、325条inventory、84源。实际数学与冻结输入见[解释](../statements/chart-geometry.md)、[独立回读](../statements/chart-geometry-review.md)及[绑定](../statements/chart-geometry-source-bindings.json)。105条显式声明（17定义、2重要abbrev、86定理）的独立全源/类型/公理核签通过，仅三基础公理；实际完整候选检查与远端CI另取新回执。
+
+已可直接消费：
+
+- 实际四维smooth manifold的真实切丛r及逆图平凡化，给chart.target上矩阵PosDef、对称、非退化与分量C∞/C1。frame被识别为逆图的真实mfderiv，不用TangentSpace的defeq冒充恒等映射。不会为r重选已有Norm/toCore实例。
+- 实际chartTransition的导数和切丛cocycle，给同一真实fiber bilinear B的两图矩阵law。B可以非正定；r.inner只是实例。真实协变二/三张量拉回的物理范数严格不变，未把raw偏导当张量。
+- 上/下/下三槽的真实mixedGram=R⊗Rinv⊗Rinv、能量/sqrt范数与双向compact控制，接到实际E的物理norm标量Lp∞。仍使用真实标量Lp∞，没有假设bundle-valued normed Lp存在。
+- 原文34/337明确dV_g=sqrt(abs(det g))dx。LorentzVolume已单独实现该真实密度及Jacobian/∞转移，不把g套进positive-only sqrt(detR)。背景g₀非退化在U上实际推出密度正，固定同一g₀测度控制所有n的Dh和E结论。
+- same-B矩阵law实际接到两类measure的局部overlap推前：正定r与绝对det几何密度都无额外hR/ρ/measure-equality假设。它们是局部相容数据，未构造global M measure。
+
+下一阶段的必要桥：
+
+1. 按原文构造真实global Lorentz g₀/gₙ的bundle字段及所需原有属性，用当前同frame/同B工具实例化其图内正则、非退化和C⁰loc一致收敛。r的光滑图数据已证，不重复；Hom的opNorm不等于物理Hilbert tensor norm。若改用等价见证来表达时间定向或其他原属性，须证明等价而非静默加强原假设。
+2. 构造或复用真正intrinsic Levi-Civita D，证明其图内表达等于computedΓ/auxiliaryPerturbationJet，核raw jet中的非线性坐标项。不能因为两者同名就关闭原Dh接口。固定图的高阶导数可参与变换律，但不增加uniform D²gₙ界，也不要求global smooth frame。
+3. 从已证的same-B绝对det局部measure相容性构造M上的实际几何volume及chart推前定理；使用原Hausdorff/second-countable条件建立需要的覆盖与measurability。局部compatibility不能代替这一步。与第2项可在共同对象稳定后并行。
+
+三桥明晰后推进原真空序列的紧支撑测试积分分部、弱Ricci识别与嵌套cutoff H⁻¹紧性，精确二次修正=−旧B符号保留。F04及二次共同闭合组仍OPEN；F05继续真实PDO一致界、误差正性、保支撑延拓/逼近及同一全局测度，不能用已有局部工具代替它们。
+
+交付顺序仍为实际独立回读→完整当前候选检查→最新main组合CI及工件核对→人类merge交接。就绪后依用户停止条件保存并暂停，不merge/auto-merge/删分支/发标签。收到合并通知后核实际新main及其push CI，再从本节必要桥续接。新数学确认与全文认证分别判断。

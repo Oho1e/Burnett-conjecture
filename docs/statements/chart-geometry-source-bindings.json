@@ -1,0 +1,439 @@
+{
+  "schema": "burnett-chart-geometry-bindings/v1",
+  "meaning": "Input identity only; not author confirmation or whole-paper certification.",
+  "base_main": "2ff3d3616db3a99e1c600cc4bf77977a32f31117",
+  "base_pr": 9,
+  "base_main_ci_run": 43996358073,
+  "counts": {
+    "targets": 254,
+    "inventory": 325,
+    "lean_sources": 84,
+    "new_targets": 27,
+    "new_modules": 10,
+    "public_declarations": 105,
+    "declaration_kinds": {
+      "def": 17,
+      "abbrev": 2,
+      "theorem": 86,
+      "lemma": 0
+    }
+  },
+  "new_sources": [
+    {
+      "path": "Burnett/Geometry/MixedTensorNorm.lean",
+      "sha256": "458196cd45f9430ab36ada0569bd2755ca3e45b1d0527ddd655132e7ad0d2f99",
+      "public_declarations": 23
+    },
+    {
+      "path": "Burnett/Geometry/TensorCoordinateChange.lean",
+      "sha256": "92e2194297f22af598bae9a116eee38de4d81c5d39241b45c388eb3f80377b1e",
+      "public_declarations": 16
+    },
+    {
+      "path": "Burnett/Geometry/MixedConnectionError.lean",
+      "sha256": "2777e2ae4e2b271f3bace50c1c08be9be517b8674a04b83a2d3caac48c7ce103",
+      "public_declarations": 3
+    },
+    {
+      "path": "Burnett/Geometry/ManifoldMetric.lean",
+      "sha256": "7f233ffefb5046878867b618cc15dc21d33f688034522574c0939d2b08eefc00",
+      "public_declarations": 18
+    },
+    {
+      "path": "Burnett/Geometry/ChartVolume.lean",
+      "sha256": "24e73baa65b77fd402c266f6b9fc32f40ecc28a6994cd9a349c32d3deb5b7dc8",
+      "public_declarations": 12
+    },
+    {
+      "path": "Burnett/Geometry/ManifoldConnectionError.lean",
+      "sha256": "d3a10b787faa6080ce04b266e94093cb8251b9b34a601f2c5e6ab467e5aabb69",
+      "public_declarations": 1
+    },
+    {
+      "path": "Burnett/Geometry/LorentzVolume.lean",
+      "sha256": "8024dbde4e0e567fbc43de4ce9c29e0554bed487474ebb1dd80f47af4326baec",
+      "public_declarations": 16
+    },
+    {
+      "path": "Burnett/Geometry/LorentzConnectionError.lean",
+      "sha256": "055ff6620b30554d02d4fa2540470a507244475fd7387a1dd5ed5bbabda65fa0",
+      "public_declarations": 2
+    },
+    {
+      "path": "Burnett/Geometry/ManifoldMetricTransition.lean",
+      "sha256": "9dd9cb069a2eab02adab0a06e8c9f666dcf52720ed344c429fd3961c3ce1f7b2",
+      "public_declarations": 13
+    },
+    {
+      "path": "Burnett/Geometry/ManifoldLorentzVolume.lean",
+      "sha256": "0f59d743bfe17877393ca90a05c086b8f9fe36eb9d88eb43b8cacc6f78ada1a0",
+      "public_declarations": 1
+    }
+  ],
+  "inherited_unchanged_leaf_sources": {
+    "Burnett/Algebra/ComplexFrame.lean": "3c6518dad59b9732b7dfcf2bb3fa5ae57b024f99db7ad40220b7cb8197406dbf",
+    "Burnett/Algebra/ComplexPolarization.lean": "249ab6adc719f1eac2a1dadc845914a3f8400a983e0ca47ccd0693371e9a37b6",
+    "Burnett/Algebra/FrameComposition.lean": "bd71e274305d96e8e90497e2ed76a057708f35b4ad7e0c6f73b01d00267ed92a",
+    "Burnett/Algebra/HermitianScreen.lean": "ab2e440f28d987ddce05a01d22f3b938fc525b3712d0a947e4b26e8b2060a40d",
+    "Burnett/Algebra/LorentzHermitian.lean": "a8da70ae4300acc89a0d30a16c3bfaba3a83c0307c6d4a15f0fdf11bbb04bc0b",
+    "Burnett/Algebra/LorentzPhysical.lean": "73f6dcea54c0b48af7d938b3ef17d6a2fe867cdb81284c5318553a27aed11278",
+    "Burnett/Algebra/MinkowskiNormalize.lean": "c27e344a006cb7764e0867cc1e4222807c56d52846e7d39c005c2ee31f703207",
+    "Burnett/Algebra/MinkowskiNull.lean": "277fd0d247072e8edac1247a4fc5e727c35ae5e51fdd337a2de81b80a614a99c",
+    "Burnett/Algebra/NullFrame.lean": "03fcb693c0143117bf9eac13e0bfcb0498fa758bba5bd880f1dcfb274f8e5dda",
+    "Burnett/Algebra/NullKernel.lean": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d",
+    "Burnett/Algebra/NullNormalForm.lean": "3264a89726705660d285dfbf9e79ac3318c7876d6382dafecf26d7d59991c6f1",
+    "Burnett/Algebra/NullQuadratic.lean": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7",
+    "Burnett/Algebra/NullScreen.lean": "dce3555ec1dfab4cffbb30b93e94e90536b8024d4f90d58a582abe79ba136c9c",
+    "Burnett/Algebra/PhysicalQuotient.lean": "e6ef0341168f530ff36591fb8709b24b8a71e45762392b97d0bdfc06cbc08d07",
+    "Burnett/Algebra/QuadraticDefs.lean": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09",
+    "Burnett/Algebra/QuadraticExpansion.lean": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c",
+    "Burnett/Algebra/RealPolarization.lean": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
+    "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "Burnett/Algebra/TensorFrame.lean": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906",
+    "Burnett/Analysis/Compactness/CountableTests.lean": "0897e00360d3db4821640bb31ce813dd7013f506d2e318bcc6933f1d5844b892",
+    "Burnett/Analysis/Compactness/DenseTests.lean": "6677f6d6de3dcb9228373da086718adcb99c54bca3b2ccde354ef8d15483f887",
+    "Burnett/Analysis/Cubic/Counterexample.lean": "8fa1a023c46305378ae55d0d3e75685384f6257078ba499c236353d9db09ffc9",
+    "Burnett/Analysis/Cubic/Distribution.lean": "7d1719d210497a3ecb314465705195631347e6fbe76ec8b14c375c80fe7edc77",
+    "Burnett/Analysis/Cubic/Explicit.lean": "d0539e4bb4e7e5b0cfe46e9c7d7c2f19ea9835d1f0bcc68ce7d22e541096f658",
+    "Burnett/Analysis/Cubic/FrequencyBounds.lean": "b2649a4fefb35ef24e8cb35bff25230c4aaeea5a8bb08637ac34886ae75bc5eb",
+    "Burnett/Analysis/Cubic/LocalHminus.lean": "333795a059ad0afefd7ed5d326f35b7eb596b20446053c35182ddf3f706806b4",
+    "Burnett/Analysis/Cubic/OffNullCompactGradient.lean": "8aa20edd64e304a224fefd41e37ce57494280f9556a43df7f0bab6d4c87c73d5",
+    "Burnett/Analysis/Cubic/OffNullCutoff.lean": "facf6f8063d63aa3871b1f1e83320302eeb1eab67d807b42081c164842e778db",
+    "Burnett/Analysis/Cubic/OffNullGeometry.lean": "79b26ceb0b2158b4792d4361458cfd3e6f6bc83e542aa085878c0194d01657c7",
+    "Burnett/Analysis/Cubic/OffNullGradient.lean": "69065cf1a1c22376505b6409c80562ac6bf42c059eb0c7b04c1c4553bcc29822",
+    "Burnett/Analysis/Cubic/OffNullGradientBridge.lean": "c9a0b506f1237503b7f19358a10c129593ac31abad838e9849ef98cabb02d34e",
+    "Burnett/Analysis/Cubic/OffNullProjection.lean": "27173c6934dd64e2a5b111b64bd6e2708bfef179f4a0147de20c2d0aafb640d0",
+    "Burnett/Analysis/Cubic/OffNullTail.lean": "bc72b6690360cd19426c7c35be4978003fd7c1475e0ba4ffe06f89f157f1ad00",
+    "Burnett/Analysis/Fourier/Cosine.lean": "e499fcf401423368f5a9914f224d9b6ff5672016ea87d1d241bf0670aceedfb6",
+    "Burnett/Analysis/Fourier/FiniteEnergy.lean": "f82f67d3f121b3133e5b87f12f63b0c7292b3c6a687cb8f2a78cc7cad9c7fcfc",
+    "Burnett/Analysis/Fourier/L2Extension.lean": "50a4e0e3c3b88a8328e84284c38373ac5fe069c3b228cdeb156fe8f093250e20",
+    "Burnett/Analysis/Fourier/Modulation.lean": "51adc4dd13038d069a87458eade548ff763de38c6ec7a0b5656991927f985b75",
+    "Burnett/Analysis/Fourier/Projection.lean": "065b0091b2fc7b04f2f1d09be6728c4ee410bf7d5331d58dd81314ed5df641e7",
+    "Burnett/Analysis/Fourier/SchwartzDensity.lean": "d1ceb830ab5c547461ee22b07bd44c368e231895a0f4ae157363a50d0b3fe094",
+    "Burnett/Analysis/Fourier/SchwartzParseval.lean": "2d729ee3943f10f2fc4f5b5757d7aaeafc82c29599da02f9331c9cad3d37fd1e",
+    "Burnett/Analysis/Fourier/SchwartzTail.lean": "3359c56b998114a9a22d3e651b3df97f1e2d1bd923de79fe9c8cc17447a59a99",
+    "Burnett/Analysis/Fourier/SharpProjection.lean": "793893b17b546d6ce61bdb352dd0f5872b4d208dba5e6e60405064872b058d46",
+    "Burnett/Analysis/IBP/CompactIBP.lean": "d4b039095cde7d2c4ef89eaba49196a2a2fb07a708db34e2b9e0f9ae972f8234",
+    "Burnett/Analysis/IBP/LocalizedIBP.lean": "5807b3e7812ef705c342917797511d6f329cfa316984df091c4d19a3c95ea9f1",
+    "Burnett/Analysis/LocalAeBound.lean": "d6231107f3f9fba33e41aaaeddbdaa8506a6da15923c5aa498020383c5187407",
+    "Burnett/Analysis/Microlocal/PositiveFunctional.lean": "53c907c3c173fb4070f960e8a0508906ab800ad881069985fc7b8fa9f84b9f34",
+    "Burnett/Analysis/Microlocal/PositiveKernel.lean": "8eb3166fcf1076df9920f94bf1aa2f5dabfd46e5d9df9f1be4c5eefbcd57408a",
+    "Burnett/Analysis/PositiveDensity.lean": "0c9d983b8a0a1ba8b396672b6ea919a7415c3d8d7c680cb25fce48d010fde10c",
+    "Burnett/Analysis/Sobolev/GraphDual.lean": "23969ed0f181a613c3f34996faf34be215631552bf9c34518584b81daa1c123b",
+    "Burnett/Analysis/Sobolev/L2Bounds.lean": "e9328a9475d253a8be9c79b01f7e0679c25de0cf2609a2113b86555ff6893452",
+    "Burnett/Analysis/Sobolev/NonzeroTest.lean": "98ecce8b5cdd43d712f2270e6859bad8868747e0f4a1f9e13715b90cba4eb4e3",
+    "Burnett/Analysis/Sobolev/Pairing.lean": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d",
+    "Burnett/Analysis/Sobolev/TestJet.lean": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b",
+    "Burnett/Analysis/UniformLInfinity.lean": "5bebbadfeb9b0b08ca02aef27b765aa52e15e85887789794400303b0a2ff7606",
+    "Burnett/Geometry/AuxiliaryConnection.lean": "036a0348ad826f478764548e5900ead9a39a63fa729d9858932f7c0290d2d354",
+    "Burnett/Geometry/AuxiliaryPhysicalBound.lean": "4e65a0b42b2732898f81bf24c88c4bb49cedb00f9323e5cbe509aaf9bc849cfe",
+    "Burnett/Geometry/BackgroundConnection.lean": "822b71b040e2444b639dec41f03d59789a906cedc00e39c93107ff42cef2a051",
+    "Burnett/Geometry/BasisFrame.lean": "af704f4b469ddbb9a44235707572d9a34881c63d2dad6b2c38fa6a0331018364",
+    "Burnett/Geometry/ConnectionDifference.lean": "062c62f115043a0a4ade85c06bf096f5474380165a70deeaa2bbd6e3645ee7ae",
+    "Burnett/Geometry/ConnectionError.lean": "5ea4303dee135799b3b6cbebc0e8ad41b104897228a0cc72c783fabff25784d1",
+    "Burnett/Geometry/ConnectionErrorLInfinity.lean": "062a5da219abf2590086d9ffecb02ce803dbfeb9e25f875775c121a142bed510",
+    "Burnett/Geometry/ConnectionErrorSequence.lean": "17b524378878599eaa5574f82195f1e554f2caf3889a9c39f3e4d913a5e80c23",
+    "Burnett/Geometry/CovariantTensorNorm.lean": "f326558f7e3880e487104cbef0e64a6c2c78965e22c5b3bf3b764aff9775ab3e",
+    "Burnett/Geometry/CurvatureDifference.lean": "557febd907430e4bec86cdd3d842c1f6ae234b46e6e0d69500c0ed65080b7185",
+    "Burnett/Geometry/CurvatureSymbolBridge.lean": "e128b105a7498c5f658a3e7bf4df95a5200de4d3e8cb614776fd03dcf3a9f08d",
+    "Burnett/Geometry/FiberMetric.lean": "b574e597c29b8bac5f6f17c09bc1817a87b5ea8bab9f02a4a372c4bb18a8d522",
+    "Burnett/Geometry/GramCoordinateBound.lean": "1b3ab8b1472145cfd8db563b8e3d31ee0c826c088aa835c3b1c48de6516d28a6",
+    "Burnett/Geometry/InverseField.lean": "d2b4b944e2d6b868d45fe76970b994d011651af0ef71a6c228f07daad9eb4ec6",
+    "Burnett/Geometry/InversePerturbation.lean": "9b1e3f6e41ef8a5be72acd5f650955378994ce678a73f2899b4267531c2a4301",
+    "Burnett/Geometry/InverseSequence.lean": "003bfcacb7630068903aea3c8e10d8079d720a6b4bffa84d00e84170017abb7e",
+    "Burnett/Geometry/PerturbationJet.lean": "cc45acac06443a6a35f7a841eb184a9b50d075bc5be659cdf5dd88816e864b52",
+    "Burnett/Geometry/RiemannianVolume.lean": "3a97dfd2d11e9e9d4d9daa723a8a57460689df11b38d45d84cc16d2ea2b9a651",
+    "Burnett/Overview.lean": "9640b4cd42b93f3999a49d00d57a998ab256810c7cd4ca843f82d586483bbea8"
+  },
+  "new_targets": [
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:mixedNorm-eq-ofMatrix-norm",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.mixedNorm_eq_ofMatrix_norm",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:continuousOn-mixedNorm",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.continuousOn_mixedNorm",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-mixedNorm-control",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_mixedNorm_control",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:mixedtensornorm:exists-uniform-coordinate-control",
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "declaration": "Burnett.Geometry.MixedTensorNorm.exists_uniform_coordinate_control",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:pullbackMetric-posDef",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.pullbackMetric_posDef",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm2-pullback",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm2_pullback",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:tensorcoordinatechange:norm3-pullback",
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "declaration": "Burnett.Geometry.TensorCoordinateChange.norm3_pullback",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:mixedNorm-exists-tendstoLp",
+      "module": "Burnett.Geometry.MixedConnectionError",
+      "declaration": "Burnett.Geometry.MixedConnectionError.mixedNorm_exists_tendstoLp",
+      "slice_id": "F04",
+      "source_start": 352,
+      "source_end": 369
+    },
+    {
+      "claim_id": "chart-geometry:mixedconnectionerror:physicalError-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.MixedConnectionError",
+      "declaration": "Burnett.Geometry.MixedConnectionError.physicalError_uniform_and_LInfinity",
+      "slice_id": "F04",
+      "source_start": 352,
+      "source_end": 369
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-posDef",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_posDef",
+      "slice_id": "F02",
+      "source_start": 96,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents",
+      "slice_id": "F02",
+      "source_start": 96,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:contDiffOn-metricComponents-one",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.contDiffOn_metricComponents_one",
+      "slice_id": "F02",
+      "source_start": 96,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:coordinateMetric-nondegenerate",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.coordinateMetric_nondegenerate",
+      "slice_id": "F02",
+      "source_start": 96,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetric:tangentFrame-eq-mfderivWithin",
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "declaration": "Burnett.Geometry.ManifoldMetric.tangentFrame_eq_mfderivWithin",
+      "slice_id": "F02",
+      "source_start": 96,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:rho-pullback",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.rho_pullback",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-pullback-coordinateMeasure",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_pullback_coordinateMeasure",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:chartvolume:map-chartTransition-coordinateMeasure-of-pullback",
+      "module": "Burnett.Geometry.ChartVolume",
+      "declaration": "Burnett.Geometry.ChartVolume.map_chartTransition_coordinateMeasure_of_pullback",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldconnectionerror:physicalError-in-chart-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.ManifoldConnectionError",
+      "declaration": "Burnett.Geometry.ManifoldConnectionError.physicalError_in_chart_uniform_and_LInfinity",
+      "slice_id": "F04",
+      "source_start": 352,
+      "source_end": 369
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:eLpNorm-top-coordinateMeasure-eq-volume",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.eLpNorm_top_coordinateMeasure_eq_volume",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:density-pullback",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.density_pullback",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:lorentzvolume:map-chartTransition-pullback-coordinateMeasure",
+      "module": "Burnett.Geometry.LorentzVolume",
+      "declaration": "Burnett.Geometry.LorentzVolume.map_chartTransition_pullback_coordinateMeasure",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:det-metricComponents-ne-zero",
+      "module": "Burnett.Geometry.LorentzConnectionError",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.det_metricComponents_ne_zero",
+      "slice_id": "F04",
+      "source_start": 352,
+      "source_end": 369
+    },
+    {
+      "claim_id": "chart-geometry:lorentzconnectionerror:physicalError-uniform-and-LInfinity",
+      "module": "Burnett.Geometry.LorentzConnectionError",
+      "declaration": "Burnett.Geometry.LorentzConnectionError.physicalError_uniform_and_LInfinity",
+      "slice_id": "F04",
+      "source_start": 352,
+      "source_end": 369
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:tangentFrame-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.tangentFrame_change",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateBilinear-matrix-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateBilinear_matrix_change",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldmetrictransition:coordinateMetric-measure-change",
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "declaration": "Burnett.Geometry.ManifoldMetricTransition.coordinateMetric_measure_change",
+      "slice_id": "F02",
+      "source_start": 101,
+      "source_end": 105
+    },
+    {
+      "claim_id": "chart-geometry:manifoldlorentzvolume:coordinateBilinear-geometric-measure-change",
+      "module": "Burnett.Geometry.ManifoldLorentzVolume",
+      "declaration": "Burnett.Geometry.ManifoldLorentzVolume.coordinateBilinear_geometric_measure_change",
+      "slice_id": "F03",
+      "source_start": 333,
+      "source_end": 340
+    }
+  ],
+  "independent_reviews": [
+    {
+      "module": "Burnett.Geometry.MixedTensorNorm",
+      "source_sha256": "458196cd45f9430ab36ada0569bd2755ca3e45b1d0527ddd655132e7ad0d2f99",
+      "review_artifact": "INDEPENDENT-REVIEW.md",
+      "review_sha256": "d4d7384e9cf9c589fc36c689af5ebc35feb219383f6fffa3865200e8f0c14f2e",
+      "receipt_sha256": "43a7b0fa40dcc74a911dcdc8f5776cbf81c25c45adfc324775443fdcf6eadff8"
+    },
+    {
+      "module": "Burnett.Geometry.TensorCoordinateChange",
+      "source_sha256": "92e2194297f22af598bae9a116eee38de4d81c5d39241b45c388eb3f80377b1e",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "091a7716ec5748d2850f8ee93c1ca7606b326172e2c6fe365240e6c26cbfeb58",
+      "receipt_sha256": "6e806560dd95d3dde1ef8516606cc60dd6743b18b89a37ef3b5f8230daecc108"
+    },
+    {
+      "module": "Burnett.Geometry.MixedConnectionError",
+      "source_sha256": "2777e2ae4e2b271f3bace50c1c08be9be517b8674a04b83a2d3caac48c7ce103",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "9b1053d01b1bc6191c337504c69c7d4c2b269f3aeb69b3bfa553899115f1b7af",
+      "receipt_sha256": "a17a56494a285347e70bbf3d572f29403635c8522ce3f5b6052c24702c00d985"
+    },
+    {
+      "module": "Burnett.Geometry.ManifoldMetric",
+      "source_sha256": "7f233ffefb5046878867b618cc15dc21d33f688034522574c0939d2b08eefc00",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "a4ff657b716f4852b919b05813e2fc47f314d36e0fefd24a71d5df6ae06fa15f",
+      "receipt_sha256": "da22bb28f24b842b391bcc40d8ccc5aa38ae54033899fc83310d9b45deaf7098"
+    },
+    {
+      "module": "Burnett.Geometry.ChartVolume",
+      "source_sha256": "24e73baa65b77fd402c266f6b9fc32f40ecc28a6994cd9a349c32d3deb5b7dc8",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "b3a66b9595a282ef451d018d88abc87037b62209c315751ad22e4d2ba67781d3",
+      "receipt_sha256": "a812d30f7efbc15cdd0bb352ccc9859fcccd64a7013839b071ad377f234a8f43"
+    },
+    {
+      "module": "Burnett.Geometry.ManifoldConnectionError",
+      "source_sha256": "d3a10b787faa6080ce04b266e94093cb8251b9b34a601f2c5e6ab467e5aabb69",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "9e081a34574ec705fdd56414e3e1ab4d46b13df43f4446d600da423fb517358e",
+      "receipt_sha256": "ad5981701840720e8eeec2ed6ba04b952eb31b129f7fd85dbeaeecf78e87f329"
+    },
+    {
+      "module": "Burnett.Geometry.LorentzVolume",
+      "source_sha256": "8024dbde4e0e567fbc43de4ce9c29e0554bed487474ebb1dd80f47af4326baec",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "c17945a910b2016b1823912e79fcdab5d194ae6c9ecb7dc1b79f14fc3dc1050e",
+      "receipt_sha256": "fcf0bc82dcfff78e7e6029facc43afb07bb0b5f1e7cf905bfb48d58b63afbc6e"
+    },
+    {
+      "module": "Burnett.Geometry.LorentzConnectionError",
+      "source_sha256": "055ff6620b30554d02d4fa2540470a507244475fd7387a1dd5ed5bbabda65fa0",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "cf35eed5e346202159afa0d3721b1422c235807929047b13e44b650968377de0",
+      "receipt_sha256": "e3b4544e57936bbae3517ce25ba4af979d010e60069c1daf937563871d24a13d"
+    },
+    {
+      "module": "Burnett.Geometry.ManifoldMetricTransition",
+      "source_sha256": "9dd9cb069a2eab02adab0a06e8c9f666dcf52720ed344c429fd3961c3ce1f7b2",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "fbdf71e98f7f089e6092862194520f207f821a9976b3faddd0fbd86f0b2c379e",
+      "receipt_sha256": "7fce52c96e1c7b26fedd48b095c6e4d247a9a9aeab407ddda441b8c88afc5b7d"
+    },
+    {
+      "module": "Burnett.Geometry.ManifoldLorentzVolume",
+      "source_sha256": "0f59d743bfe17877393ca90a05c086b8f9fe36eb9d88eb43b8cacc6f78ada1a0",
+      "review_artifact": "REVIEW.zh-CN.md",
+      "review_sha256": "5b92b8b213eafec66649c318f62f3e1bda2a601fc37161f339e7bfd97f59e13c",
+      "receipt_sha256": "a6c87c9c0654970c789e527c2c3c2f0e89b8c5879a6bd1bd38932185bbe1867b"
+    }
+  ],
+  "whole_paper_verified": false
+}
