@@ -69,3 +69,12 @@ import Burnett.Geometry.LorentzVolume
 import Burnett.Geometry.LorentzConnectionError
 import Burnett.Geometry.ManifoldMetricTransition
 import Burnett.Geometry.ManifoldLorentzVolume
+import Burnett.Geometry.LeviCivitaUniqueness
+import Burnett.Geometry.MeasureGluing
+import Burnett.Geometry.CoordinateCovariantDerivative
+import Burnett.Geometry.AffineConnection
+import Burnett.Geometry.ManifoldBilinear
+import Burnett.Geometry.ManifoldVolume
+import Burnett.Geometry.ConnectionCoordinateChange
+import Burnett.Geometry.ManifoldTensorNorm
+import Burnett.Geometry.ManifoldMetricSequence

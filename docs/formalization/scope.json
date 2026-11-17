@@ -1303,6 +1303,161 @@
       "claim_id": "chart-geometry:manifoldlorentzvolume:coordinateBilinear-geometric-measure-change",
       "module": "Burnett.Geometry.ManifoldLorentzVolume",
       "declaration": "Burnett.Geometry.ManifoldLorentzVolume.coordinateBilinear_geometric_measure_change"
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:metricConnection-unique",
+      "module": "Burnett.Geometry.LeviCivitaUniqueness",
+      "declaration": "Burnett.Geometry.LeviCivitaUniqueness.metricConnection_unique"
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:computedConnection-unique",
+      "module": "Burnett.Geometry.LeviCivitaUniqueness",
+      "declaration": "Burnett.Geometry.LeviCivitaUniqueness.computedConnection_unique"
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:glued-restrict-of-compatible",
+      "module": "Burnett.Geometry.MeasureGluing",
+      "declaration": "Burnett.Geometry.MeasureGluing.glued_restrict_of_compatible"
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:eq-glued-of-restrict",
+      "module": "Burnett.Geometry.MeasureGluing",
+      "declaration": "Burnett.Geometry.MeasureGluing.eq_glued_of_restrict"
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:existsUnique-measure-of-compatible-cover",
+      "module": "Burnett.Geometry.MeasureGluing",
+      "declaration": "Burnett.Geometry.MeasureGluing.existsUnique_measure_of_compatible_cover"
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-smul-right",
+      "module": "Burnett.Geometry.CoordinateCovariantDerivative",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.derivative_smul_right"
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-torsion-free",
+      "module": "Burnett.Geometry.CoordinateCovariantDerivative",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.derivative_torsion_free"
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-basis",
+      "module": "Burnett.Geometry.CoordinateCovariantDerivative",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.inducedCov2_basis"
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-auxiliaryPerturbationJet",
+      "module": "Burnett.Geometry.CoordinateCovariantDerivative",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.inducedCov2_auxiliaryPerturbationJet"
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:inducedCov2-eq-cov2Differential",
+      "module": "Burnett.Geometry.AffineConnection",
+      "declaration": "Burnett.Geometry.AffineConnection.inducedCov2_eq_cov2Differential"
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-metric-compatible",
+      "module": "Burnett.Geometry.AffineConnection",
+      "declaration": "Burnett.Geometry.AffineConnection.computed_derivative_metric_compatible"
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-torsion-free",
+      "module": "Burnett.Geometry.AffineConnection",
+      "declaration": "Burnett.Geometry.AffineConnection.computed_derivative_torsion_free"
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:cov2Differential-auxiliaryPerturbationJet",
+      "module": "Burnett.Geometry.AffineConnection",
+      "declaration": "Burnett.Geometry.AffineConnection.cov2Differential_auxiliaryPerturbationJet"
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:auxiliary-dual-derivative",
+      "module": "Burnett.Geometry.AffineConnection",
+      "declaration": "Burnett.Geometry.AffineConnection.auxiliary_dual_derivative"
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:contDiffOn-metricComponents-one",
+      "module": "Burnett.Geometry.ManifoldBilinear",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.contDiffOn_metricComponents_one"
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-symmetric",
+      "module": "Burnett.Geometry.ManifoldBilinear",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.coordinateBilinear_symmetric"
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-nondegenerate",
+      "module": "Burnett.Geometry.ManifoldBilinear",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.coordinateBilinear_nondegenerate"
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:isSmooth-inner",
+      "module": "Burnett.Geometry.ManifoldBilinear",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.isSmooth_inner"
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:localMeasure-compatible",
+      "module": "Burnett.Geometry.ManifoldVolume",
+      "declaration": "Burnett.Geometry.ManifoldVolume.localMeasure_compatible"
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:map-chart-geometricMeasure",
+      "module": "Burnett.Geometry.ManifoldVolume",
+      "declaration": "Burnett.Geometry.ManifoldVolume.map_chart_geometricMeasure"
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:existsUnique-measure-chart-formula",
+      "module": "Burnett.Geometry.ManifoldVolume",
+      "declaration": "Burnett.Geometry.ManifoldVolume.existsUnique_measure_chart_formula"
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:glued-cover-independent",
+      "module": "Burnett.Geometry.ManifoldVolume",
+      "declaration": "Burnett.Geometry.ManifoldVolume.glued_cover_independent"
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-metric-compatible",
+      "module": "Burnett.Geometry.ConnectionCoordinateChange",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_metric_compatible"
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-connection-torsion-free",
+      "module": "Burnett.Geometry.ConnectionCoordinateChange",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_connection_torsion_free"
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-christoffel",
+      "module": "Burnett.Geometry.ConnectionCoordinateChange",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_christoffel"
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:transitionMatrix-isUnit",
+      "module": "Burnett.Geometry.ManifoldTensorNorm",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.transitionMatrix_isUnit"
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-coordinate",
+      "module": "Burnett.Geometry.ManifoldTensorNorm",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_eq_coordinate"
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-ofMatrix-norm",
+      "module": "Burnett.Geometry.ManifoldTensorNorm",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_eq_ofMatrix_norm"
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-nonneg",
+      "module": "Burnett.Geometry.ManifoldTensorNorm",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_nonneg"
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:components-uniform-of-physical-C0loc",
+      "module": "Burnett.Geometry.ManifoldMetricSequence",
+      "declaration": "Burnett.Geometry.ManifoldMetricSequence.components_uniform_of_physical_C0loc"
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:chart-conditions-of-global",
+      "module": "Burnett.Geometry.ManifoldMetricSequence",
+      "declaration": "Burnett.Geometry.ManifoldMetricSequence.chart_conditions_of_global"
     }
   ],
   "inventory": [
@@ -7074,6 +7229,595 @@
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:metricConnection-unique",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LeviCivitaUniqueness.metricConnection_unique",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:computedConnection-unique",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.LeviCivitaUniqueness.computedConnection_unique",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:glued-restrict-of-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MeasureGluing.glued_restrict_of_compatible",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:eq-glued-of-restrict",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MeasureGluing.eq_glued_of_restrict",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:existsUnique-measure-of-compatible-cover",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MeasureGluing.existsUnique_measure_of_compatible_cover",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-smul-right",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.derivative_smul_right",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.derivative_torsion_free",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-basis",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.inducedCov2_basis",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-auxiliaryPerturbationJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.inducedCov2_auxiliaryPerturbationJet",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:inducedCov2-eq-cov2Differential",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AffineConnection.inducedCov2_eq_cov2Differential",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-metric-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AffineConnection.computed_derivative_metric_compatible",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AffineConnection.computed_derivative_torsion_free",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:cov2Differential-auxiliaryPerturbationJet",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AffineConnection.cov2Differential_auxiliaryPerturbationJet",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:auxiliary-dual-derivative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 367
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AffineConnection.auxiliary_dual_derivative",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:contDiffOn-metricComponents-one",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 103
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.contDiffOn_metricComponents_one",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-symmetric",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 103
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.coordinateBilinear_symmetric",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-nondegenerate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 103
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.coordinateBilinear_nondegenerate",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:isSmooth-inner",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 103
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.isSmooth_inner",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:localMeasure-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolume.localMeasure_compatible",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:map-chart-geometricMeasure",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolume.map_chart_geometricMeasure",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:existsUnique-measure-chart-formula",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolume.existsUnique_measure_chart_formula",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:glued-cover-independent",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 340
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldVolume.glued_cover_independent",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-metric-compatible",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 102,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_metric_compatible",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-connection-torsion-free",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 102,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_connection_torsion_free",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-christoffel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 102,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ConnectionCoordinateChange.transformed_christoffel",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:transitionMatrix-isUnit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.transitionMatrix_isUnit",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-coordinate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_eq_coordinate",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-ofMatrix-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_eq_ofMatrix_norm",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-nonneg",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldTensorNorm.physicalNorm2_nonneg",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:components-uniform-of-physical-C0loc",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetricSequence.components_uniform_of_physical_C0loc",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:chart-conditions-of-global",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 108
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-explicit-geometric-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldMetricSequence.chart_conditions_of_global",
+      "statement_record": "docs/statements/global-geometry.md",
+      "semantic_review_record": "docs/statements/global-geometry-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
@@ -7422,6 +8166,49 @@
       "intrinsic_Levi_Civita_naturality_and_global_volume": "open",
       "original_intrinsic_sequence_hypotheses_to_coordinate_fields": "open",
       "F04_parent_closed": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false
+    },
+    "pr10_main_integration": {
+      "status": "merged-and-main-ci-passed",
+      "merge_executor": "human-user-reported",
+      "merged_main": "14cfa2fd2ac727c7e0e678682f163a8af7e8af24",
+      "reviewed_pr_head": "c769684c761533b191d5c8f6090ff7a9dcb817c2",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44010759796,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/44010759796",
+      "main_ci_artifact": 14296309421,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "98743c22462debe4f42e86b503269b7abbca216809549cb3aef87961f16e3b11",
+      "agent_may_merge_next_pr": false
+    },
+    "global_geometry_delivery": {
+      "targets": 285,
+      "inventory": 356,
+      "lean_sources": 93,
+      "new_targets": 31,
+      "new_modules": 9,
+      "public_declarations": 123,
+      "declaration_kinds": {
+        "def": 26,
+        "abbrev": 2,
+        "theorem": 92,
+        "lemma": 3
+      },
+      "base_main": "14cfa2fd2ac727c7e0e678682f163a8af7e8af24",
+      "inherited_targets": 254,
+      "statement": "docs/statements/global-geometry.md",
+      "independent_review": "docs/statements/global-geometry-review.md",
+      "source_bindings": "docs/statements/global-geometry-source-bindings.json",
+      "geometric_base_volume": "implemented-characterized-by-all-preferred-chartAt-charts",
+      "geometric_volume_Radon_properties": "open",
+      "actual_global_bilinear_sections_and_physical_C0_chart_bridge": "implemented",
+      "coordinate_affine_derivative_and_induced_cov2": "implemented",
+      "affine_second_jet_algebra": "implemented",
+      "actual_chart_Hessian_identification_and_global_Levi_Civita": "open",
+      "original_full_Lorentz_signature_time_orientation_and_intrinsic_Dh_instantiation": "open",
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
       "human_semantic_confirmation": "not-recorded-for-new-delivery",
       "main_merge_performed_by_agent": false
     }
