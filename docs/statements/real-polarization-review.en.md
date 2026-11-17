@@ -38,7 +38,7 @@ Stage1 specification: `.project-verification/slice-workflow-test/reverse/source-
 
 `RicciSymbol.lean:14–18` fixes Index=`Fin 4`, four real Covector components, and four-by-four real Tensor2 component functions. Matrices are not structures carrying symmetry/nondegeneracy; needed symmetry must be explicit. `r • k`/`k+l` are componentwise real-function operations, without complex scalars/conjugation.
 
-`raiseCovector`/`raiseSecond` actually contract with supplied gInv. `metricTrace`, `contracted`, `symbolNorm` are original t,q,s. `ricciSymbol` is416's `1/2(sk+ξξt−ξq−qξ)`; `connectionSymbol` is434's c(k). `quadraticSymbol` retains all ordered a/e values and the original product subtraction order (`RicciSymbol.lean:65–76`).
+`raiseCovector`/`raiseSecond` actually contract with supplied gInv. `metricTrace`, `contracted`, `symbolNorm` are original t,q,s. `ricciSymbol` is416's `1/2(sk+ξξt−ξq−qξ)`; `connectionSymbol` is434's `c(k)`. `quadraticSymbol` retains all ordered a/e values and the original product subtraction order (`RicciSymbol.lean:65–76`).
 
 New `connectionCrossSymbol` (11–15) independently reads as
 

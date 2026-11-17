@@ -121,7 +121,7 @@ Thus all of `unnum:quadratic-symbol-algebra` (432–465) remains partial. The pa
 
 Actual SDK: `D:\Chatpgt\Lean形式化\.tools\lean-4.24.0-windows\bin\lean.exe`, reporting Lean4.24.0 commit `797c613eb9b6d4ec95db23e3e00af9ac6657f24b`. `.project-verification/reverse-ricci/Probe.lean` directly includes actual source followed by `#check @...` for every definition/theorem and five `#print axioms`, avoiding stale project `.olean` files.
 
-To avoid blocking on this project's official targeted-cache download, authorized read-only library objects under `D:\Chatpgt\Lean形式化\.lake\packages\<package>\.lake\build\lib\lean` were used. All nine manifest packages were checked beforehand: actual parent HEADs matched locked revisions and tracked sources were unchanged. `Cli` had no usable build directory, so was omitted; this fragment's closure does not need it. No shared cache was copied/written/replaced, no Lake update ran, and no project configuration changed.
+To avoid blocking on this project's official targeted-cache download, authorized read-only library objects under `D:\Chatpgt\Lean形式化\.lake\packages\<package>\.lake\build\lib\lean` were used. All nine `lake-manifest.json` packages were checked beforehand: actual parent HEADs matched locked revisions and tracked sources were unchanged. `Cli` had no usable build directory, so was omitted; this fragment's closure does not need it. No shared cache was copied/written/replaced, no Lake update ran, and no project configuration changed.
 
 Actual command, run in the project with `LEAN_PATH` set as recorded:
 
@@ -152,7 +152,7 @@ These record independent compilation, not this project's own Lake build, target 
 
 ### Additional rerun: this project's independent dependencies
 
-On2026-11-15 (UTC `2026-11-14T18:25:36.6824689Z`–`2026-11-14T18:25:52.1587554Z`), after official project caches were ready, all nine actual package HEADs again matched the manifest and tracked sources were unchanged. Inherited `LEAN_PATH` was cleared for that subprocess; SDK bin was prepended only to that PowerShell subprocess's PATH, and project `lake env` supplied imports.
+On2026-11-15 (UTC `2026-11-14T18:25:36.6824689Z`–`2026-11-14T18:25:52.1587554Z`), after official project caches were ready, all nine actual package HEADs again matched the manifest and tracked sources were unchanged. Inherited `LEAN_PATH` was cleared for that subprocess; SDK bin was prepended only to that PowerShell subprocess's `PATH`, and project `lake env` supplied imports.
 
 Actual command:
 

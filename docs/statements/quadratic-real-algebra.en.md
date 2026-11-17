@@ -4,7 +4,7 @@ This batch continues `paper/burnett.tex` lines432–463, SHA256 `e5e9fc351bbd554
 
 ## Actual objects and shared definitions
 
-Indices remain `Fin 4` and all components are real. G parameterizes inverse-metric components; k/l are covariant two-tensors. `IsSymmetricTensor` explicitly states component symmetry. Raising, the Ricci symbol, gauge tensors, c, and B reuse `RicciSymbol.lean`, without Euclidean contractions.
+Indices remain `Fin 4` and all components are real. `G` parameterizes inverse-metric components; `k,l` are covariant two-tensors. `IsSymmetricTensor` explicitly states component symmetry. Raising, the Ricci symbol, gauge tensors, c, and B reuse `RicciSymbol.lean`, without Euclidean contractions.
 
 Shared module `QuadraticDefs.lean` defines the real bilinear contraction over all ordered indices
 
