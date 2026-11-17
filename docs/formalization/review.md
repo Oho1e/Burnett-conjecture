@@ -174,3 +174,12 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批12模块、39支持目标形成324目标/395inventory/105源，102公开声明逐源完整独审/类型/公理核签通过，仅三公理。实际chart Hessian/metric jet、连接自然性、global smooth derivative及其连接律、metriccompat和actual mlieBracket零挠、base volume局部有限/开集正性见[解释](../statements/actual-chart-connection.md)、[独审](../statements/actual-chart-connection-review.md)、[绑定](../statements/actual-chart-connection-source-bindings.json)。旧92数学叶源、全部旧目标/库存、文章/锁/旧确认保留。原intrinsic Dh/物理cov3/完整Lorentz与Radon仍OPEN；F04/F05/整篇不升级，新作者确认待记录。
 
 当前完整机器/实际main组合CI与工件证据另取，不复用旧285绿色。已按用户新指令把自动独立后继PR规则写入GOAL、AGENTS、工作文件及工程工作流；最终main合并仍人工，PR就绪不再无条件暂停目标。
+
+
+## 2026-11-17：PR12主线确认及X03完整反例
+
+API观测PR12实际合入main42508e05fbc45326e15797d978eb531e3484b837，整树等受审0c96620e。push CI44076390546成功，artifact14325064567全部324目标/105源及全部target/project输入相同，指纹9dd0759daf4e665e08d8a80c944dbd704eee0afe9b5a5a1d8d1996cf053052b8，ZIP SHA29b985a276da8386f729afade37390721216c7130bd29c9d184dd1034d84dc58；代理未远端merge。本地main已ff并从实际新main自动建独立后继分支。
+
+X03本批10源194公开声明（41def、9abbrev、140theorem、4named instances）完整生产源码/类型/公理独审通过，仅三基础公理；完整总定理涵盖原给定旋转T全部性质与无输运正表示。模型只原UnitPhase LF，不偷加ambient边界LF；Euclidean Q=1、两时间方向、完整矩测试和真实canonical输运均核准，主/误差真可积已闭。采用允许的大R替代证明，未冒称原fold/branch路线或真空反例。详情见[说明](../statements/rotating-null-moment.md)、[独审](../statements/rotating-null-moment-review.md)、[绑定](../statements/rotating-null-moment-source-bindings.json)。
+
+29支持目标加原父目标形成354目标/424库存/115源；旧324目标/395库存（该父项实现状态除外）/104数学叶源、文章、锁、标准、信任及旧确认保留。原父项不重复新增，scope_decision保留。当前完整机器/实际最新main组合CI与工件独审另取，作者新解释待确认，整篇/F04/F05仍不升级。GOAL保持自动独立后继与人类最终merge边界。
