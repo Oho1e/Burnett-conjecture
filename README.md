@@ -2,7 +2,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。PR13已由外部操作合入main `e563bad1`，源码树与受审PR13相同；实际push CI及工件由交接证据另核。当前保留X03完整旋转零矩反例的全部目标和源码，并新增6模块、26支持目标，累计380目标/450库存/121源；本批91声明已独立核签。[内禀Dh与物理cov3](docs/statements/intrinsic-dh-geometry.md)、[局部弱导数](docs/statements/local-weak-derivative.md)及[连接误差测试](docs/statements/local-weak-ricci.md)已实现。完整Lorentz/时间定向包装、全弱Ricci、H⁻¹及F04/F05仍OPEN，新作者确认待记录。当前组合机器/CI按新输入另取；计数不是完成率。
+当前状态为 `development`。PR14已由外部操作合入main `167dffe9`，源码树等于受审44e342；native push CI44114590261及原始工件已核380目标/121源全部输入相同。本批新增6分析模块、14支持目标，累计394目标/464库存/127源；75声明的[H⁻¹分析核心](docs/statements/analysis-hminus.md)已通过实际源码、类型及公理独审。原主算子与真空数据的几何装配另行登记，完整F04/F05及全文未完成，新作者确认待记录。当前候选机器/远端检查按新回执判断；计数不是完成率。
 
 用户已将旋转零矩张量无输运表示（X03）及多尺度Rosen真空序列与精确零源坐标（X06）纳入最终目标。X03已随PR13进入main，当前分支保留全部证明与历史绑定；其新解释作者确认仍待记录。X06仍OPEN。全文工作图46片，规划不表示全部数学已证。
 
@@ -31,7 +31,7 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 
 此 PATH 设置只影响当前终端，确保缓存程序内部再调用 `lake` 时也使用同一SDK。
 
-入口核对原文身份、标准、固定运行时并构建库入口；对当前380个真实注册目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
+入口核对原文身份、标准、固定运行时并构建库入口；对当前394个真实注册目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
 
 - [`RicciSymbol.lean`](Burnett/Algebra/RicciSymbol.lean) 实现实数非特征核的显式规范表示和二次消去；[数学解释及实际声明](docs/statements/ricci-symbol.md)、[独立回读](docs/statements/ricci-symbol-review.md)。
 - [完整实二次代数与零锥交叉](docs/statements/quadratic-real-algebra.md) 对应两条并行实现及主代理的实际拼接；[独立回读](docs/statements/quadratic-real-algebra-review.md) 记录输入版本、真实类型及未覆盖项。
