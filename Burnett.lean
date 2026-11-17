@@ -100,3 +100,9 @@ import Burnett.Counterexamples.RotatingNull.MeasureEstimates
 import Burnett.Counterexamples.RotatingNull.SpacetimeCutoffs
 import Burnett.Counterexamples.RotatingNull.MeasureModel
 import Burnett.Counterexamples.RotatingNull.NoTransport
+import Burnett.Geometry.IntrinsicCov2
+import Burnett.Geometry.ManifoldCov3Norm
+import Burnett.Geometry.IntrinsicDhMeasure
+import Burnett.Geometry.OriginalAdmissibleLocalControl
+import Burnett.Analysis.LocalWeakDerivative
+import Burnett.Analysis.LocalWeakRicci

@@ -56,7 +56,7 @@
         "全局双曲性仅用于全动量提升，不可加到全局μ存在或输运前提。",
         "规格依赖图中的前向引用并不表示本片已经证明主定理。"
       ],
-      "next_action": "逐一锁定流形、射线截面、Radon与测试类的实际Lean建模；与各区对齐同一μ和子序列接口。",
+      "next_action": "原局部物理Dh∞经同g0几何体积的开集正性和较大紧邻域提升，已得到真实坐标辅助jet界；后续按消费者实例化完整Lorentz/时间定向及真空数据，不把一般字段支持当全部admissible已完成。",
       "supplementary_obligations": [
         {
           "id": "local:admissibility-coordinate-invariance",
@@ -89,7 +89,7 @@
         "方程中的Im、i和线性槽约定会影响所有能量恒等式符号。",
         "本片所含数字例p_*=4,12是说明，不各自建形式化项目。"
       ],
-      "next_action": "把记号契约纳入声明对照；历史引用暂保留为上下文，不发起联网核查。",
+      "next_action": "同一真实cov3诱导导数的任意preferred图识别、物理Hilbert范数及原Dh局部控制已实现独审；无需重做这些桥。按F04实际消费者补全局mixed E定量模型，完整主结果和作者确认仍另取。",
       "supplementary_obligations": []
     },
     {
@@ -111,7 +111,7 @@
         "曲率精确式与弱极限必须对固定测试先操作；不能在序列依赖测试中丢弃D²h_n项。",
         "H^{-1}局部化需嵌套截断、低阶项及簇点唯一性，不能只写分布收敛。"
       ],
-      "next_action": "将精确连接差/曲率恒等式和有界图紧性分别建接口，再统一导出eq:weak-ricci与eq:ricci-Hminus。",
+      "next_action": "消费已证intrinsic Dh→rawJet/E局部收敛及固定系数的一二次真实测试积分分部，装配原真空Ricci弱识别与二次项，保持精确修正=−旧B。固定a/ψ先于n；不得把n依赖逆系数直接代入固定系数定理。H⁻¹紧性及共同闭合组仍OPEN。",
       "supplementary_obligations": [
         {
           "id": "local:exact-connection-weak-curvature",
@@ -4156,6 +4156,162 @@
       "claim_id": "rotating-null:notransport:no-exists-transported-positive-representation",
       "source_slices": [
         "X03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-apply-eq-dualderivative",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-coordinate-cov2differential-change",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-eq-tensorinchart",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-apply-eq-dualderivative",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-basis-inchart",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-coordinate",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-ofmatrix-norm",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-zero-iff",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-exists-uniform-component-control",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-intrinsic-physicalnorm3-eq-auxiliary",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-continuous-normscalar",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-measurable-normscalar",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-exists-auxiliary-coordinate-bound-of-intrinsic-linfinity",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-exists-eventual-rawjet-bound-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-uniform-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-exists-tendstolp-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-directional-local",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-second-directional-local",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-first-derivative-test",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-second-derivative-test",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-connection-first-derivative-test",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-second-derivative-test",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-ricci:error-component-uniform-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-ricci:density-error-derivative-test-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-ricci:density-connection-error-test-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
+      "source_slices": [
+        "F04"
       ]
     }
   ],

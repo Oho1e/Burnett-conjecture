@@ -1803,6 +1803,136 @@
       "claim_id": "unnum:rotating-null-moment-example",
       "module": "Burnett.Counterexamples.RotatingNull.NoTransport",
       "declaration": "Burnett.RotatingNullMoments.NoTransport.rotating_null_moment_counterexample"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-apply-eq-dualderivative",
+      "module": "Burnett.Geometry.IntrinsicCov2",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.tensor_apply_eq_dualDerivative"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-coordinate-cov2differential-change",
+      "module": "Burnett.Geometry.IntrinsicCov2",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.coordinate_cov2Differential_change"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-eq-tensorinchart",
+      "module": "Burnett.Geometry.IntrinsicCov2",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.tensor_eq_tensorInChart"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-apply-eq-dualderivative",
+      "module": "Burnett.Geometry.IntrinsicCov2",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.auxiliary_tensor_apply_eq_dualDerivative"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-basis-inchart",
+      "module": "Burnett.Geometry.IntrinsicCov2",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.auxiliary_tensor_basis_inChart"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-coordinate",
+      "module": "Burnett.Geometry.ManifoldCov3Norm",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_coordinate"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-ofmatrix-norm",
+      "module": "Burnett.Geometry.ManifoldCov3Norm",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_ofMatrix_norm"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-zero-iff",
+      "module": "Burnett.Geometry.ManifoldCov3Norm",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_zero_iff"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-exists-uniform-component-control",
+      "module": "Burnett.Geometry.ManifoldCov3Norm",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.exists_uniform_component_control"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-intrinsic-physicalnorm3-eq-auxiliary",
+      "module": "Burnett.Geometry.ManifoldCov3Norm",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.intrinsic_physicalNorm3_eq_auxiliary"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-continuous-normscalar",
+      "module": "Burnett.Geometry.IntrinsicDhMeasure",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.continuous_normScalar"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-measurable-normscalar",
+      "module": "Burnett.Geometry.IntrinsicDhMeasure",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.measurable_normScalar"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-exists-auxiliary-coordinate-bound-of-intrinsic-linfinity",
+      "module": "Burnett.Geometry.IntrinsicDhMeasure",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.exists_auxiliary_coordinate_bound_of_intrinsic_LInfinity"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-exists-eventual-rawjet-bound-of-original",
+      "module": "Burnett.Geometry.OriginalAdmissibleLocalControl",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.exists_eventual_rawJet_bound_of_original"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-uniform-of-original",
+      "module": "Burnett.Geometry.OriginalAdmissibleLocalControl",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.computedError_uniform_of_original"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-exists-tendstolp-of-original",
+      "module": "Burnett.Geometry.OriginalAdmissibleLocalControl",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.computedError_exists_tendstoLp_of_original"
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-directional-local",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.integral_test_directional_local"
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-second-directional-local",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.integral_test_second_directional_local"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-first-derivative-test",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_component_first_derivative_test"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-second-derivative-test",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_component_second_derivative_test"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-connection-first-derivative-test",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_density_connection_first_derivative_test"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-second-derivative-test",
+      "module": "Burnett.Analysis.LocalWeakDerivative",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_density_second_derivative_test"
+    },
+    {
+      "claim_id": "local-weak-ricci:error-component-uniform-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.error_component_uniform_of_original"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-error-derivative-test-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_error_derivative_test_of_original"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-connection-error-test-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_connection_error_test_of_original"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_covariant_error_derivative_test_of_original"
     }
   ],
   "inventory": [
@@ -9432,6 +9562,474 @@
       "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-apply-eq-dualderivative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.tensor_apply_eq_dualDerivative",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-coordinate-cov2differential-change",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.coordinate_cov2Differential_change",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-tensor-eq-tensorinchart",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.tensor_eq_tensorInChart",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-apply-eq-dualderivative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.auxiliary_tensor_apply_eq_dualDerivative",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsiccov2-auxiliary-tensor-basis-inchart",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCov2.auxiliary_tensor_basis_inChart",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-coordinate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_coordinate",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-ofmatrix-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_ofMatrix_norm",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-physicalnorm3-eq-zero-iff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.physicalNorm3_eq_zero_iff",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-exists-uniform-component-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.exists_uniform_component_control",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:manifoldcov3norm-intrinsic-physicalnorm3-eq-auxiliary",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 333,
+        "endline": 345
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldCov3Norm.intrinsic_physicalNorm3_eq_auxiliary",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-continuous-normscalar",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.continuous_normScalar",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-measurable-normscalar",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.measurable_normScalar",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:intrinsicdhmeasure-exists-auxiliary-coordinate-bound-of-intrinsic-linfinity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 105
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicDhMeasure.exists_auxiliary_coordinate_bound_of_intrinsic_LInfinity",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-exists-eventual-rawjet-bound-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.exists_eventual_rawJet_bound_of_original",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-uniform-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.computedError_uniform_of_original",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "intrinsic-dh:originaladmissiblelocalcontrol-computederror-exists-tendstolp-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 369
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OriginalAdmissibleLocalControl.computedError_exists_tendstoLp_of_original",
+      "statement_record": "docs/statements/intrinsic-dh-geometry.md",
+      "semantic_review_record": "docs/statements/intrinsic-dh-geometry-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-directional-local",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.integral_test_directional_local",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:integral-test-second-directional-local",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.integral_test_second_directional_local",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-first-derivative-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_component_first_derivative_test",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-component-second-derivative-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_component_second_derivative_test",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-connection-first-derivative-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_density_connection_first_derivative_test",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-derivative:original-density-second-derivative-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakDerivative.original_density_second_derivative_test",
+      "statement_record": "docs/statements/local-weak-derivative.md",
+      "semantic_review_record": "docs/statements/local-weak-derivative-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-ricci:error-component-uniform-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 381
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.error_component_uniform_of_original",
+      "statement_record": "docs/statements/local-weak-ricci.md",
+      "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-error-derivative-test-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 381
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_error_derivative_test_of_original",
+      "statement_record": "docs/statements/local-weak-ricci.md",
+      "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-connection-error-test-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 381
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_connection_error_test_of_original",
+      "statement_record": "docs/statements/local-weak-ricci.md",
+      "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 381
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-original-local-consumer",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicci.density_covariant_error_derivative_test_of_original",
+      "statement_record": "docs/statements/local-weak-ricci.md",
+      "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     }
   ],
   "coverage_review": {
@@ -9915,6 +10513,48 @@
       "F05_parent_closed": false,
       "main_merge_performed_by_agent": false,
       "automatic_independent_next_PR": true
+    },
+    "intrinsic_dh_and_local_weak_delivery": {
+      "targets": 380,
+      "inventory": 450,
+      "lean_sources": 121,
+      "new_targets": 26,
+      "new_support_targets": 26,
+      "new_modules": 6,
+      "public_declarations": 91,
+      "declaration_kinds": {
+        "def": 14,
+        "abbrev": 2,
+        "theorem": 75,
+        "lemma": 0,
+        "instance": 0
+      },
+      "base_main": "e563bad1859629b05f0687dd5df5d5b475bee813",
+      "inherited_targets": 354,
+      "inherited_inventory": 424,
+      "inherited_lean_sources": 115,
+      "source_bindings": "docs/statements/intrinsic-dh-geometry-source-bindings.json",
+      "intrinsic_cov3_and_physical_norm": "implemented-and-independently-reviewed",
+      "original_Dh_to_rawJet_and_E_local_control": "implemented-and-independently-reviewed",
+      "local_fixed_test_weak_derivatives": "implemented-and-independently-reviewed",
+      "all_parent_results_closed": false,
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "author_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true,
+      "previous_reviewed_head": "1a980f855f2db1c7736dd29f36dcf12fa726b3bc",
+      "main_refresh": "ordinary-local-merge-and-normal-push",
+      "earlier_350_target_machine_evidence": "historical-inputs-only"
+    },
+    "pr13_main_integration": {
+      "status": "merged-source-tree-confirmed-push-CI-artifact-required-before-handoff",
+      "merged_main": "e563bad1859629b05f0687dd5df5d5b475bee813",
+      "reviewed_pr_head": "01e54fc28decf2e3ceac6da1e60eaca2dbfd3b17",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44101803956,
+      "agent_remote_merge_performed": false,
+      "main_ci_success_not_inferred_from_prior_PR": true
     }
   },
   "planning": {
