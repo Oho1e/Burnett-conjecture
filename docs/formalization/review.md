@@ -156,3 +156,12 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批新增10模块27支持目标，累计254目标、325库存、84源。真实切丛r图内C1/PosDef、genericB两图矩阵law、张量物理范数不变、(1,2)E物理Lp∞、两类密度的actual-chart局部相容见[图内几何](../statements/chart-geometry.md)、[独立回读](../statements/chart-geometry-review.md)和[冻结绑定](../statements/chart-geometry-source-bindings.json)。105声明已实际独立核签，仅三公理。原文dV_g的绝对det已单独建模，没有误用auxr正定密度。
 
 旧227target/298inventory/73数学叶源及文章、锁、标准、旧确认保留。global volume、intrinsic LC和原全局序列的所有图内接口仍未全部实例化；F04/F05及整篇verified不升级，新作者确认待记录。当前完整机器/实际main组合CI与工件证据另取，最终交人类merge，代理不启auto-merge、删branch或发布tag。
+
+
+## 2026-11-17：PR10主线确认与全局几何支持
+
+用户已手动合并PR10为main14cfa2fd2ac727c7e0e678682f163a8af7e8af24，整树等于受审c769。push CI44010759796成功，artifact14296309421全部254目标/84源及target/project输入与受审PR10相同，指纹98743c22462debe4f42e86b503269b7abbca216809549cb3aef87961f16e3b11，ZIP SHA63e7e28f429c6293ad5382dd25fb113882e372b58282ab57b4ab7d1113dccce9。代理未远端merge，本地main快进。
+
+本批9源31支持目标形成285目标/356库存/93源候选，123公开声明分别实际独立核签（含同行属性声明），全部三基础公理；来源、角色及精确范围见[全局几何](../statements/global-geometry.md)、[独审](../statements/global-geometry-review.md)及[绑定](../statements/global-geometry-source-bindings.json)。原254目标/325库存/83旧数学叶源、原文/锁/标准/旧确认保持。底流形几何volume preferred图公式、global B/物理C0loc桥、实际coordinate affine/cov2及非线性二阶jet代数已实现；actualchart Hessian/globalLC/intrinsicDh/完整Lorentz属性、体积Radon和F04/F05仍开放。新确认待记录，整篇不升级。
+
+当前完整285/93机器及远端实际组合CI/工件独审另按本候选取证，不复用旧绿色。最终仍交人类merge，不启auto-merge/删分支/发布验证tag。

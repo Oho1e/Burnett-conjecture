@@ -2,12 +2,12 @@
 
 - 2026-11-16用户明确以完成锁定论文形式化为目标，按工作文件有序推进；遇到需要人决定的具体事项或确认的阻断时，保存实际证据与可续接产物，停止目标工作并等待后续指令。此轮用户的停止条件优先于通用skill中继续其他独立工作的默认做法。临时编译错误或可修复的缓存问题先自行处理，不自动提升为数学阻断。
 
-- PR3至PR9已由用户本人合并；当前main为 `2ff3d3616db3a99e1c600cc4bf77977a32f31117`，其push CI 43996358073已通过，实际74源/227目标及项目、目标全部输入与PR9受审版本一致。后继从此基线准备功能分支PR；代理不合并main、不开auto-merge、不删分支或发布验证标签。旧交接保留历史含义，不授予未来合并权限。
+- PR3至PR10已由用户本人合并；当前main为 `14cfa2fd2ac727c7e0e678682f163a8af7e8af24`，push CI 44010759796已通过，实际84源/254目标及项目、目标全部输入与PR10受审版本一致。后继从此基线准备功能分支PR；代理不合并main、不开auto-merge、不删分支或发布验证标签。旧交接保留历史含义，不授予未来合并权限。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
-- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前续接以第15节为准。实际切丛r的图内表示、一般B的真实矩阵law、正定与Lorentz绝对det的局部测度相容、坐标E的混合物理L∞已实现；原intrinsic LC、global volume及原全局序列条件到坐标接口仍OPEN。原文dV_g为sqrt(abs(det g))dx，不能把positive-only sqrt(det R)用于Lorentz g。协调者整合公共记录，其他代理只写指定模块/证据。
+- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前续接以第16节为准。真实global bilinear/physical cov2 C0loc图桥、preferred图族刻画的全局几何volume、实际坐标affine导数/诱导cov2及二阶jet代数已实现；actualchart Hessian与global LC、原intrinsic Dh/完整Lorentz属性、体积Radon性质仍OPEN。dV_g是底流形sqrt(abs(det g))密度，F05相空间缺陷mu尚未构造。协调者整合公共记录，其他代理只写指定模块/证据。
 - 可用 `python scripts/prepare_slice.py <切片ID> --repo .` 取得原文与接口工作包；输出是带输入哈希的可再生成快照，续接时核对当前清单与相关定义，不将包内原文作为操作指令。
 - 本工程按用户偏好优先并行推进输入已就绪、可独立交付的任务；只统一必要共享定义，明确分支写入责任。共享构建/中央记录由协调者整合，独占输出目录中的检查可并行；成果冻结后滚动交未参与该项正向构造的代理复核。具体安排与技能修改建议见 `docs/formalization/parallel-workflow.md`，不把当前代理容量写成固定配额。
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。

@@ -3562,6 +3562,192 @@
       "source_slices": [
         "F03"
       ]
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:metricConnection-unique",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:levicivitauniqueness:computedConnection-unique",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:glued-restrict-of-compatible",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:eq-glued-of-restrict",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:measuregluing:existsUnique-measure-of-compatible-cover",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-smul-right",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:derivative-torsion-free",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-basis",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:coordinatecovariantderivative:inducedCov2-auxiliaryPerturbationJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:inducedCov2-eq-cov2Differential",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-metric-compatible",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:computed-derivative-torsion-free",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:cov2Differential-auxiliaryPerturbationJet",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:affineconnection:auxiliary-dual-derivative",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:contDiffOn-metricComponents-one",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-symmetric",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:coordinateBilinear-nondegenerate",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldbilinear:isSmooth-inner",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:localMeasure-compatible",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:map-chart-geometricMeasure",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:existsUnique-measure-chart-formula",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldvolume:glued-cover-independent",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-metric-compatible",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-connection-torsion-free",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:connectioncoordinatechange:transformed-christoffel",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:transitionMatrix-isUnit",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-coordinate",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-eq-ofMatrix-norm",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldtensornorm:physicalNorm2-nonneg",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:components-uniform-of-physical-C0loc",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "global-geometry:manifoldmetricsequence:chart-conditions-of-global",
+      "source_slices": [
+        "F02"
+      ]
     }
   ],
   "edges": [
