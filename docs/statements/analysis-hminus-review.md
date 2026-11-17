@@ -1,0 +1,9 @@
+# H⁻¹分析核心独立回读
+
+六模块75声明的冻结数学源码及实际生产晋升均由未参与相应构造的代理复核。全部生产literal源码、75实际类型和传递公理核签通过，无诊断，仅propext、Classical.choice、Quot.sound；实际输出与适用已审原件逐字相等。五份原件无末尾换行，仅补一个EOF newline，原证明字节保持，未重命名定义或改换对象。
+
+生产独审报告SHA `a59094b69fccfe3a2885ed9a7c8b07a9897ab3e3732f020b0899a0b0541e4a06`；回执SHA `0f4ff0a76725936f29e22752a7860e469ef725b8c973932753d9231f4531b31b`。逐模块源码/query/log及完整旧链见[绑定](analysis-hminus-source-bindings.json)。构造者包含resume_x03_independent与root；相应非作者独审由resume_connection_laws和resume_geometry_review交叉承担，源作者未作为自己的首次独审者。
+
+回读重点为真实J/GraphDual、方向负号、同一f/χ/归一化W、固定测试先于n、逐项可积性、实际weighted L²及Parseval、闭不等式/真实稠密扩展、R先于n和C/R尾、内部构造F与MemLp。eLpNorm指数2是范数界，不冒写为平方界。没有把待证functional/energy/关键界藏入最终调用者参数。
+
+14个语义目标不缩减完整75项的独审范围。当前394目标/464库存/127源的完整候选机器与最新main组合CI仍分别取真实回执；本数学独审不替代它们。新增作者确认待记录，全文及F04/F05不升级，最终main合并仍人工。

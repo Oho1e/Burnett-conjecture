@@ -1933,6 +1933,76 @@
       "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
       "module": "Burnett.Analysis.LocalWeakRicci",
       "declaration": "Burnett.Analysis.LocalWeakRicci.density_covariant_error_derivative_test_of_original"
+    },
+    {
+      "claim_id": "analysis-hminus:directionalFunctional-test-of-smooth",
+      "module": "Burnett.Analysis.StrongL2Hminus",
+      "declaration": "Burnett.Analysis.HminusStrongL2.directionalFunctional_test_of_smooth"
+    },
+    {
+      "claim_id": "analysis-hminus:norm-directionalFunctional-le",
+      "module": "Burnett.Analysis.StrongL2Hminus",
+      "declaration": "Burnett.Analysis.HminusStrongL2.norm_directionalFunctional_le"
+    },
+    {
+      "claim_id": "analysis-hminus:smooth-strongL2-directional-realization",
+      "module": "Burnett.Analysis.StrongL2Hminus",
+      "declaration": "Burnett.Analysis.HminusStrongL2.smooth_strongL2_directional_realization"
+    },
+    {
+      "claim_id": "analysis-hminus:integral-norm-le-L2-cutoff",
+      "module": "Burnett.Analysis.LocalHminusFourier",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.integral_norm_le_L2_cutoff"
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pointwise-zero",
+      "module": "Burnett.Analysis.LocalHminusFourier",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.fourier_pointwise_zero"
+    },
+    {
+      "claim_id": "analysis-hminus:low-frequency-energy-tendsto-zero",
+      "module": "Burnett.Analysis.LocalHminusFourier",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.low_frequency_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pderiv",
+      "module": "Burnett.Analysis.H1FourierEnergy",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.fourier_pderiv"
+    },
+    {
+      "claim_id": "analysis-hminus:test-jet-fourier-energy",
+      "module": "Burnett.Analysis.H1FourierEnergy",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.test_jet_fourier_energy"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-test",
+      "module": "Burnett.Analysis.HminusWeightedDual",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_test"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-opnorm-le-weighted",
+      "module": "Burnett.Analysis.HminusWeightedDual",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_opnorm_le_weighted"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-tendsto-zero",
+      "module": "Burnett.Analysis.HminusWeightedDual",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_tendsto_zero"
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-split-bound",
+      "module": "Burnett.Analysis.WeightedFourierTail",
+      "declaration": "Burnett.Analysis.HminusWeightedTail.weighted_split_bound"
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-fourier-energy-tendsto-zero",
+      "module": "Burnett.Analysis.WeightedFourierTail",
+      "declaration": "Burnett.Analysis.HminusWeightedTail.weighted_fourier_energy_tendsto_zero"
+    },
+    {
+      "claim_id": "analysis-hminus:exists-sourceFunctionals-of-eLpNorm-bound",
+      "module": "Burnett.Analysis.CompactRellich",
+      "declaration": "Burnett.Analysis.CompactRellich.exists_sourceFunctionals_of_eLpNorm_bound"
     }
   ],
   "inventory": [
@@ -10030,6 +10100,258 @@
       "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
       "semantic_review": "independent-current-production-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:directionalFunctional-test-of-smooth",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusStrongL2.directionalFunctional_test_of_smooth",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:norm-directionalFunctional-le",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusStrongL2.norm_directionalFunctional_le",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:smooth-strongL2-directional-realization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusStrongL2.smooth_strongL2_directional_realization",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:integral-norm-le-L2-cutoff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.integral_norm_le_L2_cutoff",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pointwise-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.fourier_pointwise_zero",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:low-frequency-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalHminusFourier.low_frequency_energy_tendsto_zero",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pderiv",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.fourier_pderiv",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:test-jet-fourier-energy",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.test_jet_fourier_energy",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_test",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-opnorm-le-weighted",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_opnorm_le_weighted",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedDual.sourceFunctional_tendsto_zero",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-split-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedTail.weighted_split_bound",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-fourier-energy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.HminusWeightedTail.weighted_fourier_energy_tendsto_zero",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "analysis-hminus:exists-sourceFunctionals-of-eLpNorm-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-Hminus-analysis-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.CompactRellich.exists_sourceFunctionals_of_eLpNorm_bound",
+      "statement_record": "docs/statements/analysis-hminus.md",
+      "semantic_review_record": "docs/statements/analysis-hminus-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     }
   ],
   "coverage_review": {
@@ -10555,6 +10877,49 @@
       "main_ci_run": 44101803956,
       "agent_remote_merge_performed": false,
       "main_ci_success_not_inferred_from_prior_PR": true
+    },
+    "pr14_main_integration": {
+      "status": "merged-and-native-main-ci-artifact-verified",
+      "merged_main": "167dffe9942345e568c3e26118adf7331d7b7ea9",
+      "reviewed_pr_head": "44e342de4703b8003c61be9b8ce8ee3caa793d3b",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44114590261,
+      "main_ci_url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/44114590261",
+      "main_ci_artifact": 14343767577,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "input_fingerprint": "603b66b0af9919f85fbbcd1df095d091ecb19de66f69476cda4fe01e5d001401",
+      "agent_remote_merge_performed": false
+    },
+    "analysis_hminus_delivery": {
+      "targets": 394,
+      "inventory": 464,
+      "lean_sources": 127,
+      "new_targets": 14,
+      "new_support_targets": 14,
+      "new_modules": 6,
+      "public_declarations": 75,
+      "declaration_kinds": {
+        "def": 15,
+        "abbrev": 1,
+        "theorem": 59,
+        "lemma": 0,
+        "instance": 0
+      },
+      "base_main": "167dffe9942345e568c3e26118adf7331d7b7ea9",
+      "inherited_targets": 380,
+      "inherited_inventory": 450,
+      "inherited_lean_sources": 121,
+      "statement": "docs/statements/analysis-hminus.md",
+      "independent_review": "docs/statements/analysis-hminus-review.md",
+      "source_bindings": "docs/statements/analysis-hminus-source-bindings.json",
+      "mathematical_analysis_core": "implemented-and-independently-reviewed",
+      "original_geometric_principal_operator_instantiated_in_this_delivery": false,
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "whole_paper_verified": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true
     }
   },
   "planning": {

@@ -111,7 +111,7 @@
         "曲率精确式与弱极限必须对固定测试先操作；不能在序列依赖测试中丢弃D²h_n项。",
         "H^{-1}局部化需嵌套截断、低阶项及簇点唯一性，不能只写分布收敛。"
       ],
-      "next_action": "消费已证intrinsic Dh→rawJet/E局部收敛及固定系数的一二次真实测试积分分部，装配原真空Ricci弱识别与二次项，保持精确修正=−旧B。固定a/ψ先于n；不得把n依赖逆系数直接代入固定系数定理。H⁻¹紧性及共同闭合组仍OPEN。",
+      "next_action": "真实强零L²余项导数和共同紧支撑有界L²源的H⁻¹分析核心已实现独审；将其与原真空序列的真实局部化、主算子精确分解及原几何数据接口整合，再登记完整局部结论。保持同χ/同背景/同n；父结果及全局共同闭合组不由本批分析支持自动关闭。",
       "supplementary_obligations": [
         {
           "id": "local:exact-connection-weak-curvature",
@@ -4310,6 +4310,90 @@
     },
     {
       "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:directionalFunctional-test-of-smooth",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:norm-directionalFunctional-le",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:smooth-strongL2-directional-realization",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:integral-norm-le-L2-cutoff",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pointwise-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:low-frequency-energy-tendsto-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:fourier-pderiv",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:test-jet-fourier-energy",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-test",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-opnorm-le-weighted",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:sourceFunctional-tendsto-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-split-bound",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:weighted-fourier-energy-tendsto-zero",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "analysis-hminus:exists-sourceFunctionals-of-eLpNorm-bound",
       "source_slices": [
         "F04"
       ]
