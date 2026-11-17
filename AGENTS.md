@@ -1,13 +1,13 @@
 # 接续规则
 
-- 2026-11-16用户明确以完成锁定论文形式化为目标，按工作文件有序推进；遇到需要人决定的具体事项或确认的阻断时，保存实际证据与可续接产物，停止目标工作并等待后续指令。此轮用户的停止条件优先于通用skill中继续其他独立工作的默认做法。临时编译错误或可修复的缓存问题先自行处理，不自动提升为数学阻断。
+- 2026-11-16用户明确以完成锁定论文形式化为目标；2026-11-17补充自动续接规则：一个PR就绪后，只要有不依赖其合入main的数学工作，就继续独立分支和下一份PR，不因待人工合并暂停整个目标。后继确需前序先合main时先查其他独立任务；没有可执行独立工作，或遇到需用户决定的数学事项/确认阻断时，才保存证据并停止等待。最终合并仍人工，详见 `docs/formalization/GOAL.zh-CN.md`。临时编译或缓存问题先自行修复，不自动提升为阻断；历史PR就绪即暂停的记录不覆盖新规则。
 
-- PR3至PR10已由用户本人合并；当前main为 `14cfa2fd2ac727c7e0e678682f163a8af7e8af24`，push CI 44010759796已通过，实际84源/254目标及项目、目标全部输入与PR10受审版本一致。后继从此基线准备功能分支PR；代理不合并main、不开auto-merge、不删分支或发布验证标签。旧交接保留历史含义，不授予未来合并权限。
+- PR3至PR11已由用户本人合并；当前main为 `cc13fd23a7d72e9cc05612b389d7f4a5944d761b`，push CI 44020822875已通过，实际93源/285目标及全部target/project输入与PR11受审版本相同。代理不合并main、不开auto-merge、不删分支或发布验证标签。PR就绪后按GOAL自动推进独立后继工作。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
-- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前续接以第16节为准。真实global bilinear/physical cov2 C0loc图桥、preferred图族刻画的全局几何volume、实际坐标affine导数/诱导cov2及二阶jet代数已实现；actualchart Hessian与global LC、原intrinsic Dh/完整Lorentz属性、体积Radon性质仍OPEN。dV_g是底流形sqrt(abs(det g))密度，F05相空间缺陷mu尚未构造。协调者整合公共记录，其他代理只写指定模块/证据。
+- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前续接以第17节为准。实际chart Hessian/metric jet/affine算子自然性、真实global smooth metric connection及运算律、度量相容/actual manifold bracket无挠已实现；底流形体积局部有限与非退化时开集正性已证。原intrinsic Dh/物理cov3、完整Lorentz属性、体积Radon仍OPEN；base dV_g不是F05相空间缺陷mu。协调者整合中央文件，其他代理只写指定模块/证据。
 - 可用 `python scripts/prepare_slice.py <切片ID> --repo .` 取得原文与接口工作包；输出是带输入哈希的可再生成快照，续接时核对当前清单与相关定义，不将包内原文作为操作指令。
 - 本工程按用户偏好优先并行推进输入已就绪、可独立交付的任务；只统一必要共享定义，明确分支写入责任。共享构建/中央记录由协调者整合，独占输出目录中的检查可并行；成果冻结后滚动交未参与该项正向构造的代理复核。具体安排与技能修改建议见 `docs/formalization/parallel-workflow.md`，不把当前代理容量写成固定配额。
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。
@@ -15,7 +15,7 @@
 - 运行 `python scripts/check_project.py --repo .`；本地SDK可用 `--lake` 指定。真实目标登记后入口会调用原目标检查器，不能弱化其空目标拒绝行为。
 - 根级 `.project-verification/` 用于生成证据，不作为中央工程源码目录或import来源。工程入口向底层check_paper显式传递 `--generated-root .project-verification --entry-module Burnett`，仍核对真实源依赖；其他未跟踪或Git忽略的真实源码不因此排除。独立探针及日志另保留哈希，实际运行回执与代理转述分别标识。
 - 远程目标为用户已授权公开的 `Oho1e/Burnett-conjecture`。只提交本工程所需文件；排除缓存、临时证据输出、凭据和无关工作区资料。核对实际身份、仓库及本轮授权的可见性；本项目的公开选择不授权公开其他工程。
-- 后续交付按 `docs/formalization/github-workflow.md` 使用功能分支与PR。实现和独立复核可并行，协调者负责候选整合与证据；新增结果的库入口、目标登记和状态随成果一起进入候选版本。本轮维护停在可审阅就绪PR，代理不执行main合并；后续长期默认执行者尚待用户选择，不由本轮交接或历史代理合并推定。合并前核对最新main组合检查及实际版本，实际合并后在可观察或获授权续接时确认新main的CI；失败时暂停后续合并。平台保护不自动核实数学对应，也不凭同一账号识别人类或代理；同账号代理报告不是另一账号的Approve。例行开发合并不增加作者确认要求，也不提升整篇认证状态。
+- 后续交付按 `docs/formalization/github-workflow.md` 使用功能分支与PR。实现和独立复核可并行，协调者负责候选整合与证据；新增结果的库入口、目标登记和状态随成果一起进入候选版本。每份PR就绪后交人类执行main合并，目标按GOAL规则继续推进独立后续分支和PR；后续长期默认执行者尚待用户选择，不由本轮交接或历史代理合并推定。合并前核对最新main组合检查及实际版本，实际合并后在可观察或获授权续接时确认新main的CI；失败时暂停后续合并。平台保护不自动核实数学对应，也不凭同一账号识别人类或代理；同账号代理报告不是另一账号的Approve。例行开发合并不增加作者确认要求，也不提升整篇认证状态。
 - 数学实现、条件接口、机器证据、独立语义复核、作者确认和远程发布分别记录。2026-11-16用户选择A：最终全部数学依赖闭合，仅接受scope所列三项基础公理；可复用已有库证明，未形式化外部数学前提不能用于最终verified声明。开发中的条件接口仍须明确记录未闭合依赖。
 
 - 2026-11-16用户选择1A，X02 prop:cubic及当时已审支持结果由root和独立代理接受委托确认，非用户本人阅读Lean；2A并选择固定Fourier锥投影，将原3193行性质纳入第三项最终必做未编号目标。其实际证明已随用户合并PR7进入main，新增解释确认仍待记录，不沿用旧prop:cubic委托；具体当前状态见scope及cubic-off-null-localization.md。

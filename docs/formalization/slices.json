@@ -3748,6 +3748,240 @@
       "source_slices": [
         "F02"
       ]
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:contDiffOn-chartTransition-infty",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:actualchartsecondjet:actualHessian-symmetric",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateBilinear-jet-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:metricjetnaturality:coordinateMetric-jet-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connection-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateBilinear-connectionTerm-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:connectiontermnaturality:coordinateMetric-connectionTerm-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:coordinateVector-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:derivative-coordinateVector-change-hessian",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:connectionTerm-actualHessian",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartvectorfield:isSmooth-iff-contDiffOn-coordinateVector",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:coordinateDerivative-change",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartconnectionnaturality:chartDerivative-eq",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:coordinateMeasure-compact-lt-top",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-apply-of-subset-chart",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isOpenPosMeasure",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-isLocallyFiniteMeasure",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:manifoldvolumeregularity:geometricMeasure-compact-lt-top",
+      "source_slices": [
+        "F03"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-matrixInverse",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-computedConnection-field",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:smoothmetricconnection:contDiffOn-coordinateBilinear-connection",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:derivative-eq-chart",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:coordinateVector-derivative",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalcovariantderivative:isSmooth-derivative",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:tangentFrame-eq-mfderiv-symm",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:frameVector-eq-mfderiv-chart",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartdifferential:scalar-mfderiv-eq-coordinate",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:coordinateVector-mlieBracket",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:chartliebracket:mlieBracket-eq-tangentFrame",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:contMDiff-pairing",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-metric-compatible",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:derivative-torsion-free",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-compatible",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globallevicivita:metric-derivative-torsion-free",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-left",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-left",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-add-right",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-const-smul-right",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "actual-chart:globalconnectionlaws:derivative-smul-right",
+      "source_slices": [
+        "F02"
+      ]
     }
   ],
   "edges": [

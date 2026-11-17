@@ -1,8 +1,10 @@
 # Burnett 论文形式化：后续整体工作安排
 
+2026-11-17用户更新了[目标续接规则](GOAL.zh-CN.md)：PR就绪后自动推进不依赖其合入main的后续分支和PR。待人工合并本身不再导致整个目标暂停；实际依赖阻塞且无独立任务、需用户裁决或确认阻断时才停止。各历史阶段的无条件“PR就绪后暂停”保留历史含义，当前按新规则执行；main合并仍由人类操作。
+
 更新日期：2026-11-16（经对抗性复核修订）。本文安排后续工作的顺序、并行方式、接口和交付；实际数学状态仍以 [scope.json](scope.json) 及其适用证据为准，登记的切片联系以 [slices.json](slices.json) 为准。
 
-**本轮按三线从第一批基础候选继续推进。** 第4节保留完整任务约定；第10–12节保留前批交付时的记录，当前续接以第13节为准，不重新从初始调查开始。数学状态仍以scope及其适用证据为准。
+第4节保留早期三线任务约定，第10–15节保留前批交付记录；当前数学续接以第17节为准，并按上述最新GOAL规则自动推进独立后续PR。数学状态仍以scope及其适用证据为准，不重新从初始调查开始。
 
 ## 1. 目标、起点和使用方法
 
@@ -394,6 +396,8 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 
 ## 16. PR10合并后的全局体积、物理收敛与连接续接
 
+本节保留PR11交付前状态；用户已合并PR11，当前事实及续接见第17节。
+
 用户手动合并PR10为main14cfa2fd2ac727c7e0e678682f163a8af7e8af24，整树等于受审c769候选。[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/44010759796)成功，artifact14296309421的254目标/84源及全部target/project输入与受审PR10相同，指纹98743c22462debe4f42e86b503269b7abbca216809549cb3aef87961f16e3b11；ZIP SHA63e7e28f429c6293ad5382dd25fb113882e372b58282ab57b4ab7d1113dccce9。代理未远端merge，本地main已快进；旧交接保持历史身份，不扩大合并权限。
 
 本批formalization/global-geometry-inputs新增9模块、31支持目标，累计285目标/356inventory/93源。123公开声明已分别完整原源/类型/传递公理独审通过；三公理、原文、依赖锁及旧254目标/325库存/83数学叶源保持。准确实际对象、输入与边界见[说明](../statements/global-geometry.md)、[独审](../statements/global-geometry-review.md)和[绑定](../statements/global-geometry-source-bindings.json)。当前完整候选机器检查和远端组合CI另取新回执。
@@ -412,3 +416,22 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 4. 原条件桥齐后继续固定紧支撑测试积分分部、弱Ricci识别和嵌套cutoff H⁻¹紧性，精确二次修正=−旧B负号保持。F05继续真实PDO测试有界性/误差正性/保支撑延拓与同一相空间缺陷测度，不将上述base volume当该缺陷measure。
 
 本批来源绑定之后依次做完整285/93候选检查、实际最新main合并候选CI及工件独审，再交人类merge。代理不merge/auto-merge/删branch/tag；就绪后按用户条件停止，保存并暂停，收到人工合并通知后核真实新main/push CI再续接。旧确认不扩大，新作者确认待记录，整篇verified=false。下一轮新增源冻结前仍核LF单EOF/Git过滤字节，声明计数须包括同行属性。
+
+
+## 17. PR11合并后的实际图与全局连接续接
+
+用户手动合并PR11为main cc13fd23a7d72e9cc05612b389d7f4a5944d761b，整树等于受审e0345b2。[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/44020822875)成功，artifact14301023073的285目标/93源及全部target/project输入与受审PR11相同，指纹b951de598470c3bc48d6f09266fefe1bc3d1ead3776ad52a1ddea287c95e5c77；ZIP SHA a770db04a40ed0ba0e56ccdabf27c32b7a9c60f94f6d61bd1f72d2548d81c59f。恢复后再次只读核实main、该CI及保护匹配，未发生main变化。代理未远端merge。
+
+本批formalization/actual-chart-connection新增12模块、39支持目标，累计324目标/395inventory/105源，102公开声明均完成逐源独立回读、实际全类型/公理核签；准确对象与未闭合项见[说明](../statements/actual-chart-connection.md)、[复核](../statements/actual-chart-connection-review.md)及[绑定](../statements/actual-chart-connection-source-bindings.json)。原文/锁/标准/三公理、旧285目标/356库存/92数学叶源保持，当前完整机器/组合CI/工件证据另取。
+
+可消费的新证明：真实C∞ chartTransition及其实际二次Fréchet导数H、same-B三项metric jet、保留H的computed连接变换；真实切丛向量场坐标/光滑双向桥及求导law；图内affine operator相容和真正global derivative、由实际inverse/jet正则消去Γ光滑前提的截面光滑封闭。GlobalConnectionLaws给出实际连接运算律；真实scalar mfderiv及mathlib mlieBracket坐标桥取得全局metric compatibility/zero torsion，辅助r由其原光滑、对称、正定性质实例化。这里没有声称关于一切抽象全局连接算子的唯一性。
+
+同一真实geometricMeasure还由B光滑取得图内与全局紧集有限、局部有限，由另加原非退化条件取得非空开集正性。它是底流形dV_g，不是F05缺陷μ；Radon与任意maximal-atlas扩展未宣称。
+
+继续按实际依赖推进：
+
+1. 接同一全局cov2扰动的真实诱导导数到既有auxiliaryPerturbationJet，构造真实cov3及物理r范数的图识别；经已证几何体积图公式将原intrinsic Dh条件变成所需坐标一阶界。保持同一r、固定紧集/较大紧邻域及较大邻域ae到逐点论证，不增加uniform D²g_n或全局光滑frame。完整Lorentz/timeorientation模型按消费者所需补齐，不能由一般B支持冒认原admissible全部完成。
+2. 上述原条件桥齐后做固定测试积分分部、弱Ricci与嵌套cutoff H⁻¹紧性，保持精确Ricci二次修正=−旧B。F05继续实际PDO界、误差正性、保支撑延拓和同一相空间缺陷测度，不能用base volume替代。
+3. 按[GOAL](GOAL.zh-CN.md)，本PR就绪并保存证据后，自动转向不依赖它先进入main的数学支线。X03旋转零矩反例可按实际main已有Minkowski/Fourier/积分分部工具调查；其F02入边是定义，X03→X04是说明联系，不机械等待本批LC。完整无输运反例仍需真实正测度支撑迫定和原量词，局部代数/测试函数成功不关闭X03。无可执行独立任务、需用户裁决或确认阻断时才停止。
+
+先做当前完整候选机器检查、实际最新main组合CI及工件独审，再交人类合并；就绪本身不暂停整个目标。main变化则刷新受影响候选及检查，不能拿旧绿色冒充新组合。代理不merge/auto-merge/强推/删branch/tag。新作者确认仍待记录，整篇/F04/F05不升级。

@@ -165,3 +165,12 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批9源31支持目标形成285目标/356库存/93源候选，123公开声明分别实际独立核签（含同行属性声明），全部三基础公理；来源、角色及精确范围见[全局几何](../statements/global-geometry.md)、[独审](../statements/global-geometry-review.md)及[绑定](../statements/global-geometry-source-bindings.json)。原254目标/325库存/83旧数学叶源、原文/锁/标准/旧确认保持。底流形几何volume preferred图公式、global B/物理C0loc桥、实际coordinate affine/cov2及非线性二阶jet代数已实现；actualchart Hessian/globalLC/intrinsicDh/完整Lorentz属性、体积Radon和F04/F05仍开放。新确认待记录，整篇不升级。
 
 当前完整285/93机器及远端实际组合CI/工件独审另按本候选取证，不复用旧绿色。最终仍交人类merge，不启auto-merge/删分支/发布验证tag。
+
+
+## 2026-11-17：PR11主线确认与实际图/全局连接
+
+用户已合并PR11为main cc13fd23a7d72e9cc05612b389d7f4a5944d761b，整树等于受审e0345b2；push CI44020822875成功，artifact14301023073全部285目标/93源及target/project输入相同。指纹b951de598470c3bc48d6f09266fefe1bc3d1ead3776ad52a1ddea287c95e5c77，ZIP SHA a770db04a40ed0ba0e56ccdabf27c32b7a9c60f94f6d61bd1f72d2548d81c59f。恢复后再次核实实际main与保护，未发生main变化；代理未merge。
+
+本批12模块、39支持目标形成324目标/395inventory/105源，102公开声明逐源完整独审/类型/公理核签通过，仅三公理。实际chart Hessian/metric jet、连接自然性、global smooth derivative及其连接律、metriccompat和actual mlieBracket零挠、base volume局部有限/开集正性见[解释](../statements/actual-chart-connection.md)、[独审](../statements/actual-chart-connection-review.md)、[绑定](../statements/actual-chart-connection-source-bindings.json)。旧92数学叶源、全部旧目标/库存、文章/锁/旧确认保留。原intrinsic Dh/物理cov3/完整Lorentz与Radon仍OPEN；F04/F05/整篇不升级，新作者确认待记录。
+
+当前完整机器/实际main组合CI与工件证据另取，不复用旧285绿色。已按用户新指令把自动独立后继PR规则写入GOAL、AGENTS、工作文件及工程工作流；最终main合并仍人工，PR就绪不再无条件暂停目标。
