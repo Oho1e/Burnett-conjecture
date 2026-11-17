@@ -116,3 +116,9 @@ import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci
 import Burnett.Analysis.MeasureWeakRicci
+import Burnett.Geometry.IntrinsicCurvature
+import Burnett.Geometry.CurvatureComponents
+import Burnett.Geometry.CurvatureJetElimination
+import Burnett.Geometry.SmoothTangentValueExtension
+import Burnett.Geometry.CurvatureFiberTensor
+import Burnett.Geometry.IntrinsicRicciTrace

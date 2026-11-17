@@ -506,3 +506,9 @@ Distinguish original physical Dʳ local control from Dᵍ⁰ in L. See weak-ricc
 Successor B38 needs A’s first three modules and analysis75. The analytic part has merged. Formally assemble B only after A actually enters main and the new main/native CI are confirmed. The private principal-operator strong-H⁻¹ proof has been constructed and independently reviewed; promote it according to its evidence rather than reprove it. Continue separately closing full intrinsic Ricci/vacuum-to-coordinate premises, Lorentz/time-orientation wrappers, global tests, and the F05 microlocal object. Private curvature and actual Ward work are not part of this batch’s CI.
 
 Refresh with an ordinary local merge only, followed by a normal push; a human still performs the final remote main merge. Hand off readiness only after complete current machine checks, actual new-main native CI, latest combined CI, and independent artifact review. Do not force-push/enable auto-merge/delete branches/tags. Continue independent tasks after readiness.
+
+## Parallel delivery of intrinsic curvature and chartwise Ricci
+
+This batch starts from `main` after PR #17 and registers six modules and eight supporting targets for F02 and F04. Agreement of intrinsic curvature across preferred charts and the actual Ricci trace give chartwise vacuum for the same sequence, for use in the local Ricci proofs. [Statement](../statements/intrinsic-curvature-Ricci.en.md) · [Review](../statements/intrinsic-curvature-Ricci-review.en.md)
+
+Register the consumer that applies both local Ricci conclusions to the same intrinsic vacuum sequence after the strong local H⁻¹ modules enter the shared baseline. Continue the full Lorentzian signature and time orientation data and global tensor tests. The CI cache prefetch adds only the two pinned mathlib modules directly needed by this batch. Existing checks and the trust policy continue to apply.

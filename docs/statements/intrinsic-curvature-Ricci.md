@@ -9,3 +9,5 @@
 对固定切向量 U、V，Ricci 取切纤维上 X ↦ R(X,V)U 的实际线性迹。用切标架与图微分给出的共轭识别，该迹在坐标基下正好给出原文正号的 Σₐ Rᵃ_{b a d}，即已用于局部分析的 `coordinateRicci`。因此，同一光滑对称非退化度规序列满足内禀 Ricci 真空时，`sequence_coordinateVacuum_of_intrinsic` 给出每张 preferred 图的目标域内逐项坐标真空。
 
 这项桥接结论可供局部弱 Ricci 极限和局部强 H⁻¹ 结论使用。完整 Lorentz 符号与时间定向模型、全局测试拼合、共同缺陷测度及作者确认仍各有后续工作。
+
+[独立复核](intrinsic-curvature-Ricci-review.md) · [源码绑定](intrinsic-curvature-Ricci-source-bindings.json)

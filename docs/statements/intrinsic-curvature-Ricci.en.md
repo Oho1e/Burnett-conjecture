@@ -9,3 +9,5 @@ The curvature operator uses the existing global Levi-Civita derivative and the m
 For fixed tangent vectors U and V, Ricci is the actual linear trace on the tangent fiber of X ↦ R(X,V)U. Conjugation by the tangent frame and the differential of the chart identifies this trace in the coordinate basis with the manuscript's positive contraction Σₐ Rᵃ_{b a d}, the `coordinateRicci` used by the local analysis. The theorem `sequence_coordinateVacuum_of_intrinsic` consequently gives coordinate vacuum for the same smooth symmetric nondegenerate metric sequence on the target of each preferred chart whenever its intrinsic Ricci vanishes.
 
 The bridge is available to the local weak Ricci limit and strong local H⁻¹ conclusions. The complete model of Lorentzian signature and time orientation, global test gluing, the common defect measure, and author confirmation remain separate obligations.
+
+[Independent review](intrinsic-curvature-Ricci-review.en.md) · [Source bindings](intrinsic-curvature-Ricci-source-bindings.json)

@@ -1,0 +1,87 @@
+{
+  "schema": "burnett-intrinsic-curvature-bindings/v1",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+  "counts": {
+    "targets": 409,
+    "inventory": 479,
+    "lean_sources": 137,
+    "new_targets": 8,
+    "new_modules": 6,
+    "public_declarations": 64
+  },
+  "frozen_plan_sha256": "8e9053f355574f282bfa6786a83db6b9f0a167b9847468c933a89dc7318d6109",
+  "actual_import_receipt_sha256": "ee6f5b4f3a5a15d94035528c34ddc1b18471d4868fb74b534de761ad001c703a",
+  "frozen_independent_receipt_sha256": "19f806728a016abeed7c04ea4dfa97044da6dceaf4b1f9dd60306b9e9b52c92e",
+  "new_sources": [
+    {
+      "module": "Burnett.Geometry.IntrinsicCurvature",
+      "path": "Burnett/Geometry/IntrinsicCurvature.lean",
+      "source_sha256": "2fdbe8f5190b5db60a07c8aba01da5e0199b16e6987ed0fd3f4dab3a4e14df6b",
+      "direct_imports": [
+        "Burnett.Geometry.GlobalLeviCivita",
+        "Burnett.Geometry.GlobalConnectionLaws",
+        "Burnett.Geometry.CurvatureDifference"
+      ],
+      "public_declarations": 9,
+      "independent_receipt_sha256": "ac60c1a806b842f43810606df1f81a44fd0c978282daef071d48f752745fe4ad"
+    },
+    {
+      "module": "Burnett.Geometry.CurvatureComponents",
+      "path": "Burnett/Geometry/CurvatureComponents.lean",
+      "source_sha256": "179f155d0fefd79198ea1709702844280ee72a6651885199a0ac34c7c24c15c4",
+      "direct_imports": [
+        "Burnett.Geometry.IntrinsicCurvature"
+      ],
+      "public_declarations": 7,
+      "independent_receipt_sha256": "712b555ac08ba526553f2b90c68ae61fe9aed667aee2adbb18e906f999ff886d"
+    },
+    {
+      "module": "Burnett.Geometry.CurvatureJetElimination",
+      "path": "Burnett/Geometry/CurvatureJetElimination.lean",
+      "source_sha256": "6e0b4edf3ed5afa0501faac6dd8064d67e6c806bb4c20439c6e89e6605ad70bd",
+      "direct_imports": [
+        "Burnett.Geometry.IntrinsicCurvature"
+      ],
+      "public_declarations": 9,
+      "independent_receipt_sha256": "69e79459f6a188543ea3c8fefd9db7df40c4899f1456f55f2d5d7f48545a998d"
+    },
+    {
+      "module": "Burnett.Geometry.SmoothTangentValueExtension",
+      "path": "Burnett/Geometry/SmoothTangentValueExtension.lean",
+      "source_sha256": "94a62f543d514bb2709071ec8196f4d813406945a84e19f4b76a91c56d439152",
+      "direct_imports": [
+        "Burnett.Geometry.ChartVectorField",
+        "Mathlib.Geometry.Manifold.BumpFunction",
+        "Mathlib.Geometry.Manifold.VectorBundle.SmoothSection"
+      ],
+      "public_declarations": 3,
+      "independent_receipt_sha256": "416524a2a99317eeca3cc6608f8ee32c9914def0ac4af5f50156ada2de9f408f"
+    },
+    {
+      "module": "Burnett.Geometry.CurvatureFiberTensor",
+      "path": "Burnett/Geometry/CurvatureFiberTensor.lean",
+      "source_sha256": "76dcd3dafc95c331adc8ed7602d27d806477d468cde184d47c52d1344e0f19d5",
+      "direct_imports": [
+        "Burnett.Geometry.CurvatureJetElimination",
+        "Burnett.Geometry.SmoothTangentValueExtension",
+        "Mathlib.Topology.Algebra.Module.Multilinear.Basic",
+        "Mathlib.Topology.Algebra.Module.FiniteDimension"
+      ],
+      "public_declarations": 20,
+      "independent_receipt_sha256": "416524a2a99317eeca3cc6608f8ee32c9914def0ac4af5f50156ada2de9f408f"
+    },
+    {
+      "module": "Burnett.Geometry.IntrinsicRicciTrace",
+      "path": "Burnett/Geometry/IntrinsicRicciTrace.lean",
+      "source_sha256": "53020b80af77823a8ff4e8756ce752bd850890cde54a2603ed329e7abd08eec2",
+      "direct_imports": [
+        "Burnett.Geometry.CurvatureFiberTensor",
+        "Burnett.Geometry.CurvatureComponents",
+        "Mathlib.LinearAlgebra.Trace"
+      ],
+      "public_declarations": 16,
+      "independent_receipt_sha256": "19f806728a016abeed7c04ea4dfa97044da6dceaf4b1f9dd60306b9e9b52c92e"
+    }
+  ]
+}
