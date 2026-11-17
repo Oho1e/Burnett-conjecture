@@ -1298,7 +1298,6 @@
         }
       ],
       "scope_qualifier": "Actual GammaGamma density derivative; full curvature-action/divergence identification remains open.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1315,7 +1314,6 @@
         }
       ],
       "scope_qualifier": "Actual negative cyclic metric-kinetic derivative; no integral Fourier normalization claimed.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1332,7 +1330,6 @@
         }
       ],
       "scope_qualifier": "Real canonical eta and ordered lower-index tensor pairing.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1349,7 +1346,6 @@
         }
       ],
       "scope_qualifier": "Complex bilinear amplitudes and signed real momenta with conservation; no kernel or null restriction.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1366,7 +1362,6 @@
         }
       ],
       "scope_qualifier": "Canonical eta, actual symmetric tracefree transverse screen constraints; no normalized frequency estimate.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1383,7 +1378,6 @@
         }
       ],
       "scope_qualifier": "Signed conserved momenta; no nullness/nonzero requirement.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1407,7 +1401,6 @@
         }
       ],
       "scope_qualifier": "One representative additive endpoint with inventory retaining all three slot scalar/additive laws; no full energy 1,3,3,1 assertion.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     },
     {
@@ -1424,7 +1417,6 @@
         }
       ],
       "scope_qualifier": "Common real frequency scaling including zero/negative; no radial/angular norm estimates.",
-      "proposed_only_not_central_registered": true,
       "new_author_confirmation": "pending"
     }
   ]
