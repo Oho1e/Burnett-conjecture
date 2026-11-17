@@ -51,3 +51,11 @@ import Burnett.Geometry.PerturbationJet
 import Burnett.Geometry.ConnectionErrorSequence
 import Burnett.Analysis.UniformLInfinity
 import Burnett.Analysis.Microlocal.PositiveFunctional
+import Burnett.Geometry.GramCoordinateBound
+import Burnett.Geometry.CovariantTensorNorm
+import Burnett.Analysis.LocalAeBound
+import Burnett.Geometry.AuxiliaryConnection
+import Burnett.Geometry.ConnectionErrorLInfinity
+import Burnett.Geometry.AuxiliaryPhysicalBound
+import Burnett.Analysis.PositiveDensity
+import Burnett.Geometry.RiemannianVolume

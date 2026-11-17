@@ -140,3 +140,11 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批9新源、24支持目标，在此主线形成200目标/271inventory/66源候选。三实现线和root完成实际逆扰动/连续性/紧集界、真实连接误差与最终局部坐标uniform组合、Lp∞桥及正泛函局部C⁰界；九源78公开声明已分别实际完整类型/公理独立核签，仅三基础公理。原InversePerturbation留有一个unused hB警告，未弱化检查或改冻结类型以清理。
 
 范围与角色见[局部控制说明](../statements/local-metric-control.md)及[独立回读](../statements/local-metric-control-review.md)。原文D=∇ʳ及物理r范数/图到坐标条件、a.e.到点态邻域、实际E的物理L∞、弱Ricci/H⁻¹及F05测度均未闭合；本轮没有把local coordinate结论冒认原admissible下全F04。当前候选完整机器和实际组合CI另取回执；新作者确认待记录，整篇verified=false。最终PR合并仍交人类执行。
+
+## 2026-11-16：PR8主线确认与辅助r局部物理控制
+
+用户已手动合并PR8，实际main0fa26471900c596e4b6767609be43cb6e94befc1与受审8d09整树相同。push CI43889680267成功，artifact14235474654的全部200目标/66源及项目、目标输入逐项与原候选相同；ZIP SHA256为a7cb0205c1aeb05b38600a9534ee71964099aa0a54a29955950c5dc2198ff869，指纹634a389d3e8cc6dac1f7b4d7a3a325235d7e8185bed27e2b57d325527588e544。代理未执行远端merge，本地main已快进。
+
+本批在该实际main上新增8模块、27支持目标，合227目标、298条inventory、74源。实际物理协变范数、Γr辅助导数、较大紧邻域的ae到逐点、正密度与sqrt(detR)坐标体积及真实E的L∞构造，见[解释](../statements/auxiliary-r-control.md)、[独立回读](../statements/auxiliary-r-control-review.md)和[冻结绑定](../statements/auxiliary-r-control-source-bindings.json)。85公开声明已独立实际核签，仅三公理；原文、锁、65旧叶源、旧确认和−B符号不变。
+
+流形/图、原几何D及体积推前、混合(1,2)E物理r范数、弱Ricci/H⁻¹与F05仍开放；新作者确认未记录，整篇verified=false。当前候选的本地完整检查、最新main合并候选CI与实际工件证据另行取得。就绪后仍交人类合并，不继承代理执行权限，不发标签。
