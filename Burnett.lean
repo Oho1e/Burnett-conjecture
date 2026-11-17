@@ -90,3 +90,9 @@ import Burnett.Geometry.ChartDifferential
 import Burnett.Geometry.ChartLieBracket
 import Burnett.Geometry.GlobalLeviCivita
 import Burnett.Geometry.GlobalConnectionLaws
+import Burnett.Geometry.IntrinsicCov2
+import Burnett.Geometry.ManifoldCov3Norm
+import Burnett.Geometry.IntrinsicDhMeasure
+import Burnett.Geometry.OriginalAdmissibleLocalControl
+import Burnett.Analysis.LocalWeakDerivative
+import Burnett.Analysis.LocalWeakRicci

@@ -420,6 +420,8 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 
 ## 17. PR11合并后的实际图与全局连接续接
 
+本节保留PR12交付前记录；PR12已实际合入main，当前续接见第18节。
+
 用户手动合并PR11为main cc13fd23a7d72e9cc05612b389d7f4a5944d761b，整树等于受审e0345b2。[push CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/44020822875)成功，artifact14301023073的285目标/93源及全部target/project输入与受审PR11相同，指纹b951de598470c3bc48d6f09266fefe1bc3d1ead3776ad52a1ddea287c95e5c77；ZIP SHA a770db04a40ed0ba0e56ccdabf27c32b7a9c60f94f6d61bd1f72d2548d81c59f。恢复后再次只读核实main、该CI及保护匹配，未发生main变化。代理未远端merge。
 
 本批formalization/actual-chart-connection新增12模块、39支持目标，累计324目标/395inventory/105源，102公开声明均完成逐源独立回读、实际全类型/公理核签；准确对象与未闭合项见[说明](../statements/actual-chart-connection.md)、[复核](../statements/actual-chart-connection-review.md)及[绑定](../statements/actual-chart-connection-source-bindings.json)。原文/锁/标准/三公理、旧285目标/356库存/92数学叶源保持，当前完整机器/组合CI/工件证据另取。
@@ -435,3 +437,26 @@ PR9由用户手动合并为main`2ff3d3616db3a99e1c600cc4bf77977a32f31117`。该[
 3. 按[GOAL](GOAL.zh-CN.md)，本PR就绪并保存证据后，自动转向不依赖它先进入main的数学支线。X03旋转零矩反例可按实际main已有Minkowski/Fourier/积分分部工具调查；其F02入边是定义，X03→X04是说明联系，不机械等待本批LC。完整无输运反例仍需真实正测度支撑迫定和原量词，局部代数/测试函数成功不关闭X03。无可执行独立任务、需用户裁决或确认阻断时才停止。
 
 先做当前完整候选机器检查、实际最新main组合CI及工件独审，再交人类合并；就绪本身不暂停整个目标。main变化则刷新受影响候选及检查，不能拿旧绿色冒充新组合。代理不merge/auto-merge/强推/删branch/tag。新作者确认仍待记录，整篇/F04/F05不升级。
+
+
+## 18. 原 intrinsic Dh 与局部弱 Ricci 消费者
+
+PR12实际合入main42508e05，整树等于受审0c96620e；push CI44076390546成功，artifact14325064567全部324目标/105源及target/project输入等于受审版本。代理未远端合并。独立PR13完成X03完整旋转零矩无输运反例及实际CI/工件独审，交接快照13:34:51UTC仍未合并；封存报告在工作区reports/rotating-null-moment-2026-11-17。当前几何分支13:40:30由实际main425创建，不依赖X03；main前进后按真实新base保留已合成果并刷新候选。
+
+本批6模块91完整声明，选择26实际支持端点登记；计数见scope和源码绑定。原文、依赖锁、标准1.2/skill1.3.1及三公理保持。新作者确认待记录，整篇及F04/F05不升级。
+
+可直接消费：
+
+- 真实全局诱导cov2导数、任意fiber/任意preferred图自然性、同r及gₙ−g₀的auxiliaryJet识别；物理cov3逆r全收缩Hilbert范数、图不变性及组件统一控制。
+- normScalar连续/可测，同g₀实际几何体积下原局部Dh∞经共同较大紧邻域提升，给真实辅助jet界。原物理C⁰loc再给rawJet最终统一界和真实E局部均匀/实际坐标L∞收敛。无需重证这些已闭桥；通用chart Lp运输及整个tensor-bundle smoothness不是其前置条件。
+- 局部zero-germ积分分部只需f/a图内光滑；固定测试的一二次导数弱消失已从真实物理C⁰loc实例化。同g₀的ρ₀、Γ₀均实际光滑，最终积分明确是带ρ₀系数的Lebesgue积分；没有新增withDensity识别。
+- E分量光滑及C=L(D^{g₀}H)+E精确分解；ρ₀∂E、ρ₀Γ₀E及真实ρ₀∇g₀E单分量测试趋零，所有项可积和有限和换积分实际证明。固定a/ψ先于n，不能直接代n依赖逆系数。
+
+后续按依赖滚动并行：
+
+1. 正向主线从真实原条件和vacuum数据装配Ricci散度收缩及L(D^{g₀}H)的固定系数测试消失；真实证明Q(C)与Q(L)之差测试趋零，不能把目标极限当结构字段。保持精确二次修正=−旧B，并先核rank-one符号等式的适用性。
+2. 独立H⁻¹支线先从真实L²余项构造GraphDual分布及导数的opnorm趋零；一般紧支撑统一L²部分仍需实际低频Fourier/DCT、高频尾及weighted Fourier到dual的桥。没有现成Rellich时可直接证明消费者，不额外建庞大抽象API。
+3. 滚动独审未参与该项构造的冻结源，并监督原量词、同一见证/参数/极限顺序。root整合生产源、入口、目标及scope，一份相关数学交付对应一份PR；不按代理人数机械分PR。
+4. 完整Lorentz/时间定向及真空包装按真实消费者实例化；全局mixed E定量模型、F05 PDO界/误差正性/保支撑延拓及同一相空间缺陷测度仍OPEN。底流形体积不是缺陷μ。所有原文歧义、补假设或改变结论仍交用户决定。
+
+当前完整候选机器检查、实际最新main组合CI及原始工件独审另取新回执。交人类合并后，按GOAL自动推进不依赖该PR先合main的独立工作；若后继确需依赖先查其他可执行任务。代理不merge/auto-merge/强推/删branch/tag，PR就绪本身不暂停目标。旧各节的暂停语句保持历史含义，已由本规则覆盖。

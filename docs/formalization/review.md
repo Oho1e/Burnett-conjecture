@@ -174,3 +174,12 @@ AGENTS、README、工作文件当前节及scope/binding同步实际PR6状态；�
 本批12模块、39支持目标形成324目标/395inventory/105源，102公开声明逐源完整独审/类型/公理核签通过，仅三公理。实际chart Hessian/metric jet、连接自然性、global smooth derivative及其连接律、metriccompat和actual mlieBracket零挠、base volume局部有限/开集正性见[解释](../statements/actual-chart-connection.md)、[独审](../statements/actual-chart-connection-review.md)、[绑定](../statements/actual-chart-connection-source-bindings.json)。旧92数学叶源、全部旧目标/库存、文章/锁/旧确认保留。原intrinsic Dh/物理cov3/完整Lorentz与Radon仍OPEN；F04/F05/整篇不升级，新作者确认待记录。
 
 当前完整机器/实际main组合CI与工件证据另取，不复用旧285绿色。已按用户新指令把自动独立后继PR规则写入GOAL、AGENTS、工作文件及工程工作流；最终main合并仍人工，PR就绪不再无条件暂停目标。
+
+
+## 2026-11-17：原 Dh 与局部弱导数/连接误差
+
+PR12实际main42508e05/push CI44076390546/artifact14325064567已核全部324/105输入与受审0c96620e一致；独立PR13 X03完整反例已通过实际组合CI和原工件独审并封存，本分支不依赖其新源，代理均未远端合并。
+
+本批6模块91完整声明、26新增支持目标，350目标/421库存/111源。数学范围见[内禀Dh](../statements/intrinsic-dh-geometry.md)、[局部弱导数](../statements/local-weak-derivative.md)、[误差测试](../statements/local-weak-ricci.md)，所有源和逐项独审见[绑定](../statements/intrinsic-dh-geometry-source-bindings.json)。83项晋升后实际输出与冻结输出相同；新增8项独立数学首审及生产literal核签通过。正向作者不充当自身新数学独审。旧全部目标/库存/数学叶源、原文/锁/标准保持；新作者确认及全文认证未推定。
+
+原Dh/norm/measure到rawJet/E局部控制已闭，不沿用旧报告把它们再列OPEN。全weakRicci、H⁻¹、完整Lorentz包装及F04/F05仍OPEN。当前完整机器和远端组合CI/工件证据另取；最终合并由人类执行，独立后续工作自动继续。

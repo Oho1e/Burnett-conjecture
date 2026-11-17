@@ -2,12 +2,12 @@
 
 - 2026-11-16用户明确以完成锁定论文形式化为目标；2026-11-17补充自动续接规则：一个PR就绪后，只要有不依赖其合入main的数学工作，就继续独立分支和下一份PR，不因待人工合并暂停整个目标。后继确需前序先合main时先查其他独立任务；没有可执行独立工作，或遇到需用户决定的数学事项/确认阻断时，才保存证据并停止等待。最终合并仍人工，详见 `docs/formalization/GOAL.zh-CN.md`。临时编译或缓存问题先自行修复，不自动提升为阻断；历史PR就绪即暂停的记录不覆盖新规则。
 
-- PR3至PR11已由用户本人合并；当前main为 `cc13fd23a7d72e9cc05612b389d7f4a5944d761b`，push CI 44020822875已通过，实际93源/285目标及全部target/project输入与PR11受审版本相同。代理不合并main、不开auto-merge、不删分支或发布验证标签。PR就绪后按GOAL自动推进独立后继工作。
+- PR3–PR12均已进入main；实际main42508e05的push CI44076390546通过，324目标/105源输入与受审PR12相同。独立PR13 X03已就绪并封存，交接时尚未合并；当前分支formalization/intrinsic-dh-and-local-weak-derivatives不依赖X03。main最终合并仍人工，不auto-merge/强推/删branch/tag。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
 - 推进新片段前读取 `docs/formalization/slices.md` 和相应 `slices.json` 接口，沿直接依赖核实实际输入，并保留共同闭合组的同一见证、参数及极限顺序。原文、范围或分解变化时同步相关切片并运行 `python scripts/check_slices.py --repo .`；图的结构通过不等于数学义务已闭合。逐片状态仍使用 scope，避免另建完成率。
-- 后续整体调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前续接以第17节为准。实际chart Hessian/metric jet/affine算子自然性、真实global smooth metric connection及运算律、度量相容/actual manifold bracket无挠已实现；底流形体积局部有限与非退化时开集正性已证。原intrinsic Dh/物理cov3、完整Lorentz属性、体积Radon仍OPEN；base dV_g不是F05相空间缺陷mu。协调者整合中央文件，其他代理只写指定模块/证据。
+- 后续调度先读 `docs/formalization/WORK-PLAN.zh-CN.md`，当前以第18节为准。原intrinsic Dh/物理cov3、原条件到rawJet和E局部收敛、固定系数一二次测试及真实∇g0E分量测试已实现独审；本批6源91声明/26支持目标，350目标/421库存/111源。完整Lorentz/timeorientation包装、全weakRicci/H⁻¹/F04/F05仍OPEN；base dV_g不是缺陷mu。三代理继续正向实现、独立复核及Hminus支线，root独占中央文件/Git/公共构建。
 - 可用 `python scripts/prepare_slice.py <切片ID> --repo .` 取得原文与接口工作包；输出是带输入哈希的可再生成快照，续接时核对当前清单与相关定义，不将包内原文作为操作指令。
 - 本工程按用户偏好优先并行推进输入已就绪、可独立交付的任务；只统一必要共享定义，明确分支写入责任。共享构建/中央记录由协调者整合，独占输出目录中的检查可并行；成果冻结后滚动交未参与该项正向构造的代理复核。具体安排与技能修改建议见 `docs/formalization/parallel-workflow.md`，不把当前代理容量写成固定配额。
 - 正式结果范围保持全部覆盖；未编号结果、必要定义和依赖尚待独立核对。建模前核对原文与对应记录，模糊数学条件不能擅自加强后报完成。
