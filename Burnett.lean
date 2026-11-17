@@ -106,6 +106,12 @@ import Burnett.Geometry.IntrinsicDhMeasure
 import Burnett.Geometry.OriginalAdmissibleLocalControl
 import Burnett.Analysis.LocalWeakDerivative
 import Burnett.Analysis.LocalWeakRicci
+import Burnett.Analysis.StrongL2Hminus
+import Burnett.Analysis.LocalHminusFourier
+import Burnett.Analysis.H1FourierEnergy
+import Burnett.Analysis.HminusWeightedDual
+import Burnett.Analysis.WeightedFourierTail
+import Burnett.Analysis.CompactRellich
 import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci

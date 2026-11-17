@@ -1,11 +1,11 @@
 {
   "schema": "burnett-weak-ricci-identification-bindings/v1",
   "meaning": "Input identity, not author confirmation or whole-paper certification",
-  "base_main": "167dffe9942345e568c3e26118adf7331d7b7ea9",
+  "base_main": "14b492c2c66e74735627ff7cfbcac72f54301983",
   "counts": {
-    "targets": 387,
-    "inventory": 457,
-    "lean_sources": 125,
+    "targets": 401,
+    "inventory": 471,
+    "lean_sources": 131,
     "new_targets": 7,
     "new_support_targets": 7,
     "new_modules": 4,
@@ -110,6 +110,7 @@
     "Burnett/Algebra/RealPolarization.lean": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
     "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
     "Burnett/Algebra/TensorFrame.lean": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906",
+    "Burnett/Analysis/CompactRellich.lean": "053b97cca3de09c1b1900b0ffad2f938a5e41eb25132348d834bf4c476a6b7bd",
     "Burnett/Analysis/Compactness/CountableTests.lean": "0897e00360d3db4821640bb31ce813dd7013f506d2e318bcc6933f1d5844b892",
     "Burnett/Analysis/Compactness/DenseTests.lean": "6677f6d6de3dcb9228373da086718adcb99c54bca3b2ccde354ef8d15483f887",
     "Burnett/Analysis/Cubic/Counterexample.lean": "8fa1a023c46305378ae55d0d3e75685384f6257078ba499c236353d9db09ffc9",
@@ -133,9 +134,12 @@
     "Burnett/Analysis/Fourier/SchwartzParseval.lean": "2d729ee3943f10f2fc4f5b5757d7aaeafc82c29599da02f9331c9cad3d37fd1e",
     "Burnett/Analysis/Fourier/SchwartzTail.lean": "3359c56b998114a9a22d3e651b3df97f1e2d1bd923de79fe9c8cc17447a59a99",
     "Burnett/Analysis/Fourier/SharpProjection.lean": "793893b17b546d6ce61bdb352dd0f5872b4d208dba5e6e60405064872b058d46",
+    "Burnett/Analysis/H1FourierEnergy.lean": "b9aecd800d5a6fefd89165f9a254d6fb5437617f9ed157001de0881485e14fad",
+    "Burnett/Analysis/HminusWeightedDual.lean": "01b4a81630bc8804e43a1054e027a6478d5792a428216b9a5ab364b731d042a0",
     "Burnett/Analysis/IBP/CompactIBP.lean": "d4b039095cde7d2c4ef89eaba49196a2a2fb07a708db34e2b9e0f9ae972f8234",
     "Burnett/Analysis/IBP/LocalizedIBP.lean": "5807b3e7812ef705c342917797511d6f329cfa316984df091c4d19a3c95ea9f1",
     "Burnett/Analysis/LocalAeBound.lean": "d6231107f3f9fba33e41aaaeddbdaa8506a6da15923c5aa498020383c5187407",
+    "Burnett/Analysis/LocalHminusFourier.lean": "350f9064a6a39365be2887ef83ca1f49988e18c80b9879a5efae6c363c322979",
     "Burnett/Analysis/LocalWeakDerivative.lean": "85db708196a81133c6667b0643d913e153ad849f4c97429bdf6564caac688027",
     "Burnett/Analysis/LocalWeakRicci.lean": "45f12d5701341819201413a794e5d8161d3112275038b2756c4e4a2504cdc9f5",
     "Burnett/Analysis/Microlocal/PositiveFunctional.lean": "53c907c3c173fb4070f960e8a0508906ab800ad881069985fc7b8fa9f84b9f34",
@@ -146,7 +150,9 @@
     "Burnett/Analysis/Sobolev/NonzeroTest.lean": "98ecce8b5cdd43d712f2270e6859bad8868747e0f4a1f9e13715b90cba4eb4e3",
     "Burnett/Analysis/Sobolev/Pairing.lean": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d",
     "Burnett/Analysis/Sobolev/TestJet.lean": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b",
+    "Burnett/Analysis/StrongL2Hminus.lean": "fae9784ed61b6ba59800be6fa613970446718d8de9e6945f5958332fba466171",
     "Burnett/Analysis/UniformLInfinity.lean": "5bebbadfeb9b0b08ca02aef27b765aa52e15e85887789794400303b0a2ff7606",
+    "Burnett/Analysis/WeightedFourierTail.lean": "9c48a5c0328175d0fb6b783033ca00fd446bcb16e7990de1eb40b736a10d181f",
     "Burnett/Counterexamples/RotatingNull/AngularHamilton.lean": "e9eef02f55c46345e322e511c1b53c0d6d53af07070b176f2587dd2af87c6695",
     "Burnett/Counterexamples/RotatingNull/HamiltonIdentification.lean": "2afcdd61b37b67c8c200c1b70f6b1e8dbd42fa7f23bb322df5a29f357cee6bde",
     "Burnett/Counterexamples/RotatingNull/MeasureEstimates.lean": "8a145a736ea367f787f0f534949e4a0af6938a2d00c4465ed9dfde7b6f972720",
@@ -315,5 +321,9 @@
     "raw_all32_output_byte_identical": false,
     "comparison_sha256": "ae05c4cac04aad99c45545f192312a8894f6144e577c45a6228bf4d0929aed3b",
     "mathematical_types_preserved_after_recorded_display_aliases": true
-  }
+  },
+  "previous_reviewed_head": "8616fcbc0fb3c4a2f116cb76e466dc6eea8409f0",
+  "base_native_push_CI_and_artifact_required_before_handoff": true,
+  "actual_base_already_includes_analysis75": true,
+  "A_actual_import_graph_independent_of_analysis75": true
 }
