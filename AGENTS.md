@@ -1,8 +1,12 @@
 # 接续规则
 
+[English reading copy](AGENTS.en.md)
+
+- 按 [双语目标](docs/formalization/GOAL.zh-CN.md#双语交付) 更新每份 PR 涉及的中英文说明。机器清单、源码和原始回执各用同一份，两个语言版本核对数学范围、假设、验证和作者确认状态一致。
+
 - 2026-11-16用户明确以完成锁定论文形式化为目标；2026-11-17补充自动续接规则：一个PR就绪后，只要有不依赖其合入main的数学工作，就继续独立分支和下一份PR，不因待人工合并暂停整个目标。后继确需前序先合main时先查其他独立任务；没有可执行独立工作，或遇到需用户决定的数学事项/确认阻断时，才保存证据并停止等待。最终合并仍人工，详见 `docs/formalization/GOAL.zh-CN.md`。临时编译或缓存问题先自行修复，不自动提升为阻断；历史PR就绪即暂停的记录不覆盖新规则。
 
-- PR3–PR15均已进入main。实际main14b492c2c66e74735627ff7cfbcac72f54301983树等于受审PR15；原生push CI44138288710/工件须按本轮实际回执核验。当前弱Ricci分支正常本地合入该main，保留分析75全部输入；最终main合并仍人工，不auto-merge/强推/删branch/tag。
+- PR3–PR16 均已进入 main。双语补齐基线为 `a7e0b833d176342a58b68f43a94c1db6738e3a85`，保留弱 Ricci 交付及已合入的 Hminus 分析。核对实际提交和适用的 CI 回执。最终合并仍由用户执行，保留分支和标签历史。
 - 本工程采用 `paper-results` 第1.2版数学标准、1.3.1版skill与工程工作流；先读 README、`docs/formalization/scope.json` 和 `review.md`，需要工作流时读 `tools/lean-paper-results/SKILL.md`。
 - `paper/burnett.tex` 是锁定原文字节副本。保留其字节、SHA256及 `-text` 属性；不要改动用户原件。改文章版本须另记身份。
 - 当前进度以 scope、README 和复核记录为准。逐项登记真实论文结果及证明依赖；不能把工程构建绿色称为整篇论文已证。不要加入 `True`、`rfl` 或无关定理代替论文结果。
