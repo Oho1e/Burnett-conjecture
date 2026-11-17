@@ -1933,6 +1933,41 @@
       "claim_id": "local-weak-ricci:density-covariant-error-derivative-test-of-original",
       "module": "Burnett.Analysis.LocalWeakRicci",
       "declaration": "Burnett.Analysis.LocalWeakRicci.density_covariant_error_derivative_test_of_original"
+    },
+    {
+      "claim_id": "geometry-a:quadratic-replacement-uniform-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicciIdentification",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.quadratic_replacement_uniform_of_original"
+    },
+    {
+      "claim_id": "geometry-a:density-quadratic-replacement-test-of-original",
+      "module": "Burnett.Analysis.LocalWeakRicciIdentification",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.density_quadratic_replacement_test_of_original"
+    },
+    {
+      "claim_id": "geometry-a:SmoothWeakZero.directional",
+      "module": "Burnett.Analysis.WeakTestCalculus",
+      "declaration": "Burnett.Analysis.WeakTestCalculus.SmoothWeakZero.directional"
+    },
+    {
+      "claim_id": "geometry-a:Ricci-divergence-difference-smoothWeakZero-of-original",
+      "module": "Burnett.Analysis.VacuumWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.Ricci_divergence_difference_smoothWeakZero_of_original"
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-negative-quadratic-test-limit-of-original",
+      "module": "Burnett.Analysis.VacuumWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_negative_quadratic_test_limit_of_original"
+    },
+    {
+      "claim_id": "geometry-a:coordinateMeasure-test-integral-eq",
+      "module": "Burnett.Analysis.MeasureWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.coordinateMeasure_test_integral_eq"
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-coordinateMeasure-limit-of-original",
+      "module": "Burnett.Analysis.MeasureWeakRicci",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_coordinateMeasure_limit_of_original"
     }
   ],
   "inventory": [
@@ -10030,6 +10065,132 @@
       "semantic_review_record": "docs/statements/local-weak-ricci-review.md",
       "semantic_review": "independent-current-production-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:quadratic-replacement-uniform-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.quadratic_replacement_uniform_of_original",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:density-quadratic-replacement-test-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.density_quadratic_replacement_test_of_original",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:SmoothWeakZero.directional",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.WeakTestCalculus.SmoothWeakZero.directional",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:Ricci-divergence-difference-smoothWeakZero-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.Ricci_divergence_difference_smoothWeakZero_of_original",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-negative-quadratic-test-limit-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_negative_quadratic_test_limit_of_original",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:coordinateMeasure-test-integral-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.coordinateMeasure_test_integral_eq",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-a:vacuum-Ricci-coordinateMeasure-limit-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 376,
+        "endline": 382
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-weak-Ricci-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_coordinateMeasure_limit_of_original",
+      "statement_record": "docs/statements/weak-ricci-identification.md",
+      "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     }
   ],
   "coverage_review": {
@@ -10555,6 +10716,37 @@
       "main_ci_run": 44101803956,
       "agent_remote_merge_performed": false,
       "main_ci_success_not_inferred_from_prior_PR": true
+    },
+    "weak_ricci_identification_delivery": {
+      "targets": 387,
+      "inventory": 457,
+      "lean_sources": 125,
+      "new_targets": 7,
+      "new_support_targets": 7,
+      "new_modules": 4,
+      "public_declarations": 32,
+      "declaration_kinds": {
+        "def": 3,
+        "theorem": 29
+      },
+      "base_main": "167dffe9942345e568c3e26118adf7331d7b7ea9",
+      "inherited_targets": 380,
+      "inherited_inventory": 450,
+      "inherited_lean_sources": 121,
+      "baseline_native_ci_run": 44114590261,
+      "baseline_native_ci_artifact": 14343767577,
+      "statement": "docs/statements/weak-ricci-identification.md",
+      "independent_review": "docs/statements/weak-ricci-identification-review.md",
+      "source_bindings": "docs/statements/weak-ricci-identification-source-bindings.json",
+      "actual_coordinate_vacuum_still_explicit": true,
+      "full_intrinsic_vacuum_wrapper_instantiated": false,
+      "independent_of_unmerged_analysis75": true,
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "whole_paper_verified": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true
     }
   },
   "planning": {
