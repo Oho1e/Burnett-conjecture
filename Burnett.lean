@@ -116,4 +116,15 @@ import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci
 import Burnett.Analysis.MeasureWeakRicci
+import Burnett.Analysis.GeometricHminusRemainders
+import Burnett.Analysis.GeometricHminusCovariantRemainders
+import Burnett.Analysis.GeometricPrincipalIdentity
+import Burnett.Analysis.GeometricHminusBoundedForcing
+import Burnett.Analysis.GeometricHminusPrincipalClosure
+import Burnett.Geometry.IntrinsicCurvature
+import Burnett.Geometry.CurvatureComponents
+import Burnett.Geometry.CurvatureJetElimination
+import Burnett.Geometry.SmoothTangentValueExtension
+import Burnett.Geometry.CurvatureFiberTensor
+import Burnett.Geometry.IntrinsicRicciTrace
 import Burnett.Counterexamples.Rosen.Closure

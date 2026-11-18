@@ -512,6 +512,24 @@ PR15于2026-11-17 17:33:24UTC由外部操作合入main14b492c2，整树等于受
 
 刷新仅普通本地merge、之后正常push；最终远端main合并仍由人类执行。当前完整机器、实际新main原生CI和最新组合CI/工件独审后才交就绪，不强推/auto-merge/删branch/tag；就绪后仍继续独立任务。
 
+## 22. 原几何算子的局部强 H⁻¹ 实现
+
+PR #16 已合入，实际主分支 CI 及原始工件已核验。当前 B38 候选集成五个模块和 F04 的七项支持目标。精确前提、局部测试身份及复核见[命题说明](../statements/geometric-Hminus-closure.md)和[复核记录](../statements/geometric-Hminus-closure-review.md)。
+
+PR #17 已合入 `8744c43`，其树与已审双语候选相同。B38 在该版本上同步更新中英文入口、工作计划和 F04 切片说明，保留已独审的五个证明模块及原始证据身份。
+
+继续并行推进内禀 Ricci 与 Ward。用同一图内数据把实际内禀真空接入两个局部 Ricci 结论。全局张量测试、共同缺陷测度和输运仍各有证明义务。
+
+PR #18 已进入 `63bbe2b`。合并文件树与已审候选一致，main 的原生 CI 通过并检查了 408 个登记目标。
+
+## 23. 内禀曲率与图内 Ricci 的并行交付
+
+以 #17 合入后的 `main` 为基线，本批登记六个模块和八个 F02、F04 支持目标。内禀曲率在不同优先图中的一致性和真实 Ricci 迹，给出同一序列的图内真空条件，供局部 Ricci 证明使用。[命题说明](../statements/intrinsic-curvature-Ricci.md) · [复核记录](../statements/intrinsic-curvature-Ricci-review.md)
+
+需在局部强 H⁻¹ 模块进入共同基线后，登记同一内禀真空序列到两个局部 Ricci 结论的消费者。完整 Lorentz 符号与时间定向及全局张量测试继续推进。此次 CI 的缓存预取仅补这批实际导入的两个已锁定 mathlib 模块，原有检查与信任范围沿用。
+
+PR #19 已按受审文件树合入 `aaa7053`。其 main 原生 CI 核验 416 个登记目标。
+
 ## 多尺度 Rosen 例子（X06）
 
 X06 可独立于排队中的主算子和 Ward 交付。第 3360–3386 行的总定理在两套坐标中使用同一组序列，给出真空方程、度规和导数界、尺度反例及零源坐标。每套坐标均使用同一个正图测度处理全部内蕴 Einstein 矩与 Hamilton 输运测试。[命题说明](../statements/rosen-multiscale.md)给出精确表述，[数学复核](../statements/rosen-multiscale-review.md)记录其范围。
