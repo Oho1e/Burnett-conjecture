@@ -121,3 +121,9 @@ import Burnett.Analysis.GeometricHminusCovariantRemainders
 import Burnett.Analysis.GeometricPrincipalIdentity
 import Burnett.Analysis.GeometricHminusBoundedForcing
 import Burnett.Analysis.GeometricHminusPrincipalClosure
+import Burnett.Geometry.IntrinsicCurvature
+import Burnett.Geometry.CurvatureComponents
+import Burnett.Geometry.CurvatureJetElimination
+import Burnett.Geometry.SmoothTangentValueExtension
+import Burnett.Geometry.CurvatureFiberTensor
+import Burnett.Geometry.IntrinsicRicciTrace

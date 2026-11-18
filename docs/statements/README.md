@@ -14,6 +14,7 @@
 - [主定理的精确接口](main-interface.md)
 - [首个 Ricci 符号片段](ricci-symbol.md)及[独立实际声明回读](ricci-symbol-review.md)
 - [线性化 Ricci 的局部强 H⁻¹ 收敛](geometric-Hminus-closure.md)及[独立复核](geometric-Hminus-closure-review.md)
+- [内禀曲率、Ricci 迹与图内真空](intrinsic-curvature-Ricci.md)及[独立复核](intrinsic-curvature-Ricci-review.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

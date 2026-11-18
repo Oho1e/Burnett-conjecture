@@ -56,7 +56,7 @@
         "全局双曲性仅用于全动量提升，不可加到全局μ存在或输运前提。",
         "规格依赖图中的前向引用并不表示本片已经证明主定理。"
       ],
-      "next_action": "原局部物理Dh∞经同g0几何体积的开集正性和较大紧邻域提升，已得到真实坐标辅助jet界；后续按消费者实例化完整Lorentz/时间定向及真空数据，不把一般字段支持当全部admissible已完成。",
+      "next_action": "已有由原局部辅度量导数界导出的真实图内导数界。已构造内禀曲率与 Ricci 迹，并将内禀真空换为同一序列在各优先图中的坐标真空。继续完成 Lorentz 符号与时间定向，将该桥接入局部 Ricci 结论和全局对象。",
       "supplementary_obligations": [
         {
           "id": "local:admissibility-coordinate-invariance",
@@ -4478,6 +4478,54 @@
     },
     {
       "claim_id": "geometry-b:linearizedRicci-has-strong-realization-of-original",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:computedConnection-Ricci-basis-trace",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature-eq-value",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:exists-isSmooth-value",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:tensorInChart-eq",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:sequence-coordinateVacuum-of-intrinsic",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:tensor-apply-fields-eq-curvature",
+      "source_slices": [
+        "F04"
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:ricci-coordinate-basis",
       "source_slices": [
         "F04"
       ]

@@ -514,3 +514,11 @@ PR #16 landed and its native main CI and raw evidence were verified. The current
 PR #17 landed at `8744c43`. Its tree matches the reviewed bilingual candidate. On that base, B38 updates both language versions of the entry points, work plan, and F04 slice while preserving the five independently reviewed proof modules and the identity of their original evidence.
 
 Continue the independent intrinsic Ricci and Ward developments. Connecting genuine intrinsic vacuum to both local Ricci consumers uses their shared chartwise data. Global tensor testing, the common defect measure, and transport remain separate proof obligations.
+
+PR #18 landed at `63bbe2b`. The merged tree matches the reviewed candidate and its native main CI passed with 408 registered targets.
+
+## 23. Parallel delivery of intrinsic curvature and chartwise Ricci
+
+This batch starts from `main` after PR #17 and registers six modules and eight supporting targets for F02 and F04. Agreement of intrinsic curvature across preferred charts and the actual Ricci trace give chartwise vacuum for the same sequence, for use in the local Ricci proofs. [Statement](../statements/intrinsic-curvature-Ricci.en.md) · [Review](../statements/intrinsic-curvature-Ricci-review.en.md)
+
+Register the consumer that applies both local Ricci conclusions to the same intrinsic vacuum sequence after the strong local H⁻¹ modules enter the shared baseline. Continue the full Lorentzian signature and time orientation data and global tensor tests. The CI cache prefetch adds only the two pinned mathlib modules directly needed by this batch. Existing checks and the trust policy continue to apply.
