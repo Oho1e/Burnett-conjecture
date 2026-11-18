@@ -404,4 +404,4 @@ If, in addition to \eqref{eq:admissible}, the full curvature of every $g_n$ vani
 \end{proposition}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+Mathematical/Lean correspondence: `Burnett.FlatRigidity.isFlat_of_original_flat_sequence` proves full intrinsic Riemann flatness of the smooth limit. The frozen proof passed independent reverse review. Author confirmation is pending. [Statement and verification evidence](flat-rigidity.en.md)

@@ -404,4 +404,4 @@ If, in addition to \eqref{eq:admissible}, the full curvature of every $g_n$ vani
 \end{proposition}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+数学/Lean 对应为 `Burnett.FlatRigidity.isFlat_of_original_flat_sequence`，证明光滑极限的完整内禀 Riemann 曲率为零。冻结证明已通过独立反向复核。作者确认仍待记录。[陈述和验证证据](flat-rigidity.zh-CN.md)
