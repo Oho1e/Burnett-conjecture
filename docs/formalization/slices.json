@@ -705,7 +705,7 @@
         "g非真空时，Hessian自伴性和主符号仍要从作用泛函证明。",
         "Hamiltonian P=1/2*g^{-1}(xi,xi)，q_m=2P_m，不能混淆常数。"
       ],
-      "next_action": "固定复化/配对约定，先给出有限维A、G、C的显式声明和Hermitian型；再独立建模S'=E的微分几何接口。",
+      "next_action": "已实现实际 ΓΓ 密度的有限维度规变分及标准 η 的 Fourier Hessian–Einstein 配对。继续完整作用量与散度恒等式、一般背景及 Hermitian 核压缩。",
       "supplementary_obligations": []
     },
     {
@@ -773,7 +773,7 @@
         "降背景项和冻结系数是两项不同任务；本片不输出变系数冻结误差率。",
         "矩阵推广是实质依赖，不应只引用标量lem:cubic-continuity而不核对签名。"
       ],
-      "next_action": "用10分量field基写C^(j)、T_g、Gamma_m及V_Q声明；先形式化三测试位置的极化恒等式及Fourier归一化，再核对矩阵连续性证明。",
+      "next_action": "已实现实际循环顶点、三槽实线性及共同频率二次齐次性。继续积分类型的 Fourier 归一化、全部能量系数和矩阵连续性。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:odd-test-reduction",
@@ -891,7 +891,7 @@
         "q_m(p)/lambda_p²必须落在自己的物理场，不能用另一个场的零锥缺陷消除。",
         "Ward双线性式与修正算子Hermitian伴随是后续不同检验。"
       ],
-      "next_action": "建立一个穷尽腿型×频率位置的分类表，对每项给精确代数式、相位拥有者、rho增益及后续归属；先完成整个分类再开放修正消费者。",
+      "next_action": "标准 η 上已实现真实复双线性单规范恒等式、低规范双屏幕四项及三纯规范消去。继续双规范、一般度规协变与所有频率位置的相位和符号估计。",
       "supplementary_obligations": []
     },
     {
@@ -4528,6 +4528,54 @@
       "claim_id": "geometry-curvature:ricci-coordinate-basis",
       "source_slices": [
         "F04"
+      ]
+    },
+    {
+      "claim_id": "ward-support:actual-density-metric-variation",
+      "source_slices": [
+        "V02"
+      ]
+    },
+    {
+      "claim_id": "ward-support:actual-cyclic-principal-vertex",
+      "source_slices": [
+        "V04"
+      ]
+    },
+    {
+      "claim_id": "ward-support:eta-fourier-hessian-einstein",
+      "source_slices": [
+        "V02"
+      ]
+    },
+    {
+      "claim_id": "ward-support:eta-complex-offshell-one-gauge",
+      "source_slices": [
+        "V07"
+      ]
+    },
+    {
+      "claim_id": "ward-support:eta-complex-low-gauge-four-terms",
+      "source_slices": [
+        "V07"
+      ]
+    },
+    {
+      "claim_id": "ward-support:eta-complex-three-gauge",
+      "source_slices": [
+        "V07"
+      ]
+    },
+    {
+      "claim_id": "ward-support:real-amplitude-linearity",
+      "source_slices": [
+        "V04"
+      ]
+    },
+    {
+      "claim_id": "ward-support:frequency-degree-two",
+      "source_slices": [
+        "V04"
       ]
     },
     {

@@ -2115,6 +2115,46 @@
       "declaration": "Burnett.Geometry.IntrinsicRicciTrace.ricci_coordinate_basis"
     },
     {
+      "claim_id": "ward-support:actual-density-metric-variation",
+      "module": "Burnett.Analysis.TransportWard.MetricVariation",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricActionDensity_path"
+    },
+    {
+      "claim_id": "ward-support:actual-cyclic-principal-vertex",
+      "module": "Burnett.Analysis.TransportWard.MetricVariation",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_eq_actual_cyclic_variation"
+    },
+    {
+      "claim_id": "ward-support:eta-fourier-hessian-einstein",
+      "module": "Burnett.Analysis.TransportWard.HessianPhase",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_eta_eq_einstein"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-offshell-one-gauge",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_pureGauge_ward_paper_order"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-low-gauge-four-terms",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_lowGauge_screen"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-three-gauge",
+      "module": "Burnett.Analysis.TransportWard.ComplexScreen",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_three_pureGauge"
+    },
+    {
+      "claim_id": "ward-support:real-amplitude-linearity",
+      "module": "Burnett.Analysis.TransportWard.Amplitude",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_first_amplitude"
+    },
+    {
+      "claim_id": "ward-support:frequency-degree-two",
+      "module": "Burnett.Analysis.TransportWard.Amplitude",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_frequency_homogeneity"
+    },
+    {
       "claim_id": "unnum:rosen-multiscale-example",
       "module": "Burnett.Counterexamples.Rosen.Closure",
       "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example"
@@ -10928,6 +10968,157 @@
       ]
     },
     {
+      "claim_id": "ward-support:actual-density-metric-variation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1745,
+        "endline": 1758
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricActionDensity_path",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:actual-cyclic-principal-vertex",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1959,
+        "endline": 1975
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_eq_actual_cyclic_variation",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:eta-fourier-hessian-einstein",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1766,
+        "endline": 1775
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalHessianPairing_eta_eq_einstein",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-offshell-one-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2123,
+        "endline": 2136
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_one_pureGauge_ward_paper_order",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-low-gauge-four-terms",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2137,
+        "endline": 2157
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_lowGauge_screen",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:eta-complex-three-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2232,
+        "endline": 2233
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.complexPrincipalVertex_eta_three_pureGauge",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "ward-support:real-amplitude-linearity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1968,
+        "endline": 1975
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_add_first_amplitude",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "related_source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 2237,
+          "endline": 2241
+        }
+      ]
+    },
+    {
+      "claim_id": "ward-support:frequency-degree-two",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1968,
+        "endline": 1975
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-finite-ward-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.principalVertex_frequency_homogeneity",
+      "statement_record": "docs/statements/transport-ward.md",
+      "semantic_review_record": "docs/statements/transport-ward-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
       "claim_id": "support:rosen-phase-weak-star",
       "kind": "supporting-lemma",
       "parent_claim_id": "unnum:rosen-multiscale-example",
@@ -11762,6 +11953,29 @@
       "targets": 408,
       "lean_sources": 136,
       "whole_paper_verified": false
+    },
+    "transport_ward_delivery": {
+      "targets": 409,
+      "inventory": 479,
+      "lean_sources": 139,
+      "new_targets": 8,
+      "new_modules": 8,
+      "public_declarations": 229,
+      "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+      "statement": "docs/statements/transport-ward.md",
+      "independent_review": "docs/statements/transport-ward-review.md",
+      "source_bindings": "docs/statements/transport-ward-source-bindings.json",
+      "paired_languages": [
+        "zh-CN",
+        "en"
+      ],
+      "full_action_bridge_closed": false,
+      "V02_parent_closed": false,
+      "V04_parent_closed": false,
+      "V07_parent_closed": false,
+      "C04_parent_closed": false,
+      "whole_paper_verified": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     },
     "rosen_multiscale_delivery": {
       "registered_targets": 411,

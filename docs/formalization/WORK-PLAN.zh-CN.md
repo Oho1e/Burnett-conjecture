@@ -530,8 +530,12 @@ PR #18 已进入 `63bbe2b`。合并文件树与已审候选一致，main 的原�
 
 PR #19 已按受审文件树合入 `aaa7053`。其 main 原生 CI 核验 416 个登记目标。
 
-## 多尺度 Rosen 例子（X06）
+## 24. 有限维 Ward 公式与输运调用
 
-X06 可独立于排队中的主算子和 Ward 交付。第 3360–3386 行的总定理在两套坐标中使用同一组序列，给出真空方程、度规和导数界、尺度反例及零源坐标。每套坐标均使用同一个正图测度处理全部内蕴 Einstein 矩与 Hamilton 输运测试。[命题说明](../statements/rosen-multiscale.md)给出精确表述，[数学复核](../statements/rosen-multiscale-review.md)记录其范围。
+本批八个 Lean 模块的 229 项声明中登记八个支持目标。V02/V04 使用实际循环顶点与带 Fourier 负号的 Hessian。V07 从复双线性单规范恒等式、双屏幕四项公式及三纯规范精确消去继续。双规范与一般度规各有待完成的证明。用于输运前，仍须证明实际频率位置下的估计与曲率作用量的散度等价。[命题说明](../statements/transport-ward.md) · [复核](../statements/transport-ward-review.md)
+
+## 25. 多尺度 Rosen 例子（X06）
+
+X06 独立于主算子和 Ward 的证明工作。第 3360–3386 行的总定理在两套坐标中使用同一组序列，给出真空方程、度规和导数界、尺度反例及零源坐标。每套坐标均使用同一个正图测度处理全部内蕴 Einstein 矩与 Hamilton 输运测试。[命题说明](../statements/rosen-multiscale.md)给出精确表述，[数学复核](../statements/rosen-multiscale-review.md)记录其范围。
 
 交付 PR 前核实当前机器检查及与实际 `main` 的精确组合。作者确认单独登记。一般 Rosen 命题（X05）独立于本显式模型，仍需完成一般双极化几何、动理学密度的弱下半连续性，以及一般矩和输运的装配。

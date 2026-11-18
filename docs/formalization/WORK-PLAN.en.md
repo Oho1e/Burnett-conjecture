@@ -525,8 +525,12 @@ Register the consumer that applies both local Ricci conclusions to the same intr
 
 PR #19 landed at `aaa7053` with the reviewed tree. Its native main CI checked all 416 registered targets.
 
-## Multiscale Rosen example (X06)
+## 24. Finite-dimensional Ward formulas and their transport consumers
 
-X06 is independent of the queued principal-operator and Ward deliveries. Its capstone at lines 3360–3386 uses the same sequence in both coordinate systems for the vacuum equations, the metric and derivative bounds, the scale obstruction, and the zero-source chart. Each chart has one positive graph measure for all the intrinsic Einstein moment and Hamiltonian transport tests. The [statement](../statements/rosen-multiscale.en.md) gives the exact formulation and [mathematical review](../statements/rosen-multiscale-review.en.md) tracks its scope.
+The Ward candidate registers eight supporting endpoints from 229 declarations in eight Lean modules. Use the actual cyclic vertex and signed Fourier Hessian in V02/V04. Continue V07 from the complex-bilinear one-gauge and two-screen four-term formulas and exact three-gauge elimination. The two-gauge and general metric arguments have separate pending obligations. Before using the formulas in transport, obtain the actual frequency-position bounds and the curvature-action divergence bridge. [Statements](../statements/transport-ward.en.md) · [Review](../statements/transport-ward-review.en.md)
+
+## 25. Multiscale Rosen example (X06)
+
+X06 is independent of the principal-operator and Ward deliveries. Its capstone at lines 3360–3386 uses the same sequence in both coordinate systems for the vacuum equations, the metric and derivative bounds, the scale obstruction, and the zero-source chart. Each chart has one positive graph measure for all the intrinsic Einstein moment and Hamiltonian transport tests. The [statement](../statements/rosen-multiscale.en.md) gives the exact formulation and [mathematical review](../statements/rosen-multiscale-review.en.md) tracks its scope.
 
 Before handing off the PR, verify the current machine checks and the exact combination with the actual `main`. Record author confirmation separately. Keep the general Rosen proposition (X05) independent of this explicit model. X05 still needs the general two-polarization geometry, weak lower semicontinuity for the kinetic density, and the general moment and transport assembly.
