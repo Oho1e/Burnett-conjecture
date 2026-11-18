@@ -2040,6 +2040,81 @@
       "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_coordinateMeasure_limit_of_original"
     },
     {
+      "claim_id": "geometry-b:error-localized-partial-has-strong-realization-of-original",
+      "module": "Burnett.Analysis.GeometricHminusRemainders",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.error_localized_partial_has_strong_realization_of_original"
+    },
+    {
+      "claim_id": "geometry-b:Ricci-error-divergence-has-strong-realization-of-original",
+      "module": "Burnett.Analysis.GeometricHminusCovariantRemainders",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.Ricci_error_divergence_has_strong_realization_of_original"
+    },
+    {
+      "claim_id": "geometry-b:density-Ricci-error-divergence-has-strong-realization-of-original",
+      "module": "Burnett.Analysis.GeometricHminusCovariantRemainders",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.density_Ricci_error_divergence_has_strong_realization_of_original"
+    },
+    {
+      "claim_id": "geometry-b:linearizedRicci-sequence-eq-source-sub-error-on-target",
+      "module": "Burnett.Analysis.GeometricPrincipalIdentity",
+      "declaration": "Burnett.Analysis.GeometricPrincipalIdentity.linearizedRicci_sequence_eq_source_sub_error_on_target"
+    },
+    {
+      "claim_id": "geometry-b:exists-uniform-bound-connectionDifference-of-original",
+      "module": "Burnett.Analysis.GeometricHminusBoundedForcing",
+      "declaration": "Burnett.Analysis.GeometricHminusBoundedForcing.exists_uniform_bound_connectionDifference_of_original"
+    },
+    {
+      "claim_id": "geometry-b:localized-boundedForcing-has-strong-realization-of-original",
+      "module": "Burnett.Analysis.GeometricHminusBoundedForcing",
+      "declaration": "Burnett.Analysis.GeometricHminusBoundedForcing.localized_boundedForcing_has_strong_realization_of_original"
+    },
+    {
+      "claim_id": "geometry-b:linearizedRicci-has-strong-realization-of-original",
+      "module": "Burnett.Analysis.GeometricHminusPrincipalClosure",
+      "declaration": "Burnett.Analysis.GeometricHminusPrincipalClosure.linearizedRicci_has_strong_realization_of_original"
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature",
+      "module": "Burnett.Geometry.IntrinsicCurvature",
+      "declaration": "Burnett.Geometry.IntrinsicCurvature.coordinateVector_curvature"
+    },
+    {
+      "claim_id": "geometry-curvature:computedConnection-Ricci-basis-trace",
+      "module": "Burnett.Geometry.CurvatureComponents",
+      "declaration": "Burnett.Geometry.CurvatureComponents.computedConnection_Ricci_basis_trace"
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature-eq-value",
+      "module": "Burnett.Geometry.CurvatureJetElimination",
+      "declaration": "Burnett.Geometry.CurvatureJetElimination.coordinateVector_curvature_eq_value"
+    },
+    {
+      "claim_id": "geometry-curvature:exists-isSmooth-value",
+      "module": "Burnett.Geometry.SmoothTangentValueExtension",
+      "declaration": "Burnett.Geometry.SmoothTangentValueExtension.exists_isSmooth_value"
+    },
+    {
+      "claim_id": "geometry-curvature:tensorInChart-eq",
+      "module": "Burnett.Geometry.CurvatureFiberTensor",
+      "declaration": "Burnett.Geometry.CurvatureFiberTensor.tensorInChart_eq"
+    },
+    {
+      "claim_id": "geometry-curvature:sequence-coordinateVacuum-of-intrinsic",
+      "module": "Burnett.Geometry.IntrinsicRicciTrace",
+      "declaration": "Burnett.Geometry.IntrinsicRicciTrace.sequence_coordinateVacuum_of_intrinsic"
+    },
+    {
+      "claim_id": "geometry-curvature:tensor-apply-fields-eq-curvature",
+      "module": "Burnett.Geometry.CurvatureFiberTensor",
+      "declaration": "Burnett.Geometry.CurvatureFiberTensor.tensor_apply_fields_eq_curvature"
+    },
+    {
+      "claim_id": "geometry-curvature:ricci-coordinate-basis",
+      "module": "Burnett.Geometry.IntrinsicRicciTrace",
+      "declaration": "Burnett.Geometry.IntrinsicRicciTrace.ricci_coordinate_basis"
+    },
+    {
       "claim_id": "ward-support:actual-density-metric-variation",
       "module": "Burnett.Analysis.TransportWard.MetricVariation",
       "declaration": "Burnett.Analysis.TransportWardSymbol.hasDerivAt_metricActionDensity_path"
@@ -10555,6 +10630,290 @@
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
     },
     {
+      "claim_id": "geometry-b:error-localized-partial-has-strong-realization-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 366,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.error_localized_partial_has_strong_realization_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:Ricci-error-divergence-has-strong-realization-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.Ricci_error_divergence_has_strong_realization_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:density-Ricci-error-divergence-has-strong-realization-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusRemainders.density_Ricci_error_divergence_has_strong_realization_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:linearizedRicci-sequence-eq-source-sub-error-on-target",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 386
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricPrincipalIdentity.linearizedRicci_sequence_eq_source_sub_error_on_target",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:exists-uniform-bound-connectionDifference-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 358,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusBoundedForcing.exists_uniform_bound_connectionDifference_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:localized-boundedForcing-has-strong-realization-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusBoundedForcing.localized_boundedForcing_has_strong_realization_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-b:linearizedRicci-has-strong-realization-of-original",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 384,
+        "endline": 388
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-local-geometric-Hminus-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.GeometricHminusPrincipalClosure.linearizedRicci_has_strong_realization_of_original",
+      "statement_record": "docs/statements/geometric-Hminus-closure.md",
+      "semantic_review_record": "docs/statements/geometric-Hminus-closure-review.md",
+      "semantic_review": "independent-current-production-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicCurvature.coordinateVector_curvature",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:computedConnection-Ricci-basis-trace",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureComponents.computedConnection_Ricci_basis_trace",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:coordinateVector-curvature-eq-value",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureJetElimination.coordinateVector_curvature_eq_value",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:exists-isSmooth-value",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 100
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.SmoothTangentValueExtension.exists_isSmooth_value",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:tensorInChart-eq",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureFiberTensor.tensorInChart_eq",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:sequence-coordinateVacuum-of-intrinsic",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicRicciTrace.sequence_coordinateVacuum_of_intrinsic",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "related_source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 91,
+          "endline": 100
+        }
+      ]
+    },
+    {
+      "claim_id": "geometry-curvature:tensor-apply-fields-eq-curvature",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CurvatureFiberTensor.tensor_apply_fields_eq_curvature",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "geometry-curvature:ricci-coordinate-basis",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 371,
+        "endline": 374
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-intrinsic-curvature-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicRicciTrace.ricci_coordinate_basis",
+      "statement_record": "docs/statements/intrinsic-curvature-Ricci.md",
+      "semantic_review_record": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "related_source_refs": [
+        {
+          "path": "paper/burnett.tex",
+          "line": 91,
+          "endline": 100
+        }
+      ]
+    },
+    {
       "claim_id": "ward-support:actual-density-metric-variation",
       "kind": "supporting-lemma",
       "parent_claim_id": "thm:variational-transport",
@@ -11316,6 +11675,68 @@
       "main_ci_run": 44138288710,
       "main_ci_success_not_inferred_from_prior_PR": true,
       "agent_remote_merge_performed": false
+    },
+    "pr16_main_integration": {
+      "status": "merged-and-native-main-ci-artifact-verified",
+      "merged_main": "a7e0b833d176342a58b68f43a94c1db6738e3a85",
+      "main_tree_equals_reviewed_pr_tree": true,
+      "main_ci_run": 44147313462,
+      "main_ci_artifact": 14359465238,
+      "all_reviewed_candidate_and_main_inputs_equal": true,
+      "agent_remote_merge_performed": false
+    },
+    "local_geometric_hminus_closure_delivery": {
+      "targets": 408,
+      "inventory": 478,
+      "lean_sources": 136,
+      "new_targets": 7,
+      "new_support_targets": 7,
+      "new_modules": 5,
+      "public_declarations": 38,
+      "base_main": "a7e0b833d176342a58b68f43a94c1db6738e3a85",
+      "inherited_targets": 401,
+      "inherited_inventory": 471,
+      "inherited_lean_sources": 131,
+      "statement": "docs/statements/geometric-Hminus-closure.md",
+      "independent_review": "docs/statements/geometric-Hminus-closure-review.md",
+      "source_bindings": "docs/statements/geometric-Hminus-closure-source-bindings.json",
+      "same_geometric_data_and_localization": true,
+      "actual_coordinate_vacuum_still_explicit": true,
+      "full_intrinsic_vacuum_wrapper_instantiated": false,
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "whole_paper_verified": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "main_merge_performed_by_agent": false,
+      "automatic_independent_next_PR": true
+    },
+    "intrinsic_curvature_delivery": {
+      "targets": 409,
+      "inventory": 479,
+      "lean_sources": 137,
+      "new_targets": 8,
+      "new_modules": 6,
+      "public_declarations": 64,
+      "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+      "statement": "docs/statements/intrinsic-curvature-Ricci.md",
+      "independent_review": "docs/statements/intrinsic-curvature-Ricci-review.md",
+      "source_bindings": "docs/statements/intrinsic-curvature-Ricci-source-bindings.json",
+      "same_metric_sequence_intrinsic_vacuum_to_coordinate": true,
+      "standalone_consumer_combination_in_this_delivery": false,
+      "full_lorentz_model_closed": false,
+      "F04_parent_closed": false,
+      "F05_parent_closed": false,
+      "whole_paper_verified": false,
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    "pr18_main_integration": {
+      "status": "merged-and-native-main-ci-artifact-verified",
+      "actual_main": "63bbe2b8288d31091a242886f7500179a876d90f",
+      "github_native_run": 44242182476,
+      "github_artifact": 14400113780,
+      "targets": 408,
+      "lean_sources": 136,
+      "whole_paper_verified": false
     },
     "transport_ward_delivery": {
       "targets": 409,

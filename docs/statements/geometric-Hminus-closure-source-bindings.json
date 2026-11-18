@@ -1,0 +1,80 @@
+{
+  "schema": "burnett-local-geometric-hminus-closure-bindings/v1",
+  "meaning": "Input identity for the reviewed delivery",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base_main": "a7e0b833d176342a58b68f43a94c1db6738e3a85",
+  "base_main_ci_run": 44147313462,
+  "base_main_ci_artifact": 14359465238,
+  "counts": {
+    "targets": 408,
+    "inventory": 478,
+    "lean_sources": 136,
+    "new_targets": 7,
+    "new_support_targets": 7,
+    "new_modules": 5,
+    "public_declarations": 38
+  },
+  "new_sources": [
+    {
+      "module": "Burnett.Analysis.GeometricHminusRemainders",
+      "path": "Burnett/Analysis/GeometricHminusRemainders.lean",
+      "source_sha256": "83a8f904127f60dff02d366b8cfe9d3a2fc3c552c36ea1d3d2d430d3760ff5c3",
+      "public_declarations": 9,
+      "direct_imports": [
+        "Burnett.Analysis.LocalWeakRicci",
+        "Burnett.Analysis.StrongL2Hminus"
+      ],
+      "frozen_proof_body_sha256": "d1a494695b0c42b530f245d9f7457f828b738f1d3ac7c9e0fccde5ea0d912fd2",
+      "frozen_independent_receipt_sha256": "3bfc6e5a9d4077e2325819409e9bdfab89f3efa7bc3992f09544dd792f6af5c0"
+    },
+    {
+      "module": "Burnett.Analysis.GeometricHminusCovariantRemainders",
+      "path": "Burnett/Analysis/GeometricHminusCovariantRemainders.lean",
+      "source_sha256": "e297a2bc4136dcf416dd37fd92e674d22ca15b45645b2a2509388862d75bf263",
+      "public_declarations": 7,
+      "direct_imports": [
+        "Burnett.Analysis.GeometricHminusRemainders"
+      ],
+      "frozen_proof_body_sha256": "fcf9975c85ff627c54ae78ce97c39e8494c04672373229291ad207c960b5e97e",
+      "frozen_independent_receipt_sha256": "3bfc6e5a9d4077e2325819409e9bdfab89f3efa7bc3992f09544dd792f6af5c0"
+    },
+    {
+      "module": "Burnett.Analysis.GeometricPrincipalIdentity",
+      "path": "Burnett/Analysis/GeometricPrincipalIdentity.lean",
+      "source_sha256": "e1f6990bc806042f097f483a4f362c9117c4454941aa1a307dd96fc090c04b20",
+      "public_declarations": 8,
+      "direct_imports": [
+        "Burnett.Analysis.VacuumWeakRicci"
+      ],
+      "frozen_proof_body_sha256": "1dd193675ab4c40fdf35853f4dfaf7549a7e23589490d83ea5a54728cd12ff4f",
+      "frozen_independent_receipt_sha256": "d9f1a7dfcb95136af61f9a1c60369022f62a5dedebad669633f9b3efe559605c"
+    },
+    {
+      "module": "Burnett.Analysis.GeometricHminusBoundedForcing",
+      "path": "Burnett/Analysis/GeometricHminusBoundedForcing.lean",
+      "source_sha256": "f02cddcd263c5b63963e5b0fa074c2ddd46c764cf21fc5f3904c66c0a2204b8d",
+      "public_declarations": 13,
+      "direct_imports": [
+        "Burnett.Analysis.VacuumWeakRicci",
+        "Burnett.Analysis.CompactRellich",
+        "Burnett.Analysis.Sobolev.L2Bounds"
+      ],
+      "frozen_proof_body_sha256": "546a40a5f80d4abd5af960f8862b5b70c0c67abd77d8290fc5b6aa067cb096c0",
+      "frozen_independent_receipt_sha256": "47cd82825debb335d7b6601183f1155bddb8fb172d82388fef455cb0f00371e7"
+    },
+    {
+      "module": "Burnett.Analysis.GeometricHminusPrincipalClosure",
+      "path": "Burnett/Analysis/GeometricHminusPrincipalClosure.lean",
+      "source_sha256": "b5e6a4635d74f1a0551e48b337167849eed643e4d708d389615abb1d60790b3d",
+      "public_declarations": 1,
+      "direct_imports": [
+        "Burnett.Analysis.GeometricHminusCovariantRemainders",
+        "Burnett.Analysis.GeometricPrincipalIdentity",
+        "Burnett.Analysis.GeometricHminusBoundedForcing"
+      ],
+      "frozen_proof_body_sha256": "f71c52b180fc890ddec89c821b4b3153204ada85ef3a6d11306fb5a1f690e64d",
+      "frozen_independent_receipt_sha256": "7f42f0e0ead702580ba5a16f5c1f1fcdc475a519018a2b2d5c8f46c5d3225827"
+    }
+  ],
+  "independent_production_review_receipt_sha256": "a9abb3beea037ee315710cb3a79626007263625db943278bf448cb921101e99b"
+}
