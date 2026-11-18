@@ -209,3 +209,9 @@ Old targets/inventory/mathematical leaf sources and paper/locks/standard/trust/c
 ## 2026-11-18: Weak Ricci Combination Refresh After PR15 Merged
 
 New main14b492c2 has the same tree as reviewed PR15, preserving all analysis75 sources, targets, and pending-confirmation records. The A first candidate 8616’s 387/457/125 machine evidence and central independent review are historical inputs; original target/project/slice/log data and immutable-commit archives are saved. The same four sources/32 declarations and seven supporting items now yield 401/471/131. Obtain new evidence separately for current complete machine checks/new-main native CI/actual combined CI; old green evidence is not reused. A’s actual imports are independent of analysis75, but the baseline contains the merged75. This batch does not elevate author confirmation or F04/F05/whole-paper status, and a human still performs the final main merge.
+
+## 2026-11-18 · Multiscale Rosen example (X06)
+
+The theorem for lines 3360–3386 uses the same sequence in both gauges. It gives exact vacuum and source equations, convergence and uniform first-derivative bounds, and the obstruction to a common second-derivative scale. The intrinsic Einstein moment and full transport identities use the same graph measure within each gauge. The 12 modules contain 333 machine-checked declarations. The parent and nine supporting targets bring this candidate to 411 targets, 480 inventory entries, and 143 Lean sources. [Mathematical review](../statements/rosen-multiscale-review.en.md) · [Source bindings](../statements/rosen-multiscale-source-bindings.json)
+
+The independent mathematical review covers the fixed product-coordinate model. Author confirmation is pending. Verify the actual combined PR and its CI separately. The general Rosen proposition X05 and the whole-paper certification remain open.

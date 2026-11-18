@@ -1,0 +1,167 @@
+{
+  "schema": "burnett-rosen-multiscale-bindings/v1",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+  "counts": {
+    "registered_targets": 411,
+    "inventory_entries": 480,
+    "lean_source_files": 143,
+    "new_registered_targets": 10,
+    "new_modules": 12,
+    "public_declarations": 333
+  },
+  "native_receipt_sha256": "1e2a51052b453d7aac9fb30e3c88ce023551521572885dc0e1f5abad61a6b4f4",
+  "independent_receipt_sha256": {
+    "INDEPENDENT-RECEIPT.json@rosen-base-tests-independent": "cf3779eaec178276cab614df5c08d82ea5fc0238ef1ad2a1af4867176e8cf0d6",
+    "INDEPENDENT-RECEIPT.json@x06-rosen-euclidean-Dh-independent": "eff63e00398505dfb1d55189808d0f49bd77cbe59942960fa1eab7f0f3c406d2",
+    "INDEPENDENT-RECEIPT.json@x06-rosen-root-caps-independent": "13023ddbd2a13550a09317d6d299170363c830fbad5238651797c5535549b44f",
+    "INDEPENDENT-RECEIPT.json@rosen-closure-independent": "2f1bd196163b3402edf8ca272cdfa029415761f78e6bd9ebef57976994cdb179"
+  },
+  "files": {
+    "Burnett/Counterexamples/Rosen/Phase.lean": "7ae8bf87cfdc0b0612733e64a08d1646fea9f32e116356b21ec4efe26d555747",
+    "Burnett/Counterexamples/Rosen/Coordinates.lean": "2b679f215c46bf4d86c5835daa9553c633335eb22d5e2a4208cc7bb3aff49bbd",
+    "Burnett/Counterexamples/Rosen/Scale.lean": "9a122b132e3b86709d43539f3675a924c5162c555724826a1e5ed80fc765602c",
+    "Burnett/Counterexamples/Rosen/Curvature.lean": "960d29c3bffd54b876630499436e6c70cc03b4462bda3d2bfd7a345c47138d32",
+    "Burnett/Counterexamples/Rosen/Kinetic.lean": "e9af95dafa2b083aa2f9e117591aa80a5a2e11589159b0ed876a9470b13cb299",
+    "Burnett/Counterexamples/Rosen/Transport.lean": "0b92cc6200b850ae3767a08216b0c9cfdf8232116ce9f22cb66676e80881dc0c",
+    "Burnett/Counterexamples/Rosen/Einstein.lean": "ce2b76bc537c8e0c80141916ef2c55265d1064b6d1bafdaf4aaf04cf73e197f1",
+    "Burnett/Counterexamples/Rosen/TestClass.lean": "53572324ac8dda88817aec6c2d09f177dee4c27a4627d770e04aa8f00f720e8b",
+    "Burnett/Counterexamples/Rosen/Example.lean": "18497ecb413822db7bb979b957d8dd13793b7056c1af04d3a56c57b38a58e2dd",
+    "Burnett/Counterexamples/Rosen/BaseTestClass.lean": "192316236f10c1ce4d4cd17ac64c87cb94348f3c7017fd53c06ccd4fd76cd9c2",
+    "Burnett/Counterexamples/Rosen/Auxiliary.lean": "df32277b31f315946a3cd4fc345edafe1c985a5ef8115989be46a9c45792ebcd",
+    "Burnett/Counterexamples/Rosen/Closure.lean": "b313821fc448753e93d82e61b106c17b9a0f63e063698a875de70c08410d28c9"
+  },
+  "registered_targets": [
+    {
+      "claim_id": "unnum:rosen-multiscale-example",
+      "module": "Burnett.Counterexamples.Rosen.Closure",
+      "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3386
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Closure.lean",
+      "lean_line": 25
+    },
+    {
+      "claim_id": "support:rosen-phase-weak-star",
+      "module": "Burnett.Counterexamples.Rosen.Phase",
+      "declaration": "Burnett.RosenMultiscale.rosen_phase_LInfinity_weakStar",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3367
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Phase.lean",
+      "lean_line": 1152
+    },
+    {
+      "claim_id": "support:rosen-positive-amplitude-sequence",
+      "module": "Burnett.Counterexamples.Rosen.Phase",
+      "declaration": "Burnett.RosenMultiscale.exists_smooth_rosen_sequence_c1",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3367
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Phase.lean",
+      "lean_line": 980
+    },
+    {
+      "claim_id": "support:rosen-exact-vacuum-metrics",
+      "module": "Burnett.Counterexamples.Rosen.Example",
+      "declaration": "Burnett.RosenMultiscale.exists_rosen_multiscale_sequence",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3367,
+        "endline": 3371
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Example.lean",
+      "lean_line": 94
+    },
+    {
+      "claim_id": "support:rosen-metric-lower-bounds",
+      "module": "Burnett.Counterexamples.Rosen.Scale",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_metric_essential_lower_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3373,
+        "endline": 3375
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Scale.lean",
+      "lean_line": 658
+    },
+    {
+      "claim_id": "support:rosen-pullback-zero-source",
+      "module": "Burnett.Counterexamples.Rosen.Coordinates",
+      "declaration": "Burnett.RosenMultiscale.rosen_coordinate_pullback_source_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3376,
+        "endline": 3386
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Coordinates.lean",
+      "lean_line": 188
+    },
+    {
+      "claim_id": "support:rosen-exact-kinetic-model",
+      "module": "Burnett.Counterexamples.Rosen.Example",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_kinetic_limit",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3371,
+        "endline": 3371
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Example.lean",
+      "lean_line": 256
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-compact-transport",
+      "module": "Burnett.Counterexamples.Rosen.TestClass",
+      "declaration": "Burnett.RosenMultiscale.Transport.TestClass.intrinsic_compact_test_transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3386,
+        "endline": 3386
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/TestClass.lean",
+      "lean_line": 150
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-einstein-moment",
+      "module": "Burnett.Counterexamples.Rosen.BaseTestClass",
+      "declaration": "Burnett.RosenMultiscale.Transport.BaseTestClass.intrinsic_tensor_einstein_moment",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3371,
+        "endline": 3371
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/BaseTestClass.lean",
+      "lean_line": 157
+    },
+    {
+      "claim_id": "support:rosen-covariant-perturbation-bound",
+      "module": "Burnett.Counterexamples.Rosen.Auxiliary",
+      "declaration": "Burnett.RosenMultiscale.RosenMultiscaleSequence.euclideanDh_eLpNorm_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3385,
+        "endline": 3386
+      },
+      "lean_source": "Burnett/Counterexamples/Rosen/Auxiliary.lean",
+      "lean_line": 270
+    }
+  ],
+  "cache_roots": [
+    "Mathlib.Analysis.ODE.PicardLindelof"
+  ],
+  "production_normalizations": {
+    "Burnett/Counterexamples/Rosen/Scale.lean": {
+      "description": "Removed one trailing ASCII space before a newline.",
+      "before_sha256": "909c7328d2768ba93acc1b47000cb8c058b8659deb6cb7348937560ea6174cb6",
+      "after_sha256": "9a122b132e3b86709d43539f3675a924c5162c555724826a1e5ed80fc765602c"
+    }
+  },
+  "normalization_independent_receipt_sha256": "ab95e0e5302b6787316cb210df9a4d7a7a418354c7eb36d057fb042421936404"
+}
