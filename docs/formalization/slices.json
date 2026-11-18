@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "先锁定外部微局部接口的精确测试类、束值性与量词；把共同子序列和Gram转换作为可检查子义务。",
+      "next_action": "紧空间上各常向量压缩的平方正性已给出同一族有序复测度和有限支配迹。将该表示接到原度量的共同子序列，再证明不同坐标图的测度在重叠上的变换关系。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -4768,6 +4768,54 @@
       "claim_id": "support:rosen-general-local-moments",
       "source_slices": [
         "X05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "source_slices": [
+        "F05"
       ]
     }
   ],
