@@ -2038,6 +2038,56 @@
       "claim_id": "geometry-a:vacuum-Ricci-coordinateMeasure-limit-of-original",
       "module": "Burnett.Analysis.MeasureWeakRicci",
       "declaration": "Burnett.Analysis.LocalWeakRicciIdentification.vacuum_Ricci_coordinateMeasure_limit_of_original"
+    },
+    {
+      "claim_id": "unnum:rosen-multiscale-example",
+      "module": "Burnett.Counterexamples.Rosen.Closure",
+      "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example"
+    },
+    {
+      "claim_id": "support:rosen-phase-weak-star",
+      "module": "Burnett.Counterexamples.Rosen.Phase",
+      "declaration": "Burnett.RosenMultiscale.rosen_phase_LInfinity_weakStar"
+    },
+    {
+      "claim_id": "support:rosen-positive-amplitude-sequence",
+      "module": "Burnett.Counterexamples.Rosen.Phase",
+      "declaration": "Burnett.RosenMultiscale.exists_smooth_rosen_sequence_c1"
+    },
+    {
+      "claim_id": "support:rosen-exact-vacuum-metrics",
+      "module": "Burnett.Counterexamples.Rosen.Example",
+      "declaration": "Burnett.RosenMultiscale.exists_rosen_multiscale_sequence"
+    },
+    {
+      "claim_id": "support:rosen-metric-lower-bounds",
+      "module": "Burnett.Counterexamples.Rosen.Scale",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_metric_essential_lower_bounds"
+    },
+    {
+      "claim_id": "support:rosen-pullback-zero-source",
+      "module": "Burnett.Counterexamples.Rosen.Coordinates",
+      "declaration": "Burnett.RosenMultiscale.rosen_coordinate_pullback_source_zero"
+    },
+    {
+      "claim_id": "support:rosen-exact-kinetic-model",
+      "module": "Burnett.Counterexamples.Rosen.Example",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_kinetic_limit"
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-compact-transport",
+      "module": "Burnett.Counterexamples.Rosen.TestClass",
+      "declaration": "Burnett.RosenMultiscale.Transport.TestClass.intrinsic_compact_test_transport"
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-einstein-moment",
+      "module": "Burnett.Counterexamples.Rosen.BaseTestClass",
+      "declaration": "Burnett.RosenMultiscale.Transport.BaseTestClass.intrinsic_tensor_einstein_moment"
+    },
+    {
+      "claim_id": "support:rosen-covariant-perturbation-bound",
+      "module": "Burnett.Counterexamples.Rosen.Auxiliary",
+      "declaration": "Burnett.RosenMultiscale.RosenMultiscaleSequence.euclideanDh_eLpNorm_on_compact"
     }
   ],
   "inventory": [
@@ -2657,15 +2707,19 @@
         "endline": 3386
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/source-index.json",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
       "scope_decision": {
         "date": "2026-11-15",
         "decider": "user",
         "decision": "include-as-required-final-formalization-target",
         "statement_scope": "多尺度Rosen真空序列、无共同二阶导尺度及精确零源坐标构造（原文3360–3386）"
-      }
+      },
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example"
     },
     {
       "claim_id": "unnum:flat-pullback-example",
@@ -10513,6 +10567,168 @@
       "semantic_review_record": "docs/statements/weak-ricci-identification-review.md",
       "semantic_review": "independent-current-production-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-phase-weak-star",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3367
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.rosen_phase_LInfinity_weakStar",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-positive-amplitude-sequence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3360,
+        "endline": 3367
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.exists_smooth_rosen_sequence_c1",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-exact-vacuum-metrics",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3367,
+        "endline": 3371
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.exists_rosen_multiscale_sequence",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-metric-lower-bounds",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3373,
+        "endline": 3375
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_metric_essential_lower_bounds",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-pullback-zero-source",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3376,
+        "endline": 3386
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.rosen_coordinate_pullback_source_zero",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-exact-kinetic-model",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3371,
+        "endline": 3371
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.rosen_full_kinetic_limit",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-compact-transport",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3386,
+        "endline": 3386
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.Transport.TestClass.intrinsic_compact_test_transport",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-einstein-moment",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3371,
+        "endline": 3371
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.Transport.BaseTestClass.intrinsic_tensor_einstein_moment",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-covariant-perturbation-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:rosen-multiscale-example",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3385,
+        "endline": 3386
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenMultiscale.RosenMultiscaleSequence.euclideanDh_eLpNorm_on_compact",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     }
   ],
   "coverage_review": {
@@ -11125,6 +11341,23 @@
       "main_ci_run": 44138288710,
       "main_ci_success_not_inferred_from_prior_PR": true,
       "agent_remote_merge_performed": false
+    },
+    "rosen_multiscale_delivery": {
+      "registered_targets": 411,
+      "inventory_entries": 480,
+      "lean_source_files": 143,
+      "new_registered_targets": 10,
+      "new_modules": 12,
+      "public_declarations": 333,
+      "base_main": "8744c43ddf179fa630a3afed438dfbe154698b55",
+      "statement": "docs/statements/rosen-multiscale.md",
+      "independent_review": "docs/statements/rosen-multiscale-review.md",
+      "source_bindings": "docs/statements/rosen-multiscale-source-bindings.json",
+      "paired_languages": [
+        "zh-CN",
+        "en"
+      ],
+      "paper_formalization_verified": false
     }
   },
   "planning": {

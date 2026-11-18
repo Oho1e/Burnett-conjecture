@@ -1356,7 +1356,7 @@
         "H的定义与所有source分量需核对，不能仅验展示的一分量。",
         "用户于2026-11-15明确纳入最终形式化目标；这项范围决定不构成证明或语义确认。"
       ],
-      "next_action": "先闭合B_n比较与C1极限，再核两个尺度下界、真空性和固定目标坐标下全部源分量，最后构造并验证动理测度。",
+      "next_action": "核对本例合并候选的实际检查，待作者确认数学对应。各坐标的直接证明和一般 Rosen 定理可分别使用。",
       "supplementary_obligations": []
     },
     {
@@ -4438,6 +4438,60 @@
       "claim_id": "geometry-a:vacuum-Ricci-coordinateMeasure-limit-of-original",
       "source_slices": [
         "F04"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-phase-weak-star",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-positive-amplitude-sequence",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-exact-vacuum-metrics",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-metric-lower-bounds",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-pullback-zero-source",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-exact-kinetic-model",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-compact-transport",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-intrinsic-einstein-moment",
+      "source_slices": [
+        "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-covariant-perturbation-bound",
+      "source_slices": [
+        "X06"
       ]
     }
   ],

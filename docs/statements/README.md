@@ -13,6 +13,7 @@
 - [初始结构清点及候选说明](intake.zh-CN.md)
 - [主定理的精确接口](main-interface.md)
 - [首个 Ricci 符号片段](ricci-symbol.md)及[独立实际声明回读](ricci-symbol-review.md)
+- [多尺度 Rosen 真空序列](rosen-multiscale.md)及[数学复核](rosen-multiscale-review.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

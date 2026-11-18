@@ -116,3 +116,4 @@ import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci
 import Burnett.Analysis.MeasureWeakRicci
+import Burnett.Counterexamples.Rosen.Closure

@@ -1318,9 +1318,9 @@
       "source_endline": 3386,
       "source_labels": [],
       "candidate_status": "user_approved_required_result",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "audit_status": "not_mathematically_reviewed",
+      "modeling_status": "implemented-explicit-rosen-multiscale-example",
+      "lean_status": "proof-implemented",
+      "audit_status": "independent-frozen-source-readback-passed",
       "initial_candidate_status": "inventory_candidate_not_acceptance_scope",
       "scope_resolution_record": {
         "path": "docs/formalization/scope.json",
@@ -1328,7 +1328,8 @@
         "date": "2026-11-15",
         "decision": "include-as-required-final-formalization-target",
         "decider": "user"
-      }
+      },
+      "statement_record": "docs/statements/rosen-multiscale.md"
     },
     {
       "candidate_id": "unnum:flat-pullback-example",

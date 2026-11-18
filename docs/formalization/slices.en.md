@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `e36882788aade317f0fa35589363ce59de51be2e7336d2bf14b80d43b5fa56d2`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `a4d106414dfa2b93ce7f65ed7c473debce1104dd0345d9769cbd562225e51e1a`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1439,7 +1439,7 @@ Boundaries:
 Consumers: This slice supplies no mathematical input or application to other slices.
 
 
-Next: First close the B_n comparison and C1 limit; then verify both scale lower bounds, vacuum, and all source components in fixed target coordinates; finally construct and verify the kinetic measure.
+Next: Verify the actual merge candidate for the example and record the author’s confirmation. The direct coordinate proof and the general Rosen proposition have separate proof obligations.
 
 <a id="x07"></a>
 
