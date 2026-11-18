@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 460 个目标、526 个库存项和 183 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 471 个目标、536 个库存项和 194 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 最终范围包括旋转零矩张量无输运表示（X03）及多尺度 Rosen 真空序列与精确零源坐标（X06）。X03 已随 PR #13 进入 `main`。本次交付实现 X06，覆盖不存在共同导数尺度的结论，以及两套坐标下的 Einstein 矩和输运恒等式。作者确认在范围清单中登记。[X06 命题说明](docs/statements/rosen-multiscale.md) · [切片总览](docs/formalization/slices.md)
 
@@ -13,6 +13,8 @@ X07 证明满足容许条件的平直序列，其光滑极限的内禀 Riemann �
 一般双极化 Rosen 命题（X05）从原文的物理一阶导数界推出完整动理学表示。同一图测度满足 Einstein 张量矩、Hamilton 输运恒等式和有限局部二阶矩条件。[X05 命题说明](docs/statements/rosen-two-polarization.md) · [数学复核](docs/statements/rosen-two-polarization-review.md)
 
 谐和坐标例子 X01 证明固定紧盒上的张量波源 L² 范数发散。各项度规内禀平直，序列满足原文的容许界。[X01 命题说明](docs/statements/harmonic-shear.zh-CN.md)
+
+X04 构造了具有正零锥矩的实际光滑 Lorentz 度规，并排除所有正零射线输运表示。[X04 命题说明](docs/statements/bianchi-counterexample.zh-CN.md)
 
 原文快照为 [`paper/burnett.tex`](paper/burnett.tex)，176424字节，SHA256：
 

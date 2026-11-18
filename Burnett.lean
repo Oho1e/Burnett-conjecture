@@ -134,3 +134,4 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Counterexamples.Bianchi

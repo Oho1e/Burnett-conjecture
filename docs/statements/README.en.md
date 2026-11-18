@@ -36,6 +36,6 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 6.2 | corollary | `cor:strong` | 3063–3078 | Not modeled |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [Proof and independent review](harmonic-shear.en.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
-| C.1 | proposition | `prop:bianchi` | 3245–3247 | Not modeled |
+| C.1 | proposition | `prop:bianchi` | 3245–3247 | [Proof and independent review](bianchi-counterexample.en.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [Proof and independent review](rosen-two-polarization.en.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |

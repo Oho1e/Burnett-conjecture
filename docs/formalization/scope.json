@@ -2333,6 +2333,61 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "prop:bianchi",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample"
+    },
+    {
+      "claim_id": "support:bianchi-constrained-flow",
+      "module": "Burnett.Counterexamples.Bianchi.Evolution",
+      "declaration": "Burnett.Bianchi.ODE.exists_bianchi_constrained_flow"
+    },
+    {
+      "claim_id": "support:bianchi-coordinate-ricci",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.computedRicci_of_constrained_flow"
+    },
+    {
+      "claim_id": "support:bianchi-intrinsic-einstein",
+      "module": "Burnett.Counterexamples.Bianchi.Geometry",
+      "declaration": "Burnett.Bianchi.intrinsicEinstein_openMetric_source"
+    },
+    {
+      "claim_id": "support:bianchi-null-squares",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.twoPositiveNullSquares_of_source"
+    },
+    {
+      "claim_id": "support:bianchi-zero-divergence",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.coordinateEinstein_divergence_zero_of_germ"
+    },
+    {
+      "claim_id": "support:bianchi-hamilton-obstruction",
+      "module": "Burnett.Counterexamples.Bianchi.Transport",
+      "declaration": "Burnett.Bianchi.Transport.no_representation_for_coordinate_metric"
+    },
+    {
+      "claim_id": "support:bianchi-normalization",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.intrinsicEuclideanNullRayRepresentation_of_auxiliary"
+    },
+    {
+      "claim_id": "support:lift-compact-unit-null",
+      "module": "Burnett.Geometry.Cotangent.Core",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.isCompact_cotangentUnitNullSubtype_preimage"
+    },
+    {
+      "claim_id": "support:lift-global-weighted-angular-extension",
+      "module": "Burnett.Geometry.Cotangent.SmoothExtension",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_angular_extension"
+    },
+    {
+      "claim_id": "support:lift-punctured-degree-one-extension",
+      "module": "Burnett.Geometry.Cotangent.RadialExtension",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_degreeOne_extension"
     }
   ],
   "inventory": [
@@ -2551,9 +2606,13 @@
         "endline": 3247
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t15"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md",
+      "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample",
+      "semantic_review_record": "docs/statements/bianchi-counterexample.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "prop:rosen",
@@ -11799,6 +11858,156 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-constrained-flow",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3249,
+        "endline": 3268
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.ODE.exists_bianchi_constrained_flow",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-coordinate-ricci",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3270,
+        "endline": 3276
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.computedRicci_of_constrained_flow",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-intrinsic-einstein",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3270,
+        "endline": 3279
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.intrinsicEinstein_openMetric_source",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-null-squares",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3275,
+        "endline": 3280
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.twoPositiveNullSquares_of_source",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-zero-divergence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3279,
+        "endline": 3280
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.coordinateEinstein_divergence_zero_of_germ",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-hamilton-obstruction",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3282,
+        "endline": 3300
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.Transport.no_representation_for_coordinate_metric",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-normalization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3282,
+        "endline": 3300
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.intrinsicEuclideanNullRayRepresentation_of_auxiliary",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-compact-unit-null",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3005,
+        "endline": 3011
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.isCompact_cotangentUnitNullSubtype_preimage",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-global-weighted-angular-extension",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3013,
+        "endline": 3022
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_angular_extension",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-punctured-degree-one-extension",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3013,
+        "endline": 3022
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_degreeOne_extension",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
     }
   ],
   "coverage_review": {
@@ -12537,6 +12746,19 @@
         "zh-CN",
         "en"
       ],
+      "paper_formalization_verified": false
+    },
+    "bianchi_counterexample_delivery": {
+      "paired_languages": [
+        "zh-CN",
+        "en"
+      ],
+      "source_snapshot": "5faf667fe3384885bc0b0579546810d4a434e2de55c0b68c21346a43e894ec78",
+      "producer_sha256": "201270f43c31b6c659d8dc078b2f612f125aaf895a76f9412b98964c4797a7af",
+      "independent_sha256": "aa30254c4c248a3814e7821c4661a3bd6517c93b1184b1ba60d6f1322b3c1d31",
+      "new_registered_targets": 11,
+      "registered_targets": 471,
+      "inventory_entries": 536,
       "paper_formalization_verified": false
     }
   },
