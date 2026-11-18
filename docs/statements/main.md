@@ -339,7 +339,7 @@ There are globally smooth flat metrics $g_n$ on $\R^4$, satisfying \eqref{eq:adm
 \end{proposition}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+数学/Lean 对应为 `Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample`，构造平直、精确谐和的容许序列，并证明同一固定紧集上的波源发散。作者确认仍待记录。[陈述和验证证据](harmonic-shear.zh-CN.md)
 
 ## T14
 

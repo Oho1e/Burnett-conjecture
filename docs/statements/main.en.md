@@ -339,7 +339,7 @@ There are globally smooth flat metrics $g_n$ on $\R^4$, satisfying \eqref{eq:adm
 \end{proposition}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+Mathematical/Lean correspondence: `Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample` constructs the admissible, flat harmonic-coordinate sequence and proves divergence on one fixed compact set. Author confirmation is pending. [Statement and verification evidence](harmonic-shear.en.md)
 
 ## T14
 
