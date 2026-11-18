@@ -86,7 +86,7 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+The F08 supporting results disintegrate a fixed joint measure over a countable measurable cover. The intrinsic marginal and tensor moments remain open in this corollary. [Countable-cover disintegration](countable-fiber-disintegration.en.md)
 
 ## T04
 

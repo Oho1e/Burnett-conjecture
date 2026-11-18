@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## 26. Applying the F08 countable-cover disintegration
+
+Use the joint law of the same F07 physical measure throughout. Identify its first marginal with `e_r dV`, exhibit a countable measurable cover with finite restrictions and a bound for the density on each patch, and verify the measurable relation consisting of unit null covectors above the given base point. The disintegration theorem then supplies a single kernel of the stated fiber mass, with almost-everywhere concentration and uniqueness for that joint law. Recover the componentwise Einstein moments from the actual stress identity and prove vanishing over vacuum regions. [F08 theorem](../statements/countable-fiber-disintegration.en.md)

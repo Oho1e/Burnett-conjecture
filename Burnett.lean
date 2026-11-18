@@ -71,6 +71,7 @@ import Burnett.Geometry.ManifoldMetricTransition
 import Burnett.Geometry.ManifoldLorentzVolume
 import Burnett.Geometry.LeviCivitaUniqueness
 import Burnett.Geometry.MeasureGluing
+import Burnett.Analysis.FiberDisintegration.Weighted
 import Burnett.Geometry.CoordinateCovariantDerivative
 import Burnett.Geometry.AffineConnection
 import Burnett.Geometry.ManifoldBilinear

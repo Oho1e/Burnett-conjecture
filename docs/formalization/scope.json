@@ -2333,6 +2333,26 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "base-marginal:ordinary-local-fiber-uniqueness",
+      "module": "Burnett.Analysis.FiberDisintegration.Uniqueness",
+      "declaration": "Burnett.F08.FiberGluing.localFiberKernel_unique_of_integral_sections"
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-gluing",
+      "module": "Burnett.Analysis.FiberDisintegration.CountableCover",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_disintegrates"
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-uniqueness",
+      "module": "Burnett.Analysis.FiberDisintegration.Uniqueness",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_unique_of_integral_sections"
+    },
+    {
+      "claim_id": "base-marginal:countable-weighted-disintegration",
+      "module": "Burnett.Analysis.FiberDisintegration.Weighted",
+      "declaration": "Burnett.F08.FiberGluing.exists_weighted_disintegration_on_cover"
     }
   ],
   "inventory": [
@@ -2363,6 +2383,74 @@
       "modeling_status": "pending_modeling",
       "lean_status": "not_formalized",
       "statement_record": "docs/statements/main.md#t02"
+    },
+    {
+      "claim_id": "base-marginal:ordinary-local-fiber-uniqueness",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.localFiberKernel_unique_of_integral_sections",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-gluing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 511,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_disintegrates",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-uniqueness",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_unique_of_integral_sections",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-weighted-disintegration",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.exists_weighted_disintegration_on_cover",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     },
     {
       "claim_id": "cor:base-marginal",

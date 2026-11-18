@@ -86,7 +86,7 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+F08 的支持结果在可数可测覆盖上分解给定的联合测度。本推论的内禀边缘与张量矩仍待证明。[可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md)
 
 ## T04
 
