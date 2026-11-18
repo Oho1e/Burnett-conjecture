@@ -2333,6 +2333,31 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-tensor-norm",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.physicalNorm2_compact_compare"
+    },
+    {
+      "claim_id": "f02:auxiliary:local-uniform-limit",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.locallyUniformlyConverges_changeAuxiliary"
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-connection-comparison",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.normScalar_compact_compare"
+    },
+    {
+      "claim_id": "f02:auxiliary:uniform-derivative-bound",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.compactDhBound_changeAuxiliary"
+    },
+    {
+      "claim_id": "f02:auxiliary:vacuum-admissibility-iff",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.admissible_iff_changeAuxiliary"
     }
   ],
   "inventory": [
@@ -11799,6 +11824,96 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-tensor-norm",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 106
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.physicalNorm2_compact_compare",
+      "statement_record": "docs/statements/auxiliary-metric-admissibility.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:auxiliary:local-uniform-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 106
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.locallyUniformlyConverges_changeAuxiliary",
+      "statement_record": "docs/statements/auxiliary-metric-admissibility.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-connection-comparison",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 106
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.normScalar_compact_compare",
+      "statement_record": "docs/statements/auxiliary-metric-admissibility.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:auxiliary:uniform-derivative-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 106
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.compactDhBound_changeAuxiliary",
+      "statement_record": "docs/statements/auxiliary-metric-admissibility.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:auxiliary:vacuum-admissibility-iff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 91,
+        "endline": 106
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.admissible_iff_changeAuxiliary",
+      "statement_record": "docs/statements/auxiliary-metric-admissibility.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {

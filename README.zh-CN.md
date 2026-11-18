@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 460 个目标、526 个库存项和 183 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 465 个目标、531 个库存项和 185 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 最终范围包括旋转零矩张量无输运表示（X03）及多尺度 Rosen 真空序列与精确零源坐标（X06）。X03 已随 PR #13 进入 `main`。本次交付实现 X06，覆盖不存在共同导数尺度的结论，以及两套坐标下的 Einstein 矩和输运恒等式。作者确认在范围清单中登记。[X06 命题说明](docs/statements/rosen-multiscale.md) · [切片总览](docs/formalization/slices.md)
 
@@ -63,3 +63,5 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 - [X02三线性反例](docs/statements/cubic-counterexample.md)及[复核](docs/statements/cubic-counterexample-review.md)记录完整正式命题与1A委托确认。[固定 Fourier 离锥目标](docs/statements/cubic-off-null-localization.md)分别记录 2A 批准范围、已实现的证明与尚待确认的新解释。PR5已由用户合并到main `242eebe9d87ef62c15efab8df7741051f0aed260`，[该提交的主线CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43807809558)成功；该次人类操作不增加代理后续合并权限。
 
 后续 PR 按[双语目标](docs/formalization/GOAL.zh-CN.md#双语交付)同步更新中英文说明。
+
+已证明原真空序列的局部一致收敛与紧集一阶导数界在任意两个光滑辅助黎曼度量之间等价。 [辅助度量变换下的真空序列假设](docs/statements/auxiliary-metric-admissibility.zh-CN.md)

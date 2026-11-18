@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## 26. Changing the auxiliary metric in the vacuum sequence hypotheses
+
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. These estimates allow a construction on the same subsequence to use different auxiliary metrics. The transformation law of the microlocal measure and the transport equation require further arguments. [Changing the auxiliary metric in the vacuum sequence hypotheses](../statements/auxiliary-metric-admissibility.en.md)
