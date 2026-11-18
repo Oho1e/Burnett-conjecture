@@ -1330,7 +1330,7 @@
         "正定矩阵平方根与非对称L_n的Frobenius关系需实际证明。",
         "nu是全动量单一协向量截面Dirac分布，不能混为单位ray测度而遗漏r长度权重。"
       ],
-      "next_action": "建立Rosen曲率及对称S_n恒等式，由加权下半连续性得rho>=0，再显式构造nu并核矩、输运与每个紧基集二阶矩。",
+      "next_action": "核验本例代码组合与最新主线的实际 CI，单独登记作者确认；全相空间表示已由直接 Rosen 证明构造。",
       "supplementary_obligations": []
     },
     {
@@ -4660,6 +4660,72 @@
       "claim_id": "support:rosen-covariant-perturbation-bound",
       "source_slices": [
         "X06"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-lorentz",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-physical-control",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-coordinate-ricci",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-shear-weak-star",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-energy-weak-star",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-density-nonnegative",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-smooth-density",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-canonical-flow",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-einstein-moment",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-full-transport",
+      "source_slices": [
+        "X05"
+      ]
+    },
+    {
+      "claim_id": "support:rosen-general-local-moments",
+      "source_slices": [
+        "X05"
       ]
     }
   ],

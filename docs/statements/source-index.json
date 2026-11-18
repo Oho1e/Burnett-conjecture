@@ -883,16 +883,17 @@
       "is_appendix": true,
       "summary_zh_CN": "在两极化 Rosen 平面波真空容许类中提出完整无质量动理表示，无二阶导数尺度假设。",
       "claim_status": "source_proposed_claim_not_mathematically_assessed",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "semantic_correspondence_status": "not_reviewed",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "semantic_correspondence_status": "independent-frozen-source-readback-passed",
       "argument_locator": {
         "kind": "explicit_proof_environment",
         "source_line": 3313,
         "source_endline": 3358,
         "coverage_status": "locator_only_not_proof_audit"
       },
-      "selected_source_result_references": []
+      "selected_source_result_references": [],
+      "statement_record": "docs/statements/rosen-two-polarization.md"
     },
     {
       "kind": "proposition",

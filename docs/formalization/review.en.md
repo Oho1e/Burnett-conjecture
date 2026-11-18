@@ -214,4 +214,10 @@ New main14b492c2 has the same tree as reviewed PR15, preserving all analysis75 s
 
 The theorem for lines 3360–3386 uses the same sequence in both gauges. It gives exact vacuum and source equations, convergence and uniform first-derivative bounds, and the obstruction to a common second-derivative scale. The intrinsic Einstein moment and full transport identities use the same graph measure within each gauge. The 12 modules contain 333 machine-checked declarations. The parent and nine supporting targets bring this candidate to 411 targets, 480 inventory entries, and 143 Lean sources. [Mathematical review](../statements/rosen-multiscale-review.en.md) · [Source bindings](../statements/rosen-multiscale-source-bindings.json)
 
-The independent mathematical review covers the fixed product-coordinate model. Author confirmation is pending. Verify the actual combined PR and its CI separately. The general Rosen proposition X05 and the whole-paper certification remain open.
+The independent mathematical review covers the fixed product-coordinate model. Author confirmation is pending. Verify the actual combined PR and its CI separately. The general Rosen proposition X05 has its own review below. Whole-paper certification remains open.
+
+## 2026-11-18 · General two-polarization Rosen proposition (X05)
+
+The modular Lean audit checks the 221 declarations in the nine new modules. The capstone derives one full kinetic graph measure from the original physical assumptions on an arbitrary positive definite screen. The supporting code proves the actual Lorentz metric, both local weak-star limits, nonnegative density, and the full Einstein and transport tests with finite auxiliary second moments. [Statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
+
+Author confirmation and current combination CI are separate steps. The source bindings retain the original X06 parent and the counts for that proof snapshot. The refreshed candidate reuses the same coordinate Hamiltonian and integration lemmas from PR #21. Whole-paper certification remains open.

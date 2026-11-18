@@ -2233,6 +2233,66 @@
       "claim_id": "support:flat-rigidity-intrinsic-coordinate",
       "module": "Burnett.Geometry.FlatRigidity.Intrinsic",
       "declaration": "Burnett.Geometry.FlatRigidity.isFlat_iff_coordinateFlat"
+    },
+    {
+      "claim_id": "prop:rosen",
+      "module": "Burnett.Rosen.Closure",
+      "declaration": "Burnett.RosenPlaneWave.two_polarization_rosen_closure"
+    },
+    {
+      "claim_id": "support:rosen-general-lorentz",
+      "module": "Burnett.Rosen.Lorentz",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_lorentz_on"
+    },
+    {
+      "claim_id": "support:rosen-general-physical-control",
+      "module": "Burnett.Rosen.Admissible",
+      "declaration": "Burnett.RosenPlaneWave.AdmissibleLocal.screen_local_controls_of_physical_admissible"
+    },
+    {
+      "claim_id": "support:rosen-general-coordinate-ricci",
+      "module": "Burnett.Rosen.Geometry",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_coordinateRicci"
+    },
+    {
+      "claim_id": "support:rosen-general-shear-weak-star",
+      "module": "Burnett.Rosen.PhysicalEnergy",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.shear_weakStar"
+    },
+    {
+      "claim_id": "support:rosen-general-energy-weak-star",
+      "module": "Burnett.Rosen.PhysicalEnergy",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.energy_weakStar"
+    },
+    {
+      "claim_id": "support:rosen-general-density-nonnegative",
+      "module": "Burnett.Rosen.Closure",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.density_nonneg"
+    },
+    {
+      "claim_id": "support:rosen-general-smooth-density",
+      "module": "Burnett.Rosen.Einstein",
+      "declaration": "Burnett.RosenPlaneWave.screenDefectDensity_contDiffOn"
+    },
+    {
+      "claim_id": "support:rosen-general-canonical-flow",
+      "module": "Burnett.Rosen.Geometry",
+      "declaration": "Burnett.RosenPlaneWave.screenHamilton_canonical_du"
+    },
+    {
+      "claim_id": "support:rosen-general-einstein-moment",
+      "module": "Burnett.Rosen.Einstein",
+      "declaration": "Burnett.RosenPlaneWave.screenEinstein_intrinsic_moment"
+    },
+    {
+      "claim_id": "support:rosen-general-full-transport",
+      "module": "Burnett.Rosen.Transport",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_intrinsic_transport"
+    },
+    {
+      "claim_id": "support:rosen-general-local-moments",
+      "module": "Burnett.Rosen.Transport",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_compact_auxiliary_second_moment"
     }
   ],
   "inventory": [
@@ -2461,9 +2521,13 @@
         "endline": 3312
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t16"
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "declaration": "Burnett.RosenPlaneWave.two_polarization_rosen_closure"
     },
     {
       "claim_id": "prop:flat-rigidity",
@@ -11388,6 +11452,204 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Geometry.FlatRigidity.isFlat_iff_coordinateFlat",
       "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
+    },
+    {
+      "claim_id": "support:rosen-general-lorentz",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3307,
+        "endline": 3312
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_lorentz_on",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-physical-control",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3307,
+        "endline": 3330
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.AdmissibleLocal.screen_local_controls_of_physical_admissible",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-coordinate-ricci",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3313,
+        "endline": 3324
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_coordinateRicci",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-shear-weak-star",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3325,
+        "endline": 3331
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.shear_weakStar",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-energy-weak-star",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3327,
+        "endline": 3341
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.energy_weakStar",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-density-nonnegative",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3333,
+        "endline": 3342
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.density_nonneg",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-smooth-density",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3340,
+        "endline": 3344
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.screenDefectDensity_contDiffOn",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-canonical-flow",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3343,
+        "endline": 3346
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.screenHamilton_canonical_du",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-einstein-moment",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3345,
+        "endline": 3349
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenPlaneWave.screenEinstein_intrinsic_moment",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-full-transport",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3348,
+        "endline": 3355
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_intrinsic_transport",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:rosen-general-local-moments",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:rosen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3356,
+        "endline": 3358
+      },
+      "disposition": "formalize",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_compact_auxiliary_second_moment",
+      "modeling_status": "implemented-general-rosen-product-chart",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "not-recorded-for-new-delivery"
     }
   ],
   "coverage_review": {
@@ -12111,6 +12373,22 @@
       "targets": 416,
       "lean_sources": 142,
       "whole_paper_verified": false
+    },
+    "rosen_two_polarization_delivery": {
+      "registered_targets": 423,
+      "inventory_entries": 491,
+      "lean_source_files": 152,
+      "new_registered_targets": 12,
+      "new_modules": 9,
+      "public_declarations": 221,
+      "source_bindings": "docs/statements/rosen-two-polarization-source-bindings.json",
+      "statement": "docs/statements/rosen-two-polarization.md",
+      "independent_review": "docs/statements/rosen-two-polarization-review.md",
+      "paired_languages": [
+        "zh-CN",
+        "en"
+      ],
+      "paper_formalization_verified": false
     }
   },
   "planning": {

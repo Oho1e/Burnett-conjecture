@@ -390,7 +390,7 @@ positive definite on $I$. Suppose \eqref{eq:admissible} holds with smooth positi
 \end{proposition}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+`Burnett.RosenPlaneWave.two_polarization_rosen_closure` constructs one full kinetic graph measure for the general two-polarization Rosen product spacetime and proves the moment, transport and local second-moment statements. Independent reverse review passed. Author confirmation is pending. [Statement and evidence](rosen-two-polarization.en.md)
 
 ## T17
 
