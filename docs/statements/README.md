@@ -37,4 +37,4 @@
 | B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | 未建模 |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | 未建模 |
-| D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | 未建模 |
+| D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |

@@ -2203,6 +2203,36 @@
       "claim_id": "support:rosen-covariant-perturbation-bound",
       "module": "Burnett.Counterexamples.Rosen.Auxiliary",
       "declaration": "Burnett.RosenMultiscale.RosenMultiscaleSequence.euclideanDh_eLpNorm_on_compact"
+    },
+    {
+      "claim_id": "prop:flat-rigidity",
+      "module": "Burnett.Geometry.FlatRigidity",
+      "declaration": "Burnett.FlatRigidity.isFlat_of_original_flat_sequence"
+    },
+    {
+      "claim_id": "support:flat-rigidity-connection-weak-star",
+      "module": "Burnett.Geometry.FlatRigidity.ConnectionLimit",
+      "declaration": "Burnett.FlatRigidity.computedConnection_localWeakStarOn_of_original"
+    },
+    {
+      "claim_id": "support:flat-rigidity-common-radial-ball",
+      "module": "Burnett.Geometry.FlatRigidity.RadialFrame",
+      "declaration": "Burnett.FlatRigidity.exists_uniform_radialCoefficientPaths_of_original"
+    },
+    {
+      "claim_id": "support:flat-rigidity-parallel-endpoint",
+      "module": "Burnett.Geometry.FlatRigidity",
+      "declaration": "Burnett.FlatRigidity.solvedRadialEndpoint_parallel_of_flat"
+    },
+    {
+      "claim_id": "support:flat-rigidity-weak-curvature-limit",
+      "module": "Burnett.Geometry.FlatRigidity.Intrinsic",
+      "declaration": "Burnett.FlatRigidity.computedCoordinateCurvature_zero_of_original_frames"
+    },
+    {
+      "claim_id": "support:flat-rigidity-intrinsic-coordinate",
+      "module": "Burnett.Geometry.FlatRigidity.Intrinsic",
+      "declaration": "Burnett.Geometry.FlatRigidity.isFlat_iff_coordinateFlat"
     }
   ],
   "inventory": [
@@ -2445,9 +2475,13 @@
         "endline": 3392
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t17"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md",
+      "declaration": "Burnett.FlatRigidity.isFlat_of_original_flat_sequence",
+      "semantic_review_record": "docs/statements/flat-rigidity.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "unnum:ricci-compactness",
@@ -11279,6 +11313,81 @@
       "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:flat-rigidity-connection-weak-star",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:flat-rigidity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3394,
+        "endline": 3400
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.FlatRigidity.computedConnection_localWeakStarOn_of_original",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
+    },
+    {
+      "claim_id": "support:flat-rigidity-common-radial-ball",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:flat-rigidity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3401,
+        "endline": 3407
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.FlatRigidity.exists_uniform_radialCoefficientPaths_of_original",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
+    },
+    {
+      "claim_id": "support:flat-rigidity-parallel-endpoint",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:flat-rigidity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3401,
+        "endline": 3410
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.FlatRigidity.solvedRadialEndpoint_parallel_of_flat",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
+    },
+    {
+      "claim_id": "support:flat-rigidity-weak-curvature-limit",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:flat-rigidity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3411,
+        "endline": 3421
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.FlatRigidity.computedCoordinateCurvature_zero_of_original_frames",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
+    },
+    {
+      "claim_id": "support:flat-rigidity-intrinsic-coordinate",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:flat-rigidity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3417,
+        "endline": 3421
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FlatRigidity.isFlat_iff_coordinateFlat",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md"
     }
   ],
   "coverage_review": {

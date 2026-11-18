@@ -37,4 +37,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | Not modeled |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | Not modeled |
-| D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | Not modeled |
+| D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |

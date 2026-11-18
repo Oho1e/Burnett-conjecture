@@ -1710,6 +1710,36 @@
       ]
     },
     {
+      "claim_id": "support:flat-rigidity-connection-weak-star",
+      "source_slices": [
+        "X07"
+      ]
+    },
+    {
+      "claim_id": "support:flat-rigidity-common-radial-ball",
+      "source_slices": [
+        "X07"
+      ]
+    },
+    {
+      "claim_id": "support:flat-rigidity-parallel-endpoint",
+      "source_slices": [
+        "X07"
+      ]
+    },
+    {
+      "claim_id": "support:flat-rigidity-weak-curvature-limit",
+      "source_slices": [
+        "X07"
+      ]
+    },
+    {
+      "claim_id": "support:flat-rigidity-intrinsic-coordinate",
+      "source_slices": [
+        "X07"
+      ]
+    },
+    {
       "claim_id": "unnum:ricci-compactness",
       "source_slices": [
         "F04"

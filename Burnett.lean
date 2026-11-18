@@ -130,3 +130,4 @@ import Burnett.Geometry.IntrinsicRicciTrace
 import Burnett.Analysis.TransportWard.RealScreen
 import Burnett.Analysis.TransportWard.ComplexScreen
 import Burnett.Counterexamples.Rosen.Closure
+import Burnett.Geometry.FlatRigidity
