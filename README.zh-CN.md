@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。双语整理基线为合入 PR #16 的 `a7e0b833d176342a58b68f43a94c1db6738e3a85`。该版本包括分析核心及弱 Ricci 四模块 32 条声明与七个支持目标，累计 401 目标、471 库存项、131 份 Lean 源码。弱 Ricci 的实际源码、类型与公理已经独立复核。显式坐标真空仍需内禀桥，完整全局张量及 F04/F05 保持开放，新作者确认待记录。
+当前状态为 `development`。当前候选累计 408 个目标、478 个库存项和 136 份 Lean 源码。F04 的局部成果已识别弱 Ricci 极限，并证明实际线性化 Ricci 在每张 preferred 图内的强 H⁻¹ 收敛。两者仍显式使用坐标真空。内禀真空桥、全局张量测试和 F05 仍待完成。[弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [范围清单](docs/formalization/scope.json)
 
 用户已将旋转零矩张量无输运表示（X03）及多尺度Rosen真空序列与精确零源坐标（X06）纳入最终目标。X03已随PR13进入main，当前分支保留全部证明与历史绑定；其新解释作者确认仍待记录。X06仍OPEN。全文工作图46片，规划不表示全部数学已证。
 
@@ -33,7 +33,7 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 
 此 PATH 设置只影响当前终端，确保缓存程序内部再调用 `lake` 时也使用同一SDK。
 
-入口核对原文身份、标准、固定运行时并构建库入口；对当前401个真实注册目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
+入口核对原文身份、标准、固定运行时并构建库入口；对当前真实注册目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
 
 - [`RicciSymbol.lean`](Burnett/Algebra/RicciSymbol.lean) 实现实数非特征核的显式规范表示和二次消去；[数学解释及实际声明](docs/statements/ricci-symbol.md)、[独立回读](docs/statements/ricci-symbol-review.md)。
 - [完整实二次代数与零锥交叉](docs/statements/quadratic-real-algebra.md) 对应两条并行实现及主代理的实际拼接；[独立回读](docs/statements/quadratic-real-algebra-review.md) 记录输入版本、真实类型及未覆盖项。
