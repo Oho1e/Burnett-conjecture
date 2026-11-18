@@ -19,6 +19,9 @@ import Burnett.Algebra.NullNormalForm
 import Burnett.Algebra.PhysicalQuotient
 import Burnett.Analysis.Cubic.Counterexample
 import Burnett.Analysis.Compactness.CountableTests
+import Burnett.Analysis.Microlocal.Overlap.KernelGeometry
+import Burnett.Analysis.Microlocal.Overlap.L2Transfer
+import Burnett.Analysis.Microlocal.Overlap.Localization
 import Burnett.Geometry.FiberMetric
 import Burnett.Geometry.BasisFrame
 import Burnett.Analysis.Cubic.OffNullGeometry

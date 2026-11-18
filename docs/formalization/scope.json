@@ -2333,6 +2333,46 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "f05:overlap:geometric-volume-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
+      "declaration": "Burnett.F05.ChartVolumeBridge.geometricMeasure_chartSource_inner_eq_halfDensity"
+    },
+    {
+      "claim_id": "f05:overlap:restricted-l2-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_restrict_L2_inner_eq_halfDensity"
+    },
+    {
+      "claim_id": "f05:overlap:l2-half-density-equivalence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.L2Transfer",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_memLp_two_iff_halfDensity"
+    },
+    {
+      "claim_id": "f05:overlap:half-density-jacobian",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.chartHalfDensity_transition"
+    },
+    {
+      "claim_id": "f05:overlap:near-kernel-geometry",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapKernel_geometry_bounds"
+    },
+    {
+      "claim_id": "f05:overlap:far-kernel-separation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapFar_uniform_arguments"
+    },
+    {
+      "claim_id": "f05:overlap:transported-test-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.Localization",
+      "declaration": "Burnett.Microlocal.OverlapGradient.exists_transportOverlapCutoff"
+    },
+    {
+      "claim_id": "f05:overlap:countable-overlap-cover",
+      "module": "Burnett.Analysis.Microlocal.Overlap.Localization",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_chartTransition_windows"
     }
   ],
   "inventory": [
@@ -11799,6 +11839,158 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "f05:overlap:geometric-volume-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 394,
+        "endline": 395
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartVolumeBridge.geometricMeasure_chartSource_inner_eq_halfDensity",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:restricted-l2-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 422,
+        "endline": 426
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_restrict_L2_inner_eq_halfDensity",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:l2-half-density-equivalence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 394,
+        "endline": 395
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_memLp_two_iff_halfDensity",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:half-density-jacobian",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 422,
+        "endline": 428
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapGradient.chartHalfDensity_transition",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:near-kernel-geometry",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 426,
+        "endline": 428
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapKernel_geometry_bounds",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:far-kernel-separation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 426,
+        "endline": 428
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapFar_uniform_arguments",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:transported-test-cutoff",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapGradient.exists_transportOverlapCutoff",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap:countable-overlap-cover",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_chartTransition_windows",
+      "statement_record": "docs/statements/chart-overlap-geometry.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "semantic_review_record": "docs/statements/chart-overlap-geometry-source-bindings.json",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {

@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ad0069713c64efffb74cc5740a7e756480be63cbf04b502de89d406eef91eaa3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `65e714c91e3e031b49a6568aaff5ecab0cdec2578ee4b08339b9ebebf9893edc`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: Lock the exact test class, bundle values, and quantifiers of the external microlocal interface. Treat the common subsequence and Gram conversion as separately checkable obligations.
+Next: Preferred chart overlaps now have half-density pairings, transported cutoffs, countable covers, and near and far geometric bounds. Use the bounds to compare the conjugated order-zero operators, identify the ordered component measures on the same subsequence, and establish covariance under fixed smooth chart changes.
 
 <a id="f06"></a>
 

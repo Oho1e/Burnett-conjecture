@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## 26. F05 geometry on preferred chart overlaps
+
+Preferred chart overlaps now have half-density pairings, transported cutoffs, countable covers, and near and far geometric bounds. Use the bounds to compare the conjugated order-zero operators, identify the ordered component measures on the same subsequence, and establish covariance under fixed smooth chart changes. [F05 geometry on preferred chart overlaps](../statements/chart-overlap-geometry.en.md)
