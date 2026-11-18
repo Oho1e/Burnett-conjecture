@@ -34,7 +34,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | Not modeled |
 | 6.1 | lemma | `lem:lift` | 2989–2991 | Not modeled |
 | 6.2 | corollary | `cor:strong` | 3063–3078 | Not modeled |
-| A.1 | proposition | `prop:shear` | 3121–3123 | Not modeled |
+| A.1 | proposition | `prop:shear` | 3121–3123 | [Proof and independent review](harmonic-shear.en.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | Not modeled |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [Proof and independent review](rosen-two-polarization.en.md) |

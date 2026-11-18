@@ -2293,6 +2293,46 @@
       "claim_id": "support:rosen-general-local-moments",
       "module": "Burnett.Rosen.Transport",
       "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_compact_auxiliary_second_moment"
+    },
+    {
+      "claim_id": "prop:shear",
+      "module": "Burnett.Counterexamples.HarmonicShear",
+      "declaration": "Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample"
+    },
+    {
+      "claim_id": "support:harmonic-shear-box-component",
+      "module": "Burnett.Counterexamples.HarmonicShear.Geometry",
+      "declaration": "Burnett.HarmonicShear.box_perturbation_21"
+    },
+    {
+      "claim_id": "support:harmonic-shear-gauge",
+      "module": "Burnett.Counterexamples.HarmonicShear",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_gauge_zero"
+    },
+    {
+      "claim_id": "support:harmonic-shear-intrinsic-flat",
+      "module": "Burnett.Counterexamples.HarmonicShear",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_isFlat"
+    },
+    {
+      "claim_id": "support:harmonic-shear-fixed-box-integral",
+      "module": "Burnett.Counterexamples.HarmonicShear.L2",
+      "declaration": "Burnett.Geometry.HarmonicShearL2.source_sq_fixedBox"
+    },
+    {
+      "claim_id": "support:harmonic-shear-finite-tensor-source",
+      "module": "Burnett.Counterexamples.HarmonicShear",
+      "declaration": "Burnett.HarmonicShear.Bounds.tensorBoxSource_euclidean_memLp"
+    },
+    {
+      "claim_id": "support:harmonic-shear-local-uniform-convergence",
+      "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_locallyUniformlyConverges"
+    },
+    {
+      "claim_id": "support:harmonic-shear-physical-Dh",
+      "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
     }
   ],
   "inventory": [
@@ -2474,9 +2514,13 @@
         "endline": 3123
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t13"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md",
+      "declaration": "Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample",
+      "semantic_review_record": "docs/statements/harmonic-shear.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "prop:cubic",
@@ -11650,6 +11694,111 @@
       "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
       "human_semantic_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "support:harmonic-shear-box-component",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3147,
+        "endline": 3153
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.box_perturbation_21",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-gauge",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3121,
+        "endline": 3141
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_gauge_zero",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-intrinsic-flat",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3121,
+        "endline": 3141
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_isFlat",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-fixed-box-integral",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3154,
+        "endline": 3166
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.HarmonicShearL2.source_sq_fixedBox",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-finite-tensor-source",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3154,
+        "endline": 3166
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.Bounds.tensorBoxSource_euclidean_memLp",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-local-uniform-convergence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3140,
+        "endline": 3146
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_locallyUniformlyConverges",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "support:harmonic-shear-physical-Dh",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:shear",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3140,
+        "endline": 3146
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
     }
   ],
   "coverage_review": {

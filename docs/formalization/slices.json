@@ -1686,6 +1686,48 @@
       ]
     },
     {
+      "claim_id": "support:harmonic-shear-box-component",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-gauge",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-intrinsic-flat",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-fixed-box-integral",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-finite-tensor-source",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-local-uniform-convergence",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
+      "claim_id": "support:harmonic-shear-physical-Dh",
+      "source_slices": [
+        "X01"
+      ]
+    },
+    {
       "claim_id": "prop:cubic",
       "source_slices": [
         "X02"
