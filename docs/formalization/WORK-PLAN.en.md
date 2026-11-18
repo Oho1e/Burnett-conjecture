@@ -522,3 +522,9 @@ PR #18 landed at `63bbe2b`. The merged tree matches the reviewed candidate and i
 This batch starts from `main` after PR #17 and registers six modules and eight supporting targets for F02 and F04. Agreement of intrinsic curvature across preferred charts and the actual Ricci trace give chartwise vacuum for the same sequence, for use in the local Ricci proofs. [Statement](../statements/intrinsic-curvature-Ricci.en.md) · [Review](../statements/intrinsic-curvature-Ricci-review.en.md)
 
 Register the consumer that applies both local Ricci conclusions to the same intrinsic vacuum sequence after the strong local H⁻¹ modules enter the shared baseline. Continue the full Lorentzian signature and time orientation data and global tensor tests. The CI cache prefetch adds only the two pinned mathlib modules directly needed by this batch. Existing checks and the trust policy continue to apply.
+
+PR #19 landed at `aaa7053`. Its tree matches the reviewed 416-target candidate.
+
+## 24. Finite-dimensional Ward formulas and their transport consumers
+
+The Ward candidate registers eight supporting endpoints from 229 declarations in eight Lean modules. Use the actual cyclic vertex and signed Fourier Hessian in V02/V04. Continue V07 from the complex-bilinear one-gauge and two-screen four-term formulas and exact three-gauge elimination. The two-gauge and general metric arguments have separate pending obligations. Before using the formulas in transport, obtain the actual frequency-position bounds and the curvature-action divergence bridge. [Statements](../statements/transport-ward.en.md) · [Review](../statements/transport-ward-review.en.md)

@@ -527,3 +527,9 @@ PR #18 已进入 `63bbe2b`。合并文件树与已审候选一致，main 的原�
 以 #17 合入后的 `main` 为基线，本批登记六个模块和八个 F02、F04 支持目标。内禀曲率在不同优先图中的一致性和真实 Ricci 迹，给出同一序列的图内真空条件，供局部 Ricci 证明使用。[命题说明](../statements/intrinsic-curvature-Ricci.md) · [复核记录](../statements/intrinsic-curvature-Ricci-review.md)
 
 需在局部强 H⁻¹ 模块进入共同基线后，登记同一内禀真空序列到两个局部 Ricci 结论的消费者。完整 Lorentz 符号与时间定向及全局张量测试继续推进。此次 CI 的缓存预取仅补这批实际导入的两个已锁定 mathlib 模块，原有检查与信任范围沿用。
+
+PR #19 已合入 `aaa7053`，其文件树与已审的 416 目标候选一致。
+
+## 24. 有限维 Ward 公式与输运调用
+
+本批八个 Lean 模块的 229 项声明中登记八个支持目标。V02/V04 使用实际循环顶点与带 Fourier 负号的 Hessian。V07 从复双线性单规范恒等式、双屏幕四项公式及三纯规范精确消去继续。双规范与一般度规各有待完成的证明。用于输运前，仍须证明实际频率位置下的估计与曲率作用量的散度等价。[命题说明](../statements/transport-ward.md) · [复核](../statements/transport-ward-review.md)
