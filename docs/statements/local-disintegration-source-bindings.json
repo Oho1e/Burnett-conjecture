@@ -1,0 +1,43 @@
+{
+  "schema": "burnett-local-disintegration-bindings/v1",
+  "base_main": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_lines": [
+    487,
+    518
+  ],
+  "isolated_staging_receipt_sha256": "5660120f028f6b9bb92d5b5f441377d5fc00967c9874e3ed1f548fca5f68ea2d",
+  "inherited_local_proof_review_receipt_sha256": "c44684ca8fa6dcfb87005f4e0ad58a74255246aac23915a167ea5f5fe9aa149b",
+  "modules": [
+    {
+      "path": "Burnett/Analysis/BaseMarginal/SmoothTests.lean",
+      "module": "Burnett.Analysis.BaseMarginal.SmoothTests",
+      "source_sha256": "4ca63bac89ac3ae0bd7e965a243575f3bdf54401fd89be31ecb0eb30d2366dfc",
+      "direct_imports": [
+        "Burnett.Geometry.FlatRigidity.WeakCurvature",
+        "Mathlib.MeasureTheory.Measure.Regular"
+      ],
+      "registered_targets": [
+        "base-marginal:smooth-test-positivity",
+        "base-marginal:smooth-test-measure-ext"
+      ]
+    },
+    {
+      "path": "Burnett/Analysis/BaseMarginal/FiberKernel.lean",
+      "module": "Burnett.Analysis.BaseMarginal.FiberKernel",
+      "source_sha256": "54ce2471e78da7a498c0b3647560c1a9a4d20593766f0f966c670e1ec6c80a1a",
+      "direct_imports": [
+        "Burnett.Geometry.ConnectionDifference",
+        "Mathlib.MeasureTheory.Integral.IntegrableOn",
+        "Mathlib.Probability.Kernel.Disintegration.Integral",
+        "Mathlib.Probability.Kernel.Disintegration.Unique",
+        "Mathlib.Probability.Kernel.WithDensity",
+        "Mathlib.Probability.Kernel.CompProdEqIff"
+      ],
+      "registered_targets": [
+        "base-marginal:finite-kernel-unique",
+        "base-marginal:local-weighted-disintegration"
+      ]
+    }
+  ]
+}

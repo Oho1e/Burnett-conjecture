@@ -1330,6 +1330,26 @@
       "declaration": "Burnett.Geometry.MeasureGluing.existsUnique_measure_of_compatible_cover"
     },
     {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "module": "Burnett.Analysis.BaseMarginal.SmoothTests",
+      "declaration": "Burnett.F08.ActualBaseMarginal.nonnegOn_of_smooth_test_integrals"
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "module": "Burnett.Analysis.BaseMarginal.SmoothTests",
+      "declaration": "Burnett.F08.ActualBaseMarginal.finiteMeasures_eq_of_local_smooth_tests"
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "module": "Burnett.Analysis.BaseMarginal.FiberKernel",
+      "declaration": "Burnett.F08.ActualBaseMarginal.localFiberKernel_unique"
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "module": "Burnett.Analysis.BaseMarginal.FiberKernel",
+      "declaration": "Burnett.F08.ActualBaseMarginal.exists_localFiberDisintegration"
+    },
+    {
       "claim_id": "global-geometry:coordinatecovariantderivative:derivative-smul-right",
       "module": "Burnett.Geometry.CoordinateCovariantDerivative",
       "declaration": "Burnett.Geometry.CoordinateCovariantDerivative.derivative_smul_right"
@@ -2377,6 +2397,74 @@
       "modeling_status": "pending_modeling",
       "lean_status": "not_formalized",
       "statement_record": "docs/statements/main.md#t03"
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 510,
+        "endline": 511
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.nonnegOn_of_smooth_test_integrals",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 508,
+        "endline": 510
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.finiteMeasures_eq_of_local_smooth_tests",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.localFiberKernel_unique",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 495,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.exists_localFiberDisintegration",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     },
     {
       "claim_id": "lem:commutator",

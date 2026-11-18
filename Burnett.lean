@@ -116,6 +116,8 @@ import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci
 import Burnett.Analysis.MeasureWeakRicci
+import Burnett.Analysis.BaseMarginal.SmoothTests
+import Burnett.Analysis.BaseMarginal.FiberKernel
 import Burnett.Analysis.GeometricHminusRemainders
 import Burnett.Analysis.GeometricHminusCovariantRemainders
 import Burnett.Analysis.GeometricPrincipalIdentity
