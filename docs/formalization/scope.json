@@ -2333,6 +2333,51 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.AngularSymbol",
+      "declaration": "Burnett.Microlocal.AngularCommutator.norm_angular_difference_le"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.FourierRepresentation",
+      "declaration": "Burnett.Microlocal.AngularCommutator.fourierL2_cutoffCommutator_eq_kernel_ae"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_high_norm_le"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_low_energy"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_after_cutoff_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_infrared_regularization"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero"
     }
   ],
   "inventory": [
@@ -11799,6 +11844,159 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.norm_angular_difference_le",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.fourierL2_cutoffCommutator_eq_kernel_ae",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_high_norm_le",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_low_energy",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_after_cutoff_tendsto_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_infrared_regularization",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {

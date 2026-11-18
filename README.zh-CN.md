@@ -12,6 +12,8 @@ X07 证明满足容许条件的平直序列，其光滑极限的内禀 Riemann �
 
 一般双极化 Rosen 命题（X05）从原文的物理一阶导数界推出完整动理学表示。同一图测度满足 Einstein 张量矩、Hamilton 输运恒等式和有限局部二阶矩条件。[X05 命题说明](docs/statements/rosen-two-polarization.md) · [数学复核](docs/statements/rosen-two-polarization-review.md)
 
+F05 证明了固定零次齐次角向 Fourier 乘子的截断交换子作用于局部弱零序列后强趋零，并覆盖固定低频正则化。 [角向 Fourier 交换子与固定低频正则化](docs/statements/angular-cutoff-commutator.zh-CN.md)
+
 谐和坐标例子 X01 证明固定紧盒上的张量波源 L² 范数发散。各项度规内禀平直，序列满足原文的容许界。[X01 命题说明](docs/statements/harmonic-shear.zh-CN.md)
 
 原文快照为 [`paper/burnett.tex`](paper/burnett.tex)，176424字节，SHA256：

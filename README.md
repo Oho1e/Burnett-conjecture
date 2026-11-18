@@ -12,6 +12,8 @@ The flat-limit result X07 proves vanishing of the full intrinsic Riemann curvatu
 
 The general two-polarization Rosen theorem (X05) constructs a full kinetic representation under the paper's physical first-derivative bound. The same graph measure gives the Einstein tensor moment, the Hamiltonian transport identity, and finite local second moments. [X05 statement](docs/statements/rosen-two-polarization.en.md) · [Mathematical review](docs/statements/rosen-two-polarization-review.en.md)
 
+The F05 cutoff commutator for a fixed homogeneous angular Fourier multiplier tends strongly to zero on localized weakly null inputs. The result also covers fixed low-frequency regularization. [Angular Fourier commutators and fixed low-frequency regularization](docs/statements/angular-cutoff-commutator.en.md)
+
 The harmonic-coordinate example X01 proves divergence of the tensor wave-source L² norms on the fixed compact box. Each metric is intrinsically flat and the sequence satisfies the paper's admissibility bounds. [X01 statement](docs/statements/harmonic-shear.en.md)
 
 The locked manuscript snapshot is 176424 bytes, SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`. Git preserves its raw bytes without line-ending conversion. [Manuscript](paper/burnett.tex) · [Source record](paper/source.json)

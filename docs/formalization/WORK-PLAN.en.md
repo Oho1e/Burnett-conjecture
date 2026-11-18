@@ -169,6 +169,8 @@ When a major interface is missing, split foundational proof tasks by the smalles
 | X07 | Local convergence, weak derivatives, and the intrinsic full-curvature bridge from PR #19 | The independently reviewed proof of full Riemann flatness of the limit entered `main` in PR #22. [Statement and evidence](../statements/flat-rigidity.en.md) |
 | X08, X09, X10 | Continually check scope and consumers through X08 from the starting point; handle necessary X09 identities according to actual consumers; check X10 literature when needed | X08 scope decisions do not await the F07 mathematical proof, while its implementation retains its actual inputs. X08 is not an approved additional certification set. When it contains a necessary dependency or independent result, check it under the standard and refer substantive ambiguities to the user. Do not mechanically make context into Lean theorems |
 
+F05 now supplies the fixed angular cutoff commutator and its low-frequency modification. Use these in the base-dependent and chart-transition tests on the same sequence. [Angular Fourier commutators and fixed low-frequency regularization](../statements/angular-cutoff-commutator.en.md)
+
 ### Five Common-Closure Points
 
 | Group | Final integration location | Main checks when combining local results |
