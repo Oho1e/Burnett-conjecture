@@ -1,0 +1,185 @@
+{
+  "schema": "burnett-rosen-two-polarization-bindings/v1",
+  "parent_commit": "6f5094abd002493c229160ea72753f8fa0f7074d",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "counts": {
+    "registered_targets": 423,
+    "inventory_entries": 491,
+    "lean_source_files": 152,
+    "new_registered_targets": 12,
+    "new_modules": 9,
+    "public_declarations": 221
+  },
+  "exact_staged_audit_sha256": "c2ea4d24ccf077e010f682ec8812e6d2b075e3c15bb11aa94974011457c7e34f",
+  "independent_receipt_sha256": {
+    "geometry": "22d30c67e25089454e5607d7494c39164c6820679bd966b1b2bd0a4e10dd7203",
+    "screen-and-weak-star": "1e9a8de8b174362e29fc5422ada442e2ba352a0b1cedf7c93a6ad11fbe6c9903",
+    "lower-semicontinuity": "d10febf2fda9aec566f9727803cdbc9cc2c2c0f73cfb24e142ffaf4e6488c502",
+    "energy": "9e8b79329eeb4c076154c8021d4ed1e31819de6e6d0f2974e2513642140d1b7c",
+    "admissibility": "c6f060e0f9347cf8eb3cc54e5d24e1bd6e2129e2114b920a84ef1e8958342c50",
+    "transport-and-local-moments": "9cd6551bb3196054c11d05157fddb4d1d8c48f24432aa1e20d3532c2e22c9608",
+    "intrinsic-Einstein-moment": "69d92e934feabf16ff90d6f73c120ee9f385c3891fa650091617c45926b3eb80",
+    "capstone": "874b22fcd68dae67364c7d341df4fb9dbff9a3c1cd9796acf90b478b3ca2cfd7",
+    "Lorentz-model": "ba4843033567aa3b93fc8aec1e2a9001137d54494c9700a1f7facb835a24a1e1"
+  },
+  "source_sha256": {
+    "Burnett/Rosen/Geometry.lean": "b81de3f8e87ffef8290d3456a5c66b1b55c86a933bb0eadee549456b7507cb13",
+    "Burnett/Rosen/Screen.lean": "948f839bb27a11f5d96340a7450c5d67c12a421aca1d133b013361c89074b3a3",
+    "Burnett/Rosen/WeakLimit.lean": "71f805d7f345da10744c0622c8e395da169e7b3ce5c196066a98b21509d6805e",
+    "Burnett/Rosen/Transport.lean": "e6d4e597ac2ee5fdbbe8c5412684832c3856c49074a982e5cefb9c28f7b2c8c1",
+    "Burnett/Rosen/Admissible.lean": "aa2508146ff32488df905f8b7310d9c9a11a93b763c57624bec1f12564b89e00",
+    "Burnett/Rosen/Einstein.lean": "92bccd0171ab46f8a40274b041717685afb5df17b92e87102ff67a59b520dd9c",
+    "Burnett/Rosen/Closure.lean": "b994f83fe0a9a82bd9001b68ded43f8b6673b136b3fa6217f8b626a1d2846825",
+    "Burnett/Rosen/PhysicalEnergy.lean": "12a711a9575df9bd9a0a6cf05bbcbf2b48bc8811052d63d1742205775b296c68",
+    "Burnett/Rosen/Lorentz.lean": "01959cc0e9434631e05cc5264cf0701a5054f70687fb1dba21f6fb7ca9d73c25"
+  },
+  "registered_targets": [
+    {
+      "claim_id": "prop:rosen",
+      "module": "Burnett.Rosen.Closure",
+      "declaration": "Burnett.RosenPlaneWave.two_polarization_rosen_closure",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3307,
+        "endline": 3312
+      },
+      "lean_source": "Burnett/Rosen/Closure.lean",
+      "lean_line": 101
+    },
+    {
+      "claim_id": "support:rosen-general-lorentz",
+      "module": "Burnett.Rosen.Lorentz",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_lorentz_on",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3307,
+        "endline": 3312
+      },
+      "lean_source": "Burnett/Rosen/Lorentz.lean",
+      "lean_line": 150
+    },
+    {
+      "claim_id": "support:rosen-general-physical-control",
+      "module": "Burnett.Rosen.Admissible",
+      "declaration": "Burnett.RosenPlaneWave.AdmissibleLocal.screen_local_controls_of_physical_admissible",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3307,
+        "endline": 3330
+      },
+      "lean_source": "Burnett/Rosen/Admissible.lean",
+      "lean_line": 340
+    },
+    {
+      "claim_id": "support:rosen-general-coordinate-ricci",
+      "module": "Burnett.Rosen.Geometry",
+      "declaration": "Burnett.RosenPlaneWave.screenBilinear_coordinateRicci",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3313,
+        "endline": 3324
+      },
+      "lean_source": "Burnett/Rosen/Geometry.lean",
+      "lean_line": 208
+    },
+    {
+      "claim_id": "support:rosen-general-shear-weak-star",
+      "module": "Burnett.Rosen.PhysicalEnergy",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.shear_weakStar",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3325,
+        "endline": 3331
+      },
+      "lean_source": "Burnett/Rosen/PhysicalEnergy.lean",
+      "lean_line": 35
+    },
+    {
+      "claim_id": "support:rosen-general-energy-weak-star",
+      "module": "Burnett.Rosen.PhysicalEnergy",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.energy_weakStar",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3327,
+        "endline": 3341
+      },
+      "lean_source": "Burnett/Rosen/PhysicalEnergy.lean",
+      "lean_line": 52
+    },
+    {
+      "claim_id": "support:rosen-general-density-nonnegative",
+      "module": "Burnett.Rosen.Closure",
+      "declaration": "Burnett.RosenPlaneWave.ScreenPhysicalSequence.density_nonneg",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3333,
+        "endline": 3342
+      },
+      "lean_source": "Burnett/Rosen/Closure.lean",
+      "lean_line": 47
+    },
+    {
+      "claim_id": "support:rosen-general-smooth-density",
+      "module": "Burnett.Rosen.Einstein",
+      "declaration": "Burnett.RosenPlaneWave.screenDefectDensity_contDiffOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3340,
+        "endline": 3344
+      },
+      "lean_source": "Burnett/Rosen/Einstein.lean",
+      "lean_line": 129
+    },
+    {
+      "claim_id": "support:rosen-general-canonical-flow",
+      "module": "Burnett.Rosen.Geometry",
+      "declaration": "Burnett.RosenPlaneWave.screenHamilton_canonical_du",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3343,
+        "endline": 3346
+      },
+      "lean_source": "Burnett/Rosen/Geometry.lean",
+      "lean_line": 344
+    },
+    {
+      "claim_id": "support:rosen-general-einstein-moment",
+      "module": "Burnett.Rosen.Einstein",
+      "declaration": "Burnett.RosenPlaneWave.screenEinstein_intrinsic_moment",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3345,
+        "endline": 3349
+      },
+      "lean_source": "Burnett/Rosen/Einstein.lean",
+      "lean_line": 289
+    },
+    {
+      "claim_id": "support:rosen-general-full-transport",
+      "module": "Burnett.Rosen.Transport",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_intrinsic_transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3348,
+        "endline": 3355
+      },
+      "lean_source": "Burnett/Rosen/Transport.lean",
+      "lean_line": 295
+    },
+    {
+      "claim_id": "support:rosen-general-local-moments",
+      "module": "Burnett.Rosen.Transport",
+      "declaration": "Burnett.RosenGeneral.Transport.phaseMeasure_compact_auxiliary_second_moment",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3356,
+        "endline": 3358
+      },
+      "lean_source": "Burnett/Rosen/Transport.lean",
+      "lean_line": 486
+    }
+  ],
+  "added_mathlib_cache_roots": [
+    "Mathlib.Analysis.Matrix"
+  ]
+}

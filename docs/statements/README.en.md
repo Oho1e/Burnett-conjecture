@@ -17,6 +17,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Intrinsic curvature, the Ricci trace, and chartwise vacuum](intrinsic-curvature-Ricci.en.md) and [independent review](intrinsic-curvature-Ricci-review.en.md)
 - [Finite-dimensional variation and Ward identities](transport-ward.en.md) and [review](transport-ward-review.en.md)
 - [Multiscale Rosen vacuum sequence](rosen-multiscale.en.md) and [mathematical review](rosen-multiscale-review.en.md)
+- [General two-polarization Rosen proposition](rosen-two-polarization.en.md) and [mathematical review](rosen-two-polarization-review.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |
@@ -36,5 +37,5 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | A.1 | proposition | `prop:shear` | 3121–3123 | Not modeled |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | Not modeled |
-| D.1 | proposition | `prop:rosen` | 3307–3312 | Not modeled |
+| D.1 | proposition | `prop:rosen` | 3307–3312 | [Proof and independent review](rosen-two-polarization.en.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |

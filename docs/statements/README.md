@@ -17,6 +17,7 @@
 - [内禀曲率、Ricci 迹与图内真空](intrinsic-curvature-Ricci.md)及[独立复核](intrinsic-curvature-Ricci-review.md)
 - [有限维变分与 Ward 恒等式](transport-ward.md)及[独立复核](transport-ward-review.md)
 - [多尺度 Rosen 真空序列](rosen-multiscale.md)及[数学复核](rosen-multiscale-review.md)
+- [一般双极化 Rosen 命题](rosen-two-polarization.md)及[数学复核](rosen-two-polarization-review.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |
@@ -36,5 +37,5 @@
 | A.1 | proposition | `prop:shear` | 3121–3123 | 未建模 |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | 未建模 |
-| D.1 | proposition | `prop:rosen` | 3307–3312 | 未建模 |
+| D.1 | proposition | `prop:rosen` | 3307–3312 | [证明与独立复核](rosen-two-polarization.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |

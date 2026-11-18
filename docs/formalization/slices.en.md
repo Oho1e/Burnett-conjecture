@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `23547912ffb2928b05e7ef90779ea9a853fc50a557286b749f47fbae6a106cbe`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `52e470761bbb80ad07f5a087c46793e94cc6c8a1ac80f54124f68ba9f1d5e2db`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1409,7 +1409,7 @@ Boundaries:
 Consumers: X06 (proof-input)
 
 
-Next: Establish Rosen curvature and the symmetric S_n identities, obtain rho>=0 from weighted lower semicontinuity, then explicitly construct nu and check moments, transport, and second moments over every compact base set.
+Next: Verify the exact merge combination and its CI and record author confirmation separately. The full phase-space representation follows from the direct Rosen proof.
 
 <a id="x06"></a>
 

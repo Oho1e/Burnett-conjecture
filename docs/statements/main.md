@@ -390,7 +390,7 @@ positive definite on $I$. Suppose \eqref{eq:admissible} holds with smooth positi
 \end{proposition}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+`Burnett.RosenPlaneWave.two_polarization_rosen_closure` 在一般双极化 Rosen 乘积时空中构造同一个动理图测度，并证明矩、输运和有限局部二阶矩结论。独立反向复核已通过，作者确认待记录。[陈述和验证证据](rosen-two-polarization.md)
 
 ## T17
 
