@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `35d328fb66c82fc0ac7e07180a4b6258d1673612d91447376cce2ccefda9da44`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `a59d2c31a7f509aa05e5703b1b4fdaa431e83922bf33db1ac826b850be9387ac`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -277,7 +277,7 @@ Supplementary obligation:
 
 - Exact connection difference and weak curvature are separate from H^{-1} compactness (lines 360–382).
 
-Next: The 75 declarations of general H⁻¹ analysis landed with PR #15. The original physical Dʳ estimates, quadratic substitution for general Q, and local weak Ricci interface with the same g₀ measure and explicit coordinate vacuum have independent review. Connect A and the merged analysis to the B38 strong H⁻¹ assembly. Continue the intrinsic Lorentzian and vacuum model, global testing, and shared microlocal objects. Keep the same χ, background, and n. F04 remains open beyond the supporting targets.
+Next: The actual linearized Ricci operator now has a strong local H⁻¹ realization in each chart and for each component, with the same r, g₀, gₙ, χ and n. It builds on the local weak Ricci identification and the general H⁻¹ analysis. Continue the full intrinsic Lorentzian vacuum model, global tensor testing across charts, and the common microlocal object in F05. F04 remains open overall.
 
 <a id="f05"></a>
 

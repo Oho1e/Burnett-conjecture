@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。内禀曲率候选累计 409 个目标、479 个库存项和 137 份 Lean 源码。六个新模块把真实 Ricci 迹识别到优先图内，并从同一内禀真空序列导出坐标真空。完整 Lorentz 模型及全局张量测试仍待证明。[内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 416 个目标、486 个库存项和 142 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。完整 Lorentz 数据、全局张量测试和 F05 仍待证明。[弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 用户已将旋转零矩张量无输运表示（X03）及多尺度Rosen真空序列与精确零源坐标（X06）纳入最终目标。X03已随PR13进入main，当前分支保留全部证明与历史绑定；其新解释作者确认仍待记录。X06仍OPEN。全文工作图46片，规划不表示全部数学已证。
 
