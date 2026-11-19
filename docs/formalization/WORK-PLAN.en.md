@@ -562,3 +562,6 @@ The global symbol decomposition and absolutely integrable Fourier pairings for S
 ## 30. Maximal and annular square estimates in four dimensions
 
 The four-dimensional weak and strong maximal bounds and the annular L² square estimates are proved. Continue the commutator construction and establish its finite-exponent bilinear bound across scales before deriving cubic-energy continuity and coefficient differences. [Maximal and annular square estimates in four dimensions](../statements/harmonic-maximal-and-square-estimates.en.md)
+## Angular kernel transforms (F07–F08)
+
+Given a disintegration, the coordinate formula computes every measurable joint event and the weighted kernel reconstructs the transported physical mass. The next geometric step is to supply the original sequence’s kernel, its Lorentz base volume, and the auxiliary norm squared with its radial map. Identify the Einstein moments for that same measure. [Registered supporting results](../statements/angular-kernel-transforms.en.md)

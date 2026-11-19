@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `9971c4dfce06e5dfe63aa419360b010348d611c3771c7a7d821057ec0b30b32d`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2a779f38d93af1854d8f9c32939373c20b8cbae781fa4d778b74e4bfda5847b4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: Smooth-test positivity and measure determination and local weighted disintegration of a finite coordinate joint measure with a supplied bounded marginal density are available. For a given joint measure and marginal density with local bounds on a countable cover, the angular kernels glue over the original base measure and are almost everywhere unique for that joint measure. Derive the actual marginal, local bounds and unit null-shell concentration from the same F07 physical measure, apply disintegration on the intrinsic projection, and verify the Einstein second moments and vanishing on vacuum regions.
+Next: Smooth-test positivity and measure determination, local weighted disintegration for a given joint measure and marginal density, and gluing and almost-everywhere uniqueness on a countable cover with local bounds are available. Measurable coordinate change, nonnegative reweighting and reconstruction of every event for a given angular kernel are also proved. Derive the actual base marginal and angular kernel from the same F07 physical measure, establish local bounds and unit null-shell concentration, and verify the Einstein second moments and vanishing on vacuum regions.
 
 <a id="a01"></a>
 

@@ -90,6 +90,8 @@ vanishes over every open vacuum region of $g$.
 
 F08 的支持结果在可数可测覆盖上分解给定的联合测度。本推论的内禀边缘与张量矩仍待证明。[可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md)
 
+四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](angular-kernel-transforms.zh-CN.md)
+
 ## T04
 
 原文：lemma 3.1，标签 `lem:commutator`，源码第566–575行。标题：Lipschitz-small coefficients in a symmetric energy pairing。

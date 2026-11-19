@@ -2618,6 +2618,26 @@
       "claim_id": "a02:harmonic:shifted-square",
       "module": "Burnett.Analysis.DyadicSquare.ShiftedSquare",
       "declaration": "Burnett.Analysis.DyadicSquare.shifted_annular_square_L2"
+    },
+    {
+      "claim_id": "support:angular-coordinate-joint-sections",
+      "module": "Burnett.Analysis.FiberDisintegration.Coordinate",
+      "declaration": "Burnett.F08.FiberTransport.coordKernel_integral_sections"
+    },
+    {
+      "claim_id": "support:angular-coordinate-real-integral",
+      "module": "Burnett.Analysis.FiberDisintegration.Coordinate",
+      "declaration": "Burnett.F08.FiberTransport.coordKernel_real_moment"
+    },
+    {
+      "claim_id": "support:angular-kernel-fiber-reweight",
+      "module": "Burnett.Analysis.FiberDisintegration.Reweight",
+      "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_apply"
+    },
+    {
+      "claim_id": "support:angular-kernel-borel-reconstruction",
+      "module": "Burnett.Analysis.FiberDisintegration.Reweight",
+      "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_reconstruct"
     }
   ],
   "inventory": [
@@ -13049,6 +13069,66 @@
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-and-native-pass",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "support:angular-coordinate-joint-sections",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 501
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberTransport.coordKernel_integral_sections",
+      "statement_record": "docs/statements/angular-kernel-transforms.zh-CN.md"
+    },
+    {
+      "claim_id": "support:angular-coordinate-real-integral",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 499,
+        "endline": 501
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberTransport.coordKernel_real_moment",
+      "statement_record": "docs/statements/angular-kernel-transforms.zh-CN.md"
+    },
+    {
+      "claim_id": "support:angular-kernel-fiber-reweight",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_apply",
+      "statement_record": "docs/statements/angular-kernel-transforms.zh-CN.md"
+    },
+    {
+      "claim_id": "support:angular-kernel-borel-reconstruction",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_reconstruct",
+      "statement_record": "docs/statements/angular-kernel-transforms.zh-CN.md"
     }
   ],
   "coverage_review": {

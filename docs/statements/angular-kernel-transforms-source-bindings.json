@@ -1,0 +1,50 @@
+{
+  "schema": "burnett-angular-kernel-transforms/v1",
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_passages": [
+    [
+      481,
+      485
+    ],
+    [
+      494,
+      515
+    ]
+  ],
+  "toolchain": "leanprover/lean4:v4.24.0",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "modules": [
+    {
+      "module": "Burnett.Analysis.FiberDisintegration.Coordinate",
+      "path": "Burnett/Analysis/FiberDisintegration/Coordinate.lean",
+      "source_sha256": "c3b226f65898a404693597b0ae38e61cbb7eed53241b6ce70dc1dc06fb506352",
+      "imports": [
+        "Mathlib.Probability.Kernel.Composition.MeasureCompProd",
+        "Mathlib.Probability.Kernel.CompProdEqIff",
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic"
+      ],
+      "prior_source_sha256": "6b4a50bb0493a6a9e2288cab70c40eb144f71093ba6095161215195e3c6006e4",
+      "prior_native_receipt_sha256": "a8ddd39385f8afa411d8e444a5ae1e618ece8151169ed0a82a1f8993878deccf",
+      "registered_targets": [
+        "support:angular-coordinate-joint-sections",
+        "support:angular-coordinate-real-integral"
+      ]
+    },
+    {
+      "module": "Burnett.Analysis.FiberDisintegration.Reweight",
+      "path": "Burnett/Analysis/FiberDisintegration/Reweight.lean",
+      "source_sha256": "060e17dff4c49206d6733f10973784a02bb86f8eaf2b6897fb75be660689ca20",
+      "imports": [
+        "Mathlib.Probability.Kernel.WithDensity",
+        "Mathlib.Probability.Kernel.Composition.MapComap"
+      ],
+      "prior_source_sha256": "2648835c28ab59d293c1cd3fab8cf24a3f49bd8c212d9f261f230b8ab9eb3659",
+      "prior_native_receipt_sha256": "a853139741e01bfe2fd5ffb4d815c9dca7c77beef671b89d8afbb081c5a50537",
+      "registered_targets": [
+        "support:angular-kernel-fiber-reweight",
+        "support:angular-kernel-borel-reconstruction"
+      ]
+    }
+  ]
+}

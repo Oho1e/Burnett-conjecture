@@ -274,7 +274,7 @@
         "张量矩恒等式为a.e.；e_r≥0由光滑性提升至处处，二者量词不能混同。",
         "可测纤维测度不等于光滑Vlasov密度。"
       ],
-      "next_action": "已证明光滑测试的正性与测度确定，以及给定有限坐标联合测度和有界边缘密度时的局部加权分解。给定联合测度、边缘密度与可数覆盖上的局部界，还可拼接出相对于原基底测度的角核，并证明固定联合测度时几乎处处唯一。下一步从同一 F07 物理测度得到实际边缘、局部界和单位零壳集中，在内禀投影上应用分解，再核对 Einstein 二阶矩与真空区消失。",
+      "next_action": "已有光滑测试的正性和测度确定、给定联合测度与边缘密度的局部加权分解，以及在局部界成立的可数覆盖上拼接角核和几乎处处唯一。给定角核的可测换坐标、非负加权和逐事件重构也已证明。下一步从同一 F07 物理测度构造实际基底边缘与角核并给出局部界和单位零壳集中，核对 Einstein 二阶矩与真空区消失。",
       "supplementary_obligations": []
     },
     {
@@ -5104,6 +5104,30 @@
       "claim_id": "a02:harmonic:shifted-square",
       "source_slices": [
         "A02"
+      ]
+    },
+    {
+      "claim_id": "support:angular-coordinate-joint-sections",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "support:angular-coordinate-real-integral",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "support:angular-kernel-fiber-reweight",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "support:angular-kernel-borel-reconstruction",
+      "source_slices": [
+        "F07"
       ]
     }
   ],

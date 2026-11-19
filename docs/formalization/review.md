@@ -228,3 +228,7 @@ PR14实际main167dffe9与受审44e342整树相同；native CI44114590261/artifac
 九个新模块的 221 项声明已通过模块化 Lean 审计。总定理从原文的物理假设为任意正定屏构造同一个完整动理图测度。支持结果证明了实际 Lorentz 度规、两项局部弱星极限、密度非负，以及完整 Einstein 矩和输运测试与有限辅助二阶矩。[命题说明](../statements/rosen-two-polarization.md) · [数学复核](../statements/rosen-two-polarization-review.md)
 
 作者确认与当前组合 CI 分别登记。源码绑定保留原 X06 父提交和对应证明快照的数量。刷新后的候选复用已随 PR #21 合入的坐标 Hamilton 量及积分引理。全文认证仍开放。
+
+## 条件角核变换（F07–F08）
+
+登记的声明使用给定的条件核及可测权或坐标映射。还须对原序列的物理测度应用这些声明，并识别其 Einstein 二阶矩。 [条件角核的变换](../statements/angular-kernel-transforms.zh-CN.md)

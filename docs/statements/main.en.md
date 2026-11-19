@@ -90,6 +90,8 @@ The local support lemmas cover smooth tests and weighted disintegration for a gi
 
 The F08 supporting results disintegrate a fixed joint measure over a countable measurable cover. The intrinsic marginal and tensor moments remain open in this corollary. [Countable-cover disintegration](countable-fiber-disintegration.en.md)
 
+Four supporting results transport a given angular kernel through measurable coordinates and nonnegative weights. [Angular kernel transforms](angular-kernel-transforms.en.md)
+
 ## T04
 
 Source: lemma 3.1, label `lem:commutator`, source lines 566–575. Title: Lipschitz-small coefficients in a symmetric energy pairing.

@@ -26,6 +26,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Changing the auxiliary metric in the vacuum sequence hypotheses](auxiliary-metric-admissibility.en.md)
 - [Fourier symbols for the cubic-energy commutator](cubic-energy-fourier-symbols.en.md)
 - [Maximal and annular square estimates in four dimensions](harmonic-maximal-and-square-estimates.en.md)
+- [Angular kernel transforms](angular-kernel-transforms.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |
