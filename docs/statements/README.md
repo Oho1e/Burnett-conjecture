@@ -29,6 +29,7 @@
 - [条件角核的变换](angular-kernel-transforms.zh-CN.md)
 - [四维移位 Fourier 窗估计](shifted-fourier-window-estimates.zh-CN.md)
 - [双侧空间截断的紧 Fourier 乘子](compact-frequency-localization.zh-CN.md)
+- [四维有符号 Fourier 窗估计](signed-fourier-window-estimates.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |
