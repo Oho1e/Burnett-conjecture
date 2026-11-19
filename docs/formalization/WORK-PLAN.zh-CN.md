@@ -574,3 +574,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 31. 四维移位 Fourier 窗估计
 
 全局符号分解和 Fourier 配对已证。四维极大函数、环带 L² 平方和及移位 Fourier 窗的强 Lᵖ 界已证。接入有限指数的环带平方估计、两环带一低频的乘积估计与全尺度联合乘子界，再闭合原交换子、三次能量连续性与系数差估计。 [四维移位 Fourier 窗估计](../statements/shifted-fourier-window-estimates.zh-CN.md)
+
+## 32. 四维有符号 Fourier 窗估计
+
+有符号环带和具有统一 L² 界，其实际卷积核满足积分 Hörmander 条件。 [四维有符号 Fourier 窗估计](../statements/signed-fourier-window-estimates.zh-CN.md)

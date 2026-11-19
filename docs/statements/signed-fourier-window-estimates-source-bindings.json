@@ -1,0 +1,80 @@
+{
+  "base": "848fc07fdce09b58e5504bae468b80f5a8b0aae0",
+  "slice": "A02",
+  "source_lines": [
+    660,
+    671
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "source_independent_receipt_sha256": "d24f870ff8e38fa7e5e2eb291d572ce070be061ce0e9d50f3cc0bf87e5692efb",
+  "port_receipt_sha256": "31973b497f42d32709eab93de0f6e0ea8c28cd6c15e04542dda36e246edbc224",
+  "modules": {
+    "Burnett.Analysis.SignedFourierWindow.SignedBands": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignedBands.lean",
+      "port_source_sha256": "9e99e2acfa0f5e8e2c207b7bf14bc3240d40562a23b313515264e2a4012baf04",
+      "audited_source_sha256": "157e6319a6cd7d4aa05980482112e9412b0b5b194c232b34aac69c61faa6163a",
+      "independently_replayed_source_sha256": "983f16a69056906a1bfe830f360743c9ce64fbbae3458cb1cdff1b0cffd18554"
+    },
+    "Burnett.Analysis.SignedFourierWindow.DyadicDifferences": {
+      "path": "Burnett/Analysis/SignedFourierWindow/DyadicDifferences.lean",
+      "port_source_sha256": "ce9dfd499130fe1ef5609d60c84ec797365d2ab88bf4f9c9b515d729ad923285",
+      "audited_source_sha256": "40ebc863cf8d66756e28cb09794fd0857422eb868069f1424e9f2afdfdfc0b23",
+      "independently_replayed_source_sha256": "0a55f6c56c94072ecb98efebdf07207e6c4c5cf93b2cb6c442ef869d227c3f34"
+    },
+    "Burnett.Analysis.SignedFourierWindow.ShiftedTail": {
+      "path": "Burnett/Analysis/SignedFourierWindow/ShiftedTail.lean",
+      "port_source_sha256": "401a74ecab9633f4d0ee0471cf72ed14fe43cb4f6b629ac91dd3240fa218e75f",
+      "audited_source_sha256": "39d2036616fa24e7433b6aae4dcce72c71ed5eb894bfea52a7552c1a49685e9c",
+      "independently_replayed_source_sha256": "4231b3d9a283c53aa73c76a6ec7cef4688e42efa11686eeafafedd742cbbc74d"
+    },
+    "Burnett.Analysis.SignedFourierWindow.KernelTranslation": {
+      "path": "Burnett/Analysis/SignedFourierWindow/KernelTranslation.lean",
+      "port_source_sha256": "93054077661dd7a5b8d1e927ae6e6e9830dee85f53da67b0984d759e75a87198",
+      "audited_source_sha256": "f294d8b4ec4991aa218555f195443517b261a179919f0cdd9bab6e11f6d3bd21",
+      "independently_replayed_source_sha256": "f38e96499e866d89eac0ed5c3be8ec7cf5b5178dd8fe8f7781e7674d207999f8"
+    },
+    "Burnett.Analysis.SignedFourierWindow.PhysicalDifferences": {
+      "path": "Burnett/Analysis/SignedFourierWindow/PhysicalDifferences.lean",
+      "port_source_sha256": "e2f0d4314989c450943c30b3a38117825bdf0334eed3e5bcd77d28840ba1b4f7",
+      "audited_source_sha256": "894ab2d5d2eff435760015c7fb592caf8ad10bffea0fab7d2a6857427c3eb25d",
+      "independently_replayed_source_sha256": "5f50b7e2163530a14407c40e5fa1e6472ce7295d2243f702b733b419dd56a2d4"
+    },
+    "Burnett.Analysis.SignedFourierWindow.HormanderBands": {
+      "path": "Burnett/Analysis/SignedFourierWindow/HormanderBands.lean",
+      "port_source_sha256": "c057351e57b8b7e1ebed068eccaa0c9cdeadd79a582624017823372e4c45c00e",
+      "audited_source_sha256": "789a8d290b9c01724920587c16239731ae780283e854519ad8223807fdecf6d9",
+      "independently_replayed_source_sha256": "8701414c7d3391cae8df25cfadd2ce24d011636f616df44973a17a1d3a0aaf87"
+    },
+    "Burnett.Analysis.SignedFourierWindow.WindowL2": {
+      "path": "Burnett/Analysis/SignedFourierWindow/WindowL2.lean",
+      "port_source_sha256": "8fbad6c16d1444117b86cc73ccc708ea4bfe82892544b258261975dc8d30ffcb",
+      "audited_source_sha256": "d7700885c3cef19aeff688cc8c1129e26e81d4f57568aefad75d8a20e790d0f2",
+      "independently_replayed_source_sha256": "e7e3f7593ec1f999c86acb7c452835f1a52de0bd3e91e33aae6fe545904da539"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignedWindowOperator": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignedWindowOperator.lean",
+      "port_source_sha256": "397a227c1a672c6447fe83e950dbb42f23feacca3d11402d534d42ebd3e36b67",
+      "audited_source_sha256": "017f28ebc11a7a43980ecb2a09e0f70155155847c6a4f043dcf263dca82cf711",
+      "independently_replayed_source_sha256": "19046d4082e199d58550aed8e450cea8dd22faa5dc14615d4e9acb92d4fbb81b"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:signed-annular-L2",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedBands",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_annular_sum_L2"
+    },
+    {
+      "claim_id": "a02:harmonic:dyadic-Hormander",
+      "module": "Burnett.Analysis.SignedFourierWindow.HormanderBands",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.dyadic_kernel_hormander"
+    },
+    {
+      "claim_id": "a02:harmonic:signed-window-operator",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedWindowOperator",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_operator_estimates"
+    }
+  ],
+  "closes_parent_claim": false
+}

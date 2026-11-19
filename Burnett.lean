@@ -150,3 +150,4 @@ import Burnett.Analysis.DyadicSquare.ShiftedSquare
 import Burnett.Analysis.FiberDisintegration.Coordinate
 import Burnett.Analysis.FiberDisintegration.Reweight
 import Burnett.Analysis.ShiftedFourierWindow.LowPassLp
+import Burnett.Analysis.SignedFourierWindow.SignedWindowOperator

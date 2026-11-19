@@ -569,3 +569,7 @@ Given a disintegration, the coordinate formula computes every measurable joint e
 ## 31. Shifted Fourier window estimates in four dimensions
 
 The global symbol decomposition and Fourier pairings are proved, along with the four-dimensional maximal and annular L² square estimates and the strong Lᵖ bound for shifted Fourier windows. Integrate the finite-exponent annular square estimate, the product bound with two annular factors and one low-frequency factor, and the full-scale joint multiplier bound. Apply these to the physical commutator, cubic-energy continuity and coefficient differences. [Shifted Fourier window estimates in four dimensions](../statements/shifted-fourier-window-estimates.en.md)
+
+## 32. Signed Fourier windows in four dimensions
+
+Signed annular sums have a uniform L² bound and their actual convolution kernel meets the integral Hörmander condition. [Signed Fourier windows in four dimensions](../statements/signed-fourier-window-estimates.en.md)

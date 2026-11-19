@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ec9d744b00315f2a140b8f208231f409e54b311060748974422d980595489851`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `209a535812b2d53f94301a1badf96f64b087dcc00513bebc7a0f1e360cd87c20`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: The global symbol decomposition and Fourier pairings are proved, along with the four-dimensional maximal and annular L² square estimates and the strong Lᵖ bound for shifted Fourier windows. Integrate the finite-exponent annular square estimate, the product bound with two annular factors and one low-frequency factor, and the full-scale joint multiplier bound. Apply these to the physical commutator, cubic-energy continuity and coefficient differences.
+Next: Signed annular sums have a uniform L² bound and their actual convolution kernel meets the integral Hörmander condition. The global symbol decomposition and Fourier pairings are proved, along with the four-dimensional maximal and annular L² square estimates and the strong Lᵖ bound for shifted Fourier windows. Integrate the finite-exponent annular square estimate, the product bound with two annular factors and one low-frequency factor, and the full-scale joint multiplier bound. Apply these to the physical commutator, cubic-energy continuity and coefficient differences.
 
 <a id="a03"></a>
 

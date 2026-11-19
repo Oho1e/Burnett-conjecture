@@ -2648,6 +2648,21 @@
       "claim_id": "a02:harmonic:shifted-window-maximal",
       "module": "Burnett.Analysis.ShiftedFourierWindow.LowPassLp",
       "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:signed-annular-L2",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedBands",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_annular_sum_L2"
+    },
+    {
+      "claim_id": "a02:harmonic:dyadic-Hormander",
+      "module": "Burnett.Analysis.SignedFourierWindow.HormanderBands",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.dyadic_kernel_hormander"
+    },
+    {
+      "claim_id": "a02:harmonic:signed-window-operator",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedWindowOperator",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_operator_estimates"
     }
   ],
   "inventory": [
@@ -13172,6 +13187,60 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp",
       "statement_record": "docs/statements/shifted-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:signed-annular-L2",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_annular_sum_L2",
+      "statement_record": "docs/statements/signed-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:dyadic-Hormander",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.dyadic_kernel_hormander",
+      "statement_record": "docs/statements/signed-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:signed-window-operator",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_operator_estimates",
+      "statement_record": "docs/statements/signed-fourier-window-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-source-proof",
       "does_not_close_parent_claim": true

@@ -28,6 +28,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Maximal and annular square estimates in four dimensions](harmonic-maximal-and-square-estimates.en.md)
 - [Angular kernel transforms](angular-kernel-transforms.en.md)
 - [Shifted Fourier window estimates in four dimensions](shifted-fourier-window-estimates.en.md)
+- [Signed Fourier windows in four dimensions](signed-fourier-window-estimates.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |
