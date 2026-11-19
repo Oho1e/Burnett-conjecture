@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "先锁定外部微局部接口的精确测试类、束值性与量词；把共同子序列和Gram转换作为可检查子义务。",
+      "next_action": "固定角向 Fourier 乘子及其低频修改的截断交换子已对局部序列证明强趋零。将结果用于变系数测试及两图的比较，保留同一子序列、迹测度和有序分量，再核对束值相容性与 Gram 转换。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -4828,6 +4828,60 @@
       "claim_id": "support:lift-punctured-degree-one-extension",
       "source_slices": [
         "L01"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "source_slices": [
+        "F05"
       ]
     }
   ],

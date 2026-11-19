@@ -12,6 +12,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Complete machine-readable index](source-index.json)
 - [Initial structural inventory and candidate notes](intake.en.md)
 - [Precise interface for the main theorem](main-interface.en.md)
+- [Angular Fourier commutators and fixed low-frequency regularization](angular-cutoff-commutator.en.md)
 - [First Ricci-symbol fragment](ricci-symbol.en.md) and [independent readback of its actual declarations](ricci-symbol-review.en.md)
 - [Strong local H⁻¹ convergence of linearized Ricci](geometric-Hminus-closure.en.md) and [independent review](geometric-Hminus-closure-review.en.md)
 - [Intrinsic curvature, the Ricci trace, and chartwise vacuum](intrinsic-curvature-Ricci.en.md) and [independent review](intrinsic-curvature-Ricci-review.en.md)

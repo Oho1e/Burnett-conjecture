@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `9e7423a64f100d324e79bac93d1aae91a8662518e7ff18d80eb12a73009423a9`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `1b197f2f5dd1411af0c3ae70515e99d824d5fc75823f5717c69924fbb3932b88`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: Lock the exact test class, bundle values, and quantifiers of the external microlocal interface. Treat the common subsequence and Gram conversion as separately checkable obligations.
+Next: The cutoff commutator for a fixed angular Fourier multiplier and its low-frequency modifications tends strongly to zero on the localized sequence. Apply this to base-dependent tests and chart comparisons with the same subsequence, trace and ordered entries, then check bundle compatibility and Gram conversion.
 
 <a id="f06"></a>
 
