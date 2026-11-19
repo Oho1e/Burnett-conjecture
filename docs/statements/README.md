@@ -13,6 +13,7 @@
 - [初始结构清点及候选说明](intake.zh-CN.md)
 - [主定理的精确接口](main-interface.md)
 - [角向 Fourier 交换子与固定低频正则化](angular-cutoff-commutator.zh-CN.md)
+- [正矩阵值测度表示](positive-matrix-measure.zh-CN.md)
 - [首个 Ricci 符号片段](ricci-symbol.md)及[独立实际声明回读](ricci-symbol-review.md)
 - [线性化 Ricci 的局部强 H⁻¹ 收敛](geometric-Hminus-closure.md)及[独立复核](geometric-Hminus-closure-review.md)
 - [内禀曲率、Ricci 迹与图内真空](intrinsic-curvature-Ricci.md)及[独立复核](intrinsic-curvature-Ricci-review.md)

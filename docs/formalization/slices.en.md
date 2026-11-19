@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `1b197f2f5dd1411af0c3ae70515e99d824d5fc75823f5717c69924fbb3932b88`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `5e3f61013997e220b4903e37bdaca7888fa6db1c3d4c1e3a1ac87d00cc8fd645`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The cutoff commutator for a fixed angular Fourier multiplier and its low-frequency modifications tends strongly to zero on the localized sequence. Apply this to base-dependent tests and chart comparisons with the same subsequence, trace and ordered entries, then check bundle compatibility and Gram conversion.
+Next: The cutoff commutator for a fixed angular Fourier multiplier and its low-frequency modifications tends strongly to zero on localized weakly null inputs. On compact spaces, positivity of constant-vector compressions on squares yields ordered complex measures with a common finite dominating trace. Apply both results to the same original-metric subsequence to identify the measures under base-dependent tests and on chart overlaps, then check bundle compatibility and Gram conversion.
 
 <a id="f06"></a>
 

@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "固定角向 Fourier 乘子及其低频修改的截断交换子已对局部序列证明强趋零。将结果用于变系数测试及两图的比较，保留同一子序列、迹测度和有序分量，再核对束值相容性与 Gram 转换。",
+      "next_action": "已证明固定角向 Fourier 乘子及其低频修改的截断交换子对局部弱零序列强趋零。紧空间上，常向量压缩的平方正性给出同一族有序复测度与有限支配迹。将两项结果接到原度量的同一子序列，用于变系数测试及图重叠中的测度识别，再核对束值相容性与 Gram 转换。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -4880,6 +4880,54 @@
     },
     {
       "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
       "source_slices": [
         "F05"
       ]

@@ -171,6 +171,7 @@ When a major interface is missing, split foundational proof tasks by the smalles
 | X08, X09, X10 | Continually check scope and consumers through X08 from the starting point; handle necessary X09 identities according to actual consumers; check X10 literature when needed | X08 scope decisions do not await the F07 mathematical proof, while its implementation retains its actual inputs. X08 is not an approved additional certification set. When it contains a necessary dependency or independent result, check it under the standard and refer substantive ambiguities to the user. Do not mechanically make context into Lean theorems |
 
 F05 now supplies the fixed angular cutoff commutator and its low-frequency modification. Use these in the base-dependent and chart-transition tests on the same sequence. [Angular Fourier commutators and fixed low-frequency regularization](../statements/angular-cutoff-commutator.en.md)
+F05 constructs regular scalar compression measures and positive semidefinite matrix values on Borel sets. Use the same trace for all ordered entries when identifying the chart limits. [Positive matrix-measure representation](../statements/positive-matrix-measure.en.md)
 
 ### Five Common-Closure Points
 

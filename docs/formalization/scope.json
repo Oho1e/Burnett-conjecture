@@ -2433,6 +2433,46 @@
       "claim_id": "f05:angular-cutoff:vanishing-multiplier",
       "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
       "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "module": "Burnett.Analysis.Microlocal.PositiveRiesz",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_measure_representing_dense_square_positive"
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "module": "Burnett.Analysis.Microlocal.PositiveRiesz",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_quadratic_measures_of_dense_square_positive"
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryFunctional_eq_integral_polarization"
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.quadratic_entryMeasure_apply"
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_posSemidef"
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_trace_apply"
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_absolutelyContinuous_of_representation"
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.exists_positiveMatrixMeasure_of_dense_square_positive"
     }
   ],
   "inventory": [
@@ -12204,6 +12244,142 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero",
       "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_measure_representing_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_quadratic_measures_of_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryFunctional_eq_integral_polarization",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.quadratic_entryMeasure_apply",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_posSemidef",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_trace_apply",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_absolutelyContinuous_of_representation",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.exists_positiveMatrixMeasure_of_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

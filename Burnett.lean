@@ -136,3 +136,4 @@ import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
 import Burnett.Counterexamples.Bianchi
 import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
+import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
