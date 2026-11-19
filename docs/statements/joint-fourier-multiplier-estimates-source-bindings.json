@@ -1,0 +1,214 @@
+{
+  "dependency_pull_request": 38,
+  "dependency_head": "18bfd2c27da9cb13566bf09a04b03b63a1461e6c",
+  "dependency_tree": "0458c4be436b6b0ecd911d876d6c4940b590c7e0",
+  "slice": "A02",
+  "source_lines": [
+    660,
+    671
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "source_independent_receipts_sha256": {
+    "joint-slots": "e4e3b63090d3056d424dbf46807e09485e5c1130e845183e50e8602d1f83bf55",
+    "joint-trilinear": "27372a4c8cde0f67ff67055e092a86d74ea6a955f621fdc3d0a637ec11435eb1",
+    "actual-bands": "bdb495813ae74c227984814a442cde4e1126a8bc76e7ffb9d9acd07be6982577",
+    "mikhlin": "670e4ed4ef60b6d57d7dd38aefc6b626785600578a6f10cca187f0ce9323bf98",
+    "physical-bands-square": "a5f6fe36071af8e168fbb50d99f703c2ddbc84048c863ba5d4c1f7aeec08f603",
+    "radian-bilinear-kernel": "ade21526b5853fe332c250105812e8262031dd95140de9965dfa250605a9f8c4"
+  },
+  "port_receipt_sha256": "add3884c00f897059d1d2fad9ca2a9c95a5b6331bc8042bbe44dbc255075fd98",
+  "modules": {
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.AnnularBound": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/AnnularBound.lean",
+      "production_source_sha256": "44d959e39cc801ef185ee8b28ecb33a4e08e672462aafe13ca0afbdff32bd576",
+      "audited_source_sha256": "b4ce1418d2d3c37b277d7aa833798c6bff6d39363e2d713e74fa194a50bfcb96",
+      "independently_replayed_source_sha256": "4acc168a677124d1bc6e4dc77fbbfc9af2b404899e7421e3daa6fd8c269046aa"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.BandLimit": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/BandLimit.lean",
+      "production_source_sha256": "b9ff551c3d2c669eaf978ca717349f66a90caeea4e4fc9f381a9c3abea5163b9",
+      "audited_source_sha256": "95847b2972bfd08c3d759c7ab70e3a50b0f934361112d8864555606578eaf385",
+      "independently_replayed_source_sha256": "2d8e59fa2f5ad0f9db87010191a133a2c69c4d18b9f5ea00fb6fd4d4c57de590"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.BandPartition": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/BandPartition.lean",
+      "production_source_sha256": "068554a06dcf2f43ef6d161c7230574785e224f25510c8fed0a039c3ee69d460",
+      "audited_source_sha256": "fc0da04def2ed2c44c8e19c9d62c762619792ee0f19f9035b6bc3dae91536866",
+      "independently_replayed_source_sha256": "4352e0f87265b1d74530091ab606f335474caf9e992c99b64ca2564c03ab956f",
+      "staged_production_source_sha256": "f76346efb84aeb1e3d1f78fb4778c9b426969a626beb83ea4b90c1e28e18938d",
+      "release_comment_receipt_sha256": "d605bdb5e2ca16cbda59dcaee49467f7794116f2263e04361e5c33fd05b57bb6",
+      "release_comment_native_sha256": "c52b6b94f566afec211cea6b51b813a1190f7f624b621a67a85e8fb19c2cb6f5"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.BilinearKernel": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/BilinearKernel.lean",
+      "production_source_sha256": "f135e21f5e3e34c9279eab385ccb580c06e9ff496f2b791125613dd043ee91ed",
+      "audited_source_sha256": "d7318a11ae6925a2fa675847d8d27d61bb1d4e8b1b58dab260d32523fd0548e0",
+      "independently_replayed_source_sha256": "670b68d4a9e9ec1c1734a76b8a21d782902e6f707b96ebe8526826946dddb94a"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.BlockMultiplier": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/BlockMultiplier.lean",
+      "production_source_sha256": "8f24bd8b0e26a6965ea1d5af400943c5431d884489249d66cc5bf35cb171cc07",
+      "audited_source_sha256": "65c764abc44f2a67d4e9ef8cf1bba62b6db623d5ff494a2c891cfacd2d71be2a",
+      "independently_replayed_source_sha256": "4c8b79a4c9d2615c8620d738c2e5f355083c88e94025a010ab8f9733fd9e69f4"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.BlockOperator": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/BlockOperator.lean",
+      "production_source_sha256": "44392acf857b0ba28b50a791d9887603c5b77128855317db6c6397918fd4c1c0",
+      "audited_source_sha256": "c91f93c9afff7808ec833e460084e926760dd3db2fd1fa76c480b18820c6bd2b",
+      "independently_replayed_source_sha256": "6fc2e36087bdea78a7cc223f4cf0497793ac292907b7b72b7ec65d89da237678"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointDyadicPlacements": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointDyadicPlacements.lean",
+      "production_source_sha256": "52a859c197ad8850f81d3fb51bdf03c7b28fc1f88d6dcbc45eab7bf1f55bd5f4",
+      "audited_source_sha256": "d0dbd2ded6e0d00799d24b9a9a32d4d8769ef4cf28026ee50b5d387886d6e5a8",
+      "independently_replayed_source_sha256": "761370ab52ccd7ea0e7d689bb4edd0e29224562b794e7e38f83cc61e558146f6"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointDyadicWindows": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointDyadicWindows.lean",
+      "production_source_sha256": "412c22e9055415590cd2c5460bbea320bca954152a06139c97c429b6b4389069",
+      "audited_source_sha256": "377e88f27905191573bbcbf22521e23c168caf90f9d2d21ac06d1127901450db",
+      "independently_replayed_source_sha256": "9b58a12e89562c87440d0a71545b7b05b224f28c455bd255b0ec69212527f024"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointFiniteTrilinear": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointFiniteTrilinear.lean",
+      "production_source_sha256": "3b9f80c11e26542e967f06774770a0af1e529c0d550afee26767294824e75ebd",
+      "audited_source_sha256": "3ebe1e027d25ed37b1afbe791b18a4826c3bcf523bb3d97df913f13a2e785b9b",
+      "independently_replayed_source_sha256": "db129e91e0d980bb2e56448bcf7e6dae71a51d97ceed44588ddd3c2738bea5da"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointKernelMoment": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointKernelMoment.lean",
+      "production_source_sha256": "45c6b45c36147becaf6ee08cc4a73d31e3cd61208b8325fb940148cf66376529",
+      "audited_source_sha256": "3e2e1d902a6411ad64b06cf98568b270ea35bfb262a2f335533040ca0e9e20ca",
+      "independently_replayed_source_sha256": "c727795e7542674ee5a297965e2ab61ace2e09c2c33da4a401bf80df2e937115",
+      "staged_production_source_sha256": "19c645c60a2062979f2d4df14f240c6d35bcb1e736eb05c6b9c03fc47ce9ad8d"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointKernelSummation": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointKernelSummation.lean",
+      "production_source_sha256": "df5971cbd7db1c0dcc383a185c75bf964972e0baba64f6e0fa7b6934dbac2ef2",
+      "audited_source_sha256": "f56651943369f60e1c1cf54d91a97dea02347569abdce8fd40620d19033030a1",
+      "independently_replayed_source_sha256": "a0b6391b3be441780fc4dcd53c7c26189b2281906daf07b399b30dcd5590425f"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointSchwartzSlots": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointSchwartzSlots.lean",
+      "production_source_sha256": "4746aae6e7c1d1051598865e3bf08ad6bd47a805ee3aebbbaf15d58d80909010",
+      "audited_source_sha256": "dac1270d4a5ef62f73621bc12827c4dbf43e3d65ad0448ed6c2b66ffb230202d",
+      "independently_replayed_source_sha256": "f63a44de9448355841af15fcf30c98eba0465d1d4364b1ecb09b9ad59725da07"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointSlotExpansion": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointSlotExpansion.lean",
+      "production_source_sha256": "9327c0ee554d880f9fe6cbfdf759fbb885393151284bd4ddc209a96dcfc20d5e",
+      "audited_source_sha256": "02fe06a3e11dce4614fb69af6595714efc0f3679bd4be7ee441f4ad5bfed5681",
+      "independently_replayed_source_sha256": "3b8bcbbdeb09ac5fa66c5a4f6afa5256c50982ed7313230c11ce3c2b622debc2"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointSlotPartition": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointSlotPartition.lean",
+      "production_source_sha256": "dc5e2b80af1fdd4b8913fd5d387ebf6e13d1c45aad0d44e2243b1e246e29f35c",
+      "audited_source_sha256": "ad434c3d7e36eb4403c86708c23b62b1af2e1517814844abe89fb1ef635fcdcb",
+      "independently_replayed_source_sha256": "c7640354b5f3a12e992c4cc0c4c8513bb95eff4e3904196096cce11c6ade625b"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearFourier": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointTrilinearFourier.lean",
+      "production_source_sha256": "9c21deae1e96af62c8a32810bea6361b7f48241d9b96e4c15868c036784cc080",
+      "audited_source_sha256": "3c0f97bfe19b88e1360a65a9422b521fc6d2c5278e56e954a5d163424d5b701c",
+      "independently_replayed_source_sha256": "28c81ef041bca261cc3a4d50fb1a8d05f29b4fac4fcc72dd4a6f5120df04acdc"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearLimit": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointTrilinearLimit.lean",
+      "production_source_sha256": "dfacb63de1092ce6dabbefd8a37a9ee926f3e62fe46441450d7b076286e8bbe5",
+      "audited_source_sha256": "d061d153b0bde4a0abdb818dee5584ce5bc8d63f4ed6e071ffb4ae6ca9f12900",
+      "independently_replayed_source_sha256": "2c23ca9618f08f70e953e48b3877a886c4eac58c4e6d2a4332cb1fb0e335a3a9"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointTrilinearSeminorm.lean",
+      "production_source_sha256": "a41ba18305a2a5c24b8238dcaa491c73afc38289c759e552a49499ad84c9ba6b",
+      "audited_source_sha256": "cfe5f12ea0f525b8f5008e57fa1b9fcfe167a4a3a1220f5773576db74347b6e4",
+      "independently_replayed_source_sha256": "8ee83f63ee94bfeaf9474dec814d003944f997baa8210a4dfddd0c057a240bee"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointWeightedSummation": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointWeightedSummation.lean",
+      "production_source_sha256": "6f8c77798d3206e469ed958699520b0010b7af0cb5f90b13528f5a728d44f64d",
+      "audited_source_sha256": "082878a1ee744dc4046b4731f452c1e52be2cce2a3c440bb82c608d61778f302",
+      "independently_replayed_source_sha256": "e4f9473cb947c3bcf776e373b697f7e3a0a014d890ff665d7bc3e71a7906a9df"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointWindowPairing": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointWindowPairing.lean",
+      "production_source_sha256": "2a0d41f237cb553abdcaeefe2a5c0447830b0f0773f5ae64fe6e58344cceab1e",
+      "audited_source_sha256": "09e79f1b4666d1ed6cc84af9bc1d2ee0fd8d0e9f262e004721719adb6031768b",
+      "independently_replayed_source_sha256": "d910baa63f04174ce99e338a4e85fc8043947d7231d285564c5d3345d197f894"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.JointWindowTest": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/JointWindowTest.lean",
+      "production_source_sha256": "1759f7b60c6795be46bfd47f3463aaa973ada1752e5d6726b7fe4e564f2194a0",
+      "audited_source_sha256": "9aa16d1a40d54d4bb4f00e3b86642df800e6917ddaf2255d79f3b2a365fa6bee",
+      "independently_replayed_source_sha256": "a4419bb6ffe7b447db5c8abe07e26f6feb50e5ad0b45c4581172c0444dd3d16a"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.KernelHolder": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/KernelHolder.lean",
+      "production_source_sha256": "1188d1f8061a2ef7280e60b0d33ad35fa313c52cce265c8f812839f8e84e4794",
+      "audited_source_sha256": "2d5feeebc1493c88da4d9f951de041d582fdb4a60f045e2de9b78fd461954fc3",
+      "independently_replayed_source_sha256": "e0934c23fd8ede131b69494c0e5463e5bdbd1e5b08bf77de0118672736c911be"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.MikhlinPartition": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/MikhlinPartition.lean",
+      "production_source_sha256": "aebefe35625257af43e6a44ccd942b8b29c830cf42e90cf10835f954b38dee29",
+      "audited_source_sha256": "124faedf5ddd774bf1e8d888562024f56d4e1e627ecb53638f5cc304829809fb",
+      "independently_replayed_source_sha256": "bba723fcc63790105b5103f1a8399915fa1e4a067edf8210ab8efac1c217cf52"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.PhysicalBandLimit": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/PhysicalBandLimit.lean",
+      "production_source_sha256": "c60ff7c107b2840756860d7e68689855b7e670cbc82f3868028b0470955b6936",
+      "audited_source_sha256": "046bb46c2e4f8194511e20671ce255813ec1b415467f4d4a5616a88a8176fd25",
+      "independently_replayed_source_sha256": "85584f3facaf9931db7e9c98f32f88196a93286716a7abdfddbb4df804d63780"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.SymbolSeminormAnnulus": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormAnnulus.lean",
+      "production_source_sha256": "edf3730ad62a8bbbff99d0e2d585e639f94907a62ef43ddd5f8303cf65b35560",
+      "audited_source_sha256": "f74e72dc606b21485f2dfc94f2076219cf6c8b984bc28c782d139b6c557556f5",
+      "independently_replayed_source_sha256": "242975813df748b9d6737343f7e83ae895de6e32fa5a9b321096ede3369a89c9",
+      "staged_production_source_sha256": "97ed3f4cef143aa52e715a2c8f5c8d88e393ae8bfc3c7df7211c15adda530ae6"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.SymbolSeminormCutoff": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormCutoff.lean",
+      "production_source_sha256": "d45f62bdaa8c67e6e5fe65df9119658179590651ae12f8917991a4cc25be0ffd",
+      "audited_source_sha256": "77554b2ca8e2a61cce5da3bee31e59bd652bdc608ec644b2ef8ab3e583ffe1fc",
+      "independently_replayed_source_sha256": "eecf342eca7abc235853f49890d67d4390e9d4667c403b79e3e1337d588461dc"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.SymbolSeminormDecay": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormDecay.lean",
+      "production_source_sha256": "dfacc965fd36117e6dc5fd2460fe15a4783ef2e539733864842300cc999cb1ba",
+      "audited_source_sha256": "0712e3f4d1d5e751c6a53715bd7bf7523a74ecdaa81e46df1bcc7d4af5756646",
+      "independently_replayed_source_sha256": "192deaae866357ae1485b3caa18ab7e9982d8e56b0e277ca633dd5a5d9236e34"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.SymbolSeminormJoint": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormJoint.lean",
+      "production_source_sha256": "828abb8cf3da2e1b8711104e49d94e91dd878b122f0f6b51d869b68fce86f59f",
+      "audited_source_sha256": "418d5b3c98b62d1ecbf7ec7b8ffa8757c6e08a4a4c2d78ecf2670e33b0437560",
+      "independently_replayed_source_sha256": "41cfd8bfac1b647c228c48358ef2dc23912edc3dd8b7c04742c58b88f5584468"
+    },
+    "Burnett.Analysis.CubicEnergy.JointMultiplier.SymbolSeminormSphere": {
+      "path": "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormSphere.lean",
+      "production_source_sha256": "0cb907f7bd2e363c14602679b01e0808a6c609607b4edf0d39ee3097d1f6f087",
+      "audited_source_sha256": "0eae8a985442c253a2e317b6da3a995b1912fcf93e125b44e7c564a41b66fc52",
+      "independently_replayed_source_sha256": "6e8e9aae5a3a7ccb6bffd99bbbdc8b54c3e392d8b8d1e28f9c5691f28350d20e"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:joint-tested-sums",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearLimit",
+      "declaration": "Burnett.A02.FrequencySplit.joint_tested_sums_converge"
+    },
+    {
+      "claim_id": "a02:harmonic:joint-weighted-kernel",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearLimit",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_weighted"
+    },
+    {
+      "claim_id": "a02:harmonic:joint-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_sphere_bound"
+    }
+  ],
+  "closes_parent_claim": false
+}

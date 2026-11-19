@@ -31,6 +31,7 @@
 - [双侧空间截断的紧 Fourier 乘子](compact-frequency-localization.zh-CN.md)
 - [四维有符号 Fourier 窗估计](signed-fourier-window-estimates.zh-CN.md)
 - [四维环带平方函数与乘积估计](annular-square-and-product-estimates.zh-CN.md)
+- [定量联合 Fourier 乘子估计](joint-fourier-multiplier-estimates.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

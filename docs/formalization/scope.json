@@ -2693,6 +2693,21 @@
       "claim_id": "a02:harmonic:two-annular-one-low",
       "module": "Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow",
       "declaration": "Burnett.Analysis.SignedFourierWindow.two_annular_one_low"
+    },
+    {
+      "claim_id": "a02:harmonic:joint-tested-sums",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearLimit",
+      "declaration": "Burnett.A02.FrequencySplit.joint_tested_sums_converge"
+    },
+    {
+      "claim_id": "a02:harmonic:joint-weighted-kernel",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearLimit",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_weighted"
+    },
+    {
+      "claim_id": "a02:harmonic:joint-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_sphere_bound"
     }
   ],
   "inventory": [
@@ -13379,6 +13394,60 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Analysis.SignedFourierWindow.two_annular_one_low",
       "statement_record": "docs/statements/annular-square-and-product-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:joint-tested-sums",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_tested_sums_converge",
+      "statement_record": "docs/statements/joint-fourier-multiplier-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:joint-weighted-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_weighted",
+      "statement_record": "docs/statements/joint-fourier-multiplier-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:joint-sphere-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_sphere_bound",
+      "statement_record": "docs/statements/joint-fourier-multiplier-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-source-proof",
       "does_not_close_parent_claim": true

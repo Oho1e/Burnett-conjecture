@@ -579,3 +579,7 @@ Signed annular sums have a uniform L² bound and their actual convolution kernel
 ## 33. Four-dimensional annular square and product estimates
 
 Finite-exponent signed annular sums and annular square functions now have Lᵖ bounds, together with the product estimate for two annular factors and one low-frequency factor. Continue the full-scale joint multiplier bound and its application to the cubic energy. [Four-dimensional annular square and product estimates](../statements/annular-square-and-product-estimates.en.md)
+
+## 34. Quantitative joint Fourier multiplier estimates
+
+Full-scale joint Fourier multipliers have quantitative trilinear bounds on Schwartz tests. Continue the physical bilinear output by duality, the scalar multiplier bounds, and the assembly of the cubic energy. [Quantitative joint Fourier multiplier estimates](../statements/joint-fourier-multiplier-estimates.en.md)
