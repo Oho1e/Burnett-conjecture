@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `67fa129ed18635fa8fff534e0177a3bec4c6e1b7b9ba0add4af7fb24f32ae831`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6cf719e5bb52738a90268a555cdd25a7a6256d9e20e18408f02f951119c223ae`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: Lock the exact test class, bundle values, and quantifiers of the external microlocal interface. Treat the common subsequence and Gram conversion as separately checkable obligations.
+Next: The cutoff commutator for fixed angular Fourier multipliers and their low-frequency modifications tends strongly to zero on localized weakly null inputs. Positive matrix representation on compact spaces gives ordered complex measures with a common finite dominating trace. The preferred chart overlaps have half-density pairings, cutoff transfer, a countable cover, and near- and far-field kernel geometry bounds. Apply these results to the same original-metric subsequence and compare the conjugated order-zero operators to verify the transformation of the ordered entries and trace, bundle compatibility and Gram conversion.
 
 <a id="f06"></a>
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: Check the pinned library's hypotheses for disintegration. Construct the marginal first, then disintegrate in angle and prove vanishing on vacuum regions.
+Next: Smooth-test positivity and measure determination and local weighted disintegration of a finite coordinate joint measure with a supplied bounded marginal density are available. For a given joint measure and marginal density with local bounds on a countable cover, the angular kernels glue over the original base measure and are almost everywhere unique for that joint measure. Derive the actual marginal, local bounds and unit null-shell concentration from the same F07 physical measure, apply disintegration on the intrinsic projection, and verify the Einstein second moments and vanishing on vacuum regions.
 
 <a id="a01"></a>
 
@@ -1381,7 +1381,7 @@ Boundaries:
 Consumers: This slice supplies no mathematical input or application to other slices.
 
 
-Next: First give precise independent interfaces for ODE existence and constraint preservation, then compute the Einstein tensor. The nonrepresentation branch must cover every candidate measure through positive-moment support determination, future-sheet folding, and the specified test.
+Next: The same actual Lorentzian metric gives the Einstein tensor properties, zero divergence and nonrepresentability for every auxiliary metric. One smooth homogeneous test handles both sheets. Changing the unit section pushes the measure forward after weighting by the square of the change-of-normalization factor. Verify the production combination and record author confirmation separately.
 
 <a id="x05"></a>
 
