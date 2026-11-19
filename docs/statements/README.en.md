@@ -24,6 +24,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Countable-cover disintegration for a fixed joint measure](countable-fiber-disintegration.en.md)
 - [F05 geometry on preferred chart overlaps](chart-overlap-geometry.en.md)
 - [Changing the auxiliary metric in the vacuum sequence hypotheses](auxiliary-metric-admissibility.en.md)
+- [Fourier symbols for the cubic-energy commutator](cubic-energy-fourier-symbols.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |

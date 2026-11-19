@@ -556,3 +556,6 @@ Preferred chart overlaps now have half-density pairings, transported cutoffs, co
 ## 28. Changing the auxiliary metric in the vacuum sequence hypotheses
 
 The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. These estimates allow a construction on the same subsequence to use different auxiliary metrics. The transformation law of the microlocal measure and the transport equation require further arguments. [Changing the auxiliary metric in the vacuum sequence hypotheses](../statements/auxiliary-metric-admissibility.en.md)
+## 29. Fourier symbols for the cubic-energy commutator
+
+The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences. [Fourier symbols for the cubic-energy commutator](../statements/cubic-energy-fourier-symbols.en.md)

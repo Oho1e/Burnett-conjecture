@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 509 个目标、574 个库存项和 215 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 513 个目标、578 个库存项和 223 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 最终范围包括旋转零矩张量无输运表示（X03）及多尺度 Rosen 真空序列与精确零源坐标（X06）。X03 已随 PR #13 进入 `main`。本次交付实现 X06，覆盖不存在共同导数尺度的结论，以及两套坐标下的 Einstein 矩和输运恒等式。作者确认在范围清单中登记。[X06 命题说明](docs/statements/rosen-multiscale.md) · [切片总览](docs/formalization/slices.md)
 
@@ -73,3 +73,4 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 可数覆盖上的测度分解定理为给定的联合测度构造具有指定质量的有限纤维测度。[F08 假设与结论](docs/statements/countable-fiber-disintegration.zh-CN.md)
 F05 已建立首选图重叠域上的几何体积配对及近场、远场核变量几何界。[假设与结果](docs/statements/chart-overlap-geometry.zh-CN.md)
 已证明原真空序列的局部一致收敛与紧集一阶导数界在任意两个光滑辅助黎曼度量之间等价。 [辅助度量变换下的真空序列假设](docs/statements/auxiliary-metric-admissibility.zh-CN.md)
+原文第 626–677 行取一个在非零频率上光滑的实一次齐次符号。以下结果覆盖原文符号分解及其 Schwartz 测试配对。 [三次能量交换子的 Fourier 符号](docs/statements/cubic-energy-fourier-symbols.zh-CN.md)
