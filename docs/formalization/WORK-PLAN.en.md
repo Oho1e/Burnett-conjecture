@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## 26. Maximal and annular square estimates in four dimensions
+
+The four-dimensional weak and strong maximal bounds and the annular L² square estimates are proved. Continue the commutator construction and establish its finite-exponent bilinear bound across scales before deriving cubic-energy continuity and coefficient differences. [Maximal and annular square estimates in four dimensions](../statements/harmonic-maximal-and-square-estimates.en.md)

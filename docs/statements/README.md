@@ -18,6 +18,7 @@
 - [有限维变分与 Ward 恒等式](transport-ward.md)及[独立复核](transport-ward-review.md)
 - [多尺度 Rosen 真空序列](rosen-multiscale.md)及[数学复核](rosen-multiscale-review.md)
 - [一般双极化 Rosen 命题](rosen-two-polarization.md)及[数学复核](rosen-two-polarization-review.md)
+- [四维极大函数与环带平方估计](harmonic-maximal-and-square-estimates.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

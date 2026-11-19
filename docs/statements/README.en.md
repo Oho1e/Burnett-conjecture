@@ -18,6 +18,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Finite-dimensional variation and Ward identities](transport-ward.en.md) and [review](transport-ward-review.en.md)
 - [Multiscale Rosen vacuum sequence](rosen-multiscale.en.md) and [mathematical review](rosen-multiscale-review.en.md)
 - [General two-polarization Rosen proposition](rosen-two-polarization.en.md) and [mathematical review](rosen-two-polarization-review.en.md)
+- [Maximal and annular square estimates in four dimensions](harmonic-maximal-and-square-estimates.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |

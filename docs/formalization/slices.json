@@ -331,7 +331,7 @@
         "c_j的乘积频率线性乘子留在双线性算子外；不能假称在乘积频率0光滑。",
         "有限指数条件r>1必须保留，不能外推到未证端点。"
       ],
-      "next_action": "先建立全局交换子分解及精确指数接口，再统一对称极化、连续性与系数差结论。",
+      "next_action": "已证明四维中心极大函数的弱型、强型界和环带平方和的 L² 界。继续构造交换子，建立有限指数的跨尺度双线性估计，再接入三次能量的连续性与系数差结论。",
       "supplementary_obligations": [
         {
           "id": "local:complete-cubic-energy-definition",
@@ -4768,6 +4768,30 @@
       "claim_id": "support:rosen-general-local-moments",
       "source_slices": [
         "X05"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:weak-maximal",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:strong-maximal",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-square",
+      "source_slices": [
+        "A02"
       ]
     }
   ],

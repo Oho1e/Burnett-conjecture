@@ -545,3 +545,7 @@ X06 独立于主算子和 Ward 的证明工作。第 3360–3386 行的总定理
 一般命题已有从物理假设出发的直接 Lean 证明。工程复用随 X06 引入的坐标 Hamilton 量与积分引理。两项测试恒等式及辅助协向量范数的局部二阶矩都使用总定理给出的同一测度。[X05 命题说明](../statements/rosen-two-polarization.md) · [数学复核](../statements/rosen-two-polarization-review.md)
 
 X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线上核验 X05 的组合目标登记、整库和 CI。作者确认单独登记。
+
+## 26. 四维极大函数与环带平方估计
+
+已证明四维中心极大函数的弱型、强型界和环带平方和的 L² 界。继续构造交换子，建立有限指数的跨尺度双线性估计，再接入三次能量的连续性与系数差结论。 [四维极大函数与环带平方估计](../statements/harmonic-maximal-and-square-estimates.zh-CN.md)

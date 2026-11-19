@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ad0069713c64efffb74cc5740a7e756480be63cbf04b502de89d406eef91eaa3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `12a7e1d38a44b990b9633421234e617b0c70590b5356637df436c76b933194a0`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: Establish the global commutator decomposition and exact exponent interface, then combine symmetric polarization, continuity, and coefficient-difference conclusions.
+Next: The four-dimensional weak and strong maximal bounds and the annular L² square estimates are proved. Continue the commutator construction and establish its finite-exponent bilinear bound across scales before deriving cubic-energy continuity and coefficient differences.
 
 <a id="a03"></a>
 

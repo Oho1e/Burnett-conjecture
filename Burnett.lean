@@ -134,3 +134,5 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Analysis.CenteredMaximal.MaximalLp
+import Burnett.Analysis.DyadicSquare.ShiftedSquare
