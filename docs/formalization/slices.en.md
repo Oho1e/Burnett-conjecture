@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `73a6fba3b54e60067cfc4374aa5ce6a90dbd3cb4a0ee83eaebd6c813f90c5783`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2a779f38d93af1854d8f9c32939373c20b8cbae781fa4d778b74e4bfda5847b4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -221,7 +221,7 @@ Supplementary obligation:
 
 - Equivalence of local derivative bounds under changes of fixed r and coordinates (lines 105–108).
 
-Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace now send a vacuum sequence to coordinate vacuum on each preferred chart. Complete the Lorentzian signature and time orientation data and connect the bridge to the local Ricci conclusions and global objects.
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace now send a vacuum sequence to coordinate vacuum on each preferred chart. Complete the Lorentzian signature and time orientation data and connect the bridge to the local Ricci conclusions and global objects.
 
 <a id="f03"></a>
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: Lock the exact test class, bundle values, and quantifiers of the external microlocal interface. Treat the common subsequence and Gram conversion as separately checkable obligations.
+Next: The cutoff commutator for fixed angular Fourier multipliers and their low-frequency modifications tends strongly to zero on localized weakly null inputs. Positive matrix representation on compact spaces gives ordered complex measures with a common finite dominating trace. The preferred chart overlaps have half-density pairings, cutoff transfer, a countable cover, and near- and far-field kernel geometry bounds. Apply these results to the same original-metric subsequence and compare the conjugated order-zero operators to verify the transformation of the ordered entries and trace, bundle compatibility and Gram conversion.
 
 <a id="f06"></a>
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: The measurable coordinate change and nonnegative reweighting reconstruct every event from a given angular kernel. Derive the geometric marginal and kernel from the original sequence, identify its Einstein moments and prove vanishing over vacuum regions.
+Next: Smooth-test positivity and measure determination, local weighted disintegration for a given joint measure and marginal density, and gluing and almost-everywhere uniqueness on a countable cover with local bounds are available. Measurable coordinate change, nonnegative reweighting and reconstruction of every event for a given angular kernel are also proved. Derive the actual base marginal and angular kernel from the same F07 physical measure, establish local bounds and unit null-shell concentration, and verify the Einstein second moments and vanishing on vacuum regions.
 
 <a id="a01"></a>
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: Establish the global commutator decomposition and exact exponent interface, then combine symmetric polarization, continuity, and coefficient-difference conclusions.
+Next: The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are available, along with the four-dimensional weak and strong centered maximal bounds and annular L² square estimates. Identify the physical commutator and prove the finite-exponent multiplier bounds across scales, then connect symmetric polarization, cubic-energy continuity and coefficient differences.
 
 <a id="a03"></a>
 
@@ -1381,7 +1381,7 @@ Boundaries:
 Consumers: This slice supplies no mathematical input or application to other slices.
 
 
-Next: First give precise independent interfaces for ODE existence and constraint preservation, then compute the Einstein tensor. The nonrepresentation branch must cover every candidate measure through positive-moment support determination, future-sheet folding, and the specified test.
+Next: The same actual Lorentzian metric gives the Einstein tensor properties, zero divergence and nonrepresentability for every auxiliary metric. One smooth homogeneous test handles both sheets. Changing the unit section pushes the measure forward after weighting by the square of the change-of-normalization factor. Verify the production combination and record author confirmation separately.
 
 <a id="x05"></a>
 

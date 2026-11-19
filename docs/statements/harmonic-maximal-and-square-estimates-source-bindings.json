@@ -1,0 +1,100 @@
+{
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_lines": [
+    626,
+    685
+  ],
+  "modules": {
+    "Burnett.Analysis.CenteredMaximal.MaximalWeak": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalWeak.lean",
+      "source_sha256": "350f399ab8deb08ab50c08d5a9090788ac4d275907e57a6cf6a356e8e777f160"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalTail": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalTail.lean",
+      "source_sha256": "1d989a22f556d4cc9793e38df15629222020fc354998edc8844de6d093ee5bd7"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalMeasurable": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalMeasurable.lean",
+      "source_sha256": "1ade73de9578dd0257227d5d796ae66a0788acd25cd3ef07eb156d8227996c1b"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalDistribution": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalDistribution.lean",
+      "source_sha256": "c415e9e634e1fc903b11a26b5e04f899b53ebfb8e222e7c69fcc171fe3bcdf60"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalLayerBound": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalLayerBound.lean",
+      "source_sha256": "a3a8ba9ec3bc08853d8ca14cefb51dfa6792684626126eccbd4bdefbeb0a40a8"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalMoment": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalMoment.lean",
+      "source_sha256": "5060bdc2c19cb206e4ce414e8e866796aa5ee10d2a5b0c6cedd41f805e6f3dec"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalStrong": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalStrong.lean",
+      "source_sha256": "dba047dbe2e631bd08f96c5d56c9e763f68a7858c4fc25e6500d9510689528f7"
+    },
+    "Burnett.Analysis.CenteredMaximal.MaximalLp": {
+      "path": "Burnett/Analysis/CenteredMaximal/MaximalLp.lean",
+      "source_sha256": "80fc1b86740e5271fa6efd6758fa1160654337462b7a2d6b4e497bbaebf3b28d"
+    },
+    "Burnett.Analysis.DyadicSquare.SquareShell": {
+      "path": "Burnett/Analysis/DyadicSquare/SquareShell.lean",
+      "source_sha256": "acc3c159da92df88a37dc766f0f2e10899f09560cbb252cdd9e5c613da1d7a76"
+    },
+    "Burnett.Analysis.DyadicSquare.SquareEnergy": {
+      "path": "Burnett/Analysis/DyadicSquare/SquareEnergy.lean",
+      "source_sha256": "62a620d0dd0d3e2c1671f5fcb5b64d376c946c07a6014dd3b138f3df34f2b8be"
+    },
+    "Burnett.Analysis.DyadicSquare.ShiftedSquare": {
+      "path": "Burnett/Analysis/DyadicSquare/ShiftedSquare.lean",
+      "source_sha256": "392636e8a91e27e5c8f7822ec3672afb040b0d22de3961486d1c2d6da503f306"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:weak-maximal",
+      "module": "Burnett.Analysis.CenteredMaximal.MaximalTail",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_weak_type",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:strong-maximal",
+      "module": "Burnett.Analysis.CenteredMaximal.MaximalLp",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_complex_Lp",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square",
+      "module": "Burnett.Analysis.DyadicSquare.SquareEnergy",
+      "declaration": "Burnett.Analysis.DyadicSquare.annular_square_L2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-square",
+      "module": "Burnett.Analysis.DyadicSquare.ShiftedSquare",
+      "declaration": "Burnett.Analysis.DyadicSquare.shifted_annular_square_L2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "stage_sha256": "49a181093efd54ff4893b1a6bcd4c4a074a881932268c0ee546001905c94917a",
+  "independent_review_sha256": "81b821f88ee0a87e563612127844ff7eefd67cf13d0e912089207da9dc7197dd",
+  "public_declarations": 28,
+  "closes_parent_claim": false
+}

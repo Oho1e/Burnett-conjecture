@@ -1,0 +1,92 @@
+{
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_lines": [
+    626,
+    677
+  ],
+  "modules": {
+    "Burnett.Analysis.CubicEnergy.FrequencySplit": {
+      "path": "Burnett/Analysis/CubicEnergy/FrequencySplit.lean",
+      "source_sha256": "bc9e10fe3f1bdd87d361a675b487b6cae2b2ccbbd29a3181f3099033eb565fe2"
+    },
+    "Burnett.Analysis.CubicEnergy.HighSymbols": {
+      "path": "Burnett/Analysis/CubicEnergy/HighSymbols.lean",
+      "source_sha256": "10841f23923999205e71f7cc458834543f377655c6450d91dcdd818a0b8166a6"
+    },
+    "Burnett.Analysis.CubicEnergy.SegmentIntegral": {
+      "path": "Burnett/Analysis/CubicEnergy/SegmentIntegral.lean",
+      "source_sha256": "42ef18ed51c82bf53a46acbccfb028b2e6ee7e64c01795efffd61ca24db8bd92"
+    },
+    "Burnett.Analysis.CubicEnergy.LowSymbol": {
+      "path": "Burnett/Analysis/CubicEnergy/LowSymbol.lean",
+      "source_sha256": "2e24f3ac37bbfd7a6ba3b9a312a6e7414a242e362a5fde4dc2fc630b232d7008"
+    },
+    "Burnett.Analysis.CubicEnergy.HomogeneousBounds": {
+      "path": "Burnett/Analysis/CubicEnergy/HomogeneousBounds.lean",
+      "source_sha256": "46f0e922f13915e2d0a007f84451a868a4205a2950e6e5768d6b481e796adf8e"
+    },
+    "Burnett.Analysis.CubicEnergy.SymbolDecomposition": {
+      "path": "Burnett/Analysis/CubicEnergy/SymbolDecomposition.lean",
+      "source_sha256": "5016ac74bb0412b90e9197d69a0c2e9dab0d7e69df103958d485b5b7fb566b3e"
+    },
+    "Burnett.Analysis.CubicEnergy.FourierPairing": {
+      "path": "Burnett/Analysis/CubicEnergy/FourierPairing.lean",
+      "source_sha256": "742a4a96dd09dec7401dd9a2b423e1e93d73965b372fa528970f392917df52e0"
+    },
+    "Burnett.Analysis.CubicEnergy.FourierIdentity": {
+      "path": "Burnett/Analysis/CubicEnergy/FourierIdentity.lean",
+      "source_sha256": "f83e6b897d32514fa5cf199e7f5c819876aac152009a9090f1b75cb65c8de503"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:commutator:low-frequency-segment",
+      "module": "Burnett.Analysis.CubicEnergy.FrequencySplit",
+      "declaration": "Burnett.A02.FrequencySplit.segment_norm_lower",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:commutator:global-symbols",
+      "module": "Burnett.Analysis.CubicEnergy.SymbolDecomposition",
+      "declaration": "Burnett.A02.FrequencySplit.commutator_symbol_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-integrability",
+      "module": "Burnett.Analysis.CubicEnergy.FourierPairing",
+      "declaration": "Burnett.A02.FrequencySplit.pieces_integrable",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-frequency-pairing",
+      "module": "Burnett.Analysis.CubicEnergy.FourierIdentity",
+      "declaration": "Burnett.A02.FrequencySplit.fourier_trilinear_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "independent_reviews": {
+    "a02-commutator-symbol-independent": "80f81b14fd53ea58101ac184cf735c8a60af266992f2efd684c6961365753d3a",
+    "a02-commutator-fourier-pair-independent": "c46d3e826593079a0a0a90de52a1277e1864f26e083586fcb59a429cdd55c61f"
+  },
+  "production_review": {
+    "sha256": "3325eaad6dcbb9deebfe5deb53b8e09c061be4ce76756c02b55f05526409ac58",
+    "public_declarations": 38
+  }
+}

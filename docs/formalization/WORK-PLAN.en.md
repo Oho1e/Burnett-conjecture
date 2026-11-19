@@ -165,9 +165,13 @@ When a major interface is missing, split foundational proof tasks by the smalles
 | Lift L01 | Prove the general conditional lemma once the F02 objects and the geometric/measure tools it uses are ready | F07/C04 supply application data, not prerequisites that the L01 proof must await. Supply moments and transport for the same measure when applying L02. Do not add affine completeness |
 | X01 | Euclidean model geometry and the X07 intrinsic curvature bridge | The integrated proof establishes exact harmonicity, admissibility, and finite but diverging tensor L² norms on the paper's fixed compact set. Verify the registered modules with the X07 curvature bridge now on main. [Statement and evidence](../statements/harmonic-shear.en.md) |
 | X03 and X04 | May start separately once the relevant F02 objects are ready; close the X03 moment example and the X04 actual-metric construction separately | X03→X04 is explanatory. Do not make it a reason to wait serially or substitute the rotating-tensor example for the geometric counterexample. Do not add a vacuum approximation conclusion |
+| X04 actual metric | Both time sheets, with arbitrary positive auxiliary metric | The exact Lean capstone and independent reverse readback are recorded with the statement. Check the repository combination on the merged intrinsic geometry baseline. [Statement](../statements/bianchi-counterexample.en.md) |
 | X05 → X06 in the manuscript | The manuscript develops the general two-polarization construction before the multiscale example. The delivered X06 Lean proof constructs the explicit multiscale measure directly, and the X05 Lean proof reuses the coordinate Hamiltonian and integration lemmas introduced with X06. | X05 constructs the full-momentum representation independently of the main theorem. X06 proves multiscale vacuum, the derivative-scale lower bound, and the exact zero-source coordinates. |
 | X07 | Local convergence, weak derivatives, and the intrinsic full-curvature bridge from PR #19 | The independently reviewed proof of full Riemann flatness of the limit entered `main` in PR #22. [Statement and evidence](../statements/flat-rigidity.en.md) |
 | X08, X09, X10 | Continually check scope and consumers through X08 from the starting point; handle necessary X09 identities according to actual consumers; check X10 literature when needed | X08 scope decisions do not await the F07 mathematical proof, while its implementation retains its actual inputs. X08 is not an approved additional certification set. When it contains a necessary dependency or independent result, check it under the standard and refer substantive ambiguities to the user. Do not mechanically make context into Lean theorems |
+
+F05 now supplies the fixed angular cutoff commutator and its low-frequency modification. Use these in the base-dependent and chart-transition tests on the same sequence. [Angular Fourier commutators and fixed low-frequency regularization](../statements/angular-cutoff-commutator.en.md)
+F05 constructs regular scalar compression measures and positive semidefinite matrix values on Borel sets. Use the same trace for all ordered entries when identifying the chart limits. [Positive matrix-measure representation](../statements/positive-matrix-measure.en.md)
 
 ### Five Common-Closure Points
 
@@ -189,6 +193,8 @@ The common-closure groups retain their responsibilities from the original [slice
 - Use the proved X02 counterexample to check the applicability of analytic interfaces: quadratic characteristic localization alone is not sufficient to make an arbitrary cubic energy vanish. Actual Einstein cubic closure still requires the complete vertex, Ward classification, and correction estimates.
 - Fix finite p*>3 and κ, then fix δ, η, and the patch scale ℓ. For fixed n, first restore upper-frequency and angular truncations; then, at fixed δ and ℓ, let n→∞, followed by ℓ→0 and finally δ→0. Follow [dependencies.md](dependencies.en.md) for the precise truncation-restoration order and constant dependencies. Do not require a second-derivative scale or extra endpoint estimates absent from the paper.
 - Retain each patch’s local volume factor before summing using bounded overlap. Do not charge the entire chart norm to every patch, or describe a quantity small at fixed ℓ as uniformly small in ℓ.
+
+The F08 local disintegration lemma can be checked independently. To apply it, first obtain the actual bounded local marginal density from F07, then keep the same physical measure in the fiber concentration, second moments, and global compatibility arguments. [Local disintegration](../statements/local-disintegration.en.md)
 
 ## 6. Execution Locations and Direct Dependencies for All 46 Slices
 
@@ -541,6 +547,21 @@ The general proposition now has a direct Lean proof under the physical assumptio
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
 
+## 26. Applying the F08 countable-cover disintegration
+
+Use the joint law of the same F07 physical measure throughout. Identify its first marginal with `e_r dV`, exhibit a countable measurable cover with finite restrictions and a bound for the density on each patch, and verify the measurable relation consisting of unit null covectors above the given base point. The disintegration theorem then supplies a single kernel of the stated fiber mass, with almost-everywhere concentration and uniqueness for that joint law. Recover the componentwise Einstein moments from the actual stress identity and prove vanishing over vacuum regions. [F08 theorem](../statements/countable-fiber-disintegration.en.md)
+## 27. F05 geometry on preferred chart overlaps
+
+Preferred chart overlaps now have half-density pairings, transported cutoffs, countable covers, and near and far geometric bounds. Use the bounds to compare the conjugated order-zero operators, identify the ordered component measures on the same subsequence, and establish covariance under fixed smooth chart changes. [F05 geometry on preferred chart overlaps](../statements/chart-overlap-geometry.en.md)
+## 28. Changing the auxiliary metric in the vacuum sequence hypotheses
+
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. These estimates allow a construction on the same subsequence to use different auxiliary metrics. The transformation law of the microlocal measure and the transport equation require further arguments. [Changing the auxiliary metric in the vacuum sequence hypotheses](../statements/auxiliary-metric-admissibility.en.md)
+## 29. Fourier symbols for the cubic-energy commutator
+
+The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences. [Fourier symbols for the cubic-energy commutator](../statements/cubic-energy-fourier-symbols.en.md)
+## 30. Maximal and annular square estimates in four dimensions
+
+The four-dimensional weak and strong maximal bounds and the annular L² square estimates are proved. Continue the commutator construction and establish its finite-exponent bilinear bound across scales before deriving cubic-energy continuity and coefficient differences. [Maximal and annular square estimates in four dimensions](../statements/harmonic-maximal-and-square-estimates.en.md)
 ## Angular kernel transforms (F07–F08)
 
 Given a disintegration, the coordinate formula computes every measurable joint event and the weighted kernel reconstructs the transported physical mass. The next geometric step is to supply the original sequence’s kernel, its Lorentz base volume, and the auxiliary norm squared with its radial map. Identify the Einstein moments for that same measure. [Registered supporting results](../statements/angular-kernel-transforms.en.md)
