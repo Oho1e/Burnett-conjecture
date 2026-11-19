@@ -86,7 +86,7 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+The local support lemmas cover smooth tests and weighted disintegration for a given finite joint measure. The geometric marginal and the full corollary remain to be proved. [F08 local disintegration](local-disintegration.en.md)
 
 ## T04
 

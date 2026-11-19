@@ -274,7 +274,7 @@
         "张量矩恒等式为a.e.；e_r≥0由光滑性提升至处处，二者量词不能混同。",
         "可测纤维测度不等于光滑Vlasov密度。"
       ],
-      "next_action": "核定固定库的解体定理适用条件，先构造边缘再给角向解体并证明真空区消失。",
+      "next_action": "用局部光滑测试的正性与测度确定定理，从同一 F07 物理测度的 Einstein 矩得到实际基底边缘。有限坐标联合测度与已知有界边缘密度已有加权纤维分解，下一步接入各图的实际单位零余向量关系、几乎处处 Einstein 二阶矩、全局相容性以及真空区消失。",
       "supplementary_obligations": []
     },
     {
@@ -4930,6 +4930,30 @@
       "claim_id": "f05:matrix-measure:representation",
       "source_slices": [
         "F05"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "source_slices": [
+        "F08"
       ]
     }
   ],

@@ -194,6 +194,8 @@ The common-closure groups retain their responsibilities from the original [slice
 - Fix finite p*>3 and κ, then fix δ, η, and the patch scale ℓ. For fixed n, first restore upper-frequency and angular truncations; then, at fixed δ and ℓ, let n→∞, followed by ℓ→0 and finally δ→0. Follow [dependencies.md](dependencies.en.md) for the precise truncation-restoration order and constant dependencies. Do not require a second-derivative scale or extra endpoint estimates absent from the paper.
 - Retain each patch’s local volume factor before summing using bounded overlap. Do not charge the entire chart norm to every patch, or describe a quantity small at fixed ℓ as uniformly small in ℓ.
 
+The F08 local disintegration lemma can be checked independently. To apply it, first obtain the actual bounded local marginal density from F07, then keep the same physical measure in the fiber concentration, second moments, and global compatibility arguments. [Local disintegration](../statements/local-disintegration.en.md)
+
 ## 6. Execution Locations and Direct Dependencies for All 46 Slices
 
 The following table follows the locked source order; **it does not require serial execution by row**. It expands the current 135 edges: the proof column contains `proof-input` relationships, the definition/specification column preserves the original types, and the final column contains only application or explanation relationships. External foundational proofs absent from this inter-slice graph must still be checked as described in Section 4. An empty inter-slice input list does not mean that no mathematical dependencies exist.

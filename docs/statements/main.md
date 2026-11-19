@@ -86,7 +86,7 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+局部支持引理涵盖光滑试验及给定有限联合测度的加权分解。原度量的实际边缘和完整推论仍待证明。[F08 局部测度分解](local-disintegration.zh-CN.md)
 
 ## T04
 
