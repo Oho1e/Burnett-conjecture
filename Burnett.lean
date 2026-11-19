@@ -71,7 +71,6 @@ import Burnett.Geometry.ManifoldMetricTransition
 import Burnett.Geometry.ManifoldLorentzVolume
 import Burnett.Geometry.LeviCivitaUniqueness
 import Burnett.Geometry.MeasureGluing
-import Burnett.Analysis.FiberDisintegration.Weighted
 import Burnett.Geometry.CoordinateCovariantDerivative
 import Burnett.Geometry.AffineConnection
 import Burnett.Geometry.ManifoldBilinear
@@ -135,3 +134,9 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Counterexamples.Bianchi
+import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
+import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
+import Burnett.Analysis.BaseMarginal.SmoothTests
+import Burnett.Analysis.BaseMarginal.FiberKernel
+import Burnett.Analysis.FiberDisintegration.Weighted

@@ -86,6 +86,8 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
+The local support lemmas cover smooth tests and weighted disintegration for a given finite joint measure. The geometric marginal and the full corollary remain to be proved. [F08 local disintegration](local-disintegration.en.md)
+
 The F08 supporting results disintegrate a fixed joint measure over a countable measurable cover. The intrinsic marginal and tensor moments remain open in this corollary. [Countable-cover disintegration](countable-fiber-disintegration.en.md)
 
 ## T04
@@ -373,7 +375,7 @@ There exists a smooth Lorentzian metric on a product interval times $\R^3$ whose
 \end{proposition}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+Mathematical/Lean correspondence: `Burnett.Bianchi.exists_bianchi_intrinsic_counterexample` constructs the smooth metric and excludes every nonnegative null-ray measure satisfying both the prescribed tensor moments and Hamilton transport. Author confirmation is pending. [Statement and verification evidence](bianchi-counterexample.en.md)
 
 ## T16
 
