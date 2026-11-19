@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `8678a7d17ca54de539b9436dbfa79c672d7dcca6e7f13a27c339d154074c6ebe`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `5e3f61013997e220b4903e37bdaca7888fa6db1c3d4c1e3a1ac87d00cc8fd645`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: Dense square positivity of the constant-vector compressions gives one family of ordered complex measures and a finite dominating trace on each compact space. Connect this representation to the common original-metric subsequence and prove the measure transformation on chart overlaps.
+Next: The cutoff commutator for a fixed angular Fourier multiplier and its low-frequency modifications tends strongly to zero on localized weakly null inputs. On compact spaces, positivity of constant-vector compressions on squares yields ordered complex measures with a common finite dominating trace. Apply both results to the same original-metric subsequence to identify the measures under base-dependent tests and on chart overlaps, then check bundle compatibility and Gram conversion.
 
 <a id="f06"></a>
 
@@ -1381,7 +1381,7 @@ Boundaries:
 Consumers: This slice supplies no mathematical input or application to other slices.
 
 
-Next: First give precise independent interfaces for ODE existence and constraint preservation, then compute the Einstein tensor. The nonrepresentation branch must cover every candidate measure through positive-moment support determination, future-sheet folding, and the specified test.
+Next: The same actual Lorentzian metric gives the Einstein tensor properties, zero divergence and nonrepresentability for every auxiliary metric. One smooth homogeneous test handles both sheets. Changing the unit section pushes the measure forward after weighting by the square of the change-of-normalization factor. Verify the production combination and record author confirmation separately.
 
 <a id="x05"></a>
 
