@@ -1,0 +1,62 @@
+{
+  "base": "a45d94445fbb6cd21d522b0315ae783a5a5303b6",
+  "branch": "formalization/shifted-fourier-windows",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "forward_receipt_sha256": "3582ebb1654eb25277c41774bf126e2d6c16221e9086b301e11ea391b77dffd9",
+  "forward_independent_receipt_sha256": "1d7128059ebb65a79353ff8d9032ae14c3e9548e8c4c337f542877ddd242fbee",
+  "modules": {
+    "Burnett.Analysis.ShiftedFourierWindow.KernelMaximal": {
+      "path": "Burnett/Analysis/ShiftedFourierWindow/KernelMaximal.lean",
+      "source_sha256": "16f0c2051e8745f918069dd6446971ceb4a9fa322a9f974dff836c461800c05c",
+      "reviewed_forward_source_sha256": "5c1ee32c6bbd81131e2b30b0e03530e3cb46a49c467ab8ec377b827a9b1b30cc"
+    },
+    "Burnett.Analysis.ShiftedFourierWindow.RadialKernel": {
+      "path": "Burnett/Analysis/ShiftedFourierWindow/RadialKernel.lean",
+      "source_sha256": "a85659d58e5226e9b36c1df72f6379997b961e271d0dd155d75f68045def017c",
+      "reviewed_forward_source_sha256": "030fbdeeb03d49a3c3ca2a38192781bd8d2d1ec8ace7781a445673e6fcb73739"
+    },
+    "Burnett.Analysis.ShiftedFourierWindow.SchwartzMaximal": {
+      "path": "Burnett/Analysis/ShiftedFourierWindow/SchwartzMaximal.lean",
+      "source_sha256": "0296731b48172c530657b39f2b6bd0816867e66322a5aafd1ef9e09d6b21bfe7",
+      "reviewed_forward_source_sha256": "920689d22a85bb9a50f4e53364d103053f0121047fe648c7154d3862de7f9166"
+    },
+    "Burnett.Analysis.ShiftedFourierWindow.LowPassFourier": {
+      "path": "Burnett/Analysis/ShiftedFourierWindow/LowPassFourier.lean",
+      "source_sha256": "17098d80ad6171f7d5c63d2f77529b018255e12dc53a2a9244f88897f04b290e",
+      "reviewed_forward_source_sha256": "49253946747250619ae9fb8314a8058564a7c50a6fbd54409d74fefefaf05208"
+    },
+    "Burnett.Analysis.ShiftedFourierWindow.LowPassLp": {
+      "path": "Burnett/Analysis/ShiftedFourierWindow/LowPassLp.lean",
+      "source_sha256": "a9a14a3bf6faca4cc03064f4601a8334defc252509d7d8f28fe3b913d2ce03d0",
+      "reviewed_forward_source_sha256": "18bbe52f6bbbfcad162f16f88bd17533837de5e97c17485200da121ac1ee786f"
+    }
+  },
+  "source_lines": [
+    626,
+    685
+  ],
+  "slice": "A02",
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:shifted-window-physical",
+      "module": "Burnett.Analysis.ShiftedFourierWindow.LowPassFourier",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.shifted_window_physical",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-maximal",
+      "module": "Burnett.Analysis.ShiftedFourierWindow.LowPassLp",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp",
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "closes_parent_claim": false
+}

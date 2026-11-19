@@ -565,3 +565,7 @@ The four-dimensional weak and strong maximal bounds and the annular L² square e
 ## Angular kernel transforms (F07–F08)
 
 Given a disintegration, the coordinate formula computes every measurable joint event and the weighted kernel reconstructs the transported physical mass. The next geometric step is to supply the original sequence’s kernel, its Lorentz base volume, and the auxiliary norm squared with its radial map. Identify the Einstein moments for that same measure. [Registered supporting results](../statements/angular-kernel-transforms.en.md)
+
+## 31. Shifted Fourier window estimates in four dimensions
+
+The global symbol decomposition and Fourier pairings are proved, along with the four-dimensional maximal and annular L² square estimates and the strong Lᵖ bound for shifted Fourier windows. Integrate the finite-exponent annular square estimate, the product bound with two annular factors and one low-frequency factor, and the full-scale joint multiplier bound. Apply these to the physical commutator, cubic-energy continuity and coefficient differences. [Shifted Fourier window estimates in four dimensions](../statements/shifted-fourier-window-estimates.en.md)

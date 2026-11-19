@@ -2638,6 +2638,16 @@
       "claim_id": "support:angular-kernel-borel-reconstruction",
       "module": "Burnett.Analysis.FiberDisintegration.Reweight",
       "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_reconstruct"
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-physical",
+      "module": "Burnett.Analysis.ShiftedFourierWindow.LowPassFourier",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.shifted_window_physical"
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-maximal",
+      "module": "Burnett.Analysis.ShiftedFourierWindow.LowPassLp",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp"
     }
   ],
   "inventory": [
@@ -13129,6 +13139,42 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.F08.KernelRenormalization.reweightedKernel_reconstruct",
       "statement_record": "docs/statements/angular-kernel-transforms.zh-CN.md"
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-physical",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.shifted_window_physical",
+      "statement_record": "docs/statements/shifted-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-maximal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp",
+      "statement_record": "docs/statements/shifted-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {
