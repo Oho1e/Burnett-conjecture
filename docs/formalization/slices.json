@@ -56,7 +56,7 @@
         "全局双曲性仅用于全动量提升，不可加到全局μ存在或输运前提。",
         "规格依赖图中的前向引用并不表示本片已经证明主定理。"
       ],
-      "next_action": "已有由原局部辅度量导数界导出的真实图内导数界。已构造内禀曲率与 Ricci 迹，并将内禀真空换为同一序列在各优先图中的坐标真空。继续完成 Lorentz 符号与时间定向，将该桥接入局部 Ricci 结论和全局对象。",
+      "next_action": "已证明原真空序列的局部一致收敛与紧集一阶导数界在任意两个光滑辅助黎曼度量之间等价。已有由原局部辅度量导数界导出的真实图内导数界。已构造内禀曲率与 Ricci 迹，并将内禀真空换为同一序列在各优先图中的坐标真空。继续完成 Lorentz 符号与时间定向，将该桥接入局部 Ricci 结论和全局对象。",
       "supplementary_obligations": [
         {
           "id": "local:admissibility-coordinate-invariance",
@@ -5026,6 +5026,36 @@
       "claim_id": "f05:overlap:countable-overlap-cover",
       "source_slices": [
         "F05"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-tensor-norm",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:local-uniform-limit",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-connection-comparison",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:uniform-derivative-bound",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:vacuum-admissibility-iff",
+      "source_slices": [
+        "F02"
       ]
     }
   ],

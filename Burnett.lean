@@ -143,3 +143,4 @@ import Burnett.Analysis.FiberDisintegration.Weighted
 import Burnett.Analysis.Microlocal.Overlap.KernelGeometry
 import Burnett.Analysis.Microlocal.Overlap.L2Transfer
 import Burnett.Analysis.Microlocal.Overlap.Localization
+import Burnett.Geometry.AuxiliaryAdmissibility

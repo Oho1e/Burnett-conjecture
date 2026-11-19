@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `113372c103f3b0c20217f756d4acb4366124b263614a0ec7e4dc315cafc05c1f`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6cf719e5bb52738a90268a555cdd25a7a6256d9e20e18408f02f951119c223ae`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -221,7 +221,7 @@ Supplementary obligation:
 
 - Equivalence of local derivative bounds under changes of fixed r and coordinates (lines 105–108).
 
-Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace now send a vacuum sequence to coordinate vacuum on each preferred chart. Complete the Lorentzian signature and time orientation data and connect the bridge to the local Ricci conclusions and global objects.
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace now send a vacuum sequence to coordinate vacuum on each preferred chart. Complete the Lorentzian signature and time orientation data and connect the bridge to the local Ricci conclusions and global objects.
 
 <a id="f03"></a>
 

@@ -553,3 +553,6 @@ Use the joint law of the same F07 physical measure throughout. Identify its firs
 ## 27. F05 geometry on preferred chart overlaps
 
 Preferred chart overlaps now have half-density pairings, transported cutoffs, countable covers, and near and far geometric bounds. Use the bounds to compare the conjugated order-zero operators, identify the ordered component measures on the same subsequence, and establish covariance under fixed smooth chart changes. [F05 geometry on preferred chart overlaps](../statements/chart-overlap-geometry.en.md)
+## 28. Changing the auxiliary metric in the vacuum sequence hypotheses
+
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. These estimates allow a construction on the same subsequence to use different auxiliary metrics. The transformation law of the microlocal measure and the transport equation require further arguments. [Changing the auxiliary metric in the vacuum sequence hypotheses](../statements/auxiliary-metric-admissibility.en.md)
