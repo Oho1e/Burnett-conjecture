@@ -1,0 +1,27 @@
+{
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "848fc07fdce09b58e5504bae468b80f5a8b0aae0",
+  "source_lines": [
+    403,
+    404
+  ],
+  "slice": "F05",
+  "path": "Burnett/Analysis/Microlocal/CompactFrequencyCutoff.lean",
+  "production_source_sha256": "9216491f4cb07097de4ef639e0a9eb8a707730a64f31623936e2c81df586ec8e",
+  "forward_source_sha256": "90645fd440b53164fd1d1ab9ac085422606ecb7907303d04597369ba0fa0c03c",
+  "forward_receipt_sha256": "53a4cc65ad0785ca105626a3805122db32b75dd48961c3da59d9c9b66ff3de7c",
+  "forward_baseline_sha256": "eaa7441394bee146a46d779adc5deb3683afe8ea913e3e9684de628928bf8bbc",
+  "targets": [
+    {
+      "claim_id": "f05:compact-frequency:bounded-frequency",
+      "module": "Burnett.Analysis.Microlocal.CompactFrequencyCutoff",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_truncated_multiplier"
+    },
+    {
+      "claim_id": "f05:compact-frequency:decaying-symbol",
+      "module": "Burnett.Analysis.Microlocal.CompactFrequencyCutoff",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_decaying_multiplier"
+    }
+  ],
+  "closes_parent_claim": false
+}
