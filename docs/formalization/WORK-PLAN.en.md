@@ -575,3 +575,7 @@ The global symbol decomposition and Fourier pairings are proved, along with the 
 ## 32. Signed Fourier windows in four dimensions
 
 Signed annular sums have a uniform L² bound and their actual convolution kernel meets the integral Hörmander condition. [Signed Fourier windows in four dimensions](../statements/signed-fourier-window-estimates.en.md)
+
+## 33. Four-dimensional annular square and product estimates
+
+Finite-exponent signed annular sums and annular square functions now have Lᵖ bounds, together with the product estimate for two annular factors and one low-frequency factor. Continue the full-scale joint multiplier bound and its application to the cubic energy. [Four-dimensional annular square and product estimates](../statements/annular-square-and-product-estimates.en.md)

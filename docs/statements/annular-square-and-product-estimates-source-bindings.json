@@ -1,0 +1,262 @@
+{
+  "dependency_pull_request": 37,
+  "dependency_head": "ea894e2620383ba9e053437d0cf6c467847862b8",
+  "dependency_tree": "e3ed4f367b1ac3155a53becb358d39bcdca3d756",
+  "slice": "A02",
+  "source_lines": [
+    660,
+    671
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "source_independent_receipts_sha256": {
+    "calderon-split": "b8166fd414d45a51a02541a2fa6beaf062d94afae767ff0f8657e7c87f76475d",
+    "signed-window-weak": "89c8b80b1df1bd6a54ae548f509cb063399601b4885b8d320a208f38a9e2aedf",
+    "signed-window-lower": "7f2ae4cb3ee1ee5d23c89f719b694384c569c0397b0abf8fcbc3a7d30a6ec7d5",
+    "signed-window-all": "3911e5170ce4f08b6ffeb77235a42d9ffdb8663183fe5e7d093328c057a71982",
+    "annular-square-lp": "117b68492f05245843f2aa608647832c6f836d84cc98b29b85a2f22139c0dab6",
+    "two-annular-one-low": "4869ce2e91127a21ac25e91cb3743bd44799d1b11e373e5a0ae98d98ddf2b2f3"
+  },
+  "port_receipt_sha256": "fe0d424a87323b71ada287877b671550aaf4e19860645e8a82c30c3316e0b667",
+  "modules": {
+    "Burnett.Analysis.SignedFourierWindow.AnnularSquareLp": {
+      "path": "Burnett/Analysis/SignedFourierWindow/AnnularSquareLp.lean",
+      "production_source_sha256": "3a931e9f70232c9648d49fa266cfe2ebefb18aa8bb1566794b858a3351c1deac",
+      "audited_source_sha256": "a9f09e325b05b913dda2dbc06dc28c25c75cf91402fac2c70fdc6aa979a6c86b",
+      "independently_replayed_source_sha256": "0a88c7c741d4abfc125ece3d26134e5563b0f878f01a19452917cddcf03e1c06"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonBadSum": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonBadSum.lean",
+      "production_source_sha256": "477b30e636a26e476e22c34370690b1d2964d3ee9dac4bcca50667518e4143c0",
+      "audited_source_sha256": "1714494995fcc83dcfe5c622ab9f00b175191246e582bdac3795d24081264de8",
+      "independently_replayed_source_sha256": "3c33c517eb05e76002c9a76f0917a20a1fa70d4419c178d45742a025e3fd0cac"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonBalls": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonBalls.lean",
+      "production_source_sha256": "0b76cb494632cd1e642152b042efca4255946e8bf1c350dc173a059da2ee19ca",
+      "audited_source_sha256": "1404d1fb376fe6489dba5b7123852f3330d97b89d8913237e57dfa491974e92d",
+      "independently_replayed_source_sha256": "cf127f5833ddd88e6541b179a6964788f2d5a5a1b2164450c8e11830bcd366ad"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonBlock": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonBlock.lean",
+      "production_source_sha256": "ee00c350047a2c8be1adfb062168ae0de060a4cdc7831b9ac0326f0611e34b08",
+      "audited_source_sha256": "a07c1668287e7d411b4caf91610b5befafccc53adeef0b6c8b80256393b86517",
+      "independently_replayed_source_sha256": "de76bc0b57a3c7ad4fbea73a383bcb510c6856cc7b6bceae823571e1b844b498"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonCancellation": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonCancellation.lean",
+      "production_source_sha256": "96f43909d41ffeb56ab1d2e00c4cc64cf6169509b8b2f66f1bca7d69b080e0fa",
+      "audited_source_sha256": "8e1032a70c57c2ed81fabbcdb8d85b85e51282b0e5c209cc4a7097482a167389",
+      "independently_replayed_source_sha256": "40f97a7fc18a38a9ddd61b11ceef8b206dc444f6420416440e2e39f5f45dea96"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonColumn": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonColumn.lean",
+      "production_source_sha256": "730a9bbff9f2e2e9f9e5fcefc491230bd50eeb5187f4be4e7c0d44a2e69bf14c",
+      "audited_source_sha256": "4f1c87ca67318b1c8ed343a63e7bc9a73bcfee40b612427549e838a40e4b40be",
+      "independently_replayed_source_sha256": "1b0dfc0ce82020f0fd1c32db5963963a79aaef32375f62b835d9e6b30d24cc50"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonDifferentiation": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonDifferentiation.lean",
+      "production_source_sha256": "4cb4853321ddff011cdb349c8642883e79d4794604af2e1bd401e56b29173c59",
+      "audited_source_sha256": "9c00c8feff885befd4ec32e3a70088820a4b15708800f7cc22b3934e2a742950",
+      "independently_replayed_source_sha256": "9810bb7bfbe907de436043687705107e1de485eb74d11c1d5710d9d9ac33ff3d"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonEnergy": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonEnergy.lean",
+      "production_source_sha256": "6d792c7944c96ebf1503763acf664a509128ba63c2f70285bc408344b8cd0fc2",
+      "audited_source_sha256": "abd32b82785c7c048043ed0aafa43b63ab7825a679a9b754f12fba08cfd9e438",
+      "independently_replayed_source_sha256": "d42818b4c2dccf8895e3a833cd99df11761be1a1920b3df9b89cbe7eedb6418a"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonExceptional": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonExceptional.lean",
+      "production_source_sha256": "e677db06fc0a0c66caa952a3d0ab8587fd57f8453c076f09ab2450b881ac7840",
+      "audited_source_sha256": "9839ce7de1a218d843a8126dd86551dfcc68ee66b56c26586c4511778f2db322",
+      "independently_replayed_source_sha256": "d8abcabff773f642e7c70b3ff14fc8391e1b97a3f96411062eb384b0644fb519"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonFiniteKernel": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonFiniteKernel.lean",
+      "production_source_sha256": "b0ced723b734c276a652c99612ccf28b61bbfe505951ce22beef05bddcb6d6fb",
+      "audited_source_sha256": "76cd26730ca78c8035750bc155a594cfb7f8d83ed91560a19ba6770def1ec9c6",
+      "independently_replayed_source_sha256": "38e24cc609ad8a1084bd6651fa51f32944b028cb2758ebf8e1fe9e01a7480d2e"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonGood": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonGood.lean",
+      "production_source_sha256": "8c01993337c9df423e62654fa6dfb6df64df67978ca546bde9ea5a4d9f0fdadb",
+      "audited_source_sha256": "e733982b48cc36653275a5f7a82f53ac3c1523eafbc89ce1fe077d7afe56caea",
+      "independently_replayed_source_sha256": "56025164104718fba644c93960a909e8865376f69145fbf61c9c210fd20d927e"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonKernelL2": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonKernelL2.lean",
+      "production_source_sha256": "941a86765739a7453d3d5546b5bb1cebf61cded69cf6bf79dd723c9f841f0692",
+      "audited_source_sha256": "8c009d4849e03625d34f7d8a773e0f1a8acb740ea760d0d55681792fcbb2000f",
+      "independently_replayed_source_sha256": "2b94d0ab1dd99eda3a84cacf60425b82f371a41b57a65e7f5e3a897271c65c20"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonMass": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonMass.lean",
+      "production_source_sha256": "a07e5a968f5cb92c9c65351c4156235cf70716fc66ce4dc6c0f6e2cbb94ce776",
+      "audited_source_sha256": "fe51ad0bd2f227515ea89d6e2d119f1f1e7e15fb2d03f1f4e3146d9af648f871",
+      "independently_replayed_source_sha256": "15d58fc923e1b03e0d0e2e0fbb44ee856e2cf945b445d55b7d3b738b350e96ae"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonPartition": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonPartition.lean",
+      "production_source_sha256": "8ec13024aedd25b23db08f01a9472e54cd93023081ad82bdea82931e5f64e0e4",
+      "audited_source_sha256": "724b6b6f5332f6e769e971ac6680ed1978d33ec354004b0452733f6fa9d65bad",
+      "independently_replayed_source_sha256": "7b3654b27ad21a19908f6a980b871b7c1279d46906c69ab6ae2f4ddbecfa4f42"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonSplit": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonSplit.lean",
+      "production_source_sha256": "93d8f901f6928c909fa7a7a2a8efdc0824540ee6e5fd4bcf8d14ab07414620a1",
+      "audited_source_sha256": "cb61c39634607afef9968952fad19070e5e0110d5adcb50006ed9e426f3bada7",
+      "independently_replayed_source_sha256": "d5953d5fe9f5537eeac5a9e25ff1dcd6f378709532ccd93236339a2042e455f5"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonWeakEstimate": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonWeakEstimate.lean",
+      "production_source_sha256": "2cf26215f9a6706399d5b2c3004a896146742e4865d73c9809703344ed3fffe5",
+      "audited_source_sha256": "0de7b0f562fbcc04008485b8bcb8c48b576b97fcba8a353d470d2aba6cc39a21",
+      "independently_replayed_source_sha256": "ce8852a49ca5931ba761f9198da47e4237613fe7c7380a76950e3d3a908f70df"
+    },
+    "Burnett.Analysis.SignedFourierWindow.CalderonWeakType": {
+      "path": "Burnett/Analysis/SignedFourierWindow/CalderonWeakType.lean",
+      "production_source_sha256": "61c01e1c9b879333fd66ce0e6e60942ee5e04f434311f29717d214473b3a0c15",
+      "audited_source_sha256": "500d30b7bda59681d894e27fa9525d7ea2e72d2ecc23870e6bc108b455e9337b",
+      "independently_replayed_source_sha256": "fd8f7b4e302cb4c53c10c9a6ca3e81349cfdea796182af0160f3379a52dcc436"
+    },
+    "Burnett.Analysis.SignedFourierWindow.FiniteLowWindow": {
+      "path": "Burnett/Analysis/SignedFourierWindow/FiniteLowWindow.lean",
+      "production_source_sha256": "52799fe070bd6ed2433ce5b437f8416f56cdd4ba0bf213cc87f7d7b03c7ba0ea",
+      "audited_source_sha256": "bbc02a2e2f49c2ec79e67fb4cbaf214b13896678fac6dea55d75fae606c7c46a",
+      "independently_replayed_source_sha256": "6103531bce26d5704901f4e2577d5545e3d7bbcfe5217445b2bfd7f9780bb430"
+    },
+    "Burnett.Analysis.SignedFourierWindow.InterpolationBottom": {
+      "path": "Burnett/Analysis/SignedFourierWindow/InterpolationBottom.lean",
+      "production_source_sha256": "26943a18358c0db6fa7cd121899ac441e97216f152ea5acc872d592a9410e350",
+      "audited_source_sha256": "826c40b26b04f3ec76c96489968418cf95ae7c15e97907d74f8f335dd2330ec5",
+      "independently_replayed_source_sha256": "49eded4c9960dab68c36268fded272d8c932f67e099d4b901a06b2bbeb412e16"
+    },
+    "Burnett.Analysis.SignedFourierWindow.InterpolationLevel": {
+      "path": "Burnett/Analysis/SignedFourierWindow/InterpolationLevel.lean",
+      "production_source_sha256": "5ad79d88fabd73e037f71d74be11358aead40674cb131f5837b11b25d9d99fe0",
+      "audited_source_sha256": "f59015f19a1dccdce7c9270ccae1142bb9f37abf1a66ae8d868042907ec122e2",
+      "independently_replayed_source_sha256": "27bbd6fd0296b4facc2fb26738f69b1fa6701a6f0912ec1e611d1e86dc4296b7"
+    },
+    "Burnett.Analysis.SignedFourierWindow.InterpolationMoment": {
+      "path": "Burnett/Analysis/SignedFourierWindow/InterpolationMoment.lean",
+      "production_source_sha256": "17106fb4da785384f386fc9b003a88fc531f65dd4e6fe326f62f1dffbc444706",
+      "audited_source_sha256": "a974db85042a99cbd0a1f1460c957862a75cc3d07bfcb4882f56545a2582f763",
+      "independently_replayed_source_sha256": "0ab2ebba1a5e1f3234b088aa4b8c55fed980853e1f842b100d86fd7396be0736"
+    },
+    "Burnett.Analysis.SignedFourierWindow.InterpolationTruncate": {
+      "path": "Burnett/Analysis/SignedFourierWindow/InterpolationTruncate.lean",
+      "production_source_sha256": "130a2d09105782f8142c40a58a97867d1c88e23b0dbf39b9422d199e783bd83c",
+      "audited_source_sha256": "3752508802bcc598fb50db63b809805351066cc623b43279f253b25edc00ad02",
+      "independently_replayed_source_sha256": "c0adb13539e468bb7c1b7377c98c2f198c90e941b6b44e6b3d3aac59e24fbd68"
+    },
+    "Burnett.Analysis.SignedFourierWindow.KernelBilinearDual": {
+      "path": "Burnett/Analysis/SignedFourierWindow/KernelBilinearDual.lean",
+      "production_source_sha256": "1992be4549c1586f612a680bc55b368b4ed6a579ac1cac891c5235b704dbc312",
+      "audited_source_sha256": "679a1e257467b1d0a7b133579ab8936387fa1b01f1ecab26acf8f8dee5b1df0b",
+      "independently_replayed_source_sha256": "7ba51abd4657a38159b9f0a4754a8afae16de8fa5b13f566e35fb2484046a17e"
+    },
+    "Burnett.Analysis.SignedFourierWindow.KernelDualPairing": {
+      "path": "Burnett/Analysis/SignedFourierWindow/KernelDualPairing.lean",
+      "production_source_sha256": "7e31d9ceb750bd72885d12d135810180c84cd0e489cd715ffaffd8e4a56025ed",
+      "audited_source_sha256": "d40a6329daf1a171e3e3422f9df07ea0c4f37d00fa3b9f8d4bf955269fed1dbb",
+      "independently_replayed_source_sha256": "f6a575bffb559348cb5f8319a8e29b3fe5c2f10baeedc19354d0a8885f69e66c"
+    },
+    "Burnett.Analysis.SignedFourierWindow.KernelDualPower": {
+      "path": "Burnett/Analysis/SignedFourierWindow/KernelDualPower.lean",
+      "production_source_sha256": "52b6102c3c630791453d9fd9ef226dd6070165000d73b92e706307b194a46298",
+      "audited_source_sha256": "ba0b0717685f374070305278165410533e1addc33a3b0644d34664221773be41",
+      "independently_replayed_source_sha256": "e1b711f90ba9abd922205bfede73798c4e598069c412657983e25df4997a275d"
+    },
+    "Burnett.Analysis.SignedFourierWindow.KernelLpExhaustion": {
+      "path": "Burnett/Analysis/SignedFourierWindow/KernelLpExhaustion.lean",
+      "production_source_sha256": "c8ab218ae976549e06a9886e6f20c03ffeec7e2392e1f7d63de723076664416e",
+      "audited_source_sha256": "30d232778fd9ed1d3ac65726ed59573a75a020d88b4fc816fd2ed2aa504b3a37",
+      "independently_replayed_source_sha256": "294267623554e6116693690184b29686951c418423009a55994ec1a02154537d"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignAverage": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignAverage.lean",
+      "production_source_sha256": "ed0a24cab4f85cbace00d73d7c47fef4029133442a18a59519a11fe7cea7f87b",
+      "audited_source_sha256": "b585d88839edf99fe33147e71d795259444421436e618e0250c3e62774a354a2",
+      "independently_replayed_source_sha256": "79fb8315313ac310434cdae8c1a893ca90bfa3af8eef3c476a03b36dfacdc39c"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignLowerMoment": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignLowerMoment.lean",
+      "production_source_sha256": "27b9cc44b4a0dd9ffc8574885877cdcce169735bf29f440619ea510254422975",
+      "audited_source_sha256": "9e8deb061bd909fad5983e0f748902616388f807e2980b1d8ed2b3bc767063d6",
+      "independently_replayed_source_sha256": "e931176a6791668014a65ef663bc249c2e156988cd538ecd3e2b47b2eb6a08e4"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignSquareIntegral": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignSquareIntegral.lean",
+      "production_source_sha256": "d963bcad065625cbbbee48f84f620a105cac35c5f104fae948becd697b30175f",
+      "audited_source_sha256": "a90c3a136ab44b5a0749da8b07c67376364f0febdc170089ccdc51ebfd90c97d",
+      "independently_replayed_source_sha256": "d937b3acccd43681edddaeb3a94bb7c33ff09ec64d6e6582d3298e7103f9a9f1"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignWindowSum": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignWindowSum.lean",
+      "production_source_sha256": "eb1265b0870b49df0a2511a68aff27be744fd85808634c6241f13364f4bcdc2a",
+      "audited_source_sha256": "ab9208869c4ea42f46023d5d8a9ca4558c273cc1f3aa19c463a4e1afb6f9f8ed",
+      "independently_replayed_source_sha256": "6710591a160e2cfbe2925b353b268f51ab65400a3d6aa4e4d75da3798a7c34be"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignedWindowAllLp": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignedWindowAllLp.lean",
+      "production_source_sha256": "bc925e1f42f2ec9e9b53e871186527631b2a7eb718158e06d93ab90e300e6d8d",
+      "audited_source_sha256": "2da5d9beb3567683ab687bc9a0b984a8e58a4b2a1df45ccce84c9f9c7aba84f3",
+      "independently_replayed_source_sha256": "d1c176077330553808d1e0fa987a9658333e5785225cf68c7b597e8d2fa74e8a"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignedWindowLowerLp": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignedWindowLowerLp.lean",
+      "production_source_sha256": "78f22b5a1baecf41260703ea1dbffe8aed2243c8c2a49eca8b8503be82462f97",
+      "audited_source_sha256": "756946f329e802fb96220a1bd15083df83a951c1facca8fddde0efc0bcf13c17",
+      "independently_replayed_source_sha256": "9ae85d37c40b6808996e0665ff278634faa36b03b5db8f866c6e21b86f41138d"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SignedWindowWeak": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SignedWindowWeak.lean",
+      "production_source_sha256": "187dfa8172d3b93522cf9274caafa48db284ea72707e1955afd9c3beed657c12",
+      "audited_source_sha256": "c118304315c9479f9eaf0452adf356a77fec377b70a5dd113b21653247faf9fa",
+      "independently_replayed_source_sha256": "cff45d6bccb223ad4a866818c5d0f7550e372641248e75eb8507e143976258ba"
+    },
+    "Burnett.Analysis.SignedFourierWindow.SquareProduct": {
+      "path": "Burnett/Analysis/SignedFourierWindow/SquareProduct.lean",
+      "production_source_sha256": "ff7e1cda8fa7419f4eedec207095f1f5293f121e5341f7f3572cf8f0d18593a4",
+      "audited_source_sha256": "6df17b1f9c40ca65693910c7ddae450a5fa96540cc729ee3039193f4047caa3d",
+      "independently_replayed_source_sha256": "51c735619a1a0ba6fa7afd627d4b05f35ca82b25c0a8f1899d6dd4220472337e"
+    },
+    "Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow": {
+      "path": "Burnett/Analysis/SignedFourierWindow/TwoAnnularOneLow.lean",
+      "production_source_sha256": "eb9b1a00d0ef038e2c418f96968f71e9175dfd3233e8a2e4c646fb7c0b58df71",
+      "audited_source_sha256": "a032fb5de7bdb4dc54e8dbed3fdbbe9baf527e54dafcd4b3b38f75f9b798e726",
+      "independently_replayed_source_sha256": "ecc271c6cfcf60b7eb241d2258054c627bf7b8dd60eb8a2aa0372bf6954c4fb6"
+    },
+    "Burnett.Analysis.SignedFourierWindow.WindowReflection": {
+      "path": "Burnett/Analysis/SignedFourierWindow/WindowReflection.lean",
+      "production_source_sha256": "45355e76d2600866d17681af65e883a7a0a282e0858b73f0752aba9f08f4cb69",
+      "audited_source_sha256": "98dc00931b19ec72b4af6cf7b113814dad1d9f104ddd50e91e178488139a14b2",
+      "independently_replayed_source_sha256": "638c7867247bc2a325c15c93c8a820ab2121e90539ec77a72ff656332b26b62c"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:signed-annular-Lp",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedWindowAllLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Lp",
+      "module": "Burnett.Analysis.SignedFourierWindow.AnnularSquareLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Fourier",
+      "module": "Burnett.Analysis.SignedFourierWindow.AnnularSquareLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_fourier"
+    },
+    {
+      "claim_id": "a02:harmonic:two-annular-one-low",
+      "module": "Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.two_annular_one_low"
+    }
+  ],
+  "closes_parent_claim": false
+}
