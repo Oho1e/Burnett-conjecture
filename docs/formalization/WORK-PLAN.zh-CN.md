@@ -570,3 +570,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 条件角核变换（F07–F08）
 
 给定分解后，坐标公式可计算每个可测联合事件，加权核可重构推前后的质量。后续须从原序列给出角核和 Lorentz 底体积，代入辅助范数平方和径向映射，再对同一测度识别 Einstein 二阶矩。[已登记支持结果](../statements/angular-kernel-transforms.zh-CN.md)
+
+## 31. 四维移位 Fourier 窗估计
+
+全局符号分解和 Fourier 配对已证。四维极大函数、环带 L² 平方和及移位 Fourier 窗的强 Lᵖ 界已证。接入有限指数的环带平方估计、两环带一低频的乘积估计与全尺度联合乘子界，再闭合原交换子、三次能量连续性与系数差估计。 [四维移位 Fourier 窗估计](../statements/shifted-fourier-window-estimates.zh-CN.md)

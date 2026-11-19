@@ -331,7 +331,7 @@
         "c_j的乘积频率线性乘子留在双线性算子外；不能假称在乘积频率0光滑。",
         "有限指数条件r>1必须保留，不能外推到未证端点。"
       ],
-      "next_action": "已证明全局符号分解及 Schwartz 测试下的绝对可积频率配对，以及四维中心极大函数的弱型、强型界和环带平方和的 L² 界。继续识别物理空间交换子并建立跨尺度有限指数乘子界，再接入对称极化、三次能量的连续性与系数差结论。",
+      "next_action": "全局符号分解和 Fourier 配对已证。四维极大函数、环带 L² 平方和及移位 Fourier 窗的强 Lᵖ 界已证。接入有限指数的环带平方估计、两环带一低频的乘积估计与全尺度联合乘子界，再闭合原交换子、三次能量连续性与系数差估计。",
       "supplementary_obligations": [
         {
           "id": "local:complete-cubic-energy-definition",
@@ -5128,6 +5128,18 @@
       "claim_id": "support:angular-kernel-borel-reconstruction",
       "source_slices": [
         "F07"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-physical",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-window-maximal",
+      "source_slices": [
+        "A02"
       ]
     }
   ],
