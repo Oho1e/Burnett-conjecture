@@ -88,6 +88,8 @@ vanishes over every open vacuum region of $g$.
 
 The local support lemmas cover smooth tests and weighted disintegration for a given finite joint measure. The geometric marginal and the full corollary remain to be proved. [F08 local disintegration](local-disintegration.en.md)
 
+The F08 supporting results disintegrate a fixed joint measure over a countable measurable cover. The intrinsic marginal and tensor moments remain open in this corollary. [Countable-cover disintegration](countable-fiber-disintegration.en.md)
+
 ## T04
 
 Source: lemma 3.1, label `lem:commutator`, source lines 566–575. Title: Lipschitz-small coefficients in a symmetric energy pairing.

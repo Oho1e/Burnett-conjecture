@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `c50a37db1cc9d99f848be28e15658fd99a392ade7d123b40ce1acb6777e1bcf4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `a06a515af0f77a6e5e8f1a63214b2d2161c25bcb68dbac2fed72197c829def51`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: Use smooth-test positivity and measure determination to derive the actual base marginal from the Einstein moments of the same F07 measure. Weighted disintegration is available for a finite coordinate joint measure with a supplied bounded marginal density. Connect it to the unit null covector relation in the actual charts and to the almost-everywhere Einstein second moments, then prove global compatibility and vanishing on vacuum regions.
+Next: Smooth-test positivity and measure determination and local weighted disintegration of a finite coordinate joint measure with a supplied bounded marginal density are available. For a given joint measure and marginal density with local bounds on a countable cover, the angular kernels glue over the original base measure and are almost everywhere unique for that joint measure. Derive the actual marginal, local bounds and unit null-shell concentration from the same F07 physical measure, apply disintegration on the intrinsic projection, and verify the Einstein second moments and vanishing on vacuum regions.
 
 <a id="a01"></a>
 

@@ -21,6 +21,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Multiscale Rosen vacuum sequence](rosen-multiscale.en.md) and [mathematical review](rosen-multiscale-review.en.md)
 - [General two-polarization Rosen proposition](rosen-two-polarization.en.md) and [mathematical review](rosen-two-polarization-review.en.md)
 - [Local weighted disintegration and base-measure tests](local-disintegration.en.md)
+- [Countable-cover disintegration for a fixed joint measure](countable-fiber-disintegration.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |

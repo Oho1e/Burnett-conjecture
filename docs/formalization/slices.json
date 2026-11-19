@@ -274,7 +274,7 @@
         "张量矩恒等式为a.e.；e_r≥0由光滑性提升至处处，二者量词不能混同。",
         "可测纤维测度不等于光滑Vlasov密度。"
       ],
-      "next_action": "用局部光滑测试的正性与测度确定定理，从同一 F07 物理测度的 Einstein 矩得到实际基底边缘。有限坐标联合测度与已知有界边缘密度已有加权纤维分解，下一步接入各图的实际单位零余向量关系、几乎处处 Einstein 二阶矩、全局相容性以及真空区消失。",
+      "next_action": "已证明光滑测试的正性与测度确定，以及给定有限坐标联合测度和有界边缘密度时的局部加权分解。给定联合测度、边缘密度与可数覆盖上的局部界，还可拼接出相对于原基底测度的角核，并证明固定联合测度时几乎处处唯一。下一步从同一 F07 物理测度得到实际边缘、局部界和单位零壳集中，在内禀投影上应用分解，再核对 Einstein 二阶矩与真空区消失。",
       "supplementary_obligations": []
     },
     {
@@ -4952,6 +4952,30 @@
     },
     {
       "claim_id": "base-marginal:local-weighted-disintegration",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:ordinary-local-fiber-uniqueness",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-gluing",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-uniqueness",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:countable-weighted-disintegration",
       "source_slices": [
         "F08"
       ]

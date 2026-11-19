@@ -139,3 +139,4 @@ import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
 import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
 import Burnett.Analysis.BaseMarginal.SmoothTests
 import Burnett.Analysis.BaseMarginal.FiberKernel
+import Burnett.Analysis.FiberDisintegration.Weighted

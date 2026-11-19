@@ -88,6 +88,8 @@ vanishes over every open vacuum region of $g$.
 
 局部支持引理涵盖光滑试验及给定有限联合测度的加权分解。原度量的实际边缘和完整推论仍待证明。[F08 局部测度分解](local-disintegration.zh-CN.md)
 
+F08 的支持结果在可数可测覆盖上分解给定的联合测度。本推论的内禀边缘与张量矩仍待证明。[可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md)
+
 ## T04
 
 原文：lemma 3.1，标签 `lem:commutator`，源码第566–575行。标题：Lipschitz-small coefficients in a symmetric energy pairing。

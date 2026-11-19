@@ -21,6 +21,7 @@
 - [多尺度 Rosen 真空序列](rosen-multiscale.md)及[数学复核](rosen-multiscale-review.md)
 - [一般双极化 Rosen 命题](rosen-two-polarization.md)及[数学复核](rosen-two-polarization-review.md)
 - [局部加权分解与基底测度试验](local-disintegration.zh-CN.md)
+- [固定联合测度的可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |
