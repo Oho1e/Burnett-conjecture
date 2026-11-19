@@ -2673,6 +2673,26 @@
       "claim_id": "a02:harmonic:signed-window-operator",
       "module": "Burnett.Analysis.SignedFourierWindow.SignedWindowOperator",
       "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_operator_estimates"
+    },
+    {
+      "claim_id": "a02:harmonic:signed-annular-Lp",
+      "module": "Burnett.Analysis.SignedFourierWindow.SignedWindowAllLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Lp",
+      "module": "Burnett.Analysis.SignedFourierWindow.AnnularSquareLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Fourier",
+      "module": "Burnett.Analysis.SignedFourierWindow.AnnularSquareLp",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_fourier"
+    },
+    {
+      "claim_id": "a02:harmonic:two-annular-one-low",
+      "module": "Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.two_annular_one_low"
     }
   ],
   "inventory": [
@@ -13287,6 +13307,78 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_operator_estimates",
       "statement_record": "docs/statements/signed-fourier-window-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:signed-annular-Lp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.signed_window_all_Lp",
+      "statement_record": "docs/statements/annular-square-and-product-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Lp",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_all_Lp",
+      "statement_record": "docs/statements/annular-square-and-product-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Fourier",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.annular_square_fourier",
+      "statement_record": "docs/statements/annular-square-and-product-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:two-annular-one-low",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 671
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.SignedFourierWindow.two_annular_one_low",
+      "statement_record": "docs/statements/annular-square-and-product-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-source-proof",
       "does_not_close_parent_claim": true

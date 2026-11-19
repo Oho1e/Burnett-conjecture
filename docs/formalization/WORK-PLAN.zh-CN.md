@@ -580,3 +580,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 32. 四维有符号 Fourier 窗估计
 
 有符号环带和具有统一 L² 界，其实际卷积核满足积分 Hörmander 条件。 [四维有符号 Fourier 窗估计](../statements/signed-fourier-window-estimates.zh-CN.md)
+
+## 33. 四维环带平方函数与乘积估计
+
+已证明有符号环带和及环带平方函数的有限指数 Lᵖ 界，以及两个环带因子和一个低频因子的乘积估计。继续接入全尺度联合乘子界及其三次能量应用。 [四维环带平方函数与乘积估计](../statements/annular-square-and-product-estimates.zh-CN.md)

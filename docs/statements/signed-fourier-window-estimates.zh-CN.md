@@ -8,4 +8,4 @@
 - `dyadic_kernel_hormander` 对任意 Schwartz 函数 $\phi$，证明核 $K(z)=\sum_k c_k s_k^{-4}\phi(z/s_k+q)$ 在 $2|h|\leq |z|$ 区域的积分差界 $C_\phi(1+|q|)$。界对初始尺度、有限指标集、系数和位移 $h$ 一致。
 - `signed_window_operator_estimates` 取 $\phi=\mathcal F^{-1}a$，其中频率窗 $a$ 是紧支撑 Schwartz 函数，在开环带之外为零。同一个 $K$ 对每个 Schwartz 输入定义卷积及几乎处处相等的 $L^2$ 代表。其 $L^2$ 范数不超过输入范数乘以 $2\,\mathrm{seminorm}_{0,0}(a)$。
 
-有限指数的环带平方估计及联合乘子界将在后续接入。本组支持引理的原文对应仍待作者确认。[源码对应](signed-fourier-window-estimates-source-bindings.json)
+已接入有限指数环带平方估计，后续继续装配联合乘子界。 [四维环带平方函数与乘积估计](annular-square-and-product-estimates.zh-CN.md)本组支持引理的原文对应仍待作者确认。[源码对应](signed-fourier-window-estimates-source-bindings.json)

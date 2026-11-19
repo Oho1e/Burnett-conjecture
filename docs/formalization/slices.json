@@ -331,7 +331,7 @@
         "c_j的乘积频率线性乘子留在双线性算子外；不能假称在乘积频率0光滑。",
         "有限指数条件r>1必须保留，不能外推到未证端点。"
       ],
-      "next_action": "有符号环带和具有统一 L² 界，其实际卷积核满足积分 Hörmander 条件。全局符号分解和 Fourier 配对已证。四维极大函数、环带 L² 平方和及移位 Fourier 窗的强 Lᵖ 界已证。接入有限指数的环带平方估计、两环带一低频的乘积估计与全尺度联合乘子界，再闭合原交换子、三次能量连续性与系数差估计。",
+      "next_action": "已证明有符号环带和及环带平方函数的有限指数 Lᵖ 界，以及两个环带因子和一个低频因子的乘积估计。继续接入全尺度联合乘子界及其三次能量应用。",
       "supplementary_obligations": [
         {
           "id": "local:complete-cubic-energy-definition",
@@ -5168,6 +5168,30 @@
     },
     {
       "claim_id": "a02:harmonic:signed-window-operator",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:signed-annular-Lp",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Lp",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square-Fourier",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:two-annular-one-low",
       "source_slices": [
         "A02"
       ]
