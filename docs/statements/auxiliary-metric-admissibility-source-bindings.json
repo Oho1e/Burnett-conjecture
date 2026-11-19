@@ -1,0 +1,74 @@
+{
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "passage": [
+    91,
+    106
+  ],
+  "modules": {
+    "Burnett.Geometry.CompactCoordinateNorms": {
+      "path": "Burnett/Geometry/CompactCoordinateNorms.lean",
+      "sha256": "8b6822b07ce861c620a85b0d375d2832906b2dec9e737e7eadae537363104ce0"
+    },
+    "Burnett.Geometry.AuxiliaryAdmissibility": {
+      "path": "Burnett/Geometry/AuxiliaryAdmissibility.lean",
+      "sha256": "97a0e1eaf68b360431e0616b7401398177cb3be0742d011ddfd240b3e5123fff"
+    }
+  },
+  "registered_targets": [
+    {
+      "claim_id": "f02:auxiliary:compact-tensor-norm",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.physicalNorm2_compact_compare",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:local-uniform-limit",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.locallyUniformlyConverges_changeAuxiliary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:compact-connection-comparison",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.normScalar_compact_compare",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:uniform-derivative-bound",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.compactDhBound_changeAuxiliary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f02:auxiliary:vacuum-admissibility-iff",
+      "module": "Burnett.Geometry.AuxiliaryAdmissibility",
+      "declaration": "Burnett.Geometry.AuxiliaryAdmissibility.admissible_iff_changeAuxiliary",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "independent_review": {
+    "production_receipt_sha256": "c68d54369476fad55e6be0815aa2dfcd90e1a19498e215c72207a7689c2e547f",
+    "public_declarations": 9
+  }
+}

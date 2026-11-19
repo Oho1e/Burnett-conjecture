@@ -1,0 +1,183 @@
+{
+  "schema": "burnett-chart-overlap/v1",
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "toolchain": "leanprover/lean4:v4.24.0",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "root_imports": [
+    "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+    "Burnett.Analysis.Microlocal.Overlap.L2Transfer",
+    "Burnett.Analysis.Microlocal.Overlap.Localization"
+  ],
+  "modules": {
+    "Burnett.Analysis.Microlocal.Overlap.HalfDensity": {
+      "path": "Burnett/Analysis/Microlocal/Overlap/HalfDensity.lean",
+      "source_sha256": "fa299461ecc9fd5141d27afda9b41719a7eed0068307af2b61b2ebf8c0f1d36e",
+      "imports": [
+        "Burnett.Analysis.LocalWeakDerivative",
+        "Burnett.Analysis.Sobolev.TestJet",
+        "Burnett.Geometry.SmoothMetricConnection",
+        "Mathlib.Analysis.Calculus.Deriv.Abs",
+        "Mathlib.Analysis.SpecialFunctions.Sqrt",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    "Burnett.Analysis.Microlocal.Overlap.KernelGeometry": {
+      "path": "Burnett/Analysis/Microlocal/Overlap/KernelGeometry.lean",
+      "source_sha256": "1238e5b8071177789450494f31b8b3c04b06c07328a4130ea9223a38a21e04b3",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
+        "Burnett.Geometry.ManifoldMetricTransition",
+        "Burnett.Geometry.ActualChartSecondJet",
+        "Mathlib.Analysis.Calculus.FDeriv.Measurable",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ]
+    },
+    "Burnett.Analysis.Microlocal.Overlap.Localization": {
+      "path": "Burnett/Analysis/Microlocal/Overlap/Localization.lean",
+      "source_sha256": "78fc6a07dc26a7a4561624717455836b331a0b76f0c4445d4206b36dc02e9d54",
+      "imports": [
+        "Burnett.Geometry.ActualChartSecondJet",
+        "Burnett.Analysis.Sobolev.TestJet",
+        "Burnett.Geometry.ChartVolume",
+        "Mathlib.Topology.Compactness.Lindelof"
+      ]
+    },
+    "Burnett.Analysis.Microlocal.Overlap.L2Transfer": {
+      "path": "Burnett/Analysis/Microlocal/Overlap/L2Transfer.lean",
+      "source_sha256": "845bea82055ead3a626c19a930cf81f77cce646272014aa86c25dd620451228b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensity"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:overlap:geometric-volume-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
+      "declaration": "Burnett.F05.ChartVolumeBridge.geometricMeasure_chartSource_inner_eq_halfDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 394,
+        "endline": 395
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:restricted-l2-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_restrict_L2_inner_eq_halfDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 422,
+        "endline": 426
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:l2-half-density-equivalence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.L2Transfer",
+      "declaration": "Burnett.F05.ChartVolumeBridge.coordinateMeasure_memLp_two_iff_halfDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 394,
+        "endline": 395
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:half-density-jacobian",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.chartHalfDensity_transition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 422,
+        "endline": 428
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:near-kernel-geometry",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapKernel_geometry_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 426,
+        "endline": 428
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:far-kernel-separation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+      "declaration": "Burnett.Microlocal.OverlapGradient.overlapFar_uniform_arguments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 426,
+        "endline": 428
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:transported-test-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.Localization",
+      "declaration": "Burnett.Microlocal.OverlapGradient.exists_transportOverlapCutoff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:countable-overlap-cover",
+      "module": "Burnett.Analysis.Microlocal.Overlap.Localization",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_chartTransition_windows",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "independent_review": {
+    "public_declarations": 31,
+    "scope": "preferred-chart geometric prerequisites",
+    "geometry_and_windows_sha256": "40ab4f9a3c0dd7f9708f932c8e4c3972c2624fddaf89cbc8c6b689362857c4bf",
+    "half_density_and_cutoff_sha256": "8891b35ec2af7f994aad0c54f56e6a310ad75518c29dedf310cd9a76168fd372",
+    "l2_transfer_sha256": "06e6d28670033f6a28eccfa3e71ade972a7308277d6e09f8df16676dd4d804c6"
+  }
+}

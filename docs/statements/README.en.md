@@ -12,12 +12,18 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Complete machine-readable index](source-index.json)
 - [Initial structural inventory and candidate notes](intake.en.md)
 - [Precise interface for the main theorem](main-interface.en.md)
+- [Angular Fourier commutators and fixed low-frequency regularization](angular-cutoff-commutator.en.md)
+- [Positive matrix-measure representation](positive-matrix-measure.en.md)
 - [First Ricci-symbol fragment](ricci-symbol.en.md) and [independent readback of its actual declarations](ricci-symbol-review.en.md)
 - [Strong local H⁻¹ convergence of linearized Ricci](geometric-Hminus-closure.en.md) and [independent review](geometric-Hminus-closure-review.en.md)
 - [Intrinsic curvature, the Ricci trace, and chartwise vacuum](intrinsic-curvature-Ricci.en.md) and [independent review](intrinsic-curvature-Ricci-review.en.md)
 - [Finite-dimensional variation and Ward identities](transport-ward.en.md) and [review](transport-ward-review.en.md)
 - [Multiscale Rosen vacuum sequence](rosen-multiscale.en.md) and [mathematical review](rosen-multiscale-review.en.md)
 - [General two-polarization Rosen proposition](rosen-two-polarization.en.md) and [mathematical review](rosen-two-polarization-review.en.md)
+- [Local weighted disintegration and base-measure tests](local-disintegration.en.md)
+- [Countable-cover disintegration for a fixed joint measure](countable-fiber-disintegration.en.md)
+- [F05 geometry on preferred chart overlaps](chart-overlap-geometry.en.md)
+- [Changing the auxiliary metric in the vacuum sequence hypotheses](auxiliary-metric-admissibility.en.md)
 - [Fourier symbols for the cubic-energy commutator](cubic-energy-fourier-symbols.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
@@ -37,6 +43,6 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 6.2 | corollary | `cor:strong` | 3063–3078 | Not modeled |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [Proof and independent review](harmonic-shear.en.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
-| C.1 | proposition | `prop:bianchi` | 3245–3247 | Not modeled |
+| C.1 | proposition | `prop:bianchi` | 3245–3247 | [Proof and independent review](bianchi-counterexample.en.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [Proof and independent review](rosen-two-polarization.en.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |
