@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `7a2f4d14597384cd33c97a05c9f0e6b5fd82912944ff0a975fbff488d87a8a11`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `9971c4dfce06e5dfe63aa419360b010348d611c3771c7a7d821057ec0b30b32d`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences.
+Next: The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are available, along with the four-dimensional weak and strong centered maximal bounds and annular L² square estimates. Identify the physical commutator and prove the finite-exponent multiplier bounds across scales, then connect symmetric polarization, cubic-energy continuity and coefficient differences.
 
 <a id="a03"></a>
 

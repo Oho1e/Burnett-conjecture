@@ -559,3 +559,6 @@ The original vacuum sequence has equivalent local uniform convergence and compac
 ## 29. Fourier symbols for the cubic-energy commutator
 
 The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences. [Fourier symbols for the cubic-energy commutator](../statements/cubic-energy-fourier-symbols.en.md)
+## 30. Maximal and annular square estimates in four dimensions
+
+The four-dimensional weak and strong maximal bounds and the annular L² square estimates are proved. Continue the commutator construction and establish its finite-exponent bilinear bound across scales before deriving cubic-energy continuity and coefficient differences. [Maximal and annular square estimates in four dimensions](../statements/harmonic-maximal-and-square-estimates.en.md)

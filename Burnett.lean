@@ -145,3 +145,5 @@ import Burnett.Analysis.Microlocal.Overlap.L2Transfer
 import Burnett.Analysis.Microlocal.Overlap.Localization
 import Burnett.Geometry.AuxiliaryAdmissibility
 import Burnett.Analysis.CubicEnergy.FourierIdentity
+import Burnett.Analysis.CenteredMaximal.MaximalLp
+import Burnett.Analysis.DyadicSquare.ShiftedSquare

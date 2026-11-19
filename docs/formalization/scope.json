@@ -2598,6 +2598,26 @@
       "claim_id": "a02:commutator:schwartz-frequency-pairing",
       "module": "Burnett.Analysis.CubicEnergy.FourierIdentity",
       "declaration": "Burnett.A02.FrequencySplit.fourier_trilinear_identity"
+    },
+    {
+      "claim_id": "a02:harmonic:weak-maximal",
+      "module": "Burnett.Analysis.CenteredMaximal.MaximalTail",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_weak_type"
+    },
+    {
+      "claim_id": "a02:harmonic:strong-maximal",
+      "module": "Burnett.Analysis.CenteredMaximal.MaximalLp",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_complex_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square",
+      "module": "Burnett.Analysis.DyadicSquare.SquareEnergy",
+      "declaration": "Burnett.Analysis.DyadicSquare.annular_square_L2"
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-square",
+      "module": "Burnett.Analysis.DyadicSquare.ShiftedSquare",
+      "declaration": "Burnett.Analysis.DyadicSquare.shifted_annular_square_L2"
     }
   ],
   "inventory": [
@@ -12954,6 +12974,78 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.A02.FrequencySplit.fourier_trilinear_identity",
       "statement_record": "docs/statements/cubic-energy-fourier-symbols.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:weak-maximal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_weak_type",
+      "statement_record": "docs/statements/harmonic-maximal-and-square-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:strong-maximal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.CenteredMaximal.centeredMax_complex_Lp",
+      "statement_record": "docs/statements/harmonic-maximal-and-square-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:annular-square",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.DyadicSquare.annular_square_L2",
+      "statement_record": "docs/statements/harmonic-maximal-and-square-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:shifted-square",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 685
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.DyadicSquare.shifted_annular_square_L2",
+      "statement_record": "docs/statements/harmonic-maximal-and-square-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-and-native-pass",
       "does_not_close_parent_claim": true

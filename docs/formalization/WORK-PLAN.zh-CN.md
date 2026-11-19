@@ -564,3 +564,6 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 29. 三次能量交换子的 Fourier 符号
 
 已证明全局符号分解及 Schwartz 测试下的绝对可积频率配对。下一步识别物理空间交换子、证明有限指数乘子范数界，再接入对称极化、连续性与系数差结论。 [三次能量交换子的 Fourier 符号](../statements/cubic-energy-fourier-symbols.zh-CN.md)
+## 30. 四维极大函数与环带平方估计
+
+已证明四维中心极大函数的弱型、强型界和环带平方和的 L² 界。继续构造交换子，建立有限指数的跨尺度双线性估计，再接入三次能量的连续性与系数差结论。 [四维极大函数与环带平方估计](../statements/harmonic-maximal-and-square-estimates.zh-CN.md)
