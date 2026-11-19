@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ad0069713c64efffb74cc5740a7e756480be63cbf04b502de89d406eef91eaa3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `af8e2501ad1bb4798863ecf25e940192ca23ff00bb67482da5b4c289ed679e99`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: Establish the global commutator decomposition and exact exponent interface, then combine symmetric polarization, continuity, and coefficient-difference conclusions.
+Next: The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences.
 
 <a id="a03"></a>
 

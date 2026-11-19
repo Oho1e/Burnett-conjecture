@@ -2333,6 +2333,26 @@
       "claim_id": "support:harmonic-shear-physical-Dh",
       "module": "Burnett.Counterexamples.HarmonicShear.Bounds",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
+    },
+    {
+      "claim_id": "a02:commutator:low-frequency-segment",
+      "module": "Burnett.Analysis.CubicEnergy.FrequencySplit",
+      "declaration": "Burnett.A02.FrequencySplit.segment_norm_lower"
+    },
+    {
+      "claim_id": "a02:commutator:global-symbols",
+      "module": "Burnett.Analysis.CubicEnergy.SymbolDecomposition",
+      "declaration": "Burnett.A02.FrequencySplit.commutator_symbol_decomposition"
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-integrability",
+      "module": "Burnett.Analysis.CubicEnergy.FourierPairing",
+      "declaration": "Burnett.A02.FrequencySplit.pieces_integrable"
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-frequency-pairing",
+      "module": "Burnett.Analysis.CubicEnergy.FourierIdentity",
+      "declaration": "Burnett.A02.FrequencySplit.fourier_trilinear_identity"
     }
   ],
   "inventory": [
@@ -11799,6 +11819,78 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound",
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
+    },
+    {
+      "claim_id": "a02:commutator:low-frequency-segment",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.segment_norm_lower",
+      "statement_record": "docs/statements/cubic-energy-fourier-symbols.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:commutator:global-symbols",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.commutator_symbol_decomposition",
+      "statement_record": "docs/statements/cubic-energy-fourier-symbols.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-integrability",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.pieces_integrable",
+      "statement_record": "docs/statements/cubic-energy-fourier-symbols.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:commutator:schwartz-frequency-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.fourier_trilinear_identity",
+      "statement_record": "docs/statements/cubic-energy-fourier-symbols.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-and-native-pass",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {

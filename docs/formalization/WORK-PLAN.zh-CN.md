@@ -545,3 +545,7 @@ X06 独立于主算子和 Ward 的证明工作。第 3360–3386 行的总定理
 一般命题已有从物理假设出发的直接 Lean 证明。工程复用随 X06 引入的坐标 Hamilton 量与积分引理。两项测试恒等式及辅助协向量范数的局部二阶矩都使用总定理给出的同一测度。[X05 命题说明](../statements/rosen-two-polarization.md) · [数学复核](../statements/rosen-two-polarization-review.md)
 
 X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线上核验 X05 的组合目标登记、整库和 CI。作者确认单独登记。
+
+## 26. 三次能量交换子的 Fourier 符号
+
+已证明全局符号分解及 Schwartz 测试下的绝对可积频率配对。下一步识别物理空间交换子、证明有限指数乘子范数界，再接入对称极化、连续性与系数差结论。 [三次能量交换子的 Fourier 符号](../statements/cubic-energy-fourier-symbols.zh-CN.md)

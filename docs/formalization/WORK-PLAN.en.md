@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## 26. Fourier symbols for the cubic-energy commutator
+
+The global symbol decomposition and absolutely integrable Fourier pairings for Schwartz tests are proved. Identify the physical commutator, prove the finite-exponent multiplier bounds, then connect symmetric polarization, continuity, and coefficient differences. [Fourier symbols for the cubic-energy commutator](../statements/cubic-energy-fourier-symbols.en.md)
