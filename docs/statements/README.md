@@ -28,6 +28,7 @@
 - [四维极大函数与环带平方估计](harmonic-maximal-and-square-estimates.zh-CN.md)
 - [条件角核的变换](angular-kernel-transforms.zh-CN.md)
 - [四维移位 Fourier 窗估计](shifted-fourier-window-estimates.zh-CN.md)
+- [双侧空间截断的紧 Fourier 乘子](compact-frequency-localization.zh-CN.md)
 - [四维有符号 Fourier 窗估计](signed-fourier-window-estimates.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 

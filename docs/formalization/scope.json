@@ -2650,6 +2650,16 @@
       "declaration": "Burnett.Analysis.ShiftedFourierWindow.maximalShiftedWindow_Lp"
     },
     {
+      "claim_id": "f05:compact-frequency:bounded-frequency",
+      "module": "Burnett.Analysis.Microlocal.CompactFrequencyCutoff",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_truncated_multiplier"
+    },
+    {
+      "claim_id": "f05:compact-frequency:decaying-symbol",
+      "module": "Burnett.Analysis.Microlocal.CompactFrequencyCutoff",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_decaying_multiplier"
+    },
+    {
       "claim_id": "a02:harmonic:signed-annular-L2",
       "module": "Burnett.Analysis.SignedFourierWindow.SignedBands",
       "declaration": "Burnett.Analysis.SignedFourierWindow.signed_annular_sum_L2"
@@ -13189,6 +13199,42 @@
       "statement_record": "docs/statements/shifted-fourier-window-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-frequency:bounded-frequency",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 404
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_truncated_multiplier",
+      "statement_record": "docs/statements/compact-frequency-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-frequency:decaying-symbol",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 404
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CompactFrequencyCutoff.compact_spatial_cutoffs_decaying_multiplier",
+      "statement_record": "docs/statements/compact-frequency-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-readback-and-native-replay-passed",
       "does_not_close_parent_claim": true
     },
     {
