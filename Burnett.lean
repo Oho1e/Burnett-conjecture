@@ -134,5 +134,16 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Counterexamples.Bianchi
+import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
+import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
+import Burnett.Analysis.BaseMarginal.SmoothTests
+import Burnett.Analysis.BaseMarginal.FiberKernel
+import Burnett.Analysis.FiberDisintegration.Weighted
+import Burnett.Analysis.Microlocal.Overlap.KernelGeometry
+import Burnett.Analysis.Microlocal.Overlap.L2Transfer
+import Burnett.Analysis.Microlocal.Overlap.Localization
+import Burnett.Geometry.AuxiliaryAdmissibility
+import Burnett.Analysis.CubicEnergy.FourierIdentity
 import Burnett.Analysis.CenteredMaximal.MaximalLp
 import Burnett.Analysis.DyadicSquare.ShiftedSquare
