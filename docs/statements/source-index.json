@@ -860,16 +860,17 @@
       "is_appendix": true,
       "summary_zh_CN": "提出无真空逼近前提的光滑度规：其 Einstein 张量有正零锥点态分解，但不存在兼具矩与输运的正射线测度。",
       "claim_status": "source_proposed_claim_not_mathematically_assessed",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "semantic_correspondence_status": "not_reviewed",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "semantic_correspondence_status": "independent-frozen-source-readback-passed",
       "argument_locator": {
         "kind": "explicit_proof_environment",
         "source_line": 3248,
         "source_endline": 3301,
         "coverage_status": "locator_only_not_proof_audit"
       },
-      "selected_source_result_references": []
+      "selected_source_result_references": [],
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
     },
     {
       "kind": "proposition",

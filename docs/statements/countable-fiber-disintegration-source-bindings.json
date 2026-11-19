@@ -1,0 +1,58 @@
+{
+  "schema": "burnett-countable-disintegration-bindings/v1",
+  "base": "be653f49507fbd73a2f466cb308b3f65dd30de0e",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_passages": [
+    [
+      494,
+      502
+    ],
+    [
+      511,
+      515
+    ]
+  ],
+  "staging_receipt_sha256": "f8503c5251d412b620c8760072f4818dd688e3f918839b31e71a86a05be06d4c",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "toolchain": "leanprover/lean4:v4.24.0",
+  "root_import": "Burnett.Analysis.FiberDisintegration.Weighted",
+  "modules": [
+    {
+      "module": "Burnett.Analysis.FiberDisintegration.CountableCover",
+      "path": "Burnett/Analysis/FiberDisintegration/CountableCover.lean",
+      "sha256": "9cadb4d6bdff8a112b7678e011b2bd635dabe2e875c43bf77625c6bbef9facde",
+      "imports": [
+        "Mathlib.Probability.Kernel.Composition.MeasureCompProd"
+      ],
+      "registered_targets": [
+        "base-marginal:countable-fiber-gluing"
+      ]
+    },
+    {
+      "module": "Burnett.Analysis.FiberDisintegration.Uniqueness",
+      "path": "Burnett/Analysis/FiberDisintegration/Uniqueness.lean",
+      "sha256": "dcc3410bce3e6b82615c71ac3cfc67f5a3486fc9cd748fc78d8f1ffc7ebd5849",
+      "imports": [
+        "Burnett.Analysis.FiberDisintegration.CountableCover",
+        "Mathlib.Probability.Kernel.CompProdEqIff"
+      ],
+      "registered_targets": [
+        "base-marginal:ordinary-local-fiber-uniqueness",
+        "base-marginal:countable-fiber-uniqueness"
+      ]
+    },
+    {
+      "module": "Burnett.Analysis.FiberDisintegration.Weighted",
+      "path": "Burnett/Analysis/FiberDisintegration/Weighted.lean",
+      "sha256": "a70859b8f5348a9b0274e64907b8a10b2915dd7d63f0afb2d36c28c821655e5a",
+      "imports": [
+        "Burnett.Analysis.FiberDisintegration.Uniqueness",
+        "Mathlib.Probability.Kernel.Disintegration.Integral",
+        "Mathlib.Probability.Kernel.WithDensity"
+      ],
+      "registered_targets": [
+        "base-marginal:countable-weighted-disintegration"
+      ]
+    }
+  ]
+}

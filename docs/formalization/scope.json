@@ -2335,6 +2335,186 @@
       "declaration": "Burnett.HarmonicShear.Bounds.shearField_intrinsicDh_compact_bound"
     },
     {
+      "claim_id": "prop:bianchi",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample"
+    },
+    {
+      "claim_id": "support:bianchi-constrained-flow",
+      "module": "Burnett.Counterexamples.Bianchi.Evolution",
+      "declaration": "Burnett.Bianchi.ODE.exists_bianchi_constrained_flow"
+    },
+    {
+      "claim_id": "support:bianchi-coordinate-ricci",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.computedRicci_of_constrained_flow"
+    },
+    {
+      "claim_id": "support:bianchi-intrinsic-einstein",
+      "module": "Burnett.Counterexamples.Bianchi.Geometry",
+      "declaration": "Burnett.Bianchi.intrinsicEinstein_openMetric_source"
+    },
+    {
+      "claim_id": "support:bianchi-null-squares",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.twoPositiveNullSquares_of_source"
+    },
+    {
+      "claim_id": "support:bianchi-zero-divergence",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.coordinateEinstein_divergence_zero_of_germ"
+    },
+    {
+      "claim_id": "support:bianchi-hamilton-obstruction",
+      "module": "Burnett.Counterexamples.Bianchi.Transport",
+      "declaration": "Burnett.Bianchi.Transport.no_representation_for_coordinate_metric"
+    },
+    {
+      "claim_id": "support:bianchi-normalization",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.intrinsicEuclideanNullRayRepresentation_of_auxiliary"
+    },
+    {
+      "claim_id": "support:lift-compact-unit-null",
+      "module": "Burnett.Geometry.Cotangent.Core",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.isCompact_cotangentUnitNullSubtype_preimage"
+    },
+    {
+      "claim_id": "support:lift-global-weighted-angular-extension",
+      "module": "Burnett.Geometry.Cotangent.SmoothExtension",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_angular_extension"
+    },
+    {
+      "claim_id": "support:lift-punctured-degree-one-extension",
+      "module": "Burnett.Geometry.Cotangent.RadialExtension",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_degreeOne_extension"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.AngularSymbol",
+      "declaration": "Burnett.Microlocal.AngularCommutator.norm_angular_difference_le"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.FourierRepresentation",
+      "declaration": "Burnett.Microlocal.AngularCommutator.fourierL2_cutoffCommutator_eq_kernel_ae"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_high_norm_le"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_low_energy"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Convergence",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_after_cutoff_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_infrared_regularization"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "module": "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+      "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "module": "Burnett.Analysis.Microlocal.PositiveRiesz",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_measure_representing_dense_square_positive"
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "module": "Burnett.Analysis.Microlocal.PositiveRiesz",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_quadratic_measures_of_dense_square_positive"
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryFunctional_eq_integral_polarization"
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.quadratic_entryMeasure_apply"
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Assembly",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_posSemidef"
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_trace_apply"
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_absolutelyContinuous_of_representation"
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.exists_positiveMatrixMeasure_of_dense_square_positive"
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "module": "Burnett.Analysis.BaseMarginal.SmoothTests",
+      "declaration": "Burnett.F08.ActualBaseMarginal.nonnegOn_of_smooth_test_integrals"
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "module": "Burnett.Analysis.BaseMarginal.SmoothTests",
+      "declaration": "Burnett.F08.ActualBaseMarginal.finiteMeasures_eq_of_local_smooth_tests"
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "module": "Burnett.Analysis.BaseMarginal.FiberKernel",
+      "declaration": "Burnett.F08.ActualBaseMarginal.localFiberKernel_unique"
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "module": "Burnett.Analysis.BaseMarginal.FiberKernel",
+      "declaration": "Burnett.F08.ActualBaseMarginal.exists_localFiberDisintegration"
+    },
+    {
+      "claim_id": "base-marginal:ordinary-local-fiber-uniqueness",
+      "module": "Burnett.Analysis.FiberDisintegration.Uniqueness",
+      "declaration": "Burnett.F08.FiberGluing.localFiberKernel_unique_of_integral_sections"
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-gluing",
+      "module": "Burnett.Analysis.FiberDisintegration.CountableCover",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_disintegrates"
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-uniqueness",
+      "module": "Burnett.Analysis.FiberDisintegration.Uniqueness",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_unique_of_integral_sections"
+    },
+    {
+      "claim_id": "base-marginal:countable-weighted-disintegration",
+      "module": "Burnett.Analysis.FiberDisintegration.Weighted",
+      "declaration": "Burnett.F08.FiberGluing.exists_weighted_disintegration_on_cover"
+    },
+    {
       "claim_id": "f05:overlap:geometric-volume-pairing",
       "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensity",
       "declaration": "Burnett.F05.ChartVolumeBridge.geometricMeasure_chartSource_inner_eq_halfDensity"
@@ -2591,9 +2771,13 @@
         "endline": 3247
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t15"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md",
+      "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample",
+      "semantic_review_record": "docs/statements/bianchi-counterexample.zh-CN.md",
+      "semantic_review": "independent-frozen-source-readback-passed",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "prop:rosen",
@@ -11841,6 +12025,581 @@
       "statement_record": "docs/statements/harmonic-shear.zh-CN.md"
     },
     {
+      "claim_id": "support:bianchi-constrained-flow",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3249,
+        "endline": 3268
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.ODE.exists_bianchi_constrained_flow",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-coordinate-ricci",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3270,
+        "endline": 3276
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.computedRicci_of_constrained_flow",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-intrinsic-einstein",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3270,
+        "endline": 3279
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.intrinsicEinstein_openMetric_source",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-null-squares",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3275,
+        "endline": 3280
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.twoPositiveNullSquares_of_source",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-zero-divergence",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3279,
+        "endline": 3280
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.coordinateEinstein_divergence_zero_of_germ",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-hamilton-obstruction",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3282,
+        "endline": 3300
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.Transport.no_representation_for_coordinate_metric",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:bianchi-normalization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:bianchi",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3282,
+        "endline": 3300
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Bianchi.intrinsicEuclideanNullRayRepresentation_of_auxiliary",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-compact-unit-null",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3005,
+        "endline": 3011
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.isCompact_cotangentUnitNullSubtype_preimage",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-global-weighted-angular-extension",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3013,
+        "endline": 3022
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_angular_extension",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "support:lift-punctured-degree-one-extension",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3013,
+        "endline": 3022
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented-conditional-support",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentAngularExtension.actual_weightedTrace_degreeOne_extension",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md"
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.norm_angular_difference_le",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.fourierL2_cutoffCommutator_eq_kernel_ae",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_high_norm_le",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_low_energy",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.compactFrequency_after_cutoff_tendsto_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.cutoffCommutator_tendsto_zero_of_infrared_regularization",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 412
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AngularCommutator.vanishingFrequency_tendsto_zero_of_localized_weak_zero",
+      "statement_record": "docs/statements/angular-cutoff-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_measure_representing_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.DenseComplexFunctional.exists_quadratic_measures_of_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryFunctional_eq_integral_polarization",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.quadratic_entryMeasure_apply",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_posSemidef",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_trace_apply",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.entryMeasure_absolutelyContinuous_of_representation",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.MatrixMeasureAssembly.exists_positiveMatrixMeasure_of_dense_square_positive",
+      "statement_record": "docs/statements/positive-matrix-measure.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 510,
+        "endline": 511
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.nonnegOn_of_smooth_test_integrals",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 508,
+        "endline": 510
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.finiteMeasures_eq_of_local_smooth_tests",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.localFiberKernel_unique",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 495,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.ActualBaseMarginal.exists_localFiberDisintegration",
+      "statement_record": "docs/statements/local-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:ordinary-local-fiber-uniqueness",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.localFiberKernel_unique_of_integral_sections",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-gluing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 511,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_disintegrates",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-fiber-uniqueness",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 502,
+        "endline": 502
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.patchKernel_unique_of_integral_sections",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "base-marginal:countable-weighted-disintegration",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 514
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F08.FiberGluing.exists_weighted_disintegration_on_cover",
+      "statement_record": "docs/statements/countable-fiber-disintegration.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
       "claim_id": "f05:overlap:geometric-volume-pairing",
       "kind": "supporting-lemma",
       "parent_claim_id": "thm:quadratic",
@@ -12729,6 +13488,19 @@
         "zh-CN",
         "en"
       ],
+      "paper_formalization_verified": false
+    },
+    "bianchi_counterexample_delivery": {
+      "paired_languages": [
+        "zh-CN",
+        "en"
+      ],
+      "source_snapshot": "5faf667fe3384885bc0b0579546810d4a434e2de55c0b68c21346a43e894ec78",
+      "producer_sha256": "201270f43c31b6c659d8dc078b2f612f125aaf895a76f9412b98964c4797a7af",
+      "independent_sha256": "aa30254c4c248a3814e7821c4661a3bd6517c93b1184b1ba60d6f1322b3c1d31",
+      "new_registered_targets": 11,
+      "registered_targets": 471,
+      "inventory_entries": 536,
       "paper_formalization_verified": false
     }
   },
