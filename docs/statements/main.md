@@ -373,7 +373,7 @@ There exists a smooth Lorentzian metric on a product interval times $\R^3$ whose
 \end{proposition}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+数学/Lean对应：`Burnett.Bianchi.exists_bianchi_intrinsic_counterexample` 构造实际光滑度规，并排除同时满足规定张量矩与 Hamilton 输运的任何非负零射线测度。作者确认待登记。[陈述与核验证据](bianchi-counterexample.zh-CN.md)
 
 ## T16
 

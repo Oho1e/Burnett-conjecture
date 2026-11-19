@@ -12,6 +12,8 @@
 - [机器可读完整索引](source-index.json)
 - [初始结构清点及候选说明](intake.zh-CN.md)
 - [主定理的精确接口](main-interface.md)
+- [角向 Fourier 交换子与固定低频正则化](angular-cutoff-commutator.zh-CN.md)
+- [正矩阵值测度表示](positive-matrix-measure.zh-CN.md)
 - [首个 Ricci 符号片段](ricci-symbol.md)及[独立实际声明回读](ricci-symbol-review.md)
 - [线性化 Ricci 的局部强 H⁻¹ 收敛](geometric-Hminus-closure.md)及[独立复核](geometric-Hminus-closure-review.md)
 - [内禀曲率、Ricci 迹与图内真空](intrinsic-curvature-Ricci.md)及[独立复核](intrinsic-curvature-Ricci-review.md)
@@ -37,6 +39,6 @@
 | 6.2 | corollary | `cor:strong` | 3063–3078 | 未建模 |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [证明与独立复核](harmonic-shear.zh-CN.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |
-| C.1 | proposition | `prop:bianchi` | 3245–3247 | 未建模 |
+| C.1 | proposition | `prop:bianchi` | 3245–3247 | [证明与独立复核](bianchi-counterexample.zh-CN.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [证明与独立复核](rosen-two-polarization.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |

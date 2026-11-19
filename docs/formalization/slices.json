@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "先锁定外部微局部接口的精确测试类、束值性与量词；把共同子序列和Gram转换作为可检查子义务。",
+      "next_action": "已证明固定角向 Fourier 乘子及其低频修改的截断交换子对局部弱零序列强趋零。紧空间上，常向量压缩的平方正性给出同一族有序复测度与有限支配迹。将两项结果接到原度量的同一子序列，用于变系数测试及图重叠中的测度识别，再核对束值相容性与 Gram 转换。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -1306,7 +1306,7 @@
         "角延拓中分母仅在未来零壳邻域可用，需真正的光滑齐次cutoff。",
         "rho/d dV_g与普通dx不可混淆；正式结果是不存在任何正表示，不只否定某个自然候选。"
       ],
-      "next_action": "先把ODE存在性和约束保持写成精确独立接口，再计算Einstein张量；非表示性支路以正矩支撑迫定、未来片折叠、指定测试三个步骤覆盖任意候选测度。",
+      "next_action": "已实现同一实际 Lorentz 度规的 Einstein 张量性质、散度及任意辅助度量下的无表示结论。本轮采用两时间片同一个光滑齐次测试与平方权重换截面。核验生产组合及独立记录，作者对应确认待登记。",
       "supplementary_obligations": []
     },
     {
@@ -1621,30 +1621,6 @@
     },
     {
       "claim_id": "cor:base-marginal",
-      "source_slices": [
-        "F08"
-      ]
-    },
-    {
-      "claim_id": "base-marginal:smooth-test-positivity",
-      "source_slices": [
-        "F08"
-      ]
-    },
-    {
-      "claim_id": "base-marginal:smooth-test-measure-ext",
-      "source_slices": [
-        "F08"
-      ]
-    },
-    {
-      "claim_id": "base-marginal:finite-kernel-unique",
-      "source_slices": [
-        "F08"
-      ]
-    },
-    {
-      "claim_id": "base-marginal:local-weighted-disintegration",
       "source_slices": [
         "F08"
       ]
@@ -4792,6 +4768,192 @@
       "claim_id": "support:rosen-general-local-moments",
       "source_slices": [
         "X05"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-constrained-flow",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-coordinate-ricci",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-intrinsic-einstein",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-null-squares",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-zero-divergence",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-hamilton-obstruction",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:bianchi-normalization",
+      "source_slices": [
+        "X04"
+      ]
+    },
+    {
+      "claim_id": "support:lift-compact-unit-null",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "support:lift-global-weighted-angular-extension",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "support:lift-punctured-degree-one-extension",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:angular-difference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:fourier-kernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:high-frequency-bound",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:low-energy-criterion",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:localized-commutator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:compact-frequencies",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:cutoff-compact-frequencies",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:infrared-commutator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:angular-cutoff:vanishing-multiplier",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:scalar-representation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-measures",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:entry-test",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:quadratic-values",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:setwise-positivity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:finite-trace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:trace-domination",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matrix-measure:representation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-positivity",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:smooth-test-measure-ext",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:finite-kernel-unique",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "base-marginal:local-weighted-disintegration",
+      "source_slices": [
+        "F08"
       ]
     }
   ],

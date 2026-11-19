@@ -116,8 +116,6 @@ import Burnett.Analysis.LocalWeakRicciIdentification
 import Burnett.Analysis.WeakTestCalculus
 import Burnett.Analysis.VacuumWeakRicci
 import Burnett.Analysis.MeasureWeakRicci
-import Burnett.Analysis.BaseMarginal.SmoothTests
-import Burnett.Analysis.BaseMarginal.FiberKernel
 import Burnett.Analysis.GeometricHminusRemainders
 import Burnett.Analysis.GeometricHminusCovariantRemainders
 import Burnett.Analysis.GeometricPrincipalIdentity
@@ -136,3 +134,8 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Counterexamples.Bianchi
+import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
+import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
+import Burnett.Analysis.BaseMarginal.SmoothTests
+import Burnett.Analysis.BaseMarginal.FiberKernel
