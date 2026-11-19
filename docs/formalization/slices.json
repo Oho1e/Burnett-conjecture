@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "已证明固定角向 Fourier 乘子及其低频修改的截断交换子对局部弱零序列强趋零。紧空间上，常向量压缩的平方正性给出同一族有序复测度与有限支配迹。将两项结果接到原度量的同一子序列，用于变系数测试及图重叠中的测度识别，再核对束值相容性与 Gram 转换。",
+      "next_action": "已证明固定角向 Fourier 乘子及其低频修改的截断交换子对局部弱零序列强趋零。紧空间上的正矩阵表示给出同一族有序复测度与有限支配迹。首选图重叠上已有半密度配对、截断转移、可数覆盖及核的近远场几何界。将这些结论接到原度量的同一子序列，比较共轭零阶算子，验证有序分量及支配迹的换图关系、束值相容性与 Gram 转换。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -4978,6 +4978,54 @@
       "claim_id": "base-marginal:countable-weighted-disintegration",
       "source_slices": [
         "F08"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:geometric-volume-pairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:restricted-l2-pairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:l2-half-density-equivalence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:half-density-jacobian",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:near-kernel-geometry",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:far-kernel-separation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:transported-test-cutoff",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap:countable-overlap-cover",
+      "source_slices": [
+        "F05"
       ]
     }
   ],

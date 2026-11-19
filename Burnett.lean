@@ -140,3 +140,6 @@ import Burnett.Analysis.Microlocal.MatrixMeasure.Representation
 import Burnett.Analysis.BaseMarginal.SmoothTests
 import Burnett.Analysis.BaseMarginal.FiberKernel
 import Burnett.Analysis.FiberDisintegration.Weighted
+import Burnett.Analysis.Microlocal.Overlap.KernelGeometry
+import Burnett.Analysis.Microlocal.Overlap.L2Transfer
+import Burnett.Analysis.Microlocal.Overlap.Localization

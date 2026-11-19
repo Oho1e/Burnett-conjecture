@@ -550,3 +550,6 @@ The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X
 ## 26. Applying the F08 countable-cover disintegration
 
 Use the joint law of the same F07 physical measure throughout. Identify its first marginal with `e_r dV`, exhibit a countable measurable cover with finite restrictions and a bound for the density on each patch, and verify the measurable relation consisting of unit null covectors above the given base point. The disintegration theorem then supplies a single kernel of the stated fiber mass, with almost-everywhere concentration and uniqueness for that joint law. Recover the componentwise Einstein moments from the actual stress identity and prove vanishing over vacuum regions. [F08 theorem](../statements/countable-fiber-disintegration.en.md)
+## 27. F05 geometry on preferred chart overlaps
+
+Preferred chart overlaps now have half-density pairings, transported cutoffs, countable covers, and near and far geometric bounds. Use the bounds to compare the conjugated order-zero operators, identify the ordered component measures on the same subsequence, and establish covariance under fixed smooth chart changes. [F05 geometry on preferred chart overlaps](../statements/chart-overlap-geometry.en.md)
