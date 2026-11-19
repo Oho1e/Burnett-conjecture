@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `f8c37ee25e55d3ca72c6224eba24263ee10f8cdbebef573a48b51458f15ecff2`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `1b197f2f5dd1411af0c3ae70515e99d824d5fc75823f5717c69924fbb3932b88`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1381,7 +1381,7 @@ Boundaries:
 Consumers: This slice supplies no mathematical input or application to other slices.
 
 
-Next: First give precise independent interfaces for ODE existence and constraint preservation, then compute the Einstein tensor. The nonrepresentation branch must cover every candidate measure through positive-moment support determination, future-sheet folding, and the specified test.
+Next: The same actual Lorentzian metric gives the Einstein tensor properties, zero divergence and nonrepresentability for every auxiliary metric. One smooth homogeneous test handles both sheets. Changing the unit section pushes the measure forward after weighting by the square of the change-of-normalization factor. Verify the production combination and record author confirmation separately.
 
 <a id="x05"></a>
 

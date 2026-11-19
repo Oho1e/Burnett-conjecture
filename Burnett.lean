@@ -51,7 +51,6 @@ import Burnett.Geometry.PerturbationJet
 import Burnett.Geometry.ConnectionErrorSequence
 import Burnett.Analysis.UniformLInfinity
 import Burnett.Analysis.Microlocal.PositiveFunctional
-import Burnett.Analysis.Microlocal.AngularCommutator.Infrared
 import Burnett.Geometry.GramCoordinateBound
 import Burnett.Geometry.CovariantTensorNorm
 import Burnett.Analysis.LocalAeBound
@@ -135,3 +134,5 @@ import Burnett.Geometry.FlatRigidity
 import Burnett.Rosen.PhysicalEnergy
 import Burnett.Rosen.Lorentz
 import Burnett.Counterexamples.HarmonicShear
+import Burnett.Counterexamples.Bianchi
+import Burnett.Analysis.Microlocal.AngularCommutator.Infrared

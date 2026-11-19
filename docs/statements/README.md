@@ -37,6 +37,6 @@
 | 6.2 | corollary | `cor:strong` | 3063–3078 | 未建模 |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [证明与独立复核](harmonic-shear.zh-CN.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |
-| C.1 | proposition | `prop:bianchi` | 3245–3247 | 未建模 |
+| C.1 | proposition | `prop:bianchi` | 3245–3247 | [证明与独立复核](bianchi-counterexample.zh-CN.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [证明与独立复核](rosen-two-polarization.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |
