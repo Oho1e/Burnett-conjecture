@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ad0069713c64efffb74cc5740a7e756480be63cbf04b502de89d406eef91eaa3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `73a6fba3b54e60067cfc4374aa5ce6a90dbd3cb4a0ee83eaebd6c813f90c5783`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: Check the pinned library's hypotheses for disintegration. Construct the marginal first, then disintegrate in angle and prove vanishing on vacuum regions.
+Next: The measurable coordinate change and nonnegative reweighting reconstruct every event from a given angular kernel. Derive the geometric marginal and kernel from the original sequence, identify its Einstein moments and prove vanishing over vacuum regions.
 
 <a id="a01"></a>
 

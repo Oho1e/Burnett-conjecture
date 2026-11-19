@@ -88,6 +88,8 @@ vanishes over every open vacuum region of $g$.
 
 Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
 
+Four supporting results transport a given angular kernel through measurable coordinates and nonnegative weights. [Angular kernel transforms](angular-kernel-transforms.en.md)
+
 ## T04
 
 Source: lemma 3.1, label `lem:commutator`, source lines 566–575. Title: Lipschitz-small coefficients in a symmetric energy pairing.

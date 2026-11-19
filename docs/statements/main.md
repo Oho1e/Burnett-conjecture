@@ -88,6 +88,8 @@ vanishes over every open vacuum region of $g$.
 
 数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
 
+四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](angular-kernel-transforms.zh-CN.md)
+
 ## T04
 
 原文：lemma 3.1，标签 `lem:commutator`，源码第566–575行。标题：Lipschitz-small coefficients in a symmetric energy pairing。

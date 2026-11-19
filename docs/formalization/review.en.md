@@ -221,3 +221,7 @@ The independent mathematical review covers the fixed product-coordinate model. A
 The modular Lean audit checks the 221 declarations in the nine new modules. The capstone derives one full kinetic graph measure from the original physical assumptions on an arbitrary positive definite screen. The supporting code proves the actual Lorentz metric, both local weak-star limits, nonnegative density, and the full Einstein and transport tests with finite auxiliary second moments. [Statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 Author confirmation and current combination CI are separate steps. The source bindings retain the original X06 parent and the counts for that proof snapshot. The refreshed candidate reuses the same coordinate Hamiltonian and integration lemmas from PR #21. Whole-paper certification remains open.
+
+## Angular kernel transforms (F07–F08)
+
+The registered statements use a given kernel and a measurable weight or coordinate map. Applying them to the actual physical measure and proving its Einstein moments remain separate obligations. [Angular kernel transforms](../statements/angular-kernel-transforms.en.md)

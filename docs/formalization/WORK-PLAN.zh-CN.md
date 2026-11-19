@@ -545,3 +545,7 @@ X06 独立于主算子和 Ward 的证明工作。第 3360–3386 行的总定理
 一般命题已有从物理假设出发的直接 Lean 证明。工程复用随 X06 引入的坐标 Hamilton 量与积分引理。两项测试恒等式及辅助协向量范数的局部二阶矩都使用总定理给出的同一测度。[X05 命题说明](../statements/rosen-two-polarization.md) · [数学复核](../statements/rosen-two-polarization-review.md)
 
 X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线上核验 X05 的组合目标登记、整库和 CI。作者确认单独登记。
+
+## 条件角核变换（F07–F08）
+
+给定分解后，坐标公式可计算每个可测联合事件，加权核可重构推前后的质量。后续须从原序列给出角核和 Lorentz 底体积，代入辅助范数平方和径向映射，再对同一测度识别 Einstein 二阶矩。[已登记支持结果](../statements/angular-kernel-transforms.zh-CN.md)

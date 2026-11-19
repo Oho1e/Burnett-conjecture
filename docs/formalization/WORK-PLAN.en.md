@@ -540,3 +540,7 @@ Before handing off the PR, verify the current machine checks and the exact combi
 The general proposition now has a direct Lean proof under the physical assumptions. It uses the coordinate Hamiltonian and integration lemmas introduced in X06. The tests and the local auxiliary cotangent second moments all use the measure exhibited by the capstone. [X05 statement](../statements/rosen-two-polarization.en.md) · [Mathematical review](../statements/rosen-two-polarization-review.en.md)
 
 The X06 and X07 modules entered `main` in PRs #21 and #22. Verify the combined X05 target registry, full project and CI on that base. Record author confirmation separately.
+
+## Angular kernel transforms (F07–F08)
+
+Given a disintegration, the coordinate formula computes every measurable joint event and the weighted kernel reconstructs the transported physical mass. The next geometric step is to supply the original sequence’s kernel, its Lorentz base volume, and the auxiliary norm squared with its radial map. Identify the Einstein moments for that same measure. [Registered supporting results](../statements/angular-kernel-transforms.en.md)

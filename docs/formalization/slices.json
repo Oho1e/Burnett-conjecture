@@ -274,7 +274,7 @@
         "张量矩恒等式为a.e.；e_r≥0由光滑性提升至处处，二者量词不能混同。",
         "可测纤维测度不等于光滑Vlasov密度。"
       ],
-      "next_action": "核定固定库的解体定理适用条件，先构造边缘再给角向解体并证明真空区消失。",
+      "next_action": "已证明给定条件角核的可测换坐标、非负加权及逐事件重构。后续从原序列构造几何边缘和角核，证明 Einstein 二阶矩与真空区消失。",
       "supplementary_obligations": []
     },
     {
@@ -4768,6 +4768,30 @@
       "claim_id": "support:rosen-general-local-moments",
       "source_slices": [
         "X05"
+      ]
+    },
+    {
+      "claim_id": "support:angular-coordinate-joint-sections",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "support:angular-coordinate-real-integral",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "support:angular-kernel-fiber-reweight",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "support:angular-kernel-borel-reconstruction",
+      "source_slices": [
+        "F07"
       ]
     }
   ],
