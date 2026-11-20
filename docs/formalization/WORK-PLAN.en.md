@@ -587,3 +587,7 @@ Full-scale joint Fourier multipliers have quantitative trilinear bounds on Schwa
 ## 35. F05 first-order localization and the original curl
 
 The Bessel localization now supplies the homogeneous principal action of an actual first-order row, and the original metric sequence has the coordinate curl constraint. Continue connecting the Ricci row, the common extracted ordered measure, and its density constraints. [F05 first-order localization and the original curl](../statements/bessel-and-coordinate-curl.en.md)
+
+## 36. Actual bilinear and scalar Fourier multipliers
+
+The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy. [Actual bilinear and scalar Fourier multipliers](../statements/bilinear-fourier-operators.en.md)

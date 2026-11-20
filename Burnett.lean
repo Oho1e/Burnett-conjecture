@@ -155,3 +155,6 @@ import Burnett.Analysis.ShiftedFourierWindow.LowPassLp
 import Burnett.Analysis.SignedFourierWindow.SignedWindowOperator
 import Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow
 import Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm
+import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualOuter
+import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputPairing
+import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs

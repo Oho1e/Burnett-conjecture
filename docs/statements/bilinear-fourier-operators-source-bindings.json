@@ -1,0 +1,195 @@
+{
+  "dependency_pull_request": 39,
+  "dependency_head": "4747d0ba1a6f1dfb53de92ae479172ce3f89e60c",
+  "dependency_tree": "fa7e3741bc2bd5eaf5ce84ef669557e8971b24e0",
+  "slice": "A02",
+  "source_lines": [
+    660,
+    677
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "source_independent_receipts_sha256": {
+    "dual-packets": "43a7cf14a9a76fe647a956a265d2e45874b03d5053c167f2c10f07e0cf7db745",
+    "mikhlin": "670e4ed4ef60b6d57d7dd38aefc6b626785600578a6f10cca187f0ce9323bf98",
+    "mikhlin-gradient": "ee6c25bc8898e539f5d90f4bdd41dd07ae60b8cf1c674edec59fd9fd4677779f",
+    "radian-bilinear-kernel": "ade21526b5853fe332c250105812e8262031dd95140de9965dfa250605a9f8c4"
+  },
+  "port_receipt_sha256": "abc50a4fd47405f6ae6dc102583e89a7d60b93791fbacf7395ce81cf30c7377a",
+  "fourier_definitions_sha256": {
+    "PhysicalCommutator.lean": "a445e9e65c58b7ae85c2a77a3d822497a04c7194b95098fb97268b0428bec2e9",
+    "PaperPairing.lean": "f4f260ebf54fcd3666577599720e483cd7727c870ba02174f870ffbec787a1c0"
+  },
+  "fourier_definitions_review_sha256": "cda1a495925a2f1bfd9425459ef9c48adb6a631791d0c721f1bbb75e247acfeb",
+  "modules": {
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDual": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDual.lean",
+      "production_source_sha256": "1d1830447075da317dd6005026ad617a7da4120bd70a7505cef961565c5c89a5",
+      "audited_source_sha256": "64f07757d874232a1d4b635bebb2b8e71c591db9f7a261a5d621807f74186c01",
+      "port_input_sha256": "dd3e6946f1fbacd4993a1ebc061ea5de1241f67881194350e7b52c6a1a6827e1"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualBound": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualBound.lean",
+      "production_source_sha256": "e536a436b85b8c2a67d6bea441cd346451a264c15aaece5e5efb5e2cf9af23b7",
+      "audited_source_sha256": "fde077c84c55076e42e7125f4e01df752e4c85fc369c3932eb5d8542ba281c75",
+      "port_input_sha256": "5810651a74d35c4f83a2f7576a009fc468282769e851c5433ea5c096a5ee3623"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualCutoff": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualCutoff.lean",
+      "production_source_sha256": "ebe9557d4df95d87c37f4ae7f9ba7efa5fdd2f99b373131c98e62b014d06a49a",
+      "audited_source_sha256": "fb6fdde0fb071acb51bdca755204fa48f61ef614a020571bdff169aea0f928f5",
+      "port_input_sha256": "22b787de3de33e780de41571eddc88d0887bc5e5f999012993a936f7c2da2602"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualCutoffLp": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualCutoffLp.lean",
+      "production_source_sha256": "16c036d9fc3ca64355d770b649432b17ec46bc78fc530316244357733cab0596",
+      "audited_source_sha256": "947224ef2599c0515d43a4bea2e0e880765b0c0ce3cee0e3b6655c73e4a179df",
+      "port_input_sha256": "544d40236362b97d030226d28fea16874782aac6b7549d42be4194a58e850c29"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualDensity": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualDensity.lean",
+      "production_source_sha256": "66f5ea0342d9976ca49073469f8790e7da78a4fe39013c7090f384d4643d762c",
+      "audited_source_sha256": "ed289c6457c78a01ceb34e11aa27bf12c66b4ae3ff332e15fbc86fa92ccb8287",
+      "port_input_sha256": "ed289c6457c78a01ceb34e11aa27bf12c66b4ae3ff332e15fbc86fa92ccb8287"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualFourier": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualFourier.lean",
+      "production_source_sha256": "fd57364fb12d292b756aadc501bf818c8f22d9783707497253ee19a0a6c12f8d",
+      "audited_source_sha256": "2219d0750cb5d85f078def502a640f9d905f776888a5e8aace86aae25b87e355",
+      "port_input_sha256": "09fa0366e92ceea74fcd3459b66fcc31b80439d9bdb63ebe0e7399471a35b7d9"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputPairing": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualInputPairing.lean",
+      "production_source_sha256": "7ec217a34c42a3fe3131412a759c6dd9da36bd924f7d52a200c4904a1f719646",
+      "audited_source_sha256": "5f7d747131686377e34345336966b3e2dfa49914cec69a71c51ed4b710a0ebc3",
+      "port_input_sha256": "b8812152609121703eebce2ebd4b8bb1f82b7337145b6301ec1fb537c3f93aa3"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputs": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualInputs.lean",
+      "production_source_sha256": "90f70a165f404ab49f01b07df8e3a55f8d86c109e36c088bede8f0475c9b259a",
+      "audited_source_sha256": "e55c279ada513fc1c0f6f8ee136cf299272888329b8cb35fa32fd00e70199062",
+      "port_input_sha256": "ef4548ed0007cea67676d143a553976e7d9dcef3cb0a84f17a4dec20bb4b1fe5"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualOuter": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualOuter.lean",
+      "production_source_sha256": "8a6356dee2a3bcf5d5910b7e2cab50d53c19967da2085eea8f7c7f85b6895990",
+      "audited_source_sha256": "bc96da6eed8167cd16e3444867c712d3d47789b2c789069ac70ce21b1171dd8b",
+      "port_input_sha256": "911003ba83b4dd73d2e843990c3cdeb309dfa36f45247111680dc22d3b67c16d"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSpectrum": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualSpectrum.lean",
+      "production_source_sha256": "d06d5ee91d251a5a24387ee56c842d046cc9a1e7676119149132cc2434caf0e1",
+      "audited_source_sha256": "2ab4d2785c133d6cace0a08f6857f51bcb852946ebf4d2a7b58dd4f1bfdc0961",
+      "port_input_sha256": "3039dd635bb38764f1b3c701003a3be14c4b9a009b51a4201214d16be90f5f88"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualSymbolInputs.lean",
+      "production_source_sha256": "9b5989993d6adbd5c3f1c1433fca8a9e4b4ac4504bd40193d338275fba376dbb",
+      "audited_source_sha256": "53b8072a0e162a7063dd2944df5f2a74a99b96ef0d072d1b67930893d97a8028",
+      "port_input_sha256": "66d77fdb3b78a08461da3cbe6989e2814e847da578cbc501196404471cf59cc3"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.FourierConvention": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/FourierConvention.lean",
+      "production_source_sha256": "93b8340442ae59f2569be496454760281f4baa19681c623becf98dd492b93134",
+      "audited_source_sha256": "a5ab827f428ac5ce3efc166f297019e077a987c7223a8b7c3b902676181c592f",
+      "port_input_sha256": "a5ab827f428ac5ce3efc166f297019e077a987c7223a8b7c3b902676181c592f"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinApplications": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinApplications.lean",
+      "production_source_sha256": "9f52aadb6414058267a67852a592916c5adddfc9ece38e8db0582ee7718b71c6",
+      "audited_source_sha256": "9642d5a48b418adfd136d333870b038580122ba4359a576e148dac5bb9cd2bb0",
+      "port_input_sha256": "12c5a2d3c81ca4bcff13f7845784f3c27648b0f84d34311fa54c189f5d8fc885"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinExtension": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinExtension.lean",
+      "production_source_sha256": "38d2c520282d02557bba52b7d9c6b978a02d726b0735667ba9ca5b9c12f643c0",
+      "audited_source_sha256": "7ffeb7b88e53e5dfce59bc075b9aae0202f9a9bcc89dfe0e3f2ee1d30d8e001e",
+      "port_input_sha256": "803ab33b7e555cdde2a28f10962d0af7a9b3f339dd5e3ad9d6c09cd181a0a1a7"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinFinite": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinFinite.lean",
+      "production_source_sha256": "1adf48cce56559817d9c312715c28b4deaef49b338a1625e67a2edce3edce5e1",
+      "audited_source_sha256": "0b287ea3ff5e27ffa634efdc75920ca8b0a3fc00f3cbba3b91e500c80ff1d32b",
+      "port_input_sha256": "901d68a90301cd3426309112506f1bea2192a337662063e46472b2885c24e572"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinGradient": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinGradient.lean",
+      "production_source_sha256": "bdda13dae4d1b72f0eb71ebcddbb28b0a7b0624dc132deefe5655e8a58b2af49",
+      "audited_source_sha256": "ad3f1cebe963237288f9df2bcdbd0ed3e263d0eb296f0ceeacb27e0aff7d0528",
+      "port_input_sha256": "dfe0c8a07893464c26a818814d4743784a8cc3dce6dcc26347e1d0678c73beaa"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinGradientBound": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinGradientBound.lean",
+      "production_source_sha256": "ffa8c45f085144ac3a81113957f3d719876c60ef1c958d4e2adcb1902c3d3fbb",
+      "audited_source_sha256": "14a576c1fd6bbbcb4b921a0ea4062dc7f83fe23aebbde3e5a1b1442dc669f74a",
+      "port_input_sha256": "79fa57fa92be9c6bafa6f58125d289794a020bc0eacd0df3fc4ab2c6b5a05221"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinIntersection": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinIntersection.lean",
+      "production_source_sha256": "ec13e58ab84fd12f7c1ccf11766bdef7f6b51e8dac356dccd513b4c4092b745e",
+      "audited_source_sha256": "3154c44419a79750f3b7d1a6afd062f71b8af5d26c30fe724a4b15915c09a934",
+      "port_input_sha256": "9869cab9c552aa831db4f7b896243128b7e5cd3acfc3c4893fb5b9c8b405f1ee"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinSchwartz": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinSchwartz.lean",
+      "production_source_sha256": "da31a8af1e8c3af9c6cb6dcd6b65687fc914f54a1acfb114c4fb61fb8ccced6e",
+      "audited_source_sha256": "4ba3cb1220befcedfd4031f4675696ad463c08a98d1f5875fcf134f6f8d45826",
+      "port_input_sha256": "ee1b4e515f40482c826e22adcc4ad94a99bcfa088b4f2215c4b78edd46780923"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinStrong": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinStrong.lean",
+      "production_source_sha256": "dd6ebc9c84de1720d006550a8530a902ea8284ca650e7c3d945177ae808bc7b6",
+      "audited_source_sha256": "5e8ad911cbed7c912b2f676734ded1c23f78a00967c15df151c20ff2b5742864",
+      "port_input_sha256": "9c845566ea72d183f000cc4006b216adfb2a1701c86caa682a3145268a824b3a"
+    },
+    "Burnett.Analysis.CubicEnergy.BilinearMultiplier.RadianFrequency": {
+      "path": "Burnett/Analysis/CubicEnergy/BilinearMultiplier/RadianFrequency.lean",
+      "production_source_sha256": "7a9d718c6d2eb90d5991fb3251d7e95fa0e612ef70575e29ccc034d3879b2d0c",
+      "audited_source_sha256": "1ce145c168e3e32a5dbeb8470487d3522601743383751989c04e0313639193a5",
+      "port_input_sha256": "20c67cc3f9dbd1a352beb7df9b254f2c27a425c58bd42b77b1d2eb6b85ce838e"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-pairing",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualFourier",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_schwartz_pairing"
+    },
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualBound",
+      "declaration": "Burnett.A02.FrequencySplit.joint_bilinear_sphere_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-bilinear-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputs",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_sphere_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:actual-output-multiplier",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSpectrum",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_fourierMultiplier_output"
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-outer-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualOuter",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_outer_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:scalar-lp-realization",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinApplications",
+      "declaration": "Burnett.A02.FrequencySplit.homogeneous_multiplier_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:radial-spectrum-input",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_radial_data"
+    },
+    {
+      "claim_id": "a02:harmonic:angular-spectrum-input",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data"
+    }
+  ],
+  "closes_parent_claim": false
+}
