@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `f73c390643ac5744cfef3b4d597892ddcfc67cf3bb187cdb958cdcf620e5d075`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `1d094f491b8d38f5d4d97476990fbc06ca94eb7ccef84c235c1a44907fe50938`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The cutoff commutator for fixed angular Fourier multipliers and their low-frequency modifications tends strongly to zero on localized weakly null inputs. Positive matrix representation on compact spaces gives ordered complex measures with a common finite dominating trace. The preferred chart overlaps have half-density pairings, cutoff transfer, a countable cover, and near- and far-field kernel geometry bounds. A continuous decaying Fourier multiplier is compact between two spatial cutoffs, for use at a fixed base Fourier frequency of a localized order-minus-one remainder. Apply these results to the same original-metric subsequence and compare the conjugated order-zero operators to verify the transformation of the ordered entries and trace, bundle compatibility and Gram conversion.
+Next: The Bessel localization now supplies the homogeneous principal action of an actual first-order row, and the original metric sequence has the coordinate curl constraint. Continue connecting the Ricci row, the common extracted ordered measure, and its density constraints.
 
 <a id="f06"></a>
 

@@ -65,7 +65,7 @@ theorem compactFrequency_tendsto_zero_of_localized_weak_zero
     (fun n => sourceSchwartz (hs n) χ0 (hχ0 n))
     (low_frequency_energy_tendsto_zero hs hf χ0 hχ0 hB ht R)
 
-private theorem fixedRealWeight_preserves_test_limits
+theorem fixedRealWeight_preserves_test_limits
     (w : Space → ℝ) (hw : ContDiff ℝ ∞ w) (hc : HasCompactSupport w)
     (f : ℕ → Space → ℝ)
     (ht : ∀ φ : D, Tendsto (fun n => ∫ x, f n x * (φ : Space → ℝ) x) atTop (𝓝 0)) :
