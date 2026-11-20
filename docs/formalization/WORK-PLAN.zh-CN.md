@@ -584,3 +584,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 33. 四维环带平方函数与乘积估计
 
 已证明有符号环带和及环带平方函数的有限指数 Lᵖ 界，以及两个环带因子和一个低频因子的乘积估计。继续接入全尺度联合乘子界及其三次能量应用。 [四维环带平方函数与乘积估计](../statements/annular-square-and-product-estimates.zh-CN.md)
+
+## 34. 定量联合 Fourier 乘子估计
+
+全尺度联合 Fourier 乘子已在 Schwartz 测试上得到定量三线性界。继续通过对偶接到实际双线性输出，并装配标量乘子界和三次能量。 [定量联合 Fourier 乘子估计](../statements/joint-fourier-multiplier-estimates.zh-CN.md)

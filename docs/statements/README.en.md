@@ -31,6 +31,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Compact Fourier multipliers between spatial cutoffs](compact-frequency-localization.en.md)
 - [Signed Fourier windows in four dimensions](signed-fourier-window-estimates.en.md)
 - [Four-dimensional annular square and product estimates](annular-square-and-product-estimates.en.md)
+- [Quantitative joint Fourier multiplier estimates](joint-fourier-multiplier-estimates.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |

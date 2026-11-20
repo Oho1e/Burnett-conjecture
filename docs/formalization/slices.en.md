@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `e7a091611fe69483f29ce110e95439b630bb799bd2993704bbe488f3a7e814dc`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `f73c390643ac5744cfef3b4d597892ddcfc67cf3bb187cdb958cdcf620e5d075`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: Finite-exponent signed annular sums and annular square functions now have Lᵖ bounds, together with the product estimate for two annular factors and one low-frequency factor. Continue the full-scale joint multiplier bound and its application to the cubic energy.
+Next: Full-scale joint Fourier multipliers have quantitative trilinear bounds on Schwartz tests. Continue the physical bilinear output by duality, the scalar multiplier bounds, and the assembly of the cubic energy.
 
 <a id="a03"></a>
 

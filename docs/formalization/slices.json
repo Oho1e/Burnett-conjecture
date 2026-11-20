@@ -331,7 +331,7 @@
         "c_j的乘积频率线性乘子留在双线性算子外；不能假称在乘积频率0光滑。",
         "有限指数条件r>1必须保留，不能外推到未证端点。"
       ],
-      "next_action": "已证明有符号环带和及环带平方函数的有限指数 Lᵖ 界，以及两个环带因子和一个低频因子的乘积估计。继续接入全尺度联合乘子界及其三次能量应用。",
+      "next_action": "全尺度联合 Fourier 乘子已在 Schwartz 测试上得到定量三线性界。继续通过对偶接到实际双线性输出，并装配标量乘子界和三次能量。",
       "supplementary_obligations": [
         {
           "id": "local:complete-cubic-energy-definition",
@@ -5192,6 +5192,24 @@
     },
     {
       "claim_id": "a02:harmonic:two-annular-one-low",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:joint-tested-sums",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:joint-weighted-kernel",
+      "source_slices": [
+        "A02"
+      ]
+    },
+    {
+      "claim_id": "a02:harmonic:joint-sphere-bound",
       "source_slices": [
         "A02"
       ]

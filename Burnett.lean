@@ -153,3 +153,4 @@ import Burnett.Analysis.FiberDisintegration.Reweight
 import Burnett.Analysis.ShiftedFourierWindow.LowPassLp
 import Burnett.Analysis.SignedFourierWindow.SignedWindowOperator
 import Burnett.Analysis.SignedFourierWindow.TwoAnnularOneLow
+import Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm
