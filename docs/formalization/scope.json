@@ -2708,6 +2708,26 @@
       "claim_id": "a02:harmonic:joint-sphere-bound",
       "module": "Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm",
       "declaration": "Burnett.A02.FrequencySplit.joint_trilinear_sphere_bound"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:negative-Fourier-energy",
+      "module": "Burnett.Analysis.Microlocal.BesselLocalization",
+      "declaration": "Burnett.Microlocal.BesselLocalization.besselLp_norm_sq_eq_negativeEnergy"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:actual-row-principal",
+      "module": "Burnett.Analysis.Microlocal.BesselLocalization",
+      "declaration": "Burnett.Microlocal.BesselLocalization.rowPrincipal_tendsto_zero_of_negativeEnergy_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-gradient-bound",
+      "module": "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_rawComponentDerivative_bound_of_original"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-curl-row",
+      "module": "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.originalGradient_curlRow_tendsto_zero"
     }
   ],
   "inventory": [
@@ -13450,6 +13470,78 @@
       "statement_record": "docs/statements/joint-fourier-multiplier-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:coordinate-localization:negative-Fourier-energy",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.BesselLocalization.besselLp_norm_sq_eq_negativeEnergy",
+      "statement_record": "docs/statements/bessel-and-coordinate-curl.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-production-port",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:coordinate-localization:actual-row-principal",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.BesselLocalization.rowPrincipal_tendsto_zero_of_negativeEnergy_tendsto_zero",
+      "statement_record": "docs/statements/bessel-and-coordinate-curl.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-production-port",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-gradient-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_rawComponentDerivative_bound_of_original",
+      "statement_record": "docs/statements/bessel-and-coordinate-curl.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-production-port",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-curl-row",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.originalGradient_curlRow_tendsto_zero",
+      "statement_record": "docs/statements/bessel-and-coordinate-curl.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-production-port",
       "does_not_close_parent_claim": true
     }
   ],

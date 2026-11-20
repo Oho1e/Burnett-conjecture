@@ -583,3 +583,7 @@ Finite-exponent signed annular sums and annular square functions now have Lᵖ b
 ## 34. Quantitative joint Fourier multiplier estimates
 
 Full-scale joint Fourier multipliers have quantitative trilinear bounds on Schwartz tests. Continue the physical bilinear output by duality, the scalar multiplier bounds, and the assembly of the cubic energy. [Quantitative joint Fourier multiplier estimates](../statements/joint-fourier-multiplier-estimates.en.md)
+
+## 35. F05 first-order localization and the original curl
+
+The Bessel localization now supplies the homogeneous principal action of an actual first-order row, and the original metric sequence has the coordinate curl constraint. Continue connecting the Ricci row, the common extracted ordered measure, and its density constraints. [F05 first-order localization and the original curl](../statements/bessel-and-coordinate-curl.en.md)

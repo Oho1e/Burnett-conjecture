@@ -1,0 +1,51 @@
+{
+  "slice": "F05",
+  "source_lines": [
+    412,
+    419
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "port_receipt_sha256": "4933d41d7d847850a92362647c0e6db8517ecc1e87efb67dffe0c962a2d82767",
+  "proved_bessel_source_sha256": "1782152f66f2e9cda90557710936cc23dabfce7f8b92eb0cca54828bb6cdde2c",
+  "independent_bessel_review_sha256": "fe2a65021a6c1a6df96d7ed6a853f65a2fdfae3362551e0aecadf0e2060735f0",
+  "independent_port_sha256": "28165dc5f549fcf444db4c88112aa030efa547457bcd3a0c9d77fe24daf455ae",
+  "original_curl_source_sha256": "dce85bc3374f609471f177d2a9aac021425a8e49544c992436ec2dfa2879beb7",
+  "modules": {
+    "Burnett.Analysis.Microlocal.AngularCommutator.Infrared": {
+      "path": "Burnett/Analysis/Microlocal/AngularCommutator/Infrared.lean",
+      "sha256": "cfd2a4b7fdf89a75c140ecc330f59de373bcf77ddef26a76da737d1001b12f37"
+    },
+    "Burnett.Analysis.Microlocal.BesselLocalization": {
+      "path": "Burnett/Analysis/Microlocal/BesselLocalization.lean",
+      "sha256": "3cfcc8180522eb78481f6673d1541f161612d352eb70ecf02df73d90b14ec79e"
+    },
+    "Burnett.Analysis.Microlocal.OriginalCoordinateCurl": {
+      "path": "Burnett/Analysis/Microlocal/OriginalCoordinateCurl.lean",
+      "sha256": "1c8481ab501919b68a8c459b9782b67c21a0eb09e443a2abd9b49ef7d81111c0"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:coordinate-localization:negative-Fourier-energy",
+      "module": "Burnett.Analysis.Microlocal.BesselLocalization",
+      "declaration": "Burnett.Microlocal.BesselLocalization.besselLp_norm_sq_eq_negativeEnergy"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:actual-row-principal",
+      "module": "Burnett.Analysis.Microlocal.BesselLocalization",
+      "declaration": "Burnett.Microlocal.BesselLocalization.rowPrincipal_tendsto_zero_of_negativeEnergy_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-gradient-bound",
+      "module": "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_rawComponentDerivative_bound_of_original"
+    },
+    {
+      "claim_id": "f05:coordinate-localization:original-coordinate-curl-row",
+      "module": "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.originalGradient_curlRow_tendsto_zero"
+    }
+  ],
+  "closes_parent_claim": false
+}

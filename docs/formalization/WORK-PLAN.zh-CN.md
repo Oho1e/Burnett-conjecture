@@ -588,3 +588,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 34. 定量联合 Fourier 乘子估计
 
 全尺度联合 Fourier 乘子已在 Schwartz 测试上得到定量三线性界。继续通过对偶接到实际双线性输出，并装配标量乘子界和三次能量。 [定量联合 Fourier 乘子估计](../statements/joint-fourier-multiplier-estimates.zh-CN.md)
+
+## 35. F05 一阶定位与原度规列的坐标旋度
+
+实际一阶行已有 Bessel 主部定位，原度规列已有坐标旋度约束。继续接入 Ricci 行、同一抽取的有序测度和密度约束。 [F05 一阶定位与原度规列的坐标旋度](../statements/bessel-and-coordinate-curl.zh-CN.md)
