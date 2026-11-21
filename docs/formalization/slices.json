@@ -855,7 +855,7 @@
         "冻结screen不精确保留真实缺陷，不能在本片暗藏其误差估计。",
         "局部range投影与乘全局cutoff后的order-zero乘子应区分。"
       ],
-      "next_action": "先形式化Q、R的有限维矩阵恒等式和range等价，再建立紧Lorentz族统一锥邻域及符号导数界。",
+      "next_action": "实际屏幕约束、统一宽锥正下界、偶性、零次齐次性及冻结代数相位已有 Lean 证明。后续接续光滑性、全局截断和变分算子接口。",
       "supplementary_obligations": [
         {
           "id": "new-defcand:uniform-screen-metric-family",
@@ -5284,6 +5284,48 @@
       "claim_id": "a02:harmonic:angular-spectrum-input",
       "source_slices": [
         "A02"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:null-range",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "source_slices": [
+        "V06"
+      ]
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "source_slices": [
+        "V06"
       ]
     }
   ],

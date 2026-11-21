@@ -2768,6 +2768,41 @@
       "claim_id": "a02:harmonic:angular-spectrum-input",
       "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
       "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data"
+    },
+    {
+      "claim_id": "v06:screen:null-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenNullScreenProjection_constraints"
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_fixed_iff"
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_symmetric"
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "module": "Burnett.Analysis.FrozenScreen.CompactFamily",
+      "declaration": "Burnett.V06.exists_uniform_wide_screen_bounds"
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_even"
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_degreeZero"
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "module": "Burnett.Analysis.FrozenScreen.Phase",
+      "declaration": "Burnett.V06.frozenEinsteinSymbol_screen_phase"
     }
   ],
   "inventory": [
@@ -13726,6 +13761,132 @@
       "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:null-range",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenNullScreenProjection_constraints",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2071,
+        "endline": 2085
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenProjection_fixed_iff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2081,
+        "endline": 2085
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenProjection_symmetric",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2061,
+        "endline": 2069
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.exists_uniform_wide_screen_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2071,
+        "endline": 2079
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenSymbol_even",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2078,
+        "endline": 2080
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenSymbol_degreeZero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2078,
+        "endline": 2080
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenEinsteinSymbol_screen_phase",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2097,
+        "endline": 2107
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
   ],
