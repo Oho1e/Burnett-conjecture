@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `03944f2318967ec4a490310ed3d0324ce2da2089e6f1990213624f8e7dc795f6`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `f295b4771180a90a83c489c196cb1d6852250c81bf646e638b447ade0ed10dbb`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -429,7 +429,7 @@ Internal refinements (no separate completion status):
 
 - Shared analytic objects and uniform finite-symbol-seminorm specifications for this section. (Paper lines 519–537)
 
-Next: Check the exact linear interface of BenyiOh Theorem A, then prove both versions using the formally self-adjoint divergence form and three commutator terms.
+Next: The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs.
 
 <a id="a02"></a>
 
