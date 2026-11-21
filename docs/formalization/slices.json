@@ -298,7 +298,7 @@
         "矩阵系数版本要求B每一符号阶都标量，只有主符号标量不够。",
         "分析配对dx与几何dV_g转换必须显式；r^{ab}本片系数不能混同全篇辅助度规r。"
       ],
-      "next_action": "先核BenyiOh Theorem A的精确线性接口，然后用形式自伴散度式与三项交换子证明两版本。",
+      "next_action": "在登记的符号及支撑假设下，完整左量子化的标量、矩阵主能量配对和两条固定图密度估计已有 Lean 证明。后续须将原文算子类和下游 Weyl 作用与这些 Lean 输入对接。",
       "supplementary_obligations": [
         {
           "id": "local:analytic-symbol-uniformity-conventions",
@@ -5368,6 +5368,30 @@
       "claim_id": "v06:screen:phase",
       "source_slices": [
         "V06"
+      ]
+    },
+    {
+      "claim_id": "a01:commutator:scalar-coefficients",
+      "source_slices": [
+        "A01"
+      ]
+    },
+    {
+      "claim_id": "a01:commutator:matrix-coefficients",
+      "source_slices": [
+        "A01"
+      ]
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-scalar",
+      "source_slices": [
+        "A01"
+      ]
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-matrix",
+      "source_slices": [
+        "A01"
       ]
     }
   ],

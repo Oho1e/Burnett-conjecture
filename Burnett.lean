@@ -223,3 +223,4 @@ import Burnett.Analysis.FrozenScreen.NullOrthogonality
 import Burnett.Analysis.FrozenScreen.Phase
 import Burnett.Analysis.FrozenScreen.Projection
 import Burnett.Analysis.FrozenScreen.Symbol
+import Burnett.Analysis.PrincipalEnergy

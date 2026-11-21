@@ -599,3 +599,7 @@ The complete homogeneous and fixed-regularization energies, the finite-exponent 
 ## 38. Frozen screen and phase identity
 
 The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow. [Frozen screen and phase identity](../statements/frozen-screen.en.md)
+
+## 39. Principal-energy commutator estimates
+
+The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs. [Principal-energy commutator estimates](../statements/a01-principal-energy.en.md)

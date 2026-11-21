@@ -36,6 +36,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Actual bilinear and scalar Fourier multipliers](bilinear-fourier-operators.en.md)
 - [Complete cubic energy in the Lean library](complete-cubic-energy.en.md)
 - [Frozen screen and phase identity](frozen-screen.en.md)
+- [Principal-energy commutator estimates](a01-principal-energy.en.md)
 - Scope and progress are maintained only in `../formalization/scope.json`; this directory retains source references and correspondence material.
 
 | Expected source number | Kind | Label | Source lines | Lean status |

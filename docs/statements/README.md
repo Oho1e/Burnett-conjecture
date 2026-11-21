@@ -36,6 +36,7 @@
 - [实际双线性与标量 Fourier 乘子](bilinear-fourier-operators.zh-CN.md)
 - [Lean 库中的完整三次能量](complete-cubic-energy.zh-CN.md)
 - [冻结屏幕与相位恒等式](frozen-screen.zh-CN.md)
+- [主能量交换子估计](a01-principal-energy.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |
