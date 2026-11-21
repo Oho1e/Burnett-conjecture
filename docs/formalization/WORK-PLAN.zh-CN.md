@@ -596,3 +596,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 36. 实际双线性与标量 Fourier 乘子
 
 实际双线性输出、谱输入和标量 Fourier 乘子已有有限指数界。继续装配实际交换子的定量界及完整三次能量。 [实际双线性与标量 Fourier 乘子](../statements/bilinear-fourier-operators.zh-CN.md)
+
+## 37. Lean 库中的完整三次能量
+
+完整齐次及固定正则化能量、有穷指数交换子和混合系数界均有 Lean 证明。原文命题确认及空间变系数应用另有后续工作。 [Lean 库中的完整三次能量](../statements/complete-cubic-energy.zh-CN.md)
