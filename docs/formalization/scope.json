@@ -14227,7 +14227,7 @@
       "claim_id": "a04:signed-far-gap",
       "kind": "supporting-lemma",
       "disposition": "formalize",
-      "parent_claim_id": "lem:analytic-near",
+      "parent_claim_id": "unnum:phase-gap",
       "source_ref": {
         "path": "paper/burnett.tex",
         "line": 994,

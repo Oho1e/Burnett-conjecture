@@ -9,7 +9,7 @@
 - 固定有限维场的纤维后，对于每个有限实数 $p>1$，基本帽和放大帽都有统一的单帽 $L^p$ 界。对每个固定的有限 $p_*>3$，角帽族的场 $L^3$ 求和具有计数因子 $N_\delta^{1/(3(p_*-2))}$。这些界的常数在紧族和允许的帽宽上统一。
 - 有符号精确相位 $q_m(p+q)-q_m(q)$ 的绝对值在低槽远角区下界为 $b\delta^2|p||q|$。Lean 假设保留三个频率的薄锥条件和低槽远角权重非零条件。
 
-以下九个支持声明供近角和远角论证调用。原稿中的近角和远角母引理仍待完成，作者确认待记录。
+以下九个支持声明用于近角引理和物理远角修正的构造。这两项结果仍待完成，作者确认待记录。
 
 - `Burnett.Analysis.ProjectiveNullCaps.triad_cutoff_partition_nonnegative`
 - `Burnett.Analysis.ProjectiveNullCaps.exists_uniform_comparable_nearNull_wedge`

@@ -9,7 +9,7 @@ This delivery corresponds to lines 893–1025 of the locked manuscript.
 - For a fixed finite-dimensional field fiber and each finite real $p>1$, the base and enlarged caps have uniform individual $L^p$ bounds. For every fixed finite $p_*>3$, the cap family satisfies the field $L^3$ sum estimate with counting factor $N_\delta^{1/(3(p_*-2))}$. The constants are uniform over the compact family and the allowed cap widths.
 - The absolute value of the exact signed phase $q_m(p+q)-q_m(q)$ is bounded below by $b\delta^2|p||q|$ on the low-far portion. The Lean hypotheses retain the thin-cone conditions on all three frequencies and the nonvanishing low-far weight.
 
-The nine supporting declarations below serve the near- and far-angle arguments. The manuscript's parent lemmas and author confirmation are pending.
+The nine supporting declarations below serve the near-angle lemma and the construction of the physical far-angle correction. Those results remain open, and author confirmation is pending.
 
 - `Burnett.Analysis.ProjectiveNullCaps.triad_cutoff_partition_nonnegative`
 - `Burnett.Analysis.ProjectiveNullCaps.exists_uniform_comparable_nearNull_wedge`
