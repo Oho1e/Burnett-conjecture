@@ -592,3 +592,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 35. F05 一阶定位与原度规列的坐标旋度
 
 实际一阶行已有 Bessel 主部定位，原度规列已有坐标旋度约束。继续接入 Ricci 行、同一抽取的有序测度和密度约束。 [F05 一阶定位与原度规列的坐标旋度](../statements/bessel-and-coordinate-curl.zh-CN.md)
+
+## 36. 实际双线性与标量 Fourier 乘子
+
+实际双线性输出、谱输入和标量 Fourier 乘子已有有限指数界。继续装配实际交换子的定量界及完整三次能量。 [实际双线性与标量 Fourier 乘子](../statements/bilinear-fourier-operators.zh-CN.md)

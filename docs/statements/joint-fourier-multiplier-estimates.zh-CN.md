@@ -8,4 +8,4 @@
 - 若 \(p,s,z\) 都在 \((1,\infty)\) 内且 \(1/p+1/s+1/z=1\)，三线性配对绝对值由三个 \(L^p,L^s,L^z\) 范数的乘积乘以实际参考核矩的线性组合控制。核矩的权重阶数为 \((j,k)=(1,1),(5,1),(1,5)\)，组合的有限系数依赖指数和固定窗。
 - 若联合欧氏单位球面上 0 至 15 阶环境 Fréchet 导数有共同界 \(D\ge0\)，则配对界为 \(K D\|f\|_p\|g\|_s\|h\|_z\)。球面半范数使用固定的线性坐标拆分。常数 \(K\) 先于 \(m,D\) 和三个输入场选定。
 
-实际双线性 \(L^r\) 实现、标量乘子应用及三次能量定理将在后续装配。本组支持引理的原文对应待作者确认。[源码对应](joint-fourier-multiplier-estimates-source-bindings.json)
+实际双线性输出和标量乘子已有对应的有限指数界，继续装配三次能量。 [实际双线性与标量 Fourier 乘子](bilinear-fourier-operators.zh-CN.md) 本组支持引理的原文对应待作者确认。[源码对应](joint-fourier-multiplier-estimates-source-bindings.json)

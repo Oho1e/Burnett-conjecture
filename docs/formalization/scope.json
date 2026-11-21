@@ -2728,6 +2728,46 @@
       "claim_id": "f05:coordinate-localization:original-coordinate-curl-row",
       "module": "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
       "declaration": "Burnett.F05.OriginalCoordinateCurl.originalGradient_curlRow_tendsto_zero"
+    },
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-pairing",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualFourier",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_schwartz_pairing"
+    },
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualBound",
+      "declaration": "Burnett.A02.FrequencySplit.joint_bilinear_sphere_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-bilinear-sphere-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputs",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_sphere_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:actual-output-multiplier",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSpectrum",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_fourierMultiplier_output"
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-outer-bound",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualOuter",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_outer_bound"
+    },
+    {
+      "claim_id": "a02:harmonic:scalar-lp-realization",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinApplications",
+      "declaration": "Burnett.A02.FrequencySplit.homogeneous_multiplier_all_Lp"
+    },
+    {
+      "claim_id": "a02:harmonic:radial-spectrum-input",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_radial_data"
+    },
+    {
+      "claim_id": "a02:harmonic:angular-spectrum-input",
+      "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data"
     }
   ],
   "inventory": [
@@ -13542,6 +13582,150 @@
       "statement_record": "docs/statements/bessel-and-coordinate-curl.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-readback-of-production-port",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-pairing",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_schwartz_pairing",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:physical-bilinear-sphere-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_bilinear_sphere_bound",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-bilinear-sphere-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_sphere_bound",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:actual-output-multiplier",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.jointBilinear_fourierMultiplier_output",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:spectral-outer-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.joint_spectral_bilinear_outer_bound",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:scalar-lp-realization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.homogeneous_multiplier_all_Lp",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:radial-spectrum-input",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_radial_data",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:harmonic:angular-spectrum-input",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 660,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data",
+      "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-production-port-review-pending",
       "does_not_close_parent_claim": true
     }
   ],
