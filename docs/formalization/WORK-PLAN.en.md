@@ -591,3 +591,7 @@ The Bessel localization now supplies the homogeneous principal action of an actu
 ## 36. Actual bilinear and scalar Fourier multipliers
 
 The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy. [Actual bilinear and scalar Fourier multipliers](../statements/bilinear-fourier-operators.en.md)
+
+## 37. Principal-energy commutator estimates
+
+The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs. [Principal-energy commutator estimates](../statements/a01-principal-energy.en.md)

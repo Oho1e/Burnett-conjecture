@@ -596,3 +596,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 36. 实际双线性与标量 Fourier 乘子
 
 实际双线性输出、谱输入和标量 Fourier 乘子已有有限指数界。继续装配实际交换子的定量界及完整三次能量。 [实际双线性与标量 Fourier 乘子](../statements/bilinear-fourier-operators.zh-CN.md)
+
+## 37. 主能量交换子估计
+
+在登记的符号及支撑假设下，完整左量子化的标量、矩阵主能量配对和两条固定图密度估计已有 Lean 证明。后续须将原文算子类和下游 Weyl 作用与这些 Lean 输入对接。 [主能量交换子估计](../statements/a01-principal-energy.zh-CN.md)

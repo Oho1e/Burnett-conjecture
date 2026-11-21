@@ -158,3 +158,4 @@ import Burnett.Analysis.CubicEnergy.JointMultiplier.JointTrilinearSeminorm
 import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualOuter
 import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualInputPairing
 import Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs
+import Burnett.Analysis.PrincipalEnergy

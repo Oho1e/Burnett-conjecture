@@ -2768,6 +2768,26 @@
       "claim_id": "a02:harmonic:angular-spectrum-input",
       "module": "Burnett.Analysis.CubicEnergy.BilinearMultiplier.CMBilinearDualSymbolInputs",
       "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data"
+    },
+    {
+      "claim_id": "a01:commutator:scalar-coefficients",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.ActualScalarPrincipalEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_scalarCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:matrix-coefficients",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.ActualMatrixPrincipalEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_matrixCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-scalar",
+      "module": "Burnett.Analysis.PrincipalEnergy.Density.FixedChartScalarDensityEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_scalarCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-matrix",
+      "module": "Burnett.Analysis.PrincipalEnergy.Density.FixedChartMatrixDensityEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_matrixCoefficient_principal_energy_bound"
     }
   ],
   "inventory": [
@@ -13726,6 +13746,78 @@
       "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/a01-principal-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-delivery",
+      "semantic_review": "independent-canonical-statement-readback",
+      "claim_id": "a01:commutator:scalar-coefficients",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:commutator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 566,
+        "endline": 591
+      },
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_scalarCoefficient_principal_energy_bound",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/a01-principal-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-delivery",
+      "semantic_review": "independent-canonical-statement-readback",
+      "claim_id": "a01:commutator:matrix-coefficients",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:commutator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 573,
+        "endline": 599
+      },
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_matrixCoefficient_principal_energy_bound",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/a01-principal-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-delivery",
+      "semantic_review": "independent-canonical-statement-readback",
+      "claim_id": "a01:commutator:fixed-chart-density-scalar",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:commutator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 591,
+        "endline": 591
+      },
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_scalarCoefficient_principal_energy_bound",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/a01-principal-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-delivery",
+      "semantic_review": "independent-canonical-statement-readback",
+      "claim_id": "a01:commutator:fixed-chart-density-matrix",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:commutator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 591,
+        "endline": 591
+      },
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_matrixCoefficient_principal_energy_bound",
       "does_not_close_parent_claim": true
     }
   ],

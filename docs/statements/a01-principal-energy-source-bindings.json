@@ -1,0 +1,34 @@
+{
+  "slice": "A01",
+  "source_lines": [
+    519,
+    600
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "canonical_lean_port_sha256": "4e412f72db5788b264b4ceac1d589f1631dc4ef87aa75abf20af2abdf280147c",
+  "independent_readback_sha256": "73ed3e87d9954567a51558ca8811a68b283d8199cdf3c17465c4b4e173836e31",
+  "lean_source_count": 209,
+  "targets": [
+    {
+      "claim_id": "a01:commutator:scalar-coefficients",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.ActualScalarPrincipalEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_scalarCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:matrix-coefficients",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.ActualMatrixPrincipalEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_matrixCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-scalar",
+      "module": "Burnett.Analysis.PrincipalEnergy.Density.FixedChartScalarDensityEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_scalarCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a01:commutator:fixed-chart-density-matrix",
+      "module": "Burnett.Analysis.PrincipalEnergy.Density.FixedChartMatrixDensityEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_matrixCoefficient_principal_energy_bound"
+    }
+  ],
+  "closes_parent_claim": false
+}
