@@ -34,6 +34,7 @@
 - [定量联合 Fourier 乘子估计](joint-fourier-multiplier-estimates.zh-CN.md)
 - [F05 一阶定位与原度规列的坐标旋度](bessel-and-coordinate-curl.zh-CN.md)
 - [实际双线性与标量 Fourier 乘子](bilinear-fourier-operators.zh-CN.md)
+- [冻结屏幕与相位恒等式](frozen-screen.zh-CN.md)
 - 主范围及进度仅在 `../formalization/scope.json` 维护；本目录保留来源与对应材料。
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |

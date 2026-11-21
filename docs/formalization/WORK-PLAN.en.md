@@ -591,3 +591,7 @@ The Bessel localization now supplies the homogeneous principal action of an actu
 ## 36. Actual bilinear and scalar Fourier multipliers
 
 The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy. [Actual bilinear and scalar Fourier multipliers](../statements/bilinear-fourier-operators.en.md)
+
+## 37. Frozen screen and phase identity
+
+The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow. [Frozen screen and phase identity](../statements/frozen-screen.en.md)
