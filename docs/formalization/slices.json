@@ -425,7 +425,7 @@
         "不允许使用L∞乘子端点或L³角向ℓ²界替代原文有限指数论证。",
         "相位下界必须保留角远支撑；共线null三元组可低高分离但Δ=0，不能在near片据此除相位。"
       ],
-      "next_action": "将三元组几何、单帽构造/有限指数算子界及Δ下界作为可并行子义务，再统一κ,c,δ_0和紧Lorentz族常数。",
+      "next_action": "本批证明了角帽几何、统一的单帽与角向场估计，以及薄锥低槽远角区的有符号相位下界。后续用同一放大帽实现 A05 的单帽指标三线性局部化。",
       "supplementary_obligations": [
         {
           "id": "local:single-cap-index-localization",
@@ -5392,6 +5392,60 @@
       "claim_id": "a01:commutator:fixed-chart-density-matrix",
       "source_slices": [
         "A01"
+      ]
+    },
+    {
+      "claim_id": "a04:partition",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:comparable-wedge",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:signed-far-gap",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:projective-cover",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:smooth-cap-family",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:base-parabolic-jets",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:enlarged-parabolic-jets",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:angular-field-L3",
+      "source_slices": [
+        "A04"
+      ]
+    },
+    {
+      "claim_id": "a04:individual-cap-field-Lp",
+      "source_slices": [
+        "A04"
       ]
     }
   ],

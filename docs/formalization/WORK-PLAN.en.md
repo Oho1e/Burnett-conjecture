@@ -603,3 +603,7 @@ The actual screen constraints, the uniform positive wide-cone bounds, evenness, 
 ## 39. Principal-energy commutator estimates
 
 The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs. [Principal-energy commutator estimates](../statements/a01-principal-energy.en.md)
+
+## 40. Angular caps and the signed phase gap
+
+The cap geometry, uniform individual and angular field estimates, and low-far signed phase bound have Lean proofs. The next application is the single-cap trilinear localization in A05 using the common enlarged cap. [Angular caps and the signed phase gap](../statements/angular-cap-geometry.en.md)

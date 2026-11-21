@@ -1,0 +1,72 @@
+{
+  "slice": "A04",
+  "source_lines": [
+    893,
+    1025
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_preflight_sha256": "63ec2e649a8608eb7f03293837f446fb7dee4cd7fa905f221e15c86209727ffc",
+  "native_candidate_sha256": "9b928acc4ba0b7f38c026a4aa7791016b90812083246fd6f8f359ec931326761",
+  "independent_readback_sha256": "b67e505e972c6570fb04037436e1aa8e166bd89d805bf2f66a823bc992024e95",
+  "targets": [
+    {
+      "claim_id": "a04:partition",
+      "module": "Burnett.Analysis.AngularCaps.ComparableTriadAngle",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.triad_cutoff_partition_nonnegative"
+    },
+    {
+      "claim_id": "a04:comparable-wedge",
+      "module": "Burnett.Analysis.AngularCaps.ComparableTriadAngle",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_comparable_nearNull_wedge"
+    },
+    {
+      "claim_id": "a04:signed-far-gap",
+      "module": "Burnett.Analysis.AngularCaps.FarAngularPhase",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_lowFar_signedQuadraticPhase_gap"
+    },
+    {
+      "claim_id": "a04:projective-cover",
+      "module": "Burnett.Analysis.AngularCaps.UniformProjectiveNullCaps",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_projective_null_caps"
+    },
+    {
+      "claim_id": "a04:smooth-cap-family",
+      "module": "Burnett.Analysis.AngularCaps.SmoothCapFamily",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_smooth_thinCone_capMultipliers"
+    },
+    {
+      "claim_id": "a04:base-parabolic-jets",
+      "module": "Burnett.Analysis.AngularCaps.ActualBaseCapJets",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_capMultiplier_parabolic_jets"
+    },
+    {
+      "claim_id": "a04:enlarged-parabolic-jets",
+      "module": "Burnett.Analysis.AngularCaps.ActualEnlargedCapJets",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_enlargedCapMultiplier_parabolic_jets"
+    },
+    {
+      "claim_id": "a04:individual-cap-field-Lp",
+      "module": "Burnett.Analysis.AngularCaps.CapFieldLp",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultiplier_fieldLp"
+    },
+    {
+      "claim_id": "a04:angular-field-L3",
+      "module": "Burnett.Analysis.AngularCaps.ActualFieldCapAngularL3",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultipliers_field_angular_L3"
+    }
+  ],
+  "closes_parent_claim": false,
+  "preflight_axiom_check": {
+    "sha256": "783db11d3ecf30b9935eb137be7b15ab0eb78138ce7740a29d03a9be70d6f79b",
+    "previous_registered_claim_ids": [
+      "a04:partition",
+      "a04:comparable-wedge",
+      "a04:signed-far-gap",
+      "a04:projective-cover",
+      "a04:smooth-cap-family",
+      "a04:base-parabolic-jets",
+      "a04:enlarged-parabolic-jets",
+      "a04:angular-field-L3"
+    ]
+  }
+}
