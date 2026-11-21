@@ -1,0 +1,52 @@
+{
+  "slice": "A02",
+  "source_lines": [
+    601,
+    729
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "source_port_sha256": "2ec78a63d1f7734d7476118ffff1e3b14bd13d47bddc55a46d69181f30fdd475",
+  "independent_source_sha256": "a21f201ef78be784c902e05692709080093a39ab7ca2cb3aa9834197bb466f84",
+  "combined_library_sha256": "7fdc387557f4340db042906af4722c1fa96593533e8660d5fe866c1301e53ff7",
+  "staged_bilinear_registration_sha256": "ec99d94f714e050505cb3b1d8ed4605a74aacea6dfac83eb1e72649fd2f78d13",
+  "native_declarations": 141,
+  "targets": [
+    {
+      "claim_id": "a02:commutator:finite-exponent-bound",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.QuantitativeRadianCommutator",
+      "declaration": "Burnett.A02.FrequencySplit.radian_commutator_Lp_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-continuity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.CompleteCubicEuclidean",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_energy_difference_euclidean"
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-polarization",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.UniformCompleteCubic",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_map_L3_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:regularized-polarization",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.InfraredCubicContinuity",
+      "declaration": "Burnett.A02.FrequencySplit.fixed_infrared_complete_symmetric_euclidean_bound"
+    },
+    {
+      "claim_id": "a02:energy:fixed-regularization-continuity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.CompactFrequencyRegularization",
+      "declaration": "Burnett.A02.FrequencySplit.compact_frequency_regularization_continuity"
+    },
+    {
+      "claim_id": "a02:energy:mixed-coefficient-bound",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.UniformWeightedEuclidean",
+      "declaration": "Burnett.A02.FrequencySplit.quasilinear_weighted_euclidean_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:weighted-diagonal-identity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.FieldAndCoefficientChecks",
+      "declaration": "Burnett.A02.FieldAndCoefficientReview.weighted_quasilinear_diagonal_exact"
+    }
+  ],
+  "closes_parent_claim": false
+}

@@ -597,6 +597,14 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 
 实际双线性输出、谱输入和标量 Fourier 乘子已有有限指数界。继续装配实际交换子的定量界及完整三次能量。 [实际双线性与标量 Fourier 乘子](../statements/bilinear-fourier-operators.zh-CN.md)
 
-## 37. 主能量交换子估计
+## 37. Lean 库中的完整三次能量
+
+完整齐次及固定正则化能量、有穷指数交换子和混合系数界均有 Lean 证明。原文命题确认及空间变系数应用另有后续工作。 [Lean 库中的完整三次能量](../statements/complete-cubic-energy.zh-CN.md)
+
+## 38. 冻结屏幕与相位恒等式
+
+实际屏幕约束、统一宽锥正下界、偶性、零次齐次性及冻结代数相位已有 Lean 证明。后续接续光滑性、全局截断和变分算子接口。 [冻结屏幕与相位恒等式](../statements/frozen-screen.zh-CN.md)
+
+## 39. 主能量交换子估计
 
 在登记的符号及支撑假设下，完整左量子化的标量、矩阵主能量配对和两条固定图密度估计已有 Lean 证明。后续须将原文算子类和下游 Weyl 作用与这些 Lean 输入对接。 [主能量交换子估计](../statements/a01-principal-energy.zh-CN.md)

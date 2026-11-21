@@ -2770,6 +2770,76 @@
       "declaration": "Burnett.A02.FrequencySplit.radianActionSpectrum_angular_data"
     },
     {
+      "claim_id": "a02:commutator:finite-exponent-bound",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.QuantitativeRadianCommutator",
+      "declaration": "Burnett.A02.FrequencySplit.radian_commutator_Lp_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-continuity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.CompleteCubicEuclidean",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_energy_difference_euclidean"
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-polarization",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.UniformCompleteCubic",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_map_L3_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:regularized-polarization",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.InfraredCubicContinuity",
+      "declaration": "Burnett.A02.FrequencySplit.fixed_infrared_complete_symmetric_euclidean_bound"
+    },
+    {
+      "claim_id": "a02:energy:fixed-regularization-continuity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.CompactFrequencyRegularization",
+      "declaration": "Burnett.A02.FrequencySplit.compact_frequency_regularization_continuity"
+    },
+    {
+      "claim_id": "a02:energy:mixed-coefficient-bound",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.UniformWeightedEuclidean",
+      "declaration": "Burnett.A02.FrequencySplit.quasilinear_weighted_euclidean_sphere_bound"
+    },
+    {
+      "claim_id": "a02:energy:weighted-diagonal-identity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.FieldAndCoefficientChecks",
+      "declaration": "Burnett.A02.FieldAndCoefficientReview.weighted_quasilinear_diagonal_exact"
+    },
+    {
+      "claim_id": "v06:screen:null-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenNullScreenProjection_constraints"
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_fixed_iff"
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_symmetric"
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "module": "Burnett.Analysis.FrozenScreen.CompactFamily",
+      "declaration": "Burnett.V06.exists_uniform_wide_screen_bounds"
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_even"
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_degreeZero"
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "module": "Burnett.Analysis.FrozenScreen.Phase",
+      "declaration": "Burnett.V06.frozenEinsteinSymbol_screen_phase"
+    },
+    {
       "claim_id": "a01:commutator:scalar-coefficients",
       "module": "Burnett.Analysis.PrincipalEnergy.Energy.ActualScalarPrincipalEnergy",
       "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_scalarCoefficient_principal_energy_bound"
@@ -13746,6 +13816,258 @@
       "statement_record": "docs/statements/bilinear-fourier-operators.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-production-port-review-pending",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:commutator:finite-exponent-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 626,
+        "endline": 677
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.radian_commutator_Lp_sphere_bound",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-continuity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 613,
+        "endline": 623
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_energy_difference_euclidean",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:homogeneous-polarization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 694,
+        "endline": 715
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.complete_cubic_map_L3_sphere_bound",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:regularized-polarization",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 613,
+        "endline": 623
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.fixed_infrared_complete_symmetric_euclidean_bound",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:fixed-regularization-continuity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 613,
+        "endline": 623
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.compact_frequency_regularization_continuity",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:mixed-coefficient-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 719,
+        "endline": 729
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FrequencySplit.quasilinear_weighted_euclidean_sphere_bound",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a02:energy:weighted-diagonal-identity",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:cubic-continuity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 719,
+        "endline": 729
+      },
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A02.FieldAndCoefficientReview.weighted_quasilinear_diagonal_exact",
+      "statement_record": "docs/statements/complete-cubic-energy.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-readback-of-source-proof",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:null-range",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenNullScreenProjection_constraints",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2071,
+        "endline": 2085
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenProjection_fixed_iff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2081,
+        "endline": 2085
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenProjection_symmetric",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2061,
+        "endline": 2069
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.exists_uniform_wide_screen_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2071,
+        "endline": 2079
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenSymbol_even",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2078,
+        "endline": 2080
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenScreenSymbol_degreeZero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2078,
+        "endline": 2080
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "declaration": "Burnett.V06.frozenEinsteinSymbol_screen_phase",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2097,
+        "endline": 2107
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/frozen-screen.zh-CN.md",
+      "semantic_review": "independent-frozen-type-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     },
     {

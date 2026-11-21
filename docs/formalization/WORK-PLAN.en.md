@@ -592,6 +592,14 @@ The Bessel localization now supplies the homogeneous principal action of an actu
 
 The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy. [Actual bilinear and scalar Fourier multipliers](../statements/bilinear-fourier-operators.en.md)
 
-## 37. Principal-energy commutator estimates
+## 37. Complete cubic energy in the Lean library
+
+The complete homogeneous and fixed-regularization energies, the finite-exponent commutator, and the mixed coefficient bound have Lean proofs. Original-statement confirmation and the spatially varying applications follow separately. [Complete cubic energy in the Lean library](../statements/complete-cubic-energy.en.md)
+
+## 38. Frozen screen and phase identity
+
+The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow. [Frozen screen and phase identity](../statements/frozen-screen.en.md)
+
+## 39. Principal-energy commutator estimates
 
 The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs. [Principal-energy commutator estimates](../statements/a01-principal-energy.en.md)

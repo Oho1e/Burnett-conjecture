@@ -1,0 +1,48 @@
+{
+  "slice": "V06",
+  "source_lines": [
+    2053,
+    2107
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "canonical_lean_port_sha256": "0fbfb5804a316bb2f07793756aa3eb44e171aacdd7bc4c444f72530bb07a28ee",
+  "independent_readback_sha256": "c2ace9340fa420c8d4d5dd9670ef1c605a4a32c9b6114a39334177aa7fac2c65",
+  "targets": [
+    {
+      "claim_id": "v06:screen:null-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenNullScreenProjection_constraints"
+    },
+    {
+      "claim_id": "v06:screen:fixes-range",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_fixed_iff"
+    },
+    {
+      "claim_id": "v06:screen:symmetry",
+      "module": "Burnett.Analysis.FrozenScreen.Constraints",
+      "declaration": "Burnett.V06.frozenScreenProjection_symmetric"
+    },
+    {
+      "claim_id": "v06:screen:wide-bounds",
+      "module": "Burnett.Analysis.FrozenScreen.CompactFamily",
+      "declaration": "Burnett.V06.exists_uniform_wide_screen_bounds"
+    },
+    {
+      "claim_id": "v06:screen:even",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_even"
+    },
+    {
+      "claim_id": "v06:screen:degree-zero",
+      "module": "Burnett.Analysis.FrozenScreen.Symbol",
+      "declaration": "Burnett.V06.frozenScreenSymbol_degreeZero"
+    },
+    {
+      "claim_id": "v06:screen:phase",
+      "module": "Burnett.Analysis.FrozenScreen.Phase",
+      "declaration": "Burnett.V06.frozenEinsteinSymbol_screen_phase"
+    }
+  ],
+  "closes_parent_claim": false
+}

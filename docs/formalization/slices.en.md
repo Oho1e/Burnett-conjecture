@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `f295b4771180a90a83c489c196cb1d6852250c81bf646e638b447ade0ed10dbb`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `449b7de8869ce43fdba94129b7043b5ea64b5e885267fd68770805df72847d07`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy.
+Next: The complete homogeneous and fixed-regularization energies, the finite-exponent commutator, and the mixed coefficient bound have Lean proofs. Original-statement confirmation and the spatially varying applications follow separately.
 
 <a id="a03"></a>
 
@@ -884,7 +884,7 @@ Refinement obligations within the slice (no separate completion status):
 
 - A common wide cone, positive denominator lower bounds, and metric derivatives over an entire compact Lorentz family directly serve C-region freezing errors. Existence for fixed m does not substitute. (Source lines2061–2095.)
 
-Next: first formalize finite-dimensional Q/R identities and range equivalence; then establish a uniform cone neighborhood and symbol-derivative bounds for compact Lorentz families.
+Next: The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow.
 
 <a id="v07"></a>
 
