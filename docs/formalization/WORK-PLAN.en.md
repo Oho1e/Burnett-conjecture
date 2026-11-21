@@ -591,3 +591,7 @@ The Bessel localization now supplies the homogeneous principal action of an actu
 ## 36. Actual bilinear and scalar Fourier multipliers
 
 The actual bilinear output, spectral inputs and scalar Fourier multipliers have finite-exponent bounds. Continue the quantitative assembly of the original commutator and the full cubic energy. [Actual bilinear and scalar Fourier multipliers](../statements/bilinear-fourier-operators.en.md)
+
+## 37. Complete cubic energy in the Lean library
+
+The complete homogeneous and fixed-regularization energies, the finite-exponent commutator, and the mixed coefficient bound have Lean proofs. Original-statement confirmation and the spatially varying applications follow separately. [Complete cubic energy in the Lean library](../statements/complete-cubic-energy.en.md)
