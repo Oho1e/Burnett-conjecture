@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `6d1a53debca5f4137db9b915df8306254791216a08dbf229757903a571d509ce`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `e88944969112c024da7ad5cbd5d090fee8a20b762f14f102b5840d7721fd4b6e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -884,7 +884,7 @@ Refinement obligations within the slice (no separate completion status):
 
 - A common wide cone, positive denominator lower bounds, and metric derivatives over an entire compact Lorentz family directly serve C-region freezing errors. Existence for fixed m does not substitute. (Source lines2061–2095.)
 
-Next: first formalize finite-dimensional Q/R identities and range equivalence; then establish a uniform cone neighborhood and symbol-derivative bounds for compact Lorentz families.
+Next: The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow.
 
 <a id="v07"></a>
 

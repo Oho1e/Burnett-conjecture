@@ -595,3 +595,7 @@ The actual bilinear output, spectral inputs and scalar Fourier multipliers have 
 ## 37. Complete cubic energy in the Lean library
 
 The complete homogeneous and fixed-regularization energies, the finite-exponent commutator, and the mixed coefficient bound have Lean proofs. Original-statement confirmation and the spatially varying applications follow separately. [Complete cubic energy in the Lean library](../statements/complete-cubic-energy.en.md)
+
+## 38. Frozen screen and phase identity
+
+The actual screen constraints, the uniform positive wide-cone bounds, evenness, degree zero, and the frozen algebraic phase have Lean proofs. Smoothness, the global cutoff and the variational operator interfaces follow. [Frozen screen and phase identity](../statements/frozen-screen.en.md)
