@@ -69,3 +69,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Projected vacuum remainder and whole-space divergence source](projected-vacuum-source.en.md)
 - [Uniform projected divergence source in any smooth chart](maximal-chart-projected-source.en.md)
 - [Angular covariance and physical measure of the fixed projection](projected-angular-covariance.en.md)
+- [Weighted mixed derivative pairings of the actual projected field](weighted-projected-derivative-pairings.en.md)
