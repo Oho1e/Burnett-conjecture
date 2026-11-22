@@ -2903,6 +2903,66 @@
       "claim_id": "a04:angular-field-L3",
       "module": "Burnett.Analysis.AngularCaps.ActualFieldCapAngularL3",
       "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultipliers_field_angular_L3"
+    },
+    {
+      "claim_id": "p01:euclidean-idempotent",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_idempotent"
+    },
+    {
+      "claim_id": "p01:euclidean-kills-gauge",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_kills_gauge"
+    },
+    {
+      "claim_id": "p01:euclidean-transverse-range",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_range_kills_covector"
+    },
+    {
+      "claim_id": "p01:euclidean-gauge-difference",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_sub_eq"
+    },
+    {
+      "claim_id": "p01:euclidean-orthogonal",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_orthogonal"
+    },
+    {
+      "claim_id": "p01:homogeneous-mikhlin",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.gaugeProjectionSymbol_mikhlin"
+    },
+    {
+      "claim_id": "p01:regularized-even",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_even"
+    },
+    {
+      "claim_id": "p01:regularized-low",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_zero"
+    },
+    {
+      "claim_id": "p01:regularized-high",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_high"
+    },
+    {
+      "claim_id": "p01:regularized-smooth",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_contDiff"
+    },
+    {
+      "claim_id": "p01:regularized-temperate",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionTemperate",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_hasTemperateGrowth"
+    },
+    {
+      "claim_id": "p01:regularized-order-zero",
+      "module": "Burnett.Analysis.GaugeProjection.FixedGaugeProjectionOrderZero",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_orderZero_weighted"
     }
   ],
   "inventory": [
@@ -14347,6 +14407,210 @@
       "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:euclidean-idempotent",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1621,
+        "endline": 1635
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_idempotent",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:euclidean-kills-gauge",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1635
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_kills_gauge",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:euclidean-transverse-range",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1635
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_range_kills_covector",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:euclidean-gauge-difference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1635
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_sub_eq",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:euclidean-orthogonal",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1635
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_orthogonal",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:homogeneous-mikhlin",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1621,
+        "endline": 1628
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionSymbol_mikhlin",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-even",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_even",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-low",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_zero",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-high",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_high",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-smooth",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_contDiff",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-temperate",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1604
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_hasTemperateGrowth",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-order-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1604
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_orderZero_weighted",
+      "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
   ],

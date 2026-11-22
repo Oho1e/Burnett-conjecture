@@ -607,3 +607,7 @@ The scalar and matrix principal-energy pairings and both fixed-chart density est
 ## 40. Angular caps and the signed phase gap
 
 The cap geometry, uniform individual and angular field estimates, and low-far signed phase bound have Lean proofs. The next application is the single-cap trilinear localization in A05 using the common enlarged cap. [Angular caps and the signed phase gap](../statements/angular-cap-geometry.en.md)
+
+## 41. Fixed gauge-complement projection and its order-zero symbol
+
+The finite-dimensional gauge-complement projection and the order-zero bounds for its fixed infrared-regularized symbol have Lean proofs. Next connect the Fourier action and symmetric-gradient cancellation, then the projected field and whole-space source estimates. [Fixed gauge-complement projection and its order-zero symbol](../statements/fixed-gauge-projection.en.md)

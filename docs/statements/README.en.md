@@ -59,3 +59,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [Proof and independent review](rosen-two-polarization.en.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |
 - [Angular caps and the signed phase gap](angular-cap-geometry.en.md)
+- [Fixed gauge-complement projection and its order-zero symbol](fixed-gauge-projection.en.md)

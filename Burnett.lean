@@ -271,3 +271,7 @@ import Burnett.Analysis.AngularCaps.ActualCapAngularL3
 import Burnett.Analysis.AngularCaps.FieldLpLift
 import Burnett.Analysis.AngularCaps.CapFieldLp
 import Burnett.Analysis.AngularCaps.ActualFieldCapAngularL3
+import Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection
+import Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol
+import Burnett.Analysis.GaugeProjection.GaugeProjectionTemperate
+import Burnett.Analysis.GaugeProjection.FixedGaugeProjectionOrderZero

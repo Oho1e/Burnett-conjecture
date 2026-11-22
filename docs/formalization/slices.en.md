@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `2fc78e598631e4170bb412d6168b9cedd6d334093ff05960e89b378156d898f3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `efe80cd6a1143d58f9c50b0618a563b96a6b10d3ad4d5b8d9cbc0fb9bd739158`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: State Pi_E's finite-dimensional pure-gauge decomposition and regularized gradient-annihilation result, then model coordinate Ricci identities separately from the Calderon interface. Use the exact whole-space source formula, not merely its norm, as the downstream interface.
+Next: The finite-dimensional gauge-complement projection and the order-zero bounds for its fixed infrared-regularized symbol have Lean proofs. Next connect the Fourier action and symmetric-gradient cancellation, then the projected field and whole-space source estimates.
 
 <a id="v01"></a>
 
