@@ -615,3 +615,7 @@ The finite-dimensional gauge-complement projection and the order-zero bounds for
 ## 42. Fourier action of the fixed gauge-complement projection
 
 The fixed projection now has an actual Schwartz multiplier, symmetric-gradient cancellation on the tempered dual, and componentwise finite-exponent bounds. Next construct the projected fields with their norms, whole-space source, and angular measure from the locked input data. [Fourier action of the fixed gauge-complement projection](../statements/gauge-projection-fourier-action.en.md)
+
+## 43. Finite-exponent norms of the fixed projected fields
+
+The actual matrix projection has finite-exponent bounds. For localized, globally smooth coordinate data it gives finite-exponent convergence of the projected fields and uniform gradient bounds. Next connect the open-chart inputs, L∞ convergence, whole-space divergence source, and angular measure. [Finite-exponent norms of the fixed projected fields](../statements/projected-field-finite-lp.en.md)

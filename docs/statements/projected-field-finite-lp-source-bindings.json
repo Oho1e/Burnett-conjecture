@@ -1,0 +1,107 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/ProjectedSchwartzIdentities.lean": {
+      "repository_sha256": "ef68510b93c59a3206b48b955b843720cd57f9a687be13b5a424145cad03cbc1",
+      "frozen_sources": {
+        "p01-euclidean-projection-forward/ProjectedSchwartzIdentities.lean": "9feb8aa7988e60b343a75ede91efa29ab5d0612d70d9b016683997d828ae5da4",
+        "p01-matrix-commutator-forward/MatrixProjectionSlots.lean": "38c2dae03905d3e3e07f29747be9fdcf3acd27e83ed51848d5d0a55cf2c533f6",
+        "p01-matrix-commutator-forward/MatrixProjectionRealization.lean": "6caad4e48b5cffd1e78786e6ce2b7ce2e1f83f807ee366d4b1fe2c15a14b80c6"
+      }
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedFiniteLp.lean": {
+      "repository_sha256": "0ba366498fee1b0bd3646aad010e1c5219fb71f7094af8a781863bb6bcb65b20",
+      "frozen_sources": {
+        "p01-finite-lp-projection-forward/ProjectedFiniteLp.lean": "453fed88e18dfc9225ce8eebcd8ee2b8aa1030287cda837c087aed27178446a7"
+      }
+    },
+    "Burnett/Analysis/GaugeProjection/LocalizedMetricSchwartzInputs.lean": {
+      "repository_sha256": "6581da1be1c798d31e77f5b6a79a5a62ff88fd18819e702dfaec309985248689",
+      "frozen_sources": {
+        "p01-finite-lp-projection-forward/LocalizedMetricSchwartzInputs.lean": "0445995cb8bbd015bca0ce45f280cb5e563e45c50dbca474a4f2591f0afb032f",
+        "p01-euclidean-projection-forward/ProjectedVacuumSourceOnChart.lean": "cea43d52da4c5f0c6af64232dbdddbfce490dc87cda5bca34297604377ac6716",
+        "p01-euclidean-projection-forward/WholeSpaceProjectedVacuumSource.lean": "5fe91791b00d831657d824f73a25ebdfa0ccfa8de32104c7c0d3cab9a0d34878"
+      }
+    },
+    "Burnett/Analysis/GaugeProjection/LocalizedProjectedFiniteLp.lean": {
+      "repository_sha256": "9fd7e2bab208cb911d4a8bdd8c03ef99a6d8044757c6bc1aca31f099d9d7c60e",
+      "frozen_sources": {
+        "p01-finite-lp-projection-forward/LocalizedProjectedFiniteLp.lean": "2fd18ce2a00a3e44a576656dce457db10668917b6d04e3f51c8358ed7174901a"
+      }
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:matrix-schwartz-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_radianFourier",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-symmetric-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_symmetrizedGradient_eq_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      }
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-derivative",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_coordinateDerivative",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1606
+      }
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-finite-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp",
+      "declaration": "Burnett.P01.exists_projectionFullSchwartz_finiteLp_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1697
+      }
+    },
+    {
+      "claim_id": "p01:localized-schwartz-support",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_tsupport_subset",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1604
+      }
+    },
+    {
+      "claim_id": "p01:localized-schwartz-uniform-inputs",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_uniform_inputs",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      }
+    },
+    {
+      "claim_id": "p01:localized-projection-finite-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp",
+      "declaration": "Burnett.P01.localizedMetricProjection_finiteLp_norms",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
