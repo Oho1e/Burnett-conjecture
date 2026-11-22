@@ -683,7 +683,7 @@ flowchart TD
 - 原始admissible序列；U相对紧坐标图、chi光滑紧支集；z_n=chi*h_n零延拓。
 - a_n是g_n逆分量在supp chi邻域的光滑一致Lipschitz延拓；最终常数允许依赖该族的一阶界。延拓不是预给定有界源。
 - 原导数缺陷在Ricci符号核中、离锥为纯规范、零锥Lorenz约束和Hermitian规范交叉消去；完整角测度的乘子作用规律。
-- 固定全空间IR正则Fourier乘子Π所需的Calderón接口保持开放：对标量Lipschitz f与w∈L²，需||[Π∂_b,f]w||₂≤C_Π||∂f||∞||w||₂，再用[Π,f]∂_bw=[Π∂_b,f]w−Π((∂_bf)w)得到原文1674–1684的范数界。不能用A01的虚部能量界代替，不假借proper support或二阶f界；有限Lp及非整数C^α乘子接口同样待核/待实现，归EXT-COMM及EXT-HARMONIC。
+- 对固定全空间 IR 正则乘子 Π，已证明梯度交换子在 Schwartz 场上的实际乘积公式和 L² 界，并给出任意全局 Lipschitz 标量系数下的有界 L² 延拓。用此估计接续原文 1684–1695 的源公式，仍需核验具体光滑逆系数及局部真空消费者。
 
 输出：
 
@@ -705,7 +705,7 @@ flowchart TD
 - 原清单只有投影定义与整命题，未单列降低规范源指标后的坐标Ricci展开、Calderon界和含非紧尾部的精确全空间源公式。（原文1644–1695行）
 - 须证明完整角测度不变；仅应力二阶矩或现有5条实代数支持均不足。（原文1703–1709行）
 
-下一步：固定投影的红外因子已有卷积实现和梯度型 L² 交换子估计。接续齐次矩阵槽的交换子，再把局部真空余项、全空间散度源和角向测度接到同一投影场。
+下一步：固定矩阵投影的梯度交换子已有全局 Lipschitz 系数的 L² 有界延拓。接续原坐标真空余项和全空间散度源公式，再把完整角向测度接到同一投影场。
 
 <a id="v01"></a>
 
@@ -1566,7 +1566,7 @@ flowchart TD
 ## 待核外部接口
 
 - **EXT-DEFECT**：Huneau–Luk Theorems 5.5/5.6：正束值微局部提取、经典齐次测试、同一子列和一阶系统定位；原文392–428。 消费者：F05, V03, C02；状态：`exact-version-and-Lean-interface-pending`。
-- **EXT-COMM**：Bényí–Oh Theorem A/1：线性及双线性Lipschitz交换子、(4,4,2)/(4,2,4/3)高槽伴随、有限符号半范数；原文587–591、1308–1345、1425–1465、2567–2571。 P01另须准确核对固定全空间Π∂b的梯度型L²交换子范数界（1674–1684）；该开放需求不由A01能量结论提供，不增加完整f的全局有界假设。 消费者：A01, A06, A07, P01, V11；状态：`exact-version-and-Lean-interface-pending`。
+- **EXT-COMM**：Bényí–Oh Theorem A/1：线性及双线性 Lipschitz 交换子、高槽伴随与有限符号半范数。P01 的固定 Π 梯度交换子（原文 1674–1684）已有全局 Lipschitz 系数下的有界 L² 延拓。在一般 L² 输入上逐项识别分布恒等式，以及其他消费者的准确接口仍需按各自范围核验。 消费者：A01, A06, A07, P01, V11；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-LIFT**：Huneau–Luk Lemma2.5的局部二阶矩版及本稿具体s^(-2)构造；原文2993–3040。 消费者：L01；状态：`exact-version-and-Lean-interface-pending`。
 - **EXT-HARMONIC**：Coifman–Meyer、Mikhlin/Riesz、Littlewood–Paley、最大函数、Khintchine、Riesz–Thorin、球谐谱与有限半范数/闭图一致有界；均需固定版本的准确接口。 X02原3193已批准固定Fourier离锥目标需要真实Fourier/L²、调制平移及尾积分接口；本次仅补消费者定位，尚未证明该目标。 消费者：A02, A04, A05, A06, A07, P01, V08, V09, X02；状态：`Lean-interface-pending`。
 - **EXT-MEASURE**：正Hermitian密度、Radon–Nikodym、解体、束上加权推前、支集与矩测试分离。 消费者：F05, F07, F08, L01, L03, X03, X04, X05；状态：`Lean-interface-pending`。

@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `5f50f233f057b09c3fe2a7a17c8bf1e8709229e835cb2b47d15ae2b25ec7bf34`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `ae9c149908cb41f76d2ed0637bd82dc67601e13a5907b3b719beda629ccf51a5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -680,7 +680,7 @@ Inputs:
 - The original admissible sequence; a relatively compact coordinate chart U and smooth compactly supported chi; z_n=chi*h_n extended by zero.
 - a_n is a smooth uniformly Lipschitz extension of the inverse components of g_n near supp chi. Final constants may depend on the family's first-order bounds. The extension is not a supplied bounded source.
 - The original derivative defect lies in the Ricci-symbol kernel, is pure gauge off the cone, and satisfies null-cone Lorenz constraints and Hermitian gauge cross-term cancellation; the multiplier action law for the full angular measure.
-- The Calderón interface for fixed whole-space IR-regularized Fourier multiplier Π remains open. For scalar Lipschitz f and w∈L², require ||[Π∂_b,f]w||₂≤C_Π||∂f||∞||w||₂, then use [Π,f]∂_bw=[Π∂_b,f]w−Π((∂_bf)w) to obtain the norm bound at paper lines 1674–1684. A01's imaginary-part energy bound cannot replace it, nor may proper support or second-order f bounds be borrowed. Finite-Lp and noninteger-C^α multiplier interfaces also await verification/implementation under EXT-COMM and EXT-HARMONIC.
+- The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. The coordinate vacuum and source consumers still need to be connected.
 
 Outputs:
 
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: The fixed projection’s infrared factor has a convolution realization and an L² derivative commutator bound. Next assemble the homogeneous matrix slots and connect the local vacuum remainder, whole-space divergence source, and angular measure to the same projected field.
+Next: The derivative commutator of the fixed matrix projection has an L² bounded extension for globally Lipschitz coefficients. Next connect the coordinate vacuum remainder, the whole-space divergence formula, and the full angular measure to the same projected field.
 
 <a id="v01"></a>
 
@@ -1548,7 +1548,7 @@ Next: Verify original external statements against the specific citations in exte
 ## External interfaces pending verification
 
 - **EXT-DEFECT**: Huneau–Luk Theorems 5.5/5.6 on positive bundle-valued microlocal extraction, classical homogeneous tests, the common subsequence, and first-order system localization. Lines 392–428. Consumers: F05, V03, C02. Status: `exact-version-and-Lean-interface-pending`.
-- **EXT-COMM**: Bényí–Oh Theorem A/1 for linear and bilinear Lipschitz commutators, (4,4,2)/(4,2,4/3) high-slot adjoints, and finitely many symbol seminorms. Lines 587–591, 1308–1345, 1425–1465, 2567–2571. P01 independently needs the global L² gradient-type commutator bound for fixed Π∂b at lines 1674–1684. The A01 energy bound is a different assertion. Preserve the original assumptions on f. Consumers: A01, A06, A07, P01, V11. Status: `exact-version-and-Lean-interface-pending`.
+- **EXT-COMM**: Bényí–Oh Theorem A/1 for linear and bilinear Lipschitz commutators, high-slot adjoints, and finitely many symbol seminorms. The fixed P01 projection derivative commutator (lines 1674–1684) has a bounded L² extension for globally Lipschitz coefficients. Termwise distributional identities on general L² inputs and the exact interfaces for the other consumers require their own verification. Consumers: A01, A06, A07, P01, V11. Status: `exact-version-and-Lean-interface-pending`.
 - **EXT-LIFT**: Local-second-moment version of Huneau–Luk Lemma 2.5 and the paper's s^(-2) construction, lines 2993–3040. Consumer: L01. Status: `exact-version-and-Lean-interface-pending`.
 - **EXT-HARMONIC**: Coifman–Meyer, Mikhlin/Riesz, Littlewood–Paley, maximal-function, Khintchine, Riesz–Thorin, spherical harmonic spectrum, and uniform bounds from finite seminorms and the closed graph theorem. Check exact pinned interfaces. The approved fixed Fourier off-null target from line 3193 of X02 needs Fourier/L², modulation shifts, and tail integrals. The inventory pass recorded the consumer while its proof remained open at that time. Consumers: A02, A04, A05, A06, A07, P01, V08, V09, X02. Status: `Lean-interface-pending`.
 - **EXT-MEASURE**: Positive Hermitian densities, Radon–Nikodym, disintegration, weighted bundle pushforward, and separation of supports from moment tests. Consumers: F05, F07, F08, L01, L03, X03, X04, X05. Status: `Lean-interface-pending`.

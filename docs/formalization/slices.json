@@ -629,7 +629,7 @@
         "原始admissible序列；U相对紧坐标图、chi光滑紧支集；z_n=chi*h_n零延拓。",
         "a_n是g_n逆分量在supp chi邻域的光滑一致Lipschitz延拓；最终常数允许依赖该族的一阶界。延拓不是预给定有界源。",
         "原导数缺陷在Ricci符号核中、离锥为纯规范、零锥Lorenz约束和Hermitian规范交叉消去；完整角测度的乘子作用规律。",
-        "固定全空间IR正则Fourier乘子Π所需的Calderón接口保持开放：对标量Lipschitz f与w∈L²，需||[Π∂_b,f]w||₂≤C_Π||∂f||∞||w||₂，再用[Π,f]∂_bw=[Π∂_b,f]w−Π((∂_bf)w)得到原文1674–1684的范数界。不能用A01的虚部能量界代替，不假借proper support或二阶f界；有限Lp及非整数C^α乘子接口同样待核/待实现，归EXT-COMM及EXT-HARMONIC。"
+        "对固定全空间 IR 正则乘子 Π，已证明梯度交换子在 Schwartz 场上的实际乘积公式和 L² 界，并给出任意全局 Lipschitz 标量系数下的有界 L² 延拓。用此估计接续原文 1684–1695 的源公式，仍需核验具体光滑逆系数及局部真空消费者。"
       ],
       "outputs": [
         "Pi_E(xi)H=P_xi H P_xi，P_xi=I-xi*xi^T/|xi|_E^2；给出显式规范差张量。径向IR正则化后的Pi仍严格杀死紧支集分布协向量的对称梯度。 条件与一致性：xi非零的齐次符号；IR cutoff固定实偶，零附近消失，高频为1；正则化后的Pi一般不再幂等。",
@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "固定投影的红外因子已有卷积实现和梯度型 L² 交换子估计。接续齐次矩阵槽的交换子，再把局部真空余项、全空间散度源和角向测度接到同一投影场。",
+      "next_action": "固定矩阵投影的梯度交换子已有全局 Lipschitz 系数的 L² 有界延拓。接续原坐标真空余项和全空间散度源公式，再把完整角向测度接到同一投影场。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -5735,6 +5735,114 @@
       "source_slices": [
         "P01"
       ]
+    },
+    {
+      "claim_id": "p01:hodge-skew-cancellation",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-spectrum",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-action",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:hodge-annular-core-realization",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-L2-projection-realization",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-actual-commutator",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-annular-commutator-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-annular-input-limit",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-annular-derivative-limit",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-Schwartz-commutator-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:smooth-coefficient-cutoff-lipschitz",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:lipschitz-coefficient-L2-product",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:smooth-coefficient-product-limit",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-smooth-lipschitz-commutator-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:lipschitz-coefficient-smooth-approximation",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-lipschitz-commutator-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:matrix-lipschitz-commutator-L2-extension",
+      "source_slices": [
+        "P01"
+      ]
     }
   ],
   "edges": [
@@ -7255,7 +7363,7 @@
     },
     {
       "id": "EXT-COMM",
-      "description": "Bényí–Oh Theorem A/1：线性及双线性Lipschitz交换子、(4,4,2)/(4,2,4/3)高槽伴随、有限符号半范数；原文587–591、1308–1345、1425–1465、2567–2571。 P01另须准确核对固定全空间Π∂b的梯度型L²交换子范数界（1674–1684）；该开放需求不由A01能量结论提供，不增加完整f的全局有界假设。",
+      "description": "Bényí–Oh Theorem A/1：线性及双线性 Lipschitz 交换子、高槽伴随与有限符号半范数。P01 的固定 Π 梯度交换子（原文 1674–1684）已有全局 Lipschitz 系数下的有界 L² 延拓。在一般 L² 输入上逐项识别分布恒等式，以及其他消费者的准确接口仍需按各自范围核验。",
       "consumers": [
         "A01",
         "A06",

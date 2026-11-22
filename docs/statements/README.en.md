@@ -65,3 +65,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Uniform smallness of the fixed projected fields](projected-field-uniform-convergence.en.md)
 - [Norms of the projected fields from the original open chart](open-chart-projected-norms.en.md)
 - [Derivative commutator for the fixed infrared factor](projection-infrared-commutator.en.md)
+- [Derivative commutator for the fixed matrix projection](projection-hodge-commutator.en.md)
