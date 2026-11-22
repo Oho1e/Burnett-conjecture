@@ -620,3 +620,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 42. 固定规范补投影的 Fourier 作用
 
 固定投影已有实际 Schwartz 乘子、温和分布对偶上的对称梯度消去和逐系数有限指数界。接续从锁定的原始场构造投影场及其范数、全空间源和角向测度。 [固定规范补投影的 Fourier 作用](../statements/gauge-projection-fourier-action.zh-CN.md)
+
+## 43. 固定投影场的有限指数范数
+
+已证明实际矩阵投影的有限 p 界，以及全空间光滑坐标分量在固定截断下的投影场 Lᵖ 收敛与梯度一致有界。接续原开图输入、L∞ 收敛、全空间散度源及角向测度。 [固定投影场的有限指数范数](../statements/projected-field-finite-lp.zh-CN.md)

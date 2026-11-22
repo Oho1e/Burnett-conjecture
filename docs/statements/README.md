@@ -61,3 +61,4 @@
 - [角帽与有符号相位下界](angular-cap-geometry.zh-CN.md)
 - [固定规范补投影及其零阶符号](fixed-gauge-projection.zh-CN.md)
 - [固定规范补投影的 Fourier 作用](gauge-projection-fourier-action.zh-CN.md)
+- [固定投影场的有限指数范数](projected-field-finite-lp.zh-CN.md)

@@ -281,3 +281,7 @@ import Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction
 import Burnett.Analysis.GaugeProjection.GaugeProjectionFourier
 import Burnett.Analysis.GaugeProjection.TemperedGaugeProjection
 import Burnett.Analysis.GaugeProjection.GaugeProjectionLp
+import Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities
+import Burnett.Analysis.GaugeProjection.ProjectedFiniteLp
+import Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs
+import Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp

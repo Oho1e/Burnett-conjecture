@@ -3013,6 +3013,41 @@
       "claim_id": "p01:regularized-scalar-schwartz-Lp",
       "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
       "declaration": "Burnett.P01.exists_regularizedGaugeProjectionSymbol_Schwartz_Lp_bound"
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_radianFourier"
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-symmetric-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_symmetrizedGradient_eq_zero"
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-derivative",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+      "declaration": "Burnett.P01.projectionFullSchwartz_coordinateDerivative"
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-finite-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp",
+      "declaration": "Burnett.P01.exists_projectionFullSchwartz_finiteLp_bounds"
+    },
+    {
+      "claim_id": "p01:localized-schwartz-support",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_tsupport_subset"
+    },
+    {
+      "claim_id": "p01:localized-schwartz-uniform-inputs",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_uniform_inputs"
+    },
+    {
+      "claim_id": "p01:localized-projection-finite-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp",
+      "declaration": "Burnett.P01.localizedMetricProjection_finiteLp_norms"
     }
   ],
   "inventory": [
@@ -14830,6 +14865,125 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_regularizedGaugeProjectionSymbol_Schwartz_Lp_bound",
       "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-spectrum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_radianFourier",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-symmetric-gradient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_symmetrizedGradient_eq_zero",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-derivative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_coordinateDerivative",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:matrix-schwartz-finite-Lp",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1697
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_projectionFullSchwartz_finiteLp_bounds",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-schwartz-support",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1604
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_tsupport_subset",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-schwartz-uniform-inputs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_uniform_inputs",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-projection-finite-Lp",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricProjection_finiteLp_norms",
+      "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
