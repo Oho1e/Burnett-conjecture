@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `d6a743e464978d314c5fb82b881ce1ebb0febd4a35dc217533982e4c5237eba9`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `5f50f233f057b09c3fe2a7a17c8bf1e8709229e835cb2b47d15ae2b25ec7bf34`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: The open-chart and smooth intrinsic inputs now give finite-exponent convergence, uniform gradient bounds, and L∞ convergence for the same zero-extended cutoff data. Next connect the whole-space divergence source and angular measure for that projected field.
+Next: The fixed projection’s infrared factor has a convolution realization and an L² derivative commutator bound. Next assemble the homogeneous matrix slots and connect the local vacuum remainder, whole-space divergence source, and angular measure to the same projected field.
 
 <a id="v01"></a>
 

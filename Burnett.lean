@@ -292,3 +292,6 @@ import Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness
 import Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives
 import Burnett.Analysis.GaugeProjection.OpenChartProjectedNorms
 import Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms
+import Burnett.Analysis.GaugeProjection.InfraredConvolution
+import Burnett.Analysis.GaugeProjection.InfraredCommutator
+import Burnett.Analysis.GaugeProjection.InfraredCommutatorBound

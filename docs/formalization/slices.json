@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "开坐标图及原光滑内禀输入均已接到同一零延拓截断场的有限 Lᵖ、梯度界和 L∞ 趋零。接续同一投影场的全空间散度源及角向测度。",
+      "next_action": "固定投影的红外因子已有卷积实现和梯度型 L² 交换子估计。接续齐次矩阵槽的交换子，再把局部真空余项、全空间散度源和角向测度接到同一投影场。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -5690,6 +5690,48 @@
     },
     {
       "claim_id": "p01:intrinsic-chart-field-norms",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-action-kernel",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-kernel-moment",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-majorant",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-identity",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-uniform-constant",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-L2",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-L2",
       "source_slices": [
         "P01"
       ]

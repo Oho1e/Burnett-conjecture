@@ -627,3 +627,7 @@ Localized, globally smooth coordinate data now give finite-exponent convergence,
 ## 45. Norms of the projected fields from the original open chart
 
 The open-chart and smooth intrinsic inputs now give finite-exponent convergence, uniform gradient bounds, and L∞ convergence for the same zero-extended cutoff data. Next connect the whole-space divergence source and angular measure for that projected field. [Norms of the projected fields from the original open chart](../statements/open-chart-projected-norms.en.md)
+
+## 46. Derivative commutator for the fixed infrared factor
+
+The fixed projection’s infrared factor has a convolution realization and an L² derivative commutator bound. Next assemble the homogeneous matrix slots and connect the local vacuum remainder, whole-space divergence source, and angular measure to the same projected field. [Derivative commutator for the fixed infrared factor](../statements/projection-infrared-commutator.en.md)

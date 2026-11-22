@@ -1,0 +1,94 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/InfraredConvolution.lean": {
+      "frozen_source": "p01-infrared-commutator-forward/InfraredConvolution.lean",
+      "frozen_sha256": "c78db3d0820ba852300c3ef069a7b1f5cd70f3d97eae1392b39487aa6dca3d28",
+      "repository_sha256": "d327f4110ba7ef69dda0775f13940c8eec2c8ca5cdb6621109c5e29e2aba90e6"
+    },
+    "Burnett/Analysis/GaugeProjection/InfraredCommutator.lean": {
+      "frozen_source": "p01-infrared-commutator-forward/InfraredCommutator.lean",
+      "frozen_sha256": "e7ab48658919f745329491d2bb10f887124e11b18e332c9ae742584a7a056679",
+      "repository_sha256": "8cbc686a9b3bafcce6ce9c5f46252b22e772fdc7967db38d257179c2d9dfe039"
+    },
+    "Burnett/Analysis/GaugeProjection/InfraredCommutatorBound.lean": {
+      "frozen_source": "p01-infrared-commutator-forward/InfraredCommutatorBound.lean",
+      "frozen_sha256": "6f35502eed7479fe762b130176decef86d565ddea545f33d4630082143554856",
+      "repository_sha256": "6d7a4bac88dbd5a778adc2be48f1a1f246b88220bd243e3b96bb5be7034e2592"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:infrared-action-kernel",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredConvolution",
+      "declaration": "Burnett.P01.projectionInfraredAction_eq_kernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:infrared-kernel-moment",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredConvolution",
+      "declaration": "Burnett.P01.projectionLowMoment_integrable",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1683
+      }
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-majorant",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutator",
+      "declaration": "Burnett.P01.norm_projectionInfraredCommutatorKernel_le",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1683
+      }
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-identity",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutator",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_derivative",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1679
+      }
+    },
+    {
+      "claim_id": "p01:infrared-uniform-constant",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorConstant_nonneg",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      }
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-L2",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorKernel_l2",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      }
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_l2",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
