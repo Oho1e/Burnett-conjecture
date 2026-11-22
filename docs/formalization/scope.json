@@ -3108,6 +3108,41 @@
       "claim_id": "p01:intrinsic-chart-field-norms",
       "module": "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
       "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms"
+    },
+    {
+      "claim_id": "p01:infrared-action-kernel",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredConvolution",
+      "declaration": "Burnett.P01.projectionInfraredAction_eq_kernel"
+    },
+    {
+      "claim_id": "p01:infrared-kernel-moment",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredConvolution",
+      "declaration": "Burnett.P01.projectionLowMoment_integrable"
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-majorant",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutator",
+      "declaration": "Burnett.P01.norm_projectionInfraredCommutatorKernel_le"
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-identity",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutator",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_derivative"
+    },
+    {
+      "claim_id": "p01:infrared-uniform-constant",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorConstant_nonneg"
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-L2",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorKernel_l2"
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.InfraredCommutatorBound",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_l2"
     }
   ],
   "inventory": [
@@ -15248,6 +15283,125 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms",
       "statement_record": "docs/statements/open-chart-projected-norms.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-action-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionInfraredAction_eq_kernel",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-kernel-moment",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1683
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionLowMoment_integrable",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-majorant",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1683
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.norm_projectionInfraredCommutatorKernel_le",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1679
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_derivative",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-uniform-constant",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorConstant_nonneg",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-gradient-kernel-L2",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionInfraredCommutatorKernel_l2",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:infrared-gradient-commutator-L2",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1679,
+        "endline": 1683
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionInfraredKernelAction_commutator_l2",
+      "statement_record": "docs/statements/projection-infrared-commutator.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
