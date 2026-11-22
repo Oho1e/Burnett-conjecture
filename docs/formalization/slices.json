@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "先写Pi_E的有限维纯规范分解及正则化杀梯度声明，再把Ricci坐标恒等式和Calderon接口分开建模；以精确全空间源公式而非其范数作为后续接口。",
+      "next_action": "有限维规范补投影与固定红外截断后的零阶符号估计已实现。接续实际 Fourier 作用与对称梯度消去，再接入投影场及全空间源的估计。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -5446,6 +5446,78 @@
       "claim_id": "a04:individual-cap-field-Lp",
       "source_slices": [
         "A04"
+      ]
+    },
+    {
+      "claim_id": "p01:euclidean-idempotent",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:euclidean-kills-gauge",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:euclidean-transverse-range",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:euclidean-gauge-difference",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:euclidean-orthogonal",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:homogeneous-mikhlin",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-even",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-low",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-high",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-smooth",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-temperate",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-order-zero",
+      "source_slices": [
+        "P01"
       ]
     }
   ],

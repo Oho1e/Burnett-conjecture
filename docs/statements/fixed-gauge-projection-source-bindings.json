@@ -1,0 +1,150 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "preceding_consumer_receipt_sha256": "4c35a58b232d77546a8bf9e98d559276d4285571b5b11dde165bfcdd4e0333d0",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/EuclideanGaugeProjection.lean": {
+      "source_sha256": "66142f22971a9da941c2775629ecee059e7bbd93a5070efd426afb015c927862",
+      "repository_sha256": "09324ec22054582b0bb9c9214a47cd212cb3bc0d5a7cf1862396ff4985e4427c"
+    },
+    "Burnett/Analysis/GaugeProjection/GaugeProjectionSymbol.lean": {
+      "source_sha256": "f9f2320d9e20220e4f253f597c38616539799121324c798ce3fe2b735596e03d",
+      "repository_sha256": "c68207470ddff4668e183fcb06719ac76a4bba836647af93f8f40217323c17c3"
+    },
+    "Burnett/Analysis/GaugeProjection/GaugeProjectionTemperate.lean": {
+      "source_sha256": "a01fcfced82e36e43ba65a34d548277a0f60091db39d51d3b11474134877bbe8",
+      "repository_sha256": "1f6bdedb2e21ec0a505d18bb74a13e2f1cc75e7ff9e9162c33ffdc058c9ef901"
+    },
+    "Burnett/Analysis/GaugeProjection/FixedGaugeProjectionOrderZero.lean": {
+      "source_sha256": "9a6849921022950f63fa05f3743bbad0711e15da56855a209a6989d52e13c09a",
+      "repository_sha256": "65af487331e7f41b78487727b77045a30268fe19f6fe6b34fe51c8b6dc7675dc"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:euclidean-idempotent",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_idempotent",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1621,
+        "endline": 1635
+      }
+    },
+    {
+      "claim_id": "p01:euclidean-kills-gauge",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_kills_gauge",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1635
+      }
+    },
+    {
+      "claim_id": "p01:euclidean-transverse-range",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_range_kills_covector",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1635
+      }
+    },
+    {
+      "claim_id": "p01:euclidean-gauge-difference",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_sub_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1635
+      }
+    },
+    {
+      "claim_id": "p01:euclidean-orthogonal",
+      "module": "Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection",
+      "declaration": "Burnett.P01.euclideanGaugeProjection_orthogonal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1635
+      }
+    },
+    {
+      "claim_id": "p01:homogeneous-mikhlin",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.gaugeProjectionSymbol_mikhlin",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1621,
+        "endline": 1628
+      }
+    },
+    {
+      "claim_id": "p01:regularized-even",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_even",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:regularized-low",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:regularized-high",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_high",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:regularized-smooth",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_contDiff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:regularized-temperate",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionTemperate",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_hasTemperateGrowth",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1604
+      }
+    },
+    {
+      "claim_id": "p01:regularized-order-zero",
+      "module": "Burnett.Analysis.GaugeProjection.FixedGaugeProjectionOrderZero",
+      "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_orderZero_weighted",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1603,
+        "endline": 1604
+      }
+    }
+  ],
+  "closes_parent_claim": false,
+  "port_edits": [
+    "Qualify the three local imports and the private declaration provider.",
+    "Remove standalone scratch diagnostics, which the project target audit now supplies."
+  ]
+}
