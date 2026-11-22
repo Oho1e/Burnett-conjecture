@@ -338,3 +338,10 @@ import Burnett.Geometry.MaximalChart.CurvatureTransfer
 import Burnett.Geometry.MaximalChart.VacuumTransfer
 import Burnett.Analysis.GaugeProjection.MaximalChartFirstJet
 import Burnett.Analysis.GaugeProjection.MaximalChartUniformSource
+import Burnett.Analysis.Microlocal.PhysicalDensity
+import Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra
+import Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity
+import Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance
+import Burnett.Analysis.GaugeProjection.ProjectedDefectScalarPairing
+import Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents
+import Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing

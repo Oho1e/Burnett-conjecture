@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `4044bf3a05e7c7407d4a632eb251cc1ece763369ddf9234ac1136f768b02f647`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6f5066f1d76bc4f310ef83858bf9f2cd88c254f9befa9ca31b49ef4148f00fb8`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -679,7 +679,7 @@ Inputs:
 
 - The original admissible sequence; a relatively compact coordinate chart U and smooth compactly supported chi; z_n=chi*h_n extended by zero.
 - a_n is a smooth uniformly Lipschitz extension of the inverse components of g_n near supp chi. Final constants may depend on the family's first-order bounds. The extension is not a supplied bounded source.
-- The original derivative defect lies in the Ricci-symbol kernel, is pure gauge off the cone, and satisfies null-cone Lorenz constraints and Hermitian gauge cross-term cancellation; the multiplier action law for the full angular measure.
+- The actual projected pairings consume the same original matrix pairing witness. For supplied Ricci-kernel amplitude, symmetric background, and null-shell trace, the projection has off-cone vanishing, Lorenz polarization, and equality of the full physical measure. Extraction of a common witness from the original vacuum sequence and its cross-chart identification remain to be connected.
 - The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. For any compatible smooth chart, the intrinsic assumptions give the coordinate vacuum, uniform convergence, and first-jet bounds used by this same whole-space source.
 
 Outputs:
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: In any compatible smooth chart the projection of the same zero-extended field has the norm limits and the whole-space divergence bound. Fixing the Lipschitz bound gives one constant for all admissible inverse-metric extensions and sequence indices. Next identify the projected covariance and full physical angular measure of the same original sequence.
+Next: Given the original matrix pairing witness, the actual projected pairings have two-slot covariance PNP*. A supplied Ricci-kernel amplitude projects to zero off the cone and is Lorenz polarized on the cone while preserving the full physical angular measure on the same trace. Next extract the common witness from the original vacuum sequence, identify both derivative slots, and establish global compatibility.
 
 <a id="v01"></a>
 

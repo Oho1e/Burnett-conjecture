@@ -1,0 +1,217 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/Microlocal/PhysicalDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.PhysicalDensity",
+      "repository_sha256": "2c9f5fbbe4406aa485ee10ea0df6d369bfb2b1068c3a4333608fac21a48276c8",
+      "prepared_source": "p01-angular-conditional-canonical-2026-11-23/source/Burnett/Analysis/Microlocal/PhysicalDensity.lean",
+      "receipt": "p01-angular-conditional-canonical-2026-11-23/RECEIPT.json",
+      "receipt_sha256": "25e45772004b26520ae960068990d6ef58d400d42c7983cffd30b913dee34415",
+      "imports": [
+        "Burnett.Algebra.LorentzHermitian",
+        "Mathlib.Analysis.Matrix.Order",
+        "Mathlib.LinearAlgebra.Matrix.Rank",
+        "Mathlib.MeasureTheory.Measure.WithDensity"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/PrincipalGaugeProjectionAlgebra.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "repository_sha256": "72f96a054ae2b0fab7ccca26aa5f3717335302e038b712cd1e2987028da3d252",
+      "prepared_source": "p01-angular-conditional-canonical-2026-11-23/source/Burnett/Analysis/GaugeProjection/PrincipalGaugeProjectionAlgebra.lean",
+      "receipt": "p01-angular-conditional-canonical-2026-11-23/RECEIPT.json",
+      "receipt_sha256": "25e45772004b26520ae960068990d6ef58d400d42c7983cffd30b913dee34415",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+        "Burnett.Algebra.HermitianScreen",
+        "Mathlib.Data.Complex.BigOperators"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedPhysicalDensity.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity",
+      "repository_sha256": "b241fe0c2494c6383dd77e053ec89483e9111c2b642c13adce5b8a5edcc268e4",
+      "prepared_source": "p01-angular-conditional-canonical-2026-11-23/source/Burnett/Analysis/GaugeProjection/ProjectedPhysicalDensity.lean",
+      "receipt": "p01-angular-conditional-canonical-2026-11-23/RECEIPT.json",
+      "receipt_sha256": "25e45772004b26520ae960068990d6ef58d400d42c7983cffd30b913dee34415",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+        "Burnett.Analysis.Microlocal.PhysicalDensity"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedAmplitudeCovariance.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "repository_sha256": "1dff66c7d4924f1d95a3c74343673d8c2de1546d1fa0d08c8f7196dabcced582",
+      "prepared_source": "p01-angular-conditional-canonical-2026-11-23/source/Burnett/Analysis/GaugeProjection/ProjectedAmplitudeCovariance.lean",
+      "receipt": "p01-angular-conditional-canonical-2026-11-23/RECEIPT.json",
+      "receipt_sha256": "25e45772004b26520ae960068990d6ef58d400d42c7983cffd30b913dee34415",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectScalarPairing.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectScalarPairing",
+      "repository_sha256": "82ea9aa9a342d77946045bc56102d029d008f3277e1797a88890e23f49e89ce2",
+      "prepared_source": "pr54-angular-next/source/Burnett/Analysis/GaugeProjection/ProjectedDefectScalarPairing.lean",
+      "receipt": "pr54-angular-next/canonical-receipts/ProjectedDefectScalarPairing.json",
+      "receipt_sha256": "527eadb56a17748715d8e52796bf7482936385a8c0ff4078bc0aa96853ae905e",
+      "imports": [
+        "Burnett.Analysis.Microlocal.AngularCommutator.Infrared"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectActualComponents.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+      "repository_sha256": "9654acefbbf4e5e158e617aa9102e96a1d2efdd31c3ab80887e3fd1d6f26fbf7",
+      "prepared_source": "pr54-angular-next/source/Burnett/Analysis/GaugeProjection/ProjectedDefectActualComponents.lean",
+      "receipt": "pr54-angular-next/canonical-receipts/ProjectedDefectActualComponents.json",
+      "receipt_sha256": "605ea2b82de7553598da0b38db9bcaab8a2fc508956eefca29d1a3ab39aab500",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectScalarPairing",
+        "Burnett.Analysis.GaugeProjection.MatrixProjectionRealization"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectMatrixPairing.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing",
+      "repository_sha256": "2cb320fbac62ccab978ec34dee02ce71904ba0efd6b59aafebd70c83bb918f70",
+      "prepared_source": "pr54-angular-next/source/Burnett/Analysis/GaugeProjection/ProjectedDefectMatrixPairing.lean",
+      "receipt": "pr54-angular-next/canonical-receipts/ProjectedDefectMatrixPairing.json",
+      "receipt_sha256": "88c4924651ce3bb9e4ec2376fcfb0cc64e5e29f683c6fbfbff30a3eb93079ae5",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+        "Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:angular-high-frequency-principal-projection",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_eq_principal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:angular-principal-projection-off-null",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_eq_zero_off_null",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1705
+      }
+    },
+    {
+      "claim_id": "p01:angular-principal-Lorenz-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_null_contracted",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1705,
+        "endline": 1706
+      }
+    },
+    {
+      "claim_id": "p01:angular-principal-Hermitian-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_preserves_hermitianPhysicalPairing",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angular-Gram-physical-contraction",
+      "module": "Burnett.Analysis.Microlocal.PhysicalDensity",
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1708
+      }
+    },
+    {
+      "claim_id": "p01:angular-null-measure-projection",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_principalGaugeProjection_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angular-covariance-off-null",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_eq_zero_off_null",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1705
+      }
+    },
+    {
+      "claim_id": "p01:angular-covariance-Lorenz-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_null_contracted",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1705,
+        "endline": 1706
+      }
+    },
+    {
+      "claim_id": "p01:angular-null-measure-covariance",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_projectedAmplitudeCovariance_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angular-scalar-projection-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectScalarPairing",
+      "declaration": "Burnett.P01.projectedDefectScalarPairing_sub_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angular-actual-component-multiplier",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+      "declaration": "Burnett.P01.gaugeProjectionComponent_toLp_eq_multiplier",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:angular-component-projection-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+      "declaration": "Burnett.P01.projectedDefectActualComponent_sub_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angular-actual-matrix-covariance",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing",
+      "declaration": "Burnett.P01.projectionFullSchwartz_defectPairing_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

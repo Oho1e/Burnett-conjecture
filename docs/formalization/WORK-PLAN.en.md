@@ -643,3 +643,7 @@ The local vacuum remainder is connected to the whole-space divergence source of 
 ## 49. Uniform projected divergence source in any smooth chart
 
 In any compatible smooth chart the projection of the same zero-extended field has the norm limits and the whole-space divergence bound. Fixing the Lipschitz bound gives one constant for all admissible inverse-metric extensions and sequence indices. Next identify the projected covariance and full physical angular measure of the same original sequence. [Uniform projected divergence source in any smooth chart](../statements/maximal-chart-projected-source.en.md)
+
+## 50. Angular covariance and physical measure of the fixed projection
+
+Given the original matrix pairing witness, the actual projected pairings have two-slot covariance PNP*. A supplied Ricci-kernel amplitude projects to zero off the cone and is Lorenz polarized on the cone while preserving the full physical angular measure on the same trace. Next extract the common witness from the original vacuum sequence, identify both derivative slots, and establish global compatibility. [Angular covariance and physical measure of the fixed projection](../statements/projected-angular-covariance.en.md)

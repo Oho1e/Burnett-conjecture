@@ -3343,6 +3343,71 @@
       "claim_id": "p01:maximal-chart-norms-and-uniform-source",
       "module": "Burnett.Analysis.GaugeProjection.MaximalChartUniformSource",
       "declaration": "Burnett.P01.exists_maximalChartProjectedField_norms_and_uniform_source"
+    },
+    {
+      "claim_id": "p01:angular-high-frequency-principal-projection",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_eq_principal"
+    },
+    {
+      "claim_id": "p01:angular-principal-projection-off-null",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_eq_zero_off_null"
+    },
+    {
+      "claim_id": "p01:angular-principal-Lorenz-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_null_contracted"
+    },
+    {
+      "claim_id": "p01:angular-principal-Hermitian-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra",
+      "declaration": "Burnett.P01.principalGaugeProjection_preserves_hermitianPhysicalPairing"
+    },
+    {
+      "claim_id": "p01:angular-Gram-physical-contraction",
+      "module": "Burnett.Analysis.Microlocal.PhysicalDensity",
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram"
+    },
+    {
+      "claim_id": "p01:angular-null-measure-projection",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedPhysicalDensity",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_principalGaugeProjection_eq"
+    },
+    {
+      "claim_id": "p01:angular-covariance-off-null",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_eq_zero_off_null"
+    },
+    {
+      "claim_id": "p01:angular-covariance-Lorenz-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_null_contracted"
+    },
+    {
+      "claim_id": "p01:angular-null-measure-covariance",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_projectedAmplitudeCovariance_eq"
+    },
+    {
+      "claim_id": "p01:angular-scalar-projection-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectScalarPairing",
+      "declaration": "Burnett.P01.projectedDefectScalarPairing_sub_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:angular-actual-component-multiplier",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+      "declaration": "Burnett.P01.gaugeProjectionComponent_toLp_eq_multiplier"
+    },
+    {
+      "claim_id": "p01:angular-component-projection-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents",
+      "declaration": "Burnett.P01.projectedDefectActualComponent_sub_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:angular-actual-matrix-covariance",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing",
+      "declaration": "Burnett.P01.projectionFullSchwartz_defectPairing_tendsto"
     }
   ],
   "inventory": [
@@ -16282,6 +16347,227 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_maximalChartProjectedField_norms_and_uniform_source",
       "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-high-frequency-principal-projection",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_eq_principal",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-principal-projection-off-null",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1705
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.principalGaugeProjection_eq_zero_off_null",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-principal-Lorenz-polarization",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1705,
+        "endline": 1706
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.principalGaugeProjection_null_contracted",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-principal-Hermitian-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.principalGaugeProjection_preserves_hermitianPhysicalPairing",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-Gram-physical-contraction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1708
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-null-measure-projection",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_principalGaugeProjection_eq",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-covariance-off-null",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1705
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_eq_zero_off_null",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-covariance-Lorenz-polarization",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1705,
+        "endline": 1706
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedCoordinateCovariance_null_contracted",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-null-measure-covariance",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1706,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.nullPhysicalMeasure_projectedAmplitudeCovariance_eq",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-scalar-projection-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedDefectScalarPairing_sub_tendsto_zero",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-actual-component-multiplier",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionComponent_toLp_eq_multiplier",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-component-projection-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedDefectActualComponent_sub_tendsto_zero",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angular-actual-matrix-covariance",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_defectPairing_tendsto",
+      "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
