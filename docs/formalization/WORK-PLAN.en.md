@@ -631,3 +631,7 @@ The open-chart and smooth intrinsic inputs now give finite-exponent convergence,
 ## 46. Derivative commutator for the fixed infrared factor
 
 The fixed projection’s infrared factor has a convolution realization and an L² derivative commutator bound. Next assemble the homogeneous matrix slots and connect the local vacuum remainder, whole-space divergence source, and angular measure to the same projected field. [Derivative commutator for the fixed infrared factor](../statements/projection-infrared-commutator.en.md)
+
+## 47. Derivative commutator for the fixed matrix projection
+
+The derivative commutator of the fixed matrix projection has an L² bounded extension for globally Lipschitz coefficients. Next connect the coordinate vacuum remainder, the whole-space divergence formula, and the full angular measure to the same projected field. [Derivative commutator for the fixed matrix projection](../statements/projection-hodge-commutator.en.md)

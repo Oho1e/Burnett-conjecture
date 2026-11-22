@@ -1,0 +1,272 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/TransverseDerivativePotential.lean": {
+      "repository_sha256": "b4b1f90ce06796f3cddb35c06f8768f4dbbe3cd17db529e331d4708ce757ea78",
+      "frozen_source": "p01-euclidean-projection-forward/TransverseDerivativePotential.lean",
+      "frozen_sha256": "861152246c809799641d061954db8d2ccd4ca7a4c29733fcc74ad7af00cb2036"
+    },
+    "Burnett/Analysis/GaugeProjection/HodgeCommutator.lean": {
+      "repository_sha256": "2a567b69c13a762c3ebc6622ec14b88150480c92d1c741470208dbd884c8498f",
+      "frozen_source": "p01-hodge-commutator-forward/HodgeCommutator.lean",
+      "frozen_sha256": "9691d6e61627d064df96bf6d0c3960eaab4fff863d2dc6382efd445c78ce0c9b"
+    },
+    "Burnett/Analysis/GaugeProjection/HodgePhysicalAction.lean": {
+      "repository_sha256": "75e80ca262ccddb8376f4963f14cf6a4c515b4a39a5ae7450c07942f35352c36",
+      "frozen_source": "p01-hodge-commutator-forward/HodgePhysicalAction.lean",
+      "frozen_sha256": "f32b9a95acb9a3726343cec01cf37ef0de1df8f04601ab0f85c233fae5ae7efe"
+    },
+    "Burnett/Analysis/GaugeProjection/HodgeL2Bound.lean": {
+      "repository_sha256": "a94bfb7f99dc8d5baf235bcc917cc0187a3f46cc12e53aaba65387ae317321ce",
+      "frozen_source": "p01-hodge-commutator-forward/HodgeL2Bound.lean",
+      "frozen_sha256": "b2dc295ca2a11bc61a2906efa722609e41c9a35603771b7bd6e2b85063ff231c"
+    },
+    "Burnett/Analysis/GaugeProjection/HodgeAnnularCore.lean": {
+      "repository_sha256": "7bd63b2a6ad097a48b1301eeef7c19616480fe55f796ed16dedc2772459ad876",
+      "frozen_source": "p01-hodge-commutator-forward/HodgeAnnularCore.lean",
+      "frozen_sha256": "6f9cb92764e9aa9079c5d8a28d0bebb12c6f97b427f31b9272dbb433c723286b"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixProjectionSlots.lean": {
+      "repository_sha256": "c9a6d332f5d01d93ee688b2cfc6ae9b6635f31740eaf1583eacac87d08acc629",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixProjectionSlots.lean",
+      "frozen_sha256": "38c2dae03905d3e3e07f29747be9fdcf3acd27e83ed51848d5d0a55cf2c533f6"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixProjectionRealization.lean": {
+      "repository_sha256": "97d92ab3936e6ec51cca9e6e488caec204732dfa09275670cf04655e8bf19049",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixProjectionRealization.lean",
+      "frozen_sha256": "6caad4e48b5cffd1e78786e6ce2b7ce2e1f83f807ee366d4b1fe2c15a14b80c6"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixSlotCommutators.lean": {
+      "repository_sha256": "af9c41504da58357bcff7ce4f0bbfcde1c1971bb0405249e037a5770b4a708a8",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixSlotCommutators.lean",
+      "frozen_sha256": "e5f5bcffef526e1644e36da24988e7db56ad83cc02690e12fd46dd9110c7de9c"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixAnnularBound.lean": {
+      "repository_sha256": "75ca2b90ca23f3e5676c3ae64465d37b88144e61234b14978008b7ffb0405927",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixAnnularBound.lean",
+      "frozen_sha256": "d894c1b30c69b7210670ce285634a0106182302cf7e8274c8eec06da497f5342"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixAnnularApproximation.lean": {
+      "repository_sha256": "d8ffb13b3e5992836ae358e9b1bc6b209478cbfabc41c66ffc21589fd0e54c82",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixAnnularApproximation.lean",
+      "frozen_sha256": "1b3403a491647efc953b341546ec5d365f30b3978a64489c8cecc794dbef6ab4"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixAllSchwartzBound.lean": {
+      "repository_sha256": "a23a2354267f85d136984359b8db22df65e8aa63c638661de97b7d58770cde30",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixAllSchwartzBound.lean",
+      "frozen_sha256": "26fd2652c65363a8d864b15ab90fe885195f07e08bb0d9c87ae02b5726b797b9"
+    },
+    "Burnett/Analysis/GaugeProjection/CoefficientCutoff.lean": {
+      "repository_sha256": "a4d7f4369661c5bada4146982bde13ee16dd89405e92daa03de3939e8245d298",
+      "frozen_source": "p01-matrix-commutator-forward/CoefficientCutoff.lean",
+      "frozen_sha256": "bcab13bc132cc01da1f6062b3231dbc2a65726278cf450e30db152d7e27e6b3b"
+    },
+    "Burnett/Analysis/GaugeProjection/CoefficientProductLimit.lean": {
+      "repository_sha256": "82c9058ac401139c9b23fa99d5ac2118dfa19c26ec54919059ba00e1e13d6ccf",
+      "frozen_source": "p01-matrix-commutator-forward/CoefficientProductLimit.lean",
+      "frozen_sha256": "13aaffda464d28fd6633c97d9e3da92843d66f41e0d9175e3b12a1cc70aa707c"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixLipschitzCoefficientBound.lean": {
+      "repository_sha256": "2063892d05f5ad674552fc497cf463c603560c513883ed2ba0e1e7b03e9912ab",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixLipschitzCoefficientBound.lean",
+      "frozen_sha256": "fa06cc4dfb3d3b46a30e93470a44759f4ef0f257458d666018265399256e2b2d"
+    },
+    "Burnett/Analysis/GaugeProjection/SmoothLipschitzApproximation.lean": {
+      "repository_sha256": "d7e539605b03e700ef9afa6432ae85a922ffec7ef48418b3f8f72cf9853cf405",
+      "origin": "proved-in-this-delivery"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixGeneralLipschitzBound.lean": {
+      "repository_sha256": "504128386a2bc7eddc2c1f4325125384800ed419902f0a510801b081b90736e6",
+      "origin": "proved-in-this-delivery"
+    },
+    "Burnett/Analysis/GaugeProjection/MatrixL2Extension.lean": {
+      "repository_sha256": "961199b8deb1f1418e57be5663c249701c7f070a6b8b70e467e29fe01e480752",
+      "frozen_source": "p01-matrix-commutator-forward/MatrixL2Extension.lean",
+      "frozen_sha256": "c27fb855d96e43fde3b97c7233780ca8e05bb2468a7694c465dffab09748665b"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:hodge-skew-cancellation",
+      "module": "Burnett.Analysis.GaugeProjection.TransverseDerivativePotential",
+      "declaration": "Burnett.P01.skew_symmetric_contraction_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.HodgeCommutator",
+      "declaration": "Burnett.P01.hodgeCommutator_spectrum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-action",
+      "module": "Burnett.Analysis.GaugeProjection.HodgePhysicalAction",
+      "declaration": "Burnett.P01.hodgeCommutator_action",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:hodge-slot-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.HodgeL2Bound",
+      "declaration": "Burnett.P01.exists_hodgeCommutator_action_l2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:hodge-annular-core-realization",
+      "module": "Burnett.Analysis.GaugeProjection.HodgeAnnularCore",
+      "declaration": "Burnett.P01.exists_hodgeTransverseSchwartz_of_compactSpectrum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-L2-projection-realization",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixProjectionRealization",
+      "declaration": "Burnett.P01.projectionFullL2_eq_schwartz",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      }
+    },
+    {
+      "claim_id": "p01:matrix-actual-commutator",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixAnnularBound",
+      "declaration": "Burnett.P01.projectionFullCommutatorL2_eq_actual",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-annular-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixAnnularBound",
+      "declaration": "Burnett.P01.exists_projectionFullCommutatorL2_bound_on_annularCore",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-annular-input-limit",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixAnnularApproximation",
+      "declaration": "Burnett.P01.projectionMatrixAnnularApproximation_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-annular-derivative-limit",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixAnnularApproximation",
+      "declaration": "Burnett.P01.projectionMatrixAnnularApproximation_derivative_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-Schwartz-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixAllSchwartzBound",
+      "declaration": "Burnett.P01.exists_projectionFullCommutatorL2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:smooth-coefficient-cutoff-lipschitz",
+      "module": "Burnett.Analysis.GaugeProjection.CoefficientCutoff",
+      "declaration": "Burnett.P01.projectionCoefficientCutoff_lipschitz",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:lipschitz-coefficient-L2-product",
+      "module": "Burnett.Analysis.GaugeProjection.CoefficientProductLimit",
+      "declaration": "Burnett.P01.projectionLipschitzCoefficientProductL2_ae",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:smooth-coefficient-product-limit",
+      "module": "Burnett.Analysis.GaugeProjection.CoefficientProductLimit",
+      "declaration": "Burnett.P01.projectionCoefficientCutoff_product_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-smooth-lipschitz-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixLipschitzCoefficientBound",
+      "declaration": "Burnett.P01.exists_projectionLipschitzCommutatorL2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:lipschitz-coefficient-smooth-approximation",
+      "module": "Burnett.Analysis.GaugeProjection.SmoothLipschitzApproximation",
+      "declaration": "Burnett.P01.exists_smooth_lipschitz_approximation",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-lipschitz-commutator-L2",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixGeneralLipschitzBound",
+      "declaration": "Burnett.P01.exists_projectionGeneralLipschitzCommutatorL2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    },
+    {
+      "claim_id": "p01:matrix-lipschitz-commutator-L2-extension",
+      "module": "Burnett.Analysis.GaugeProjection.MatrixL2Extension",
+      "declaration": "Burnett.P01.exists_projectionLipschitzCommutatorL2_extension",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1674,
+        "endline": 1684
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 622 个目标、687 个库存项和 682 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 640 个目标、705 个库存项和 699 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。完整 Lorentz 数据、全局张量测试、F05 和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](docs/statements/angular-kernel-transforms.zh-CN.md)
 
@@ -111,3 +111,5 @@ P01 的有限维规范补投影、固定红外正则化及带权零阶符号估�
 原开图与内禀输入已给出同一个实际投影场的有限指数范数、梯度界和一致趋零。 [原开坐标图上的投影场范数](docs/statements/open-chart-projected-norms.zh-CN.md)
 
 固定投影的红外因子已具备实际卷积公式和只用系数 Lipschitz 界的梯度型 L² 交换子估计。 [固定红外因子的梯度交换子](docs/statements/projection-infrared-commutator.zh-CN.md)
+
+固定矩阵投影的梯度交换子已取得全局 Lipschitz 系数下的 L² 有界延拓。 [固定矩阵投影的梯度交换子](docs/statements/projection-hodge-commutator.zh-CN.md)
