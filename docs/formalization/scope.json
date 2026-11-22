@@ -3408,6 +3408,71 @@
       "claim_id": "p01:angular-actual-matrix-covariance",
       "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing",
       "declaration": "Burnett.P01.projectionFullSchwartz_defectPairing_tendsto"
+    },
+    {
+      "claim_id": "p01:weighted-cutoff-error-l2",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+      "declaration": "Burnett.P01.tendsto_weighted_localizationError_L2_zero"
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-real",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_real"
+    },
+    {
+      "claim_id": "p01:weighted-cutoff-gradient-original",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectOriginalGradient",
+      "declaration": "Burnett.P01.localizedMetric_weighted_derivative_sub_original_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-partial",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_eq_partial"
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-test-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_test_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-shared-inputs",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.exists_localizedMetricSchwartz_coordinateDerivative_defect_inputs"
+    },
+    {
+      "claim_id": "p01:half-density-component-commutator",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectHalfDensity",
+      "declaration": "Burnett.P01.projectedDefectComponent_halfDensity_commutator_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:half-density-matrix-commutator",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_halfDensity_sub_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:angle-pairing-stability-under-strong-errors",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings",
+      "declaration": "Burnett.P01.defectPairing_sub_tendsto_zero_of_strong_errors"
+    },
+    {
+      "claim_id": "p01:half-density-matrix-pairing-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedWeightedDefectPairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_defectPairing_tendsto"
+    },
+    {
+      "claim_id": "p01:half-density-mixed-matrix-pairing-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedPairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_mixed_defectPairing_tendsto"
+    },
+    {
+      "claim_id": "p01:actual-cutoff-mixed-projected-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings",
+      "declaration": "Burnett.P01.projectedLocalizedMetric_weighted_mixedPairing_tendsto"
+    },
+    {
+      "claim_id": "p01:intrinsic-half-density-original-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient",
+      "declaration": "Burnett.P01.exists_intrinsic_originalGradient_halfDensity_error_tendsto_zero"
     }
   ],
   "inventory": [
@@ -16568,6 +16633,227 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.projectionFullSchwartz_defectPairing_tendsto",
       "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:weighted-cutoff-error-l2",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.tendsto_weighted_localizationError_L2_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-real",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_real",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:weighted-cutoff-gradient-original",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetric_weighted_derivative_sub_original_tendsto_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-partial",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_eq_partial",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-test-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_test_tendsto_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-shared-inputs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_localizedMetricSchwartz_coordinateDerivative_defect_inputs",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:half-density-component-commutator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedDefectComponent_halfDensity_commutator_tendsto_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:half-density-matrix-commutator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_halfDensity_sub_tendsto_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:angle-pairing-stability-under-strong-errors",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.defectPairing_sub_tendsto_zero_of_strong_errors",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:half-density-matrix-pairing-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_defectPairing_tendsto",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:half-density-mixed-matrix-pairing-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_mixed_defectPairing_tendsto",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-cutoff-mixed-projected-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedLocalizedMetric_weighted_mixedPairing_tendsto",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:intrinsic-half-density-original-gradient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_intrinsic_originalGradient_halfDensity_error_tendsto_zero",
+      "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

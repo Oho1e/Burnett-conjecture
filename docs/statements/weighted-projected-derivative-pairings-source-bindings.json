@@ -1,0 +1,246 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectLocalizationError.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+      "repository_sha256": "9d5645c8b524d8c776b3906f4ac3e7f69b9e00ff03274af4034d5d7f3353c8e0",
+      "prepared_source": "pr56-original-gradient-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectLocalizationError.lean",
+      "prepared_source_sha256": "9d5645c8b524d8c776b3906f4ac3e7f69b9e00ff03274af4034d5d7f3353c8e0",
+      "receipt": "pr56-original-gradient-port/PORT-RECEIPT.json",
+      "receipt_sha256": "cb3a6d156d9f9b8f3ed37c383599a1bc9bcc945ff3990098a82eb8de563d8b84",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs",
+        "Burnett.Analysis.GaugeProjection.ProjectedSourceLocalization"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectOriginalGradient.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectOriginalGradient",
+      "repository_sha256": "38659257d857b8987e6b44931ef2be8c46ac52b64de09048e635f9fa48ccb558",
+      "prepared_source": "pr56-original-gradient-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectOriginalGradient.lean",
+      "prepared_source_sha256": "38659257d857b8987e6b44931ef2be8c46ac52b64de09048e635f9fa48ccb558",
+      "receipt": "pr56-original-gradient-port/PORT-RECEIPT.json",
+      "receipt_sha256": "cb3a6d156d9f9b8f3ed37c383599a1bc9bcc945ff3990098a82eb8de563d8b84",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedCutoffDerivativeWeakZero.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "repository_sha256": "35d1becc5d514d234605513c69740ce4a4b0e916a87889320945e0187721eb54",
+      "prepared_source": "pr56-original-gradient-port/source/Burnett/Analysis/GaugeProjection/ProjectedCutoffDerivativeWeakZero.lean",
+      "prepared_source_sha256": "35d1becc5d514d234605513c69740ce4a4b0e916a87889320945e0187721eb54",
+      "receipt": "pr56-original-gradient-port/PORT-RECEIPT.json",
+      "receipt_sha256": "cb3a6d156d9f9b8f3ed37c383599a1bc9bcc945ff3990098a82eb8de563d8b84",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+        "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectHalfDensity.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectHalfDensity",
+      "repository_sha256": "ba037a46e56b324b80ab57c7d1bdf5e97d0d239f48e51b8b693c331f9b2f257c",
+      "prepared_source": "pr56-weighted-projection-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectHalfDensity.lean",
+      "prepared_source_sha256": "ba037a46e56b324b80ab57c7d1bdf5e97d0d239f48e51b8b693c331f9b2f257c",
+      "receipt": "pr56-weighted-projection-port/RECEIPT.json",
+      "receipt_sha256": "b32d86865f9886e47d894388dd92d60c7cbd7f7b4f68fe578216715615f61062",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectStablePairings.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings",
+      "repository_sha256": "9c60ce382eb42c764c93e8953bfc4d95e3f802035186baeca2c31e5be1c83e6d",
+      "prepared_source": "pr56-weighted-projection-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectStablePairings.lean",
+      "prepared_source_sha256": "9c60ce382eb42c764c93e8953bfc4d95e3f802035186baeca2c31e5be1c83e6d",
+      "receipt": "pr56-weighted-projection-port/RECEIPT.json",
+      "receipt_sha256": "b32d86865f9886e47d894388dd92d60c7cbd7f7b4f68fe578216715615f61062",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectHalfDensity"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedWeightedDefectPairings.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedWeightedDefectPairings",
+      "repository_sha256": "5705db1e38f6d91ff9b92e3b39d9137cd4b4d557cb88ddfc589cc44657253857",
+      "prepared_source": "pr56-weighted-projection-port/source/Burnett/Analysis/GaugeProjection/ProjectedWeightedDefectPairings.lean",
+      "prepared_source_sha256": "5705db1e38f6d91ff9b92e3b39d9137cd4b4d557cb88ddfc589cc44657253857",
+      "receipt": "pr56-weighted-projection-port/RECEIPT.json",
+      "receipt_sha256": "b32d86865f9886e47d894388dd92d60c7cbd7f7b4f68fe578216715615f61062",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectMatrixPairing",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectMixedPairings.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedPairings",
+      "repository_sha256": "47b44b1f031b9ae7e924c00381bca80ae77169f66bd2233c0ca599933baa0041",
+      "prepared_source": "pr56-mixed-projection-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectMixedPairings.lean",
+      "prepared_source_sha256": "47b44b1f031b9ae7e924c00381bca80ae77169f66bd2233c0ca599933baa0041",
+      "receipt": "pr56-mixed-projection-port/RECEIPT.json",
+      "receipt_sha256": "80492c88923f28e1686b92ddcaa2ba478871b972633cface8da94bc9fff667ec",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedWeightedDefectPairings"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDefectMixedMetricPairings.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings",
+      "repository_sha256": "a21aad492dc76c1da2e0568fc7a0abf630e61fb49acf36a774c765fef5bac9b3",
+      "prepared_source": "pr56-mixed-projection-port/source/Burnett/Analysis/GaugeProjection/ProjectedDefectMixedMetricPairings.lean",
+      "prepared_source_sha256": "a21aad492dc76c1da2e0568fc7a0abf630e61fb49acf36a774c765fef5bac9b3",
+      "receipt": "pr56-mixed-projection-port/METRIC-SOURCE-AUDIT.json",
+      "receipt_sha256": "e14c6559f6d69650cce760c5af65b1f9159fd59f59dc52f052b0c001026995c8",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedPairings",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectOriginalGradient",
+        "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/IntrinsicWeightedGradient.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient",
+      "repository_sha256": "eafad9e9f2720bc822559dfa6a749642f718c6712afb45c16745239c63959b06",
+      "prepared_source": "pr56-original-gradient-port/probes/IntrinsicGradientConsumption.lean",
+      "prepared_source_sha256": "f067b1050e42c42401059b6afc3eb038d6a5a2e8c38a16035c085a8606ca39f2",
+      "receipt": "pr56-original-gradient-port/PORT-RECEIPT.json",
+      "receipt_sha256": "cb3a6d156d9f9b8f3ed37c383599a1bc9bcc945ff3990098a82eb8de563d8b84",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectOriginalGradient",
+        "Burnett.Analysis.GaugeProjection.ProjectedChartRepresentatives",
+        "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensity"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:weighted-cutoff-error-l2",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+      "declaration": "Burnett.P01.tendsto_weighted_localizationError_L2_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-real",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_real",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:weighted-cutoff-gradient-original",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectOriginalGradient",
+      "declaration": "Burnett.P01.localizedMetric_weighted_derivative_sub_original_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-partial",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_eq_partial",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      }
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-test-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.localizedMetricSchwartz_coordinateDerivative_test_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      }
+    },
+    {
+      "claim_id": "p01:actual-cutoff-gradient-shared-inputs",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffDerivativeWeakZero",
+      "declaration": "Burnett.P01.exists_localizedMetricSchwartz_coordinateDerivative_defect_inputs",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      }
+    },
+    {
+      "claim_id": "p01:half-density-component-commutator",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectHalfDensity",
+      "declaration": "Burnett.P01.projectedDefectComponent_halfDensity_commutator_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:half-density-matrix-commutator",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_halfDensity_sub_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:angle-pairing-stability-under-strong-errors",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectStablePairings",
+      "declaration": "Burnett.P01.defectPairing_sub_tendsto_zero_of_strong_errors",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:half-density-matrix-pairing-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedWeightedDefectPairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_defectPairing_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:half-density-mixed-matrix-pairing-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedPairings",
+      "declaration": "Burnett.P01.projectionFullSchwartz_weighted_mixed_defectPairing_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:actual-cutoff-mixed-projected-pairing",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings",
+      "declaration": "Burnett.P01.projectedLocalizedMetric_weighted_mixedPairing_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:intrinsic-half-density-original-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient",
+      "declaration": "Burnett.P01.exists_intrinsic_originalGradient_halfDensity_error_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

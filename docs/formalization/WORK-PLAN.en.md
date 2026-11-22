@@ -647,3 +647,7 @@ In any compatible smooth chart the projection of the same zero-extended field ha
 ## 50. Angular covariance and physical measure of the fixed projection
 
 Given the original matrix pairing witness, the actual projected pairings have two-slot covariance PNP*. A supplied Ricci-kernel amplitude projects to zero off the cone and is Lorenz polarized on the cone while preserving the full physical angular measure on the same trace. Next extract the common witness from the original vacuum sequence, identify both derivative slots, and establish global compatibility. [Angular covariance and physical measure of the fixed projection](../statements/projected-angular-covariance.en.md)
+
+## 51. Weighted mixed derivative pairings of the actual projected field
+
+For supplied original weighted gradient pairings, the two independent derivative slots of the same actual cutoff field now have the weighted projected pairings with both frequency factors times PAP*. In a preferred chart the actual volume half-density and the weighted cutoff derivative give the strong-error comparison. Next extract the common trace and amplitude from the original vacuum sequence and identify its global angular measure. [Weighted mixed derivative pairings of the actual projected field](../statements/weighted-projected-derivative-pairings.en.md)
