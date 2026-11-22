@@ -2858,6 +2858,51 @@
       "claim_id": "a01:commutator:fixed-chart-density-matrix",
       "module": "Burnett.Analysis.PrincipalEnergy.Density.FixedChartMatrixDensityEnergy",
       "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_matrixCoefficient_principal_energy_bound"
+    },
+    {
+      "claim_id": "a04:partition",
+      "module": "Burnett.Analysis.AngularCaps.ComparableTriadAngle",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.triad_cutoff_partition_nonnegative"
+    },
+    {
+      "claim_id": "a04:comparable-wedge",
+      "module": "Burnett.Analysis.AngularCaps.ComparableTriadAngle",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_comparable_nearNull_wedge"
+    },
+    {
+      "claim_id": "a04:signed-far-gap",
+      "module": "Burnett.Analysis.AngularCaps.FarAngularPhase",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_lowFar_signedQuadraticPhase_gap"
+    },
+    {
+      "claim_id": "a04:projective-cover",
+      "module": "Burnett.Analysis.AngularCaps.UniformProjectiveNullCaps",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_projective_null_caps"
+    },
+    {
+      "claim_id": "a04:smooth-cap-family",
+      "module": "Burnett.Analysis.AngularCaps.SmoothCapFamily",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_smooth_thinCone_capMultipliers"
+    },
+    {
+      "claim_id": "a04:base-parabolic-jets",
+      "module": "Burnett.Analysis.AngularCaps.ActualBaseCapJets",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_capMultiplier_parabolic_jets"
+    },
+    {
+      "claim_id": "a04:enlarged-parabolic-jets",
+      "module": "Burnett.Analysis.AngularCaps.ActualEnlargedCapJets",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_enlargedCapMultiplier_parabolic_jets"
+    },
+    {
+      "claim_id": "a04:individual-cap-field-Lp",
+      "module": "Burnett.Analysis.AngularCaps.CapFieldLp",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultiplier_fieldLp"
+    },
+    {
+      "claim_id": "a04:angular-field-L3",
+      "module": "Burnett.Analysis.AngularCaps.ActualFieldCapAngularL3",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultipliers_field_angular_L3"
     }
   ],
   "inventory": [
@@ -14140,6 +14185,168 @@
         "endline": 591
       },
       "declaration": "Burnett.Analysis.CarlesonEmbedding.exists_actual_fixedChartDensity_matrixCoefficient_principal_energy_bound",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:partition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 895,
+        "endline": 912
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.triad_cutoff_partition_nonnegative",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:comparable-wedge",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 994,
+        "endline": 1006
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_comparable_nearNull_wedge",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:signed-far-gap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "unnum:phase-gap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 994,
+        "endline": 1016
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_lowFar_signedQuadraticPhase_gap",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:projective-cover",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 928,
+        "endline": 950
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_uniform_projective_null_caps",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:smooth-cap-family",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 928,
+        "endline": 951
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.exists_smooth_thinCone_capMultipliers",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:base-parabolic-jets",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 934,
+        "endline": 972
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_capMultiplier_parabolic_jets",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:enlarged-parabolic-jets",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 934,
+        "endline": 972
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ProjectiveNullCaps.actual_enlargedCapMultiplier_parabolic_jets",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:angular-field-L3",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 953,
+        "endline": 992
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultipliers_field_angular_L3",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a04:individual-cap-field-Lp",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 953,
+        "endline": 972
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.CapFourier.exists_uniform_actual_capMultiplier_fieldLp",
+      "statement_record": "docs/statements/angular-cap-geometry.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
       "does_not_close_parent_claim": true
     }
   ],

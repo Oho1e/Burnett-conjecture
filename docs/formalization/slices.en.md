@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `449b7de8869ce43fdba94129b7043b5ea64b5e885267fd68770805df72847d07`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2fc78e598631e4170bb412d6168b9cedd6d334093ff05960e89b378156d898f3`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -530,7 +530,7 @@ Internal refinements (no separate completion status):
 - Single-cap-index and enlarged-cap geometry; independent counting of three caps is prohibited. (Paper lines 928–951)
 - Make Lp(1−Np)≠0 an explicit hypothesis of the exact phase gap; low/high separation does not replace angular-far support. (Paper lines 921–1014)
 
-Next: Treat triple geometry, individual-cap construction/finite-exponent operator bounds, and the Δ lower bound as parallelizable subobligations, then unify κ,c,δ_0 and constants over the compact Lorentz family.
+Next: The cap geometry, uniform individual and angular field estimates, and low-far signed phase bound have Lean proofs. The next application is the single-cap trilinear localization in A05 using the common enlarged cap.
 
 <a id="a05"></a>
 
