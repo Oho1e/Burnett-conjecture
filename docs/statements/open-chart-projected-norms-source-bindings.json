@@ -1,0 +1,67 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/OpenChartMetricRepresentatives.lean": {
+      "repository_sha256": "902be70dc2629182550c6c290dba6ec1f7611872b19650715a460b5b75ff2711",
+      "related_frozen_sources": {
+        "p01-open-chart-adapter-forward/ProjectedChartRepresentatives.lean": "d2365d08803d226027f1100c4a70f89d811b7cf631c84d51f6e3004f3160a58a"
+      }
+    },
+    "Burnett/Analysis/GaugeProjection/OpenChartProjectedNorms.lean": {
+      "repository_sha256": "0642a33a4a1f4e20e7b610d8b9fa5bd192f52cab11adac1f666dadf085bd2195",
+      "related_frozen_sources": {
+        "p01-intrinsic-projected-norms-forward/IntrinsicProjectedNormInputs.lean": "b5df38acaed69c32e9235f8606396c5c8e199c614755661f192d7f201fd55753"
+      }
+    },
+    "Burnett/Analysis/GaugeProjection/IntrinsicChartProjectedNorms.lean": {
+      "repository_sha256": "8760a8a39f3e8debe1c66f2ed43c74729bd884c29befaa497f47e346e870365e",
+      "related_frozen_sources": {
+        "p01-intrinsic-projected-norms-forward/IntrinsicProjectedNormInputs.lean": "b5df38acaed69c32e9235f8606396c5c8e199c614755661f192d7f201fd55753"
+      }
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:open-chart-auxiliary-cutoff",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives",
+      "declaration": "Burnett.P01.exists_projectedChartCutoff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1603
+      }
+    },
+    {
+      "claim_id": "p01:open-chart-smooth-representatives",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives",
+      "declaration": "Burnett.P01.exists_openChartMetricRepresentatives",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1604
+      }
+    },
+    {
+      "claim_id": "p01:open-chart-field-norms",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartProjectedNorms",
+      "declaration": "Burnett.P01.exists_openChartProjectedField_norms",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      }
+    },
+    {
+      "claim_id": "p01:intrinsic-chart-field-norms",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

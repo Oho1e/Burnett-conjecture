@@ -3088,6 +3088,26 @@
       "claim_id": "p01:localized-projection-Linfinity-limit",
       "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness",
       "declaration": "Burnett.P01.localizedMetricProjection_uniformly_small"
+    },
+    {
+      "claim_id": "p01:open-chart-auxiliary-cutoff",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives",
+      "declaration": "Burnett.P01.exists_projectedChartCutoff"
+    },
+    {
+      "claim_id": "p01:open-chart-smooth-representatives",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives",
+      "declaration": "Burnett.P01.exists_openChartMetricRepresentatives"
+    },
+    {
+      "claim_id": "p01:open-chart-field-norms",
+      "module": "Burnett.Analysis.GaugeProjection.OpenChartProjectedNorms",
+      "declaration": "Burnett.P01.exists_openChartProjectedField_norms"
+    },
+    {
+      "claim_id": "p01:intrinsic-chart-field-norms",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms"
     }
   ],
   "inventory": [
@@ -15160,6 +15180,74 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.localizedMetricProjection_uniformly_small",
       "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:open-chart-auxiliary-cutoff",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1603
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_projectedChartCutoff",
+      "statement_record": "docs/statements/open-chart-projected-norms.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:open-chart-smooth-representatives",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1604
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_openChartMetricRepresentatives",
+      "statement_record": "docs/statements/open-chart-projected-norms.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:open-chart-field-norms",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_openChartProjectedField_norms",
+      "statement_record": "docs/statements/open-chart-projected-norms.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:intrinsic-chart-field-norms",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms",
+      "statement_record": "docs/statements/open-chart-projected-norms.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
