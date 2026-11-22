@@ -3048,6 +3048,46 @@
       "claim_id": "p01:localized-projection-finite-Lp",
       "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp",
       "declaration": "Burnett.P01.localizedMetricProjection_finiteLp_norms"
+    },
+    {
+      "claim_id": "p01:projected-shell-bounds",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedShellBounds",
+      "declaration": "Burnett.P01.projected_shell_convolution_bounds"
+    },
+    {
+      "claim_id": "p01:projected-dyadic-convolution",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffAction",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_eq_convolution"
+    },
+    {
+      "claim_id": "p01:projected-dyadic-pointwise-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffAction",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_tendsto"
+    },
+    {
+      "claim_id": "p01:projected-component-sup-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_sup_bound"
+    },
+    {
+      "claim_id": "p01:projected-component-uniform-smallness",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_uniform_small"
+    },
+    {
+      "claim_id": "p01:projected-matrix-uniform-smallness",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.projectionFullSchwartz_uniformly_small"
+    },
+    {
+      "claim_id": "p01:projected-matrix-Linfinity-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.projectionFullSchwartz_eLpNorm_top_tendsto_zero"
+    },
+    {
+      "claim_id": "p01:localized-projection-Linfinity-limit",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness",
+      "declaration": "Burnett.P01.localizedMetricProjection_uniformly_small"
     }
   ],
   "inventory": [
@@ -14984,6 +15024,142 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.localizedMetricProjection_finiteLp_norms",
       "statement_record": "docs/statements/projected-field-finite-lp.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-shell-bounds",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projected_shell_convolution_bounds",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-dyadic-convolution",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_eq_convolution",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-dyadic-pointwise-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_tendsto",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-component-sup-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_sup_bound",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-component-uniform-smallness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_uniform_small",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-matrix-uniform-smallness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_uniformly_small",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-matrix-Linfinity-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1605,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectionFullSchwartz_eLpNorm_top_tendsto_zero",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-projection-Linfinity-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedMetricProjection_uniformly_small",
+      "statement_record": "docs/statements/projected-field-uniform-convergence.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

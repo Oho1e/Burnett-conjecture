@@ -619,3 +619,7 @@ The fixed projection now has an actual Schwartz multiplier, symmetric-gradient c
 ## 43. Finite-exponent norms of the fixed projected fields
 
 The actual matrix projection has finite-exponent bounds. For localized, globally smooth coordinate data it gives finite-exponent convergence of the projected fields and uniform gradient bounds. Next connect the open-chart inputs, L∞ convergence, whole-space divergence source, and angular measure. [Finite-exponent norms of the fixed projected fields](../statements/projected-field-finite-lp.en.md)
+
+## 44. Uniform smallness of the fixed projected fields
+
+Localized, globally smooth coordinate data now give finite-exponent convergence, uniform gradient bounds, and L∞ convergence for the same projected fields. Next connect the original open-chart inputs, whole-space divergence source, and angular measure. [Uniform smallness of the fixed projected fields](../statements/projected-field-uniform-convergence.en.md)

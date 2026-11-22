@@ -285,3 +285,7 @@ import Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities
 import Burnett.Analysis.GaugeProjection.ProjectedFiniteLp
 import Burnett.Analysis.GaugeProjection.LocalizedMetricSchwartzInputs
 import Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp
+import Burnett.Analysis.GaugeProjection.ProjectedShellBounds
+import Burnett.Analysis.GaugeProjection.ProjectedCutoffAction
+import Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness
+import Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness
