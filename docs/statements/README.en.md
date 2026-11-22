@@ -67,3 +67,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Derivative commutator for the fixed infrared factor](projection-infrared-commutator.en.md)
 - [Derivative commutator for the fixed matrix projection](projection-hodge-commutator.en.md)
 - [Projected vacuum remainder and whole-space divergence source](projected-vacuum-source.en.md)
+- [Uniform projected divergence source in any smooth chart](maximal-chart-projected-source.en.md)

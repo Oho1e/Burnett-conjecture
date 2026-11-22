@@ -3298,6 +3298,51 @@
       "claim_id": "p01:intrinsic-projected-norms-and-uniform-source",
       "module": "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
       "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms_and_uniform_source"
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-matrix",
+      "module": "Burnett.Geometry.MaximalChart.MetricCoordinates",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_matrix_change"
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-jet",
+      "module": "Burnett.Geometry.MaximalChart.MetricJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_jet_change"
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection",
+      "module": "Burnett.Geometry.MaximalChart.ConnectionTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_connection_change"
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection-derivative",
+      "module": "Burnett.Geometry.MaximalChart.DerivativeTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_derivative_change"
+    },
+    {
+      "claim_id": "p01:maximal-chart-curvature",
+      "module": "Burnett.Geometry.MaximalChart.CurvatureTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateCurvature_change"
+    },
+    {
+      "claim_id": "p01:maximal-chart-coordinate-vacuum",
+      "module": "Burnett.Geometry.MaximalChart.VacuumTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateVacuum_of_intrinsic"
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-uniform-convergence",
+      "module": "Burnett.Geometry.MaximalChart.UniformMetric",
+      "declaration": "Burnett.Geometry.MaximalChart.fixed_components_uniform_of_physical_C0loc"
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-perturbation-jet-bound",
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedJet_uniform_bound_on_compact"
+    },
+    {
+      "claim_id": "p01:maximal-chart-norms-and-uniform-source",
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartUniformSource",
+      "declaration": "Burnett.P01.exists_maximalChartProjectedField_norms_and_uniform_source"
     }
   ],
   "inventory": [
@@ -16084,6 +16129,159 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms_and_uniform_source",
       "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-matrix",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_matrix_change",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-jet",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_jet_change",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_connection_change",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection-derivative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_derivative_change",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-curvature",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateCurvature_change",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-coordinate-vacuum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateVacuum_of_intrinsic",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-uniform-convergence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixed_components_uniform_of_physical_C0loc",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-perturbation-jet-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedJet_uniform_bound_on_compact",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:maximal-chart-norms-and-uniform-source",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_maximalChartProjectedField_norms_and_uniform_source",
+      "statement_record": "docs/statements/maximal-chart-projected-source.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

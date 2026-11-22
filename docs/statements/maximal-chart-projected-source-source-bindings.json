@@ -1,0 +1,194 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "native_port_receipt_sha256": "a0ec44de5ac4803184dc985e2dbf50ca1a3732022e1f26b24bfbe0b03aa6c2d3",
+  "frozen_mathematical_inputs": {
+    "f07-arbitrary-fixed-chart-forward/FixedChartGeometry.lean": "488e51997d4c099c579697fa5325329859919d0171812e1a4e65294223c600a3",
+    "f07-maximal-atlas-operator-forward/MaximalChartBounds.lean": "1d149eb0b308125bf4c57667262bad6d07fbd23e68e5b0723016767dbd7e3f28",
+    "f07-maximal-atlas-operator-forward/MaximalMetricCoordinates.lean": "3aabb9312245d71ed60ae97381ed012bc87ffbd53f9289668e0f826fb0c463a7",
+    "f07-maximal-atlas-operator-forward/MaximalMetricSmooth.lean": "f670636e9a3b5eab2e220f159e3922c0e21035d7d0aee8e8200d49829d08892f",
+    "f07-maximal-atlas-operator-forward/MaximalUniformMetric.lean": "b2d372190b86f1efc39d5b26446bd57daf1000a28cd698c4441b6dd66b41388a",
+    "f07-maximal-atlas-operator-forward/MaximalMetricJet.lean": "b6c128b93213ed4cf68d4b26e646b674e8a4bc266d730e1ea3d484d4235555c5",
+    "p01-fixed-chart-connection-transfer-forward/FixedChartConnectionTransfer.lean": "d2999b13c9c7aebc3ad01617ca9d1e9b81e8ad31f8c22bacfeb9fc242d12d9c9",
+    "p01-fixed-chart-connection-transfer-forward/FixedChartDerivativeTransfer.lean": "a56d47361186eae3563895448bcd1cfe9d1735c84a0994521cebd685eaf0551d",
+    "p01-fixed-chart-connection-transfer-forward/FixedChartCurvatureTransfer.lean": "378e96a3cd3ccecfd0a8da58160878df72a316c735e18d3c5e6045129a0f1eba",
+    "p01-fixed-chart-connection-transfer-forward/FixedChartVacuumTransfer.lean": "0f121633dcced88b963f616ef47a307e4955392be3e39de4e3847b7eb9a9580c"
+  },
+  "sources": {
+    "Burnett/Geometry/MaximalChart/MetricCoordinates.lean": {
+      "module": "Burnett.Geometry.MaximalChart.MetricCoordinates",
+      "repository_sha256": "8c72bceca69d7ed1b211cee69f442eb83654ed8ade38e44f767aa6e6b27ddaa9",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/MetricCoordinates.lean",
+      "imports": [
+        "Burnett.Geometry.ChartDifferential",
+        "Burnett.Geometry.MetricJetNaturality",
+        "Burnett.Geometry.ManifoldVolumeRegularity"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/MetricJet.lean": {
+      "module": "Burnett.Geometry.MaximalChart.MetricJet",
+      "repository_sha256": "8645ce1577b0b7cb50aab55577251d74559047ee8accb20225d1a92560ad941a",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/MetricJet.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.MetricCoordinates"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/UniformMetric.lean": {
+      "module": "Burnett.Geometry.MaximalChart.UniformMetric",
+      "repository_sha256": "e8baa082a5a195a2d9bd9fe6d4d6b902214bdffb33ea05ad73c9c66dd9642f90",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/UniformMetric.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.MetricCoordinates",
+        "Burnett.Geometry.ManifoldMetricSequence"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/ConnectionTransfer.lean": {
+      "module": "Burnett.Geometry.MaximalChart.ConnectionTransfer",
+      "repository_sha256": "4972165c9bbec2f87e8c2f3df156229b36f6e4d62a23d95d42c7128ab3be717a",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/ConnectionTransfer.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.MetricJet",
+        "Burnett.Geometry.ConnectionTermNaturality"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/DerivativeTransfer.lean": {
+      "module": "Burnett.Geometry.MaximalChart.DerivativeTransfer",
+      "repository_sha256": "81595c99fabd3cc0ea9572b5dfb885a090742d9b7737b8522a5785893c5877f0",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/DerivativeTransfer.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.ConnectionTransfer"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/CurvatureTransfer.lean": {
+      "module": "Burnett.Geometry.MaximalChart.CurvatureTransfer",
+      "repository_sha256": "fc40e5d1e6d0ceb3578ef653c8f1c7a1a18fcceb24c901a58183bc015f26c508",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/CurvatureTransfer.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.DerivativeTransfer",
+        "Burnett.Geometry.IntrinsicRicciTrace"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/VacuumTransfer.lean": {
+      "module": "Burnett.Geometry.MaximalChart.VacuumTransfer",
+      "repository_sha256": "c5fca65612585679d767edc690dc47c162ff8ce7061515fb3c3530d5f0500c24",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Geometry/MaximalChart/VacuumTransfer.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.CurvatureTransfer",
+        "Burnett.Counterexamples.Bianchi.Geometry"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/MaximalChartFirstJet.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
+      "repository_sha256": "859ba7b49e31a9c051a5d73e7c063717f9814a731513b6a3d617af61f99b3b41",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Analysis/GaugeProjection/MaximalChartFirstJet.lean",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.MetricJet",
+        "Burnett.Geometry.MaximalChart.UniformMetric",
+        "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedSource"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/MaximalChartUniformSource.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartUniformSource",
+      "repository_sha256": "87cefcfcc8efd9ae83daec990d7a1f26bf6078a0e7c0290c685d228d1fd50e06",
+      "prepared_source": "pr54-maximal-chart-port/source/Burnett/Analysis/GaugeProjection/MaximalChartUniformSource.lean",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
+        "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
+        "Burnett.Geometry.MaximalChart.VacuumTransfer"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:maximal-chart-metric-matrix",
+      "module": "Burnett.Geometry.MaximalChart.MetricCoordinates",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_matrix_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-jet",
+      "module": "Burnett.Geometry.MaximalChart.MetricJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_jet_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection",
+      "module": "Burnett.Geometry.MaximalChart.ConnectionTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_connection_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection-derivative",
+      "module": "Burnett.Geometry.MaximalChart.DerivativeTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_derivative_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-curvature",
+      "module": "Burnett.Geometry.MaximalChart.CurvatureTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateCurvature_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-coordinate-vacuum",
+      "module": "Burnett.Geometry.MaximalChart.VacuumTransfer",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedForm_coordinateVacuum_of_intrinsic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-uniform-convergence",
+      "module": "Burnett.Geometry.MaximalChart.UniformMetric",
+      "declaration": "Burnett.Geometry.MaximalChart.fixed_components_uniform_of_physical_C0loc",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-perturbation-jet-bound",
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedJet_uniform_bound_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:maximal-chart-norms-and-uniform-source",
+      "module": "Burnett.Analysis.GaugeProjection.MaximalChartUniformSource",
+      "declaration": "Burnett.P01.exists_maximalChartProjectedField_norms_and_uniform_source",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

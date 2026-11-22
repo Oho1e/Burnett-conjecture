@@ -639,3 +639,7 @@ The derivative commutator of the fixed matrix projection has an L² bounded exte
 ## 48. Projected vacuum remainder and whole-space divergence source
 
 The local vacuum remainder is connected to the whole-space divergence source of the same projected field. In a chartAt chart a fixed Lipschitz bound gives one constant for all admissible inverse-metric extensions and all sequence indices. Next connect the intrinsic transfer to arbitrary compatible smooth charts and identify the original sequence’s full angular measure. [Projected vacuum remainder and whole-space divergence source](../statements/projected-vacuum-source.en.md)
+
+## 49. Uniform projected divergence source in any smooth chart
+
+In any compatible smooth chart the projection of the same zero-extended field has the norm limits and the whole-space divergence bound. Fixing the Lipschitz bound gives one constant for all admissible inverse-metric extensions and sequence indices. Next identify the projected covariance and full physical angular measure of the same original sequence. [Uniform projected divergence source in any smooth chart](../statements/maximal-chart-projected-source.en.md)
