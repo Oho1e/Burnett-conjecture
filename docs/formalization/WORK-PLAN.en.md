@@ -611,3 +611,7 @@ The cap geometry, uniform individual and angular field estimates, and low-far si
 ## 41. Fixed gauge-complement projection and its order-zero symbol
 
 The finite-dimensional gauge-complement projection and the order-zero bounds for its fixed infrared-regularized symbol have Lean proofs. Next connect the Fourier action and symmetric-gradient cancellation, then the projected field and whole-space source estimates. [Fixed gauge-complement projection and its order-zero symbol](../statements/fixed-gauge-projection.en.md)
+
+## 42. Fourier action of the fixed gauge-complement projection
+
+The fixed projection now has an actual Schwartz multiplier, symmetric-gradient cancellation on the tempered dual, and componentwise finite-exponent bounds. Next construct the projected fields with their norms, whole-space source, and angular measure from the locked input data. [Fourier action of the fixed gauge-complement projection](../statements/gauge-projection-fourier-action.en.md)

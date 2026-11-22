@@ -275,3 +275,9 @@ import Burnett.Analysis.GaugeProjection.EuclideanGaugeProjection
 import Burnett.Analysis.GaugeProjection.GaugeProjectionSymbol
 import Burnett.Analysis.GaugeProjection.GaugeProjectionTemperate
 import Burnett.Analysis.GaugeProjection.FixedGaugeProjectionOrderZero
+import Burnett.Analysis.Fourier.RadianCoordinateDerivative
+import Burnett.Analysis.Fourier.FixedInfraredSchwartz
+import Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction
+import Burnett.Analysis.GaugeProjection.GaugeProjectionFourier
+import Burnett.Analysis.GaugeProjection.TemperedGaugeProjection
+import Burnett.Analysis.GaugeProjection.GaugeProjectionLp

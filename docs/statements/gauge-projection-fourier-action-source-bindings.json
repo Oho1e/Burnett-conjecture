@@ -1,0 +1,139 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/Fourier/RadianCoordinateDerivative.lean": {
+      "frozen_source": "a07-coordinate-derivative-commutator-forward/RadianHighDerivativeCommutator.lean",
+      "frozen_sha256": "c1066067d9704a4c7adcb18ee30c085a6f92082b62e6e2487e1480502e153d5d",
+      "repository_sha256": "b764db4e3de9691b2e38604dff8ec5dbd7427ef75c30429f5d892f816f96ced3"
+    },
+    "Burnett/Analysis/Fourier/FixedInfraredSchwartz.lean": {
+      "frozen_source": "a07-fixed-infrared-cutoff-forward/FixedInfraredSchwartz.lean",
+      "frozen_sha256": "38e9cd58b17ce4b8a6dea73f7f737690f5f50d7f7e027afa41ef3fe641a0f02e",
+      "repository_sha256": "16d083f609a700138262b2fa27ef4e5c5909e75f59e86b35f164f2a564160092"
+    },
+    "Burnett/Analysis/GaugeProjection/GaugeProjectionSchwartzAction.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/GaugeProjectionSchwartzAction.lean",
+      "frozen_sha256": "80ef675af00555a0a291f4b130d4cba46342110f3ea41eb050c3e209c462bb52",
+      "repository_sha256": "789ba1b363eabd5f0594fe666296fc96598c1809f5be935a8e568be436deefcf"
+    },
+    "Burnett/Analysis/GaugeProjection/GaugeProjectionFourier.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/GaugeProjectionFourier.lean",
+      "frozen_sha256": "46b3f4eb2e84c643a152af744e1f8a445f0324a770b0c6e1be72bafd89840850",
+      "repository_sha256": "d066c7d8bb8f4bbd7d5d76a83167cffe24dce521a47fa70eef0760155ef88e0c"
+    },
+    "Burnett/Analysis/GaugeProjection/TemperedGaugeProjection.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/TemperedGaugeProjection.lean",
+      "frozen_sha256": "502dbb111408e91e0f0f054fa392e43ec0e0f4a3701a75139818fa57827b4b64",
+      "repository_sha256": "89fa7bb0a863522090f0ab2879ab78c8357e23da6c71def6de4b6a7dc4da9844"
+    },
+    "Burnett/Analysis/GaugeProjection/GaugeProjectionLp.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/GaugeProjectionLp.lean",
+      "frozen_sha256": "5cb859010b6fb37c5b94e5c1438b8f834cc10be6a07d6d462888a2d1428a9c57",
+      "repository_sha256": "494248a05c9f9b202334d94e2a10727d8329af9fdc0f4814d420ad8a5a3e0205"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:radian-coordinate-derivative",
+      "module": "Burnett.Analysis.Fourier.RadianCoordinateDerivative",
+      "declaration": "Burnett.A07.radianFourier_coordinateDerivative",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1619,
+        "endline": 1642
+      }
+    },
+    {
+      "claim_id": "p01:schwartz-component-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_radianFourier",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:schwartz-component-action",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_eq_radianAction",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:complex-matrix-entries",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_apply",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:complex-gauge-annihilation",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_kills",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1641
+      }
+    },
+    {
+      "claim_id": "p01:schwartz-symmetric-gradient-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_symmetrizedGradient",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      }
+    },
+    {
+      "claim_id": "p01:tempered-symmetric-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.TemperedGaugeProjection",
+      "declaration": "Burnett.P01.temperedGaugeProjection_symmetrizedGradient",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      }
+    },
+    {
+      "claim_id": "p01:projection-high-pass-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.radianFourier_projectionInfraredAction",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:projection-high-pass-composition",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.radianAction_regularizedGaugeProjectionSymbol",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2036,
+        "endline": 2042
+      }
+    },
+    {
+      "claim_id": "p01:regularized-scalar-schwartz-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.exists_regularizedGaugeProjectionSymbol_Schwartz_Lp_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1697
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

@@ -2963,6 +2963,56 @@
       "claim_id": "p01:regularized-order-zero",
       "module": "Burnett.Analysis.GaugeProjection.FixedGaugeProjectionOrderZero",
       "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_orderZero_weighted"
+    },
+    {
+      "claim_id": "p01:radian-coordinate-derivative",
+      "module": "Burnett.Analysis.Fourier.RadianCoordinateDerivative",
+      "declaration": "Burnett.A07.radianFourier_coordinateDerivative"
+    },
+    {
+      "claim_id": "p01:schwartz-component-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_radianFourier"
+    },
+    {
+      "claim_id": "p01:schwartz-component-action",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionSchwartzAction",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_eq_radianAction"
+    },
+    {
+      "claim_id": "p01:complex-matrix-entries",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_apply"
+    },
+    {
+      "claim_id": "p01:complex-gauge-annihilation",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_kills"
+    },
+    {
+      "claim_id": "p01:schwartz-symmetric-gradient-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionFourier",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_symmetrizedGradient"
+    },
+    {
+      "claim_id": "p01:tempered-symmetric-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.TemperedGaugeProjection",
+      "declaration": "Burnett.P01.temperedGaugeProjection_symmetrizedGradient"
+    },
+    {
+      "claim_id": "p01:projection-high-pass-spectrum",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.radianFourier_projectionInfraredAction"
+    },
+    {
+      "claim_id": "p01:projection-high-pass-composition",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.radianAction_regularizedGaugeProjectionSymbol"
+    },
+    {
+      "claim_id": "p01:regularized-scalar-schwartz-Lp",
+      "module": "Burnett.Analysis.GaugeProjection.GaugeProjectionLp",
+      "declaration": "Burnett.P01.exists_regularizedGaugeProjectionSymbol_Schwartz_Lp_bound"
     }
   ],
   "inventory": [
@@ -14610,6 +14660,176 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.regularizedGaugeProjectionSymbol_orderZero_weighted",
       "statement_record": "docs/statements/fixed-gauge-projection.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:radian-coordinate-derivative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1619,
+        "endline": 1642
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A07.radianFourier_coordinateDerivative",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:schwartz-component-spectrum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_radianFourier",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:schwartz-component-action",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_eq_radianAction",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:complex-matrix-entries",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1625,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_apply",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:complex-gauge-annihilation",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1629,
+        "endline": 1641
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_kills",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:schwartz-symmetric-gradient-spectrum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.regularizedComplexGaugeProjection_symmetrizedGradient",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:tempered-symmetric-gradient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1642
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.temperedGaugeProjection_symmetrizedGradient",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projection-high-pass-spectrum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.radianFourier_projectionInfraredAction",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projection-high-pass-composition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2036,
+        "endline": 2042
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.radianAction_regularizedGaugeProjectionSymbol",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:regularized-scalar-schwartz-Lp",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1697
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_regularizedGaugeProjectionSymbol_Schwartz_Lp_bound",
+      "statement_record": "docs/statements/gauge-projection-fourier-action.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

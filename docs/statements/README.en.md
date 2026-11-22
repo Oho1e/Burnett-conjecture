@@ -60,3 +60,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [Proof and independent review](flat-rigidity.en.md) |
 - [Angular caps and the signed phase gap](angular-cap-geometry.en.md)
 - [Fixed gauge-complement projection and its order-zero symbol](fixed-gauge-projection.en.md)
+- [Fourier action of the fixed gauge-complement projection](gauge-projection-fourier-action.en.md)
