@@ -289,3 +289,6 @@ import Burnett.Analysis.GaugeProjection.ProjectedShellBounds
 import Burnett.Analysis.GaugeProjection.ProjectedCutoffAction
 import Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness
 import Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness
+import Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives
+import Burnett.Analysis.GaugeProjection.OpenChartProjectedNorms
+import Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms

@@ -63,3 +63,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Fourier action of the fixed gauge-complement projection](gauge-projection-fourier-action.en.md)
 - [Finite-exponent norms of the fixed projected fields](projected-field-finite-lp.en.md)
 - [Uniform smallness of the fixed projected fields](projected-field-uniform-convergence.en.md)
+- [Norms of the projected fields from the original open chart](open-chart-projected-norms.en.md)

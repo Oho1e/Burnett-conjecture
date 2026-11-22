@@ -623,3 +623,7 @@ The actual matrix projection has finite-exponent bounds. For localized, globally
 ## 44. Uniform smallness of the fixed projected fields
 
 Localized, globally smooth coordinate data now give finite-exponent convergence, uniform gradient bounds, and L∞ convergence for the same projected fields. Next connect the original open-chart inputs, whole-space divergence source, and angular measure. [Uniform smallness of the fixed projected fields](../statements/projected-field-uniform-convergence.en.md)
+
+## 45. Norms of the projected fields from the original open chart
+
+The open-chart and smooth intrinsic inputs now give finite-exponent convergence, uniform gradient bounds, and L∞ convergence for the same zero-extended cutoff data. Next connect the whole-space divergence source and angular measure for that projected field. [Norms of the projected fields from the original open chart](../statements/open-chart-projected-norms.en.md)
