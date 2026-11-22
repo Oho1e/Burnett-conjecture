@@ -67,3 +67,4 @@
 - [固定红外因子的梯度交换子](projection-infrared-commutator.zh-CN.md)
 - [固定矩阵投影的梯度交换子](projection-hodge-commutator.zh-CN.md)
 - [投影真空余项与全空间散度源](projected-vacuum-source.zh-CN.md)
+- [任意光滑图上的统一投影散度源](maximal-chart-projected-source.zh-CN.md)

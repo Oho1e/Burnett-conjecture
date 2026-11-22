@@ -629,7 +629,7 @@
         "原始admissible序列；U相对紧坐标图、chi光滑紧支集；z_n=chi*h_n零延拓。",
         "a_n是g_n逆分量在supp chi邻域的光滑一致Lipschitz延拓；最终常数允许依赖该族的一阶界。延拓不是预给定有界源。",
         "原导数缺陷在Ricci符号核中、离锥为纯规范、零锥Lorenz约束和Hermitian规范交叉消去；完整角测度的乘子作用规律。",
-        "固定全空间 IR 正则乘子 Π 的梯度交换子已有全局 Lipschitz 系数的 L² 有界延拓。同一 Π 通过坐标真空余项、开图数据及光滑逆度量延拓产生实际全空间散度源。标准 chartAt 图的内禀调用已落实。"
+        "固定全空间 IR 正则乘子 Π 的梯度交换子已有全局 Lipschitz 系数的 L² 有界延拓。任意相容光滑图的内禀输入已转移到实际坐标真空、一致收敛和一阶图内界，与同一 Π 的全空间散度公式相接。"
       ],
       "outputs": [
         "Pi_E(xi)H=P_xi H P_xi，P_xi=I-xi*xi^T/|xi|_E^2；给出显式规范差张量。径向IR正则化后的Pi仍严格杀死紧支集分布协向量的对称梯度。 条件与一致性：xi非零的齐次符号；IR cutoff固定实偶，零附近消失，高频为1；正则化后的Pi一般不再幂等。",
@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "局部真空余项及同一投影场的全空间散度源已接通。标准 chartAt 图中，对给定 Lipschitz 上界，存在对所有合格逆度量延拓族及序列指标统一的常数。接续任意相容光滑图的内禀转移和原序列完整角向测度的识别。",
+      "next_action": "任意相容光滑图中，同一个零延拓场的投影满足全部范数结论及全空间散度界。固定 Lipschitz 上界后，一个常数统一控制所有合格逆度量延拓族和序列指标。接续同一原序列的投影协方差和完整物理角向测度识别。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -5918,6 +5918,60 @@
     },
     {
       "claim_id": "p01:intrinsic-projected-norms-and-uniform-source",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-matrix",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-metric-jet",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-connection-derivative",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-curvature",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-coordinate-vacuum",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-uniform-convergence",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-compact-perturbation-jet-bound",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:maximal-chart-norms-and-uniform-source",
       "source_slices": [
         "P01"
       ]

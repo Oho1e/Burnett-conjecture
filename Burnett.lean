@@ -329,3 +329,12 @@ import Burnett.Analysis.GaugeProjection.ProjectedChartRepresentatives
 import Burnett.Analysis.GaugeProjection.ProjectedChartSourceBound
 import Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedSource
 import Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource
+import Burnett.Geometry.MaximalChart.MetricCoordinates
+import Burnett.Geometry.MaximalChart.MetricJet
+import Burnett.Geometry.MaximalChart.UniformMetric
+import Burnett.Geometry.MaximalChart.ConnectionTransfer
+import Burnett.Geometry.MaximalChart.DerivativeTransfer
+import Burnett.Geometry.MaximalChart.CurvatureTransfer
+import Burnett.Geometry.MaximalChart.VacuumTransfer
+import Burnett.Analysis.GaugeProjection.MaximalChartFirstJet
+import Burnett.Analysis.GaugeProjection.MaximalChartUniformSource
