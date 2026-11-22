@@ -616,3 +616,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 41. 固定规范补投影及其零阶符号
 
 有限维规范补投影与固定红外截断后的零阶符号估计已实现。接续实际 Fourier 作用与对称梯度消去，再接入投影场及全空间源的估计。 [固定规范补投影及其零阶符号](../statements/fixed-gauge-projection.zh-CN.md)
+
+## 42. 固定规范补投影的 Fourier 作用
+
+固定投影已有实际 Schwartz 乘子、温和分布对偶上的对称梯度消去和逐系数有限指数界。接续从锁定的原始场构造投影场及其范数、全空间源和角向测度。 [固定规范补投影的 Fourier 作用](../statements/gauge-projection-fourier-action.zh-CN.md)

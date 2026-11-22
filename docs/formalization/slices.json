@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "有限维规范补投影与固定红外截断后的零阶符号估计已实现。接续实际 Fourier 作用与对称梯度消去，再接入投影场及全空间源的估计。",
+      "next_action": "固定投影已有实际 Schwartz 乘子、温和分布对偶上的对称梯度消去和逐系数有限指数界。接续从锁定的原始场构造投影场及其范数、全空间源和角向测度。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -5516,6 +5516,66 @@
     },
     {
       "claim_id": "p01:regularized-order-zero",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:radian-coordinate-derivative",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:schwartz-component-spectrum",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:schwartz-component-action",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:complex-matrix-entries",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:complex-gauge-annihilation",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:schwartz-symmetric-gradient-spectrum",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:tempered-symmetric-gradient",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:projection-high-pass-spectrum",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:projection-high-pass-composition",
+      "source_slices": [
+        "V05"
+      ]
+    },
+    {
+      "claim_id": "p01:regularized-scalar-schwartz-Lp",
       "source_slices": [
         "P01"
       ]
