@@ -1,0 +1,109 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/ProjectedShellBounds.lean": {
+      "frozen_source": "p01-projected-uniform-smallness-forward/ProjectedShellBounds.lean",
+      "frozen_sha256": "6a0123569206b11fc3b7ee70d908b12257e4239213675d483a42af94b14d8370",
+      "repository_sha256": "d1241ff09703aba4f5b88bab3d626af50e51821c3428b87e4704342595cfb2e7"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedCutoffAction.lean": {
+      "frozen_source": "p01-projected-uniform-smallness-forward/ProjectedCutoffAction.lean",
+      "frozen_sha256": "698136be7198503d4fb2e9d0fb6b3c69bdf4814064c5e4bb8f39e493963a3797",
+      "repository_sha256": "d449c232b80d0737c4702330254f85fc7c00d24120330babc840f68aedddd521"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedUniformSmallness.lean": {
+      "frozen_source": "p01-projected-uniform-smallness-forward/ProjectedUniformSmallness.lean",
+      "frozen_sha256": "394cea8530b9e4836fec0df4a8917a07bc51d6663b0f4ef5cde8c1d7912c8c30",
+      "repository_sha256": "4b388f3182b7a64100545a9b7a0fed8c679405c153ce4e86488a9e286f0f7cb3"
+    },
+    "Burnett/Analysis/GaugeProjection/LocalizedProjectedUniformSmallness.lean": {
+      "frozen_source": "p01-localized-uniform-smallness-forward/LocalizedProjectedUniformSmallness.lean",
+      "frozen_sha256": "2b6372caa242c853c6a846b644f7e918ca1d6bd1e9faf6a05255c08b897f2007",
+      "repository_sha256": "07e10b39e37c37372f27f8781ea076cb1485f77daad9238ede7961b679aca3fe"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:projected-shell-bounds",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedShellBounds",
+      "declaration": "Burnett.P01.projected_shell_convolution_bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      }
+    },
+    {
+      "claim_id": "p01:projected-dyadic-convolution",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffAction",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_eq_convolution",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:projected-dyadic-pointwise-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedCutoffAction",
+      "declaration": "Burnett.P01.projectionDyadicApproximation_tendsto",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1636,
+        "endline": 1638
+      }
+    },
+    {
+      "claim_id": "p01:projected-component-sup-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_sup_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      }
+    },
+    {
+      "claim_id": "p01:projected-component-uniform-smallness",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.gaugeProjectionSchwartzComponent_uniform_small",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      }
+    },
+    {
+      "claim_id": "p01:projected-matrix-uniform-smallness",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.projectionFullSchwartz_uniformly_small",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1697,
+        "endline": 1700
+      }
+    },
+    {
+      "claim_id": "p01:projected-matrix-Linfinity-limit",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedUniformSmallness",
+      "declaration": "Burnett.P01.projectionFullSchwartz_eLpNorm_top_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1605,
+        "endline": 1606
+      }
+    },
+    {
+      "claim_id": "p01:localized-projection-Linfinity-limit",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedProjectedUniformSmallness",
+      "declaration": "Burnett.P01.localizedMetricProjection_uniformly_small",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1606
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
