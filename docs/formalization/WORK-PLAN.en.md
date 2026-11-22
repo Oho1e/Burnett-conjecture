@@ -651,3 +651,7 @@ Given the original matrix pairing witness, the actual projected pairings have tw
 ## 51. Weighted mixed derivative pairings of the actual projected field
 
 For supplied original weighted gradient pairings, the two independent derivative slots of the same actual cutoff field now have the weighted projected pairings with both frequency factors times PAP*. In a preferred chart the actual volume half-density and the weighted cutoff derivative give the strong-error comparison. Next extract the common trace and amplitude from the original vacuum sequence and identify its global angular measure. [Weighted mixed derivative pairings of the actual projected field](../statements/weighted-projected-derivative-pairings.en.md)
+
+## 52. Local positive matrix measures for the original metric gradients
+
+One common refinement now gives local positive matrix densities for the original volume-weighted gradients in the prescribed countable preferred charts, with all finite smooth separated tests. Apply the coordinate curl and actual vacuum Ricci rows to these same densities, then pass to auxiliary cospheres and identify the measures across charts. [Local positive matrix measures for the original metric gradients](../statements/original-gradient-matrix-measures.en.md)

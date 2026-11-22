@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "实际一阶行已有 Bessel 主部定位，原度规列已有坐标旋度约束。继续接入 Ricci 行、同一抽取的有序测度和密度约束。",
+      "next_action": "同一细化子列已在预先指定的可数首选图上给出原始体积加权梯度的局部正矩阵密度，覆盖全部有限光滑可分测试。接续在同一密度上施加坐标 curl 与实际真空 Ricci 行的约束，继而作辅助余球面变换和跨图识别。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "给定原加权梯度的配对见证后，同一实际截断场的两个独立导数槽已接到加权投影配对，协方差为两方向频率因子乘 PAP*。首选图中已核对实际原始体积半密度与加权截断导数的强零误差。接续从原真空序列提取共同迹测度和振幅，并识别同一全局角向测度。",
+      "next_action": "给定原加权梯度的配对见证后，同一实际截断场的两个独立导数槽已接到加权投影配对，协方差为两方向频率因子乘 PAP*。首选图中已核对实际原始体积半密度与加权截断导数的强零误差。局部迹测度已沿同一原始子列取得。接续在该密度上识别两个频率因子和振幅，并建立全局角向测度。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -6130,6 +6130,60 @@
       "claim_id": "p01:intrinsic-half-density-original-gradient",
       "source_slices": [
         "P01"
+      ]
+    },
+    {
+      "claim_id": "f05:original-gradient-schwartz-inputs",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-weighted-gradient",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable-original-rational-pairing-limits",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:positive-ordered-compact-functional",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:positive-compact-jet-matrix-measure",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-jet-matrix-trace-density",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-jet-all-finite-separated-pairings",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable-original-volume-matrix-densities",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-rational-limits-measure-identification",
+      "source_slices": [
+        "F05"
       ]
     }
   ],

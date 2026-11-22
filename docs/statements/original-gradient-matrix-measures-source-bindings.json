@@ -1,0 +1,350 @@
+{
+  "slice": "F05",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "4b7074e05587eb5dac40351ffd905c8dd0388c8a",
+  "base_tree": "6513dc49e47b52ed415b98e522002c9fa863f4f8",
+  "preparation_receipts": {
+    "pr56-original-angular-extraction-prep": "19c0ce79f411054da75b837eed1cf10ae2cd7697277397a8743126dbfd03ff3a",
+    "pr57-pairing-measure-prep": "89ef965318a9985f8c5043dbe7dae9be1b93e95ab6635fbeb11a49dd6ac5dc20"
+  },
+  "sources": {
+    "Burnett/Analysis/Compactness/DiagonalSubsequence.lean": {
+      "module": "Burnett.Analysis.Compactness.DiagonalSubsequence",
+      "sha256": "e615a7ef89d8367e8e0b0039f5a7b70940a5ac60b887e4cdc4210dfc81358d44",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Compactness/DiagonalSubsequence.lean",
+      "imports": [
+        "Burnett.Analysis.Compactness.CountableTests"
+      ]
+    },
+    "Burnett/Analysis/Compactness/OrderedPairings.lean": {
+      "module": "Burnett.Analysis.Compactness.OrderedPairings",
+      "sha256": "ac08286e9e6978ecd39c30ffcc5211f32a9b09531adb0af8169a046d4fcadaea",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Compactness/OrderedPairings.lean",
+      "imports": [
+        "Burnett.Analysis.Compactness.CountableTests",
+        "Burnett.Analysis.Fourier.Projection"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactChartInput.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactChartInput",
+      "sha256": "a325216c739c47512a6a7f9825f3693ca88d00fb5e8974967db47eacdc07abc3",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/CompactChartInput.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalCoordinateCurl"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalGradientInputs.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+      "sha256": "4cad7a513ed868c24c41ad5d05cb4194898cddd362a86f2bee4e6dcc80a6d4d5",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/OriginalGradientInputs.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalCoordinateCurl"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalRationalPairingLimits.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalPairingLimits",
+      "sha256": "9887dcbd8915a533ab93038eaee5546ee654bdbd5ffe48bd0e456aaf0eb12738",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/OriginalRationalPairingLimits.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumePairingLimits",
+        "Burnett.Analysis.Microlocal.RationalAngularSymbols"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalVolumePairingLimits.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumePairingLimits",
+      "sha256": "d9df9ecdc8b7f789ce32dee245ac4ca69eeec2c96d29f291f61042f538a0aa6a",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/OriginalVolumePairingLimits.lean",
+      "imports": [
+        "Burnett.Analysis.Compactness.DiagonalSubsequence",
+        "Burnett.Analysis.Compactness.OrderedPairings",
+        "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+        "Burnett.Analysis.Microlocal.VolumeWeightedChartJet"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/RationalAngularSymbols.lean": {
+      "module": "Burnett.Analysis.Microlocal.RationalAngularSymbols",
+      "sha256": "32a81236db8103ef6340472a8c91302bb77164f3e191b64453390fe3927e33d7",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/RationalAngularSymbols.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.AngularCommutator.FrequencyKernel",
+        "Burnett.Analysis.Sobolev.TestJet",
+        "Burnett.Analysis.Fourier.Projection",
+        "Mathlib.Analysis.InnerProductSpace.Calculus",
+        "Mathlib.Algebra.MvPolynomial.Basic"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/VolumeWeightedChartJet.lean": {
+      "module": "Burnett.Analysis.Microlocal.VolumeWeightedChartJet",
+      "sha256": "32c7ed199a7e6f64afc43e3f8c20b3643042f2c92301df535c4d8c1188c16b6b",
+      "preparation": "pr56-original-angular-extraction-prep/source/Burnett/Analysis/Microlocal/VolumeWeightedChartJet.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactChartInput",
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactJetMatrixDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixDensity",
+      "sha256": "051f64b607b78120eaea4c87aea7c77402f6b32e139181dc3a24e7dccb6c1ab7",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactJetMatrixDensity.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure",
+        "Burnett.Analysis.Microlocal.MatrixMeasure.TraceDensity",
+        "Mathlib.MeasureTheory.Integral.Bochner.Set"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactJetMatrixMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure",
+      "sha256": "226098a36f1244f46f4583064e68f80b796eafbe30e7760b71c07183e68bf2a0",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactJetMatrixMeasure.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OrderedCompactFunctionals",
+        "Burnett.Analysis.Microlocal.MatrixMeasure.Representation"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactJetSmoothPairings.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactJetSmoothPairings",
+      "sha256": "dd5a951a8519d1390f9c5cd9c5e0ec80711d65bdbbbfe384a0cec3bdf6048562",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactJetSmoothPairings.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.FixedSubsequenceSeparableLimits",
+        "Burnett.Analysis.Microlocal.CompactJetMatrixDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactLimitFunctional.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactLimitFunctional",
+      "sha256": "e9960d6466086ec009fb65749f9360e3a1c5ea7c19db078dff663ac051c7427a",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactLimitFunctional.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactSeparableTests",
+        "Burnett.Analysis.Microlocal.CompactSeparableBound",
+        "Burnett.Analysis.Microlocal.DenseRationalFunctional"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactSeparableBound.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactSeparableBound",
+      "sha256": "37f8140330afa0292c18e2f064239fa870e5827932a041576292130b9894695b",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactSeparableBound.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.LocalizedSeparablePairings",
+        "Burnett.Analysis.Microlocal.SpatialSquarePartition",
+        "Burnett.Analysis.Microlocal.RationalAngularDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactSeparableTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactSeparableTests",
+      "sha256": "c36f34f55480a0ce44a1c22f1222ee4d4aba85f89b0e21b07d0dd8fe7a0b7616",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactSeparableTests.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RationalAngularDensity",
+        "Burnett.Analysis.Microlocal.CompactChartInput",
+        "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+        "Mathlib.Algebra.BigOperators.Ring.List"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CompactSquarePositivity.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactSquarePositivity",
+      "sha256": "6de68bab662d8adaedfba1aab5445b11ec1d900dcdcc007e9d5d939e00cc1e08",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/CompactSquarePositivity.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactLimitFunctional"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/DenseRationalFunctional.lean": {
+      "module": "Burnett.Analysis.Microlocal.DenseRationalFunctional",
+      "sha256": "f96593653e8adce3046a099a16d5e7cbce18a8cdecda924a5a96ccc315399ed3",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/DenseRationalFunctional.lean",
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Analysis.Normed.Operator.Completeness",
+        "Mathlib.Topology.Algebra.Order.Archimedean"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/FixedSubsequenceSeparableLimits.lean": {
+      "module": "Burnett.Analysis.Microlocal.FixedSubsequenceSeparableLimits",
+      "sha256": "1591c594247417504d202fe2adc2a7607ec09715bc6907d6b3f507b8afb6d234",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/FixedSubsequenceSeparableLimits.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OrderedCompactFunctionals"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/LocalizedSeparablePairings.lean": {
+      "module": "Burnett.Analysis.Microlocal.LocalizedSeparablePairings",
+      "sha256": "da3d543aaa90e1dd78cae3d6178d3d96fb461641413d0854dd2265b3bf3aa7cc",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/LocalizedSeparablePairings.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.SeparableSquareOperators"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/MatrixMeasure/TraceDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.MatrixMeasure.TraceDensity",
+      "sha256": "ef37beb55eb14450765dc8522d6f5af958db9aaca85fc4a83ef8b8363e7b4344",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/MatrixMeasure/TraceDensity.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.MatrixMeasure.Representation",
+        "Mathlib.MeasureTheory.VectorMeasure.Decomposition.RadonNikodym",
+        "Mathlib.MeasureTheory.Function.AEEqOfIntegral"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OrderedCompactFunctionals.lean": {
+      "module": "Burnett.Analysis.Microlocal.OrderedCompactFunctionals",
+      "sha256": "48c7dd6d85e247cdb95c28e6ca2a0e3b5fd2b7ee19eca6414c557509c44ef0a9",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/OrderedCompactFunctionals.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactSquarePositivity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalRationalMeasureLimits.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits",
+      "sha256": "2e69f1fd19b6f728d01dea59199a8737f1389b2aa504979ecce9aefd9261f8f9",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/OriginalRationalMeasureLimits.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+        "Burnett.Analysis.Microlocal.OriginalRationalPairingLimits"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalVolumeMatrixMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+      "sha256": "7426638ad1f967f86baf73a564fe59a27ac566cd68232656f44a876d10021f77",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/OriginalVolumeMatrixMeasure.lean",
+      "imports": [
+        "Burnett.Analysis.Compactness.DiagonalSubsequence",
+        "Burnett.Analysis.Microlocal.CompactJetSmoothPairings",
+        "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+        "Burnett.Analysis.Microlocal.VolumeWeightedChartJet"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/RationalAngularDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.RationalAngularDensity",
+      "sha256": "979ad20cfa81ce0c1416c3b07c1a307cbe0915d8178cf2b4c27b78e1c1decbda",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/RationalAngularDensity.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RationalAngularSymbols",
+        "Mathlib.Topology.ContinuousMap.StoneWeierstrass",
+        "Mathlib.Algebra.MvPolynomial.Eval",
+        "Mathlib.Topology.Instances.Rat"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/SeparableSquareOperators.lean": {
+      "module": "Burnett.Analysis.Microlocal.SeparableSquareOperators",
+      "sha256": "3ef133bd2dcaff20fa4a171503754b6110ca33497522fd5aa0acc2b20e0b8214",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/SeparableSquareOperators.lean",
+      "imports": [
+        "Burnett.Analysis.PrincipalEnergy.Fourier.SymbolProduct",
+        "Burnett.Analysis.Compactness.OrderedPairings",
+        "Burnett.Analysis.Microlocal.AngularCommutator.Infrared",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/SpatialSquarePartition.lean": {
+      "module": "Burnett.Analysis.Microlocal.SpatialSquarePartition",
+      "sha256": "6b0b04c5ef4ff41d6ce940e4033cbff3be5d012b51c7ef1d989423c0ef7ef1de",
+      "preparation": "pr57-pairing-measure-prep/source/Burnett/Analysis/Microlocal/SpatialSquarePartition.lean",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RationalAngularSymbols",
+        "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:original-gradient-schwartz-inputs",
+      "module": "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_originalGradient_sourceSchwartz_inputs",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 401
+      },
+      "source_line": 24
+    },
+    {
+      "claim_id": "f05:original-volume-weighted-gradient",
+      "module": "Burnett.Analysis.Microlocal.VolumeWeightedChartJet",
+      "declaration": "Burnett.F05.ChartVolumeAmplitude.originalGradient_volumeWeightedL2_ae",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 401
+      },
+      "source_line": 32
+    },
+    {
+      "claim_id": "f05:countable-original-rational-pairing-limits",
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalPairingLimits",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_rational_pairing_limits",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "source_line": 25
+    },
+    {
+      "claim_id": "f05:positive-ordered-compact-functional",
+      "module": "Burnett.Analysis.Microlocal.OrderedCompactFunctionals",
+      "declaration": "Burnett.Microlocal.CompactOrderedFunctional.exists_commonCompactMatrixFunctional_positive",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "source_line": 311
+    },
+    {
+      "claim_id": "f05:positive-compact-jet-matrix-measure",
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure",
+      "declaration": "Burnett.Microlocal.CompactChartMatrixMeasure.exists_compactChartMatrixMeasure_of_localized_weak_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "source_line": 54
+    },
+    {
+      "claim_id": "f05:compact-jet-matrix-trace-density",
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixDensity",
+      "declaration": "Burnett.Microlocal.CompactChartDensity.exists_compactChartMatrixDensity_of_localized_weak_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 402,
+        "endline": 407
+      },
+      "source_line": 184
+    },
+    {
+      "claim_id": "f05:compact-jet-all-finite-separated-pairings",
+      "module": "Burnett.Analysis.Microlocal.CompactJetSmoothPairings",
+      "declaration": "Burnett.Microlocal.FixedSubsequenceSeparableExtension.exists_compactChartMatrixDensity_allFiniteSmoothPairings",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "source_line": 22
+    },
+    {
+      "claim_id": "f05:countable-original-volume-matrix-densities",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_matrixDensities",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 407
+      },
+      "source_line": 96
+    },
+    {
+      "claim_id": "f05:original-rational-limits-measure-identification",
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_originalVolume_measures_realizing_rational_limits",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "source_line": 71
+    }
+  ],
+  "closes_parent_claim": false
+}

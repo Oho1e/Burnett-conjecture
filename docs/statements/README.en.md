@@ -70,3 +70,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Uniform projected divergence source in any smooth chart](maximal-chart-projected-source.en.md)
 - [Angular covariance and physical measure of the fixed projection](projected-angular-covariance.en.md)
 - [Weighted mixed derivative pairings of the actual projected field](weighted-projected-derivative-pairings.en.md)
+- [Local positive matrix measures for the original metric gradients](original-gradient-matrix-measures.en.md)
