@@ -3233,6 +3233,71 @@
       "claim_id": "p01:matrix-lipschitz-commutator-L2-extension",
       "module": "Burnett.Analysis.GaugeProjection.MatrixL2Extension",
       "declaration": "Burnett.P01.exists_projectionLipschitzCommutatorL2_extension"
+    },
+    {
+      "claim_id": "p01:coordinate-ricci-gauge-and-remainder",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSourceGaugeDerivative",
+      "declaration": "Burnett.P01.twice_coordinateRicci_eq_wave_symmetrizedGauge_remainder"
+    },
+    {
+      "claim_id": "p01:localized-vacuum-gauge-and-remainder",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedVacuumSource",
+      "declaration": "Burnett.P01.localizedVacuumSource_eq_symmetrizedGauge_add_remainder"
+    },
+    {
+      "claim_id": "p01:localized-vacuum-remainder-majorant",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedVacuumSourceBound",
+      "declaration": "Burnett.P01.exists_localizedVacuumSourceRemainder_majorant"
+    },
+    {
+      "claim_id": "p01:projected-coordinate-vacuum-wave-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedVacuumSourceOnChart",
+      "declaration": "Burnett.P01.exists_norm_projection_of_localizedVacuumSource_le"
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-representative",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceDefinitions",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_ae"
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-identity",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceBound",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_projected"
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceBound",
+      "declaration": "Burnett.P01.exists_projectedSourceDivergenceL2_bound"
+    },
+    {
+      "claim_id": "p01:coordinate-vacuum-wave-source-agrees",
+      "module": "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource",
+      "declaration": "Burnett.P01.projectedSourceQ_eq_localizedWaveSourceSchwartz"
+    },
+    {
+      "claim_id": "p01:whole-space-coordinate-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource",
+      "declaration": "Burnett.P01.exists_wholeSpace_projectedVacuumDivergenceL2_bound"
+    },
+    {
+      "claim_id": "p01:open-chart-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedChartSourceBound",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_openChart"
+    },
+    {
+      "claim_id": "p01:intrinsic-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedSource",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_intrinsic"
+    },
+    {
+      "claim_id": "p01:uniform-source-bound-over-extensions",
+      "module": "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
+      "declaration": "Burnett.P01.projectedSource_uniform_extension_bound"
+    },
+    {
+      "claim_id": "p01:intrinsic-projected-norms-and-uniform-source",
+      "module": "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms_and_uniform_source"
     }
   ],
   "inventory": [
@@ -15798,6 +15863,227 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_projectionLipschitzCommutatorL2_extension",
       "statement_record": "docs/statements/projection-hodge-commutator.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:coordinate-ricci-gauge-and-remainder",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1644,
+        "endline": 1662
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.twice_coordinateRicci_eq_wave_symmetrizedGauge_remainder",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-vacuum-gauge-and-remainder",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1668
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.localizedVacuumSource_eq_symmetrizedGauge_add_remainder",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:localized-vacuum-remainder-majorant",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1671
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_localizedVacuumSourceRemainder_majorant",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-coordinate-vacuum-wave-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1672
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_norm_projection_of_localizedVacuumSource_le",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-representative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_ae",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_projected",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_projectedSourceDivergenceL2_bound",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:coordinate-vacuum-wave-source-agrees",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1689
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedSourceQ_eq_localizedWaveSourceSchwartz",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:whole-space-coordinate-vacuum-source-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1695
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_wholeSpace_projectedVacuumDivergenceL2_bound",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:open-chart-vacuum-source-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_openChart",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:intrinsic-vacuum-source-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_intrinsic",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:uniform-source-bound-over-extensions",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1606,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedSource_uniform_extension_bound",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:intrinsic-projected-norms-and-uniform-source",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms_and_uniform_source",
+      "statement_record": "docs/statements/projected-vacuum-source.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ae9c149908cb41f76d2ed0637bd82dc67601e13a5907b3b719beda629ccf51a5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `a42ae369ee5b295ee39dbdef04ea35cac7002b745c9bc642ccd31c7501b3254b`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -680,7 +680,7 @@ Inputs:
 - The original admissible sequence; a relatively compact coordinate chart U and smooth compactly supported chi; z_n=chi*h_n extended by zero.
 - a_n is a smooth uniformly Lipschitz extension of the inverse components of g_n near supp chi. Final constants may depend on the family's first-order bounds. The extension is not a supplied bounded source.
 - The original derivative defect lies in the Ricci-symbol kernel, is pure gauge off the cone, and satisfies null-cone Lorenz constraints and Hermitian gauge cross-term cancellation; the multiplier action law for the full angular measure.
-- The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. The coordinate vacuum and source consumers still need to be connected.
+- The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. The coordinate vacuum and source consumers are connected for actual open-chart data and, intrinsically, for chartAt charts.
 
 Outputs:
 
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: The derivative commutator of the fixed matrix projection has an L² bounded extension for globally Lipschitz coefficients. Next connect the coordinate vacuum remainder, the whole-space divergence formula, and the full angular measure to the same projected field.
+Next: The local vacuum remainder is connected to the whole-space divergence source of the same projected field. In a chartAt chart a fixed Lipschitz bound gives one constant for all admissible inverse-metric extensions and all sequence indices. Next connect the intrinsic transfer to arbitrary compatible smooth charts and identify the original sequence’s full angular measure.
 
 <a id="v01"></a>
 

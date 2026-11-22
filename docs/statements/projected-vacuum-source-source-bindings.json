@@ -1,0 +1,256 @@
+{
+  "slice": "P01",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/ProjectedDivergenceDefinitions.lean": {
+      "frozen_source": "p01-projected-divergence-forward/ProjectedDivergenceDefinitions.lean",
+      "frozen_source_sha256": "9b9fe24f9e9d15c4ea266e6d8b6a68d9d729fa49715ec1bd091ef59749b1c823",
+      "frozen_receipt": "p01-projected-divergence-forward/PROJECTED-DIVERGENCE-RECEIPT.json",
+      "frozen_receipt_sha256": "a4fb301f08ed06927693d23d1780267d61f6296584b5210c68acff3399269640",
+      "repository_sha256": "2c8c969c4a6e7f8a4d797fe0069aa96815461906d819fbab1e1d84f964370cea"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedRicciPrincipal.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedRicciPrincipal.lean",
+      "frozen_source_sha256": "9443d2263bb47f8d5aa32e4d2a786d5e08d39a713f9cafac5f00b89cf29897bc",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-RICCI-PRINCIPAL-RECEIPT.json",
+      "frozen_receipt_sha256": "4100eafead6baf3d4b6cfe705596d402d7aaf00a49bff8074f78df917373b7b2",
+      "repository_sha256": "1502316c9fd56f46e007ccb155fc6d6e2abce8b44208eb399248c25f0babaeed"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedDivergenceBound.lean": {
+      "frozen_source": "p01-projected-divergence-forward/ProjectedDivergenceBound.lean",
+      "frozen_source_sha256": "87a513d3bbda57baa7a47bbda3fa66b11b4948b0b20ead8d6cefb4e5e54f9dd6",
+      "frozen_receipt": "p01-projected-divergence-forward/PROJECTED-DIVERGENCE-RECEIPT.json",
+      "frozen_receipt_sha256": "a4fb301f08ed06927693d23d1780267d61f6296584b5210c68acff3399269640",
+      "repository_sha256": "8d9540f03bf7d1bd9a10228b8e2aa3ddf8a6cf64cd0d0fa47028fd90041aae54"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedCoordinateRicci.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedCoordinateRicci.lean",
+      "frozen_source_sha256": "0f876fa293ab5a240a4278725500bd4ec48780c892bc5e021ecf4e71ab3027f0",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-COORDINATE-RICCI-RECEIPT.json",
+      "frozen_receipt_sha256": "3d2d49e3a58155abebb4691aae55c088dbb8b65cb5eb628268414f4aeb7974d8",
+      "repository_sha256": "75a665b25501a9b7b96ea5db2bd082850375bb003c9156d4b16b76906ba83ae8"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedSourceGaugeDerivative.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedSourceGaugeDerivative.lean",
+      "frozen_source_sha256": "01ac1fed9dc87130fa85af03ab65ebdb8234e6ccc76956e7541990a0dd3b845f",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-SOURCE-GAUGE-DERIVATIVE-RECEIPT.json",
+      "frozen_receipt_sha256": "ab7c84ccdc65575c4fb47b6dbd5318fa62f0c35383090a9ca7dd42f070acfa3f",
+      "repository_sha256": "c48f77f5952697c01287328a5f3a6e089c01ce7fb35040e3e95b0dcc94d0fffb"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedSourceInverseJet.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedSourceInverseJet.lean",
+      "frozen_source_sha256": "28e43fa0a457e782cba882f58aefa34efc17c5b8680be7ccea5b01067e7f922d",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-SOURCE-INVERSE-JET-RECEIPT.json",
+      "frozen_receipt_sha256": "e1a646f0645500112a834a6ad85a6a04aadab586e5241d324eca5ac3d3290322",
+      "repository_sha256": "513ffca651c30f8b6fad5d9239dda1b284cf7721a5c61c4da0453a2fc1cffe54"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedSourceLocalization.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedSourceLocalization.lean",
+      "frozen_source_sha256": "9f4a39123c0b01f364b1750bb86d42a795ca42b607c10ce524f3c59cebedc117",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-SOURCE-LOCALIZATION-RECEIPT.json",
+      "frozen_receipt_sha256": "08394c35fb0d6d6101a8ae035731e3257cee868705f7a3aa45b253079a9b9563",
+      "repository_sha256": "64fce2fbaf0088ffba00ccdd77e5b8859aa9c77a3182b69e65736c4d7dc41885"
+    },
+    "Burnett/Analysis/GaugeProjection/LocalizedVacuumSource.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/LocalizedVacuumSource.lean",
+      "frozen_source_sha256": "4d30a9300251b967d64a8acc50adc330413cfd9b6c1e6dae7780dbdf092ab1bf",
+      "frozen_receipt": "p01-euclidean-projection-forward/LOCALIZED-VACUUM-SOURCE-RECEIPT.json",
+      "frozen_receipt_sha256": "ef1e85a136b6a7cc7fbcb24c53eb04bc756a155c8aefcb61c961dcfaedc51044",
+      "repository_sha256": "16d0583d787405e06de313cc1a8b5c7e78ecc9761282bef5b82dba3506026571"
+    },
+    "Burnett/Analysis/GaugeProjection/LocalizedVacuumSourceBound.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/LocalizedVacuumSourceBound.lean",
+      "frozen_source_sha256": "2bc6eca60fb865776fcc2c55b11f7461c5ebda7c436bfdbbe01d1833cb0dfee0",
+      "frozen_receipt": "p01-euclidean-projection-forward/LOCALIZED-VACUUM-SOURCE-BOUND-RECEIPT.json",
+      "frozen_receipt_sha256": "37a5f68bfd8300eee26af334b3eeb91b10825eb2de53feb430df9eb4af694823",
+      "repository_sha256": "b476d0c013513d5d11ec46cd436c6044c4f8388753028d8d2304e3ce57af50b4"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedLocalizedSourceL2.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedLocalizedSourceL2.lean",
+      "frozen_source_sha256": "b94a78b41aef3e3e1d33bee83252042ef9de9d31fbdc02cdb5f2992d5c87ab54",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-LOCALIZED-SOURCE-L2-RECEIPT.json",
+      "frozen_receipt_sha256": "0043a73847a60651a530faf4883ded93c2fb1810c58d6574201fc49ab71cec64",
+      "repository_sha256": "6ebea1cad753e3d31f2cd5f58788f12e12c3085cb580b12373e8e4f4f5c4ef24"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedVacuumSourceOnChart.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/ProjectedVacuumSourceOnChart.lean",
+      "frozen_source_sha256": "cea43d52da4c5f0c6af64232dbdddbfce490dc87cda5bca34297604377ac6716",
+      "frozen_receipt": "p01-euclidean-projection-forward/PROJECTED-VACUUM-SOURCE-ON-CHART-RECEIPT.json",
+      "frozen_receipt_sha256": "878f2d898e05ca0d7ea4e6fc21d3a6192e1d8388a3b7f2b313779225690fc3f3",
+      "repository_sha256": "dcb5e7690d36feaae2d92d098cb94df9e3ddb42a46a8baac2d2a6a6a910c92ec"
+    },
+    "Burnett/Analysis/GaugeProjection/WholeSpaceProjectedVacuumSource.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/WholeSpaceProjectedVacuumSource.lean",
+      "frozen_source_sha256": "5fe91791b00d831657d824f73a25ebdfa0ccfa8de32104c7c0d3cab9a0d34878",
+      "frozen_receipt": "p01-euclidean-projection-forward/WHOLE-SPACE-PROJECTED-VACUUM-SOURCE-RECEIPT.json",
+      "frozen_receipt_sha256": "d7083c96bd7d4f1f6ddcdf272cd8bc901adb51e0b5ec1f3d8b1ac19a2df2b0b9",
+      "repository_sha256": "de5e33b3b21fa54200e491f8ade0cf2a509fcc1a2629ac80d52c77a116a34e86"
+    },
+    "Burnett/Analysis/GaugeProjection/UniformLocalizedMetricJets.lean": {
+      "frozen_source": "p01-euclidean-projection-forward/UniformLocalizedMetricJets.lean",
+      "frozen_source_sha256": "310df69616b6035abb47a4e4c4dc4e82111a357826d0cd3849c2af4084bcb4b7",
+      "frozen_receipt": "p01-euclidean-projection-forward/UNIFORM-LOCALIZED-METRIC-JETS-RECEIPT.json",
+      "frozen_receipt_sha256": "9c91b8858fa8ac0fee72841f70e0d548482912d043cb7107a95b3f1c3b225e3b",
+      "repository_sha256": "e944599ac4121fce30a625bfb8d4d8f1a1ff4ee92c98c05e4970fa4cd4c5563e"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedChartRepresentatives.lean": {
+      "frozen_source": "p01-open-chart-adapter-forward/ProjectedChartRepresentatives.lean",
+      "frozen_source_sha256": "d2365d08803d226027f1100c4a70f89d811b7cf631c84d51f6e3004f3160a58a",
+      "frozen_receipt": "p01-open-chart-adapter-forward/OPEN-CHART-PROJECTED-SOURCE-RECEIPT.json",
+      "frozen_receipt_sha256": "ee1fc696c40888dae8193f47be10c2bc651e44963c997168bd69265f95dc6208",
+      "repository_sha256": "d2f58b9094d03c55afc7a36abcd66726770a8e0b249cb434d5e35738f5da5b43"
+    },
+    "Burnett/Analysis/GaugeProjection/ProjectedChartSourceBound.lean": {
+      "frozen_source": "p01-open-chart-adapter-forward/ProjectedChartSourceBound.lean",
+      "frozen_source_sha256": "0bb94d43cf9ecd8bad82ae687c3f3dd5a992a2b0200221e527dfc9f333e34b4c",
+      "frozen_receipt": "p01-open-chart-adapter-forward/OPEN-CHART-PROJECTED-SOURCE-RECEIPT.json",
+      "frozen_receipt_sha256": "ee1fc696c40888dae8193f47be10c2bc651e44963c997168bd69265f95dc6208",
+      "repository_sha256": "0c3416d44c0a77c55abd46408294ad2ae40d68ac83e7a398e30780339d601ee1"
+    },
+    "Burnett/Analysis/GaugeProjection/IntrinsicChartProjectedSource.lean": {
+      "frozen_source": "p01-intrinsic-chart-source-forward/IntrinsicChartProjectedSource.lean",
+      "frozen_source_sha256": "c29fb4015dc159fddfb26e299857a440a639c8090b76b4d7df3245b745bd7772",
+      "frozen_receipt": "p01-intrinsic-chart-source-forward/INTRINSIC-CHART-PROJECTED-SOURCE-RECEIPT.json",
+      "frozen_receipt_sha256": "dc93049442f6013037535543b2f383811c6019bf6f76b1bdb2eabf160fd046b6",
+      "repository_sha256": "726dc4b8cecc3d7f486cc1075f6856784327ab3f8bdc423ebca6629657907c4f"
+    },
+    "Burnett/Analysis/GaugeProjection/UniformIntrinsicProjectedSource.lean": {
+      "frozen_source": "p01-divergence-candidate-port/IntrinsicDivergenceConsumer.lean",
+      "frozen_source_sha256": "04ac8da5e31e9810118fa763578a60362862a0d6dc6690e9ce5ddcfdb1e3581a",
+      "repository_sha256": "ea5e018ae0d600d3d3042ab8f341b8276e6924fe043584f8c079961554acfd56"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "p01:coordinate-ricci-gauge-and-remainder",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedSourceGaugeDerivative",
+      "declaration": "Burnett.P01.twice_coordinateRicci_eq_wave_symmetrizedGauge_remainder",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1644,
+        "endline": 1662
+      }
+    },
+    {
+      "claim_id": "p01:localized-vacuum-gauge-and-remainder",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedVacuumSource",
+      "declaration": "Burnett.P01.localizedVacuumSource_eq_symmetrizedGauge_add_remainder",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1668
+      }
+    },
+    {
+      "claim_id": "p01:localized-vacuum-remainder-majorant",
+      "module": "Burnett.Analysis.GaugeProjection.LocalizedVacuumSourceBound",
+      "declaration": "Burnett.P01.exists_localizedVacuumSourceRemainder_majorant",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1671
+      }
+    },
+    {
+      "claim_id": "p01:projected-coordinate-vacuum-wave-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedVacuumSourceOnChart",
+      "declaration": "Burnett.P01.exists_norm_projection_of_localizedVacuumSource_le",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1672
+      }
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-representative",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceDefinitions",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_ae",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      }
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-identity",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceBound",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_projected",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      }
+    },
+    {
+      "claim_id": "p01:whole-space-divergence-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedDivergenceBound",
+      "declaration": "Burnett.P01.exists_projectedSourceDivergenceL2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1685,
+        "endline": 1695
+      }
+    },
+    {
+      "claim_id": "p01:coordinate-vacuum-wave-source-agrees",
+      "module": "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource",
+      "declaration": "Burnett.P01.projectedSourceQ_eq_localizedWaveSourceSchwartz",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1689
+      }
+    },
+    {
+      "claim_id": "p01:whole-space-coordinate-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource",
+      "declaration": "Burnett.P01.exists_wholeSpace_projectedVacuumDivergenceL2_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1663,
+        "endline": 1695
+      }
+    },
+    {
+      "claim_id": "p01:open-chart-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.ProjectedChartSourceBound",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_openChart",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:intrinsic-vacuum-source-bound",
+      "module": "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedSource",
+      "declaration": "Burnett.P01.exists_projectedVacuumDivergenceL2_of_intrinsic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:uniform-source-bound-over-extensions",
+      "module": "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
+      "declaration": "Burnett.P01.projectedSource_uniform_extension_bound",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1606,
+        "endline": 1612
+      }
+    },
+    {
+      "claim_id": "p01:intrinsic-projected-norms-and-uniform-source",
+      "module": "Burnett.Analysis.GaugeProjection.UniformIntrinsicProjectedSource",
+      "declaration": "Burnett.P01.exists_intrinsicChartProjectedField_norms_and_uniform_source",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1612
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

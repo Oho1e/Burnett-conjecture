@@ -635,3 +635,7 @@ The fixed projection’s infrared factor has a convolution realization and an L�
 ## 47. Derivative commutator for the fixed matrix projection
 
 The derivative commutator of the fixed matrix projection has an L² bounded extension for globally Lipschitz coefficients. Next connect the coordinate vacuum remainder, the whole-space divergence formula, and the full angular measure to the same projected field. [Derivative commutator for the fixed matrix projection](../statements/projection-hodge-commutator.en.md)
+
+## 48. Projected vacuum remainder and whole-space divergence source
+
+The local vacuum remainder is connected to the whole-space divergence source of the same projected field. In a chartAt chart a fixed Lipschitz bound gives one constant for all admissible inverse-metric extensions and all sequence indices. Next connect the intrinsic transfer to arbitrary compatible smooth charts and identify the original sequence’s full angular measure. [Projected vacuum remainder and whole-space divergence source](../statements/projected-vacuum-source.en.md)

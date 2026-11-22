@@ -66,3 +66,4 @@
 - [原开坐标图上的投影场范数](open-chart-projected-norms.zh-CN.md)
 - [固定红外因子的梯度交换子](projection-infrared-commutator.zh-CN.md)
 - [固定矩阵投影的梯度交换子](projection-hodge-commutator.zh-CN.md)
+- [投影真空余项与全空间散度源](projected-vacuum-source.zh-CN.md)
