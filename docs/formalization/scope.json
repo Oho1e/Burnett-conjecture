@@ -3367,7 +3367,7 @@
     {
       "claim_id": "p01:angular-Gram-physical-contraction",
       "module": "Burnett.Analysis.Microlocal.PhysicalDensity",
-      "declaration": "Burnett.Analysis.Microlocal.PhysicalDensity.physicalContraction_gram"
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram"
     },
     {
       "claim_id": "p01:angular-null-measure-projection",
@@ -16430,7 +16430,7 @@
       },
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
-      "declaration": "Burnett.Analysis.Microlocal.PhysicalDensity.physicalContraction_gram",
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram",
       "statement_record": "docs/statements/projected-angular-covariance.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true

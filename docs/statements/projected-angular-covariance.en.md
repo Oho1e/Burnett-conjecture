@@ -14,7 +14,7 @@ Here $N$ is the covariance for the analytical pairings and $A$ the amplitude for
 - `Burnett.P01.principalGaugeProjection_eq_zero_off_null`
 - `Burnett.P01.principalGaugeProjection_null_contracted`
 - `Burnett.P01.principalGaugeProjection_preserves_hermitianPhysicalPairing`
-- `Burnett.Analysis.Microlocal.PhysicalDensity.physicalContraction_gram`
+- `Burnett.Microlocal.PhysicalDensity.physicalContraction_gram`
 - `Burnett.P01.nullPhysicalMeasure_principalGaugeProjection_eq`
 - `Burnett.P01.projectedCoordinateCovariance_eq_zero_off_null`
 - `Burnett.P01.projectedCoordinateCovariance_null_contracted`

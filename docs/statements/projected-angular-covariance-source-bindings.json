@@ -125,7 +125,7 @@
     {
       "claim_id": "p01:angular-Gram-physical-contraction",
       "module": "Burnett.Analysis.Microlocal.PhysicalDensity",
-      "declaration": "Burnett.Analysis.Microlocal.PhysicalDensity.physicalContraction_gram",
+      "declaration": "Burnett.Microlocal.PhysicalDensity.physicalContraction_gram",
       "source_ref": {
         "path": "paper/burnett.tex",
         "line": 1706,
