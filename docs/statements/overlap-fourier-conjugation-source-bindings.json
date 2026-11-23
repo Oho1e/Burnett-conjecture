@@ -1,0 +1,506 @@
+{
+  "slices": [
+    "F05"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "c35b377b2baf08f54489f29f38b69ddec10c07a7",
+  "base_tree": "71e65592915b9ffab1b43ac8b19ccc61d358629a",
+  "preparations": {
+    "pr60-overlap-schur-prep": "7f2367ca135bf52e13430b49d46c6816cb3b1241b48d94eed12ab0884cbfcc56",
+    "pr60-overlap-covector-prep": "bcece56c73dbe61af7ae5aefa5716d336581ee3637be27e7e12d583753c93f4b",
+    "pr60-overlap-gradient-prep": "f1c5dd812ce8001562b64bba4103d90cfdb079d3f0cf7bb7f57737ca20f5cab2"
+  },
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/ActualDyadicKernelWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualDyadicKernelWeakLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/ActualDyadicKernelWeakLimit.lean",
+      "prepared_source_sha256": "39d6b7417f4e9c81c1075df58db15373294a3ac27bfb3ff8266e3d498b7d6a00",
+      "sha256": "dbf045e9389210dd9d2a78837ecc5d147b71c3997f98f169afd1f74bfb1178dd",
+      "receipt_sha256": "4e05b7ea32946dfb5b466e28a10e7a33d6b8538e09d8030d63edfd0c80f66369",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.DyadicKernelRemainder",
+        "Burnett.Analysis.Microlocal.Overlap.DyadicKernelWeakLimit"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/BoundedKernelWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/BoundedKernelWeakLimit.lean",
+      "prepared_source_sha256": "ce0c5673d8f9fc77cc5f3920036169908c984eb01ab37addc2b96f9d23c92c27",
+      "sha256": "d3c687049130a81f3100f1b705bc4848938bdd2e8cb5a9a411a862f506e19a36",
+      "receipt_sha256": "f655ff5eef39d4d3ccb2fc2c835ec209712d051e42a0484f2c5986db416fcf87",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.DyadicSchur",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/DyadicKernelRemainder.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicKernelRemainder",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/DyadicKernelRemainder.lean",
+      "prepared_source_sha256": "e46c7c7a71fd2f24acf9a367a966094006cee57e2144fab016846b14a3215050",
+      "sha256": "35682f0410eac1877b9044fe0d901b46aba7a8da5f1981e0022b7eb4a7d484d6",
+      "receipt_sha256": "4e75913e3d1bae1e80474f4888d9d456385ffbd320c31837d2bd00de2b01eb19",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.KernelRemainder",
+        "Burnett.Analysis.PrincipalEnergy.Fourier.DyadicKernel"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/DyadicKernelWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicKernelWeakLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/DyadicKernelWeakLimit.lean",
+      "prepared_source_sha256": "0c72025dab1f7312e0c4a637abb8e5daf14358969e0fcc9dd85d3857b60fdb35",
+      "sha256": "3161de6c2e06cd7ee50aee4cb95e3c80f0c63c0c47df02fef6c4ed179e4f0596",
+      "receipt_sha256": "689f5a9bfff79d65ccf89e089d5d159e9b505b63a804afc2f29647e205a65ce9",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit",
+        "Mathlib.Analysis.Normed.Group.Tannery"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/DyadicSchur.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicSchur",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/DyadicSchur.lean",
+      "prepared_source_sha256": "a5f981d80181be2d90a4f9c08e566f015c6876939df0111ec3267e69384bd827",
+      "sha256": "85f6c0384c400f63c4b861d3c40998626c176c869f01843f62738ce5dff32243",
+      "receipt_sha256": "81c93c3b294db1f6e75b33ec3b97ac48383a2a0be663a5a1a10d63cb4d7e8c4b",
+      "imports": [
+        "Burnett.Analysis.PrincipalEnergy.Quantization.ConvolutionEnvelope",
+        "Mathlib.Analysis.SpecialFunctions.JapaneseBracket"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/DyadicShellInversionLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicShellInversionLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/DyadicShellInversionLimit.lean",
+      "prepared_source_sha256": "609d3d478cee08c56785432050fae1e24048fa93e3173bf859b685846373b85d",
+      "sha256": "df48dc578304850e87353c4c0cc7de26a73d3c9c4cd71409ed8bf382c1d46bc5",
+      "receipt_sha256": "80af43711797dff928911502fc4938b3fc6500a3477700df02ee494a05ef443f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.FiniteConjugationWeakLimit",
+        "Mathlib.MeasureTheory.Function.ConvergenceInMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FiniteAngularConjugation.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteAngularConjugation",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/FiniteAngularConjugation.lean",
+      "prepared_source_sha256": "63af5b6c9d066dec73280587ef325d1796673fa1e6868c3a6650cb49aa9f2509",
+      "sha256": "8ddd85665714c9ab59f5d0793ed0d878024b9454a045384203aa257007d7f2f7",
+      "receipt_sha256": "069fcfa32298a24a332bc64d648cda968583459dfa4c5d8007cabb213aa6591a",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+        "Burnett.Analysis.Microlocal.Overlap.KernelRemainder"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FiniteConjugationWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteConjugationWeakLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/FiniteConjugationWeakLimit.lean",
+      "prepared_source_sha256": "78ddfadee0c99107519fd7e6b6d0a7bf27a0906261004cd433cb3f0788d48845",
+      "sha256": "a4d99a6e0fc12262f4eab953efda512e8eec73de0a88309073cc8476ff98b920",
+      "receipt_sha256": "838eb3137c8ab6a8f6124703d059ab5c8c3e7a267e67d44ef1df43745e060063",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ActualDyadicKernelWeakLimit",
+        "Burnett.Analysis.Microlocal.Overlap.FiniteAngularConjugation"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FrozenShellSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/FrozenShellSymbol.lean",
+      "prepared_source_sha256": "df914773c9c8910af9c1063bdead4fb8b593c2d6ac31fd42a1a7761c22160e33",
+      "sha256": "2e0e517811d8987d88277b3f0fc56905e70d57adac91e486ce49ffd67113ad48",
+      "receipt_sha256": "786edf9c3592c0c3485f84011a16c57498ac104ee19c4e6a53d233ad2e8dc0ff",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensityKernelTransport",
+        "Burnett.Analysis.AngularCaps.LinearFourierChange"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/HalfDensityKernelTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensityKernelTransport",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/HalfDensityKernelTransport.lean",
+      "prepared_source_sha256": "2dc82942ba3f1337b513ca0091d8e9acc09105f795278787343b34418709f026",
+      "sha256": "296fb8cec7c8a3ddc97e35c1901362ec913e9941777e282c1a2bd57615a65363",
+      "receipt_sha256": "74a7facfbcd3205516b400615ee61350605be7b057871417d34518c35ea4e1d1",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+        "Burnett.Analysis.PrincipalEnergy.Fourier.DyadicKernel",
+        "Mathlib.MeasureTheory.Function.Jacobian"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntegratedSymbolPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/IntegratedSymbolPairing.lean",
+      "prepared_source_sha256": "e5d48b6c1be1050ca28c959ff34d238ec7c3ea3ac158f10a062cd93eb019ec06",
+      "sha256": "fa251275e0453363d7b8f0255261953fe1d2cc74451154fdf6d2bf0596a5c489",
+      "receipt_sha256": "6e70a028fd273bb7fc857cbaf2a9cfbb89390c86034fc87298d4b7a30443299f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/KernelRemainder.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelRemainder",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/KernelRemainder.lean",
+      "prepared_source_sha256": "1192fcee52f180304eae7850d842e8e564609495b3178ce90e5dc7029d51d538",
+      "sha256": "1192fcee52f180304eae7850d842e8e564609495b3178ce90e5dc7029d51d538",
+      "receipt_sha256": "28c1c0490db578af8b9575a3a30434bc739774da89ac88dabbce05693ceb9177",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+        "Mathlib.Analysis.Normed.Module.Convex"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedConjugationWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedConjugationWeakLimit",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/NormalizedConjugationWeakLimit.lean",
+      "prepared_source_sha256": "0274f278c8380dae11d556beaf0012ce7979f17c299a9a25eea7f11e33383a63",
+      "sha256": "96226d3c2bd6236cd9a4922df0703a0f33d51c549054ab4a1264256cd2647d50",
+      "receipt_sha256": "a888d213a22e4a859c1323d9e3ee4d67cb4155d79e0210aea980931afaf7fa1c",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.DyadicShellInversionLimit"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalFiniteConjugation.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalFiniteConjugation",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalFiniteConjugation.lean",
+      "prepared_source_sha256": "0f5de1c857229472446c0d1cf67f8c5c211d0d7103dd6c3d3c69df299536aae5",
+      "sha256": "093f8b7f8fca381b86ff7701c1bf3390287884714bbf4b7017f766f56d53b301",
+      "receipt_sha256": "09b54721d492feda5067ed7d2bfe5e59b2eea946ec41f06e7d59a07b8c1f0b3e",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.FiniteConjugationWeakLimit",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalNormalizedConjugation.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedConjugation",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalNormalizedConjugation.lean",
+      "prepared_source_sha256": "01d9db3b8f4f3524c43c5c8d28b39a588c650d4f410e4579030815c0637280b7",
+      "sha256": "4f38d2a5712996e7b762ea575fa7e311c6f7664e469e93db37b4ece688de466e",
+      "receipt_sha256": "77d391caf466a7e26199c292c60e1c6e8bcafdc4e19b78bbfca7e829d2411da0",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedConjugationWeakLimit",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensitySchwartz"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalWeakInput.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalWeakInput.lean",
+      "prepared_source_sha256": "f869cb2c282e293043f6fdbcc649beeb9937b67c43bdc94e4558913fd7dbc520",
+      "sha256": "b0e16dc579f670f29a7a417dc9af35bf528bdbc8a2bd93d8a5ae747d1b12cacd",
+      "receipt_sha256": "b8263bf64c91a8d405beb0d8db1dfc39cb5e981b0643743eefdffa2cc5ceb8b5",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumePairingLimits",
+        "Burnett.Analysis.Fourier.SchwartzDensity",
+        "Burnett.Geometry.AuxiliaryAdmissibility"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TransportedHalfDensitySchwartz.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensitySchwartz",
+      "source": "pr60-overlap-schur-prep/source/Burnett/Analysis/Microlocal/Overlap/TransportedHalfDensitySchwartz.lean",
+      "prepared_source_sha256": "6494272ed1d8ac7d52f6c9fd8e9997aa1314f9fa1d7af375f85abdd6a6491665",
+      "sha256": "1c0a4389667b5357874450ac9d7ab71264b561224081b6ea448beaaa45dc9003",
+      "receipt_sha256": "6fb78bc039106f55d185990ce8b7797bde2928b48064217d544c458605165706",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.HalfDensityKernelTransport",
+        "Burnett.Geometry.MetricJetNaturality"
+      ]
+    },
+    "Burnett/Geometry/Cotangent/ChartTransition.lean": {
+      "module": "Burnett.Geometry.Cotangent.ChartTransition",
+      "source": "pr60-overlap-covector-prep/source/Burnett/Geometry/Cotangent/ChartTransition.lean",
+      "prepared_source_sha256": "137e5e1e20adb59122f09e7e5643f805cd902744800849c7eb6e271145fa562c",
+      "sha256": "137e5e1e20adb59122f09e7e5643f805cd902744800849c7eb6e271145fa562c",
+      "receipt_sha256": "88e4a03c40886a6c77620c94e5220bb79e3c51d388c151014aaf450af149ac6e",
+      "imports": [
+        "Burnett.Geometry.Cotangent.Core"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryRay.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "source": "pr60-overlap-covector-prep/source/Burnett/Analysis/Microlocal/Overlap/AuxiliaryRay.lean",
+      "prepared_source_sha256": "4856c44c75bee94044049b5e183f249538b0a78d0bba23fc42b739da44033947",
+      "sha256": "4856c44c75bee94044049b5e183f249538b0a78d0bba23fc42b739da44033947",
+      "receipt_sha256": "8efac676f1a9a1bda7a29156e8e9b5606d9ad3addb2737a4766eeefa3944260d",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+        "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+        "Burnett.Geometry.ActualChartSecondJet",
+        "Burnett.Geometry.Cotangent.ChartTransition"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmplitudeTransition.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition",
+      "source": "pr60-overlap-covector-prep/source/Burnett/Analysis/Microlocal/Overlap/AmplitudeTransition.lean",
+      "prepared_source_sha256": "9cfed2afad35f3b53abb65cc9b524e53ea0a7bf910c426d60e3e9a38dce02750",
+      "sha256": "9cfed2afad35f3b53abb65cc9b524e53ea0a7bf910c426d60e3e9a38dce02750",
+      "receipt_sha256": "a7f02e8db57851d36eb07f2a8be90ae73ec8582e6e7b2c4d1d88efa49288d8ce",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+        "Mathlib.LinearAlgebra.Matrix.Kronecker"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CovariantGradient.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradient",
+      "source": "pr60-overlap-gradient-prep/source/Burnett/Analysis/Microlocal/Overlap/CovariantGradient.lean",
+      "prepared_source_sha256": "546b1aa232653d5f02be994ece4d6420274636b222679b5d2c15e15acc1a1e7c",
+      "sha256": "546b1aa232653d5f02be994ece4d6420274636b222679b5d2c15e15acc1a1e7c",
+      "receipt_sha256": "b85302ff7fb3af04e45d0ffc6d9539dbb71a841c81dbed64a8a3ac6b9ba66094",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError",
+        "Burnett.Analysis.Microlocal.VolumeWeightedChartJet",
+        "Burnett.Geometry.IntrinsicDhMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CovariantGradientTransition.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradientTransition",
+      "source": "pr60-overlap-gradient-prep/source/Burnett/Analysis/Microlocal/Overlap/CovariantGradientTransition.lean",
+      "prepared_source_sha256": "14e65b85bc0df7f9371fe058f3dd5fa52d40820c65a09e5ada9fe7cb2968ca3b",
+      "sha256": "14e65b85bc0df7f9371fe058f3dd5fa52d40820c65a09e5ada9fe7cb2968ca3b",
+      "receipt_sha256": "8bf35518c50b7e2c8326d67c29378652be776fd8aeb39ae4df9612d4ec4062a4",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CovariantGradient",
+        "Burnett.Analysis.Microlocal.Overlap.KernelGeometry",
+        "Burnett.Analysis.Microlocal.Overlap.Localization"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:cotangent-coordinate-inverse-transpose",
+      "module": "Burnett.Geometry.Cotangent.ChartTransition",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.cotangentTransitionMatrix_eq_inv_transpose",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:cotangent-quadratic-change",
+      "module": "Burnett.Geometry.Cotangent.ChartTransition",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.symbolNorm_cotangentTransitionMatrix",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:continuous-round-overlap-map",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.continuous_roundOverlapTransition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:round-overlap-map-composition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.roundOverlapTransition_comp",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:actual-auxiliary-ray-chart-agreement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.chartAuxiliaryRay_roundOverlapTransition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:conditional-auxiliary-amplitude-congruence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition",
+      "declaration": "Burnett.F05.OverlapCovectors.auxiliaryAmplitudeCovariance_roundOverlapTransition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-raw-and-covariant-overlap-gradient-l2",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradient",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.originalGradient_sub_covariantGradient_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:actual-two-chart-covariant-gradient-inputs",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradientTransition",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.exists_originalCovariantGradient_overlap_inputs",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-transition-taylor-remainder",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelRemainder",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transition_taylor_remainder",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-half-density-kernel-transport",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensityKernelTransport",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_halfDensityKernel_changeVariables",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-frozen-frequency-inverse-adjoint",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.frozenChartFrequency_inverse_adjoint",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-frozen-annular-kernel-symbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_frozen_shellKernel_symbol",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-annular-kernel-remainder-envelope",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicKernelRemainder",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_shellKernel_uniform_envelope",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-annular-schur-gain",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicSchur",
+      "declaration": "Burnett.Microlocal.Overlap.overlapKernel_action_norm_le",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:bounded-window-kernel-weak-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.boundedKernel_action_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:actual-overlap-shell-sum-weak-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualDyadicKernelWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_actualOverlapShell_actions_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:finite-overlap-conjugation-actual-fourier-difference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteAngularConjugation",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_partialAngularFourier_difference_sum_actions",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:finite-overlap-fourier-l2-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteConjugationWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_localizedPartialAngularDifference_limit",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-outer-cutoff-removal",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicShellInversionLimit",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_inverseFourier_partialAngular_comp",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:actual-overlap-transported-schwartz-input",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensitySchwartz",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transportedHalfDensity_smooth_compact_support",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-weak-l2-jet-representatives",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_weakL2_representatives",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-finite-overlap-fourier-comparison",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalFiniteConjugation",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_fourierDifference_limit",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-normalized-overlap-fourier-difference-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedConjugation",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_normalizedFourierDifference_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_integrated_separablePairings_of_matrixDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "原真空方程已在原始和投影配对共用的同一局部振幅上给出 Ricci 核约束。同一细化子列给出各首选图的实际辅助单位余球面振幅测度。接续证明换图协方差、截断相容和全局拼接。",
+      "next_action": "实际首选图重叠域中，原序列的半密度加权偏导与协变梯度之差在 L² 中强趋于零，协变梯度满足三槽换图律。实际拉回与冻结逆伴随的零阶 Fourier 作用之差沿原序列强趋于零，辅助单位协向量也已识别。接续把随基点变化的冻结角符号接入同一局部迹配对，证明缺陷测度的跨图相容与全局拼接。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -6322,6 +6322,150 @@
       "claim_id": "p01:actual-projected-chart-physical-measure-equality",
       "source_slices": [
         "P01"
+      ]
+    },
+    {
+      "claim_id": "f05:cotangent-coordinate-inverse-transpose",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:cotangent-quadratic-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:continuous-round-overlap-map",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:round-overlap-map-composition",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-auxiliary-ray-chart-agreement",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:conditional-auxiliary-amplitude-congruence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-raw-and-covariant-overlap-gradient-l2",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-two-chart-covariant-gradient-inputs",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-transition-taylor-remainder",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-half-density-kernel-transport",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-frozen-frequency-inverse-adjoint",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-frozen-annular-kernel-symbol",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-annular-kernel-remainder-envelope",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-annular-schur-gain",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:bounded-window-kernel-weak-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-overlap-shell-sum-weak-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:finite-overlap-conjugation-actual-fourier-difference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:finite-overlap-fourier-l2-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-outer-cutoff-removal",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-overlap-transported-schwartz-input",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-weak-l2-jet-representatives",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-finite-overlap-fourier-comparison",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-normalized-overlap-fourier-difference-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
+      "source_slices": [
+        "F05"
       ]
     }
   ],
