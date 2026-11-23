@@ -39,16 +39,6 @@
         "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure"
       ]
     },
-    "Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusionCoordinates.lean": {
-      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusionCoordinates",
-      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusionCoordinates.lean",
-      "prepared_source_sha256": "04efefb79d6508181825613f3830237a06cedfdaed11fa49f0a08e7a99a30d57",
-      "receipt_sha256": "3662c0e9f380f292ac2b76890c54d065fb82c1c3bc77b35487c3bd963e077cc1",
-      "sha256": "6061e4c1997ab95e46b2bb0c8eb9a83fed96f79a670905270019b163fe22d663",
-      "imports": [
-        "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion"
-      ]
-    },
     "Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryExt.lean": {
       "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryExt",
       "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryExt.lean",
