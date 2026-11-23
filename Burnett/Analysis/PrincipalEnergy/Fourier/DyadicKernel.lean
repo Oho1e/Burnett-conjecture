@@ -671,7 +671,9 @@ theorem inverseFourier_mul_fourier_eq_convolution (p f : E → ℂ)
   change (𝓕 p) (-x - (-y)) * f (-(-y)) = (𝓕⁻ p) (x-y) * f y
   rw [hxy, neg_neg, Real.fourierIntegralInv_eq_fourierIntegral_neg]
 
-private theorem fourierMultiplier_schwartz_eq_inverse_mul_ae (p : BoundedSymbol E)
+/-- The actual bounded L² multiplier on a Schwartz function agrees with
+the pointwise inverse Fourier integral almost everywhere. -/
+theorem fourierMultiplier_schwartz_eq_inverse_mul_ae (p : BoundedSymbol E)
     (f : SchwartzMap E ℂ) :
     (fourierMultiplier p (f.toLp 2 volume) : E → ℂ) =ᵐ[volume]
       (𝓕⁻ (fun ξ => p ξ * (𝓕 (f : E → ℂ)) ξ)) := by

@@ -3753,6 +3753,131 @@
       "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
       "module": "Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing",
       "declaration": "Burnett.Microlocal.Overlap.tendsto_integrated_separablePairings_of_matrixDensity"
+    },
+    {
+      "claim_id": "f05:compact-parameter-fourier-integral-smoothness",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactParameterIntegral",
+      "declaration": "Burnett.Analysis.contDiffOn_integral_compact_parameter"
+    },
+    {
+      "claim_id": "f05:uniform-pure-base-angular-derivatives",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAngularBaseBounds",
+      "declaration": "Burnett.Microlocal.Overlap.exists_uniform_baseDerivative_of_homogeneousAngular"
+    },
+    {
+      "claim_id": "f05:actual-left-action-base-fourier-modes",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BaseFourierAction",
+      "declaration": "Burnett.Microlocal.Overlap.firstOrderAction_eq_integral_baseFourierModes"
+    },
+    {
+      "claim_id": "f05:actual-left-action-integrated-separable-pairings",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BaseFourierAction",
+      "declaration": "Burnett.Microlocal.Overlap.firstOrderAction_pairing_eq_integral_separable_baseFourier"
+    },
+    {
+      "claim_id": "f05:compact-base-fourier-coefficient-inversion",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactBaseZeroFourier",
+      "declaration": "Burnett.Microlocal.Overlap.baseFourierCoefficient_inverse"
+    },
+    {
+      "claim_id": "f05:compact-angular-base-fourier-pairing-envelope",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactBaseZeroFourier",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compactBaseAngular_leftFourier_pairing"
+    },
+    {
+      "claim_id": "f05:base-fourier-angular-smoothness-away-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BaseFourierAngularRegularity",
+      "declaration": "Burnett.Microlocal.Overlap.contDiffOn_baseFourierCoefficient"
+    },
+    {
+      "claim_id": "f05:base-fourier-coefficient-degree-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BaseFourierAngularRegularity",
+      "declaration": "Burnett.Microlocal.Overlap.degreeZero_baseFourierCoefficient"
+    },
+    {
+      "claim_id": "f05:moving-frequency-equals-frozen-inverse-adjoint",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartFrequency",
+      "declaration": "Burnett.Microlocal.OverlapKernel.chartTransitionFrequency_eq_frozen"
+    },
+    {
+      "claim_id": "f05:moving-frequency-actual-cotangent-coordinates",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartFrequency",
+      "declaration": "Burnett.Microlocal.OverlapKernel.frozenChartFrequency_cotangentCoords"
+    },
+    {
+      "claim_id": "f05:moving-frequency-smooth-on-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartFrequency",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiffOn_chartTransitionFrequency"
+    },
+    {
+      "claim_id": "f05:moving-frequency-uniform-two-sided-norm",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartFrequency",
+      "declaration": "Burnett.Microlocal.OverlapKernel.exists_frozenChartFrequency_norm_bounds"
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-joint-smoothness",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartAngularSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiffOn_movingChartAngularSymbol"
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-degree-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartAngularSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.movingChartAngularSymbol_degreeZero"
+    },
+    {
+      "claim_id": "f05:moving-normalization-explicit-infrared-difference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartAngularSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.movingChartNormalizedSymbol_eq_fixedCore_add"
+    },
+    {
+      "claim_id": "f05:moving-infrared-difference-joint-smoothness",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartInfrared",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiff_movingChartInfraredRemainder"
+    },
+    {
+      "claim_id": "f05:compact-frequency-left-action-strong-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactFrequencyLeftAction",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compactFrequency_leftAction_strongZero"
+    },
+    {
+      "claim_id": "f05:actual-moving-infrared-action-strong-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MovingChartLowAction",
+      "declaration": "Burnett.Microlocal.Overlap.exists_movingChartLowAction_strongZero"
+    },
+    {
+      "claim_id": "f05:compact-angular-left-action-matrix-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAngularDensityPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_compactAngularAction_pairings_of_matrixDensity"
+    },
+    {
+      "claim_id": "f05:half-density-exact-scalar-pairing-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensityScalarPairing",
+      "declaration": "Burnett.Microlocal.Overlap.integral_transportHalfDensity_pairing"
+    },
+    {
+      "claim_id": "f05:half-density-transport-l2-inner-isometry",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensityL2",
+      "declaration": "Burnett.Microlocal.Overlap.transportedHalfDensitySchwartz_inner_toLp"
+    },
+    {
+      "claim_id": "f05:transported-angular-action-source-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedAngularDensityPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_transportedAngularPairings_of_matrixDensity"
+    },
+    {
+      "claim_id": "f05:original-transported-angular-action-source-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalTransportedAngularPairing",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_transportedAngularPairings_of_matrixDensity"
+    },
+    {
+      "claim_id": "f05:target-separable-pairing-source-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedSeparablePairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_targetSeparablePairings_of_sourceMatrixDensity"
+    },
+    {
+      "claim_id": "f05:original-target-separable-pairing-source-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalTransportedAngularPairing",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_targetSeparablePairings_of_sourceMatrixDensity"
     }
   ],
   "inventory": [
@@ -18086,6 +18211,431 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.tendsto_integrated_separablePairings_of_matrixDensity",
       "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-parameter-fourier-integral-smoothness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.contDiffOn_integral_compact_parameter",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:uniform-pure-base-angular-derivatives",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_uniform_baseDerivative_of_homogeneousAngular",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-left-action-base-fourier-modes",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.firstOrderAction_eq_integral_baseFourierModes",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-left-action-integrated-separable-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.firstOrderAction_pairing_eq_integral_separable_baseFourier",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-base-fourier-coefficient-inversion",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.baseFourierCoefficient_inverse",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-angular-base-fourier-pairing-envelope",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compactBaseAngular_leftFourier_pairing",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:base-fourier-angular-smoothness-away-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.contDiffOn_baseFourierCoefficient",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:base-fourier-coefficient-degree-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.degreeZero_baseFourierCoefficient",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-frequency-equals-frozen-inverse-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.chartTransitionFrequency_eq_frozen",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-frequency-actual-cotangent-coordinates",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.frozenChartFrequency_cotangentCoords",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-frequency-smooth-on-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiffOn_chartTransitionFrequency",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-frequency-uniform-two-sided-norm",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.exists_frozenChartFrequency_norm_bounds",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-joint-smoothness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiffOn_movingChartAngularSymbol",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-degree-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.movingChartAngularSymbol_degreeZero",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-normalization-explicit-infrared-difference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.movingChartNormalizedSymbol_eq_fixedCore_add",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:moving-infrared-difference-joint-smoothness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.contDiff_movingChartInfraredRemainder",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-frequency-left-action-strong-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compactFrequency_leftAction_strongZero",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-moving-infrared-action-strong-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_movingChartLowAction_strongZero",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-angular-left-action-matrix-density-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_compactAngularAction_pairings_of_matrixDensity",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:half-density-exact-scalar-pairing-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.integral_transportHalfDensity_pairing",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:half-density-transport-l2-inner-isometry",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.transportedHalfDensitySchwartz_inner_toLp",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:transported-angular-action-source-density-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_transportedAngularPairings_of_matrixDensity",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-transported-angular-action-source-density-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_transportedAngularPairings_of_matrixDensity",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:target-separable-pairing-source-density-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_targetSeparablePairings_of_sourceMatrixDensity",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-target-separable-pairing-source-density-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_targetSeparablePairings_of_sourceMatrixDensity",
+      "statement_record": "docs/statements/moving-angular-density-pairings.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

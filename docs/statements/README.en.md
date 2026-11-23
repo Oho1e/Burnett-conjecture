@@ -74,3 +74,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Curl factorization and projected pairings of the original metric gradients](original-volume-curl-amplitudes.en.md)
 - [Vacuum Ricci kernel and auxiliary unit cosphere amplitudes](original-volume-ricci-amplitudes.en.md)
 - [Gradient transformation and Fourier comparison on preferred-chart overlaps](overlap-fourier-conjugation.en.md)
+- [Angular test pairings after a change of charts](moving-angular-density-pairings.en.md)

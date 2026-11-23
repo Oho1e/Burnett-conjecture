@@ -667,3 +667,7 @@ The original vacuum equations give the Ricci kernel on the amplitude shared by t
 ## 55. Gradient transformation and Fourier comparison on preferred-chart overlaps
 
 On actual preferred-chart overlaps the difference between the half-density weighted partial and covariant gradients tends strongly to zero in L². The covariant gradients obey the three-slot coordinate law. The actual pullback and the frozen inverse-adjoint Fourier action differ by a strongly vanishing term on the original sequence, and the auxiliary unit covectors agree. Identify the moving frozen angular symbol in the same trace pairing and prove measure compatibility and global gluing. [Gradient transformation and Fourier comparison on preferred-chart overlaps](../statements/overlap-fourier-conjugation.en.md)
+
+## 56. Angular test pairings after a change of charts
+
+The transported target test pairing on the same original sequence and subsequence is represented by the source-chart matrix density. Relate the transported slots to the three coordinate slots of the actual target covariant gradient, prove compatibility of localized cutoffs and measures, and glue on the cosphere bundle. [Angular test pairings after a change of charts](../statements/moving-angular-density-pairings.en.md)
