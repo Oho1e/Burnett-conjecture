@@ -358,3 +358,8 @@ import Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits
 import Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings
 import Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure
 import Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci
+import Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition
+import Burnett.Analysis.Microlocal.Overlap.CovariantGradientTransition
+import Burnett.Analysis.Microlocal.Overlap.OriginalFiniteConjugation
+import Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedConjugation
+import Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing

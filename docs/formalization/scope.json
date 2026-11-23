@@ -3633,6 +3633,126 @@
       "claim_id": "p01:actual-projected-chart-physical-measure-equality",
       "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
       "declaration": "Burnett.P01.originalVolume_roundNullMeasure_projected_eq"
+    },
+    {
+      "claim_id": "f05:cotangent-coordinate-inverse-transpose",
+      "module": "Burnett.Geometry.Cotangent.ChartTransition",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.cotangentTransitionMatrix_eq_inv_transpose"
+    },
+    {
+      "claim_id": "f05:cotangent-quadratic-change",
+      "module": "Burnett.Geometry.Cotangent.ChartTransition",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.symbolNorm_cotangentTransitionMatrix"
+    },
+    {
+      "claim_id": "f05:continuous-round-overlap-map",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.continuous_roundOverlapTransition"
+    },
+    {
+      "claim_id": "f05:round-overlap-map-composition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.roundOverlapTransition_comp"
+    },
+    {
+      "claim_id": "f05:actual-auxiliary-ray-chart-agreement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+      "declaration": "Burnett.F05.OverlapCovectors.chartAuxiliaryRay_roundOverlapTransition"
+    },
+    {
+      "claim_id": "f05:conditional-auxiliary-amplitude-congruence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition",
+      "declaration": "Burnett.F05.OverlapCovectors.auxiliaryAmplitudeCovariance_roundOverlapTransition"
+    },
+    {
+      "claim_id": "f05:original-raw-and-covariant-overlap-gradient-l2",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradient",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.originalGradient_sub_covariantGradient_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:actual-two-chart-covariant-gradient-inputs",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CovariantGradientTransition",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.exists_originalCovariantGradient_overlap_inputs"
+    },
+    {
+      "claim_id": "f05:overlap-transition-taylor-remainder",
+      "module": "Burnett.Analysis.Microlocal.Overlap.KernelRemainder",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transition_taylor_remainder"
+    },
+    {
+      "claim_id": "f05:overlap-half-density-kernel-transport",
+      "module": "Burnett.Analysis.Microlocal.Overlap.HalfDensityKernelTransport",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_halfDensityKernel_changeVariables"
+    },
+    {
+      "claim_id": "f05:overlap-frozen-frequency-inverse-adjoint",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.frozenChartFrequency_inverse_adjoint"
+    },
+    {
+      "claim_id": "f05:overlap-frozen-annular-kernel-symbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FrozenShellSymbol",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_frozen_shellKernel_symbol"
+    },
+    {
+      "claim_id": "f05:overlap-annular-kernel-remainder-envelope",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicKernelRemainder",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_shellKernel_uniform_envelope"
+    },
+    {
+      "claim_id": "f05:overlap-annular-schur-gain",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicSchur",
+      "declaration": "Burnett.Microlocal.Overlap.overlapKernel_action_norm_le"
+    },
+    {
+      "claim_id": "f05:bounded-window-kernel-weak-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.boundedKernel_action_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:actual-overlap-shell-sum-weak-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualDyadicKernelWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_actualOverlapShell_actions_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:finite-overlap-conjugation-actual-fourier-difference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteAngularConjugation",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_partialAngularFourier_difference_sum_actions"
+    },
+    {
+      "claim_id": "f05:finite-overlap-fourier-l2-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteConjugationWeakLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_localizedPartialAngularDifference_limit"
+    },
+    {
+      "claim_id": "f05:overlap-outer-cutoff-removal",
+      "module": "Burnett.Analysis.Microlocal.Overlap.DyadicShellInversionLimit",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_inverseFourier_partialAngular_comp"
+    },
+    {
+      "claim_id": "f05:actual-overlap-transported-schwartz-input",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensitySchwartz",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transportedHalfDensity_smooth_compact_support"
+    },
+    {
+      "claim_id": "f05:original-volume-weak-l2-jet-representatives",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_weakL2_representatives"
+    },
+    {
+      "claim_id": "f05:original-volume-finite-overlap-fourier-comparison",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalFiniteConjugation",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_fourierDifference_limit"
+    },
+    {
+      "claim_id": "f05:original-volume-normalized-overlap-fourier-difference-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedConjugation",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_normalizedFourierDifference_zero"
+    },
+    {
+      "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_integrated_separablePairings_of_matrixDensity"
     }
   ],
   "inventory": [
@@ -17558,6 +17678,414 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.originalVolume_roundNullMeasure_projected_eq",
       "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:cotangent-coordinate-inverse-transpose",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.cotangentTransitionMatrix_eq_inv_transpose",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:cotangent-quadratic-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitNullCompactness.symbolNorm_cotangentTransitionMatrix",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:continuous-round-overlap-map",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovectors.continuous_roundOverlapTransition",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:round-overlap-map-composition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovectors.roundOverlapTransition_comp",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-auxiliary-ray-chart-agreement",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovectors.chartAuxiliaryRay_roundOverlapTransition",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:conditional-auxiliary-amplitude-congruence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovectors.auxiliaryAmplitudeCovariance_roundOverlapTransition",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-raw-and-covariant-overlap-gradient-l2",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.originalGradient_sub_covariantGradient_tendsto_zero",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-two-chart-covariant-gradient-inputs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.exists_originalCovariantGradient_overlap_inputs",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-transition-taylor-remainder",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transition_taylor_remainder",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-half-density-kernel-transport",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_halfDensityKernel_changeVariables",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-frozen-frequency-inverse-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.frozenChartFrequency_inverse_adjoint",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-frozen-annular-kernel-symbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_frozen_shellKernel_symbol",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-annular-kernel-remainder-envelope",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_shellKernel_uniform_envelope",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-annular-schur-gain",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.overlapKernel_action_norm_le",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:bounded-window-kernel-weak-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.boundedKernel_action_tendsto_zero",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-overlap-shell-sum-weak-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_actualOverlapShell_actions_tendsto_zero",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:finite-overlap-conjugation-actual-fourier-difference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.overlap_partialAngularFourier_difference_sum_actions",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:finite-overlap-fourier-l2-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 403,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_localizedPartialAngularDifference_limit",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-outer-cutoff-removal",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_inverseFourier_partialAngular_comp",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-overlap-transported-schwartz-input",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 427,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapKernel.transportedHalfDensity_smooth_compact_support",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-weak-l2-jet-representatives",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_weakL2_representatives",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-finite-overlap-fourier-comparison",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_fourierDifference_limit",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-normalized-overlap-fourier-difference-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_overlap_normalizedFourierDifference_zero",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_integrated_separablePairings_of_matrixDensity",
+      "statement_record": "docs/statements/overlap-fourier-conjugation.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

@@ -663,3 +663,7 @@ The coordinate curl rows vanish on the same local density of the original weight
 ## 54. Vacuum Ricci kernel and auxiliary unit cosphere amplitudes
 
 The original vacuum equations give the Ricci kernel on the amplitude shared by the raw and projected pairings. The same refinement supplies the amplitude measures on the actual auxiliary unit cospheres of the preferred charts. Establish coordinate covariance, cutoff compatibility, and global gluing. [Vacuum Ricci kernel and auxiliary unit cosphere amplitudes](../statements/original-volume-ricci-amplitudes.en.md)
+
+## 55. Gradient transformation and Fourier comparison on preferred-chart overlaps
+
+On actual preferred-chart overlaps the difference between the half-density weighted partial and covariant gradients tends strongly to zero in L². The covariant gradients obey the three-slot coordinate law. The actual pullback and the frozen inverse-adjoint Fourier action differ by a strongly vanishing term on the original sequence, and the auxiliary unit covectors agree. Identify the moving frozen angular symbol in the same trace pairing and prove measure compatibility and global gluing. [Gradient transformation and Fourier comparison on preferred-chart overlaps](../statements/overlap-fourier-conjugation.en.md)
