@@ -1,0 +1,317 @@
+{
+  "slices": [
+    "F05",
+    "P01"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "8f6d20224597f1bfe4fcf4de6834ae6edf55d6aa",
+  "base_tree": "8c0306b5800d7fedf2c94a4130a66491ac17c9ba",
+  "preparation_sha256": "8abd3eaed760265dd793c8deae921898369959b67a3f5bd247431a5ad71be35a",
+  "sources": {
+    "Burnett/Analysis/Microlocal/ActualChartAuxiliarySection.lean": {
+      "module": "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/ActualChartAuxiliarySection.lean",
+      "prepared_source_sha256": "8b6b428203a88b837591193841f2e1ae0a967f6b18716f01094dc7d45b774846",
+      "sha256": "8b6b428203a88b837591193841f2e1ae0a967f6b18716f01094dc7d45b774846",
+      "receipt_sha256": "18e73af8a042f602ea285a36734c9f9432c2ed8ba929e94dff4ce65eec157697",
+      "imports": [
+        "Burnett.Analysis.Microlocal.AuxiliaryCovectorScale",
+        "Burnett.Analysis.Microlocal.CompactChartInput",
+        "Burnett.Analysis.Microlocal.RoundChartCovariance",
+        "Burnett.Geometry.Cotangent.Core"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/AuxiliaryAmplitudeCovariance.lean": {
+      "module": "Burnett.Analysis.Microlocal.AuxiliaryAmplitudeCovariance",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/AuxiliaryAmplitudeCovariance.lean",
+      "prepared_source_sha256": "8aa9b18b2adc2fe2749bfb58840bfdb83ef574da2c53d40accdf055b7fbe8421",
+      "sha256": "8aa9b18b2adc2fe2749bfb58840bfdb83ef574da2c53d40accdf055b7fbe8421",
+      "receipt_sha256": "5ca02234a4599dd0f73edaad941d5020d0493db6ead9ec27c98e99b8d9e85b40",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RicciJetSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/AuxiliaryCovectorScale.lean": {
+      "module": "Burnett.Analysis.Microlocal.AuxiliaryCovectorScale",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/AuxiliaryCovectorScale.lean",
+      "prepared_source_sha256": "dc80f51638a24efbff7d94f7c198b8dd2b97260c6a71a7521e3d6189e25a4e99",
+      "sha256": "dc80f51638a24efbff7d94f7c198b8dd2b97260c6a71a7521e3d6189e25a4e99",
+      "receipt_sha256": "e6c7306486e944401e33726319fb210561e7322d41152062066f98a33ce0d974",
+      "imports": [
+        "Burnett.Analysis.Microlocal.AuxiliaryAmplitudeCovariance"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/ChartAmplitudeMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.ChartAmplitudeMeasure",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/ChartAmplitudeMeasure.lean",
+      "prepared_source_sha256": "90e4cbdf7e04b19117d52eea5f18253e3e6e4a610ec97f63be8b02eadf3fa02f",
+      "sha256": "90e4cbdf7e04b19117d52eea5f18253e3e6e4a610ec97f63be8b02eadf3fa02f",
+      "receipt_sha256": "7f80dd81cd31c6a14a2ce2d9af6709413828334b033c25fcc779b0e82c19ae4c",
+      "imports": [
+        "Burnett.Analysis.Microlocal.AuxiliaryCovectorScale",
+        "Burnett.Analysis.Microlocal.RoundChartCovariance",
+        "Burnett.Analysis.Microlocal.FixedSubsequenceSeparableLimits"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/ChartCotangentAmplitudeMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/ChartCotangentAmplitudeMeasure.lean",
+      "prepared_source_sha256": "8c92ea00b688d6211afd29ce5b4e73c869a8338598acf091d15f7d3a65e31068",
+      "sha256": "5c3f22d49c1e730522c63beb0e1d877a9388da7321e5b6e8c3ab10c658f8c3d4",
+      "receipt_sha256": "bb3f8e2541b886b7788233f0b13523ae5c04f692d3221cdd7f8c2e9df12b8315",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ChartAmplitudeMeasure",
+        "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/ChartRicciRoundSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.ChartRicciRoundSymbol",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/ChartRicciRoundSymbol.lean",
+      "prepared_source_sha256": "51d9f9b58226e38f809a58cc21ca237692b09ed7dfff2959665b6d298a9e4ba7",
+      "sha256": "51d9f9b58226e38f809a58cc21ca237692b09ed7dfff2959665b6d298a9e4ba7",
+      "receipt_sha256": "83b1b4e66d2b8d7a1ea2ceab2d68fc5d511725c55c4f9a19f6b71549c9dc48e8",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RicciJetSymbol",
+        "Burnett.Analysis.Microlocal.CoordinateRicciPrincipalRow",
+        "Burnett.Analysis.Microlocal.RowKernelDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CoordinateRicciPrincipalRow.lean": {
+      "module": "Burnett.Analysis.Microlocal.CoordinateRicciPrincipalRow",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/CoordinateRicciPrincipalRow.lean",
+      "prepared_source_sha256": "b6e96994334f8aaf1fd4abaa905ccde308379dc8cb0928e249e629f7c63f4bf9",
+      "sha256": "b6e96994334f8aaf1fd4abaa905ccde308379dc8cb0928e249e629f7c63f4bf9",
+      "receipt_sha256": "4747077e944fcbb05c015a220a5f3c6d98434378654904429b2fc82ad54a1485",
+      "imports": [
+        "Burnett.Analysis.GeometricPrincipalIdentity",
+        "Burnett.Analysis.Microlocal.OriginalCoordinateCurl",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalRicciPrincipalRows.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalRicciPrincipalRows",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/OriginalRicciPrincipalRows.lean",
+      "prepared_source_sha256": "876b124c7e6d3815e43d0fd37e1e09b4ce7536330d6e7cfdf478b88985c0adc5",
+      "sha256": "876b124c7e6d3815e43d0fd37e1e09b4ce7536330d6e7cfdf478b88985c0adc5",
+      "receipt_sha256": "6de0cbc4885f0f1c4826b37f59071c582e7d49e3a4793eafb13923b6abb0cd75",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+        "Burnett.Analysis.Microlocal.OriginalRicciRowSource",
+        "Burnett.Analysis.Sobolev.SchwartzHminusDual",
+        "Burnett.Geometry.IntrinsicRicciTrace"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalRicciRowSource.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalRicciRowSource",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/OriginalRicciRowSource.lean",
+      "prepared_source_sha256": "ed9fca49a75f3aac11f3bef8394f9f504d855915a60aefd684802c4d5d45ec89",
+      "sha256": "ed9fca49a75f3aac11f3bef8394f9f504d855915a60aefd684802c4d5d45ec89",
+      "receipt_sha256": "49a5364b2c20e97360444e3a1a0f84dc1d67cbc17f28470df0039c574cc5e3dd",
+      "imports": [
+        "Burnett.Analysis.GeometricHminusPrincipalClosure",
+        "Burnett.Analysis.Microlocal.CoordinateRicciPrincipalRow",
+        "Burnett.Analysis.WeakTestCalculus"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalVolumeAuxiliaryAmplitude.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/OriginalVolumeAuxiliaryAmplitude.lean",
+      "prepared_source_sha256": "bdb8ecc419379f55102a310692393e8db2846344deb99b7165315d6706425529",
+      "sha256": "cda1bc66b3c1bc5b3896bde7a56a1b590e4875cee8653df7d894f75a3209bdaa",
+      "receipt_sha256": "9cddae139b7db11df4fdafabc9b5a6aa3c54d4722cb990616ec3f67623d45a4f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+        "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/OriginalVolumeProjectedRicci.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/GaugeProjection/OriginalVolumeProjectedRicci.lean",
+      "prepared_source_sha256": "92fb8ef5dbd702ca8d0a4437646d2212dc2314be26f51108f8a5b2e3d8dc1ebf",
+      "sha256": "9571d5217997b5bb8515c008939128d372a1c883348d25b79f2b8f4d408b44b0",
+      "receipt_sha256": "f80e8140b0d9625b8060a8b784320586e1c2a65229d59b324dbc4dd42f8818da",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+        "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalVolumeRicciKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/OriginalVolumeRicciKernel.lean",
+      "prepared_source_sha256": "741a5bc2c992ed2a5a49574fe36cac1761f09a5505d2aa537fcd4471e3d6729a",
+      "sha256": "2e18e059f247c95aa22694ed10fb2f9a848eeafe0f1661facaf612bc618c294a",
+      "receipt_sha256": "c5ffc43b196836f60eac2433a593b37c45eb9ac4de76c00ed405d63605175310",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalRicciPrincipalRows",
+        "Burnett.Analysis.Microlocal.ChartRicciRoundSymbol",
+        "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/RicciJetSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.RicciJetSymbol",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Microlocal/RicciJetSymbol.lean",
+      "prepared_source_sha256": "47b33fc5f26f63410ecb167acd9bf910d05be87d31be7321bb6631fff42f955f",
+      "sha256": "47b33fc5f26f63410ecb167acd9bf910d05be87d31be7321bb6631fff42f955f",
+      "receipt_sha256": "b7cb354089484988da611d722a968dea3489f26c34fa8b550dfa6fe78f125b64",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CurlCovariance",
+        "Burnett.Algebra.ComplexPolarization"
+      ]
+    },
+    "Burnett/Analysis/Sobolev/SchwartzHminusDual.lean": {
+      "module": "Burnett.Analysis.Sobolev.SchwartzHminusDual",
+      "source": "pr59-ricci-amplitude-kernel-prep/source/Burnett/Analysis/Sobolev/SchwartzHminusDual.lean",
+      "prepared_source_sha256": "79bd9f7947ab2a4e6bcc86b6799754e92c13b7669418596796f050963cb209ca",
+      "sha256": "79bd9f7947ab2a4e6bcc86b6799754e92c13b7669418596796f050963cb209ca",
+      "receipt_sha256": "bdae96bbf83b2d41d04e7f6483190384d0cbc0ee2632809ea7685e5c7ec9c503",
+      "imports": [
+        "Burnett.Analysis.PrincipalEnergy.Fourier.FrequencyWeights",
+        "Burnett.Analysis.Sobolev.Pairing",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:vacuum-chart-ricci-row-strong-zero",
+      "module": "Burnett.Analysis.Microlocal.OriginalRicciPrincipalRows",
+      "declaration": "Burnett.Microlocal.RicciRemainder.chartRicciPrincipal_tendsto_zero_of_intrinsicVacuum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      }
+    },
+    {
+      "claim_id": "f05:round-bessel-ricci-symbol",
+      "module": "Burnett.Analysis.Microlocal.ChartRicciRoundSymbol",
+      "declaration": "Burnett.Microlocal.RicciRow.roundBesselCoefficient_eq_ricciJetMatrix_of_cutoff_eq_one",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      }
+    },
+    {
+      "claim_id": "f05:ricci-kernel-from-curl-amplitude",
+      "module": "Burnett.Analysis.Microlocal.RicciJetSymbol",
+      "declaration": "Burnett.Microlocal.CurlDensity.factoredAmplitude_in_complexRicciKernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 421
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-vacuum-ricci-row-density",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_ricciRows_same_density",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 419
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude-ricci-kernel",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_roundAmplitude_in_ricciKernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "f05:countable-original-volume-vacuum-ricci-pairings",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.exists_countable_originalVolume_RicciKernel_projected_pairings",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:preferred-chart-actual-auxiliary-unit-ray",
+      "module": "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+      "declaration": "Burnett.F05.ActualChartAuxiliarySection.chartAuxiliaryRay_unit",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-actual-auxiliary-amplitudes",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude",
+      "declaration": "Burnett.F05.OriginalVolumeAuxiliaryAmplitude.ae_originalVolume_auxiliaryAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:cotangent-amplitudes-weighted-round-push",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_apply_round",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-measure-positive",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_positive",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-unit-support",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_zero_off_unit",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "f05:countable-original-volume-cotangent-amplitudes",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.exists_countable_originalVolume_cotangentAmplitudes",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "p01:actual-projected-covariance-ricci-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
+      "declaration": "Burnett.P01.ae_originalVolume_projectedCovariance_ricciPolarization",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1706
+      }
+    },
+    {
+      "claim_id": "p01:actual-projected-chart-physical-measure-equality",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
+      "declaration": "Burnett.P01.originalVolume_roundNullMeasure_projected_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

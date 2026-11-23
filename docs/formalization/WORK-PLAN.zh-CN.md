@@ -664,3 +664,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 53. 原始度量梯度的 curl 分解与投影配对
 
 坐标 curl 行已在原始加权梯度的同一局部密度上消失，并给出正半定振幅及两个导数方向因子。接续施加实际真空 Ricci 行的约束，再完成辅助余球面变换和跨图识别。 [原始度量梯度的 curl 分解与投影配对](../statements/original-volume-curl-amplitudes.zh-CN.md)
+
+## 54. 原体积梯度的真空 Ricci 核与辅助单位余球面振幅
+
+原真空方程已在原始和投影配对共用的同一局部振幅上给出 Ricci 核约束。同一细化子列给出各首选图的实际辅助单位余球面振幅测度。接续证明换图协方差、截断相容和全局拼接。 [原体积梯度的真空 Ricci 核与辅助单位余球面振幅](../statements/original-volume-ricci-amplitudes.zh-CN.md)

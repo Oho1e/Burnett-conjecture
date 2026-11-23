@@ -3563,6 +3563,76 @@
       "claim_id": "p01:countable-original-volume-projected-mixed-pairings",
       "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
       "declaration": "Burnett.P01.exists_countable_originalVolume_projected_mixedPairings"
+    },
+    {
+      "claim_id": "f05:vacuum-chart-ricci-row-strong-zero",
+      "module": "Burnett.Analysis.Microlocal.OriginalRicciPrincipalRows",
+      "declaration": "Burnett.Microlocal.RicciRemainder.chartRicciPrincipal_tendsto_zero_of_intrinsicVacuum"
+    },
+    {
+      "claim_id": "f05:round-bessel-ricci-symbol",
+      "module": "Burnett.Analysis.Microlocal.ChartRicciRoundSymbol",
+      "declaration": "Burnett.Microlocal.RicciRow.roundBesselCoefficient_eq_ricciJetMatrix_of_cutoff_eq_one"
+    },
+    {
+      "claim_id": "f05:ricci-kernel-from-curl-amplitude",
+      "module": "Burnett.Analysis.Microlocal.RicciJetSymbol",
+      "declaration": "Burnett.Microlocal.CurlDensity.factoredAmplitude_in_complexRicciKernel"
+    },
+    {
+      "claim_id": "f05:original-volume-vacuum-ricci-row-density",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_ricciRows_same_density"
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude-ricci-kernel",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_roundAmplitude_in_ricciKernel"
+    },
+    {
+      "claim_id": "f05:countable-original-volume-vacuum-ricci-pairings",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeRicciKernel",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.exists_countable_originalVolume_RicciKernel_projected_pairings"
+    },
+    {
+      "claim_id": "f05:preferred-chart-actual-auxiliary-unit-ray",
+      "module": "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+      "declaration": "Burnett.F05.ActualChartAuxiliarySection.chartAuxiliaryRay_unit"
+    },
+    {
+      "claim_id": "f05:original-volume-actual-auxiliary-amplitudes",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude",
+      "declaration": "Burnett.F05.OriginalVolumeAuxiliaryAmplitude.ae_originalVolume_auxiliaryAmplitude"
+    },
+    {
+      "claim_id": "f05:cotangent-amplitudes-weighted-round-push",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_apply_round"
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-measure-positive",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_positive"
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-unit-support",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_zero_off_unit"
+    },
+    {
+      "claim_id": "f05:countable-original-volume-cotangent-amplitudes",
+      "module": "Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.exists_countable_originalVolume_cotangentAmplitudes"
+    },
+    {
+      "claim_id": "p01:actual-projected-covariance-ricci-polarization",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
+      "declaration": "Burnett.P01.ae_originalVolume_projectedCovariance_ricciPolarization"
+    },
+    {
+      "claim_id": "p01:actual-projected-chart-physical-measure-equality",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci",
+      "declaration": "Burnett.P01.originalVolume_roundNullMeasure_projected_eq"
     }
   ],
   "inventory": [
@@ -17250,6 +17320,244 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_countable_originalVolume_projected_mixedPairings",
       "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:vacuum-chart-ricci-row-strong-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.RicciRemainder.chartRicciPrincipal_tendsto_zero_of_intrinsicVacuum",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:round-bessel-ricci-symbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 419
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.RicciRow.roundBesselCoefficient_eq_ricciJetMatrix_of_cutoff_eq_one",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ricci-kernel-from-curl-amplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 421
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CurlDensity.factoredAmplitude_in_complexRicciKernel",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-vacuum-ricci-row-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 419
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_ricciRows_same_density",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude-ricci-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 424
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.ae_originalVolume_roundAmplitude_in_ricciKernel",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable-original-volume-vacuum-ricci-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateRicciDensity.exists_countable_originalVolume_RicciKernel_projected_pairings",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:preferred-chart-actual-auxiliary-unit-ray",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualChartAuxiliarySection.chartAuxiliaryRay_unit",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-actual-auxiliary-amplitudes",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OriginalVolumeAuxiliaryAmplitude.ae_originalVolume_auxiliaryAmplitude",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:cotangent-amplitudes-weighted-round-push",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_apply_round",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-measure-positive",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_positive",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-unit-support",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 424
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.cotangentAmplitudeMeasure_zero_off_unit",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable-original-volume-cotangent-amplitudes",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartCotangentAmplitudeMeasure.exists_countable_originalVolume_cotangentAmplitudes",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-projected-covariance-ricci-polarization",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1706
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.ae_originalVolume_projectedCovariance_ricciPolarization",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:actual-projected-chart-physical-measure-equality",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.originalVolume_roundNullMeasure_projected_eq",
+      "statement_record": "docs/statements/original-volume-ricci-amplitudes.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
