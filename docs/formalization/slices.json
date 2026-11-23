@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "同一子列与搬运截断下，实际源图和目标图的有序矩阵分量经圆余球换图与三槽 Jacobian 系数在任意加权 Borel 集上相容，紧内窗可去除基点权。后续须比较独立选择的局部截断，再在实际辅助余球丛上拼接。",
+      "next_action": "两张原图在同一子列上各自选择截断时，已在公共小窗的平台上证明原矩阵条目的倒数平方重加权及实际相位、三槽 Jacobian 的 Borel 换图律。接续在非零截断域拼接，并构造实际辅助余球丛上的全局协方差。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "统一F04–F06输出的同一σ及子序列，建立正测度Borel收缩、矩测试和截面加权推前的共同装配。",
+      "next_action": "同一对原图测度在公共小窗平台上的实际零壳物理缩并给出有界 Borel 复积分的换图等式。保留 F04–F06 的同一子列及振幅，以 Ricci 核约束得到正性，再接全局拼接、矩测试和截面的加权推前。",
       "supplementary_obligations": []
     },
     {
@@ -6778,6 +6778,198 @@
       "claim_id": "f05:matching-cutoff-original-compact-interior-entry-transformation",
       "source_slices": [
         "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:smooth-factor-for-nonzero-cutoff",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-cutoff-window",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable-common-cutoff-cover",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-window-transported-matching-cutoffs",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-window-compact-target-plateau",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-window-target-plateau-interior",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-phase-inclusion-from-small-window",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-window-actual-round-phase-identity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-gradient-cutoff-multiplication",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-density-tests",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-continuous",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-borel-embedding",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-terms-determine-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-borel-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:two-original-cutoffs-on-common-refinement",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:entry-identity-accepts-bounded-measurable-weights",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-cutoff-entry-on-image",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:reciprocal-source-cutoff-on-plateau",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:reciprocal-target-cutoff-on-plateau",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:reweighted-ambient-entries-on-common-patch",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-borel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-set-identity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ambient-source-plateau-preimage-identity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:independent-cutoff-normalized-borel-entry-law",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:entry-measure-from-original-trace-density",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:normalized-entry-map-from-borel-identity",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:normalized-entry-pushforward-for-original-witnesses",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-entry-transport-with-borel-test",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:physical-jet-contraction-coordinate-change",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-shell-coordinate-change",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-entry-transport",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-original-witnesses",
+      "source_slices": [
+        "F07"
       ]
     }
   ],

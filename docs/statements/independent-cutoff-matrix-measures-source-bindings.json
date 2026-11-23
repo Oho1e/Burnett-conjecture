@@ -1,0 +1,644 @@
+{
+  "slices": [
+    "F05",
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "9a194a44f99ee724789828ce4db3dbd7ddb15f5b",
+  "base_tree": "157c92c4ff6b05ce9cc5327b034d0b9bf1afbebb",
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/LocalCutoffGradient.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffGradient",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffGradient.lean",
+      "prepared_source_sha256": "f497506b04129b94df59d7c85a88631bc30f7f9f4acd3e9c1f9a25242fba9a46",
+      "receipt_sha256": "47620380562f0372bad52fe4bc52df616950a890a51ff3170f1253ac27d07ec5",
+      "sha256": "8026ea1db93cb8dc18e9101ac7d7a49db26ea6dc0a7e4860afaf005d2dbc8433",
+      "imports": [
+        "Burnett.Analysis.Microlocal.BesselLocalization",
+        "Burnett.Analysis.Microlocal.VolumeWeightedChartJet"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalCutoffPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffPairing",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffPairing.lean",
+      "prepared_source_sha256": "03d0b12c049069abeaef9a05121eee0bd3cb0b5645d5f091b69c63813c2355b9",
+      "receipt_sha256": "ebbb257c31710cf206dbc2d2dd4d41e1b2a0b43cc063693af73f5e91dd38b84a",
+      "sha256": "0899a1fa5bb01451541f848d77e24f8451d196a134c09fd3f632c248b4d76ccc",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffGradient",
+        "Burnett.Analysis.Microlocal.Overlap.TargetSlotDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusion.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusion.lean",
+      "prepared_source_sha256": "acf0a8ee69ffc6dd98e4e81b9c0c1d1c9813205fc3f1adc621755e4048e13027",
+      "receipt_sha256": "84f97e85381a0f4b526995c6709a927c7f2c8af280d8d3d5e7fa29d304360c20",
+      "sha256": "869194bc612de827cd844116a915e8cd72aea13c615c6b505f3bab18f61df134",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusionCoordinates.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusionCoordinates",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/SameChartBallInclusionCoordinates.lean",
+      "prepared_source_sha256": "04efefb79d6508181825613f3830237a06cedfdaed11fa49f0a08e7a99a30d57",
+      "receipt_sha256": "3662c0e9f380f292ac2b76890c54d065fb82c1c3bc77b35487c3bd963e077cc1",
+      "sha256": "6061e4c1997ab95e46b2bb0c8eb9a83fed96f79a670905270019b163fe22d663",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryExt.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryExt",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryExt.lean",
+      "prepared_source_sha256": "8cca96c0234cefecb99b16ec6045151592abd0dc013c7065557c38ebf3fdd1ce",
+      "receipt_sha256": "6b0a4de9e19afe038e219f63ee2674aacea013969f73e7d543349330117a28aa",
+      "sha256": "5bd52e789f6a56aee0a8ac83d2138de974b765624d9822873f07c27e6f4696d4",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion",
+        "Burnett.Analysis.Microlocal.Overlap.SeparableSetIntegralExt"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryMeasure",
+      "prepared_source": "pr63-local-cutoff-density-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffEntryMeasure.lean",
+      "prepared_source_sha256": "c80647eb861bcd0444489f2ad85f81c28ad0117cd9a0cd1c3073b9d835d0a310",
+      "receipt_sha256": "b036f0dc713bca8dd720f748f03c507a9c52ad84200dfc0024f80a43f0449cb6",
+      "sha256": "fff470fed3693ce083bdf9aae39bdfea2a1a719f49dc2d28af29a37423334571",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffPairing",
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryExt"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonCutoffs.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "prepared_source": "pr63-common-overlap-cutoffs-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonCutoffs.lean",
+      "prepared_source_sha256": "692e807bcc7a0a6124345f5aa791a5cc40bbb19febbcbc14df129cd21a4309de",
+      "receipt_sha256": "86dba0a3b3a74ab420368a612054b2587624a7a2b9c68d4e088dde618d6358a0",
+      "sha256": "692e807bcc7a0a6124345f5aa791a5cc40bbb19febbcbc14df129cd21a4309de",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.Localization",
+        "Burnett.Analysis.LocalWeakDerivative",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchInputs.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "prepared_source": "pr63-common-phase-inclusions-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchInputs.lean",
+      "prepared_source_sha256": "f84e850d584d87d8ca4fe15877f36f66d8305ccf8b55355e2205a6eb2603baea",
+      "receipt_sha256": "99ba789c2ff45f4a94024fcd7b229681345772f0d8513c85172cc076c3a81594",
+      "sha256": "f84e850d584d87d8ca4fe15877f36f66d8305ccf8b55355e2205a6eb2603baea",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+        "Burnett.Analysis.Microlocal.CompactChartInput"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchPhaseInclusion.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhaseInclusion",
+      "prepared_source": "pr63-common-phase-inclusions-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchPhaseInclusion.lean",
+      "prepared_source_sha256": "47df169bf34b6bd7c76e59b739d5e3e4e5f474c0e9410a667b844a032939ed2f",
+      "receipt_sha256": "fc6f57856db81954ab0c6cfa30d411f1c47c02caa5814c263824e2d170e5814d",
+      "sha256": "47df169bf34b6bd7c76e59b739d5e3e4e5f474c0e9410a667b844a032939ed2f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+        "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchAmbientOverlap.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientOverlap",
+      "prepared_source": "pr63-common-phase-inclusions-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchAmbientOverlap.lean",
+      "prepared_source_sha256": "6cf0d57b5c881081061947022f8f7029f403011ec33bfc80e0a2f0595fd66eac",
+      "receipt_sha256": "5a4ecb76a923029fd7454e17a463fbb1c8f2396007cae25e5d8f0b8fc9fd0a7f",
+      "sha256": "e39a38ef46e3808e6c3eedc5b8850abe477860a01d7cd52eab9b9ee3afe5f62b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhaseInclusion",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchPhase.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhase",
+      "prepared_source": "pr63-common-phase-inclusions-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchPhase.lean",
+      "prepared_source_sha256": "7a0ba93dc7c0c054f7eb604e6f925f73cc5bd03044e27e55e2a890e84c816f63",
+      "receipt_sha256": "154b1986eb19358f94ecde3a339f3f4097f780cb98db61c6199b2fb03cd6661d",
+      "sha256": "622127f3ce65affab3e18a8fe9bb7601b2e9ea7770971c455257e38c9f00cd95",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientOverlap",
+        "Burnett.Analysis.Microlocal.Overlap.OverlapWeightedEntryMeasures"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmbientPlateauPhaseSets.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "prepared_source": "pr63-plateau-sets-fix/source/Burnett/Analysis/Microlocal/Overlap/AmbientPlateauPhaseSets.lean",
+      "prepared_source_sha256": "fa88736cb546d1fcc1ae7daf9b4cba1a13480f2199f46557f08318dcbdfca58b",
+      "receipt_sha256": "85c29665779bc25f2454d17ebfddb576ad6c79ce963dd05de7818c8ba23f924a",
+      "sha256": "df664793036b86ee1155538471dcfe154961e21f7eeb8fa91154162b48ee4443",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientOverlap",
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SubsequenceRefinement.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SubsequenceRefinement",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/SubsequenceRefinement.lean",
+      "prepared_source_sha256": "eeef56db2c1d60545d2787cdb6fdb0fd99405d65c330527f5343f9458d0f1a0b",
+      "receipt_sha256": "6cc46ae49f697aaf89cdcb42e96c33d7b7266b9bbcca993adf6babf375fa2495",
+      "sha256": "5e9b2ddd4d0f309f63d215a1f6556a198cf63093fdc987ae52cfd46eb97b7bbc",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+        "Burnett.Geometry.AuxiliaryAdmissibility"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/WeightedSetIntegralTransfer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralTransfer",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/WeightedSetIntegralTransfer.lean",
+      "prepared_source_sha256": "5b1afcb3d8d5d545a61ccd1073fb2b50f645a2fae5725fd52ccfb59560a20504",
+      "receipt_sha256": "5a8475b22c5dfcbee088c5cf2be03183a194868b7becc1c1a7fc3782266e3b47",
+      "sha256": "f26a7539447b58fd5ca9ed6b7ce95f668c6f03dcfaf0658058338e46d9f22804",
+      "imports": [
+        "Mathlib.MeasureTheory.Function.SimpleFuncDense",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SameChartPhaseEmbedding.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartPhaseEmbedding",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/SameChartPhaseEmbedding.lean",
+      "prepared_source_sha256": "e85aa88edb9194eddc7635ef85b2023a809dc180a82f10b882f9fa667fb989d1",
+      "receipt_sha256": "aa6786d3517c28c1ffd91378d4b27da56281d2ec58266e420351a96869295024",
+      "sha256": "d8edeeac1069a7cc76e11b346753a577a8c584203529ae4a62df01a5f3776ea8",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion",
+        "Burnett.Analysis.Microlocal.CompactChartInput",
+        "Burnett.Analysis.Microlocal.RationalAngularDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalCutoffWeightedEntry.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffWeightedEntry",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/LocalCutoffWeightedEntry.lean",
+      "prepared_source_sha256": "adfd7da7bb54a6c6401defde6d963e683b2d202c83bc7e1ac09654ab34784b58",
+      "receipt_sha256": "d69ff36f1da8a0fe7c3912ef5dc271cd4b9e0cc7448f422622dde9225b7242a9",
+      "sha256": "648acee3f379ee0e7d317be9009a48324a66cabc77b8a5ba946496401e282be5",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.SameChartPhaseEmbedding",
+        "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralTransfer"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchCutoffRatios.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchCutoffRatios.lean",
+      "prepared_source_sha256": "3379a6629102dbc25ad5eae03bc35efb7b0addc6953020ae6a441e8fe9c23820",
+      "receipt_sha256": "60e39850617d904955173dcc96ee364c02e3203e1d7da966e01e22dd5df2ef80",
+      "sha256": "33f64248d6eb3a8ea4bafe8921346e89c07c6b67b08d52451b7b401b29bad35f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CommonPatchAmbientEntries.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientEntries",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/CommonPatchAmbientEntries.lean",
+      "prepared_source_sha256": "e0bb64a4179ca076506e9953f782d49a781bc7713ebb9d1a2a3c1ab1be3fb7bf",
+      "receipt_sha256": "b09727c05962ad21d31fda60229294bab5e39a9812f2e8683fe6eb017d28a723",
+      "sha256": "35708079c4cf2ef3b1d2c02e699446ee1e7445ee8a911157c93ceff0a67aa403",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhaseInclusion",
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffWeightedEntry",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures",
+        "Burnett.Analysis.Microlocal.Overlap.SubsequenceRefinement"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmbientPlateauNormalization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauNormalization",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/AmbientPlateauNormalization.lean",
+      "prepared_source_sha256": "d72491bda893255ad0316b8f6fae3a03107098df8d830a999cd17686f0872801",
+      "receipt_sha256": "6174eac24af90113c7e4eba13cb5fe9992d9fe63ca6f976016096296292cf4ad",
+      "sha256": "0fb43927c516c0a37df563d2127e984c15ac350191df3333aac9ebeabdf5126b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhase",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+        "Burnett.Analysis.Microlocal.BesselLocalization",
+        "Burnett.Analysis.Microlocal.MatrixMeasure.TraceDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmbientPlateauEntryMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauEntryMeasures",
+      "prepared_source": "pr63-local-overlap-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/AmbientPlateauEntryMeasures.lean",
+      "prepared_source_sha256": "931c8d8253673ef6acaff36455b6ef998f39dc0c3b0309b4509c9138a6fef837",
+      "receipt_sha256": "999f1d1833b2ab47a0d415ff3f579e68edafa35f2415e4db2d58af2a28a2cdd1",
+      "sha256": "55fc03617dfb783c825b09061ee51307773798d35a60296b865bc72163890f2a",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauNormalization",
+        "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientEntries"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedEntryTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/NormalizedEntryTransport.lean",
+      "prepared_source_sha256": "db5c77b9f687ede18a19d8df7b0d2ccd1adb08bcd9aa567cc9b023ee73dec1fa",
+      "receipt_sha256": "ec0e1227970498068c198b9a85acdf5afb6d0fbc118ed032b1ffd8c0be69cad6",
+      "sha256": "7243e4f45799fab3fe9b4409cdc5f6251b18985dff388e07c62458b236c91c2f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedEntryWeightedTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/NormalizedEntryWeightedTests.lean",
+      "prepared_source_sha256": "82e6219a7c3477c656c055e187b2982a1096f07ba06e64459d395f49ba362167",
+      "receipt_sha256": "49b067313873dcf737529dc863dbebf92d19287b4d975620f2b2ab131faa34f0",
+      "sha256": "9216c33aa138ab93c8866e62ce0e59ac40b93b0d968c5158edf59a236b0bf028",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+        "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralTransfer"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartJetPhysicalWeight.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/ChartJetPhysicalWeight.lean",
+      "prepared_source_sha256": "d8001d91a86aac1182d5212d0ceb88a615406b0c18dfe5fb98d954803959e342",
+      "receipt_sha256": "2d690e55706aeecb63e01ecc6c2014242803d61a6fe2146c0e1376a2d64d65f5",
+      "sha256": "dd2b92ca35caa4441bd0139f57bda150f63f222aacf0d2faa5b471b0804f65c9",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+        "Burnett.Analysis.Microlocal.PhysicalDensity",
+        "Burnett.Analysis.Microlocal.CoordinateRicciPrincipalRow",
+        "Burnett.Geometry.Cotangent.SmoothExtension",
+        "Burnett.Geometry.ManifoldTensorNorm",
+        "Mathlib.LinearAlgebra.Matrix.Kronecker"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauTests.lean",
+      "prepared_source_sha256": "5a06afd77b48587abb25e62eb14a32c19581c7d7214f2663828559fc5b1b1fc6",
+      "receipt_sha256": "d4475bcaf592f28fb7a771b0e6384d1ecee65134afea352df78513d54d7deb85",
+      "sha256": "de5fa1c26b22916364fe8c45969cdb25b4ba8714b8a8870ffb653fbf78ae55a4",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+        "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/InverseEntryToVector.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.InverseEntryToVector",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/InverseEntryToVector.lean",
+      "prepared_source_sha256": "579c716cad96069dfbcdd5111dc515d7b71c2f4adb967dc0d942d117a99c40a7",
+      "receipt_sha256": "0ffba39a61849546ff738c763dee478aab0c070b942bc5ec615cedc1f4d821cc",
+      "sha256": "9b99aa0ff0d593a1c3fce80f5265a4aa183f06b77468ae397a30f85c23c08b4f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalNormalizedEntryFromPlateau.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedEntryFromPlateau",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalNormalizedEntryFromPlateau.lean",
+      "prepared_source_sha256": "e110960bfc797ce3d8c9f38adad8bc78328d80bd13081548ed8cd622e59d6855",
+      "receipt_sha256": "b9b9f769321b6dc8bca1f9e945dfae5dc5062d871a931fbb036b7ba208d7584b",
+      "sha256": "d631e4b6fc6ac923549f2fe4f5396b63f639f1d9c0104d18f0ac13e47bc2901f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauEntryMeasures",
+        "Burnett.Analysis.Microlocal.Overlap.InverseEntryToVector",
+        "Burnett.Geometry.AuxiliaryAdmissibility"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalPlateauConsumer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer",
+      "prepared_source": "pr63-f07-entry-consumer-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalPlateauConsumer.lean",
+      "prepared_source_sha256": "6c18fcb09bb5b96b447554db54f6a9320e0cde5eb33af458801c1c65f5c91790",
+      "receipt_sha256": "70e01bccdb3a5ce24eb8aaf772a11b2ada8014d77b40b67efc1e6564f125786c",
+      "sha256": "62e49a80385f2f1d6019b0720250bb4be63a304c68edc787a0ed8b0f34d5ba79",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedEntryFromPlateau",
+        "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:smooth-factor-for-nonzero-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_testFactor_of_tsupport_subset_nonzero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-cutoff-window",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_commonCutoffPatch",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:countable-common-cutoff-cover",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_commonCutoffPatches",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-window-transported-matching-cutoffs",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.inputs_matching_cutoffs",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-window-compact-target-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.isCompact_targetPlateau",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-window-target-plateau-interior",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPlateau_subset_interior_image",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-phase-inclusion-from-small-window",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientOverlap",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.continuous_sourcePhaseToOverlap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-window-actual-round-phase-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhase",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.roundChartWindowMap_inclusion",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-gradient-cutoff-multiplication",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffGradient",
+      "declaration": "Burnett.Microlocal.Overlap.originalGradient_volumeWeightedL2_of_cutoff_mul",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-density-tests",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffPairing",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_density_integral_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-continuous",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion",
+      "declaration": "Burnett.Microlocal.Overlap.continuous_sameChartBallInclusion",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-borel-embedding",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartPhaseEmbedding",
+      "declaration": "Burnett.Microlocal.Overlap.measurableEmbedding_sameChartBallInclusion",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-terms-determine-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryExt",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_weighted_setIntegral_eq_of_terms",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_entryMeasure_preimage_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:two-original-cutoffs-on-common-refinement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SubsequenceRefinement",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_common_refinement_originalVolume_pairDensities",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:entry-identity-accepts-bounded-measurable-weights",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralTransfer",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_mul_eq_of_setIntegral_preimage_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-cutoff-entry-on-image",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffWeightedEntry",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_setIntegral_on_image",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:reciprocal-source-cutoff-on-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourceFactor_on_halfBall",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:reciprocal-target-cutoff-on-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetFactor_on_targetPlateau",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:reweighted-ambient-entries-on-common-patch",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientEntries",
+      "declaration": "Burnett.Microlocal.Overlap.exists_commonPatch_ambientEntryMeasures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-borel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.measurableSet_targetPhasePlateau",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-set-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPhaseInclusion_image_preimage_inter_plateau",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:ambient-source-plateau-preimage-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourcePhaseInclusion_image_preimage_targetPlateau",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:independent-cutoff-normalized-borel-entry-law",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.commonPatch_normalized_ambientEntryMeasures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:entry-measure-from-original-trace-density",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+      "declaration": "Burnett.Microlocal.Overlap.entryMeasure_eq_trace_withDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:normalized-entry-map-from-borel-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+      "declaration": "Burnett.Microlocal.Overlap.map_normalizedEntry_eq_target_of_borel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:normalized-entry-pushforward-for-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedEntryFromPlateau",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalized_roundJetMeasure",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f07:normalized-entry-transport-with-borel-test",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedEntry_weightedSetIntegral",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:physical-jet-contraction-coordinate-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-shell-coordinate-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_roundTransition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-entry-transport",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedPhysicalPlateauTest",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_physicalPlateauTest",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
