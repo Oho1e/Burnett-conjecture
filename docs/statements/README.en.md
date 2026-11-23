@@ -72,3 +72,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Weighted mixed derivative pairings of the actual projected field](weighted-projected-derivative-pairings.en.md)
 - [Local positive matrix measures for the original metric gradients](original-gradient-matrix-measures.en.md)
 - [Curl factorization and projected pairings of the original metric gradients](original-volume-curl-amplitudes.en.md)
+- [Vacuum Ricci kernel and auxiliary unit cosphere amplitudes](original-volume-ricci-amplitudes.en.md)

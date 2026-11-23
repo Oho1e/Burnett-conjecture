@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `b1b1b8b1c8d4674e7d6a564472483602910dcaed3762fbd64e0ed87f5fa84c2b`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2ee9614609a68d0db3533476071d2442cab11d0ca371e690dd78145d4aa8e37e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The coordinate curl rows vanish on the same local density of the original weighted gradients, giving a positive semidefinite amplitude and both derivative factors. Apply the actual vacuum Ricci rows, then pass to auxiliary cospheres and identify the measures across charts.
+Next: The original vacuum equations give the Ricci kernel on the amplitude shared by the raw and projected pairings. The same refinement supplies the amplitude measures on the actual auxiliary unit cospheres of the preferred charts. Establish coordinate covariance, cutoff compatibility, and global gluing.
 
 <a id="f06"></a>
 
@@ -679,7 +679,7 @@ Inputs:
 
 - The original admissible sequence; a relatively compact coordinate chart U and smooth compactly supported chi; z_n=chi*h_n extended by zero.
 - a_n is a smooth uniformly Lipschitz extension of the inverse components of g_n near supp chi. Final constants may depend on the family's first-order bounds. The extension is not a supplied bounded source.
-- The actual original gradient and projected mixed derivative pairings in the preferred charts use the same refinement and local trace measure. For supplied Ricci-kernel amplitude, symmetric background, and null-shell trace, the projection has off-cone vanishing, Lorenz polarization, and equality of the full physical measure. The actual vacuum Ricci kernel and cross-chart identification remain to be connected.
+- The actual original gradient and projected mixed derivative pairings share one refinement and the same trace in each preferred chart. The original vacuum equations give the Ricci kernel of the amplitude. The actual projection vanishes off the cone, has Lorenz polarization on the cone, and preserves the null-shell physical measure on the same round angular section.
 - The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. For any compatible smooth chart, the intrinsic assumptions give the coordinate vacuum, uniform convergence, and first-jet bounds used by this same whole-space source.
 
 Outputs:
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: The prescribed countable preferred charts use the same refinement of the original sequence. The raw pairings and both actual projected derivative slots use the same trace measure in each chart, with the two frequency factors times PAP*. Use the vacuum Ricci kernel and cross-chart identification to obtain the global physical angular measure from this amplitude.
+Next: The same chartwise vacuum Ricci amplitude gives off-cone vanishing and on-cone Lorenz polarization for the fixed projection. The original and projected null-shell physical measures agree on the round angular section. Identify the chart amplitudes across overlaps to construct the global physical measure.
 
 <a id="v01"></a>
 

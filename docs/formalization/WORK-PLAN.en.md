@@ -659,3 +659,7 @@ One common refinement now gives local positive matrix densities for the original
 ## 53. Curl factorization and projected pairings of the original metric gradients
 
 The coordinate curl rows vanish on the same local density of the original weighted gradients, giving a positive semidefinite amplitude and both derivative factors. Apply the actual vacuum Ricci rows, then pass to auxiliary cospheres and identify the measures across charts. [Curl factorization and projected pairings of the original metric gradients](../statements/original-volume-curl-amplitudes.en.md)
+
+## 54. Vacuum Ricci kernel and auxiliary unit cosphere amplitudes
+
+The original vacuum equations give the Ricci kernel on the amplitude shared by the raw and projected pairings. The same refinement supplies the amplitude measures on the actual auxiliary unit cospheres of the preferred charts. Establish coordinate covariance, cutoff compatibility, and global gluing. [Vacuum Ricci kernel and auxiliary unit cosphere amplitudes](../statements/original-volume-ricci-amplitudes.en.md)

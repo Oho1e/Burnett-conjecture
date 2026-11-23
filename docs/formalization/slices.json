@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "坐标 curl 行已在原始加权梯度的同一局部密度上消失，并给出正半定振幅及两个导数方向因子。接续施加实际真空 Ricci 行的约束，再完成辅助余球面变换和跨图识别。",
+      "next_action": "原真空方程已在原始和投影配对共用的同一局部振幅上给出 Ricci 核约束。同一细化子列给出各首选图的实际辅助单位余球面振幅测度。接续证明换图协方差、截断相容和全局拼接。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -628,7 +628,7 @@
       "inputs": [
         "原始admissible序列；U相对紧坐标图、chi光滑紧支集；z_n=chi*h_n零延拓。",
         "a_n是g_n逆分量在supp chi邻域的光滑一致Lipschitz延拓；最终常数允许依赖该族的一阶界。延拓不是预给定有界源。",
-        "实际首选图的原梯度和投影混合导数配对共用同一细化子列及局部迹测度。给定 Ricci 核振幅、对称背景和零壳迹测度时，已有离锥消失、Lorenz 极化及完整物理测度等式。实际真空 Ricci 核与全局跨图识别仍需接入。",
+        "实际首选图的原始梯度与投影混合导数配对共用一个细化子列及各图的同一迹测度。原真空方程给出振幅的 Ricci 核约束，并导出实际投影的离锥消失、Lorenz 极化与同图圆方向截面上的零壳物理测度等式。",
         "固定全空间 IR 正则乘子 Π 的梯度交换子已有全局 Lipschitz 系数的 L² 有界延拓。任意相容光滑图的内禀输入已转移到实际坐标真空、一致收敛和一阶图内界，与同一 Π 的全空间散度公式相接。"
       ],
       "outputs": [
@@ -642,7 +642,7 @@
         "Pi的IR cutoff必须与V05的chi_hi选取相容。",
         "光滑g背景一般不真空；Ricci展开须保留背景项。"
       ],
-      "next_action": "预先指定的可数首选图共用原序列的同一细化子列，各图的原始配对和实际投影场的两个导数槽使用同一迹测度。角向协方差为两个频率因子乘 PAP*。接续将真空 Ricci 核和跨图识别接到这一振幅，得到原序列的全局物理角测度。",
+      "next_action": "同一原序列的图内真空 Ricci 振幅给出固定投影的离锥消失和零锥上的 Lorenz 极化。原始与投影的零壳物理测度在圆方向截面上相等。接续以同一图内振幅完成跨图识别与全局物理测度构造。",
       "supplementary_obligations": [
         {
           "id": "new-unnum:projected-coordinate-ricci-source",
@@ -6236,6 +6236,90 @@
     },
     {
       "claim_id": "p01:countable-original-volume-projected-mixed-pairings",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "f05:vacuum-chart-ricci-row-strong-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:round-bessel-ricci-symbol",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ricci-kernel-from-curl-amplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-vacuum-ricci-row-density",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude-ricci-kernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable-original-volume-vacuum-ricci-pairings",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:preferred-chart-actual-auxiliary-unit-ray",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-volume-actual-auxiliary-amplitudes",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:cotangent-amplitudes-weighted-round-push",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-measure-positive",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:chart-cotangent-amplitude-unit-support",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:countable-original-volume-cotangent-amplitudes",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "p01:actual-projected-covariance-ricci-polarization",
+      "source_slices": [
+        "P01"
+      ]
+    },
+    {
+      "claim_id": "p01:actual-projected-chart-physical-measure-equality",
       "source_slices": [
         "P01"
       ]

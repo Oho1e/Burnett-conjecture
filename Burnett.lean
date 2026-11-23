@@ -356,3 +356,5 @@ import Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings
 import Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient
 import Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits
 import Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings
+import Burnett.Analysis.Microlocal.ChartCotangentAmplitudeMeasure
+import Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedRicci
