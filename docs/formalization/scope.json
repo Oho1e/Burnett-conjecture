@@ -3473,6 +3473,51 @@
       "claim_id": "p01:intrinsic-half-density-original-gradient",
       "module": "Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient",
       "declaration": "Burnett.P01.exists_intrinsic_originalGradient_halfDensity_error_tendsto_zero"
+    },
+    {
+      "claim_id": "f05:original-gradient-schwartz-inputs",
+      "module": "Burnett.Analysis.Microlocal.OriginalGradientInputs",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_originalGradient_sourceSchwartz_inputs"
+    },
+    {
+      "claim_id": "f05:original-volume-weighted-gradient",
+      "module": "Burnett.Analysis.Microlocal.VolumeWeightedChartJet",
+      "declaration": "Burnett.F05.ChartVolumeAmplitude.originalGradient_volumeWeightedL2_ae"
+    },
+    {
+      "claim_id": "f05:countable-original-rational-pairing-limits",
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalPairingLimits",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_rational_pairing_limits"
+    },
+    {
+      "claim_id": "f05:positive-ordered-compact-functional",
+      "module": "Burnett.Analysis.Microlocal.OrderedCompactFunctionals",
+      "declaration": "Burnett.Microlocal.CompactOrderedFunctional.exists_commonCompactMatrixFunctional_positive"
+    },
+    {
+      "claim_id": "f05:positive-compact-jet-matrix-measure",
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure",
+      "declaration": "Burnett.Microlocal.CompactChartMatrixMeasure.exists_compactChartMatrixMeasure_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:compact-jet-matrix-trace-density",
+      "module": "Burnett.Analysis.Microlocal.CompactJetMatrixDensity",
+      "declaration": "Burnett.Microlocal.CompactChartDensity.exists_compactChartMatrixDensity_of_localized_weak_zero"
+    },
+    {
+      "claim_id": "f05:compact-jet-all-finite-separated-pairings",
+      "module": "Burnett.Analysis.Microlocal.CompactJetSmoothPairings",
+      "declaration": "Burnett.Microlocal.FixedSubsequenceSeparableExtension.exists_compactChartMatrixDensity_allFiniteSmoothPairings"
+    },
+    {
+      "claim_id": "f05:countable-original-volume-matrix-densities",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_matrixDensities"
+    },
+    {
+      "claim_id": "f05:original-rational-limits-measure-identification",
+      "module": "Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_originalVolume_measures_realizing_rational_limits"
     }
   ],
   "inventory": [
@@ -16854,6 +16899,159 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.exists_intrinsic_originalGradient_halfDensity_error_tendsto_zero",
       "statement_record": "docs/statements/weighted-projected-derivative-pairings.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-gradient-schwartz-inputs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 401
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.OriginalCoordinateCurl.exists_originalGradient_sourceSchwartz_inputs",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-weighted-gradient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 401
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ChartVolumeAmplitude.originalGradient_volumeWeightedL2_ae",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable-original-rational-pairing-limits",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_rational_pairing_limits",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:positive-ordered-compact-functional",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CompactOrderedFunctional.exists_commonCompactMatrixFunctional_positive",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:positive-compact-jet-matrix-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CompactChartMatrixMeasure.exists_compactChartMatrixMeasure_of_localized_weak_zero",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-jet-matrix-trace-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 402,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CompactChartDensity.exists_compactChartMatrixDensity_of_localized_weak_zero",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-jet-all-finite-separated-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.FixedSubsequenceSeparableExtension.exists_compactChartMatrixDensity_allFiniteSmoothPairings",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable-original-volume-matrix-densities",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_originalVolume_matrixDensities",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-rational-limits-measure-identification",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 407
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_originalVolume_measures_realizing_rational_limits",
+      "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

@@ -70,3 +70,4 @@
 - [任意光滑图上的统一投影散度源](maximal-chart-projected-source.zh-CN.md)
 - [固定投影的角向协方差与物理测度](projected-angular-covariance.zh-CN.md)
 - [实际投影场的加权双导数配对](weighted-projected-derivative-pairings.zh-CN.md)
+- [原始度量梯度的局部正半定矩阵测度](original-gradient-matrix-measures.zh-CN.md)
