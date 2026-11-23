@@ -75,3 +75,4 @@
 - [原体积梯度的真空 Ricci 核与辅助单位余球面振幅](original-volume-ricci-amplitudes.zh-CN.md)
 - [首选图重叠域的梯度换图与 Fourier 比较](overlap-fourier-conjugation.zh-CN.md)
 - [换图后的角向测试配对](moving-angular-density-pairings.zh-CN.md)
+- [相互搬运截断下的重叠域矩阵测度](matching-cutoff-matrix-measures.zh-CN.md)

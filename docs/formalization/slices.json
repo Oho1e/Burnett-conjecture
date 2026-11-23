@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "已在同一原序列与子列上把目标图的搬运测试配对识别为源图的矩阵密度积分。后续须把搬运后的槽和目标图实际协变梯度的三个坐标指标相接，证明局部截断及缺陷测度相容，再在余球丛上拼接。",
+      "next_action": "同一子列与搬运截断下，实际源图和目标图的有序矩阵分量经圆余球换图与三槽 Jacobian 系数在任意加权 Borel 集上相容，紧内窗可去除基点权。后续须比较独立选择的局部截断，再在实际辅助余球丛上拼接。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -6614,6 +6614,168 @@
     },
     {
       "claim_id": "f05:original-target-separable-pairing-source-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:supported-complex-weak-l2-low-frequency-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:supported-complex-weak-l2-angular-commutator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:weighted-two-slot-exact-error-expansion",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:weighted-two-slot-pairing-error-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:weighted-target-slot-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-weighted-target-slot-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-half-density-difference-l2-isometry",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-raw-covariant-gradient-difference-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:three-slot-jacobian-coefficients-smooth",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:common-cutoff-for-three-slot-coefficients",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-covariant-gradient-pointwise-slot-sum",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-source-target-cutoff-and-coefficient-transport",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-covariant-gradient-exact-l2-slot-sum",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-original-gradient-l2-slot-sum-error-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:smooth-compact-overlap-base-test-pullback",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-round-direction",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-target-round-test",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:bounded-pairing-strong-two-slot-replacement",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-matrix-density-tests",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:continuous-weighted-tests-determine-borel-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:dense-separable-weighted-tests-determine-borel-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:single-chart-weighted-terms-determine-borel-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:round-phase-map-on-nested-chart-windows",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tested-overlap-equality-implies-weighted-borel-entries",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-weighted-borel-entry-transformation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:inner-chart-window-removes-base-weight",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-compact-interior-entry-transformation",
       "source_slices": [
         "F05"
       ]

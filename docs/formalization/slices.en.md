@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `6d73e9943073b45f525c9d63351e50d7e332888c3cd389bebd5a79d8e47dec66`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `9ebd87da6084f8a7e5695f68d4786c18547b87e222be31e6025c8736063cfbf6`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The transported target test pairing on the same original sequence and subsequence is represented by the source-chart matrix density. Relate the transported slots to the three coordinate slots of the actual target covariant gradient, prove compatibility of localized cutoffs and measures, and glue on the cosphere bundle.
+Next: On the same subsequence with matching transported cutoffs, the ordered source and target entries obey the round chart transformation and three-slot Jacobian law on all weighted Borel sets. Compact interior windows admit the unweighted identity. Compare independently chosen local cutoffs and glue on the actual auxiliary cosphere bundle.
 
 <a id="f06"></a>
 
