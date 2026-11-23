@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `5228dc46f95e0cea2a2b6c02f4d7f098ed3528836d9e02d0e0d4f1b602ee9820`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6d73e9943073b45f525c9d63351e50d7e332888c3cd389bebd5a79d8e47dec66`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: On actual preferred-chart overlaps the difference between the half-density weighted partial and covariant gradients tends strongly to zero in L². The covariant gradients obey the three-slot coordinate law. The actual pullback and the frozen inverse-adjoint Fourier action differ by a strongly vanishing term on the original sequence, and the auxiliary unit covectors agree. Identify the moving frozen angular symbol in the same trace pairing and prove measure compatibility and global gluing.
+Next: The transported target test pairing on the same original sequence and subsequence is represented by the source-chart matrix density. Relate the transported slots to the three coordinate slots of the actual target covariant gradient, prove compatibility of localized cutoffs and measures, and glue on the cosphere bundle.
 
 <a id="f06"></a>
 

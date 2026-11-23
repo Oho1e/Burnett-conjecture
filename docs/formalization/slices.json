@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "实际首选图重叠域中，原序列的半密度加权偏导与协变梯度之差在 L² 中强趋于零，协变梯度满足三槽换图律。实际拉回与冻结逆伴随的零阶 Fourier 作用之差沿原序列强趋于零，辅助单位协向量也已识别。接续把随基点变化的冻结角符号接入同一局部迹配对，证明缺陷测度的跨图相容与全局拼接。",
+      "next_action": "已在同一原序列与子列上把目标图的搬运测试配对识别为源图的矩阵密度积分。后续须把搬运后的槽和目标图实际协变梯度的三个坐标指标相接，证明局部截断及缺陷测度相容，再在余球丛上拼接。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -6464,6 +6464,156 @@
     },
     {
       "claim_id": "f05:overlap-integrable-separated-symbol-pairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-parameter-fourier-integral-smoothness",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:uniform-pure-base-angular-derivatives",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-left-action-base-fourier-modes",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-left-action-integrated-separable-pairings",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-base-fourier-coefficient-inversion",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-angular-base-fourier-pairing-envelope",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:base-fourier-angular-smoothness-away-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:base-fourier-coefficient-degree-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-frequency-equals-frozen-inverse-adjoint",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-frequency-actual-cotangent-coordinates",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-frequency-smooth-on-overlap",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-frequency-uniform-two-sided-norm",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-joint-smoothness",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-degree-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-normalization-explicit-infrared-difference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:moving-infrared-difference-joint-smoothness",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-frequency-left-action-strong-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-moving-infrared-action-strong-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-angular-left-action-matrix-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:half-density-exact-scalar-pairing-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:half-density-transport-l2-inner-isometry",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:transported-angular-action-source-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-transported-angular-action-source-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:target-separable-pairing-source-density-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-target-separable-pairing-source-density-limit",
       "source_slices": [
         "F05"
       ]
