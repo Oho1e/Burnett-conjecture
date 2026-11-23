@@ -1,0 +1,461 @@
+{
+  "slices": [
+    "F05"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "6028f028d7fc6025f93416fd779b5d3dcf519ef6",
+  "base_tree": "564ac4b9b22a9c9e60f2a181d0d09c6212168a93",
+  "preparations": {
+    "pr62-target-slot-pairing-prep/VERIFICATION.json": "14edcf2092a4bbd6f953dfb8ba3a15a1307e47a076cd5cb46a40b94c78d6f934",
+    "pr62-transported-jet-coefficients-prep/PREPARATION.json": "52ac44f36be424ab6003a414e45a0f396385dd1f6244da7b1a7a10a3b489292d",
+    "pr62-round-overlap-tests-prep/PREPARATION.json": "eb5585fc7b4fb8507a6c4ee0dc6381b8edd80456c59d2fcb2d54882568c3e7e2"
+  },
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/SupportedWeakFourier.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SupportedWeakFourier",
+      "prepared_source": "pr62-target-slot-pairing-prep/source/Burnett/Analysis/Microlocal/Overlap/SupportedWeakFourier.lean",
+      "prepared_source_sha256": "394bd2ef71cb7897e53f293482e600ad0d2435d6bf81c3131ea967d8981e79bf",
+      "receipt_sha256": "8c6e8783e21c6e183ca773410fcd84125b5f571633fa1e8232ebd6db95ec314e",
+      "sha256": "957d02d961fd912e81f733fe9c67d939fb52cbf2cef7ecc30e8a46650b6b0b62",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit",
+        "Burnett.Analysis.Microlocal.AngularCommutator.Infrared"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TargetSlotPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotPairing",
+      "prepared_source": "pr62-target-slot-pairing-prep/source/Burnett/Analysis/Microlocal/Overlap/TargetSlotPairing.lean",
+      "prepared_source_sha256": "2b4028b26e707d016eb600878d6326b4ba033d68318bd9d5b435e44b282d33d1",
+      "receipt_sha256": "63b47898afb9c5b221489a7f020aabf316159b63ecf70296a9497cdb76f1d52c",
+      "sha256": "fff2a3a2d96a9505a177dc1cde7f3dd35a06e4a97ded52c42b355bd803253f14",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.SupportedWeakFourier",
+        "Burnett.Analysis.Microlocal.SeparableSquareOperators"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TargetSlotDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotDensity",
+      "prepared_source": "pr62-target-slot-pairing-prep/source/Burnett/Analysis/Microlocal/Overlap/TargetSlotDensity.lean",
+      "prepared_source_sha256": "5584e5972812a6ea92c54d0fcc290b9c5c40c9370903ca0a007581bdc2bd29bb",
+      "receipt_sha256": "c34224e6a6da2fd143f0c5023a6c0bbc86ac5688d1db54dcb3668b475a09780b",
+      "sha256": "2bc92d2a1a3600257ecf3724a7483e375a4aefacc8e0612b255d161e6215a386",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.TargetSlotPairing",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TransportedGradientL2.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientL2",
+      "prepared_source": "pr62-transported-jet-coefficients-prep/source/Burnett/Analysis/Microlocal/Overlap/TransportedGradientL2.lean",
+      "prepared_source_sha256": "56aa86365fa5d81c6f260e485b203c1d763c0b40b7b16b2e075370628150a990",
+      "receipt_sha256": "ca1fb0db3932b030a8904a0fe1f826f65ce6086da49dfe5539ab4696fc307ae1",
+      "sha256": "56aa86365fa5d81c6f260e485b203c1d763c0b40b7b16b2e075370628150a990",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CovariantGradient",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensityL2",
+        "Burnett.Analysis.Microlocal.Overlap.Localization"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TransportedJetCoefficients.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+      "prepared_source": "pr62-transported-jet-coefficients-prep/source/Burnett/Analysis/Microlocal/Overlap/TransportedJetCoefficients.lean",
+      "prepared_source_sha256": "2eb89d023ef72290ce88f58d852a282fd688349276ae5c0a7b5f9724908d3552",
+      "receipt_sha256": "4b35484a8a409ee61ec95b9244cef5951927c47839374081459a5175f84f14c9",
+      "sha256": "2eb89d023ef72290ce88f58d852a282fd688349276ae5c0a7b5f9724908d3552",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.TransportedGradientL2",
+        "Burnett.Analysis.Microlocal.Overlap.CovariantGradientTransition",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TransportedGradientMultiplier.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientMultiplier",
+      "prepared_source": "pr62-transported-jet-coefficients-prep/source/Burnett/Analysis/Microlocal/Overlap/TransportedGradientMultiplier.lean",
+      "prepared_source_sha256": "ee3d93220e98b24d8db5e2287b7284b3fe338bfa30ad05847e18590380a59a37",
+      "receipt_sha256": "2f40f29f03ef363ad8b55c09a04b3709b3e9be09361ebb4df8f9177c0a2f3351",
+      "sha256": "ee3d93220e98b24d8db5e2287b7284b3fe338bfa30ad05847e18590380a59a37",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+        "Burnett.Analysis.Microlocal.BesselLocalization"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OverlapBaseTestPullback.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OverlapBaseTestPullback",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/OverlapBaseTestPullback.lean",
+      "prepared_source_sha256": "899a78c3e613f05fe1cd056c8b11923836adc1ac5e12fc86a820325c09e340ed",
+      "receipt_sha256": "d29144cd01ff6c678b2f0a7582e0aeeebfacebc78a8ea4c10dd62f900a9515f6",
+      "sha256": "4176fa102db398f5787cabfcca76fe6a4c1b78089ecc3e74fc15f4745f19e25b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.Localization",
+        "Burnett.Analysis.PrincipalEnergy.Fourier.DyadicKernel"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RoundOverlapTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RoundOverlapTests",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/RoundOverlapTests.lean",
+      "prepared_source_sha256": "51bb8c588ec61f6b53569144732cc2081b8f17d43170a4442679bd416124f189",
+      "receipt_sha256": "0858920b240c461db27d644a7a6beece5d41b710513e28bfabb1cfb309c3c82f",
+      "sha256": "8701fc374fa5e1dbc113ba8307ab4851fdc9ea08462c37e273a4121f284955fd",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryRay",
+        "Burnett.Analysis.Microlocal.Overlap.MovingChartAngularSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PairingReplacement.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PairingReplacement",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/PairingReplacement.lean",
+      "prepared_source_sha256": "8a09750d70e012937d8d85430cc566c72e975752ae0bd5a980ce64b4085e7f12",
+      "receipt_sha256": "8d13127cb6ce91d3fcad4618c20bf9628ea2986e0778039395d3be3ed4c06d0d",
+      "sha256": "d01b8820d9d06cedb5de22713ea5878d71cbe22fd57914732461612cb669d6f0",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.Basic",
+        "Mathlib.Analysis.Normed.Operator.Basic"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/MatchingCutoffDensityPairings.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.MatchingCutoffDensityPairings",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/MatchingCutoffDensityPairings.lean",
+      "prepared_source_sha256": "22b98e757c49f3c51c8b7c2281c9acbcd31afd0e4591e57edd16c6dc0db0e695",
+      "receipt_sha256": "74f5f20c2d04bd1e639cf5d34502f86894e175fbcf8e2ed74027f1a8e2a1d812",
+      "sha256": "16e4318750a9e60d1948f907b09200ddbf9896977c1923b42ccf298ec7c52ab6",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalTransportedAngularPairing",
+        "Burnett.Analysis.Microlocal.Overlap.OverlapBaseTestPullback",
+        "Burnett.Analysis.Microlocal.Overlap.PairingReplacement",
+        "Burnett.Analysis.Microlocal.Overlap.TargetSlotDensity",
+        "Burnett.Analysis.Microlocal.Overlap.TransportedGradientMultiplier"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/WeightedSetIntegralExt.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralExt",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/WeightedSetIntegralExt.lean",
+      "prepared_source_sha256": "3963c428211900aba4a0f7e058c8b718147d3a681bd9d5746a316fbab934e00d",
+      "receipt_sha256": "ed825c1f71e71c768b25af498b1ffd601da645d0ea7b4aaaa2f79021dc538bad",
+      "sha256": "ec805ad990829f8f8289d9b0dab2e8f70b544b5501d8671865dc82a0c85c4139",
+      "imports": [
+        "Mathlib.MeasureTheory.Measure.HasOuterApproxClosed",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.Analysis.Complex.Basic"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SeparableSetIntegralExt.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SeparableSetIntegralExt",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/SeparableSetIntegralExt.lean",
+      "prepared_source_sha256": "80bd1de391cb2e67383edf1a97fbaf4df95bf8182356f830a45ecc067a555388",
+      "receipt_sha256": "809443a83eaa1cbde2ec551181ed92db5c7b507d32fe7a055042f4e057b76ed3",
+      "sha256": "24b8a08f8caa9d24c91a8e4007fab4565fea97b2c622bb1bc90a309ecd3eac14",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactJetMatrixMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralExt"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OverlapWeightedEntryMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OverlapWeightedEntryMeasures",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/OverlapWeightedEntryMeasures.lean",
+      "prepared_source_sha256": "191c599040d4b0bb97abe93c7bd311addba6a89316499bd6b2cfc4476a989436",
+      "receipt_sha256": "f21f452a5cf0df352f9dd768abbea465078a409663eaea7c52821fbcd01a7801",
+      "sha256": "edf420e8f159572229d85915ca55ff2cdc1bf79466689de70334b1fbc1cfa8ba",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.RoundOverlapTests",
+        "Burnett.Analysis.Microlocal.Overlap.SeparableSetIntegralExt",
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalMatchingCutoffEntryMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalMatchingCutoffEntryMeasures.lean",
+      "prepared_source_sha256": "2e6ac0ee5b185b3b0c01866cc5ebfb179ead598404ba2448c6de9aa0dbfd3f45",
+      "receipt_sha256": "cd1808afc27eb30fba5b71ac8413d7df1b7e0533396f5128e527e15c337e7284",
+      "sha256": "90dc9a71ae313048b9b9dbbbe97a5479716c919c936e08406e4bbe9d4621ec80",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.MatchingCutoffDensityPairings",
+        "Burnett.Analysis.Microlocal.Overlap.CompactInteriorEntryMeasures"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactInteriorEntryMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactInteriorEntryMeasures",
+      "prepared_source": "pr62-round-overlap-tests-prep/source/Burnett/Analysis/Microlocal/Overlap/CompactInteriorEntryMeasures.lean",
+      "prepared_source_sha256": "023ac93c6be244766a0c164cabbf2c4e1c92d8f345dad21e7f56d853b1fd53d2",
+      "receipt_sha256": "bed0e9468496e2b6244da76527cd216486aeb945c4ea83df52c7678bf74c0515",
+      "sha256": "9f02830bf937b3ea0ade0e90247c418b6f67f6e627b967ac5ee7edb86e38cd96",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OverlapWeightedEntryMeasures",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:supported-complex-weak-l2-low-frequency-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SupportedWeakFourier",
+      "declaration": "Burnett.Microlocal.Overlap.low_frequency_energy_tendsto_zero_of_supported_weakL2",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:supported-complex-weak-l2-angular-commutator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SupportedWeakFourier",
+      "declaration": "Burnett.Microlocal.Overlap.cutoffCommutator_tendsto_zero_of_supported_weakL2",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:weighted-two-slot-exact-error-expansion",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotPairing",
+      "declaration": "Burnett.Microlocal.Overlap.weightedSlot_sum_pairing_eq_add_error",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:weighted-two-slot-pairing-error-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotPairing",
+      "declaration": "Burnett.Microlocal.Overlap.weightedSlot_sum_pairing_difference_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:weighted-target-slot-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotDensity",
+      "declaration": "Burnett.Microlocal.Overlap.weightedTargetSlots_tendsto_density",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-weighted-target-slot-density-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TargetSlotDensity",
+      "declaration": "Burnett.Microlocal.Overlap.originalVolume_weightedTargetSlots_tendsto_density",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:transported-half-density-difference-l2-isometry",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientL2",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.transportedHalfDensitySchwartz_norm_sub_toLp",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:transported-raw-covariant-gradient-difference-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientL2",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.transportedOriginalVolumeGradient_sub_covariant_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:three-slot-jacobian-coefficients-smooth",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.overlapJetCoefficient_smoothOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:common-cutoff-for-three-slot-coefficients",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.exists_overlapJetCoefficient_tests",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:transported-covariant-gradient-pointwise-slot-sum",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.transportedCovariantGradientSchwartz_eq_sum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:actual-source-target-cutoff-and-coefficient-transport",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedJetCoefficients",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.exists_originalGradient_overlap_transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:transported-covariant-gradient-exact-l2-slot-sum",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientMultiplier",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.transportedCovariantGradient_toLp_eq_sum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:transported-original-gradient-l2-slot-sum-error-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedGradientMultiplier",
+      "declaration": "Burnett.F05.OverlapCovariantGradient.transportedOriginalVolumeGradient_sub_target_sum_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:smooth-compact-overlap-base-test-pullback",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OverlapBaseTestPullback",
+      "declaration": "Burnett.Microlocal.Overlap.exists_overlapBaseTest_pullback",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-round-direction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RoundOverlapTests",
+      "declaration": "Burnett.Microlocal.Overlap.movingChartAngularSymbol_eq_roundOverlap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:moving-angular-symbol-target-round-test",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RoundOverlapTests",
+      "declaration": "Burnett.Microlocal.Overlap.movingChartAngularSymbol_eq_targetRoundTest",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:bounded-pairing-strong-two-slot-replacement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PairingReplacement",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_orderedPairing_sub_of_strong_replacement",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-matrix-density-tests",
+      "module": "Burnett.Analysis.Microlocal.Overlap.MatchingCutoffDensityPairings",
+      "declaration": "Burnett.Microlocal.Overlap.exists_matchingCutoff_overlap_densityPairings",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:continuous-weighted-tests-determine-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralExt",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_preimage_eq_of_continuous_weighted_tests",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:dense-separable-weighted-tests-determine-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SeparableSetIntegralExt",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_preimage_eq_of_separable_weighted_tests",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:single-chart-weighted-terms-determine-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SeparableSetIntegralExt",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_preimage_eq_of_weightedChartTerms",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "f05:round-phase-map-on-nested-chart-windows",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OverlapWeightedEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.continuous_roundChartWindowMap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tested-overlap-equality-implies-weighted-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OverlapWeightedEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.weighted_setIntegral_roundChart_eq_of_overlap_tests",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-weighted-borel-entry-transformation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.exists_original_matchingCutoff_roundEntryMeasures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:inner-chart-window-removes-base-weight",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactInteriorEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_roundChart_eq_on_compact_interior",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:matching-cutoff-original-compact-interior-entry-transformation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.exists_original_matchingCutoff_compactInteriorEntryMeasures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

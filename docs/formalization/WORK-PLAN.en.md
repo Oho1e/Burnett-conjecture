@@ -671,3 +671,7 @@ On actual preferred-chart overlaps the difference between the half-density weigh
 ## 56. Angular test pairings after a change of charts
 
 The transported target test pairing on the same original sequence and subsequence is represented by the source-chart matrix density. Relate the transported slots to the three coordinate slots of the actual target covariant gradient, prove compatibility of localized cutoffs and measures, and glue on the cosphere bundle. [Angular test pairings after a change of charts](../statements/moving-angular-density-pairings.en.md)
+
+## 57. Overlap matrix measures with matching transported cutoffs
+
+On the same subsequence with matching transported cutoffs, the ordered source and target entries obey the round chart transformation and three-slot Jacobian law on all weighted Borel sets. Compact interior windows admit the unweighted identity. Compare independently chosen local cutoffs and glue on the actual auxiliary cosphere bundle. [Overlap matrix measures with matching transported cutoffs](../statements/matching-cutoff-matrix-measures.en.md)

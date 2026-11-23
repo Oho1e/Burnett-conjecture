@@ -365,3 +365,4 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedConjugation
 import Burnett.Analysis.Microlocal.Overlap.IntegratedSymbolPairing
 import Burnett.Analysis.Microlocal.Overlap.OriginalTransportedAngularPairing
 import Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensityL2
+import Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures
