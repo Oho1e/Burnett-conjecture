@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `92001fe22de0b75dad5356d426e7d3a5c77f6af059faa4c946a4466f0da99605`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `b1b1b8b1c8d4674e7d6a564472483602910dcaed3762fbd64e0ed87f5fa84c2b`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: One common refinement now gives local positive matrix densities for the original volume-weighted gradients in the prescribed countable preferred charts, with all finite smooth separated tests. Apply the coordinate curl and actual vacuum Ricci rows to these same densities, then pass to auxiliary cospheres and identify the measures across charts.
+Next: The coordinate curl rows vanish on the same local density of the original weighted gradients, giving a positive semidefinite amplitude and both derivative factors. Apply the actual vacuum Ricci rows, then pass to auxiliary cospheres and identify the measures across charts.
 
 <a id="f06"></a>
 
@@ -679,7 +679,7 @@ Inputs:
 
 - The original admissible sequence; a relatively compact coordinate chart U and smooth compactly supported chi; z_n=chi*h_n extended by zero.
 - a_n is a smooth uniformly Lipschitz extension of the inverse components of g_n near supp chi. Final constants may depend on the family's first-order bounds. The extension is not a supplied bounded source.
-- Given common matrix pairings for the original weighted derivatives, both actual derivative slots of the projected cutoff field are identified. For supplied Ricci-kernel amplitude, symmetric background, and null-shell trace, the projection has off-cone vanishing, Lorenz polarization, and equality of the full physical measure. Extraction of the common witness and its global cross-chart identification remain to be connected.
+- The actual original gradient and projected mixed derivative pairings in the preferred charts use the same refinement and local trace measure. For supplied Ricci-kernel amplitude, symmetric background, and null-shell trace, the projection has off-cone vanishing, Lorenz polarization, and equality of the full physical measure. The actual vacuum Ricci kernel and cross-chart identification remain to be connected.
 - The fixed globally defined infrared-regularized multiplier has a physical derivative commutator formula on Schwartz fields and a bounded L² extension for every globally Lipschitz scalar coefficient. For any compatible smooth chart, the intrinsic assumptions give the coordinate vacuum, uniform convergence, and first-jet bounds used by this same whole-space source.
 
 Outputs:
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: For supplied original weighted gradient pairings, the two independent derivative slots of the same actual cutoff field now have the weighted projected pairings with both frequency factors times PAP*. In a preferred chart the actual volume half-density and the weighted cutoff derivative give the strong-error comparison. The common original subsequence now gives local trace measures. Use the same densities to obtain both frequency factors and the amplitude, then establish the global angular measure.
+Next: The prescribed countable preferred charts use the same refinement of the original sequence. The raw pairings and both actual projected derivative slots use the same trace measure in each chart, with the two frequency factors times PAP*. Use the vacuum Ricci kernel and cross-chart identification to obtain the global physical angular measure from this amplitude.
 
 <a id="v01"></a>
 

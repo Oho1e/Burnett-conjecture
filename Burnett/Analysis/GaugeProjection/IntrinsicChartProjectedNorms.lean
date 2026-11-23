@@ -16,7 +16,8 @@ open Burnett.Geometry.ManifoldMetric (Model)
 open Burnett.Geometry.ManifoldMetricTransition (coordinateBilinear)
 open scoped ContDiff Manifold NNReal Topology
 
-private theorem coordinate_opNorm_le (D : CoordinateSpace →L[ℝ] ℝ) (C : ℝ) (hC : 0 ≤ C)
+/-- A uniform bound on the four coordinate basis directions controls the operator norm. -/
+theorem coordinate_opNorm_le (D : CoordinateSpace →L[ℝ] ℝ) (C : ℝ) (hC : 0 ≤ C)
     (hD : ∀ b : Index, ‖D (EuclideanSpace.single b 1)‖ ≤ C) :
     ‖D‖ ≤ 4 * C := by
   apply D.opNorm_le_bound (by positivity)

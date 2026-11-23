@@ -355,3 +355,4 @@ import Burnett.Analysis.GaugeProjection.ProjectedDefectMixedPairings
 import Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings
 import Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient
 import Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits
+import Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings

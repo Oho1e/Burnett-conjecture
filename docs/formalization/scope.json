@@ -3518,6 +3518,51 @@
       "claim_id": "f05:original-rational-limits-measure-identification",
       "module": "Burnett.Analysis.Microlocal.OriginalRationalMeasureLimits",
       "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_originalVolume_measures_realizing_rational_limits"
+    },
+    {
+      "claim_id": "f05:principal-row-same-trace-kernel",
+      "module": "Burnett.Analysis.Microlocal.RowKernelDensity",
+      "declaration": "Burnett.Microlocal.RowKernelDensity.rowPrincipal_density_kernel_of_strong_zero"
+    },
+    {
+      "claim_id": "f05:positive-curl-covariance-factorization",
+      "module": "Burnett.Analysis.Microlocal.CurlCovariance",
+      "declaration": "Burnett.Microlocal.CurlDensity.positive_factorCovariance_of_curl_compression"
+    },
+    {
+      "claim_id": "f05:symmetric-physical-covariance-from-pairings",
+      "module": "Burnett.Analysis.Microlocal.ChartDensitySymmetry",
+      "declaration": "Burnett.Microlocal.FixedChartGeometricDensity.ae_chartPhysicalCovariance_symmetry_of_same_pairings"
+    },
+    {
+      "claim_id": "f05:original-volume-curl-kernel",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_curlRows_same_density"
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_round_covariance_factor"
+    },
+    {
+      "claim_id": "f05:original-volume-pairing-round-amplitude",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_pairing_tendsto_roundAmplitude"
+    },
+    {
+      "claim_id": "f05:original-volume-round-mixed-pairing-witness",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_round_mixedPairing_witness"
+    },
+    {
+      "claim_id": "p01:projected-pairings-from-volume-density",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
+      "declaration": "Burnett.P01.representsVolumeProjectedPairings_of_matrixDensity"
+    },
+    {
+      "claim_id": "p01:countable-original-volume-projected-mixed-pairings",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
+      "declaration": "Burnett.P01.exists_countable_originalVolume_projected_mixedPairings"
     }
   ],
   "inventory": [
@@ -17052,6 +17097,159 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_originalVolume_measures_realizing_rational_limits",
       "statement_record": "docs/statements/original-gradient-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:principal-row-same-trace-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 414
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.RowKernelDensity.rowPrincipal_density_kernel_of_strong_zero",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:positive-curl-covariance-factorization",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 421
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CurlDensity.positive_factorCovariance_of_curl_compression",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:symmetric-physical-covariance-from-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.FixedChartGeometricDensity.ae_chartPhysicalCovariance_symmetry_of_same_pairings",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-curl-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 414
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_curlRows_same_density",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 424
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_round_covariance_factor",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-pairing-round-amplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_pairing_tendsto_roundAmplitude",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-volume-round-mixed-pairing-witness",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_round_mixedPairing_witness",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:projected-pairings-from-volume-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.representsVolumeProjectedPairings_of_matrixDensity",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:countable-original-volume-projected-mixed-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.exists_countable_originalVolume_projected_mixedPairings",
+      "statement_record": "docs/statements/original-volume-curl-amplitudes.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

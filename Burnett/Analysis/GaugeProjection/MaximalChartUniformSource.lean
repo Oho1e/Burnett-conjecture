@@ -11,7 +11,6 @@ namespace Burnett.P01
 
 open Filter Set Burnett.RicciSymbol
 open Burnett.Geometry ConnectionDifference CurvatureDifference MaximalChart ManifoldMetric
-open private coordinate_opNorm_le from Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms
 open scoped Manifold ContDiff Topology NNReal
 
 variable {M : Type*} [TopologicalSpace M] [ChartedSpace CoordinateSpace M] [IsManifold Model ∞ M]
