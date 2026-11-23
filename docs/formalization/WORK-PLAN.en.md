@@ -655,3 +655,7 @@ For supplied original weighted gradient pairings, the two independent derivative
 ## 52. Local positive matrix measures for the original metric gradients
 
 One common refinement now gives local positive matrix densities for the original volume-weighted gradients in the prescribed countable preferred charts, with all finite smooth separated tests. Apply the coordinate curl and actual vacuum Ricci rows to these same densities, then pass to auxiliary cospheres and identify the measures across charts. [Local positive matrix measures for the original metric gradients](../statements/original-gradient-matrix-measures.en.md)
+
+## 53. Curl factorization and projected pairings of the original metric gradients
+
+The coordinate curl rows vanish on the same local density of the original weighted gradients, giving a positive semidefinite amplitude and both derivative factors. Apply the actual vacuum Ricci rows, then pass to auxiliary cospheres and identify the measures across charts. [Curl factorization and projected pairings of the original metric gradients](../statements/original-volume-curl-amplitudes.en.md)

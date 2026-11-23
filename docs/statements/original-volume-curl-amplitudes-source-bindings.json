@@ -1,0 +1,205 @@
+{
+  "slices": [
+    "F05",
+    "P01"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "5570bad0f155344d4e7f8067fc88fc8de6dfb708",
+  "base_tree": "8e460e5db8a49a2a74e9dce738d721ae934e4f81",
+  "sources": {
+    "Burnett/Analysis/Microlocal/ChartDensitySymmetry.lean": {
+      "module": "Burnett.Analysis.Microlocal.ChartDensitySymmetry",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/ChartDensitySymmetry.lean",
+      "prepared_source_sha256": "3f21296ddd0f5db1ce523b6098d85d6a63b7b152194800188bac3e9653b7628f",
+      "sha256": "3f21296ddd0f5db1ce523b6098d85d6a63b7b152194800188bac3e9653b7628f",
+      "receipt_sha256": "15b5db479f35eaa5509e23fbfe56f247eb4de8a325950d382a6a2dadee100100",
+      "imports": [
+        "Burnett.Analysis.Microlocal.RoundChartCovariance",
+        "Burnett.Analysis.Microlocal.RowKernelDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CoordinateCurlRows.lean": {
+      "module": "Burnett.Analysis.Microlocal.CoordinateCurlRows",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/CoordinateCurlRows.lean",
+      "prepared_source_sha256": "ed7c68a72757b05f55f1e6e916f4baeabff9f8072138f2ac10e7194921d70d8f",
+      "sha256": "ed7c68a72757b05f55f1e6e916f4baeabff9f8072138f2ac10e7194921d70d8f",
+      "receipt_sha256": "58390a679daadfc5b8a507e8b8c2cf444a34c04a0e0fb57c6b504dba80f4d8be",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ChartDensitySymmetry",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/CurlCovariance.lean": {
+      "module": "Burnett.Analysis.Microlocal.CurlCovariance",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/CurlCovariance.lean",
+      "prepared_source_sha256": "6e9e58357810b38fe744703c8db1827a31d1f73ad28d02810ee98473caf79473",
+      "sha256": "6e9e58357810b38fe744703c8db1827a31d1f73ad28d02810ee98473caf79473",
+      "receipt_sha256": "c59ea19d43013a29b74b29a730554d5d4bb4ec576f6f231d9f21398e91b333eb",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactChartInput",
+        "Burnett.Analysis.Microlocal.PositiveKernel",
+        "Burnett.Algebra.RicciSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/OriginalVolumeCurlAmplitudes.lean": {
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/OriginalVolumeCurlAmplitudes.lean",
+      "prepared_source_sha256": "a02edbeca3568cd9be70aac32d9f700e9b5bf3eafab3c105937b7524358b910e",
+      "sha256": "d9daac059bcdb389ce1006746f928d1e24d024cc0194d7e5f680baa0d7df74a2",
+      "receipt_sha256": "4328716cbc79b298b7cdc9cc159beca04f9e7f7bc4e14cfef4526335eec24f26",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CoordinateCurlRows"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/RoundChartCovariance.lean": {
+      "module": "Burnett.Analysis.Microlocal.RoundChartCovariance",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/RoundChartCovariance.lean",
+      "prepared_source_sha256": "83c4c99ede8b71eaeb03ed044abbacd3dbb03283189f7b593ce9a496a27b05b5",
+      "sha256": "83c4c99ede8b71eaeb03ed044abbacd3dbb03283189f7b593ce9a496a27b05b5",
+      "receipt_sha256": "fc6a516da5da4b1b239e6b7f21c7f60bee64f7c45ee562d9d2b750f7a331745e",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CurlCovariance",
+        "Burnett.Analysis.Microlocal.CompactJetMatrixDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/RowKernelDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.RowKernelDensity",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/RowKernelDensity.lean",
+      "prepared_source_sha256": "e8676834ae9e11ed25a203974cd6d46a2522b585803cb063ef16003f59e758e6",
+      "sha256": "e8676834ae9e11ed25a203974cd6d46a2522b585803cb063ef16003f59e758e6",
+      "receipt_sha256": "36bd9cc82101a2fa636c73ea06d388768b661250bccd4472d466a9bfdf021102",
+      "imports": [
+        "Burnett.Analysis.Microlocal.SeparableCrossPairings",
+        "Burnett.Analysis.Microlocal.OriginalVolumeMatrixMeasure",
+        "Burnett.Analysis.Microlocal.PositiveKernel"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/SeparableCrossPairings.lean": {
+      "module": "Burnett.Analysis.Microlocal.SeparableCrossPairings",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/Microlocal/SeparableCrossPairings.lean",
+      "prepared_source_sha256": "a02514682fe2cc5c902026dfdd40018cff6c8c40b42eda3e85d8f54775b90f41",
+      "sha256": "a02514682fe2cc5c902026dfdd40018cff6c8c40b42eda3e85d8f54775b90f41",
+      "receipt_sha256": "66520e67dd22fdef64ad16d039943f6bfa038e6e35ae803fe00cf13eca5506f8",
+      "imports": [
+        "Burnett.Analysis.Microlocal.FixedSubsequenceSeparableLimits"
+      ]
+    },
+    "Burnett/Analysis/GaugeProjection/OriginalVolumeProjectedPairings.lean": {
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
+      "source": "pr58-original-volume-curl-factorization-prep/source/Burnett/Analysis/GaugeProjection/OriginalVolumeProjectedPairings.lean",
+      "prepared_source_sha256": "a5a80b03a93a172297a286fb28461206c789ebf833b1dd11774c1c62440573ca",
+      "sha256": "075662d75cea2d720887b41861e81453e3d2eb132a837f0d9f8adb7d6bbcecd2",
+      "receipt_sha256": "a37394955653b056aafce53c1943e77c8fc120547f604010bf93aa1267639dd3",
+      "imports": [
+        "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+        "Burnett.Analysis.Microlocal.OriginalVolumePairingLimits",
+        "Burnett.Analysis.GaugeProjection.IntrinsicWeightedGradient",
+        "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectMixedMetricPairings"
+      ]
+    }
+  },
+  "shared_dependencies": {
+    "Burnett/Analysis/GaugeProjection/IntrinsicChartProjectedNorms.lean": {
+      "old_sha256": "8760a8a39f3e8debe1c66f2ed43c74729bd884c29befaa497f47e346e870365e",
+      "sha256": "855fc040042c120406c8df72c02b9069b276223431bed3590e5dfa525e96febf"
+    },
+    "Burnett/Analysis/GaugeProjection/MaximalChartUniformSource.lean": {
+      "old_sha256": "87cefcfcc8efd9ae83daec990d7a1f26bf6078a0e7c0290c685d228d1fd50e06",
+      "sha256": "accacf16f30af275d24e5bc41fba17bb8c6cbec30274d6c8088537abd878ef5f"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:principal-row-same-trace-kernel",
+      "module": "Burnett.Analysis.Microlocal.RowKernelDensity",
+      "declaration": "Burnett.Microlocal.RowKernelDensity.rowPrincipal_density_kernel_of_strong_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 414
+      }
+    },
+    {
+      "claim_id": "f05:positive-curl-covariance-factorization",
+      "module": "Burnett.Analysis.Microlocal.CurlCovariance",
+      "declaration": "Burnett.Microlocal.CurlDensity.positive_factorCovariance_of_curl_compression",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 421
+      }
+    },
+    {
+      "claim_id": "f05:symmetric-physical-covariance-from-pairings",
+      "module": "Burnett.Analysis.Microlocal.ChartDensitySymmetry",
+      "declaration": "Burnett.Microlocal.FixedChartGeometricDensity.ae_chartPhysicalCovariance_symmetry_of_same_pairings",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-curl-kernel",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_curlRows_same_density",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 414
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-round-amplitude",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.ae_originalVolume_round_covariance_factor",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-pairing-round-amplitude",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_pairing_tendsto_roundAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-volume-round-mixed-pairing-witness",
+      "module": "Burnett.Analysis.Microlocal.OriginalVolumeCurlAmplitudes",
+      "declaration": "Burnett.F05.ActualCoordinateCurlDensity.originalVolume_round_mixedPairing_witness",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "p01:projected-pairings-from-volume-density",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
+      "declaration": "Burnett.P01.representsVolumeProjectedPairings_of_matrixDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    },
+    {
+      "claim_id": "p01:countable-original-volume-projected-mixed-pairings",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalVolumeProjectedPairings",
+      "declaration": "Burnett.P01.exists_countable_originalVolume_projected_mixedPairings",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1703,
+        "endline": 1709
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
