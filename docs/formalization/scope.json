@@ -4753,6 +4753,176 @@
       "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_changeAuxiliary"
+    },
+    {
+      "claim_id": "f05:fixedvolumegradient-weak-and-uniform-l2",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartWeakInputs",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeGradient_weak_and_uniform_L2"
+    },
+    {
+      "claim_id": "f05:overlap-halfdensitykernel-changevariables",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierConjugation",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.overlap_halfDensityKernel_changeVariables"
+    },
+    {
+      "claim_id": "f05:frozenchartfrequency-inverse-adjoint",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierConjugation",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.frozenChartFrequency_inverse_adjoint"
+    },
+    {
+      "claim_id": "f05:overlap-partialangularfourier-difference-sum-actions",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierConjugation",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.overlap_partialAngularFourier_difference_sum_actions"
+    },
+    {
+      "claim_id": "f05:exists-localizednormalizedangulardifference-strongzero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierLimit",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_localizedNormalizedAngularDifference_strongZero"
+    },
+    {
+      "claim_id": "f05:tendsto-receivingseparablepairing-sub-sourceangularaction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartTwoWindowComparison",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.tendsto_receivingSeparablePairing_sub_sourceAngularAction"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartOriginalClassicalWindow",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalPairing_on_compact"
+    },
+    {
+      "claim_id": "f05:exists-receiving-square-partition-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRepresentedSquarePartition",
+      "declaration": "Burnett.Microlocal.Overlap.exists_receiving_square_partition_on_sameSubsequence"
+    },
+    {
+      "claim_id": "f05:tendsto-receivingclassicalpairing-of-originalplateaulimits",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingClassicalCoverAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_receivingClassicalPairing_of_originalPlateauLimits"
+    },
+    {
+      "claim_id": "f05:atlaschartunitcovector-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasAngularPhaseEncoding",
+      "declaration": "Burnett.Microlocal.Overlap.atlasChartUnitCovector_change"
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-measurable",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasAngularPhaseEncoding",
+      "declaration": "Burnett.Microlocal.Overlap.atlasAngularPhaseCode_measurable"
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasAngularPhaseEncoding",
+      "declaration": "Burnett.Microlocal.Overlap.atlasOrderedJetEntry_change"
+    },
+    {
+      "claim_id": "f05:original-receivingatlasjetentry-angularmeasure-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalReceivingChartJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_receivingAtlasJetEntry_angularMeasure_on_compact"
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-receivingatlasjet-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalReceivingChartJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_integrable_receivingAtlasJet_on_compact"
+    },
+    {
+      "claim_id": "f05:fixedperturbation-jet-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartRawJet",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedPerturbation_jet_change"
+    },
+    {
+      "claim_id": "f05:bothcharts-rawjet-error-uniform",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartRawJet",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.bothCharts_rawJet_error_uniform"
+    },
+    {
+      "claim_id": "f05:integral-transporthalfdensity-pairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartHalfDensity",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.integral_transportHalfDensity_pairing"
+    },
+    {
+      "claim_id": "f05:exists-receivingsourcecutoffs-of-originalvolume",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSourceReplacement",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.exists_receivingSourceCutoffs_of_originalVolume"
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-insertjetcovectors",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetAmplitudeTensor",
+      "declaration": "Burnett.Microlocal.Overlap.jetAmplitudeComponents_insertJetCovectors"
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-possemidef",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetAmplitudeTensor",
+      "declaration": "Burnett.Microlocal.Overlap.jetAmplitudeComponents_posSemidef"
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-eq-intrinsicjetcomponents",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetAmplitudeTensor",
+      "declaration": "Burnett.Microlocal.Overlap.atlasOrderedJetEntry_eq_intrinsicJetComponents"
+    },
+    {
+      "claim_id": "f05:original-intrinsicjetamplitude-positive-and-integrable",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetAmplitudeMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsicJetAmplitude_positive_and_integrable"
+    },
+    {
+      "claim_id": "f05:unitcospherecovectorgram-norm",
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnitCosphereJetGram",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphereCovectorGram_norm"
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-gram",
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnitCosphereJetGram",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_gradientEmbedding_gram"
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-adjoint-mul",
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnitCosphereJetGram",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_gradientEmbedding_adjoint_mul"
+    },
+    {
+      "claim_id": "f05:unitcosphere-jetcovariance-operator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnitCosphereJetGram",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_jetCovariance_operator"
+    },
+    {
+      "claim_id": "f05:tendsto-receivingpaperpairing-of-weight",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingPaperConvention",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_receivingPaperPairing_of_weight"
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-symbol-eq-unitcovector",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingPaperConvention",
+      "declaration": "Burnett.Microlocal.Overlap.atlasAngularPhaseCode_symbol_eq_unitCovector"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-globalamplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingClassicalPairings",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalPairing_globalAmplitude"
+    },
+    {
+      "claim_id": "f05:hasoriginalreceivingpaperpairings-of-intrinsicamplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingClassicalPairings",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingPaperPairings_of_intrinsicAmplitude"
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-receivingpairings-and-einsteinmoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingEinsteinAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_receivingPairings_and_EinsteinMoments"
+    },
+    {
+      "claim_id": "f05:atlasjetcovarianceoperator-in-fiber",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetCovarianceOperator_in_fiber"
+    },
+    {
+      "claim_id": "f05:integrable-atlasjetcovarianceoperator-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries",
+      "declaration": "Burnett.Microlocal.Overlap.integrable_atlasJetCovarianceOperator_on_compact"
+    },
+    {
+      "claim_id": "f05:original-atlasjetcovarianceoperator-matrixmeasure-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_on_compact"
     }
   ],
   "inventory": [
@@ -22486,6 +22656,584 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_changeAuxiliary",
       "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:fixedvolumegradient-weak-and-uniform-l2",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeGradient_weak_and_uniform_L2",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-halfdensitykernel-changevariables",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.overlap_halfDensityKernel_changeVariables",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:frozenchartfrequency-inverse-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.frozenChartFrequency_inverse_adjoint",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:overlap-partialangularfourier-difference-sum-actions",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.overlap_partialAngularFourier_difference_sum_actions",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:exists-localizednormalizedangulardifference-strongzero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_localizedNormalizedAngularDifference_strongZero",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-receivingseparablepairing-sub-sourceangularaction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.tendsto_receivingSeparablePairing_sub_sourceAngularAction",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalPairing_on_compact",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:exists-receiving-square-partition-on-samesubsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_receiving_square_partition_on_sameSubsequence",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-receivingclassicalpairing-of-originalplateaulimits",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 392,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_receivingClassicalPairing_of_originalPlateauLimits",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlaschartunitcovector-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasChartUnitCovector_change",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-measurable",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasAngularPhaseCode_measurable",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasOrderedJetEntry_change",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-receivingatlasjetentry-angularmeasure-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_receivingAtlasJetEntry_angularMeasure_on_compact",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-receivingatlasjet-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_integrable_receivingAtlasJet_on_compact",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:fixedperturbation-jet-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedPerturbation_jet_change",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:bothcharts-rawjet-error-uniform",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.bothCharts_rawJet_error_uniform",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:integral-transporthalfdensity-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.integral_transportHalfDensity_pairing",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:exists-receivingsourcecutoffs-of-originalvolume",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.exists_receivingSourceCutoffs_of_originalVolume",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-insertjetcovectors",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.jetAmplitudeComponents_insertJetCovectors",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-possemidef",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.jetAmplitudeComponents_posSemidef",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-eq-intrinsicjetcomponents",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasOrderedJetEntry_eq_intrinsicJetComponents",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-intrinsicjetamplitude-positive-and-integrable",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsicJetAmplitude_positive_and_integrable",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:unitcospherecovectorgram-norm",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphereCovectorGram_norm",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-gram",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_gradientEmbedding_gram",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-adjoint-mul",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_gradientEmbedding_adjoint_mul",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:unitcosphere-jetcovariance-operator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.unitCosphere_jetCovariance_operator",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-receivingpaperpairing-of-weight",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_receivingPaperPairing_of_weight",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-symbol-eq-unitcovector",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasAngularPhaseCode_symbol_eq_unitCovector",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-globalamplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalPairing_globalAmplitude",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:hasoriginalreceivingpaperpairings-of-intrinsicamplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingPaperPairings_of_intrinsicAmplitude",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-receivingpairings-and-einsteinmoments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_receivingPairings_and_EinsteinMoments",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:atlasjetcovarianceoperator-in-fiber",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetCovarianceOperator_in_fiber",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:integrable-atlasjetcovarianceoperator-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.integrable_atlasJetCovarianceOperator_on_compact",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-atlasjetcovarianceoperator-matrixmeasure-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_on_compact",
+      "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

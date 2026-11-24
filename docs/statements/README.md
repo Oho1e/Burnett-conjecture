@@ -84,3 +84,5 @@
 - [全局 Einstein 矩与辅助余球面换截面](global-cosphere-einstein-moments.zh-CN.md)
 
 - [全局内蕴振幅协方差与原物理测度](global-intrinsic-amplitude-covariance.zh-CN.md)
+
+- [任意接收图中的原梯度协方差与经典算子配对](receiving-chart-jet-covariance.zh-CN.md)

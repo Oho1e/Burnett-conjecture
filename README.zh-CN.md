@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 944 个目标、1009 个库存项和 974 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 的任意接收图原算子配对、论文二次定理装配和输运定理仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 978 个目标、1043 个库存项和 1013 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 已在任意相容图上实现有局部经典表示的原算子配对，并构造紧图窗上的梯度协方差矩阵值测度。完整测试类、全局束值表示、论文二次定理验收和输运仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](docs/statements/angular-kernel-transforms.zh-CN.md)
 
@@ -143,3 +143,5 @@ P01 的有限维规范补投影、固定红外正则化及带权零阶符号估�
 从任意原真空子列的一次严格细化所得的同一单位余球丛测度，满足全部紧支撑光滑对称张量的 Einstein 矩、逐点标量曲率为零及任意相容固定光滑图的标量换图律。同一原子列和逐图见证的物理测度在两个辅助度量间满足范数平方加权推前，且保持全部二次张量测试的矩。接续共同控制测度上的全局复振幅协方差、原始角向缺陷表示和振幅换截面。 [全局 Einstein 矩与辅助余球面换截面](docs/statements/global-cosphere-einstein-moments.zh-CN.md)
 
 [全局内蕴振幅协方差与原物理测度](docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md)
+
+[任意接收图中的原梯度协方差与经典算子配对](docs/statements/receiving-chart-jet-covariance.zh-CN.md)

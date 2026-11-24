@@ -383,3 +383,6 @@ import Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeBorelChange
 import Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair
 import Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude
 import Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover
+
+import Burnett.Analysis.Microlocal.Overlap.OriginalReceivingEinsteinAssembly
+import Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries
