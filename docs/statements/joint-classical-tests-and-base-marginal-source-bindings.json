@@ -1,0 +1,362 @@
+{
+  "slices": [
+    "F05",
+    "F08"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "5d51f4983a12ea6919eda16095c1ef6a195c7a8e",
+  "base_tree": "cc89512679a619c698b8d5f6d7ca5f9bb5df169d",
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularAnnularFamily.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularAnnularFamily",
+      "sha256": "85e811311f7072582ea568a21fea67b6b82d61feb63bd883d6247ff242c7de8b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierLimit",
+        "Mathlib.Topology.UniformSpace.UniformConvergence"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularShellDecay.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularShellDecay",
+      "sha256": "2de41a9fda52b3b70cc70db9003957fb59d9c9711fae9ccf564eb7a30414df29",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularAnnularFamily",
+        "Burnett.Analysis.Microlocal.Overlap.DyadicKernelRemainder"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularOverlapEnvelope.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularOverlapEnvelope",
+      "sha256": "ff614733f35f3a3da226766720ac433cf3aae0fd98d70ca02faee34ddcd7c3fb",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularShellDecay"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularCompactOverlap.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularCompactOverlap",
+      "sha256": "7429334ca710bc6a22bd5230d5c018ab656623a3e07c7a0a50be67b45f3077cc",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularOverlapEnvelope",
+        "Burnett.Analysis.Microlocal.Overlap.CompactWindowKernel",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartHalfDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularMovingPrincipal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularMovingPrincipal",
+      "sha256": "3ed49d2e6531d75eb2470c552ee38e559a38a3d326d12747d68b7654715c0dd3",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartMovedSymbols"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointAngularTransportedOperator.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularTransportedOperator",
+      "sha256": "b00bede43c7e0e5ae1a201d336c92d9cff71a2aa6439bc04fff558cb6713e9fe",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularCompactOverlap",
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularMovingPrincipal",
+        "Burnett.Analysis.Microlocal.Overlap.LeftActionPairingBounds"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingHalfDensityOperator.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingHalfDensityOperator",
+      "sha256": "5c4c08fa60e67ff375889305e14f22aff73a3523610b2f57f0225af2894f5a62",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSourceReplacement"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingJointClassicalTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointClassicalTransport",
+      "sha256": "7b7b1cd9b993f17c4d4815b640ecde9f3ff486de6fef4acbdea7359d4bf5985c",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.JointAngularTransportedOperator",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingHalfDensityOperator",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingSquareLocalization"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingJointFullSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol",
+      "sha256": "4c7dbafab618233d8286858c109d0f2c408abd5c6217f22102268f49927a6dd6",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJointClassicalTransport",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalReceivingLocalClassicalAssembly.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly",
+      "sha256": "d011203b23e31d92db53baf50979d4d71ca2dfb92d3d1d3d4946ebf7a71a72cb",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicBaseEnergy.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+      "sha256": "99d72035e1b700720cb5e5c0d46f1dee099e78e31ee543f1bb84612d40dfe42f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicBaseMarginal.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal",
+      "sha256": "25fea45cb3e195df17654495332fac006e72e3f6374537a5d37c327f414f9d43",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/CompactTargetDisintegration.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.CompactTargetDisintegration",
+      "sha256": "4c81ce457e0bf86d919f6cd0cf9d08ba5ff355268806533746e8a57195fd2652",
+      "imports": [
+        "Burnett.Analysis.FiberDisintegration.Weighted",
+        "Mathlib.Topology.Metrizable.Urysohn"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicAngularDisintegration.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularDisintegration",
+      "sha256": "025502ea620e2721ffbbcee026061c2a81de9a364011a15bd223906b05dec80e",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.CompactTargetDisintegration",
+        "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicSmoothDensityTests.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicSmoothDensityTests",
+      "sha256": "2a56d7d8be18a55428e459d8561d584e232377df16705add4826e9278ec2a2e1",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicAngularTestedMoments.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularTestedMoments",
+      "sha256": "a9a2b0b7f2e14b5331ef13bc7465b367db7e3793b5013ae86e567fb4ce180535",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicAngularDisintegration",
+        "Burnett.Analysis.BaseMarginal.IntrinsicSmoothDensityTests"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicFrameTensorTests.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicFrameTensorTests",
+      "sha256": "c6c7e098bf379f60b2825d92f9047d88626d6ed4760ff291d880d1d14cae56d9",
+      "imports": [
+        "Burnett.Geometry.ChartVectorField",
+        "Burnett.Geometry.ContravariantTensor",
+        "Mathlib.Geometry.Manifold.VectorBundle.SmoothSection"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicAngularFrameMoments.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularFrameMoments",
+      "sha256": "d02e6f590a9bbe96c8b09be5181f3c22804feb89f4957eb0fe2bacdfb5fc330a",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicAngularTestedMoments",
+        "Burnett.Analysis.BaseMarginal.IntrinsicFrameTensorTests"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicAngularPointwiseMoments.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments",
+      "sha256": "6324bc517bf490764c435227541c5f4bbcadaa6dd1a60dfe458ae86d0a738783",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicAngularFrameMoments",
+        "Burnett.Geometry.SmoothTangentValueExtension"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/OriginalEinsteinSymmetry.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.OriginalEinsteinSymmetry",
+      "sha256": "7586e07c825b85fa95e1c2ed5ba11c69d601fb7985797ac5fd51944bbd55e4e2",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.SmoothTests",
+        "Burnett.Analysis.ScalarCurvatureFromMoments",
+        "Burnett.Geometry.AuxiliaryAdmissibility"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicVacuumMarginal.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+      "sha256": "e53d89f3f95356f4277126e6820c5df7e493fb0ed98bbce4c348533aa15c3199",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal"
+      ]
+    },
+    "Burnett/Analysis/BaseMarginal/OriginalBaseMarginalPointwiseAssembly.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly",
+      "sha256": "73a00f98e73922132316e0f5ed20386968abdc82cff8f7b869502fde14ff5b92",
+      "imports": [
+        "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments",
+        "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+        "Burnett.Analysis.BaseMarginal.OriginalEinsteinSymmetry",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:shellKernel-decay-bounds-uniform-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularShellDecay",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.shellKernel_decay_bounds_uniform_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 405
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-compact-localizedJointAngularDifference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularCompactOverlap",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedJointAngularDifference",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointPrincipalOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularMovingPrincipal",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointPrincipalOperator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-classical-transportedJointAngularOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularTransportedOperator",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedJointAngularOperator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingHalfDensityOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingHalfDensityOperator",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingHalfDensityOperator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-representation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointClassicalTransport",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_representation",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-targetLocalSymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_targetLocalSymbol",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:hasOriginalReceivingLocalClassicalPairings-of-intrinsicAmplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingLocalClassicalPairings_of_intrinsicAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-symmetricJetMeasure-localClassicalPairings-and-EinsteinMoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_localClassicalPairings_and_EinsteinMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:contMDiff-auxiliaryEinsteinDensity",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.contMDiff_auxiliaryEinsteinDensity",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-nonneg-of-moments",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_nonneg_of_moments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-baseMarginal",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_baseMarginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-original-angularDisintegration",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularDisintegration",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_original_angularDisintegration",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 502
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:ae-intrinsicEinstein-eq-angularFiberMoment",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.ae_intrinsicEinstein_eq_angularFiberMoment",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 499
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMarginal-absolutelyContinuous",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMarginal_absolutelyContinuous",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 503,
+        "endline": 505
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMeasure-zero-over-vacuumOpen",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMeasure_zero_over_vacuumOpen",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 503,
+        "endline": 505
+      }
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-baseMarginal-and-angularFiberMoments",
+      "module": "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_originalVacuum_baseMarginal_and_angularFiberMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 488,
+        "endline": 506
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

@@ -392,3 +392,7 @@ import Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator
 import Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly
 import Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl
 import Burnett.Analysis.Microlocal.Overlap.TransportedSeparableClassical
+
+import Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly
+import Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly
+import Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol

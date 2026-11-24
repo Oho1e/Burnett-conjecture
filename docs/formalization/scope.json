@@ -5118,6 +5118,91 @@
       "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
       "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
       "declaration": "Burnett.Microlocal.Overlap.original_receiving_geometricCurl_kernel"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:shellKernel-decay-bounds-uniform-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularShellDecay",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.shellKernel_decay_bounds_uniform_on_compact"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-compact-localizedJointAngularDifference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularCompactOverlap",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedJointAngularDifference"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointPrincipalOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularMovingPrincipal",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointPrincipalOperator"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-classical-transportedJointAngularOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointAngularTransportedOperator",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedJointAngularOperator"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingHalfDensityOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingHalfDensityOperator",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingHalfDensityOperator"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-representation",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointClassicalTransport",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_representation"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-targetLocalSymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_targetLocalSymbol"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:hasOriginalReceivingLocalClassicalPairings-of-intrinsicAmplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingLocalClassicalPairings_of_intrinsicAmplitude"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-symmetricJetMeasure-localClassicalPairings-and-EinsteinMoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_localClassicalPairings_and_EinsteinMoments"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:contMDiff-auxiliaryEinsteinDensity",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.contMDiff_auxiliaryEinsteinDensity"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-nonneg-of-moments",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_nonneg_of_moments"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-baseMarginal",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_baseMarginal"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-original-angularDisintegration",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularDisintegration",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_original_angularDisintegration"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:ae-intrinsicEinstein-eq-angularFiberMoment",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.ae_intrinsicEinstein_eq_angularFiberMoment"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMarginal-absolutelyContinuous",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMarginal_absolutelyContinuous"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMeasure-zero-over-vacuumOpen",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMeasure_zero_over_vacuumOpen"
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-baseMarginal-and-angularFiberMoments",
+      "module": "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_originalVacuum_baseMarginal_and_angularFiberMoments"
     }
   ],
   "inventory": [
@@ -24092,6 +24177,295 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:shellKernel-decay-bounds-uniform-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 405
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.shellKernel_decay_bounds_uniform_on_compact",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-compact-localizedJointAngularDifference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedJointAngularDifference",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointPrincipalOperator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointPrincipalOperator",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-classical-transportedJointAngularOperator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedJointAngularOperator",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingHalfDensityOperator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingHalfDensityOperator",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-representation",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_representation",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-targetLocalSymbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_targetLocalSymbol",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:hasOriginalReceivingLocalClassicalPairings-of-intrinsicAmplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingLocalClassicalPairings_of_intrinsicAmplitude",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-symmetricJetMeasure-localClassicalPairings-and-EinsteinMoments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_localClassicalPairings_and_EinsteinMoments",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:contMDiff-auxiliaryEinsteinDensity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.contMDiff_auxiliaryEinsteinDensity",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-nonneg-of-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_nonneg_of_moments",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-baseMarginal",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 489,
+        "endline": 493
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_baseMarginal",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-original-angularDisintegration",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 502
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_original_angularDisintegration",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:ae-intrinsicEinstein-eq-angularFiberMoment",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 494,
+        "endline": 499
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.ae_intrinsicEinstein_eq_angularFiberMoment",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMarginal-absolutelyContinuous",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 503,
+        "endline": 505
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMarginal_absolutelyContinuous",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMeasure-zero-over-vacuumOpen",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 503,
+        "endline": 505
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.physicalMeasure_zero_over_vacuumOpen",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-baseMarginal-and-angularFiberMoments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:base-marginal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 488,
+        "endline": 506
+      },
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_originalVacuum_baseMarginal_and_angularFiberMoments",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

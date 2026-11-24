@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "已核验真实协变梯度的一阶定位、旋度及内蕴 Ricci 核，并在同一控制上实现对称 jet 测度。下一步完成一般联合位置频率符号的换图和完整几何测试类。",
+      "next_action": "已核验实际局部联合经典符号和紧余项的换图。同一细化给出全部此类局部算子配对。接续分离支撑核、束基换图及有限图册装配。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -274,7 +274,7 @@
         "张量矩恒等式为a.e.；e_r≥0由光滑性提升至处处，二者量词不能混同。",
         "可测纤维测度不等于光滑Vlasov密度。"
       ],
-      "next_action": "已有光滑测试的正性和测度确定、给定联合测度与边缘密度的局部加权分解，以及在局部界成立的可数覆盖上拼接角核和几乎处处唯一。给定角核的可测换坐标、非负加权和逐事件重构也已证明。下一步从同一 F07 物理测度构造实际基底边缘与角核并给出局部界和单位零壳集中，核对 Einstein 二阶矩与真空区消失。",
+      "next_action": "同一原物理测度给出基底边际、真单位零纤维上的解体、共同满测集上的全部切向量矩、固定测度唯一性和真空开区消失。按独立题面继续论文推论验收。",
       "supplementary_obligations": []
     },
     {
@@ -8104,6 +8104,108 @@
       "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
       "source_slices": [
         "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:shellKernel-decay-bounds-uniform-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-compact-localizedJointAngularDifference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointPrincipalOperator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-classical-transportedJointAngularOperator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingHalfDensityOperator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-representation",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-receivingJointClassicalOperator-of-targetLocalSymbol",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:hasOriginalReceivingLocalClassicalPairings-of-intrinsicAmplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-symmetricJetMeasure-localClassicalPairings-and-EinsteinMoments",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:contMDiff-auxiliaryEinsteinDensity",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-nonneg-of-moments",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:auxiliaryEinsteinDensity-baseMarginal",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-original-angularDisintegration",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:ae-intrinsicEinstein-eq-angularFiberMoment",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMarginal-absolutelyContinuous",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:physicalMeasure-zero-over-vacuumOpen",
+      "source_slices": [
+        "F08"
+      ]
+    },
+    {
+      "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-baseMarginal-and-angularFiberMoments",
+      "source_slices": [
+        "F08"
       ]
     }
   ],
