@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `9ebd87da6084f8a7e5695f68d4786c18547b87e222be31e6025c8736063cfbf6`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `a9446b98044fbed382ed787ceae035cd9679d17d89ac0f851d269fcdaed73426`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: On the same subsequence with matching transported cutoffs, the ordered source and target entries obey the round chart transformation and three-slot Jacobian law on all weighted Borel sets. Compact interior windows admit the unweighted identity. Compare independently chosen local cutoffs and glue on the actual auxiliary cosphere bundle.
+Next: On common local plateaus, the original matrix entries from independently chosen chart cutoffs on the same subsequence obey the Borel chart law with reciprocal cutoff squares, the actual phase change, and the three-slot Jacobian. Glue over the nonzero-cutoff domains and construct the global covariance on the actual auxiliary cosphere bundle.
 
 <a id="f06"></a>
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: Keep the F04–F06 outputs on the same σ and subsequence, and assemble Borel contraction, moment tests, and weighted pushforward between sections.
+Next: The physical contraction on the actual null shell obeys the chart law on common plateaus for bounded Borel tests of the same original chart measures. Keep the F04–F06 subsequence and amplitude, obtain positivity using the Ricci kernel, and continue with global gluing, the moment tests, and weighted transport between sections.
 
 <a id="f08"></a>
 

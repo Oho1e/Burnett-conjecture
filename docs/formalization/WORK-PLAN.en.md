@@ -675,3 +675,7 @@ The transported target test pairing on the same original sequence and subsequenc
 ## 57. Overlap matrix measures with matching transported cutoffs
 
 On the same subsequence with matching transported cutoffs, the ordered source and target entries obey the round chart transformation and three-slot Jacobian law on all weighted Borel sets. Compact interior windows admit the unweighted identity. Compare independently chosen local cutoffs and glue on the actual auxiliary cosphere bundle. [Overlap matrix measures with matching transported cutoffs](../statements/matching-cutoff-matrix-measures.en.md)
+
+## 58. Overlap matrix measures for independently chosen cutoffs
+
+On common local plateaus, the original matrix entries from independently chosen chart cutoffs on the same subsequence obey the Borel chart law with reciprocal cutoff squares, the actual phase change, and the three-slot Jacobian. Glue over the nonzero-cutoff domains and construct the global covariance on the actual auxiliary cosphere bundle. [Overlap matrix measures for independently chosen cutoffs](../statements/independent-cutoff-matrix-measures.en.md)

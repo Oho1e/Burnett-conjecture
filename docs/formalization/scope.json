@@ -4013,6 +4013,166 @@
       "claim_id": "f05:matching-cutoff-original-compact-interior-entry-transformation",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures",
       "declaration": "Burnett.Microlocal.Overlap.exists_original_matchingCutoff_compactInteriorEntryMeasures"
+    },
+    {
+      "claim_id": "f05:smooth-factor-for-nonzero-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_testFactor_of_tsupport_subset_nonzero"
+    },
+    {
+      "claim_id": "f05:common-cutoff-window",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_commonCutoffPatch"
+    },
+    {
+      "claim_id": "f05:countable-common-cutoff-cover",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonCutoffs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_commonCutoffPatches"
+    },
+    {
+      "claim_id": "f05:common-window-transported-matching-cutoffs",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.inputs_matching_cutoffs"
+    },
+    {
+      "claim_id": "f05:common-window-compact-target-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.isCompact_targetPlateau"
+    },
+    {
+      "claim_id": "f05:common-window-target-plateau-interior",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchInputs",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPlateau_subset_interior_image"
+    },
+    {
+      "claim_id": "f05:original-phase-inclusion-from-small-window",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientOverlap",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.continuous_sourcePhaseToOverlap"
+    },
+    {
+      "claim_id": "f05:common-window-actual-round-phase-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchPhase",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.roundChartWindowMap_inclusion"
+    },
+    {
+      "claim_id": "f05:original-gradient-cutoff-multiplication",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffGradient",
+      "declaration": "Burnett.Microlocal.Overlap.originalGradient_volumeWeightedL2_of_cutoff_mul"
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-density-tests",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffPairing",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_density_integral_eq"
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-continuous",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartBallInclusion",
+      "declaration": "Burnett.Microlocal.Overlap.continuous_sameChartBallInclusion"
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-borel-embedding",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SameChartPhaseEmbedding",
+      "declaration": "Burnett.Microlocal.Overlap.measurableEmbedding_sameChartBallInclusion"
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-terms-determine-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryExt",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_weighted_setIntegral_eq_of_terms"
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-borel-entries",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffEntryMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_entryMeasure_preimage_eq"
+    },
+    {
+      "claim_id": "f05:two-original-cutoffs-on-common-refinement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SubsequenceRefinement",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_common_refinement_originalVolume_pairDensities"
+    },
+    {
+      "claim_id": "f05:entry-identity-accepts-bounded-measurable-weights",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WeightedSetIntegralTransfer",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_mul_eq_of_setIntegral_preimage_eq"
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-cutoff-entry-on-image",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalCutoffWeightedEntry",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_setIntegral_on_image"
+    },
+    {
+      "claim_id": "f05:reciprocal-source-cutoff-on-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourceFactor_on_halfBall"
+    },
+    {
+      "claim_id": "f05:reciprocal-target-cutoff-on-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchCutoffRatios",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetFactor_on_targetPlateau"
+    },
+    {
+      "claim_id": "f05:reweighted-ambient-entries-on-common-patch",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPatchAmbientEntries",
+      "declaration": "Burnett.Microlocal.Overlap.exists_commonPatch_ambientEntryMeasures"
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-borel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.measurableSet_targetPhasePlateau"
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-set-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPhaseInclusion_image_preimage_inter_plateau"
+    },
+    {
+      "claim_id": "f05:ambient-source-plateau-preimage-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauPhaseSets",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourcePhaseInclusion_image_preimage_targetPlateau"
+    },
+    {
+      "claim_id": "f05:independent-cutoff-normalized-borel-entry-law",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientPlateauEntryMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.commonPatch_normalized_ambientEntryMeasures"
+    },
+    {
+      "claim_id": "f05:entry-measure-from-original-trace-density",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+      "declaration": "Burnett.Microlocal.Overlap.entryMeasure_eq_trace_withDensity"
+    },
+    {
+      "claim_id": "f05:normalized-entry-map-from-borel-identity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+      "declaration": "Burnett.Microlocal.Overlap.map_normalizedEntry_eq_target_of_borel"
+    },
+    {
+      "claim_id": "f05:normalized-entry-pushforward-for-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedEntryFromPlateau",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalized_roundJetMeasure"
+    },
+    {
+      "claim_id": "f07:normalized-entry-transport-with-borel-test",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedEntry_weightedSetIntegral"
+    },
+    {
+      "claim_id": "f07:physical-jet-contraction-coordinate-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_change"
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-shell-coordinate-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_roundTransition"
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-entry-transport",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedPhysicalPlateauTest"
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_physicalPlateauTest"
     }
   ],
   "inventory": [
@@ -19230,6 +19390,550 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.exists_original_matchingCutoff_compactInteriorEntryMeasures",
       "statement_record": "docs/statements/matching-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:smooth-factor-for-nonzero-cutoff",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_testFactor_of_tsupport_subset_nonzero",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:common-cutoff-window",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_commonCutoffPatch",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:countable-common-cutoff-cover",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.exists_countable_commonCutoffPatches",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:common-window-transported-matching-cutoffs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.inputs_matching_cutoffs",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:common-window-compact-target-plateau",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.isCompact_targetPlateau",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:common-window-target-plateau-interior",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPlateau_subset_interior_image",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-phase-inclusion-from-small-window",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.continuous_sourcePhaseToOverlap",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:common-window-actual-round-phase-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.roundChartWindowMap_inclusion",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-gradient-cutoff-multiplication",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalGradient_volumeWeightedL2_of_cutoff_mul",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-density-tests",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_density_integral_eq",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-continuous",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.continuous_sameChartBallInclusion",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-phase-inclusion-borel-embedding",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.measurableEmbedding_sameChartBallInclusion",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-terms-determine-entries",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_weighted_setIntegral_eq_of_terms",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-cutoff-square-on-borel-entries",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_entryMeasure_preimage_eq",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:two-original-cutoffs-on-common-refinement",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_common_refinement_originalVolume_pairDensities",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:entry-identity-accepts-bounded-measurable-weights",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.setIntegral_mul_eq_of_setIntegral_preimage_eq",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:same-chart-weighted-cutoff-entry-on-image",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.sameChart_cutoffMul_setIntegral_on_image",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:reciprocal-source-cutoff-on-plateau",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourceFactor_on_halfBall",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:reciprocal-target-cutoff-on-plateau",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetFactor_on_targetPlateau",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:reweighted-ambient-entries-on-common-patch",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_commonPatch_ambientEntryMeasures",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-borel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.measurableSet_targetPhasePlateau",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ambient-target-plateau-set-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.targetPhaseInclusion_image_preimage_inter_plateau",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ambient-source-plateau-preimage-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.OverlapWindows.CommonCutoffPatch.sourcePhaseInclusion_image_preimage_targetPlateau",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:independent-cutoff-normalized-borel-entry-law",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.commonPatch_normalized_ambientEntryMeasures",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:entry-measure-from-original-trace-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.entryMeasure_eq_trace_withDensity",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:normalized-entry-map-from-borel-identity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.map_normalizedEntry_eq_target_of_borel",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:normalized-entry-pushforward-for-original-witnesses",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalized_roundJetMeasure",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-entry-transport-with-borel-test",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedEntry_weightedSetIntegral",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:physical-jet-contraction-coordinate-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_change",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-shell-coordinate-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_roundTransition",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-entry-transport",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedPhysicalPlateauTest",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:physical-plateau-test-from-original-witnesses",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_physicalPlateauTest",
+      "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }
