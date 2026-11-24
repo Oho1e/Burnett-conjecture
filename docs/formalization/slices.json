@@ -56,7 +56,7 @@
         "全局双曲性仅用于全动量提升，不可加到全局μ存在或输运前提。",
         "规格依赖图中的前向引用并不表示本片已经证明主定理。"
       ],
-      "next_action": "已证明原真空序列的局部一致收敛与紧集一阶导数界在任意两个光滑辅助黎曼度量之间等价。已有由原局部辅度量导数界导出的真实图内导数界。已构造内禀曲率与 Ricci 迹，并将内禀真空换为同一序列在各优先图中的坐标真空。继续完成 Lorentz 符号与时间定向，将该桥接入局部 Ricci 结论和全局对象。",
+      "next_action": "原真空序列的局部一致收敛与紧集一阶导数界在任意两个光滑辅助黎曼度量之间等价，内禀真空已接入各首选图的坐标真空。已用实际切空间的 (-,+,+,+) 基落实极限度量的 Lorentz 签名，导出对称、非退化以及首选图逆度量的点态标架。继续接时间定向和全局对象。",
       "supplementary_obligations": [
         {
           "id": "local:admissibility-coordinate-invariance",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "同一对原图测度在公共小窗平台上的实际零壳物理缩并给出有界 Borel 复积分的换图等式。保留 F04–F06 的同一子列及振幅，以 Ricci 核约束得到正性，再接全局拼接、矩测试和截面的加权推前。",
+      "next_action": "同一原真空子列和各图原迹上的 Ricci 核已给出有限正物理测度。测度集中在实际辅助单位零壳，按各自原截断倒数平方重加权后的公共平台测度推至余切丛相同。接续全局拼接、Ricci 与 Einstein 矩、标量曲率为零和截面加权推前。",
       "supplementary_obligations": []
     },
     {
@@ -6968,6 +6968,120 @@
     },
     {
       "claim_id": "f07:physical-plateau-test-from-original-witnesses",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f02:signature-symmetry",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:signature-nondegeneracy",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f02:chart-inverse-lorentz-frame",
+      "source_slices": [
+        "F02"
+      ]
+    },
+    {
+      "claim_id": "f07:factored-physical-jet-density",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-kernel-amplitude-physical-positivity",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-symbol",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:physical-jet-to-auxiliary-amplitude",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ae-physical-positivity-on-shell",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:integrable-original-jet-contraction",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:finite-chart-physical-jet-measure",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:finite-cotangent-physical-jet-measure",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:cotangent-physical-measure-on-unit-null",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-density-positive",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-cotangent-physical-measure-borel",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:countable-physical-measures-one-subsequence",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:source-physical-measure-inverse-cutoff",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:target-physical-measure-inverse-cutoff",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-overlap",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-common-rays",
       "source_slices": [
         "F07"
       ]

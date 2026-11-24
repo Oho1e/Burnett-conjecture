@@ -367,3 +367,5 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalTransportedAngularPairing
 import Burnett.Analysis.Microlocal.Overlap.TransportedHalfDensityL2
 import Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures
 import Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer
+import Burnett.Analysis.Microlocal.Overlap.CountableOriginalPhysicalMeasures
+import Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap
