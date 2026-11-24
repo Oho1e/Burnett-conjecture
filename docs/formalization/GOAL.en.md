@@ -6,12 +6,12 @@ This file records the project's standing goal. The current mathematical status i
 
 Follow the work plan to formalize all formal results of the locked paper, the designated key unnumbered results, and their necessary dependencies in Lean. Apply trust policy A, independent reverse review and actual machine checks. Use the approved paper version, scope and standard.
 
-The user added the automatic continuation rule on November 17, 2026. Once a pull request is ready for human merge, proceed with the next independent pull request unless it requires the preceding one to land on `main`.
+The user added automatic continuation of independent work on November 17, 2026. On November 25, the user authorized the coordinator to squash-merge routine PRs that pass the agreed checks into `main` and continue to the next batch.
 
-- Save the reviewed revision and handoff evidence after the applicable independent review, full candidate verification, and CI and artifact checks for the combination with current `main`.
+- Record the reviewed version and evidence after the applicable independent mathematical review, local whole-project verification, and CI and artifact checks for the combination with current `main`. Use that reviewed head for the authorized squash merge.
 - Use the dependency graph to find ready work. Start independent work from an applicable verified `main` and continue implementation, review, and PR preparation. Create PRs for substantive changes.
 - If a successor requires a preceding merge, look for other independent work. Save the evidence and wait if nothing independent is executable, a mathematical decision requires the user, or a blocker is confirmed. Address routine compilation and cache problems as part of the work.
-- The user performs the final merge into `main`. Agent operations exclude merging into `main`, enabling auto-merge, force-pushing, deleting branches, and publishing verification tags.
+- The routine merge authorization covers verified PRs in this repository. Refer changes to manuscript hypotheses or conclusions, and any decision requiring author confirmation, to the user.
 - When `main` advances, verify its actual new revision and push CI. Refresh affected candidates, scope records, and combination checks. Reuse prior source reviews only where still applicable. The coordinator resolves conflicts in shared records.
 
 Historical handoffs may document a wait for human merge under earlier rules. Keep the goal open while its completion requirements are unmet. PR readiness, reviewer agreement, and green CI are each evidence of their own scope.

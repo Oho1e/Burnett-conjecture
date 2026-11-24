@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "同一原子列给出全局复振幅协方差、真实 Ricci 主符号核、任意相容图之间的 Borel 条目换图律，以及给定局部经典表示的原半密度双截断配对。接续任意接收图上的原经典算子配对及全局 F05 装配。",
+      "next_action": "任意相容图中的实际经典算子配对已覆盖具有已形式化局部表示的算子。原梯度协方差在紧图窗上给出矩阵值测度，实际辅助单位余向量插入满足 Gram 等距因子化。继续接入论文完整的几何算子类、束值测度的全局表示和一般一阶定位。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "同一全局振幅的零壳限制与四分之一实收缩给出已核验 Einstein 矩中的原物理测度，并实现同一见证下的振幅和物理测度换截面。接续全局原缺陷表示与论文二次定理装配。",
+      "next_action": "同一严格细化同时给出任意相容图中的原经典配对、原振幅、物理收缩、Einstein 矩和固定图自然性。继续核对完整 F05 输入并完成冻结论文二次定理的整体验收。",
       "supplementary_obligations": []
     },
     {
@@ -7666,6 +7666,210 @@
       "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
       "source_slices": [
         "F07"
+      ]
+    },
+    {
+      "claim_id": "f05:fixedvolumegradient-weak-and-uniform-l2",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-halfdensitykernel-changevariables",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:frozenchartfrequency-inverse-adjoint",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:overlap-partialangularfourier-difference-sum-actions",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:exists-localizednormalizedangulardifference-strongzero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-receivingseparablepairing-sub-sourceangularaction",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:exists-receiving-square-partition-on-samesubsequence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-receivingclassicalpairing-of-originalplateaulimits",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:atlaschartunitcovector-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-measurable",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-receivingatlasjetentry-angularmeasure-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-receivingatlasjet-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:fixedperturbation-jet-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:bothcharts-rawjet-error-uniform",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:integral-transporthalfdensity-pairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:exists-receivingsourcecutoffs-of-originalvolume",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-insertjetcovectors",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:jetamplitudecomponents-possemidef",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:atlasorderedjetentry-eq-intrinsicjetcomponents",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-intrinsicjetamplitude-positive-and-integrable",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:unitcospherecovectorgram-norm",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-gram",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:unitcosphere-gradientembedding-adjoint-mul",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:unitcosphere-jetcovariance-operator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-receivingpaperpairing-of-weight",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:atlasangularphasecode-symbol-eq-unitcovector",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-receivingclassicalpairing-globalamplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:hasoriginalreceivingpaperpairings-of-intrinsicamplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-receivingpairings-and-einsteinmoments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f05:atlasjetcovarianceoperator-in-fiber",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:integrable-atlasjetcovarianceoperator-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-atlasjetcovarianceoperator-matrixmeasure-on-compact",
+      "source_slices": [
+        "F05"
       ]
     }
   ],

@@ -84,3 +84,5 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Global Einstein moments and change of auxiliary unit section](global-cosphere-einstein-moments.en.md)
 
 - [Global intrinsic amplitude covariance and the original physical measure](global-intrinsic-amplitude-covariance.en.md)
+
+- [Represent the original jet covariance in arbitrary receiving charts](receiving-chart-jet-covariance.en.md)
