@@ -77,3 +77,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Angular test pairings after a change of charts](moving-angular-density-pairings.en.md)
 - [Overlap matrix measures with matching transported cutoffs](matching-cutoff-matrix-measures.en.md)
 - [Overlap matrix measures for independently chosen cutoffs](independent-cutoff-matrix-measures.en.md)
+- [Positive physical measures on original charts](local-positive-physical-measures.en.md)

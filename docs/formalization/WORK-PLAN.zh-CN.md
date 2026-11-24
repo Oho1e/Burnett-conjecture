@@ -684,3 +684,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 58. 独立截断下的重叠域矩阵测度
 
 两张原图在同一子列上各自选择截断时，已在公共小窗的平台上证明原矩阵条目的倒数平方重加权及实际相位、三槽 Jacobian 的 Borel 换图律。接续在非零截断域拼接，并构造实际辅助余球丛上的全局协方差。 [独立截断下的重叠域矩阵测度](../statements/independent-cutoff-matrix-measures.zh-CN.md)
+
+## 59. 原图上的正物理测度
+
+同一原真空子列和各图原迹上的 Ricci 核已给出有限正物理测度。测度集中在实际辅助单位零壳，按各自原截断倒数平方重加权后的公共平台测度推至余切丛相同。接续全局拼接、Ricci 与 Einstein 矩、标量曲率为零和截面加权推前。 [原图上的正物理测度](../statements/local-positive-physical-measures.zh-CN.md)

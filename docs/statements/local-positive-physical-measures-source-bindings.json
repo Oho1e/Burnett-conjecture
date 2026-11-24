@@ -1,0 +1,346 @@
+{
+  "slices": [
+    "F02",
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "fcba7c240d4117476e057a14e62279d482029657",
+  "base_tree": "a6c254494de092702d450ce23cabf4abb8266ed5",
+  "sources": {
+    "Burnett/Geometry/ManifoldLorentzSignature.lean": {
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "prepared_source": "pr64-frame-geometry-prep/source/Burnett/Geometry/ManifoldLorentzSignature.lean",
+      "prepared_source_sha256": "cb1ac75067e286a2cbf5b984d87f33957afe114ce5a9d201b427430e875f1a66",
+      "receipt_sha256": "57a64e35e8de21393ffe5d4c2ae39704c652b3915c7b4ebefce2b712a9b3b643",
+      "sha256": "cb1ac75067e286a2cbf5b984d87f33957afe114ce5a9d201b427430e875f1a66",
+      "imports": [
+        "Burnett.Geometry.BasisFrame",
+        "Burnett.Geometry.InverseField",
+        "Burnett.Geometry.ManifoldBilinear"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FactoredPhysicalJetDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+      "prepared_source": "pr64-auxiliary-contraction-prep/source/Burnett/Analysis/Microlocal/Overlap/FactoredPhysicalJetDensity.lean",
+      "prepared_source_sha256": "2cd87e1fd9d8982b0cfe5e3bc096517e17ab217afb4044439cd8587b6b9e958a",
+      "receipt_sha256": "5cc6761b80c1986e3ba4794b9441d87606634a30272d980cd5caa223b0cbb7f0",
+      "sha256": "239619b638ac9b830c33f8b29699e08ed4572bcffb9db0a59e4990d0fb18176b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartAuxiliaryPhysicalDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "prepared_source": "pr64-auxiliary-contraction-prep/source/Burnett/Analysis/Microlocal/Overlap/ChartAuxiliaryPhysicalDensity.lean",
+      "prepared_source_sha256": "15577661fa7326f69f4a015fde7f109204a2de1311b63551e0c67aa084104a8f",
+      "receipt_sha256": "3880b33d747a33cb724e55a1f8c1a9cc4ac5b5cfd10f79585eeadc6f5f34c1a6",
+      "sha256": "c8ee8d7fc9d884066bacabc82a228fc427e05684e956d9c96face4fcd1ef64ab",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+        "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauTests.lean",
+      "prepared_source_sha256": "55c4a98de364256e1d31f651ca1dd42644cd4933c911c577c25428085e3ac6aa",
+      "receipt_sha256": "29b1dcc2d7af707e8b59385ac4c1e010a54537f0fb00a9ac72dd9fe6e1c1c659",
+      "sha256": "55c4a98de364256e1d31f651ca1dd42644cd4933c911c577c25428085e3ac6aa",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+        "Burnett.Analysis.Microlocal.Overlap.ChartJetPhysicalWeight"
+      ],
+      "base_sha256": "de5fa1c26b22916364fe8c45969cdb25b4ba8714b8a8870ffb653fbf78ae55a4"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PositiveMeasureOfComplexDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PositiveMeasureOfComplexDensity",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/PositiveMeasureOfComplexDensity.lean",
+      "prepared_source_sha256": "cc3aeb1f8f108646c7b586f980537d8b65ecf22cc70723e1e9e3faee6ca392f4",
+      "receipt_sha256": "7e165f44f010686f497b52a1d1ce9e5864d5b7dc9462f2052dd0331fe8010b75",
+      "sha256": "06f56c0d436b7f143e3bea99d190a8bb64814496cd5d3c79784f5933fe3a4179",
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartPhysicalJetMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/ChartPhysicalJetMeasure.lean",
+      "prepared_source_sha256": "cfad600afbcc2180121bd89d1ded69dede43d55e9f4931bfa5e6243fbfa3cc6c",
+      "receipt_sha256": "b812788f00696046292ad6ba5f1630279b81fde262abcb43d123a78cff8b178f",
+      "sha256": "2b1e387a85ddc9bcc6ac826b50b48b58bcd38b05003b2c0061cb6be7478da822",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauTests",
+        "Burnett.Analysis.Microlocal.Overlap.PositiveMeasureOfComplexDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CotangentPhysicalJetMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/CotangentPhysicalJetMeasure.lean",
+      "prepared_source_sha256": "a65deda7a432707c35b5987522282bbf0d6a2555b6166b907caf4b0daa651470",
+      "receipt_sha256": "5e2f1edef8a815dc6343c263bfe9b35c27d3309510c265317d536c46ac80ea1a",
+      "sha256": "1cf079b36b2d834084219ded2e7bc9137e1bbc4b121c2212c63828efa9959aea",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalJetMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalJetMeasure.lean",
+      "prepared_source_sha256": "84493cb5bec2975cc71e266cba7bc86c09027097fda13e44a54a58c27fe0f22b",
+      "receipt_sha256": "4c7ea0cd479546b02ad25c1b8eb93a93c61f8a284329f6538147495386b9b4c5",
+      "sha256": "37f0b408f661d0831d8326823a81d6eb5cfefe79205d7e898289ce900b81c730",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+        "Burnett.Geometry.ManifoldLorentzSignature"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CountableOriginalPhysicalMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CountableOriginalPhysicalMeasures",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/CountableOriginalPhysicalMeasures.lean",
+      "prepared_source_sha256": "c6a8488e52d66f3dad835231db9def65cd8c7523993fa7bad66d90857ee97b91",
+      "receipt_sha256": "f166fe245c5508f95285ade57488fa10da038e8584f2d78710778df65b9dc913",
+      "sha256": "49a65470957141639efe7027fcf075c00208d17642cc916b7035b84f880a0256",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalMeasureOverlap.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
+      "prepared_source": "pr64-local-physical-measure-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalMeasureOverlap.lean",
+      "prepared_source_sha256": "fa560a426805fe3b06973db92e481d376627a70b4abea847477993c6b6ad79cb",
+      "receipt_sha256": "ca2d5351d57e5143381cbab93fef3c9282a250982a100aa02a2869ae3434dd8c",
+      "sha256": "4014fea6e2ee58456616b47842f842c108980645c706d4c841c000c489e880d7",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PositiveDensityTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PositiveDensityTransport",
+      "prepared_source": "pr64-positive-overlap-prep/source/Burnett/Analysis/Microlocal/Overlap/PositiveDensityTransport.lean",
+      "prepared_source_sha256": "bba1be6eccf5214108907b8850067129c2158431e40b176011ceca92bb59ecaa",
+      "receipt_sha256": "a614005cdbfe4a75094860d93619101f39938cc7a6ce43fdb3693a4db0169b3f",
+      "sha256": "bba1be6eccf5214108907b8850067129c2158431e40b176011ceca92bb59ecaa",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.PositiveMeasureOfComplexDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauMeasures.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures",
+      "prepared_source": "pr64-positive-overlap-prep/source/Burnett/Analysis/Microlocal/Overlap/PhysicalPlateauMeasures.lean",
+      "prepared_source_sha256": "14a00af32dd3aeea49bda6cf5f2fd8d41a4ea899ab2b3eecf600384b0e82d31e",
+      "receipt_sha256": "e3e3218deb9240eda84e46ac45153440402115cde5216088fccd15e19dfe3bd2",
+      "sha256": "14a00af32dd3aeea49bda6cf5f2fd8d41a4ea899ab2b3eecf600384b0e82d31e",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.PositiveDensityTransport"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalPlateauMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauMeasure",
+      "prepared_source": "pr64-positive-overlap-prep/source/Burnett/Analysis/Microlocal/Overlap/OriginalPhysicalPlateauMeasure.lean",
+      "prepared_source_sha256": "10a6b9b780ce185697ab7e6be940460f690f09aab6e00f31004777d60f1210ca",
+      "receipt_sha256": "c328041419f36f4bdbb9319b915cc64b1db69bdfbfe0e18e3ac2f962b512b464",
+      "sha256": "10a6b9b780ce185697ab7e6be940460f690f09aab6e00f31004777d60f1210ca",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer",
+        "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f02:signature-symmetry",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isSymmetric",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      }
+    },
+    {
+      "claim_id": "f02:signature-nondegeneracy",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isNondegenerate",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      }
+    },
+    {
+      "claim_id": "f02:chart-inverse-lorentz-frame",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.chartInverse_hasLorentzFrame",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      }
+    },
+    {
+      "claim_id": "f07:factored-physical-jet-density",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+      "declaration": "Burnett.Microlocal.Overlap.orderedPhysicalJetWeight_factored",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:ricci-kernel-amplitude-physical-positivity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+      "declaration": "Burnett.Microlocal.Overlap.physicalContraction_of_null_amplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-symbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_iff_symbolNorm_eq_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:physical-jet-to-auxiliary-amplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_eq_auxiliaryAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:ae-physical-positivity-on-shell",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.ae_chartPhysicalJetWeight_contraction_nonneg_real",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:integrable-original-jet-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.integrable_chartPhysicalJetContraction",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:finite-chart-physical-jet-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_chartPhysicalJetMeasure",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:finite-cotangent-physical-jet-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_cotangentPhysicalJetMeasure",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:cotangent-physical-measure-on-unit-null",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentPhysicalJetMeasure_compl_null",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-density-positive",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_nonneg_real",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-cotangent-physical-measure-borel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_cotangentPhysicalJetMeasure_apply_eq_setIntegral",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:countable-physical-measures-one-subsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CountableOriginalPhysicalMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.exists_countable_originalVolume_physicalJetMeasures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:source-physical-measure-inverse-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.sourcePhysicalPlateauMeasure_eq_invCutoff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:target-physical-measure-inverse-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.targetPhysicalPlateauMeasure_eq_invCutoff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_physicalPlateauMeasure_map_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-common-rays",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_cotangentPhysicalMeasure_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

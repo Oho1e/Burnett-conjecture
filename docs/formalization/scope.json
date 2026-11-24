@@ -4173,6 +4173,101 @@
       "claim_id": "f07:physical-plateau-test-from-original-witnesses",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer",
       "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_physicalPlateauTest"
+    },
+    {
+      "claim_id": "f02:signature-symmetry",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isSymmetric"
+    },
+    {
+      "claim_id": "f02:signature-nondegeneracy",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isNondegenerate"
+    },
+    {
+      "claim_id": "f02:chart-inverse-lorentz-frame",
+      "module": "Burnett.Geometry.ManifoldLorentzSignature",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.chartInverse_hasLorentzFrame"
+    },
+    {
+      "claim_id": "f07:factored-physical-jet-density",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+      "declaration": "Burnett.Microlocal.Overlap.orderedPhysicalJetWeight_factored"
+    },
+    {
+      "claim_id": "f07:ricci-kernel-amplitude-physical-positivity",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FactoredPhysicalJetDensity",
+      "declaration": "Burnett.Microlocal.Overlap.physicalContraction_of_null_amplitude"
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-symbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_iff_symbolNorm_eq_zero"
+    },
+    {
+      "claim_id": "f07:physical-jet-to-auxiliary-amplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_eq_auxiliaryAmplitude"
+    },
+    {
+      "claim_id": "f07:ae-physical-positivity-on-shell",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAuxiliaryPhysicalDensity",
+      "declaration": "Burnett.Microlocal.Overlap.ae_chartPhysicalJetWeight_contraction_nonneg_real"
+    },
+    {
+      "claim_id": "f07:integrable-original-jet-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.integrable_chartPhysicalJetContraction"
+    },
+    {
+      "claim_id": "f07:finite-chart-physical-jet-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_chartPhysicalJetMeasure"
+    },
+    {
+      "claim_id": "f07:finite-cotangent-physical-jet-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_cotangentPhysicalJetMeasure"
+    },
+    {
+      "claim_id": "f07:cotangent-physical-measure-on-unit-null",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CotangentPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentPhysicalJetMeasure_compl_null"
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-density-positive",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_nonneg_real"
+    },
+    {
+      "claim_id": "f07:original-cotangent-physical-measure-borel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_cotangentPhysicalJetMeasure_apply_eq_setIntegral"
+    },
+    {
+      "claim_id": "f07:countable-physical-measures-one-subsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CountableOriginalPhysicalMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.exists_countable_originalVolume_physicalJetMeasures"
+    },
+    {
+      "claim_id": "f07:source-physical-measure-inverse-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.sourcePhysicalPlateauMeasure_eq_invCutoff"
+    },
+    {
+      "claim_id": "f07:target-physical-measure-inverse-cutoff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauMeasures",
+      "declaration": "Burnett.Microlocal.Overlap.targetPhysicalPlateauMeasure_eq_invCutoff"
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_physicalPlateauMeasure_map_eq"
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-common-rays",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_cotangentPhysicalMeasure_eq"
     }
   ],
   "inventory": [
@@ -19934,6 +20029,329 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_physicalPlateauTest",
       "statement_record": "docs/statements/independent-cutoff-matrix-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:signature-symmetry",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isSymmetric",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:signature-nondegeneracy",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.HasLorentzSignature.isNondegenerate",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f02:chart-inverse-lorentz-frame",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 99,
+        "endline": 101
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ManifoldBilinear.chartInverse_hasLorentzFrame",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:factored-physical-jet-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.orderedPhysicalJetWeight_factored",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-kernel-amplitude-physical-positivity",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.physicalContraction_of_null_amplitude",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-auxiliary-null-symbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_iff_symbolNorm_eq_zero",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:physical-jet-to-auxiliary-amplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartPhysicalJetWeight_contraction_eq_auxiliaryAmplitude",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ae-physical-positivity-on-shell",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.ae_chartPhysicalJetWeight_contraction_nonneg_real",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:integrable-original-jet-contraction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.integrable_chartPhysicalJetContraction",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:finite-chart-physical-jet-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_chartPhysicalJetMeasure",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:finite-cotangent-physical-jet-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.isFiniteMeasure_cotangentPhysicalJetMeasure",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:cotangent-physical-measure-on-unit-null",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentPhysicalJetMeasure_compl_null",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-density-positive",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_nonneg_real",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-cotangent-physical-measure-borel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_cotangentPhysicalJetMeasure_apply_eq_setIntegral",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:countable-physical-measures-one-subsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_countable_originalVolume_physicalJetMeasures",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:source-physical-measure-inverse-cutoff",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.sourcePhysicalPlateauMeasure_eq_invCutoff",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:target-physical-measure-inverse-cutoff",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.targetPhysicalPlateauMeasure_eq_invCutoff",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_physicalPlateauMeasure_map_eq",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-common-rays",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_cotangentPhysicalMeasure_eq",
+      "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

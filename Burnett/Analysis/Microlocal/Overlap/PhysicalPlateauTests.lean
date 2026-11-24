@@ -26,7 +26,7 @@ open scoped BigOperators ContDiff Manifold
 
 variable {M : Type*} [TopologicalSpace M] [ChartedSpace CoordinateSpace M] [IsManifold Model ∞ M]
 
-private theorem continuous_chartPhysicalJetWeight (r : Metric (M := M)) (B : Field (M := M))
+theorem continuous_chartPhysicalJetWeight (r : Metric (M := M)) (B : Field (M := M))
     (hB : IsSmooth B) (hn : IsNondegenerate B) (q : CompactChartInput M) (i j : JetSlot) :
     Continuous (fun z : Chart q.ball => (chartPhysicalJetWeight r B q.center z.1 i j : ℂ)) := by
   have hInverse (A : Field (M := M)) (hsA : IsSmooth A) (hnA : IsNondegenerate A)

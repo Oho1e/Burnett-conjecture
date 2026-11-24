@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `a9446b98044fbed382ed787ceae035cd9679d17d89ac0f851d269fcdaed73426`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `21dd429dbfaaebf1c589ceee27f7986ec12d5428e7ba2897ebe158ebcde7f8cd`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -221,7 +221,7 @@ Supplementary obligation:
 
 - Equivalence of local derivative bounds under changes of fixed r and coordinates (lines 105–108).
 
-The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace now send a vacuum sequence to coordinate vacuum on each preferred chart. Complete the Lorentzian signature and time orientation data and connect the bridge to the local Ricci conclusions and global objects.
+The original vacuum sequence has equivalent local uniform convergence and compact derivative bounds under any two smooth auxiliary Riemannian metrics. Next: The original local auxiliary-metric derivative bound gives genuine coordinate bounds. The intrinsic curvature and Ricci trace send a vacuum sequence to coordinate vacuum on each preferred chart. The limit's (-,+,+,+) tangent-fiber signature supplies symmetry, nondegeneracy, and pointwise Lorentz frames for the inverse metric in preferred charts. Continue with time orientation and the global objects.
 
 <a id="f03"></a>
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: The physical contraction on the actual null shell obeys the chart law on common plateaus for bounded Borel tests of the same original chart measures. Keep the F04–F06 subsequence and amplitude, obtain positivity using the Ricci kernel, and continue with global gluing, the moment tests, and weighted transport between sections.
+Next: The Ricci kernel on the original vacuum subsequence and chart traces gives finite positive local physical measures on the actual auxiliary unit null shell. On common plateaus the two measures, weighted by their respective reciprocal cutoff squares, push to the same cotangent measure. Continue with global gluing, the Ricci and Einstein moments, scalar-flatness, and weighted transport between sections.
 
 <a id="f08"></a>
 

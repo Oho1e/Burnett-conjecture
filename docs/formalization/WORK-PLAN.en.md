@@ -679,3 +679,7 @@ On the same subsequence with matching transported cutoffs, the ordered source an
 ## 58. Overlap matrix measures for independently chosen cutoffs
 
 On common local plateaus, the original matrix entries from independently chosen chart cutoffs on the same subsequence obey the Borel chart law with reciprocal cutoff squares, the actual phase change, and the three-slot Jacobian. Glue over the nonzero-cutoff domains and construct the global covariance on the actual auxiliary cosphere bundle. [Overlap matrix measures for independently chosen cutoffs](../statements/independent-cutoff-matrix-measures.en.md)
+
+## 59. Positive physical measures on original charts
+
+The Ricci kernel on the original vacuum subsequence and chart traces gives finite positive local physical measures on the actual auxiliary unit null shell. On common plateaus the two measures, weighted by their respective reciprocal cutoff squares, push to the same cotangent measure. Continue with global gluing, the Ricci and Einstein moments, scalar-flatness, and weighted transport between sections. [Positive physical measures on original charts](../statements/local-positive-physical-measures.en.md)
