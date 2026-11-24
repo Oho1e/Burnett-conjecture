@@ -687,3 +687,7 @@ The Ricci kernel on the original vacuum subsequence and chart traces gives finit
 ## 60. Global physical measure and chart Ricci moments
 
 One original vacuum subsequence gives compatible local positive measures on the full nonzero cutoff loci. The glued measure lies on the actual auxiliary unit null shell and is finite over every compact base set. Represented charts on that same subsequence satisfy the Ricci component second-moment identities with both integrands integrable. Continue with arbitrary global tensor tests, pointwise scalar-flatness, the Einstein moment, and change of auxiliary section. [Global physical measure and chart Ricci moments](../statements/global-physical-ricci-moments.en.md)
+
+## 61. Global Einstein moments and change of auxiliary unit section
+
+One strict refinement of any original vacuum subsequence gives a single unit cosphere measure with all compact smooth symmetric Einstein moments, pointwise scalar-flatness, and scalar naturality in every compatible fixed smooth chart. The same original subsequence and chart witnesses under two auxiliary metrics give the squared-norm weighted pushforward, preserving all quadratic tensor-test moments. Continue with the global complex amplitude covariance on one control measure, its original angular defect representation, and the auxiliary change of the amplitude covariance. [Global Einstein moments and change of auxiliary unit section](../statements/global-cosphere-einstein-moments.en.md)

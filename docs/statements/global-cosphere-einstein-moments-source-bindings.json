@@ -1,0 +1,494 @@
+{
+  "slices": [
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "96d21ebf3ce28822a8c985aafee80e73d604ff06",
+  "base_tree": "00d4e71302acabc7fdccf06228d2f79b19851f31",
+  "sources": {
+    "Burnett/Geometry/ContravariantTensor.lean": {
+      "module": "Burnett.Geometry.ContravariantTensor",
+      "prepared_source": "f07-contravariant-geometry-prep/source/Burnett/Geometry/ContravariantTensor.lean",
+      "prepared_source_sha256": "d2149364857f76039527819e4351e14bc46ef9d9aa192cd52470561b3dfbfb8c",
+      "receipt": "f07-contravariant-geometry-prep/receipt.json",
+      "receipt_sha256": "323e022e1b56763910e3f7dceda871eb94570661029ee2d78f64822c5001cf75",
+      "sha256": "d2149364857f76039527819e4351e14bc46ef9d9aa192cd52470561b3dfbfb8c",
+      "imports": [
+        "Burnett.Geometry.Cotangent.Core",
+        "Burnett.Geometry.IntrinsicRicciTrace",
+        "Mathlib.LinearAlgebra.Dual.Lemmas"
+      ]
+    },
+    "Burnett/Geometry/IntrinsicScalarEinstein.lean": {
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "prepared_source": "f07-contravariant-geometry-prep/source/Burnett/Geometry/IntrinsicScalarEinstein.lean",
+      "prepared_source_sha256": "382e186bf6f3c9705df31081da7c9bf25c2f635965bcb4af7e0984ec5bda40a5",
+      "receipt": "f07-contravariant-geometry-prep/receipt.json",
+      "receipt_sha256": "323e022e1b56763910e3f7dceda871eb94570661029ee2d78f64822c5001cf75",
+      "sha256": "382e186bf6f3c9705df31081da7c9bf25c2f635965bcb4af7e0984ec5bda40a5",
+      "imports": [
+        "Burnett.Geometry.ContravariantTensor"
+      ]
+    },
+    "Burnett/Geometry/Cotangent/FixedChartNaturality.lean": {
+      "module": "Burnett.Geometry.Cotangent.FixedChartNaturality",
+      "prepared_source": "f07-fixed-chart-naturality-prep/source/Burnett/Geometry/Cotangent/FixedChartNaturality.lean",
+      "prepared_source_sha256": "926c60056e296d5ca10e210abb44fcea78ace0ec1b96b825efd823ba4b169b0b",
+      "receipt": "f07-fixed-chart-naturality-prep/receipt.json",
+      "receipt_sha256": "3fe713c674e6773aef4b60e204d2171fcb2ad03dc8f23bd2b6011d1a8238577a",
+      "sha256": "926c60056e296d5ca10e210abb44fcea78ace0ec1b96b825efd823ba4b169b0b",
+      "imports": [
+        "Burnett.Geometry.Cotangent.Core",
+        "Burnett.Geometry.MaximalChart.MetricCoordinates",
+        "Mathlib.MeasureTheory.Measure.AEMeasurable"
+      ]
+    },
+    "Burnett/Geometry/Cotangent/CosphereFixedChartNaturality.lean": {
+      "module": "Burnett.Geometry.Cotangent.CosphereFixedChartNaturality",
+      "prepared_source": "f07-fixed-chart-naturality-prep/source/Burnett/Geometry/Cotangent/CosphereFixedChartNaturality.lean",
+      "prepared_source_sha256": "6fc6822784b971b4cb2a5d0f76e26c11d1ec8b00e10b1c3ea059c76f0627fcbc",
+      "receipt": "f07-fixed-chart-naturality-prep/receipt.json",
+      "receipt_sha256": "3fe713c674e6773aef4b60e204d2171fcb2ad03dc8f23bd2b6011d1a8238577a",
+      "sha256": "6fc6822784b971b4cb2a5d0f76e26c11d1ec8b00e10b1c3ea059c76f0627fcbc",
+      "imports": [
+        "Burnett.Geometry.Cotangent.CosphereMeasure",
+        "Burnett.Geometry.Cotangent.FixedChartNaturality"
+      ]
+    },
+    "Burnett/Geometry/Cotangent/CompactTestPartition.lean": {
+      "module": "Burnett.Geometry.Cotangent.CompactTestPartition",
+      "prepared_source": "pr66-compact-tensor-test-partition-prep/source/Burnett/Geometry/Cotangent/CompactTestPartition.lean",
+      "prepared_source_sha256": "adc5f429371191acdaafbb35d98b85c9f9fda976b0f2a17d272f6a8e840f5779",
+      "receipt": "pr66-compact-tensor-test-partition-prep/receipts/CompactTestPartition.json",
+      "receipt_sha256": "19c1059ae87db02236fb23958be1edad0eea5096c1a96ccbf42bf46ed0f7c5fc",
+      "sha256": "adc5f429371191acdaafbb35d98b85c9f9fda976b0f2a17d272f6a8e840f5779",
+      "imports": [
+        "Burnett.Geometry.ManifoldMetric",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity"
+      ]
+    },
+    "Burnett/Geometry/Cotangent/CompactTestIntegrals.lean": {
+      "module": "Burnett.Geometry.Cotangent.CompactTestIntegrals",
+      "prepared_source": "pr66-compact-tensor-test-partition-prep/source/Burnett/Geometry/Cotangent/CompactTestIntegrals.lean",
+      "prepared_source_sha256": "d5259460552004c8c4d265058b9d5a610edf192a29293fb1f5be74cce065a74b",
+      "receipt": "pr66-compact-tensor-test-partition-prep/receipts/CompactTestIntegrals.json",
+      "receipt_sha256": "cd9c8021403a711a477fa36106e9712ef3a34c120eaee93d6f6db66741850d50",
+      "sha256": "d5259460552004c8c4d265058b9d5a610edf192a29293fb1f5be74cce065a74b",
+      "imports": [
+        "Burnett.Geometry.Cotangent.CompactTestPartition",
+        "Burnett.Geometry.Cotangent.Core",
+        "Mathlib.MeasureTheory.Integral.Bochner.Set"
+      ]
+    },
+    "Burnett/Analysis/ChartTensorRicciTests.lean": {
+      "module": "Burnett.Analysis.ChartTensorRicciTests",
+      "prepared_source": "pr66-tensor-ricci-assembly-prep/source/Burnett/Analysis/ChartTensorRicciTests.lean",
+      "prepared_source_sha256": "fa8c5ac01aaa531393fe004df2d7d935740b8106efdc65388800e18625bb65ef",
+      "receipt": "pr66-tensor-ricci-assembly-prep/native/Burnett/Analysis/ChartTensorRicciTests.json",
+      "receipt_sha256": "e7a252d3b7ddfd5c6bb8533adfde5a796f57caee668c30bc6b484ce12c9cb20c",
+      "sha256": "309826cee77c2dbff9aa25bb02b2c9768934453ea37a1102b8e89a4851662022",
+      "imports": [
+        "Burnett.Geometry.ContravariantTensor",
+        "Burnett.Analysis.MeasureWeakRicci",
+        "Burnett.Analysis.Sobolev.TestJet"
+      ]
+    },
+    "Burnett/Analysis/ScalarCurvatureFromMoments.lean": {
+      "module": "Burnett.Analysis.ScalarCurvatureFromMoments",
+      "prepared_source": "pr66-tensor-ricci-assembly-prep/source/Burnett/Analysis/ScalarCurvatureFromMoments.lean",
+      "prepared_source_sha256": "e50af1cde1e56e9907e96d3b3daf72c0d5ef7b209e530ad87e1c2e4b3f91c0ee",
+      "receipt": "pr66-tensor-ricci-assembly-prep/native/Burnett/Analysis/ScalarCurvatureFromMoments.json",
+      "receipt_sha256": "7bb208d23298daab9de2d78a9808cd457b4e7a99758b7232b18beddfbd6d2a56",
+      "sha256": "8f0474a474edb0dc02f9a35109cd9a0cf257ba571aa868b94e3142d0432444be",
+      "imports": [
+        "Burnett.Geometry.IntrinsicScalarEinstein",
+        "Burnett.Analysis.MeasureWeakRicci",
+        "Mathlib.Geometry.Manifold.BumpFunction"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AssembledRicciMoments.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AssembledRicciMoments",
+      "prepared_source": "pr66-tensor-ricci-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/AssembledRicciMoments.lean",
+      "prepared_source_sha256": "05120515ec311429f334f9fabb9fa4b6bab4fb4d5bf6e1992a114af1fd6c78ad",
+      "receipt": "pr66-tensor-ricci-assembly-prep/native/Burnett/Analysis/Microlocal/Overlap/AssembledRicciMoments.json",
+      "receipt_sha256": "60138987366c4be4dbbf473d2f053019d546f3a20b38c167a31e82942f4ed468",
+      "sha256": "33bf1673818da7875eeb7d264aa8a7b70eb5dcbbb94dda14c04b3134e0870f31",
+      "imports": [
+        "Burnett.Analysis.ChartTensorRicciTests",
+        "Burnett.Analysis.ScalarCurvatureFromMoments",
+        "Burnett.Analysis.Microlocal.PhysicalChartCover",
+        "Burnett.Geometry.Cotangent.CompactTestIntegrals"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CosphereEinsteinMoments.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments",
+      "prepared_source": "pr66-tensor-ricci-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/CosphereEinsteinMoments.lean",
+      "prepared_source_sha256": "315eb2c0512be748e42718f2c9a8d789ef44f31968d34a38112dbd121d29f8a4",
+      "receipt": "pr66-tensor-ricci-assembly-prep/native/Burnett/Analysis/Microlocal/Overlap/CosphereEinsteinMoments.json",
+      "receipt_sha256": "9e6cb3bc781ba523bfd6b04f7ee81ccff2c81fb63097bbb5848bb37ae6a360af",
+      "sha256": "e6a4f7ff9ab1dd20a1b3dd15d76537805b19cce831e8b73e557bfdb8e5280f57",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AssembledRicciMoments",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments",
+        "Burnett.Geometry.Cotangent.CosphereFixedChartNaturality"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CosphereTensorMomentRescaling.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
+      "prepared_source": "pr66-tensor-ricci-assembly-prep/source/Burnett/Analysis/Microlocal/Overlap/CosphereTensorMomentRescaling.lean",
+      "prepared_source_sha256": "66917d061ce36a6acf5cc8021ee85ee9c40cc83449fe7693fde0803a09a341a6",
+      "receipt": "pr66-tensor-ricci-assembly-prep/native/Burnett/Analysis/Microlocal/Overlap/CosphereTensorMomentRescaling.json",
+      "receipt_sha256": "c1468838207f2728d5f268ec00d190d807c963f36ee10694dfdaae1f785ab3c1",
+      "sha256": "9cf68726cc6acebd17950fa2c1122ef506dde7ee690973a56c176f7c5fd3597d",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments",
+        "Burnett.Analysis.Microlocal.Overlap.CosphereAuxiliaryMeasureChange"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalChartAuxiliaryDensityChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "prepared_source": "f07-original-chart-auxiliary-change-prep/OriginalChartAuxiliaryDensityChange.lean",
+      "prepared_source_sha256": "249624f8847615bbc5db21b8d7f712b35fad6dc9049ca65930c050ab8ae454a0",
+      "receipt": "f07-original-chart-auxiliary-change-prep/OriginalChartAuxiliaryDensityChange.json",
+      "receipt_sha256": "392a2b2e246747153e4fe68f1e81d7a150e914457872b02916853fab384e4262",
+      "sha256": "07d4171aa840d91aec2d86ef28714dc5761cb42268c91ba8eba40017121cca77",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalChartAuxiliaryMeasureChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+      "prepared_source": "f07-original-chart-auxiliary-change-prep/OriginalChartAuxiliaryMeasureChange.lean",
+      "prepared_source_sha256": "9c98ce6fbb3d74722b9f348d3668ef7cec802c1d2c528653589986e2004eef5e",
+      "receipt": "f07-original-chart-auxiliary-change-prep/OriginalChartAuxiliaryMeasureChange.json",
+      "receipt_sha256": "501e415085c3b99e6b135a437053356d9570cb42f7f113d1ed2114663175aed8",
+      "sha256": "d0cb5088cbe0a6e9db138c939edc4e9ed63474bfa7de4ef3db30080a78fa66c2",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+        "Burnett.Geometry.Cotangent.RadialExtension"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedChartAuxiliaryMeasureChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedChartAuxiliaryMeasureChange",
+      "prepared_source": "f07-global-auxiliary-change-prep/NormalizedChartAuxiliaryMeasureChange.lean",
+      "prepared_source_sha256": "2a136c5528db97f5437c570aaed5560b74c86c6ed1ce29ccbf89a371e9097e3b",
+      "receipt": "f07-global-auxiliary-change-prep/NormalizedChartAuxiliaryMeasureChange.json",
+      "receipt_sha256": "dd2d94de7c7464abf40ffca1dd76a933f11248fe186c029939165501e5cbc5e7",
+      "sha256": "312a4ec023ad12f214f233de7c93672fdf5f5426840b7c3b6edd559811585299",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedCotangentPhysicalMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmbientAuxiliaryMeasureChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientAuxiliaryMeasureChange",
+      "prepared_source": "f07-global-auxiliary-change-prep/AmbientAuxiliaryMeasureChange.lean",
+      "prepared_source_sha256": "4d362960710166200a2b338ac67de9a28d45582aff1630e8b56891a2be711569",
+      "receipt": "f07-global-auxiliary-change-prep/AmbientAuxiliaryMeasureChange.json",
+      "receipt_sha256": "22cb9a6ff6b39a63c526aae3b1d58724533cdc75f45f505ec4cbf5b6b5fd563c",
+      "sha256": "c447d9d6d1d7eee0d095a082ff90f111f1864f110a32adecd8a4bcf2a005e546",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedChartAuxiliaryMeasureChange",
+        "Burnett.Analysis.Microlocal.PhysicalChartCover"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAuxiliaryGlobalExistence.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+      "prepared_source": "f07-global-auxiliary-change-prep/OriginalAuxiliaryGlobalExistence.lean",
+      "prepared_source_sha256": "1113352884fd89b51b4d904ccc2cb57ae0af5da57ec8ead1b09ea63e9858a1c2",
+      "receipt": "f07-global-auxiliary-change-prep/OriginalAuxiliaryGlobalExistence.json",
+      "receipt_sha256": "057af20302d9f28c5dce9d40710149fa2735635c38df419ed3f6ea99460ede62",
+      "sha256": "37b4ff18bb4c0b676f4e3b92f63b30b9d3471faa8eb418699c2d007273a28b03",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmbientAuxiliaryMeasureChange",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalPhysicalMeasure"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CosphereAuxiliaryMeasureChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereAuxiliaryMeasureChange",
+      "prepared_source": "f07-global-auxiliary-change-prep/CosphereAuxiliaryMeasureChange.lean",
+      "prepared_source_sha256": "b1b7c9813ce6b8572d8d95b8d0e283af319aab3e66d8d87817f7a12902927692",
+      "receipt": "f07-global-auxiliary-change-prep/CosphereAuxiliaryMeasureChange.json",
+      "receipt_sha256": "6ee304d8dd8a54b8f25ae27b0aa44a9acdee2eaf54de52cf05560b25bbee52cc",
+      "sha256": "3a7233db7b1d8f072234bff1fe0c1dcf3f3e51d5e21edffbc30c4e33c2bd29ba",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedChartAuxiliaryMeasureChange",
+        "Burnett.Geometry.Cotangent.CosphereMeasure",
+        "Burnett.Counterexamples.Bianchi.UnitNormalization"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f07:compact-base-finite-smooth-cutoffs",
+      "module": "Burnett.Geometry.Cotangent.CompactTestPartition",
+      "declaration": "Burnett.Geometry.CotangentTests.exists_finite_smooth_cutoffs_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:compact-base-integrals-from-local-tests",
+      "module": "Burnett.Geometry.Cotangent.CompactTestIntegrals",
+      "declaration": "Burnett.Geometry.CotangentTests.integral_eq_of_compact_base_local_tests",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:ricci-contraction-on-actual-tangent-fibers",
+      "module": "Burnett.Geometry.ContravariantTensor",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorBase_eq_components",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:quadratic-test-on-actual-covectors",
+      "module": "Burnett.Geometry.ContravariantTensor",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorPhase_eq_components",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:intrinsic-inverse-metric-components",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.inverseMetricTensor_components",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:intrinsic-scalar-curvature-chart",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.intrinsicScalar_chart",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:intrinsic-einstein-pairing-chart",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.einsteinPair_eq_components",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:actual-fixed-cotangent-chart-transition",
+      "module": "Burnett.Geometry.Cotangent.FixedChartNaturality",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedPhaseTransition_fixedChartPhase",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:fixed-chart-pushforwards-on-overlap",
+      "module": "Burnett.Geometry.Cotangent.FixedChartNaturality",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedChart_pushforwards",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:cosphere-fixed-chart-naturality",
+      "module": "Burnett.Geometry.Cotangent.CosphereFixedChartNaturality",
+      "declaration": "Burnett.Geometry.UnitCosphere.fixedChartNaturality",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:local-intrinsic-tensor-ricci-moment",
+      "module": "Burnett.Analysis.ChartTensorRicciTests",
+      "declaration": "Burnett.Analysis.ChartTensorRicciTests.local_intrinsicTensor_moment_of_coordinateMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:all-global-tensor-ricci-moments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AssembledRicciMoments",
+      "declaration": "Burnett.Microlocal.Overlap.hasRicciMoments_of_nonzero_chartMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:pointwise-scalar-flat-from-null-moments",
+      "module": "Burnett.Analysis.ScalarCurvatureFromMoments",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarCurvature_eq_zero_of_null_RicciMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:einstein-moments-from-null-ricci-moments",
+      "module": "Burnett.Analysis.ScalarCurvatureFromMoments",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarFlat_and_EinsteinMoments_of_null_RicciMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-cosphere-einstein-moments-and-chart-laws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_cosphereEinsteinMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-energy-ratio",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeWeight_eq_ratio",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:same-round-chart-null-restriction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:original-chart-physical-density-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-ray-normalization",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:same-original-chart-positive-measure-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartPhysicalJetMeasure_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:normalized-chart-physical-measure-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCotangentPhysicalMeasure_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:global-physical-auxiliary-change-from-chart-laws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalMeasure_changeAuxiliary_of_chartLaws",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:global-auxiliary-change-of-same-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_changeAuxiliary_sameWitnesses",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:original-global-auxiliary-change-including-empty-base",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasures_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:actual-cosphere-weighted-auxiliary-pushforward",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.fromAmbient_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:tensor-moment-integrability-and-integral-under-rescaling",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereTensorPhase_of_auxiliaryRescaling",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    },
+    {
+      "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereEinsteinMoments_of_auxiliaryRescaling",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

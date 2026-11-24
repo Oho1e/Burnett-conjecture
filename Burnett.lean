@@ -373,3 +373,6 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap
 import Burnett.Analysis.Microlocal.Overlap.GlobalCospherePhysicalMeasure
 import Burnett.Analysis.Microlocal.Overlap.GluedChartRicciMoments
 import Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments
+
+import Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence
+import Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling

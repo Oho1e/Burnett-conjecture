@@ -80,3 +80,5 @@
 - [原图上的正物理测度](local-positive-physical-measures.zh-CN.md)
 
 - [全局正物理测度与逐图 Ricci 矩](global-physical-ricci-moments.zh-CN.md)
+
+- [全局 Einstein 矩与辅助余球面换截面](global-cosphere-einstein-moments.zh-CN.md)

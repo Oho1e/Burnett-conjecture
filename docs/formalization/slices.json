@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "已在同一原真空子列上沿各图截断的非零域拼接全局正物理测度。测度位于实际辅助单位零壳且在每个紧底集上有限。沿同一子列的已表示图满足 Ricci 分量二阶矩等式，两侧均可积。接续任意全局张量测试、逐点标量曲率零、Einstein 矩和换截面。",
+      "next_action": "从任意原真空子列的一次严格细化所得的同一单位余球丛测度，满足全部紧支撑光滑对称张量的 Einstein 矩、逐点标量曲率为零及任意相容固定光滑图的标量换图律。同一原子列和逐图见证的物理测度在两个辅助度量间满足范数平方加权推前，且保持全部二次张量测试的矩。接续共同控制测度上的全局复振幅协方差、原始角向缺陷表示和振幅换截面。",
       "supplementary_obligations": []
     },
     {
@@ -7232,6 +7232,168 @@
     },
     {
       "claim_id": "f07:cosphere-shares-represented-chart-ricci-moments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:compact-base-finite-smooth-cutoffs",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:compact-base-integrals-from-local-tests",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-contraction-on-actual-tangent-fibers",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:quadratic-test-on-actual-covectors",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsic-inverse-metric-components",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsic-scalar-curvature-chart",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsic-einstein-pairing-chart",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-fixed-cotangent-chart-transition",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:fixed-chart-pushforwards-on-overlap",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:cosphere-fixed-chart-naturality",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:local-intrinsic-tensor-ricci-moment",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:all-global-tensor-ricci-moments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:pointwise-scalar-flat-from-null-moments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:einstein-moments-from-null-ricci-moments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-cosphere-einstein-moments-and-chart-laws",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-energy-ratio",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:same-round-chart-null-restriction",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-chart-physical-density-change",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-ray-normalization",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:same-original-chart-positive-measure-change",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-chart-physical-measure-change",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:global-physical-auxiliary-change-from-chart-laws",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:global-auxiliary-change-of-same-original-witnesses",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-global-auxiliary-change-including-empty-base",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-cosphere-weighted-auxiliary-pushforward",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:tensor-moment-integrability-and-integral-under-rescaling",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
       "source_slices": [
         "F07"
       ]
