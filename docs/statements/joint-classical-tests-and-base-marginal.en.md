@@ -10,9 +10,9 @@ One refinement, one intrinsic amplitude, and one physical measure give the local
 
 ## Base marginal and pointwise angular moment
 
-The density with respect to the background volume is the paper's (e_r=r^{ab}G_{ab}). It is smooth and nonnegative everywhere. The base projection of the original physical measure is (e_r,mathrm dV) and is absolutely continuous with respect to the background volume.
+The density with respect to the background volume is the paper's $e_r=r^{ab}G_{ab}$. It is smooth and nonnegative everywhere. The base projection satisfies $\pi_*\mu=e_r\,\mathrm{d}V$ and is absolutely continuous with respect to the background volume.
 
-The graph pushforward of the same physical measure disintegrates over the background volume as a finite-valued measurable kernel. On a common set of full base measure, the conditional measure is concentrated on the auxiliary unit null covectors at its base point and has mass (e_r). At every point of that set the Einstein tensor equals the conditional moment on all pairs of tangent vectors. The disintegration of a fixed physical measure is unique almost everywhere, and the physical measure vanishes over each open vacuum region of the background. The proof uses quadratic moments and disintegration and is independent of transport.
+The graph pushforward of the same physical measure disintegrates over the background volume as a finite-valued measurable kernel. On a common set of full base measure, the conditional measure is concentrated on the auxiliary unit null covectors at its base point and has mass $e_r$. At every point of that set the Einstein tensor equals the conditional moment on all pairs of tangent vectors. The disintegration of a fixed physical measure is unique almost everywhere, and the physical measure vanishes over each open vacuum region of the background. The proof uses quadratic moments and disintegration and is independent of transport.
 
 These are supporting results for F05 and F08. Formal acceptance of the quadratic theorem and the base-marginal corollary retains its independent statement, mathematical coverage, and author confirmation records.
 

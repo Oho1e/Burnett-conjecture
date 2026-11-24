@@ -61,7 +61,7 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 - [`主定理接口`](docs/statements/main-interface.md)、[`主线依赖`](docs/formalization/dependencies.md)、[`库调查`](docs/formalization/library-audit.md) 记录当前对象、量词、消费者和实际库证据。
 - [`docs/statements/`](docs/statements/) 保存原文结果索引与未来数学/Lean对照。
 - [`docs/formalization/scope.json`](docs/formalization/scope.json) 是范围与进度的主清单；完整二次代数父项仍为部分完成。
-- [维护工具与PR交接](docs/formalization/maintenance-1.3.1.md)记录快照边界、完整保护比较和只读就绪判定；最终main合并由用户执行；PR就绪后按[目标续接规则](docs/formalization/GOAL.zh-CN.md)继续独立后继任务。
+- 维护工具记录快照边界、完整保护比较和只读就绪判定。协调者按项目授权和复核流程，将符合条件的 PR squash 合入受保护的 `main`。PR 就绪后按目标续接规则继续独立后继任务。[维护工具与 PR 交接](docs/formalization/maintenance-1.3.1.md) · [目标续接规则](docs/formalization/GOAL.zh-CN.md)
 - [`docs/formalization/review.md`](docs/formalization/review.md) 记录实际复核及发布情况；[1.3版工作流对抗审核与测试](docs/formalization/workflow-review.md) 区分独立审查、模拟场景和真实GitHub检查。
 - [`docs/formalization/standard.zh-CN.md`](docs/formalization/standard.zh-CN.md) 固定 `paper-results` 第1.2版标准。
 - [`tools/lean-paper-results/`](tools/lean-paper-results/) 是1.3.1版skill与工程工作流的文本快照；维护负例套件无需逐篇论文重复运行。
