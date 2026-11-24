@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "两张原图在同一子列上各自选择截断时，已在公共小窗的平台上证明原矩阵条目的倒数平方重加权及实际相位、三槽 Jacobian 的 Borel 换图律。接续在非零截断域拼接，并构造实际辅助余球丛上的全局协方差。",
+      "next_action": "同一原子列给出全局复振幅协方差、真实 Ricci 主符号核、任意相容图之间的 Borel 条目换图律，以及给定局部经典表示的原半密度双截断配对。接续任意接收图上的原经典算子配对及全局 F05 装配。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "从任意原真空子列的一次严格细化所得的同一单位余球丛测度，满足全部紧支撑光滑对称张量的 Einstein 矩、逐点标量曲率为零及任意相容固定光滑图的标量换图律。同一原子列和逐图见证的物理测度在两个辅助度量间满足范数平方加权推前，且保持全部二次张量测试的矩。接续共同控制测度上的全局复振幅协方差、原始角向缺陷表示和振幅换截面。",
+      "next_action": "同一全局振幅的零壳限制与四分之一实收缩给出已核验 Einstein 矩中的原物理测度，并实现同一见证下的振幅和物理测度换截面。接续全局原缺陷表示与论文二次定理装配。",
       "supplementary_obligations": []
     },
     {
@@ -7394,6 +7394,276 @@
     },
     {
       "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f05:charttangentbasis-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:chartamplitude-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:chartcomponents-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-commonpatch-amplitudeagreement",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-commonpatch-normalizedcosphereamplitudeentry-eq",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-normalizedcosphereamplitudeentry-eq-on-compactoverlap",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudedensities-on-sum",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudetracecontrols-agree",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-compactchart-tracenormalizedamplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-intrinsicamplitude-agree",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-globalintrinsicamplitude-of-representedcharts",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:intrinsicamplitude-agree-of-originalchartlaws",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:regular-measure-on-unitcosphere",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-entrymeasure-on-compactchart",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-atlaschart-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-atlaschart-entrymeasure-change-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:complexfiberriccisymbol-eq-basis",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-chart-tracenormalizedamplitude-ae-riccikernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ae-global-positive-unittrace-riccikernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ae-intrinsicamplitudericcikernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:originalvolume-represents-cutoffmul-on-samesubsequence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-samechart-plateau-on-samesubsequence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-finite-plateaucover-on-samesubsequence",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-normalizedamplitudeon",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-cosphereamplitudeentryon",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-globalamplitudeon",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-infraredangularprincipal-twocutoff-difference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-orderminusone-leftaction-model",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:haslocalclassicalrepresentation-of-actualfullsymbol",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-classicalpairing-globalamplitudeon",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-paperrealclassicalpairing-globalamplitudeon",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f07:quartercontractioninbasis-eq",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:auxiliarytraceinbasis-eq",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsicphysicalweight-eq-chart",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsicauxiliarytrace-nonneg-and-eq-zero-iff",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-recovers-entry-measures",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-preserves-positive-contraction",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-chartcospherephysicalmeasure-eq-amplitudetracecontrol",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-globalphysicalcontraction-of-chartlaws",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-and-cosphereeinsteinmoments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ae-original-chartauxiliaryamplitude-changeauxiliary",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-normalizedcosphereamplitudeentry-changeauxiliary",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-intrinsicamplitude-trace-changeauxiliary-on-compactchart",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-globalintrinsicamplitude-trace-changeauxiliary",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
       "source_slices": [
         "F07"
       ]

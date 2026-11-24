@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `2307b466a72efb9ca3be7f65bed27761ef3f4c355791ca6cc7c36a0e3b03d2b5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `d347e8122b9f62f0521651366a05c4ac8762eebd7d22a44ff2df1369b0757bea`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: On common local plateaus, the original matrix entries from independently chosen chart cutoffs on the same subsequence obey the Borel chart law with reciprocal cutoff squares, the actual phase change, and the three-slot Jacobian. Glue over the nonzero-cutoff domains and construct the global covariance on the actual auxiliary cosphere bundle.
+Next: The same original subsequence gives a global complex amplitude covariance, the actual Ricci principal-symbol kernel, Borel entry changes between any compatible charts, and the original half-density pairing with two cutoffs for a supplied local classical representation. Continue with the original classical operator pairings in arbitrary receiving charts and the global F05 assembly.
 
 <a id="f06"></a>
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: One strict refinement of any original vacuum subsequence gives a single unit cosphere measure with all compact smooth symmetric Einstein moments, pointwise scalar-flatness, and scalar naturality in every compatible fixed smooth chart. The same original subsequence and chart witnesses under two auxiliary metrics give the squared-norm weighted pushforward, preserving all quadratic tensor-test moments. Continue with the global complex amplitude covariance on one control measure, its original angular defect representation, and the auxiliary change of the amplitude covariance.
+Next: The null restriction and real quarter contraction of the global amplitude give the original physical measure in the verified Einstein moments. Auxiliary-section change is proved for the amplitude and physical measure with the same witnesses. Continue with the global original defect representation and assembly of the paper's quadratic theorem.
 
 <a id="f08"></a>
 
