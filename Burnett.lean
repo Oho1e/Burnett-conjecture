@@ -376,3 +376,10 @@ import Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments
 
 import Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence
 import Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling
+
+import Burnett.Analysis.Microlocal.Overlap.AngularClassicalSymbolModel
+import Burnett.Analysis.Microlocal.Overlap.AngularPaperPairing
+import Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeBorelChange
+import Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair
+import Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude
+import Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover

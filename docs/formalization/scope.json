@@ -4528,6 +4528,231 @@
       "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
       "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
       "declaration": "Burnett.Microlocal.Overlap.cosphereEinsteinMoments_of_auxiliaryRescaling"
+    },
+    {
+      "claim_id": "f05:charttangentbasis-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartTangentBasis_change"
+    },
+    {
+      "claim_id": "f05:chartamplitude-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartAmplitude_change"
+    },
+    {
+      "claim_id": "f05:chartcomponents-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartComponents_change"
+    },
+    {
+      "claim_id": "f05:original-commonpatch-amplitudeagreement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudePlateau",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_amplitudeAgreement"
+    },
+    {
+      "claim_id": "f05:original-commonpatch-normalizedcosphereamplitudeentry-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudePlateauRestriction",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalizedCosphereAmplitudeEntry_eq"
+    },
+    {
+      "claim_id": "f05:original-normalizedcosphereamplitudeentry-eq-on-compactoverlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudeOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_eq_on_compactOverlap"
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudedensities-on-sum",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeCommonControl",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeDensities_on_sum"
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudetracecontrols-agree",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeTraceControls_agree"
+    },
+    {
+      "claim_id": "f05:original-compactchart-tracenormalizedamplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactChartTraceNormalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactChart_traceNormalizedAmplitude"
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-intrinsicamplitude-agree",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_intrinsicAmplitude_agree"
+    },
+    {
+      "claim_id": "f05:original-globalintrinsicamplitude-of-representedcharts",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_of_representedCharts"
+    },
+    {
+      "claim_id": "f05:intrinsicamplitude-agree-of-originalchartlaws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_agree_of_originalChartLaws"
+    },
+    {
+      "claim_id": "f05:regular-measure-on-unitcosphere",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+      "declaration": "Burnett.Microlocal.Overlap.regular_measure_on_unitCosphere"
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-entrymeasure-on-compactchart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_entryMeasure_on_compactChart"
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-atlaschart-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeIntegrability",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_integrable_atlasChart_on_compact"
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-atlaschart-entrymeasure-change-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeBorelChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_atlasChart_entryMeasure_change_on_compact"
+    },
+    {
+      "claim_id": "f05:complexfiberriccisymbol-eq-basis",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicRicciFiberSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.complexFiberRicciSymbol_eq_basis"
+    },
+    {
+      "claim_id": "f05:original-chart-tracenormalizedamplitude-ae-riccikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartTraceNormalizedAmplitudeKernel",
+      "declaration": "Burnett.Microlocal.Overlap.original_chart_traceNormalizedAmplitude_ae_ricciKernel"
+    },
+    {
+      "claim_id": "f05:ae-global-positive-unittrace-riccikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeAlmostEverywhere",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_global_positive_unitTrace_ricciKernel"
+    },
+    {
+      "claim_id": "f05:ae-intrinsicamplitudericcikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeRicciKernel",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_intrinsicAmplitudeRicciKernel"
+    },
+    {
+      "claim_id": "f05:originalvolume-represents-cutoffmul-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+      "declaration": "Burnett.Microlocal.Overlap.originalVolume_represents_cutoffMul_on_sameSubsequence"
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-samechart-plateau-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_sameChart_plateau_on_sameSubsequence"
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-finite-plateaucover-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_finite_plateauCover_on_sameSubsequence"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-normalizedamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularDefectConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_normalizedAmplitudeOn"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-cosphereamplitudeentryon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularCosphereConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_cosphereAmplitudeEntryOn"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGlobalAngularConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_globalAmplitudeOn"
+    },
+    {
+      "claim_id": "f05:tendsto-infraredangularprincipal-twocutoff-difference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularBilateralPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_infraredAngularPrincipal_twoCutoff_difference"
+    },
+    {
+      "claim_id": "f05:compact-orderminusone-leftaction-model",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularOrderMinusOneQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.compact_orderMinusOne_leftAction_model"
+    },
+    {
+      "claim_id": "f05:haslocalclassicalrepresentation-of-actualfullsymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularClassicalSymbolModel",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_actualFullSymbol"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-classicalpairing-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_classicalPairing_globalAmplitudeOn"
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-paperrealclassicalpairing-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularPaperPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_paperRealClassicalPairing_globalAmplitudeOn"
+    },
+    {
+      "claim_id": "f07:quartercontractioninbasis-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.quarterContractionInBasis_eq"
+    },
+    {
+      "claim_id": "f07:auxiliarytraceinbasis-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTraceInBasis_eq"
+    },
+    {
+      "claim_id": "f07:intrinsicphysicalweight-eq-chart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicPhysicalWeight_eq_chart"
+    },
+    {
+      "claim_id": "f07:intrinsicauxiliarytrace-nonneg-and-eq-zero-iff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTracePositive",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicAuxiliaryTrace_nonneg_and_eq_zero_iff"
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-recovers-entry-measures",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_recovers_entry_measures"
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-preserves-positive-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_preserves_positive_contraction"
+    },
+    {
+      "claim_id": "f07:original-chartcospherephysicalmeasure-eq-amplitudetracecontrol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalTracePhysicalContraction",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartCospherePhysicalMeasure_eq_amplitudeTraceControl"
+    },
+    {
+      "claim_id": "f07:original-globalphysicalcontraction-of-chartlaws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalAmplitudeContraction",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalContraction_of_chartLaws"
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-and-cosphereeinsteinmoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_and_cosphereEinsteinMoments"
+    },
+    {
+      "claim_id": "f07:ae-original-chartauxiliaryamplitude-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeAuxiliarySectionChange",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartAuxiliaryAmplitude_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:original-normalizedcosphereamplitudeentry-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliarySectionChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:original-intrinsicamplitude-trace-changeauxiliary-on-compactchart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactIntrinsicAmplitudeTraceChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsicAmplitude_trace_changeAuxiliary_on_compactChart"
+    },
+    {
+      "claim_id": "f07:original-globalintrinsicamplitude-trace-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeTraceChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_trace_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_changeAuxiliary"
     }
   ],
   "inventory": [
@@ -21496,6 +21721,771 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.cosphereEinsteinMoments_of_auxiliaryRescaling",
       "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:charttangentbasis-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartTangentBasis_change",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:chartamplitude-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartAmplitude_change",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:chartcomponents-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartComponents_change",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-commonpatch-amplitudeagreement",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_amplitudeAgreement",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-commonpatch-normalizedcosphereamplitudeentry-eq",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalizedCosphereAmplitudeEntry_eq",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-normalizedcosphereamplitudeentry-eq-on-compactoverlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_eq_on_compactOverlap",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudedensities-on-sum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeDensities_on_sum",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudetracecontrols-agree",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeTraceControls_agree",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-compactchart-tracenormalizedamplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactChart_traceNormalizedAmplitude",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-intrinsicamplitude-agree",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_intrinsicAmplitude_agree",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-globalintrinsicamplitude-of-representedcharts",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_of_representedCharts",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:intrinsicamplitude-agree-of-originalchartlaws",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_agree_of_originalChartLaws",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:regular-measure-on-unitcosphere",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.regular_measure_on_unitCosphere",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-entrymeasure-on-compactchart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_entryMeasure_on_compactChart",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-atlaschart-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_integrable_atlasChart_on_compact",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-atlaschart-entrymeasure-change-on-compact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_atlasChart_entryMeasure_change_on_compact",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:complexfiberriccisymbol-eq-basis",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.complexFiberRicciSymbol_eq_basis",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-chart-tracenormalizedamplitude-ae-riccikernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_chart_traceNormalizedAmplitude_ae_ricciKernel",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ae-global-positive-unittrace-riccikernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_global_positive_unitTrace_ricciKernel",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ae-intrinsicamplitudericcikernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_intrinsicAmplitudeRicciKernel",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:originalvolume-represents-cutoffmul-on-samesubsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalVolume_represents_cutoffMul_on_sameSubsequence",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-samechart-plateau-on-samesubsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_sameChart_plateau_on_sameSubsequence",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-finite-plateaucover-on-samesubsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_finite_plateauCover_on_sameSubsequence",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-normalizedamplitudeon",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_normalizedAmplitudeOn",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-cosphereamplitudeentryon",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_cosphereAmplitudeEntryOn",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-globalamplitudeon",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_globalAmplitudeOn",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-infraredangularprincipal-twocutoff-difference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_infraredAngularPrincipal_twoCutoff_difference",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-orderminusone-leftaction-model",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.compact_orderMinusOne_leftAction_model",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:haslocalclassicalrepresentation-of-actualfullsymbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_actualFullSymbol",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-classicalpairing-globalamplitudeon",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_classicalPairing_globalAmplitudeOn",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-paperrealclassicalpairing-globalamplitudeon",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_paperRealClassicalPairing_globalAmplitudeOn",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:quartercontractioninbasis-eq",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.quarterContractionInBasis_eq",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:auxiliarytraceinbasis-eq",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTraceInBasis_eq",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsicphysicalweight-eq-chart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicPhysicalWeight_eq_chart",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsicauxiliarytrace-nonneg-and-eq-zero-iff",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicAuxiliaryTrace_nonneg_and_eq_zero_iff",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-recovers-entry-measures",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_recovers_entry_measures",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-preserves-positive-contraction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_preserves_positive_contraction",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-chartcospherephysicalmeasure-eq-amplitudetracecontrol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartCospherePhysicalMeasure_eq_amplitudeTraceControl",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-globalphysicalcontraction-of-chartlaws",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalContraction_of_chartLaws",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-and-cosphereeinsteinmoments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_and_cosphereEinsteinMoments",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ae-original-chartauxiliaryamplitude-changeauxiliary",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartAuxiliaryAmplitude_changeAuxiliary",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-normalizedcosphereamplitudeentry-changeauxiliary",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_changeAuxiliary",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-intrinsicamplitude-trace-changeauxiliary-on-compactchart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsicAmplitude_trace_changeAuxiliary_on_compactChart",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-globalintrinsicamplitude-trace-changeauxiliary",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_trace_changeAuxiliary",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_changeAuxiliary",
+      "statement_record": "docs/statements/global-intrinsic-amplitude-covariance.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

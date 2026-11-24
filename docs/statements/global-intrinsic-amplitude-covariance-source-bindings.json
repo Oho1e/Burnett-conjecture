@@ -1,0 +1,948 @@
+{
+  "slices": [
+    "F05",
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "721d4244894363cce99359c8c744134274c16e80",
+  "base_tree": "93ffa5061a437f94c260b10e1c32f6e672507211",
+  "sources": {
+    "Burnett/Analysis/Microlocal/ChartAuxiliaryEmbedding.lean": {
+      "module": "Burnett.Analysis.Microlocal.ChartAuxiliaryEmbedding",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ActualChartAuxiliarySection",
+        "Burnett.Geometry.Cotangent.CosphereMeasure"
+      ],
+      "sha256": "7a9cab721910779cc447f8ce095f67de05e06fddf95a735f6ee77d325a7999e0"
+    },
+    "Burnett/Analysis/Microlocal/CompactAmplitudeCover.lean": {
+      "module": "Burnett.Analysis.Microlocal.CompactAmplitudeCover",
+      "imports": [
+        "Burnett.Analysis.Microlocal.PhysicalChartCover"
+      ],
+      "sha256": "d9ab3d791ad39bfb411c2a70272c627c499185356d50339fccf29c7b7074f803"
+    },
+    "Burnett/Analysis/Microlocal/ComplexMeasureBorelIntegral.lean": {
+      "module": "Burnett.Analysis.Microlocal.ComplexMeasureBorelIntegral",
+      "imports": [
+        "Burnett.Analysis.Microlocal.WeightedBorelRestriction",
+        "Mathlib.MeasureTheory.VectorMeasure.Decomposition.RadonNikodym"
+      ],
+      "sha256": "4a5ac0da7fda2f6c65e7f27642dbebefe2d24641927df80bbe3c89c620bec089"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmplitudeDensityOnCommonControl.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmplitudeDensityOnCommonControl",
+      "imports": [
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Data.Matrix.Basic",
+        "Mathlib.MeasureTheory.Function.AEEqOfIntegral",
+        "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym"
+      ],
+      "sha256": "c9a6bf8e4ee57336e3b49d87e9fd0afc9c7fd773f8c2c9843bb8a809ba2ff457"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AmplitudeEntryRecovery.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmplitudeEntryRecovery",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryTransport",
+        "Burnett.Analysis.Microlocal.OriginalVolumeAuxiliaryAmplitude"
+      ],
+      "sha256": "33a4eef5ba9de98372617c89e9463d3688b60dcea9fb4f9d7caafd59c654d641"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AngularBilateralPrincipal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularBilateralPrincipal",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAngularDensityPairing",
+        "Burnett.Analysis.Microlocal.Overlap.TargetSlotPairing",
+        "Burnett.Analysis.Fourier.SharpProjection"
+      ],
+      "sha256": "62e4f44347d2e51c99687ec113ca1440f394cc6744b7f4d87b6203470c7447b2"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AngularClassicalSymbolModel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularClassicalSymbolModel",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical",
+        "Burnett.Analysis.Microlocal.Overlap.AngularOrderMinusOneQuantization"
+      ],
+      "sha256": "04c0a1715a11c0033cccc57ae537f913942e44a180326ecfc3781d044eb5dba4"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AngularLocalClassical.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+        "Burnett.Analysis.Microlocal.Overlap.AngularBilateralPrincipal",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalGlobalAngularConsumer",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalWeakInput",
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffGradient",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint",
+        "Mathlib.Analysis.Normed.Operator.Compact"
+      ],
+      "sha256": "4d8b2b42728f3d4d9053df9b1ce0efad8ecd8511fbcf46d340ab0c6ed0653a8c"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AngularOrderMinusOneQuantization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularOrderMinusOneQuantization",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactBaseZeroFourier",
+        "Burnett.Analysis.Microlocal.CompactFrequencyCutoff",
+        "Burnett.Analysis.Microlocal.BesselLocalization",
+        "Burnett.Analysis.Fourier.SharpProjection",
+        "Burnett.Analysis.Microlocal.SeparableSquareOperators",
+        "Burnett.Geometry.FlatRigidity.WeakCurvature"
+      ],
+      "sha256": "58795ede40176299beebea7bbeed78e63874303f4e687a7e8bcea2c4f43d3f7c"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AngularPaperPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularPaperPairing",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical"
+      ],
+      "sha256": "976db6e667e5d7ccc9b2763fa77ee1e4f9d6b14087d95dc06c87a54b67e83832"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AtlasChartAmplitudeBorelChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeBorelChange",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeIntegrability",
+        "Burnett.Geometry.Cotangent.FixedChartNaturality"
+      ],
+      "sha256": "2cc7cafb474ef7b881ad2629c527b9d176755be1822dc6ec4631dae80a468495"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AtlasChartAmplitudeIntegrability.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeIntegrability",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure"
+      ],
+      "sha256": "ac5545b343cd88ce65cc3edec49aad26daa1b28017ec602ffaaf238bac19a6b7"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryAmplitudeTraceChangeCore.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryAmplitudeTraceChangeCore",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliarySectionChange",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure"
+      ],
+      "sha256": "8678cdbff0c603d889d110b46e79a46797715d51548bf939620946075d021bde"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryTraceCommonControlConsumer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceCommonControlConsumer",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeDensityOnCommonControl"
+      ],
+      "sha256": "51197f52a66c9a7e6edd68980ab1266da1f95a053d478497fa39617ce2e06e48"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryTracePositive.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTracePositive",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+        "Burnett.Geometry.CovariantTensorNorm",
+        "Mathlib.LinearAlgebra.Multilinear.Basis"
+      ],
+      "sha256": "5f97a776395e7d071379d94f70b888b0fbdf33b5716b447c1c3c1e830bd2315d"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryTraceReconstruction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTracePositive",
+        "Mathlib.MeasureTheory.VectorMeasure.WithDensity"
+      ],
+      "sha256": "58aab29d832beca0432d3d0384f4b42c56bf20c910d9d57225625fb5dee4bfc4"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AuxiliaryTraceTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceTransport",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeEntryRecovery",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates"
+      ],
+      "sha256": "863b01703d27651a45007891d3e38a6fc5925fd25c6a1577c64b55995a87bc41"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartAmplitudeAuxiliarySectionChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeAuxiliarySectionChange",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ChartAuxiliaryEmbedding",
+        "Burnett.Analysis.Microlocal.Overlap.CosphereAuxiliaryMeasureChange"
+      ],
+      "sha256": "e13d5beaffbfcf648f68f5afbd8078d9905bf9450eb7ab4fa72f9a003df45f3b"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartAmplitudeContractions.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+        "Burnett.Analysis.Microlocal.ChartAuxiliaryEmbedding",
+        "Burnett.Analysis.Microlocal.CoordinateRicciPrincipalRow",
+        "Burnett.Analysis.Microlocal.PhysicalDensity"
+      ],
+      "sha256": "615c056678531c813ba0835d45b1c4ff298ff4c6ac5fedf3c2b1ad12ddd4d361"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartCosphereControlMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartCosphereControlMeasure",
+      "imports": [
+        "Burnett.Analysis.Microlocal.ChartAuxiliaryEmbedding",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedCotangentPhysicalMeasure"
+      ],
+      "sha256": "9fda91cd6242c25e3cc91598f8544e25ce3eef13d338018cab5de8ba7794d119"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ChartTraceNormalizedAmplitudeKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartTraceNormalizedAmplitudeKernel",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl"
+      ],
+      "sha256": "b00ced675316bf503e45686712656a04117c8f17c14f3db11ae9a5f2f7b35878"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAmplitudeAuxiliaryControl.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeCommonControl",
+        "Burnett.Analysis.Microlocal.Overlap.MeasurableLiftedChartAmplitude",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceCommonControlConsumer",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceTransport"
+      ],
+      "sha256": "78abf840894b6b76240b7b4888e5b3ac6694337b21fef4f8b64d3b0030b54dc2"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAmplitudeAuxiliaryControlFinite.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControlFinite",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl"
+      ],
+      "sha256": "448bde1e1fd824787c50abff3250d80decfd932e7f509564babb2defce1f1238"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAmplitudeAuxiliarySectionChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliarySectionChange",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeAuxiliarySectionChange",
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeTraceLift"
+      ],
+      "sha256": "fb01e4c53d38b3738bac6db80c3cf905d436a43d4f176909457b490e5a4189e3"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAmplitudeCommonControl.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeCommonControl",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeTraceLift",
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeDensityOnCommonControl"
+      ],
+      "sha256": "3f0af52957b4dd9e561351bb49d6320956423ed5a197a93d5317ab95ac4a430a"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAmplitudeTraceLift.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeTraceLift",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ChartCosphereControlMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudeOverlap"
+      ],
+      "sha256": "da168503f83855f056c31c63705006ac0b2410738380ffac1731b83f05083512"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactChartTraceNormalization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactChartTraceNormalization",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction"
+      ],
+      "sha256": "74ea356698d7a76ec2f8d9e45c3b32649baad765b8117fe78089773c46e22235"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactIntrinsicAmplitudeTraceChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactIntrinsicAmplitudeTraceChange",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryAmplitudeTraceChangeCore",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudePositiveKernel"
+      ],
+      "sha256": "c392bffc5e44d33cc6b6c5834e9a9615691d484bf55a3e673233fdb5c8a33327"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalAmplitudeEntryMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactChartTraceNormalization",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude"
+      ],
+      "sha256": "5b3ed5fdf150084dc420b1b36bcdc92bae8e257b90ca63fcd0bc8095f5d4244b"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalIntrinsicAmplitude.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude",
+      "imports": [
+        "Burnett.Analysis.Microlocal.CompactAmplitudeCover",
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControlFinite",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeOverlap",
+        "Burnett.Geometry.GluedMeasureCompactProjection",
+        "Burnett.Geometry.GluedMeasureSection"
+      ],
+      "sha256": "c2d69bc9f2407271e7d24ab901be6f7417cff9176e91307ea4825d0c81ce12f0"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalIntrinsicAmplitudeAlmostEverywhere.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeAlmostEverywhere",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeBasisPositivity"
+      ],
+      "sha256": "82fd351d29a7545a71dd56333c0d8a0056c07fe85b094fc7e1c7a9101748ff00"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalIntrinsicAmplitudeBasisPositivity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeBasisPositivity",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudePositiveKernel"
+      ],
+      "sha256": "1e4223f15b08657fc2c8103803b22ef2a889a8f73d4f5a594c097b121756459d"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalIntrinsicAmplitudePositiveKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudePositiveKernel",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude",
+        "Burnett.Analysis.Microlocal.Overlap.CompactChartTraceNormalization",
+        "Burnett.Analysis.Microlocal.Overlap.ChartTraceNormalizedAmplitudeKernel"
+      ],
+      "sha256": "75d8dc1a629258f4b9b8ef6e0ab283c5066b167c092b84748545cd503d5fc52b"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalIntrinsicAmplitudeTraceChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeTraceChange",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactIntrinsicAmplitudeTraceChange"
+      ],
+      "sha256": "05df45e564245f76645a45faf8ab4121d69c2cbf0cee8e139a1f3b93184585fe"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalOriginalAmplitudeContraction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalAmplitudeContraction",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudePositiveKernel",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalTracePhysicalContraction"
+      ],
+      "sha256": "e8414283220f45d1fd6a24ad08ada3e6d2d1f7aba1e25beb7369d0e64ed1a9a7"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeContractions.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+        "Burnett.Geometry.IntrinsicScalarEinstein"
+      ],
+      "sha256": "0a98b3c40ad0da08444aa020fc1f7f86f1d23cb6c2910b6108153631e08e7afc"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeCoordinates.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeTransition",
+        "Burnett.Geometry.Cotangent.CosphereMeasure",
+        "Burnett.Geometry.Cotangent.FixedChartNaturality",
+        "Mathlib.LinearAlgebra.Multilinear.Basis"
+      ],
+      "sha256": "58eaa7a51011d0ae87bae2eb3ec513a1197a4fa9e62677b81259065f5c445203"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeOverlap.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeOverlap",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates"
+      ],
+      "sha256": "05345f3e8854ecbf387762588bc9454c8929258fdfaaf185c370c948e52acd31"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeRicciKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeRicciKernel",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicRicciFiberSymbol",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeAlmostEverywhere"
+      ],
+      "sha256": "328a82bdd3a4e005206f97045adc894f2f528f89be84d4df05c71d88f03c053c"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeUniqueness.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude",
+        "Mathlib.Topology.Metrizable.Urysohn"
+      ],
+      "sha256": "f26af34284db60f3b794e889760270d2099d788be9191bbd92c0874fe24cb718"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicRicciFiberSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicRicciFiberSymbol",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+        "Burnett.Geometry.ContravariantTensor"
+      ],
+      "sha256": "85da17c70d22c8749b068c9bf73bac17ae2bf5e6d15bc9d9c4649164aceb8460"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/MeasurableLiftedChartAmplitude.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.MeasurableLiftedChartAmplitude",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeTraceLift",
+        "Mathlib.Analysis.Calculus.FDeriv.Measurable"
+      ],
+      "sha256": "96549efae3df45cb6163b3ec06b425a6f164c88672499204ea2f3297674c113c"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedAmplitudeOverlap.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudeOverlap",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudePlateauRestriction",
+        "Burnett.Analysis.Microlocal.PhysicalChartCover",
+        "Burnett.Analysis.Microlocal.ChartAmplitudeMeasure",
+        "Burnett.Geometry.VectorMeasureCover"
+      ],
+      "sha256": "00fb3eb76cab1e4b6f9f4ff5217067ffd8afbaf0f767b3cda70c5eb90c46e121"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NormalizedAmplitudePlateauRestriction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudePlateauRestriction",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CommonPhysicalBasePlateau",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudePlateau"
+      ],
+      "sha256": "8ac051fc57cf7a67a374e1c34da41f03341ce1d2dd5b4021d2a0617ca1e86822"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAmplitudeAuxiliaryPair.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalAmplitudeContraction",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeTraceChange"
+      ],
+      "sha256": "fd1870d377a8773cc41c1505cc3175dc393fc1d585398766ce2b40dd990edaf1"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAmplitudePlateau.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudePlateau",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AmplitudeEntryRecovery",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedEntryWeightedTests",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalNormalizedEntryFromPlateau",
+        "Burnett.Geometry.Cotangent.CosphereMeasure"
+      ],
+      "sha256": "ec91a02754ba5919947e18d41606f9765350fc1e291a830f1c9d1cf779927da7"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAngularCosphereConsumer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularCosphereConsumer",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalAngularDefectConsumer"
+      ],
+      "sha256": "71f913f04c96cf4aecab4205887fa257e189d64515a7d97567379d43d4771f29"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAngularDefectConsumer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularDefectConsumer",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAngularDensityPairing",
+        "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudeOverlap",
+        "Burnett.Analysis.Microlocal.OriginalVolumePairingLimits",
+        "Burnett.Analysis.Microlocal.ChartAuxiliaryEmbedding",
+        "Burnett.Analysis.Microlocal.ComplexMeasureBorelIntegral"
+      ],
+      "sha256": "73a0d4e6b94cb1052873fff023a62f479479dd9f3cd2797c90ac0e7dbbab34cd"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalCutoffRefinement.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalCutoffPairing",
+        "Burnett.Analysis.Microlocal.PhysicalChartCover"
+      ],
+      "sha256": "1fefb8b807127dd2b8bc6879961954e28bad22299ffcafcf3dac51dc70a29fd0"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalGlobalAngularConsumer.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGlobalAngularConsumer",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalAngularCosphereConsumer",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure"
+      ],
+      "sha256": "c0d6cd5d0694f5aef64e35a9e0d91231e7eea54359eed9c780f586849cc380de"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalTracePhysicalContraction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalTracePhysicalContraction",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalJetMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+        "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions"
+      ],
+      "sha256": "bd6d24d65f249d69a7e8caf1c16eadc5e879649847227daf2a220b0f3a79e56c"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalVacuumIntrinsicAmplitude.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalAmplitudeContraction",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeRicciKernel",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+        "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments"
+      ],
+      "sha256": "15d6e4959ae309a5e26ae819c3648dd7d4f77a29e754af640f4656658fac083e"
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RepresentedLocalPlateauCover.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement"
+      ],
+      "sha256": "f2e8cf8c6bd4709622dc6ff47fd17b18e19a3deb050f953b59b8315ff0092be1"
+    },
+    "Burnett/Analysis/Microlocal/WeightedBorelRestriction.lean": {
+      "module": "Burnett.Analysis.Microlocal.WeightedBorelRestriction",
+      "imports": [
+        "Mathlib.MeasureTheory.VectorMeasure.WithDensity",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+      ],
+      "sha256": "fcbef969ca3efd924856da56ca2dab967bd7506c298973203ef58727e0813353"
+    },
+    "Burnett/Geometry/GluedMeasureCompactProjection.lean": {
+      "module": "Burnett.Geometry.GluedMeasureCompactProjection",
+      "imports": [
+        "Burnett.Geometry.MeasureGluing",
+        "Mathlib.MeasureTheory.Measure.Typeclasses.Finite",
+        "Mathlib.Topology.Compactness.Compact"
+      ],
+      "sha256": "e1ef2ebb148fac4b42a04bfdbb672e7afed25ceb47a0ab8c9a8e71938c6a9eb5"
+    },
+    "Burnett/Geometry/GluedMeasureSection.lean": {
+      "module": "Burnett.Geometry.GluedMeasureSection",
+      "imports": [
+        "Burnett.Geometry.MeasureGluing",
+        "Mathlib.MeasureTheory.Measure.AEMeasurable"
+      ],
+      "sha256": "6dcf9ecfbfaebf224aea01ad307628d2f6c37716db23152bd19dc456bef8edd9"
+    },
+    "Burnett/Geometry/VectorMeasureCover.lean": {
+      "module": "Burnett.Geometry.VectorMeasureCover",
+      "imports": [
+        "Mathlib.MeasureTheory.VectorMeasure.Basic"
+      ],
+      "sha256": "d69d215d3d14d7f16c9c6b7c144fa2458a40692eca68efe03d551a577d1f022c"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f05:charttangentbasis-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartTangentBasis_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:chartamplitude-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartAmplitude_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:chartcomponents-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates",
+      "declaration": "Burnett.F07.IntrinsicAmplitudeCoordinates.chartComponents_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-commonpatch-amplitudeagreement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudePlateau",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_amplitudeAgreement",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-commonpatch-normalizedcosphereamplitudeentry-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudePlateauRestriction",
+      "declaration": "Burnett.Microlocal.Overlap.original_commonPatch_normalizedCosphereAmplitudeEntry_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-normalizedcosphereamplitudeentry-eq-on-compactoverlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedAmplitudeOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_eq_on_compactOverlap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudedensities-on-sum",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeCommonControl",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeDensities_on_sum",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-amplitudetracecontrols-agree",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliaryControl",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_amplitudeTraceControls_agree",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-compactchart-tracenormalizedamplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactChartTraceNormalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactChart_traceNormalizedAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-compactoverlap-intrinsicamplitude-agree",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.original_compactOverlap_intrinsicAmplitude_agree",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-globalintrinsicamplitude-of-representedcharts",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitude",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_of_representedCharts",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:intrinsicamplitude-agree-of-originalchartlaws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_agree_of_originalChartLaws",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:regular-measure-on-unitcosphere",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeUniqueness",
+      "declaration": "Burnett.Microlocal.Overlap.regular_measure_on_unitCosphere",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-entrymeasure-on-compactchart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalAmplitudeEntryMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_entryMeasure_on_compactChart",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-integrable-atlaschart-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeIntegrability",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_integrable_atlasChart_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-globalamplitude-atlaschart-entrymeasure-change-on-compact",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeBorelChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalAmplitude_atlasChart_entryMeasure_change_on_compact",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:complexfiberriccisymbol-eq-basis",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicRicciFiberSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.complexFiberRicciSymbol_eq_basis",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:original-chart-tracenormalizedamplitude-ae-riccikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartTraceNormalizedAmplitudeKernel",
+      "declaration": "Burnett.Microlocal.Overlap.original_chart_traceNormalizedAmplitude_ae_ricciKernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:ae-global-positive-unittrace-riccikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeAlmostEverywhere",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_global_positive_unitTrace_ricciKernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:ae-intrinsicamplitudericcikernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeRicciKernel",
+      "declaration": "Burnett.Microlocal.Overlap.HasOriginalAmplitudeChartLaws.ae_intrinsicAmplitudeRicciKernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 414,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:originalvolume-represents-cutoffmul-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+      "declaration": "Burnett.Microlocal.Overlap.originalVolume_represents_cutoffMul_on_sameSubsequence",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-samechart-plateau-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalCutoffRefinement",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_sameChart_plateau_on_sameSubsequence",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:exists-originalvolume-finite-plateaucover-on-samesubsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVolume_finite_plateauCover_on_sameSubsequence",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-normalizedamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularDefectConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_normalizedAmplitudeOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-cosphereamplitudeentryon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAngularCosphereConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_cosphereAmplitudeEntryOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-angularaction-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGlobalAngularConsumer",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_angularAction_globalAmplitudeOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-infraredangularprincipal-twocutoff-difference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularBilateralPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_infraredAngularPrincipal_twoCutoff_difference",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:compact-orderminusone-leftaction-model",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularOrderMinusOneQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.compact_orderMinusOne_leftAction_model",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:haslocalclassicalrepresentation-of-actualfullsymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularClassicalSymbolModel",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_actualFullSymbol",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-classicalpairing-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_classicalPairing_globalAmplitudeOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f05:tendsto-originalvolume-paperrealclassicalpairing-globalamplitudeon",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AngularPaperPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_paperRealClassicalPairing_globalAmplitudeOn",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "f07:quartercontractioninbasis-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.quarterContractionInBasis_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:auxiliarytraceinbasis-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTraceInBasis_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:intrinsicphysicalweight-eq-chart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeContractions",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicPhysicalWeight_eq_chart",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:intrinsicauxiliarytrace-nonneg-and-eq-zero-iff",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTracePositive",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.intrinsicAuxiliaryTrace_nonneg_and_eq_zero_iff",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-recovers-entry-measures",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_recovers_entry_measures",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:auxiliarytrace-normalization-preserves-positive-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTraceReconstruction",
+      "declaration": "Burnett.F07.IntrinsicAmplitude.auxiliaryTrace_normalization_preserves_positive_contraction",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-chartcospherephysicalmeasure-eq-amplitudetracecontrol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalTracePhysicalContraction",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartCospherePhysicalMeasure_eq_amplitudeTraceControl",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:original-globalphysicalcontraction-of-chartlaws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalAmplitudeContraction",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalContraction_of_chartLaws",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-intrinsicamplitude-and-cosphereeinsteinmoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_and_cosphereEinsteinMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 469,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "f07:ae-original-chartauxiliaryamplitude-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ChartAmplitudeAuxiliarySectionChange",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartAuxiliaryAmplitude_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      }
+    },
+    {
+      "claim_id": "f07:original-normalizedcosphereamplitudeentry-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAmplitudeAuxiliarySectionChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCosphereAmplitudeEntry_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      }
+    },
+    {
+      "claim_id": "f07:original-intrinsicamplitude-trace-changeauxiliary-on-compactchart",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactIntrinsicAmplitudeTraceChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsicAmplitude_trace_changeAuxiliary_on_compactChart",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      }
+    },
+    {
+      "claim_id": "f07:original-globalintrinsicamplitude-trace-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalIntrinsicAmplitudeTraceChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalIntrinsicAmplitude_trace_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      }
+    },
+    {
+      "claim_id": "f07:exists-originalvacuum-samewitnesses-intrinsicamplitude-changeauxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_changeAuxiliary",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}

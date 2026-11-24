@@ -82,3 +82,5 @@
 - [全局正物理测度与逐图 Ricci 矩](global-physical-ricci-moments.zh-CN.md)
 
 - [全局 Einstein 矩与辅助余球面换截面](global-cosphere-einstein-moments.zh-CN.md)
+
+- [全局内蕴振幅协方差与原物理测度](global-intrinsic-amplitude-covariance.zh-CN.md)
