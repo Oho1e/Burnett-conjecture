@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `21dd429dbfaaebf1c589ceee27f7986ec12d5428e7ba2897ebe158ebcde7f8cd`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2fc49c8cd17deb807392bfdb321aa571da6f2977a7f61bf1e5827f779eda0082`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: The Ricci kernel on the original vacuum subsequence and chart traces gives finite positive local physical measures on the actual auxiliary unit null shell. On common plateaus the two measures, weighted by their respective reciprocal cutoff squares, push to the same cotangent measure. Continue with global gluing, the Ricci and Einstein moments, scalar-flatness, and weighted transport between sections.
+Next: One original vacuum subsequence gives compatible local positive measures on the full nonzero cutoff loci. The glued measure lies on the actual auxiliary unit null shell and is finite over every compact base set. Represented charts on that same subsequence satisfy the Ricci component second-moment identities with both integrands integrable. Continue with arbitrary global tensor tests, pointwise scalar-flatness, the Einstein moment, and change of auxiliary section.
 
 <a id="f08"></a>
 

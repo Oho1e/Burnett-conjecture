@@ -4268,6 +4268,131 @@
       "claim_id": "f07:original-vacuum-physical-measure-common-rays",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap",
       "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_cotangentPhysicalMeasure_eq"
+    },
+    {
+      "claim_id": "f07:countable-physical-chart-cover",
+      "module": "Burnett.Analysis.Microlocal.PhysicalChartCover",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_compactChartInput_cover"
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-bounded-away-from-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedCotangentPhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedCotangentPhysicalMeasure_lt_top_of_cutoff_lower_bound"
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-null-support",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedCotangentPhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedCotangentPhysicalMeasure_compl_null"
+    },
+    {
+      "claim_id": "f07:common-physical-base-plateau",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CommonPhysicalBasePlateau",
+      "declaration": "Burnett.Microlocal.Overlap.isCompact_commonPatchBasePlateau"
+    },
+    {
+      "claim_id": "f07:physical-measure-weighted-restriction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalMeasureRestriction",
+      "declaration": "Burnett.Microlocal.Overlap.map_comap_subtype_coe_restrict_withDensity"
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-common-patch",
+      "module": "Burnett.Analysis.Microlocal.Overlap.PhysicalPlateauRestriction",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_normalizedCotangentPhysicalMeasure_restrict_commonPatch"
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-full-nonzero-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedPhysicalOverlap",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_normalizedCotangentPhysicalMeasure_restrict_overlap"
+    },
+    {
+      "claim_id": "f07:glued-original-physical-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GluedPhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.exists_glued_originalVacuum_physicalMeasure"
+    },
+    {
+      "claim_id": "f07:global-physical-measure-on-common-subsequence",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalPhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure"
+    },
+    {
+      "claim_id": "f07:global-physical-measure-chart-law",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalPhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_and_chartLaw"
+    },
+    {
+      "claim_id": "f07:actual-cosphere-map-readback",
+      "module": "Burnett.Geometry.Cotangent.CosphereMeasure",
+      "declaration": "Burnett.Geometry.UnitCosphere.map_fromAmbient_eq_of_unitNull"
+    },
+    {
+      "claim_id": "f07:actual-cosphere-regular-measure",
+      "module": "Burnett.Geometry.Cotangent.CosphereMeasure",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_regular"
+    },
+    {
+      "claim_id": "f07:actual-cosphere-finite-over-compact-base",
+      "module": "Burnett.Geometry.Cotangent.CosphereMeasure",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_finiteOnCompactBase"
+    },
+    {
+      "claim_id": "f07:actual-cosphere-null-support",
+      "module": "Burnett.Geometry.Cotangent.CosphereMeasure",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_offNull"
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-on-cosphere",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalCospherePhysicalMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere"
+    },
+    {
+      "claim_id": "f07:original-raw-weak-ricci",
+      "module": "Burnett.Analysis.RawConnectionWeakRicci",
+      "declaration": "Burnett.Analysis.PartialJetReplacement.vacuum_Ricci_raw_coordinateMeasure_limit_of_original"
+    },
+    {
+      "claim_id": "f07:ordered-connection-jet-sum",
+      "module": "Burnett.Analysis.Microlocal.OrderedRicciJet",
+      "declaration": "Burnett.Microlocal.RawCovariance.rawJetCross_eq_jet_sum"
+    },
+    {
+      "claim_id": "f07:original-cutoff-jet-products",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedCoordinateProducts",
+      "declaration": "Burnett.Microlocal.Overlap.original_cutoff_products_of_represented"
+    },
+    {
+      "claim_id": "f07:original-normalized-jet-products",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedNormalizedProducts",
+      "declaration": "Burnett.Microlocal.Overlap.original_products_of_represented_on_nonzero_cutoff"
+    },
+    {
+      "claim_id": "f07:ricci-tested-normalized-jet-density",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedChartRicci",
+      "declaration": "Burnett.Microlocal.Overlap.original_Ricci_eq_normalized_jetContraction"
+    },
+    {
+      "claim_id": "f07:ricci-kernel-null-second-moment",
+      "module": "Burnett.Analysis.Microlocal.RicciDensityNullMoment",
+      "declaration": "Burnett.Microlocal.RawCovariance.rawJetContraction_eq_nullMoment_of_factored"
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-same-chart-measure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedChartMoment",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartRicci_eq_physical_secondMoment"
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-cotangent-restriction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.RepresentedCotangentMoment",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartRicci_eq_cotangent_secondMoment"
+    },
+    {
+      "claim_id": "f07:glued-measure-represented-chart-ricci-moments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GluedChartRicciMoments",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_and_representedChartMoments"
+    },
+    {
+      "claim_id": "f07:cosphere-shares-represented-chart-ricci-moments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere_and_representedChartMoments"
     }
   ],
   "inventory": [
@@ -20352,6 +20477,431 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.originalVacuum_commonPatch_cotangentPhysicalMeasure_eq",
       "statement_record": "docs/statements/local-positive-physical-measures.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:countable-physical-chart-cover",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.CountableAuxiliaryCharts.exists_countable_compactChartInput_cover",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-bounded-away-from-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedCotangentPhysicalMeasure_lt_top_of_cutoff_lower_bound",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-null-support",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.normalizedCotangentPhysicalMeasure_compl_null",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:common-physical-base-plateau",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.isCompact_commonPatchBasePlateau",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:physical-measure-weighted-restriction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.map_comap_subtype_coe_restrict_withDensity",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-common-patch",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_normalizedCotangentPhysicalMeasure_restrict_commonPatch",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-full-nonzero-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.originalVacuum_normalizedCotangentPhysicalMeasure_restrict_overlap",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:glued-original-physical-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_glued_originalVacuum_physicalMeasure",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:global-physical-measure-on-common-subsequence",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:global-physical-measure-chart-law",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_and_chartLaw",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-cosphere-map-readback",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitCosphere.map_fromAmbient_eq_of_unitNull",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-cosphere-regular-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_regular",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-cosphere-finite-over-compact-base",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_finiteOnCompactBase",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-cosphere-null-support",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitCosphere.fromAmbient_offNull",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-on-cosphere",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-raw-weak-ricci",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.PartialJetReplacement.vacuum_Ricci_raw_coordinateMeasure_limit_of_original",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ordered-connection-jet-sum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.RawCovariance.rawJetCross_eq_jet_sum",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-cutoff-jet-products",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_cutoff_products_of_represented",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-normalized-jet-products",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_products_of_represented_on_nonzero_cutoff",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-tested-normalized-jet-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_Ricci_eq_normalized_jetContraction",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-kernel-null-second-moment",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.RawCovariance.rawJetContraction_eq_nullMoment_of_factored",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-same-chart-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartRicci_eq_physical_secondMoment",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-cotangent-restriction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartRicci_eq_cotangent_secondMoment",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:glued-measure-represented-chart-ricci-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_and_representedChartMoments",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:cosphere-shares-represented-chart-ricci-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere_and_representedChartMoments",
+      "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

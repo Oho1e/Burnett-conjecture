@@ -78,3 +78,5 @@
 - [相互搬运截断下的重叠域矩阵测度](matching-cutoff-matrix-measures.zh-CN.md)
 - [独立截断下的重叠域矩阵测度](independent-cutoff-matrix-measures.zh-CN.md)
 - [原图上的正物理测度](local-positive-physical-measures.zh-CN.md)
+
+- [全局正物理测度与逐图 Ricci 矩](global-physical-ricci-moments.zh-CN.md)
