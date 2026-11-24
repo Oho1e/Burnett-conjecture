@@ -86,3 +86,5 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Global intrinsic amplitude covariance and the original physical measure](global-intrinsic-amplitude-covariance.en.md)
 
 - [Represent the original jet covariance in arbitrary receiving charts](receiving-chart-jet-covariance.en.md)
+
+- [Localize the original covariant jets and assemble their intrinsic measure](symmetric-jet-localization.en.md)

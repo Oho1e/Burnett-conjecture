@@ -386,3 +386,9 @@ import Burnett.Analysis.Microlocal.Overlap.RepresentedLocalPlateauCover
 
 import Burnett.Analysis.Microlocal.Overlap.OriginalReceivingEinsteinAssembly
 import Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries
+
+import Burnett.Analysis.Microlocal.Overlap.ActualClassicalMatrixPairing
+import Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator
+import Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly
+import Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl
+import Burnett.Analysis.Microlocal.Overlap.TransportedSeparableClassical

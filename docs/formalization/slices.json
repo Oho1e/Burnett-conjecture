@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "任意相容图中的实际经典算子配对已覆盖具有已形式化局部表示的算子。原梯度协方差在紧图窗上给出矩阵值测度，实际辅助单位余向量插入满足 Gram 等距因子化。继续接入论文完整的几何算子类、束值测度的全局表示和一般一阶定位。",
+      "next_action": "已核验真实协变梯度的一阶定位、旋度及内蕴 Ricci 核，并在同一控制上实现对称 jet 测度。下一步完成一般联合位置频率符号的换图和完整几何测试类。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "同一严格细化同时给出任意相容图中的原经典配对、原振幅、物理收缩、Einstein 矩和固定图自然性。继续核对完整 F05 输入并完成冻结论文二次定理的整体验收。",
+      "next_action": "同一细化、振幅和物理测度同时给出已有真实局部表示的协变梯度配对、对称 jet 测度、Ricci 核和 Einstein 矩。继续核对完整 F05 输入与冻结二次题面。",
       "supplementary_obligations": []
     },
     {
@@ -7868,6 +7868,240 @@
     },
     {
       "claim_id": "f05:original-atlasjetcovarianceoperator-matrixmeasure-on-compact",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasCovectorGram-transition",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingSeparablePairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-receivingJetOperator-kernel-of-scaled-ordered-rows",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:negativeEnergy-firstOrderRow-tendsto-zero-of-strongL2-replacement",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedCovariantJet-intrinsic-components",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:bessel-firstOrderRow-cutoff-sub-tendsto-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-fullSymbolPairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-windowKernel-schur",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetGram-transition",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetCovarianceOperator-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-separableRow-kernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradientSchwartz-intrinsic",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradient-sub-partial-tendsto-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-leftCutoff-fullSymbolPairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classicalFullSymbolOperator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-infraredAngularPrincipalOperator",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-localizedNormalizedAngularDifference",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-overlap",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeRowPrincipal-tendsto-zero-of-negativeEnergy",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingPrincipalRow-eq-firstOrderSymbol",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-atlasJetCovarianceOperator-gramPositive-unitTrace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-coordinates",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasOriginalReceivingCovariantPaperPairings-of-intrinsicAmplitude",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingLocalFullPairing-of-puncturedPrincipal",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classical-transportedSeparableOperator-on-compactInterior",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-firstOrderSystem-kernel-of-negativeEnergy",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-trace",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-intrinsicJetCovarianceEndomorphism-mem-symmetric",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-range-gradientRicci",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingClassicalFullMatrixPairing",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-covariant-firstOrderSystem-kernel-of-negativeEnergy",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicSymmetricJetCovariance-extension",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-hasIntrinsicSymmetricJetMeasure",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasSymmetricJetEntries-overlap",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingCurlSymbol-eq",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-originalVacuum-symmetricJetMeasure-covariantPairings-and-EinsteinMoments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingGeometricCurlRow-apply",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeGeometricCurl-negativeEnergy-tendsto-zero",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
       "source_slices": [
         "F05"
       ]

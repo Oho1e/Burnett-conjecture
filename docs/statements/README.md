@@ -86,3 +86,5 @@
 - [全局内蕴振幅协方差与原物理测度](global-intrinsic-amplitude-covariance.zh-CN.md)
 
 - [任意接收图中的原梯度协方差与经典算子配对](receiving-chart-jet-covariance.zh-CN.md)
+
+- [真实协变 jet 的定位与全局对称测度](symmetric-jet-localization.zh-CN.md)

@@ -1,0 +1,658 @@
+{
+  "slices": [
+    "F05",
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "base": "e9481674512b92ae4dabee098cd82deb151af9d6",
+  "base_tree": "e65724b8c145f67020c20c43f88bf14145da59be",
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/AtlasCovectorGramNaturality.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasCovectorGramNaturality",
+      "sha256": "9e490779769e5766d0803163201db1210fa784f29ca431067e9b9b44e3899a65",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries",
+        "Burnett.Geometry.MaximalChart.UniformMetric"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingSeparablePairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingSeparablePairing",
+      "sha256": "c0401ce70d0fba78f6ac06c2a8704c76d42c95975f7ca418def56cd0e6d62d20",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingClassicalPairings",
+        "Burnett.Analysis.Microlocal.Overlap.SupportedWeakFourier"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingRowRangeBridge.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowRangeBridge",
+      "sha256": "bbb7c27689683a4736cf99d8de4872db514a0088fcec9447050880c3e657a9bd",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FirstOrderNegativeContinuity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderNegativeContinuity",
+      "sha256": "495af0c26f2bd30e2d21bced1a6adccb99d1215200568e6f3d2d3b7085200294",
+      "imports": [
+        "Burnett.Analysis.Microlocal.BesselLocalization"
+      ]
+    },
+    "Burnett/Geometry/MaximalChart/ReceivingChartCovariantJet.lean": {
+      "module": "Burnett.Geometry.MaximalChart.ReceivingChartCovariantJet",
+      "sha256": "8cda330fe00cd0320bb18f50f1228458229d1d17891913b1eb796182c5911314",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.CurvatureTransfer",
+        "Burnett.Geometry.IntrinsicDhMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeCoordinates"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FirstOrderCutoffCommutator.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator",
+      "sha256": "2c6a114747be58ff472c52b8c39a5d9597304c5b28e33899f4c489b41488a0d3",
+      "imports": [
+        "Burnett.Analysis.Microlocal.BesselLocalization"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ActualClassicalFullSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol",
+      "sha256": "1b766c4a1faa60a2772aaea24fc9e70340f3c4d44e5eee490053282551033c20",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AngularClassicalSymbolModel",
+        "Burnett.Analysis.PrincipalEnergy.Localization.ProductPartialJets"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactWindowKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactWindowKernel",
+      "sha256": "ec3b1bd31c09df27b8c3b0c5cc89ac76f7568c13188668dbd9d759a05aac4669",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.DyadicSchur",
+        "Mathlib.Analysis.InnerProductSpace.Projection.Submodule",
+        "Mathlib.Analysis.Normed.Operator.Compact"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AtlasJetOperatorNaturality.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+      "sha256": "e47c4c698c3f4a9e524ba5b15dfbef7a45f136af1c28095cf17733f08002fb20",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AtlasCovectorGramNaturality"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingRowLocalization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowLocalization",
+      "sha256": "614cd331dd504afaee9bbe12697cdead94a3a05588ceb56cb72d3df48f002b32",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingSeparablePairing",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetAmplitudeMeasure",
+        "Burnett.Analysis.Microlocal.RowKernelDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingChartCovariantGradient.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+      "sha256": "25646b855f63a59ba5e10e31ae734cef0eccefe94856ea66714158bf81c05162",
+      "imports": [
+        "Burnett.Geometry.MaximalChart.ReceivingChartCovariantJet",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartVolumeInputs"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalClassicalFullSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol",
+      "sha256": "21596359a4ac56c522ed1211fa607dcd3cf6f2aa435b643f9cf6e130b7bb547d",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingClassicalPairings"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactClassicalQuantization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+      "sha256": "1094f6435e5907a28dda94c86a76385deeb3d1f8adde6237a40df9bfb3170878",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactReceivingAngularDifference.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactReceivingAngularDifference",
+      "sha256": "2e862a6ca9b14149dddc346e08103a7541f7b61ca19080a65c8dc3361c2cd1da",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactWindowKernel",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartFourierLimit",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartHalfDensity"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/AtlasJetOperatorMeasureNaturality.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorMeasureNaturality",
+      "sha256": "bafb3aab615da5162415264213f3a71e3b85b9e11030757942288c7b1eeb6d65",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingFirstOrderPrincipal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+      "sha256": "3f744fa8eeba2db471f37312d8e5e5cbcb9280e400039015b404407c48dad5fc",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingRowLocalization"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingJetGramPositiveTrace.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetGramPositiveTrace",
+      "sha256": "98a59557b02c236feeea81cc34f88ee4607945ed098c8e69cc4f157320b4da3b",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+        "Burnett.Analysis.Microlocal.Overlap.AuxiliaryTracePositive"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicJetEndomorphism.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism",
+      "sha256": "545a20579a2f855f7e42b204188a91edf3ef779627c6bb8d9b02fbf4dacf769d",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingChartCovariantPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing",
+      "sha256": "1733ecbd9eefc1183eb8ff6cefd0e7956a5ab467f58380a7a98355edbf077c04",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingClassicalPairings",
+        "Burnett.Analysis.Microlocal.Overlap.PairingReplacement"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalClassicalPuncturedPrincipal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal",
+      "sha256": "9cd8b5efa47cf78e36d6dcd1712fb5ceb29d8cc5ed294e9a3fa4e24d64834bef",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/TransportedSeparableClassical.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedSeparableClassical",
+      "sha256": "b0d4b54d336c99deff3617c2296c624957054d5a2945e4dfa019ea53d4a15e12",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.CompactReceivingAngularDifference",
+        "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartBaseModes",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartRepresentedPairing"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingFirstOrderKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderKernel",
+      "sha256": "9270492d9934b8c060e269b1e7004e5a47ec97dcad6374fa3c98fd0678632764",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingRowRangeBridge"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingJetTraceMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetTraceMeasure",
+      "sha256": "c5011103be886d333cb62b476e70005cbe4ec23661f24ae62a4f7095d61754dd",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJetGramPositiveTrace"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicSymmetricJet.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJet",
+      "sha256": "be4fbea6ca02f4039e10e62ae5acf6e31255768dc9c2a2ef1e7044d3f802aa9f",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicJetRicciRange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetRicciRange",
+      "sha256": "1627957f4a5cd2ac44f949c6242ad7add3b6faf31c63a72be2fa0ad9f92078ff",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude",
+        "Burnett.Analysis.Microlocal.RicciJetSymbol"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ActualClassicalMatrixPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalMatrixPairing",
+      "sha256": "77c8701feaf1f7a2f568b6ebd2b743523c588b6edcbccdf0fdb84308d0640416",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingCovariantFirstOrderLocalization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantFirstOrderLocalization",
+      "sha256": "ed134f4a0407205b227b61925655157b29d99ad3b37b9a5fcd7b9d84d79ebe65",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderKernel",
+        "Burnett.Analysis.Microlocal.Overlap.FirstOrderNegativeContinuity",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicJetSymmetricProjection.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection",
+      "sha256": "996c4c1422e3025946b39b2ca4be99ec2784cd5c84cb5c80354d14af5c263c09",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJet"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicSymmetricJetMeasure.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+      "sha256": "2351c5d2667ce29cc10b88a02fd14480d0713a2a587e70bbf692f8c67739fb33",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJetTraceMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorMeasureNaturality"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingCovariantCurl.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantCurl",
+      "sha256": "3506c7352d56671e258a2a453d88c3d28bf7d7a6724aa6cb238a0b684f828225",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantFirstOrderLocalization",
+        "Burnett.Analysis.Microlocal.CoordinateCurlRows"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalSymmetricJetEinsteinAssembly.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly",
+      "sha256": "c44c84497246866de7240561b305eb190407fa2404676732dcc3b2bafad8543a",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetRicciRange",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing"
+      ]
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingGeometricCurl.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "sha256": "5d32c9e7591f6be41712b5cc5b81adba841765473e899f03e55fb009e7355893",
+      "imports": [
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantCurl"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "symmetric-jet-localization:atlasCovectorGram-transition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasCovectorGramNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasCovectorGram_transition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingSeparablePairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingSeparablePairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingSeparablePairing",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-receivingJetOperator-kernel-of-scaled-ordered-rows",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowRangeBridge",
+      "declaration": "Burnett.Microlocal.Overlap.ae_receivingJetOperator_kernel_of_scaled_ordered_rows",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:negativeEnergy-firstOrderRow-tendsto-zero-of-strongL2-replacement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderNegativeContinuity",
+      "declaration": "Burnett.Microlocal.BesselLocalization.negativeEnergy_firstOrderRow_tendsto_zero_of_strongL2_replacement",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedCovariantJet-intrinsic-components",
+      "module": "Burnett.Geometry.MaximalChart.ReceivingChartCovariantJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedCovariantJet_intrinsic_components",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 393
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:bessel-firstOrderRow-cutoff-sub-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator",
+      "declaration": "Burnett.Microlocal.BesselLocalization.bessel_firstOrderRow_cutoff_sub_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-fullSymbolPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_fullSymbolPairing",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-windowKernel-schur",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactWindowKernel",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compact_windowKernel_schur",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 401,
+        "endline": 404
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetGram-transition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetGram_transition",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetCovarianceOperator-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetCovarianceOperator_change",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-separableRow-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowLocalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_separableRow_kernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradientSchwartz-intrinsic",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_intrinsic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradient-sub-partial-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradient_sub_partial_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-leftCutoff-fullSymbolPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_leftCutoff_fullSymbolPairing",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classicalFullSymbolOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.exists_classicalFullSymbolOperator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-infraredAngularPrincipalOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.exists_infraredAngularPrincipalOperator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-localizedNormalizedAngularDifference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactReceivingAngularDifference",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedNormalizedAngularDifference",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorMeasureNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_overlap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeRowPrincipal-tendsto-zero-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeRowPrincipal_tendsto_zero_of_negativeEnergy",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingPrincipalRow-eq-firstOrderSymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.receivingPrincipalRow_eq_firstOrderSymbol",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-atlasJetCovarianceOperator-gramPositive-unitTrace",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetGramPositiveTrace",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_atlasJetCovarianceOperator_gramPositive_unitTrace",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-coordinates",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_coordinates",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasOriginalReceivingCovariantPaperPairings-of-intrinsicAmplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingCovariantPaperPairings_of_intrinsicAmplitude",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingLocalFullPairing-of-puncturedPrincipal",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingLocalFullPairing_of_puncturedPrincipal",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classical-transportedSeparableOperator-on-compactInterior",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedSeparableClassical",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedSeparableOperator_on_compactInterior",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-firstOrderSystem-kernel-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderKernel",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_firstOrderSystem_kernel_of_negativeEnergy",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-trace",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetTraceMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_trace",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-intrinsicJetCovarianceEndomorphism-mem-symmetric",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJet",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_intrinsicJetCovarianceEndomorphism_mem_symmetric",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-range-gradientRicci",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetRicciRange",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_range_gradientRicci",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 424
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingClassicalFullMatrixPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalMatrixPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalFullMatrixPairing",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-covariant-firstOrderSystem-kernel-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantFirstOrderLocalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_covariant_firstOrderSystem_kernel_of_negativeEnergy",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicSymmetricJetCovariance-extension",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicSymmetricJetCovariance_extension",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-hasIntrinsicSymmetricJetMeasure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_hasIntrinsicSymmetricJetMeasure",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasSymmetricJetEntries-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasSymmetricJetEntries_overlap",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingCurlSymbol-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantCurl",
+      "declaration": "Burnett.Microlocal.Overlap.receivingCurlSymbol_eq",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-originalVacuum-symmetricJetMeasure-covariantPairings-and-EinsteinMoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_covariantPairings_and_EinsteinMoments",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingGeometricCurlRow-apply",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.receivingGeometricCurlRow_apply",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeGeometricCurl-negativeEnergy-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeGeometricCurl_negativeEnergy_tendsto_zero",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_geometricCurl_kernel",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      }
+    }
+  ],
+  "closes_parent_claim": false
+}
