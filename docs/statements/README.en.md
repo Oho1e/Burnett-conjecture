@@ -80,3 +80,5 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Positive physical measures on original charts](local-positive-physical-measures.en.md)
 
 - [Global physical measure and chart Ricci moments](global-physical-ricci-moments.en.md)
+
+- [Global Einstein moments and change of auxiliary unit section](global-cosphere-einstein-moments.en.md)

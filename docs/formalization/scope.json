@@ -4393,6 +4393,141 @@
       "claim_id": "f07:cosphere-shares-represented-chart-ricci-moments",
       "module": "Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere_and_representedChartMoments"
+    },
+    {
+      "claim_id": "f07:compact-base-finite-smooth-cutoffs",
+      "module": "Burnett.Geometry.Cotangent.CompactTestPartition",
+      "declaration": "Burnett.Geometry.CotangentTests.exists_finite_smooth_cutoffs_on_compact"
+    },
+    {
+      "claim_id": "f07:compact-base-integrals-from-local-tests",
+      "module": "Burnett.Geometry.Cotangent.CompactTestIntegrals",
+      "declaration": "Burnett.Geometry.CotangentTests.integral_eq_of_compact_base_local_tests"
+    },
+    {
+      "claim_id": "f07:ricci-contraction-on-actual-tangent-fibers",
+      "module": "Burnett.Geometry.ContravariantTensor",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorBase_eq_components"
+    },
+    {
+      "claim_id": "f07:quadratic-test-on-actual-covectors",
+      "module": "Burnett.Geometry.ContravariantTensor",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorPhase_eq_components"
+    },
+    {
+      "claim_id": "f07:intrinsic-inverse-metric-components",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.inverseMetricTensor_components"
+    },
+    {
+      "claim_id": "f07:intrinsic-scalar-curvature-chart",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.intrinsicScalar_chart"
+    },
+    {
+      "claim_id": "f07:intrinsic-einstein-pairing-chart",
+      "module": "Burnett.Geometry.IntrinsicScalarEinstein",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.einsteinPair_eq_components"
+    },
+    {
+      "claim_id": "f07:actual-fixed-cotangent-chart-transition",
+      "module": "Burnett.Geometry.Cotangent.FixedChartNaturality",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedPhaseTransition_fixedChartPhase"
+    },
+    {
+      "claim_id": "f07:fixed-chart-pushforwards-on-overlap",
+      "module": "Burnett.Geometry.Cotangent.FixedChartNaturality",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedChart_pushforwards"
+    },
+    {
+      "claim_id": "f07:cosphere-fixed-chart-naturality",
+      "module": "Burnett.Geometry.Cotangent.CosphereFixedChartNaturality",
+      "declaration": "Burnett.Geometry.UnitCosphere.fixedChartNaturality"
+    },
+    {
+      "claim_id": "f07:local-intrinsic-tensor-ricci-moment",
+      "module": "Burnett.Analysis.ChartTensorRicciTests",
+      "declaration": "Burnett.Analysis.ChartTensorRicciTests.local_intrinsicTensor_moment_of_coordinateMoments"
+    },
+    {
+      "claim_id": "f07:all-global-tensor-ricci-moments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AssembledRicciMoments",
+      "declaration": "Burnett.Microlocal.Overlap.hasRicciMoments_of_nonzero_chartMoments"
+    },
+    {
+      "claim_id": "f07:pointwise-scalar-flat-from-null-moments",
+      "module": "Burnett.Analysis.ScalarCurvatureFromMoments",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarCurvature_eq_zero_of_null_RicciMoments"
+    },
+    {
+      "claim_id": "f07:einstein-moments-from-null-ricci-moments",
+      "module": "Burnett.Analysis.ScalarCurvatureFromMoments",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarFlat_and_EinsteinMoments_of_null_RicciMoments"
+    },
+    {
+      "claim_id": "f07:original-cosphere-einstein-moments-and-chart-laws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereEinsteinMoments",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_cosphereEinsteinMoments"
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-energy-ratio",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeWeight_eq_ratio"
+    },
+    {
+      "claim_id": "f07:same-round-chart-null-restriction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:original-chart-physical-density-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryDensityChange",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-ray-normalization",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:same-original-chart-positive-measure-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartPhysicalJetMeasure_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:normalized-chart-physical-measure-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.NormalizedChartAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCotangentPhysicalMeasure_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:global-physical-auxiliary-change-from-chart-laws",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AmbientAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalMeasure_changeAuxiliary_of_chartLaws"
+    },
+    {
+      "claim_id": "f07:global-auxiliary-change-of-same-original-witnesses",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_changeAuxiliary_sameWitnesses"
+    },
+    {
+      "claim_id": "f07:original-global-auxiliary-change-including-empty-base",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryGlobalExistence",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasures_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:actual-cosphere-weighted-auxiliary-pushforward",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereAuxiliaryMeasureChange",
+      "declaration": "Burnett.Microlocal.Overlap.fromAmbient_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:tensor-moment-integrability-and-integral-under-rescaling",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereTensorPhase_of_auxiliaryRescaling"
+    },
+    {
+      "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CosphereTensorMomentRescaling",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereEinsteinMoments_of_auxiliaryRescaling"
     }
   ],
   "inventory": [
@@ -20902,6 +21037,465 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_physicalMeasure_on_cosphere_and_representedChartMoments",
       "statement_record": "docs/statements/global-physical-ricci-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:compact-base-finite-smooth-cutoffs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentTests.exists_finite_smooth_cutoffs_on_compact",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:compact-base-integrals-from-local-tests",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentTests.integral_eq_of_compact_base_local_tests",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:ricci-contraction-on-actual-tangent-fibers",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorBase_eq_components",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:quadratic-test-on-actual-covectors",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ContravariantTensor.intrinsicTensorPhase_eq_components",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsic-inverse-metric-components",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.inverseMetricTensor_components",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsic-scalar-curvature-chart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.intrinsicScalar_chart",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsic-einstein-pairing-chart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.IntrinsicScalarEinstein.einsteinPair_eq_components",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-fixed-cotangent-chart-transition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedPhaseTransition_fixedChartPhase",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:fixed-chart-pushforwards-on-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FixedCotangentChart.fixedChart_pushforwards",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:cosphere-fixed-chart-naturality",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.UnitCosphere.fixedChartNaturality",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:local-intrinsic-tensor-ricci-moment",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ChartTensorRicciTests.local_intrinsicTensor_moment_of_coordinateMoments",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:all-global-tensor-ricci-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.hasRicciMoments_of_nonzero_chartMoments",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:pointwise-scalar-flat-from-null-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarCurvature_eq_zero_of_null_RicciMoments",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:einstein-moments-from-null-ricci-moments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.ScalarCurvatureFromMoments.scalarFlat_and_EinsteinMoments_of_null_RicciMoments",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-cosphere-einstein-moments-and-chart-laws",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_cosphereEinsteinMoments",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-energy-ratio",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeWeight_eq_ratio",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:same-round-chart-null-restriction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryNull_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-chart-physical-density-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_chartPhysicalJetContraction_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-chart-auxiliary-ray-normalization",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.chartAuxiliaryRay_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:same-original-chart-positive-measure-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_chartPhysicalJetMeasure_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:normalized-chart-physical-measure-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_normalizedCotangentPhysicalMeasure_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:global-physical-auxiliary-change-from-chart-laws",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_globalPhysicalMeasure_changeAuxiliary_of_chartLaws",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:global-auxiliary-change-of-same-original-witnesses",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasure_changeAuxiliary_sameWitnesses",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-global-auxiliary-change-including-empty-base",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_globalPhysicalMeasures_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:actual-cosphere-weighted-auxiliary-pushforward",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.fromAmbient_changeAuxiliary",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:tensor-moment-integrability-and-integral-under-rescaling",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereTensorPhase_of_auxiliaryRescaling",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:einstein-moments-under-auxiliary-rescaling",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 480,
+        "endline": 486
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.cosphereEinsteinMoments_of_auxiliaryRescaling",
+      "statement_record": "docs/statements/global-cosphere-einstein-moments.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

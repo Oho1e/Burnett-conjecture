@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `2fc49c8cd17deb807392bfdb321aa571da6f2977a7f61bf1e5827f779eda0082`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2307b466a72efb9ca3be7f65bed27761ef3f4c355791ca6cc7c36a0e3b03d2b5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: One original vacuum subsequence gives compatible local positive measures on the full nonzero cutoff loci. The glued measure lies on the actual auxiliary unit null shell and is finite over every compact base set. Represented charts on that same subsequence satisfy the Ricci component second-moment identities with both integrands integrable. Continue with arbitrary global tensor tests, pointwise scalar-flatness, the Einstein moment, and change of auxiliary section.
+Next: One strict refinement of any original vacuum subsequence gives a single unit cosphere measure with all compact smooth symmetric Einstein moments, pointwise scalar-flatness, and scalar naturality in every compatible fixed smooth chart. The same original subsequence and chart witnesses under two auxiliary metrics give the squared-norm weighted pushforward, preserving all quadratic tensor-test moments. Continue with the global complex amplitude covariance on one control measure, its original angular defect representation, and the auxiliary change of the amplitude covariance.
 
 <a id="f08"></a>
 
