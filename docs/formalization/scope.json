@@ -4923,6 +4923,201 @@
       "claim_id": "f05:original-atlasjetcovarianceoperator-matrixmeasure-on-compact",
       "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries",
       "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_on_compact"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasCovectorGram-transition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasCovectorGramNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasCovectorGram_transition"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingSeparablePairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingSeparablePairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingSeparablePairing"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-receivingJetOperator-kernel-of-scaled-ordered-rows",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowRangeBridge",
+      "declaration": "Burnett.Microlocal.Overlap.ae_receivingJetOperator_kernel_of_scaled_ordered_rows"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:negativeEnergy-firstOrderRow-tendsto-zero-of-strongL2-replacement",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderNegativeContinuity",
+      "declaration": "Burnett.Microlocal.BesselLocalization.negativeEnergy_firstOrderRow_tendsto_zero_of_strongL2_replacement"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedCovariantJet-intrinsic-components",
+      "module": "Burnett.Geometry.MaximalChart.ReceivingChartCovariantJet",
+      "declaration": "Burnett.Geometry.MaximalChart.fixedCovariantJet_intrinsic_components"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:bessel-firstOrderRow-cutoff-sub-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator",
+      "declaration": "Burnett.Microlocal.BesselLocalization.bessel_firstOrderRow_cutoff_sub_tendsto_zero"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-fullSymbolPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_fullSymbolPairing"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-windowKernel-schur",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactWindowKernel",
+      "declaration": "Burnett.Microlocal.Overlap.exists_compact_windowKernel_schur"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetGram-transition",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetGram_transition"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetCovarianceOperator-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetCovarianceOperator_change"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-separableRow-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRowLocalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_separableRow_kernel"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradientSchwartz-intrinsic",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_intrinsic"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradient-sub-partial-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradient_sub_partial_tendsto_zero"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-leftCutoff-fullSymbolPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol",
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_leftCutoff_fullSymbolPairing"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classicalFullSymbolOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.exists_classicalFullSymbolOperator"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-infraredAngularPrincipalOperator",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization",
+      "declaration": "Burnett.Microlocal.Overlap.exists_infraredAngularPrincipalOperator"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-localizedNormalizedAngularDifference",
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactReceivingAngularDifference",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedNormalizedAngularDifference"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorMeasureNaturality",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_overlap"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeRowPrincipal-tendsto-zero-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeRowPrincipal_tendsto_zero_of_negativeEnergy"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingPrincipalRow-eq-firstOrderSymbol",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.receivingPrincipalRow_eq_firstOrderSymbol"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-atlasJetCovarianceOperator-gramPositive-unitTrace",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetGramPositiveTrace",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_atlasJetCovarianceOperator_gramPositive_unitTrace"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-coordinates",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_coordinates"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasOriginalReceivingCovariantPaperPairings-of-intrinsicAmplitude",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing",
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingCovariantPaperPairings_of_intrinsicAmplitude"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingLocalFullPairing-of-puncturedPrincipal",
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingLocalFullPairing_of_puncturedPrincipal"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classical-transportedSeparableOperator-on-compactInterior",
+      "module": "Burnett.Analysis.Microlocal.Overlap.TransportedSeparableClassical",
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedSeparableOperator_on_compactInterior"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-firstOrderSystem-kernel-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingFirstOrderKernel",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_firstOrderSystem_kernel_of_negativeEnergy"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-trace",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingJetTraceMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_trace"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-intrinsicJetCovarianceEndomorphism-mem-symmetric",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJet",
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_intrinsicJetCovarianceEndomorphism_mem_symmetric"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-range-gradientRicci",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetRicciRange",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_range_gradientRicci"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingClassicalFullMatrixPairing",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ActualClassicalMatrixPairing",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalFullMatrixPairing"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-covariant-firstOrderSystem-kernel-of-negativeEnergy",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantFirstOrderLocalization",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_covariant_firstOrderSystem_kernel_of_negativeEnergy"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicSymmetricJetCovariance-extension",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicSymmetricJetCovariance_extension"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-hasIntrinsicSymmetricJetMeasure",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_hasIntrinsicSymmetricJetMeasure"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasSymmetricJetEntries-overlap",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicSymmetricJetMeasure",
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasSymmetricJetEntries_overlap"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingCurlSymbol-eq",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantCurl",
+      "declaration": "Burnett.Microlocal.Overlap.receivingCurlSymbol_eq"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-originalVacuum-symmetricJetMeasure-covariantPairings-and-EinsteinMoments",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetEinsteinAssembly",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_covariantPairings_and_EinsteinMoments"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingGeometricCurlRow-apply",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.receivingGeometricCurlRow_apply"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeGeometricCurl-negativeEnergy-tendsto-zero",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeGeometricCurl_negativeEnergy_tendsto_zero"
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingGeometricCurl",
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_geometricCurl_kernel"
     }
   ],
   "inventory": [
@@ -23234,6 +23429,669 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_on_compact",
       "statement_record": "docs/statements/receiving-chart-jet-covariance.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasCovectorGram-transition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.atlasCovectorGram_transition",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingSeparablePairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingSeparablePairing",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-receivingJetOperator-kernel-of-scaled-ordered-rows",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.Overlap.ae_receivingJetOperator_kernel_of_scaled_ordered_rows",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:negativeEnergy-firstOrderRow-tendsto-zero-of-strongL2-replacement",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.BesselLocalization.negativeEnergy_firstOrderRow_tendsto_zero_of_strongL2_replacement",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedCovariantJet-intrinsic-components",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 393
+      },
+      "declaration": "Burnett.Geometry.MaximalChart.fixedCovariantJet_intrinsic_components",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:bessel-firstOrderRow-cutoff-sub-tendsto-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.BesselLocalization.bessel_firstOrderRow_cutoff_sub_tendsto_zero",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-fullSymbolPairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 404
+      },
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_fullSymbolPairing",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-windowKernel-schur",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 401,
+        "endline": 404
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_compact_windowKernel_schur",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetGram-transition",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetGram_transition",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:atlasJetCovarianceOperator-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.atlasJetCovarianceOperator_change",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-separableRow-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_separableRow_kernel",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradientSchwartz-intrinsic",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_intrinsic",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeCovariantGradient-sub-partial-tendsto-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 393,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradient_sub_partial_tendsto_zero",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasLocalClassicalRepresentation-of-leftCutoff-fullSymbolPairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.hasLocalClassicalRepresentation_of_leftCutoff_fullSymbolPairing",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classicalFullSymbolOperator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_classicalFullSymbolOperator",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-infraredAngularPrincipalOperator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 408
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_infraredAngularPrincipalOperator",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-compact-localizedNormalizedAngularDifference",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedNormalizedAngularDifference",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_overlap",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeRowPrincipal-tendsto-zero-of-negativeEnergy",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeRowPrincipal_tendsto_zero_of_negativeEnergy",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingPrincipalRow-eq-firstOrderSymbol",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.Overlap.receivingPrincipalRow_eq_firstOrderSymbol",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-atlasJetCovarianceOperator-gramPositive-unitTrace",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      },
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_atlasJetCovarianceOperator_gramPositive_unitTrace",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-coordinates",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_coordinates",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:hasOriginalReceivingCovariantPaperPairings-of-intrinsicAmplitude",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.hasOriginalReceivingCovariantPaperPairings_of_intrinsicAmplitude",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingLocalFullPairing-of-puncturedPrincipal",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingLocalFullPairing_of_puncturedPrincipal",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-classical-transportedSeparableOperator-on-compactInterior",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedSeparableOperator_on_compactInterior",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-firstOrderSystem-kernel-of-negativeEnergy",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 412
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_firstOrderSystem_kernel_of_negativeEnergy",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasJetCovarianceOperator-matrixMeasure-trace",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasJetCovarianceOperator_matrixMeasure_trace",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:ae-original-intrinsicJetCovarianceEndomorphism-mem-symmetric",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 424
+      },
+      "declaration": "Burnett.Microlocal.Overlap.ae_original_intrinsicJetCovarianceEndomorphism_mem_symmetric",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicJetCovarianceEndomorphism-range-gradientRicci",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 424
+      },
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicJetCovarianceEndomorphism_range_gradientRicci",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:tendsto-originalVolume-receivingClassicalFullMatrixPairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalVolume_receivingClassicalFullMatrixPairing",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-covariant-firstOrderSystem-kernel-of-negativeEnergy",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_covariant_firstOrderSystem_kernel_of_negativeEnergy",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:intrinsicSymmetricJetCovariance-extension",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicSymmetricJetCovariance_extension",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-hasIntrinsicSymmetricJetMeasure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_hasIntrinsicSymmetricJetMeasure",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-atlasSymmetricJetEntries-overlap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 404,
+        "endline": 428
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_atlasSymmetricJetEntries_overlap",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingCurlSymbol-eq",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.Overlap.receivingCurlSymbol_eq",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:exists-originalVacuum-symmetricJetMeasure-covariantPairings-and-EinsteinMoments",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 467,
+        "endline": 479
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_covariantPairings_and_EinsteinMoments",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:receivingGeometricCurlRow-apply",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.Overlap.receivingGeometricCurlRow_apply",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:fixedVolumeGeometricCurl-negativeEnergy-tendsto-zero",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.Overlap.fixedVolumeGeometricCurl_negativeEnergy_tendsto_zero",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "symmetric-jet-localization:original-receiving-geometricCurl-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 410,
+        "endline": 415
+      },
+      "declaration": "Burnett.Microlocal.Overlap.original_receiving_geometricCurl_kernel",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/symmetric-jet-localization.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

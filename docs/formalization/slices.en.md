@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `ad7ca4f8822056e28d5dff289b37e702ea7a86c09d2e09fb9e8227189446060e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `fa48a02a6589a37845ce32521a3885b9ab692a1f611602ef92fe028a31518137`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The actual classical pairings in every compatible chart cover operators with the formalized local representation. The original jet covariance gives a matrix-valued measure on compact chart windows, and insertion of the actual auxiliary unit covector gives the Gram isometric factorization. Continue with the full geometric test class, the global bundle-valued measure, and general first-order localization.
+Next: The actual covariant jet localization, curl and intrinsic Ricci constraints, and symmetric jet measure share the original control. Continue with chart transport of general joint position-frequency symbols and the full geometric test class.
 
 <a id="f06"></a>
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: One strict refinement supplies the original represented pairings in all compatible charts, the original amplitude, the physical contraction, the Einstein moments, and fixed-chart naturality. Continue by checking the complete F05 input and finishing acceptance of the frozen quadratic theorem.
+Next: The same refinement, amplitude and physical measure give the represented covariant pairings, symmetric jet measure, Ricci kernel and Einstein moments. Continue checking the full F05 input and the frozen quadratic statement.
 
 <a id="f08"></a>
 
