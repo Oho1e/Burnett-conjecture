@@ -375,7 +375,7 @@ flowchart TD
 消费者：F08（proof-input）、P01（proof-input）、V01（proof-input）、C04（proof-input）、L02（proof-input）、L03（proof-input）、X08（proof-input）、X09（proof-input）、V03（definition）、L01（application）
 
 
-下一步：同一原真空子列和各图原迹上的 Ricci 核已给出有限正物理测度。测度集中在实际辅助单位零壳，按各自原截断倒数平方重加权后的公共平台测度推至余切丛相同。接续全局拼接、Ricci 与 Einstein 矩、标量曲率为零和截面加权推前。
+下一步：已在同一原真空子列上沿各图截断的非零域拼接全局正物理测度。测度位于实际辅助单位零壳且在每个紧底集上有限。沿同一子列的已表示图满足 Ricci 分量二阶矩等式，两侧均可积。接续任意全局张量测试、逐点标量曲率零、Einstein 矩和换截面。
 
 <a id="f08"></a>
 

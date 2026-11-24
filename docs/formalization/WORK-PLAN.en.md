@@ -683,3 +683,7 @@ On common local plateaus, the original matrix entries from independently chosen 
 ## 59. Positive physical measures on original charts
 
 The Ricci kernel on the original vacuum subsequence and chart traces gives finite positive local physical measures on the actual auxiliary unit null shell. On common plateaus the two measures, weighted by their respective reciprocal cutoff squares, push to the same cotangent measure. Continue with global gluing, the Ricci and Einstein moments, scalar-flatness, and weighted transport between sections. [Positive physical measures on original charts](../statements/local-positive-physical-measures.en.md)
+
+## 60. Global physical measure and chart Ricci moments
+
+One original vacuum subsequence gives compatible local positive measures on the full nonzero cutoff loci. The glued measure lies on the actual auxiliary unit null shell and is finite over every compact base set. Represented charts on that same subsequence satisfy the Ricci component second-moment identities with both integrands integrable. Continue with arbitrary global tensor tests, pointwise scalar-flatness, the Einstein moment, and change of auxiliary section. [Global physical measure and chart Ricci moments](../statements/global-physical-ricci-moments.en.md)

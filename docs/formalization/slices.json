@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "同一原真空子列和各图原迹上的 Ricci 核已给出有限正物理测度。测度集中在实际辅助单位零壳，按各自原截断倒数平方重加权后的公共平台测度推至余切丛相同。接续全局拼接、Ricci 与 Einstein 矩、标量曲率为零和截面加权推前。",
+      "next_action": "已在同一原真空子列上沿各图截断的非零域拼接全局正物理测度。测度位于实际辅助单位零壳且在每个紧底集上有限。沿同一子列的已表示图满足 Ricci 分量二阶矩等式，两侧均可积。接续任意全局张量测试、逐点标量曲率零、Einstein 矩和换截面。",
       "supplementary_obligations": []
     },
     {
@@ -7082,6 +7082,156 @@
     },
     {
       "claim_id": "f07:original-vacuum-physical-measure-common-rays",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:countable-physical-chart-cover",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-bounded-away-from-zero",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-physical-measure-null-support",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:common-physical-base-plateau",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:physical-measure-weighted-restriction",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-common-patch",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:normalized-physical-measures-on-full-nonzero-overlap",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:glued-original-physical-measure",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:global-physical-measure-on-common-subsequence",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:global-physical-measure-chart-law",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-cosphere-map-readback",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-cosphere-regular-measure",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-cosphere-finite-over-compact-base",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:actual-cosphere-null-support",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-vacuum-physical-measure-on-cosphere",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-raw-weak-ricci",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ordered-connection-jet-sum",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-cutoff-jet-products",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-normalized-jet-products",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-tested-normalized-jet-density",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-kernel-null-second-moment",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-same-chart-measure",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:ricci-second-moment-of-cotangent-restriction",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:glued-measure-represented-chart-ricci-moments",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:cosphere-shares-represented-chart-ricci-moments",
       "source_slices": [
         "F07"
       ]

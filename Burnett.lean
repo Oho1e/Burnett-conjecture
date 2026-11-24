@@ -369,3 +369,7 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalMatchingCutoffEntryMeasures
 import Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalPlateauConsumer
 import Burnett.Analysis.Microlocal.Overlap.CountableOriginalPhysicalMeasures
 import Burnett.Analysis.Microlocal.Overlap.OriginalPhysicalMeasureOverlap
+
+import Burnett.Analysis.Microlocal.Overlap.GlobalCospherePhysicalMeasure
+import Burnett.Analysis.Microlocal.Overlap.GluedChartRicciMoments
+import Burnett.Analysis.Microlocal.Overlap.GlobalCosphereRicciMoments
