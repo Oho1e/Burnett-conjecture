@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `e3715721bd61e78a9394ffd009418b21dfa25b66fa3b45ec12d9077a4afff4dd`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `0f7e424a6c46325d08aa6bd99193cf8a40e2a2e20f33e5354020bd917aef96c8`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: The same refinement, amplitude and physical measure give the represented covariant pairings, symmetric jet measure, Ricci kernel and Einstein moments. Continue checking the full F05 input and the frozen quadratic statement.
+Next: On the same original subsequence and chart witnesses, the intrinsic covariance and the physical measure obey the squared-norm weighted pushforwards, with all integrable angular fiber tests. Continue checking the full F05 input and the frozen quadratic statement.
 
 <a id="f08"></a>
 

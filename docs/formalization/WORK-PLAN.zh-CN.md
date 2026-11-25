@@ -720,3 +720,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 67. 基底边际与角向解体
 
 正式库从固定的二次测度及其 Einstein 矩推出完整推论。可测测度族定义在真实依赖单位零纤维上，重构每个 Borel 集的测度。原生重放和独立数学复核已核对冻结题面。作者确认待登记。 [基底边际与角向解体](../statements/base-marginal-and-angular-disintegration.zh-CN.md)
+
+## 68. 辅助单位截面的加权推前
+
+两个辅助度量沿用同一见证，内蕴振幅协方差和物理测度满足范数平方加权推前。 [辅助单位截面的加权推前](../statements/weighted-auxiliary-section-change.zh-CN.md)

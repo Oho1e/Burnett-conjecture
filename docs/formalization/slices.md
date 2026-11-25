@@ -375,7 +375,7 @@ flowchart TD
 消费者：F08（proof-input）、P01（proof-input）、V01（proof-input）、C04（proof-input）、L02（proof-input）、L03（proof-input）、X08（proof-input）、X09（proof-input）、V03（definition）、L01（application）
 
 
-下一步：同一细化、振幅和物理测度同时给出已有真实局部表示的协变梯度配对、对称 jet 测度、Ricci 核和 Einstein 矩。继续核对完整 F05 输入与冻结二次题面。
+下一步：已核验同一原子列与逐图见证下内蕴振幅协方差及物理测度的范数平方加权推前，保留任意可积角向纤维试验。继续核对完整 F05 输入与冻结二次题面。
 
 <a id="f08"></a>
 

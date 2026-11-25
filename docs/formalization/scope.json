@@ -5243,6 +5243,26 @@
       "claim_id": "cor:base-marginal",
       "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary",
       "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration"
+    },
+    {
+      "claim_id": "f07:auxiliary-weight-receiving-norm-squared",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentAuxiliaryWeight_eq_ofReal_norm_sq_on_cosphere"
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-weighted-pushforward",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.hasIntrinsicAmplitudeWeightedPushforward_of_traceChange"
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-test-measure-change-auxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_testMeasure_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward"
     }
   ],
   "inventory": [
@@ -24614,6 +24634,74 @@
       "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_tendsto_zero_of_intrinsicL2",
       "statement_record": "docs/statements/strong-compactness.zh-CN.md",
       "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "f07:auxiliary-weight-receiving-norm-squared",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentAuxiliaryWeight_eq_ofReal_norm_sq_on_cosphere",
+      "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-weighted-pushforward",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.hasIntrinsicAmplitudeWeightedPushforward_of_traceChange",
+      "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-test-measure-change-auxiliary",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_testMeasure_changeAuxiliary",
+      "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward",
+      "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
     }
   ],
   "coverage_review": {

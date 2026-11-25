@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "同一细化、振幅和物理测度同时给出已有真实局部表示的协变梯度配对、对称 jet 测度、Ricci 核和 Einstein 矩。继续核对完整 F05 输入与冻结二次题面。",
+      "next_action": "已核验同一原子列与逐图见证下内蕴振幅协方差及物理测度的范数平方加权推前，保留任意可积角向纤维试验。继续核对完整 F05 输入与冻结二次题面。",
       "supplementary_obligations": []
     },
     {
@@ -8242,6 +8242,30 @@
       "claim_id": "l03:intrinsic-local-l2-controls-cutoff-covariant-gradient",
       "source_slices": [
         "L03"
+      ]
+    },
+    {
+      "claim_id": "f07:auxiliary-weight-receiving-norm-squared",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-weighted-pushforward",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-test-measure-change-auxiliary",
+      "source_slices": [
+        "F07"
+      ]
+    },
+    {
+      "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
+      "source_slices": [
+        "F07"
       ]
     }
   ],

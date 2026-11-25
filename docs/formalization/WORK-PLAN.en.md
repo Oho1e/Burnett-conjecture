@@ -715,3 +715,7 @@ The full corollary now has a Lean proof in the project library. The proof handle
 ## 67. Base marginal and angular disintegration
 
 The library proves the full corollary from the fixed quadratic measure and its Einstein moments. The measurable family lives on the actual dependent unit null fibers and reconstructs the measure on every Borel set. The native replay and mathematical review checked the frozen statement. Author confirmation is pending. [Base marginal and angular disintegration](../statements/base-marginal-and-angular-disintegration.en.md)
+
+## 68. Weighted change of auxiliary unit section
+
+The same witnesses for both metrics give the squared-norm weighted pushforwards of the intrinsic covariance and the physical measure. [Weighted change of auxiliary unit section](../statements/weighted-auxiliary-section-change.en.md)

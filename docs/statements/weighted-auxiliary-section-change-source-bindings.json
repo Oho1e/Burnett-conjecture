@@ -1,0 +1,68 @@
+{
+  "slices": [
+    "F07"
+  ],
+  "prepared_against_tree": "6a4cb70539e495faefadf3af15a2e37cb3ef2125",
+  "proof_base": "787369f0e8f9861c445e3df0bd58c58c4f66bf18",
+  "proof_base_tree": "24024eac47655486bb07796fb41d0db9d52c5c25",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_lines": [
+    481,
+    485
+  ],
+  "paper_scope_sha256": "1e8ca26feb7e9906785154088d2ce9ea05536ca6da80c1bf81e50c2728954602",
+  "compiler_sha256": "20bc808248e38cf072f84f4eb389f8f98e5925d703bcbfa400d9dd44f310c4db",
+  "lake_manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "lean_toolchain_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+  "production_replay_sha256": "31aadc00006dbf4d5abfd3a0a50f176a6d7dc10a2f3718b44ec9ee39fb7c936f",
+  "independent_review_sha256": "ff3593333c9839b599f20d8cdc6dd4ce60fe0f1b87404dc0543378de58828208",
+  "closes_parent_claim": false,
+  "roots": [
+    "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair"
+  ],
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/IntrinsicAmplitudeWeightedPushforward.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "sha256": "2d92aed93f0aca1766af1c5a1901a0fa05d3930bb03efa50e838307575169a50",
+      "replay_object_sha256": "e015cf5879772b16b79ecc62a9dfe468aae9b3acb9c769ccd365d148df1f7ef3",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeAuxiliaryPair": "2ea818d6c75cedcf851d4de271c56e2eba83030b7998730054d2eeb925971fa7"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAmplitudeWeightedAuxiliaryPair.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair",
+      "sha256": "b32636a0cb3239a67e56b695c2cdb2ac7a67e864bc1171da0766d9f690335f7b",
+      "replay_object_sha256": "c471240a8fad49d090e38db370409e1ce52a223d8640f9094810d12fbbbaaf72",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward": "e015cf5879772b16b79ecc62a9dfe468aae9b3acb9c769ccd365d148df1f7ef3",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly": "2f520621ec898e3fd067265856235d6a4cf1149324ecd6869a5967b2b750eff6"
+      }
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "f07:auxiliary-weight-receiving-norm-squared",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.cotangentAuxiliaryWeight_eq_ofReal_norm_sq_on_cosphere"
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-weighted-pushforward",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.hasIntrinsicAmplitudeWeightedPushforward_of_traceChange"
+    },
+    {
+      "claim_id": "f07:intrinsic-amplitude-test-measure-change-auxiliary",
+      "module": "Burnett.Analysis.Microlocal.Overlap.IntrinsicAmplitudeWeightedPushforward",
+      "declaration": "Burnett.Microlocal.Overlap.intrinsicAmplitude_testMeasure_changeAuxiliary"
+    },
+    {
+      "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward"
+    }
+  ],
+  "documents": {
+    "en": "e44e2cb5de311131023de00a7c3996a12ae2b862a344c64b40ebc5c783cab9eb",
+    "zh-CN": "0c14b3c65418ecaf1ed49cf9fe4e9567a9cfa04c82f375302a7a749043adda3d"
+  }
+}
