@@ -5203,6 +5203,41 @@
       "claim_id": "joint-classical-tests-and-base-marginal:exists-originalVacuum-baseMarginal-and-angularFiberMoments",
       "module": "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly",
       "declaration": "Burnett.F08.IntrinsicBaseMarginal.exists_originalVacuum_baseMarginal_and_angularFiberMoments"
+    },
+    {
+      "claim_id": "cor:strong",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.VacuumStrongCompactness",
+      "declaration": "Burnett.P01.vacuumOpen_strongCompactness"
+    },
+    {
+      "claim_id": "l03:homogeneous-projection-weak-coordinate-derivative",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.HomogeneousProjectionWeakDerivative",
+      "declaration": "Burnett.P01.homogeneousProjectionComponent_weakCoordinateDerivative"
+    },
+    {
+      "claim_id": "l03:local-projection-energy-zero-iff-physical-measure",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.StrongLocalMeasure",
+      "declaration": "Burnett.P01.tendsto_receivingStrongProjectionEnergy_zero_iff_physicalMeasure"
+    },
+    {
+      "claim_id": "l03:physical-measure-zero-over-open",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.StrongOpenSet",
+      "declaration": "Burnett.P01.physicalMeasure_zero_over_open_of_hasStrongProjectedGradientOn"
+    },
+    {
+      "claim_id": "l03:vacuum-open-iff-full-sequence-projected-strong",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.StrongVacuum",
+      "declaration": "Burnett.P01.vacuumOpen_iff_hasStrongProjectedGradientOn"
+    },
+    {
+      "claim_id": "l03:geometric-volume-on-compact-chart",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.ReceivingChartGeometricVolume",
+      "declaration": "Burnett.Geometry.MaximalChart.geometricMeasure_restrict_atlasCompactWindow"
+    },
+    {
+      "claim_id": "l03:intrinsic-local-l2-controls-cutoff-covariant-gradient",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.ReceivingCovariantL2",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_tendsto_zero_of_intrinsicL2"
     }
   ],
   "inventory": [
@@ -5370,9 +5405,11 @@
         "endline": 3078
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t12"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "declaration": "Burnett.P01.vacuumOpen_strongCompactness",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "prop:shear",
@@ -24468,6 +24505,108 @@
       "statement_record": "docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l03:homogeneous-projection-weak-coordinate-derivative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3069,
+        "endline": 3074
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.homogeneousProjectionComponent_weakCoordinateDerivative",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "l03:local-projection-energy-zero-iff-physical-measure",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3094,
+        "endline": 3109
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.tendsto_receivingStrongProjectionEnergy_zero_iff_physicalMeasure",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "l03:physical-measure-zero-over-open",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3107,
+        "endline": 3112
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.physicalMeasure_zero_over_open_of_hasStrongProjectedGradientOn",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "l03:vacuum-open-iff-full-sequence-projected-strong",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3065,
+        "endline": 3109
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.vacuumOpen_iff_hasStrongProjectedGradientOn",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "l03:geometric-volume-on-compact-chart",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3075,
+        "endline": 3077
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.MaximalChart.geometricMeasure_restrict_atlasCompactWindow",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
+    },
+    {
+      "claim_id": "l03:intrinsic-local-l2-controls-cutoff-covariant-gradient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "cor:strong",
+      "does_not_close_parent_claim": true,
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3075,
+        "endline": 3077
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_tendsto_zero_of_intrinsicL2",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "human_semantic_confirmation": "pending"
     }
   ],
   "coverage_review": {
