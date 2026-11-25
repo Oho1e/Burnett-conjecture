@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `0ddd2086239b8ccb786eeb4e20fb169c9c70c2dcf8c90dd65b8e77a5981fde5a`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `3df6a4c0f1a2c9ec3146aa6d7189b610f9560a0fd1c449a247af79a2ba15120e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -941,7 +941,7 @@ Boundaries:
 
 Consumers: V10 (proof-input), V11 (proof-input), V12 (proof-input)
 
-Next: separately deliver sigma_G=iDelta t_G and factorwise high-adjunction signatures, then prove BS1 seminorm certificates through independent omega expansion.
+Next: The ordered Fourier pairing and cutoff recovery act on the same projected field. Insert the three gauge terms alongside the near, far and phase terms in the original frozen cubic identity.
 
 <a id="v09"></a>
 
@@ -1025,7 +1025,7 @@ Boundaries:
 
 Consumers: V12 (proof-input), C03 (proof-input)
 
-Next: a common Correction structure should store only constructed symbols, adjoints, and operator identities, with open proofs listed separately. Prove one generic exact pairing identity for original u and instantiate F/G separately.
+Next: Both corrections have actual energy bounds and cutoff recovery for the same projected source. Insert them into the finite patch sum of the original variational residual.
 
 <a id="v12"></a>
 
@@ -1116,7 +1116,7 @@ Boundaries:
 
 Consumers: C03 (proof-input), C04 (proof-input).
 
-Next: The original projected field gives the complete thin-screen cubic replacement uniformly over the compact receiving-chart coefficients. Continue the full same-field assembly with the Ward estimates.
+Next: After the common wide screen is fixed, the original patch family gives the thin-screen cubic replacement and both gradient errors. Connect it to the actual near and phase terms of the same cubic Ward decomposition.
 
 <a id="c03"></a>
 
@@ -1148,7 +1148,7 @@ Boundaries:
 
 Consumers: C04 (proof-input).
 
-Next: The original physical projection has a whole-space divergence source on the same patch selected by the cubic partition. Attach both complete frozen corrections and sum before the sequence limit.
+Next: The two Fourier corrections have a finite-sum tail bound on the same original patch family and subsequence. Combine this with the near, replacement, phase and freezing bounds.
 
 <a id="c04"></a>
 
@@ -1178,7 +1178,7 @@ Boundaries:
 
 Consumers: L01 (application), L02 (proof-input).
 
-Next: Track each assembly term and its constants in the final error estimate. Prove the numerical nested-limit argument, then combine the same sigma and mu with parity and the base partition.
+Next: The fixed-scale limit now consumes the patch tails of the two actual Fourier corrections. It still needs the original variational residual limit, cubic localization and freezing, and the actual near estimate.
 
 <a id="l01"></a>
 

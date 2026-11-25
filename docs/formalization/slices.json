@@ -915,7 +915,7 @@
         "高槽自伴性必须对t_G本身检查。",
         "固定低cutoff放入Cartesian核会使高频导数阶估计失效。"
       ],
-      "next_action": "先分别交付sigma_G=iDelta t_G和high-adjunction的逐因子签名，再按独立omega展开建立BS1 seminorm证书。",
+      "next_action": "实际规范修正的有序 Fourier 配对和截断恢复已接到同一投影场。把三份完整规范修正同近角、远角和相位项放入原冻结三次恒等式。",
       "supplementary_obligations": []
     },
     {
@@ -990,7 +990,7 @@
         "不可对finite角和重新除Delta或先取n-limit后恢复算子。",
         "本区只有固定场估计，不能先声称两修正强零。"
       ],
-      "next_action": "以共同Correction结构只存已构造符号、伴随及算子恒等式，分列所有开放证明；对原u建立一个通用精确配对证明，并让F、G分别实例化。",
+      "next_action": "两类校正在同一原投影源上已有实际能量界和截断恢复。接入原变分残差的有限补丁总和。",
       "supplementary_obligations": []
     },
     {
@@ -1072,7 +1072,7 @@
         "屏幕在冻结度规下通常不固定实际缺陷；只能由O(ell)度规变化加有限指数插值获得L3误差。",
         "Pi_T宽锥与总薄锥乘子范数的角色必须分开，后者可依赖delta。"
       ],
-      "next_action": "同一原投影场给出完整薄屏三次替换，常数在接收图紧窗的冻结系数上统一。接续原场与 Ward 全尺度估计的完整装配。",
+      "next_action": "固定共同宽屏后，原补丁场族同时给出薄屏三次替换及两项梯度误差。接到同一三次 Ward 分解的实际近角与相位项。",
       "supplementary_obligations": []
     },
     {
@@ -1101,7 +1101,7 @@
         "逐补丁错误收费全局Lp范数会导致补丁数爆炸，无法推得最终界。",
         "修正完整Hermitian形式、因子3、三散度交换子、角级数/频率切断移除均有共同闭合责任。"
       ],
-      "next_action": "原物理投影在三次分割选定的同一补丁具有全空间散度源。接续两项完整冻结修正，先求和再取序列极限。",
+      "next_action": "两项 Fourier 校正已经在同一原补丁族及同一子列上给出有限和的尾界。将它们与近角、替换、相位和冻结误差拼接。",
       "supplementary_obligations": []
     },
     {
@@ -1128,7 +1128,7 @@
         "不能用逐测试存在子列替代同一mu对全部测试的结论。",
         "全局分割须分割测试本身，随后对H_P线性求和；不能仅逐图声明而忽略切断导数。"
       ],
-      "next_action": "建立最终误差表，要求每一完整装配项有唯一消费者与常数依赖；先在纯数值层证明嵌套极限消去，再将同一sigma/mu及测试奇偶、基分割接入正式输运声明。",
+      "next_action": "固定尺度极限已可直接消费两项实际 Fourier 校正的补丁尾界。还需接入原变分残差极限、三次局部化和冻结、实际近角界。",
       "supplementary_obligations": []
     },
     {
@@ -8646,6 +8646,96 @@
       "claim_id": "a08:hermitian-upper-cutoff",
       "source_slices": [
         "A08"
+      ]
+    },
+    {
+      "claim_id": "v08:actual-gauge-entries",
+      "source_slices": [
+        "V08"
+      ]
+    },
+    {
+      "claim_id": "v11:actual-far-cutoff",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "v11:actual-gauge-cutoff",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "v11:actual-projected-source-identity",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "v11:actual-joint-patch-consumer",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "v11:actual-wide-correction-jets",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "c02:wide-field-cubic-window",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:thin-field-cubic-replacement",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:original-test-uniform-jets",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:original-thin-cubic-gradient",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:original-thin-family-gradient",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c03:original-receiving-patch-family",
+      "source_slices": [
+        "C03"
+      ]
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-sum",
+      "source_slices": [
+        "C03"
+      ]
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-tail",
+      "source_slices": [
+        "C03"
+      ]
+    },
+    {
+      "claim_id": "c04:actual-summed-correction-limit",
+      "source_slices": [
+        "C04"
       ]
     }
   ],
