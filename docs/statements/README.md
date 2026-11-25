@@ -51,7 +51,7 @@
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | 未建模 |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | 未建模 |
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | 未建模 |
-| 6.1 | lemma | `lem:lift` | 2989–2991 | 未建模 |
+| 6.1 | lemma | `lem:lift` | 2989–2991 | [光滑类空柯西截面上的全动量提升](cauchy-momentum-lift.zh-CN.md) |
 | 6.2 | corollary | `cor:strong` | 3063–3078 | [真空区上的物理强紧性](strong-compactness.zh-CN.md) |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [证明与独立复核](harmonic-shear.zh-CN.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |

@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `2c5ab09aa2193221eae747cf38361dc64df8dc9a5472f7dfd49b9dd305181783`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `adb388d98bdbb53d8c2b0d27af2ddf91e46723fb51f54f812bbb186d90dd424c`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1189,7 +1189,7 @@ Lines 2987–3045; proof-unit. For a positive ray measure already satisfying mom
 Inputs:
 
 - Smooth globally hyperbolic spacetime with positive definite auxiliary r. A given nonnegative locally base-finite ray measure μ is supported on P=0 and satisfies the moment identity and transport for all positively one-homogeneous tests with compact base support. These are explicit premises of the lemma at line 2990.
-- A smooth Cauchy hypersurface, unique transverse crossing by nonzero null geodesics, and smooth dependence. The construction uses neither completeness of affine parameters nor compactness of the section.
+- The library derives the smooth actual maximal flow and the transverse null hit. The current lift takes a smooth spacelike Cauchy slice and its crossing law as inputs.
 - Weighted pushforward, homogeneous angular extension, and local moment facts. The particular μ from F07/C04 is an application in L02.
 
 Outputs:
@@ -1209,7 +1209,7 @@ Boundaries:
 
 Consumers: L02 (proof-input).
 
-Next: Specify the globally hyperbolic Cauchy crossing and smooth energy interfaces. Check the exact HLelliptic Lemma 2.5, then implement the weighted pushforward, moment identity, test extension, and radial formulas.
+Next: Obtain a smooth spacelike Cauchy slice from global hyperbolicity and apply the current lift to the same ray measure in L02.
 
 <a id="l02"></a>
 

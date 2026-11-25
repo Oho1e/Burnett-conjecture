@@ -5453,6 +5453,46 @@
       "claim_id": "a05:scalar-L3-extension",
       "module": "Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension",
       "declaration": "Burnett.A05.exists_radianTrilinearForm_Lp3_extension"
+    },
+    {
+      "claim_id": "l01:canonical-null-crossing",
+      "module": "Burnett.Geometry.Cotangent.CauchyCrossingEnergy",
+      "declaration": "Burnett.Geometry.CotangentHamiltonCauchySlice.maximal_null_orbit_unique_cauchy_crossing"
+    },
+    {
+      "claim_id": "l01:joint-canonical-flow",
+      "module": "Burnett.Geometry.Cotangent.MaximalCanonicalFlowSmoothness",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.maximalPuncturedFlow_jointSmooth"
+    },
+    {
+      "claim_id": "l01:crossing-energy-germ",
+      "module": "Burnett.Geometry.Cotangent.MaximalCanonicalCrossing",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossingEnergy_germ"
+    },
+    {
+      "claim_id": "l01:crossing-first-integral",
+      "module": "Burnett.Geometry.Cotangent.ActualCrossingFirstIntegral",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossing_firstIntegral"
+    },
+    {
+      "claim_id": "l01:lift-quadratic-pairing",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_quadratic_pairing"
+    },
+    {
+      "claim_id": "l01:lift-local-moment",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_local_second_moment"
+    },
+    {
+      "claim_id": "l01:lift-radon-null-support",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_regular_null"
+    },
+    {
+      "claim_id": "l01:actual-lift-on-cauchy-slice",
+      "module": "Burnett.Geometry.Cotangent.ActualCauchyMomentumLift",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_actualFullMomentumLift_of_smooth_spacelike_cauchy"
     }
   ],
   "inventory": [
@@ -5612,9 +5652,9 @@
         "endline": 2991
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
+      "modeling_status": "partially_modeled",
       "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t11"
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md"
     },
     {
       "claim_id": "cor:strong",
@@ -25511,6 +25551,150 @@
       "statement_record": "docs/statements/all-scale-transfer.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:canonical-null-crossing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2993,
+        "endline": 2997
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentHamiltonCauchySlice.maximal_null_orbit_unique_cauchy_crossing",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:joint-canonical-flow",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2997,
+        "endline": 3001
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.maximalPuncturedFlow_jointSmooth",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:crossing-energy-germ",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2997,
+        "endline": 3001
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossingEnergy_germ",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:crossing-first-integral",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2997,
+        "endline": 3005
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossing_firstIntegral",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:lift-quadratic-pairing",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3006,
+        "endline": 3011
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_quadratic_pairing",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:lift-local-moment",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3006,
+        "endline": 3011
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_local_second_moment",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:lift-radon-null-support",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3006,
+        "endline": 3011
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_regular_null",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:actual-lift-on-cauchy-slice",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2989,
+        "endline": 3045
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_actualFullMomentumLift_of_smooth_spacelike_cauchy",
+      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "pending-independent-candidate-readback",
       "does_not_close_parent_claim": true
     }
   ],

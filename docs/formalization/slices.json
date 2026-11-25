@@ -1140,7 +1140,7 @@
       "goal": "在已具有矩与输运的正射线测度上构造全零余切测度，保留每个紧基集的二阶矩有限性；不假设仿射完备。",
       "inputs": [
         "任意光滑全局双曲时空、辅助正定度量r，以及一个给定的非负、底空间局部有限、支撑P=0的射线测度μ；该μ满足原文矩与所有正一齐次紧底支撑测试输运。这些是引理2990行本身的明示前提。",
-        "光滑Cauchy超曲面、非零零测地线的唯一横截与光滑依赖等几何接口待实现；不增加仿射完备或截面紧性假设。",
+        "正式库实现实际最大零轨线的光滑相流和横截。当前提升证明输入光滑类空Cauchy截面及其交截性质。",
         "测度加权推前、正齐次角延拓及局部矩接口；具体μ由F07/C04产生属于L02中的应用，不加强一般引理的前提。"
       ],
       "outputs": [
@@ -1156,7 +1156,7 @@
         "无权推前或rho径向形式提升均不足；权重与径向漂移必须一起核对。",
         "a的全零锥光滑定义、离锥延拓、紧基支撑及nu的Radon性都属于实际证明义务。"
       ],
-      "next_action": "先精确化全局双曲/Cauchy交点与光滑能量接口，并核对HLelliptic Lemma 2.5原陈述；随后分别实现加权推前、二阶矩恒等式和测试延拓/径向漂移公式。",
+      "next_action": "证明从全局双曲性得到光滑类空Cauchy截面，并将当前提升接到L02上同一个射线测度。",
       "supplementary_obligations": []
     },
     {
@@ -8484,6 +8484,54 @@
       "claim_id": "a05:scalar-L3-extension",
       "source_slices": [
         "A05"
+      ]
+    },
+    {
+      "claim_id": "l01:canonical-null-crossing",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:joint-canonical-flow",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:crossing-energy-germ",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:crossing-first-integral",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:lift-quadratic-pairing",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:lift-local-moment",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:lift-radon-null-support",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:actual-lift-on-cauchy-slice",
+      "source_slices": [
+        "L01"
       ]
     }
   ],

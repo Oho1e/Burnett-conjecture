@@ -300,7 +300,7 @@ Suppose a smooth globally hyperbolic spacetime has a nonnegative locally finite 
 \end{lemma}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+证明从实际最大零哈密顿轨线的交点构造范数，以其倒数作尺度提升原单位输运测度。由全局双曲性得到截面的依赖待完成。 [光滑类空柯西截面上的全动量提升](cauchy-momentum-lift.zh-CN.md)
 
 ## T12
 
