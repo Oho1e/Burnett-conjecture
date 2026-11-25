@@ -399,3 +399,4 @@ import Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol
 import Burnett.Analysis.GaugeProjection.StrongCompactness.VacuumStrongCompactness
 
 import Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary
+import Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair

@@ -90,3 +90,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Localize the original covariant jets and assemble their intrinsic measure](symmetric-jet-localization.en.md)
 
 - [Transport joint classical symbols and disintegrate the original physical measure](joint-classical-tests-and-base-marginal.en.md)
+- [Weighted change of auxiliary unit section](weighted-auxiliary-section-change.en.md)
