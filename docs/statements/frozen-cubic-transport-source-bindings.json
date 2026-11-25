@@ -1,0 +1,551 @@
+{
+  "parent_claim": "thm:variational-transport",
+  "closes_parent_claim": false,
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "original_lines": [
+    {
+      "lines": [
+        2754,
+        2759
+      ],
+      "sha256": "a773778be9135678d59d3f60bd673f94531f5d747c8f0db120a992f099214b44"
+    },
+    {
+      "lines": [
+        1936,
+        1975
+      ],
+      "sha256": "821ac046ae9b040920bf6a3bb2fb0521a2e15a107bdbca44ab338e3346587ba1"
+    },
+    {
+      "lines": [
+        1969,
+        1975
+      ],
+      "sha256": "4c3a16d51b378a5943af5318c57dd3a7f5892fd8f5ecca86f30e1b12f3392cda"
+    },
+    {
+      "lines": [
+        1976,
+        2003
+      ],
+      "sha256": "89a08447757205276216e676337ad76ca82eb2680704329899299528da3ed6f2"
+    },
+    {
+      "lines": [
+        2837,
+        2842
+      ],
+      "sha256": "bfd8443cfa5a0e20d228e92ee2bfb483327a18a1c7e05011bff439a89e3a38eb"
+    },
+    {
+      "lines": [
+        2159,
+        2173
+      ],
+      "sha256": "f623d196e57344ee4b7cc61ef7bfd4a36430f83f7c56d2aff33403b7aaea4831"
+    },
+    {
+      "lines": [
+        2504,
+        2518
+      ],
+      "sha256": "36bb5b9fb3bf63233f9307ea6dc9308a496992859135b3d2c190a9313b8379f6"
+    },
+    {
+      "lines": [
+        2547,
+        2549
+      ],
+      "sha256": "1b66a29372103f45699a73616964e27dca859a9aacf71445f11c80a5e39964e4"
+    },
+    {
+      "lines": [
+        2533,
+        2546
+      ],
+      "sha256": "051dce75467cb81f886e0fc94a5b3239fc439135b01c78a037593aa58cf1f23c"
+    },
+    {
+      "lines": [
+        2504,
+        2546
+      ],
+      "sha256": "79b72ce0155e3952d9bf83489ab5941e264a7a29a8cf44b6d40fde99005bb16c"
+    },
+    {
+      "lines": [
+        2514,
+        2546
+      ],
+      "sha256": "77eceb30db51745d03fe2ed7b64030ddb7112db38d000a9d04056e7235e22cc4"
+    }
+  ],
+  "frozen_replay_receipts": {
+    "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json": "55073c76bec9d508420747b34fab5f214aa98cd49c57ceaf79bd5ccaadeaa1a4",
+    "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json": "54bbe6178c16bdc52990d969fefd0aa61e0429a912679ae2b4e4a7733d461907",
+    "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json": "cfb9906f915f6262c862f7f78e5619737a2b98812c1096f167b67acc1ef35563",
+    "c02-fixed-frequency-remainder-prep/FIXED-WINDOW-DERIVATIVE-REPLAY.json": "238b737911dc0642ef23e8cffae16f447c0f4ed137677bbeaefefced0db07274",
+    "v04-density-cubic-frequency-prep/V04-FROZEN-DENSITY-CUBIC-VERTEX-REPLAY.json": "03c58105d4ba48338748afc82ed3a53a9ed0e594515102477e27cbe715e184fd",
+    "v04-density-cubic-frequency-prep/V07-CYCLIC-EXTENSION-REPLAY.json": "9975571cc4d8c9336a7017c7703ccf5a32eb7d9ef4a0f65fe98be94eef1b20e6",
+    "v04-density-cubic-frequency-prep/V10-NORMALIZED-PHYSICAL-CUBIC-PROFILE-REPLAY.json": "4b268d9ee2230f0881071c3cc3f5cab111b94ef9c61a53b2fa55e62f26232fcc",
+    "v04-density-cubic-frequency-prep/V10-FAR-PHYSICAL-CUBIC-CORRECTION-REPLAY.json": "e3b89be0bb99b58dc81f3626fe689a8e0bdcd4b9460d961a77631523658b3233",
+    "v04-density-cubic-frequency-prep/V10-ACTUAL-THIN-FAR-CUBIC-PROFILE-REPLAY.json": "d16889025fa9226cbaa0cbafcfd2361accd1d77250f530b916a902a72d16acfc",
+    "v10-normalized-far-reciprocal-prep/V10-NORMALIZED-FAR-RECIPROCAL-REPLAY.json": "b65fbcbaa803b3b693a71fb7afc26838b0f82dc2abda30b6e66f0b06dd0b6684",
+    "v10-normalized-far-reciprocal-prep/V10-INDEPENDENT-FAR-CUTOFFS-REPLAY.json": "1cb78de180339734e3656346660e12cbf5d33696c614dc3dd8b2045c91b4ad68",
+    "v10-normalized-far-reciprocal-prep/V10-COMPACT-FAR-CORRECTION-PROFILE-REPLAY.json": "d75c595a58ee7b17c71192379d1ab9aa2b007181658d3d1b22eeeb56a6932f4e"
+  },
+  "sources": {
+    "Burnett/Analysis/FrozenTransport/FixedWindowDerivativeRemainder.lean": {
+      "input_source": "c02-fixed-frequency-remainder-prep/FixedWindowDerivativeRemainder.lean",
+      "input_source_sha256": "09f0a9836a84978fa60492f5740fb19e49e43a7a82ad37a2a576b2a9f86be6a3",
+      "input_object_sha256": "364958a8c4ab8b8fa604b5e5b865569b27d35f415f4efb0518a965baf92ae86d",
+      "input_receipt": "c02-fixed-frequency-remainder-prep/FIXED-WINDOW-DERIVATIVE-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FixedWindowDerivativeRemainder",
+      "imports": [
+        "Burnett.Analysis.Fourier.RadianCoordinateDerivative",
+        "Burnett.Analysis.Fourier.FixedInfraredSchwartz",
+        "Burnett.Analysis.GaugeProjection.GaugeProjectionLp"
+      ],
+      "sha256": "f379a87f97bb9e718bcac8d21b8f08baecd5755729e388b515995c94ece8678f"
+    },
+    "Burnett/Analysis/FrozenTransport/V03SegmentTaylor.lean": {
+      "input_source": "v03-euler-jet-taylor-prep/V03SegmentTaylor.lean",
+      "input_source_sha256": "f7ba3211e865a9151ad78a5f13808f47008493b6397954ccc5aca6d58429c9ec",
+      "input_object_sha256": "67d89fe3c6dfe086ee17bd9403b37fcf645ce7221a7063c5308dd87f20623eb0",
+      "input_receipt": "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.V03SegmentTaylor",
+      "imports": [
+        "Mathlib.Analysis.Calculus.ContDiff.Operations",
+        "Mathlib.Analysis.Calculus.FDeriv.CompCLM",
+        "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+        "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus",
+        "Mathlib.Tactic.Module",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Abel",
+        "Mathlib.Tactic.Ring"
+      ],
+      "sha256": "6de0fd73df5e63c52a4315bf757ae77e47924946e12519673e74c21b9ab7ebf1"
+    },
+    "Burnett/Analysis/FrozenTransport/V03PrincipalCoefficientRemainder.lean": {
+      "input_source": "v03-euler-jet-taylor-prep/V03PrincipalCoefficientRemainder.lean",
+      "input_source_sha256": "0d8547ed1d397aa99619b81c8e9b281b2d41b784ef6546e83e4c108831d013fd",
+      "input_object_sha256": "e4a862ea3798f653a2d00e410f05e525828c1d56e0db8e444ab6993098589402",
+      "input_receipt": "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.V03PrincipalCoefficientRemainder",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.V03SegmentTaylor"
+      ],
+      "sha256": "841f6122df22659682ff4ced4fae4bf434abd4827621929675f10858eaae786d"
+    },
+    "Burnett/Analysis/FrozenTransport/V03MetricActionCoefficient.lean": {
+      "input_source": "v03-euler-jet-taylor-prep/V03MetricActionCoefficient.lean",
+      "input_source_sha256": "4be2a73f43ba9fec3a9cd89ca193270cc521067730f741dc8bc5437a5a9fb172",
+      "input_object_sha256": "710f9c23965c1ed0a1e819e8456c35ab23df9c37cf9298c2d1d2b1778bc7f97e",
+      "input_receipt": "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.V03MetricActionCoefficient",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.V03PrincipalCoefficientRemainder",
+        "Burnett.Analysis.TransportWard.Amplitude"
+      ],
+      "sha256": "5b482fe2fd0d496f69a928a5137284a60310104ed36ad80bd6bcc5d4bdaf9f91"
+    },
+    "Burnett/Analysis/FrozenTransport/V03EulerJetRemainder.lean": {
+      "input_source": "v03-euler-jet-taylor-prep/V03EulerJetRemainder.lean",
+      "input_source_sha256": "1910363f4814563b955fe18e7f8c0e760155fa735f2a3e7c45797ebe3f54f388",
+      "input_object_sha256": "2347c79a8fcd68d3ba76f081726bc6aa3538cf1acfc9af771a7fe2d6c25ed8a3",
+      "input_receipt": "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.V03EulerJetRemainder",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.V03MetricActionCoefficient"
+      ],
+      "sha256": "fbfbe540ff89edcdd9c771f35a6814d011bbee4baa531c04e13100e105bc3a5f"
+    },
+    "Burnett/Analysis/FrozenTransport/V03EulerCoordinateJet.lean": {
+      "input_source": "v03-euler-jet-taylor-prep/V03EulerCoordinateJet.lean",
+      "input_source_sha256": "660a4e9397900d4584959b62b7c8ada138773780085db554378f00ee2859ded2",
+      "input_object_sha256": "b2ea1f460c60159ac7720a0ecd07b033ed13184ca2f5e457035c592ebe6dc219",
+      "input_receipt": "v03-euler-jet-taylor-prep/V03-EULER-JET-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.V03EulerCoordinateJet",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.V03EulerJetRemainder",
+        "Burnett.Geometry.ConnectionDifference"
+      ],
+      "sha256": "c581189c20dc34fc357fbfee6c63c73e936289747bc466faae155ae451fc7ce7"
+    },
+    "Burnett/Analysis/FrozenTransport/FrozenDensityCubicVertex.lean": {
+      "input_source": "v04-density-cubic-frequency-prep/FrozenDensityCubicVertex.lean",
+      "input_source_sha256": "f3b85fdaf04c0da706fd0c57cab222fd5cbe68d8ebee869ef842dd6c9fb7537b",
+      "input_object_sha256": "76b58b15ce18ff261ce7737023de06ad8ae9f4b78de708e5fda7287289e0a9a1",
+      "input_receipt": "v04-density-cubic-frequency-prep/V04-FROZEN-DENSITY-CUBIC-VERTEX-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.V03EulerCoordinateJet",
+        "Burnett.Analysis.AngularCaps.FarAngularPhase"
+      ],
+      "sha256": "135d865e17173d2d27257274f037a4706ec61a03a610593f0276d8e821399a68"
+    },
+    "Burnett/Analysis/FrozenTransport/CubicCoefficientFunctional.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/CubicCoefficientFunctional.lean",
+      "input_source_sha256": "874f7ec1071ae4ec765b4e11eca33e90db7818837d6d87a69a12a520f518d6ce",
+      "input_object_sha256": "70ba460848256ae3ceecdce12c6a67f4d7f0d97f3581d0d86db50f606f386752",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.CubicCoefficientFunctional",
+      "imports": [
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.InfraredCubicContinuity"
+      ],
+      "sha256": "b3409e3cbfb2b912b3e25807335012aaac209130c423936e97f072b8382f6ea6"
+    },
+    "Burnett/Analysis/FrozenTransport/CompactReceivingCubicCoefficients.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/CompactReceivingCubicCoefficients.lean",
+      "input_source_sha256": "73b221fb4974d43d93d41132d68e34af624b04468284f87397f4412d35bb51b6",
+      "input_object_sha256": "9db95e6b05e81455e424353c947b329529fd7aeced50f8b51c74d756ee39e4a2",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.CompactReceivingCubicCoefficients",
+      "imports": [
+        "Burnett.Analysis.TransportWard.MetricVariation",
+        "Burnett.Analysis.Microlocal.PhysicalDensity",
+        "Burnett.Geometry.MaximalChart.MetricCoordinates",
+        "Burnett.Analysis.FrozenTransport.CubicCoefficientFunctional"
+      ],
+      "sha256": "57c36beea9821396b33593594c078dc901e4d4d654c73a1534aaf7aa633710bc"
+    },
+    "Burnett/Analysis/FrozenTransport/FrozenCubicCoefficientV03Bridge.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/FrozenCubicCoefficientV03Bridge.lean",
+      "input_source_sha256": "76f0ef1a781b38095e743b68d779304dc8d73a835dee1fe900cde7606905d8b1",
+      "input_object_sha256": "c726c16f3d53a46ea0af98d94cc95a3a4f5ca2d26d19f5b773faa8a436f1a961",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicCoefficientV03Bridge",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.CompactReceivingCubicCoefficients",
+        "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex"
+      ],
+      "sha256": "c82018c714d7f52ae7323247b8f97b2062d790b941f7fc3061e4941a074d4d9b"
+    },
+    "Burnett/Analysis/FrozenTransport/FrozenCubicActionPairing.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/FrozenCubicActionPairing.lean",
+      "input_source_sha256": "18345bd1e1ececf037093e689496d955032f28657a745c9a881b95b01871535b",
+      "input_object_sha256": "a2d8da11a2128b6b4ae5862e66be0cdba8846d6f0b087f5d9c912268fcb53ec1",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicActionPairing",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.CompactReceivingCubicCoefficients",
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.FixedLowerOrderCompleteCubic",
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.FixedInfraredStructure"
+      ],
+      "sha256": "c5326c553265b6e8100eaca9480c225f8f477a3991b4d8382720a5d20c64938c"
+    },
+    "Burnett/Analysis/FrozenTransport/FourierSchwartzTransportInputs.lean": {
+      "input_source": "c02-cubic-replacement-prep/FourierSchwartzTransportInputs.lean",
+      "input_source_sha256": "3ce158e76d0189387643fbf08fe124248e65f04440b663e9b139672aa8d5ac25",
+      "input_object_sha256": "993285d39f8928e3eef69669d9973717bf07bb1484a81738e5851b6d81d842c7",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FourierSchwartzTransportInputs",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalGlobalDefectNorm"
+      ],
+      "sha256": "a458d60bf117ffbb1cee766f16ec53de680e9abd3be1cf49ec1bf40984ae626c"
+    },
+    "Burnett/Analysis/FrozenTransport/FrozenCubicOddTest.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/FrozenCubicOddTest.lean",
+      "input_source_sha256": "7c4ea203e71e60139491754128e324a9dba2f41647e519e8b47d1e3c088f45e4",
+      "input_object_sha256": "072221a3c1c69948dbc5cf21253eef78baa15f9c2b2e43215738dfd18814de36",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicOddTest",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.FrozenCubicActionPairing",
+        "Burnett.Analysis.FrozenTransport.FourierSchwartzTransportInputs"
+      ],
+      "sha256": "0f7ee9af457a4f11881165c850367e7ef1f416c045e46a308d8758ec9fb742e2"
+    },
+    "Burnett/Analysis/FrozenTransport/UniformCubicCoefficientBox.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/UniformCubicCoefficientBox.lean",
+      "input_source_sha256": "5582d5cdc5dab42c395e8f331ef21cdc3b8b6100fcdabb9afbc8c9eb832ffee0",
+      "input_object_sha256": "356211fb01177730bd934aae2d2070f604555a7444366fcc08d97772956d23fc",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.UniformCubicCoefficientBox",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.CubicCoefficientFunctional"
+      ],
+      "sha256": "a915bb4777dbe292c991eacbec92f15eea49f5e8a4780bb2d49e0af4314b2178"
+    },
+    "Burnett/Analysis/FrozenTransport/ActualThinSchwartzField.lean": {
+      "input_source": "c02-cubic-replacement-prep/ActualThinSchwartzField.lean",
+      "input_source_sha256": "a4654bde41eab4ab070288030f582b843500fd46fcef01cecc8e7d9de0694dcb",
+      "input_object_sha256": "fe8116da6e57b3f3a40e699782acaa6827c193958c6f5d4349f44a1d13aa0a13",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinSchwartzField",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinScreenCombination",
+        "Burnett.Analysis.FrozenTransport.FourierSchwartzTransportInputs"
+      ],
+      "sha256": "4f65804c81742b337b907ffb5fa6acc64c81ede3db3f9703ec62823bc516d3fb"
+    },
+    "Burnett/Analysis/FrozenTransport/OriginalCubicPatchNorms.lean": {
+      "input_source": "c02-cubic-replacement-prep/OriginalCubicPatchNorms.lean",
+      "input_source_sha256": "679ccda92290e32744b80876dffe7ddac9adcfa1ba852ec93cba46d45f9be6f6",
+      "input_object_sha256": "f031ee9753fc1b561f542a43eb7a2279053017d6287756e0e278d9650715fba1",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalCubicPatchNorms",
+      "imports": [
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.InfraredCubicContinuity",
+        "Burnett.Analysis.TransportPatches.OriginalThinC03Consumer"
+      ],
+      "sha256": "0b501ea9b04960136805516a5cc0a6e4a1daf9bb5ab6f7f25b444a15cd41bfa7"
+    },
+    "Burnett/Analysis/FrozenTransport/LinearInputsForCubicPatch.lean": {
+      "input_source": "c02-cubic-replacement-prep/LinearInputsForCubicPatch.lean",
+      "input_source_sha256": "47d3fd40e27025c45e6df1122a1a15d715b1cb92d4b952e41c4c010c06db14f7",
+      "input_object_sha256": "6e172160203e6e970f20570e0264e162855b612ce91714b352e5b031fb09b0fe",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.LinearInputsForCubicPatch",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.ActualThinSchwartzField",
+        "Burnett.Analysis.FrozenTransport.OriginalCubicPatchNorms",
+        "Burnett.Analysis.TransportPatches.CompactFrequencyJets"
+      ],
+      "sha256": "d9d3ef3e3f9d8db74237f9b7e67633572d66c4cf9f55d1cd170cf89bd5877291"
+    },
+    "Burnett/Analysis/FrozenTransport/FixedInfraredCubicPatchReplacement.lean": {
+      "input_source": "c02-cubic-replacement-prep/FixedInfraredCubicPatchReplacement.lean",
+      "input_source_sha256": "0ce8ff677845dc4b1398efb4be814c39cb5d787c6682126a587e52bf24f246b4",
+      "input_object_sha256": "d97dc67b76b0e507fc38a931a8cc178ce16bbc72f5ae789680d5ae768ef56fed",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FixedInfraredCubicPatchReplacement",
+      "imports": [
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.InfraredCubicContinuity"
+      ],
+      "sha256": "d85c838437b657f573ef04ed18405b316e432bcca68d2e2e58159016570b642c"
+    },
+    "Burnett/Analysis/FrozenTransport/ActualThinCubicReplacement.lean": {
+      "input_source": "c02-cubic-replacement-prep/ActualThinCubicReplacement.lean",
+      "input_source_sha256": "b7f8eaaa3dd10b5fdcb5d04a5c6a7020fc350e7fc92a52b8039b050f8abb02e2",
+      "input_object_sha256": "4a1dda3b81e0b0a2b072e08002042d52e5070a760e7d220354ee4023289900b4",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinCubicReplacement",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.LinearInputsForCubicPatch",
+        "Burnett.Analysis.FrozenTransport.FixedInfraredCubicPatchReplacement"
+      ],
+      "sha256": "9af3da56753c512b4f98732a59f2dfe97fb3692321070cbbd45a76f1d24c9e07"
+    },
+    "Burnett/Analysis/FrozenTransport/UniformThinCubicPatch.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/UniformThinCubicPatch.lean",
+      "input_source_sha256": "dac5bff32e6d1ea3c93c48a5ecbadec2737b8a16b94fb63c2b23e96d260f802b",
+      "input_object_sha256": "943a75faacb6a2132c760e6c9b7e1c69001426cba87e6b4265dfa5d5a05bf6dd",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.UniformThinCubicPatch",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.UniformCubicCoefficientBox",
+        "Burnett.Analysis.FrozenTransport.ActualThinCubicReplacement"
+      ],
+      "sha256": "c7126d6a402c33d0b2e17e840c3bcde8444f8269434d852624687a8d58bb449e"
+    },
+    "Burnett/Analysis/FrozenTransport/UniformOriginalThinCubicFamily.lean": {
+      "input_source": "c02-uniform-cubic-coefficients-prep/UniformOriginalThinCubicFamily.lean",
+      "input_source_sha256": "b965a634637dd0cc66997ca600ade79fa0ec872a2bb2f95f885a45e0a0a5aff3",
+      "input_object_sha256": "81fb5d06be674c7fddd0c045c83bcc85b0961fb2c04f8efd83e772a7622cd5ca",
+      "input_receipt": "c02-uniform-cubic-coefficients-prep/C02-UNIFORM-CUBIC-COEFFICIENTS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.UniformOriginalThinCubicFamily",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.UniformThinCubicPatch",
+        "Burnett.Analysis.FrozenTransport.CompactReceivingCubicCoefficients"
+      ],
+      "sha256": "56977b7782e6d40df1bca24d0131a82a20c6152e878240f0b6166435edddb722"
+    },
+    "Burnett/Analysis/FrozenTransport/OriginalThinCubicFamily.lean": {
+      "input_source": "c02-cubic-replacement-prep/OriginalThinCubicFamily.lean",
+      "input_source_sha256": "e000615860e57180c5ce33e8521d70e0079b311a4ed59e51732ec8e9bf570cf6",
+      "input_object_sha256": "22d697897e62f0822ff59705bfe6c0a9b2851d1f10f0e7ffc4528850a0502c6c",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicFamily",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.ActualThinCubicReplacement"
+      ],
+      "sha256": "87b223f3bea23025a8acd0e4ae63452f966747120cd16c6ca5aba76709a9364e"
+    },
+    "Burnett/Analysis/FrozenTransport/OriginalThinCubicPatchSum.lean": {
+      "input_source": "c02-cubic-replacement-prep/OriginalThinCubicPatchSum.lean",
+      "input_source_sha256": "828305e7ca6fae1298b27278746324fb2e547df7ad7cab8c5f1e3c7c83e36768",
+      "input_object_sha256": "d428722fa41c9321c0cd901a82ae926ac7aab57f5869da6e96608400d0450fd3",
+      "input_receipt": "c02-cubic-replacement-prep/C02-CUBIC-REPLACEMENT-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicPatchSum",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.OriginalThinCubicFamily",
+        "Burnett.Analysis.TransportPatches.CubicPartitionVolume"
+      ],
+      "sha256": "dabb664e5e3300aaaba6821da353e0883700f4378e190867d0641d204f6637d8"
+    },
+    "Burnett/Analysis/FrozenTransport/CyclicIntegralExtension.lean": {
+      "input_source": "ward-cyclic-extension-independent/IndependentLiteral.lean",
+      "input_source_sha256": "e7fbaf3a652dc957594c7e302e8f717bf7510220cd534709a016efc9435d1e3b",
+      "input_object_sha256": "8b1a0b3eeb674b961d382f595357a26670ab6141c82392fb1d565f2da0d11522",
+      "input_receipt": "v04-density-cubic-frequency-prep/V07-CYCLIC-EXTENSION-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+      "imports": [
+        "Mathlib.Analysis.Calculus.ParametricIntegral",
+        "Mathlib.Analysis.Calculus.ContDiff.Operations",
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.Analysis.Calculus.ContDiff.Basic",
+        "Mathlib.Analysis.Calculus.Deriv.Mul",
+        "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ],
+      "sha256": "e1e68b20a85fbffcf166b7d25c15d1be1d7e446d22c5b68a8d949bfff5132415"
+    },
+    "Burnett/Analysis/FrozenTransport/NormalizedFarReciprocal.lean": {
+      "input_source": "v10-normalized-far-reciprocal-prep/NormalizedFarReciprocal.lean",
+      "input_source_sha256": "433cd29002fb2afb4f8c8dce8e0365010dfb8646973fac431f293649cc0f8970",
+      "input_object_sha256": "3f40e9e6c9b7ac6a06467dc4e5723e4ba337e5c3f4e103f2e2c64848273afc0f",
+      "input_receipt": "v10-normalized-far-reciprocal-prep/V10-NORMALIZED-FAR-RECIPROCAL-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedFarReciprocal",
+      "imports": [
+        "Burnett.Analysis.AngularCaps.FarAngularPhase",
+        "Burnett.Analysis.AngularCaps.SmoothCapProfiles"
+      ],
+      "sha256": "2a130cf741b29269df98e323b5b27a38db76f42acc3f534f62afaee66e1b4396"
+    },
+    "Burnett/Analysis/FrozenTransport/IndependentFarCutoffs.lean": {
+      "input_source": "v10-normalized-far-reciprocal-prep/IndependentFarCutoffs.lean",
+      "input_source_sha256": "eeba36ab95460491e7c8b9193fec2cd188d6018f06092f509203172aa06288b3",
+      "input_object_sha256": "822217236a8478cb131023c9aeab8cb021908ed6cfc5034191a045c29d27b371",
+      "input_receipt": "v10-normalized-far-reciprocal-prep/V10-INDEPENDENT-FAR-CUTOFFS-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.IndependentFarCutoffs",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.NormalizedFarReciprocal"
+      ],
+      "sha256": "47e651415aefe69fdf9caff613460cd586b412743c19bcc14cd6139675edd1c0"
+    },
+    "Burnett/Analysis/FrozenTransport/CompactFarCorrectionProfile.lean": {
+      "input_source": "v10-normalized-far-reciprocal-prep/CompactFarCorrectionProfile.lean",
+      "input_source_sha256": "9acfa4badf0179da5ee904830c2faef603a74e95aeef55d3ea2c32747b51a0be",
+      "input_object_sha256": "4a1fc0657ce592d2fcbdbb14d1d85e6b8bcc470caba2aae633da1a16be0e5453",
+      "input_receipt": "v10-normalized-far-reciprocal-prep/V10-COMPACT-FAR-CORRECTION-PROFILE-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.CompactFarCorrectionProfile",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.IndependentFarCutoffs"
+      ],
+      "sha256": "822f33b493b35c21f08f8a67af50bbd6cff41e48845472e34014e4548431445f"
+    },
+    "Burnett/Analysis/FrozenTransport/NormalizedPhysicalCubicProfile.lean": {
+      "input_source": "v04-density-cubic-frequency-prep/NormalizedPhysicalCubicProfile.lean",
+      "input_source_sha256": "e2d47ecfbb3758e0bffc10d2f3744c609d03e795eea9e3ee4c48f412f738e91d",
+      "input_object_sha256": "81eceeae845e548940cdf6d3a7572b501a74efc75c60a18221e5b1e465c457a0",
+      "input_receipt": "v04-density-cubic-frequency-prep/V10-NORMALIZED-PHYSICAL-CUBIC-PROFILE-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+        "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+        "Burnett.Analysis.FrozenTransport.CompactFarCorrectionProfile"
+      ],
+      "sha256": "e9d8c3321ebde6077264b351f68e1c2a75c04728002a3a85234cbf6ae5a083cb"
+    },
+    "Burnett/Analysis/FrozenTransport/FarPhysicalCubicCorrection.lean": {
+      "input_source": "v04-density-cubic-frequency-prep/FarPhysicalCubicCorrection.lean",
+      "input_source_sha256": "ae3e083805e93c9ef24ba181ec28cd8d387c7a523d4b681616f7f46c9d24a0de",
+      "input_object_sha256": "291ee2edc18634d8bd374ccef31ad90da72cc2f223d719fc699403c676875c41",
+      "input_receipt": "v04-density-cubic-frequency-prep/V10-FAR-PHYSICAL-CUBIC-CORRECTION-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile"
+      ],
+      "sha256": "896f380959440273e43fd92d53acfe429d52e53b6eab25a7e1b1b012a7cd259a"
+    },
+    "Burnett/Analysis/FrozenTransport/ActualThinFarCubicProfile.lean": {
+      "input_source": "v04-density-cubic-frequency-prep/ActualThinFarCubicProfile.lean",
+      "input_source_sha256": "d3c43f2191b2b433fe5220ca9570ba79cd908e9b2ff7f5e1d1a449ee9b1bfbaa",
+      "input_object_sha256": "baf523c065e1612b793086f595a2cedbfe97200259a1f7c3d55ac922f18b0e6f",
+      "input_receipt": "v04-density-cubic-frequency-prep/V10-ACTUAL-THIN-FAR-CUBIC-PROFILE-REPLAY.json",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
+      "imports": [
+        "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+        "Burnett.Analysis.TransportPatches.ActualThinScreenCombination"
+      ],
+      "sha256": "6fc90f23331beb01e49f2433beaa6b3a627b7662cee6243a6d465a8022c24b57"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "c02:fixed-infrared-derivative",
+      "module": "Burnett.Analysis.FrozenTransport.FixedWindowDerivativeRemainder",
+      "declaration": "Burnett.C02.tendsto_projectionInfrared_coordinateDerivative_remainder_Lp_zero"
+    },
+    {
+      "claim_id": "v04:density-coefficient-direction",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+      "declaration": "Burnett.V04.hasDerivAt_metricActionCoefficient_direction"
+    },
+    {
+      "claim_id": "v04:cubic-vertex-frequency-degree",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+      "declaration": "Burnett.V04.frozenDensityCubicVertex_smul"
+    },
+    {
+      "claim_id": "v04:same-ordered-density-coefficient",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicCoefficientV03Bridge",
+      "declaration": "Burnett.C02.frozenDensityCubicDirection_eq_frozenActionCubicLinear"
+    },
+    {
+      "claim_id": "v04:frozen-odd-test-three-placements",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicOddTest",
+      "declaration": "Burnett.C02.frozenActionCyclicOddTestEnergy_fixedInfrared_eq_complete"
+    },
+    {
+      "claim_id": "c02:uniform-original-cubic-replacement",
+      "module": "Burnett.Analysis.FrozenTransport.UniformOriginalThinCubicFamily",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement"
+    },
+    {
+      "claim_id": "c02:thin-cubic-finite-patch-sum",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicPatchSum",
+      "declaration": "Burnett.C02.completeCubic_thinReplacement_sum_scaled_patch"
+    },
+    {
+      "claim_id": "v07:cyclic-low-frequency-extension",
+      "module": "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicWeight_div_norm_eq_extension_of_low"
+    },
+    {
+      "claim_id": "v07:cyclic-ambient-derivative-bound",
+      "module": "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicExtension_iteratedFDeriv_bound_on_compact"
+    },
+    {
+      "claim_id": "v10:actual-normalized-cubic-numerator",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile",
+      "declaration": "Burnett.V10.physicalCubicNumerator_eq_normalized_on_lowSlot"
+    },
+    {
+      "claim_id": "v10:cubic-numerator-high-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile",
+      "declaration": "Burnett.V10.physicalCubicNumerator_highAdjoint"
+    },
+    {
+      "claim_id": "v10:signed-quotient-high-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.CompactFarCorrectionProfile",
+      "declaration": "Burnett.V10.signedHermitianQuotient_highAdjoint"
+    },
+    {
+      "claim_id": "v10:guarded-cubic-profile-derivative-bound",
+      "module": "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+      "declaration": "Burnett.V10.farPhysicalCubicCorrection_iteratedFDeriv_bound"
+    },
+    {
+      "claim_id": "v10:physical-far-exact-signed-phase",
+      "module": "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+      "declaration": "Burnett.V10.exists_farPhysicalCubicCorrection_exact_on_support"
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-profile-smooth",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_contDiffOn"
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-coefficient",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_exact_coefficient"
+    }
+  ]
+}

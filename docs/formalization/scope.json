@@ -5348,6 +5348,86 @@
       "claim_id": "c02:thin-screen-l3-same-patch",
       "module": "Burnett.Analysis.TransportPatches.OriginalThinC03Consumer",
       "declaration": "Burnett.C02.exists_originalThinScreenL3_consumeC03Source"
+    },
+    {
+      "claim_id": "c02:fixed-infrared-derivative",
+      "module": "Burnett.Analysis.FrozenTransport.FixedWindowDerivativeRemainder",
+      "declaration": "Burnett.C02.tendsto_projectionInfrared_coordinateDerivative_remainder_Lp_zero"
+    },
+    {
+      "claim_id": "v04:density-coefficient-direction",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+      "declaration": "Burnett.V04.hasDerivAt_metricActionCoefficient_direction"
+    },
+    {
+      "claim_id": "v04:cubic-vertex-frequency-degree",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenDensityCubicVertex",
+      "declaration": "Burnett.V04.frozenDensityCubicVertex_smul"
+    },
+    {
+      "claim_id": "v04:same-ordered-density-coefficient",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicCoefficientV03Bridge",
+      "declaration": "Burnett.C02.frozenDensityCubicDirection_eq_frozenActionCubicLinear"
+    },
+    {
+      "claim_id": "v04:frozen-odd-test-three-placements",
+      "module": "Burnett.Analysis.FrozenTransport.FrozenCubicOddTest",
+      "declaration": "Burnett.C02.frozenActionCyclicOddTestEnergy_fixedInfrared_eq_complete"
+    },
+    {
+      "claim_id": "c02:uniform-original-cubic-replacement",
+      "module": "Burnett.Analysis.FrozenTransport.UniformOriginalThinCubicFamily",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement"
+    },
+    {
+      "claim_id": "c02:thin-cubic-finite-patch-sum",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicPatchSum",
+      "declaration": "Burnett.C02.completeCubic_thinReplacement_sum_scaled_patch"
+    },
+    {
+      "claim_id": "v07:cyclic-low-frequency-extension",
+      "module": "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicWeight_div_norm_eq_extension_of_low"
+    },
+    {
+      "claim_id": "v07:cyclic-ambient-derivative-bound",
+      "module": "Burnett.Analysis.FrozenTransport.CyclicIntegralExtension",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicExtension_iteratedFDeriv_bound_on_compact"
+    },
+    {
+      "claim_id": "v10:actual-normalized-cubic-numerator",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile",
+      "declaration": "Burnett.V10.physicalCubicNumerator_eq_normalized_on_lowSlot"
+    },
+    {
+      "claim_id": "v10:cubic-numerator-high-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile",
+      "declaration": "Burnett.V10.physicalCubicNumerator_highAdjoint"
+    },
+    {
+      "claim_id": "v10:signed-quotient-high-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.CompactFarCorrectionProfile",
+      "declaration": "Burnett.V10.signedHermitianQuotient_highAdjoint"
+    },
+    {
+      "claim_id": "v10:guarded-cubic-profile-derivative-bound",
+      "module": "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+      "declaration": "Burnett.V10.farPhysicalCubicCorrection_iteratedFDeriv_bound"
+    },
+    {
+      "claim_id": "v10:physical-far-exact-signed-phase",
+      "module": "Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection",
+      "declaration": "Burnett.V10.exists_farPhysicalCubicCorrection_exact_on_support"
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-profile-smooth",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_contDiffOn"
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-coefficient",
+      "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_exact_coefficient"
     }
   ],
   "inventory": [
@@ -25059,6 +25139,278 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.C02.exists_originalThinScreenL3_consumeC03Source",
       "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:fixed-infrared-derivative",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2754,
+        "endline": 2759
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.tendsto_projectionInfrared_coordinateDerivative_remainder_Lp_zero",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v04:density-coefficient-direction",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1936,
+        "endline": 1975
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V04.hasDerivAt_metricActionCoefficient_direction",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v04:cubic-vertex-frequency-degree",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1969,
+        "endline": 1975
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V04.frozenDensityCubicVertex_smul",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v04:same-ordered-density-coefficient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1936,
+        "endline": 1975
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.frozenDensityCubicDirection_eq_frozenActionCubicLinear",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v04:frozen-odd-test-three-placements",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1976,
+        "endline": 2003
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.frozenActionCyclicOddTestEnergy_fixedInfrared_eq_complete",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:uniform-original-cubic-replacement",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2837,
+        "endline": 2842
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:thin-cubic-finite-patch-sum",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2837,
+        "endline": 2842
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.completeCubic_thinReplacement_sum_scaled_patch",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v07:cyclic-low-frequency-extension",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2159,
+        "endline": 2173
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicWeight_div_norm_eq_extension_of_low",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v07:cyclic-ambient-derivative-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2159,
+        "endline": 2173
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Analysis.TransportWardSymbol.cyclicExtension_iteratedFDeriv_bound_on_compact",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:actual-normalized-cubic-numerator",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2518
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.physicalCubicNumerator_eq_normalized_on_lowSlot",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:cubic-numerator-high-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2547,
+        "endline": 2549
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.physicalCubicNumerator_highAdjoint",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:signed-quotient-high-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2547,
+        "endline": 2549
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.signedHermitianQuotient_highAdjoint",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:guarded-cubic-profile-derivative-bound",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2533,
+        "endline": 2546
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.farPhysicalCubicCorrection_iteratedFDeriv_bound",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:physical-far-exact-signed-phase",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2546
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.exists_farPhysicalCubicCorrection_exact_on_support",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-profile-smooth",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2514,
+        "endline": 2546
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_contDiffOn",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:actual-thin-screen-far-coefficient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2546
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.actualThinFarCubicCorrection_exact_coefficient",
+      "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

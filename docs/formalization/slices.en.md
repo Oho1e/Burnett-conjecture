@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `d7a430f554939baf753e661adec54424a67819cc76a6cd27ef4ea0fc001758ee`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `fe58b1072b6256264bbd3dd78f22742eaf42b48a9470d52395e33866c2baf6b5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -821,7 +821,7 @@ Refinement obligations within the slice (no separate completion status):
 - Angular-measure evenness from real fields, reduction to odd tests, and reality of Qh connect the variational residual to all final tests; that bridge was not listed separately originally. (Source lines1906–1915.)
 - Full polarized continuity for the current10-component equation is a substantive bridge from the stated lemma, not discharged by an identical citation name. (Source lines1990–2009.)
 
-Next: The actual cyclic vertex, three real amplitude linearity laws, and joint frequency degree two are implemented. Continue integral Fourier normalization, the full energy coefficients, and matrix continuity.
+Next: The actual density coefficient derivative and the three placements of the fixed-infrared odd test agree with the complete frozen cubic energy. Continue the variable-background residual and the full Fourier decomposition.
 
 <a id="v05"></a>
 
@@ -914,7 +914,7 @@ Boundaries:
 
 Consumers: V08 (proof-input), V09 (proof-input), V10 (proof-input), V12 (proof-input), C02 (proof-input)
 
-Next: At η, the complex-bilinear one-gauge identity, the four-term low-gauge formula with two screens, and three-pure-gauge elimination are implemented. Continue the two-gauge cases, general metric covariance, and phase and symbol estimates for all frequency positions.
+Next: The low-slot cyclic integral extends smoothly in the three independent variables and has finite derivatives on compact subsets. Continue general metric covariance and the two-gauge and all-frequency phase estimates.
 
 <a id="v08"></a>
 
@@ -997,7 +997,7 @@ Boundaries:
 
 Consumers: V11 (proof-input), V12 (proof-input)
 
-Next: first record actual physical far support and the complete numerator; define the independent quotient using psi_delta/d_m, checking high adjunction and low-angular expansion requirements factor by factor.
+Next: The guarded signed quotient recovers the actual cubic numerator on physical far support, and exact coefficients and smoothness are available for the actual thin screen. Continue the operator expansion, its common coefficient bounds, and the C03 source pairing.
 
 <a id="v11"></a>
 
@@ -1116,7 +1116,7 @@ Boundaries:
 
 Consumers: C03 (proof-input), C04 (proof-input).
 
-Next: The same original covariance gives the two wide errors and both thin-cone combinations. Attach the low-frequency comparison between realizations and the cubic and Ward replacements.
+Next: The original projected field gives the complete thin-screen cubic replacement uniformly over the compact receiving-chart coefficients. Continue the full same-field assembly with the Ward estimates.
 
 <a id="c03"></a>
 
