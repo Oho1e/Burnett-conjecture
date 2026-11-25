@@ -15,7 +15,7 @@ open Burnett.Microlocal.PhysicalDensity (OrderedPair)
 open scoped BigOperators ComplexConjugate ContDiff ENNReal
 
 open private realHermitianTest realHermitianTest_apply linearCoefficientTerm quadraticCoefficientTerm from
-  CubicCoefficientFunctional
+  Burnett.Analysis.FrozenTransport.CubicCoefficientFunctional
 open private fixed_homogeneous_spectrum_integrable from Burnett.Analysis.CubicEnergy.CompleteEnergy.FixedInfraredStructure
 
 local notation "Lin" => CubicLinearIndex OrderedPair

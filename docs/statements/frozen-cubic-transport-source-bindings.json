@@ -233,7 +233,7 @@
         "Burnett.Analysis.CubicEnergy.CompleteEnergy.FixedLowerOrderCompleteCubic",
         "Burnett.Analysis.CubicEnergy.CompleteEnergy.FixedInfraredStructure"
       ],
-      "sha256": "3ed3eef0e92ac07c581c1131465648ff6172dd60cd0cf8d407023ce0eb1f8c6d"
+      "sha256": "c5326c553265b6e8100eaca9480c225f8f477a3991b4d8382720a5d20c64938c"
     },
     "Burnett/Analysis/FrozenTransport/FourierSchwartzTransportInputs.lean": {
       "input_source": "c02-cubic-replacement-prep/FourierSchwartzTransportInputs.lean",
