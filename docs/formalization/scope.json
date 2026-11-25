@@ -5428,6 +5428,31 @@
       "claim_id": "v10:actual-thin-screen-far-coefficient",
       "module": "Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile",
       "declaration": "Burnett.V10.actualThinFarCubicCorrection_exact_coefficient"
+    },
+    {
+      "claim_id": "lem:cubic-continuity",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.PaperCubicContinuity",
+      "declaration": "Burnett.A02.FrequencySplit.paper_completeCubic_continuity"
+    },
+    {
+      "claim_id": "a05:unscaled",
+      "module": "Burnett.Analysis.AllScaleTransfer.ActualUnscaledEstimate",
+      "declaration": "Burnett.A05.exists_unscaled_radianTrilinearForm_bound"
+    },
+    {
+      "claim_id": "a05:factorwise-truncation",
+      "module": "Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_factorwise_truncation_bound"
+    },
+    {
+      "claim_id": "a05:adjacent-cap",
+      "module": "Burnett.Analysis.AllScaleTransfer.ActualNearWithProfiles",
+      "declaration": "Burnett.A05.exists_actual_radian_near_field_bound"
+    },
+    {
+      "claim_id": "a05:scalar-L3-extension",
+      "module": "Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_Lp3_extension"
     }
   ],
   "inventory": [
@@ -5501,9 +5526,11 @@
         "endline": 623
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t05"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/paper-cubic-continuity.zh-CN.md",
+      "declaration": "Burnett.A02.FrequencySplit.paper_completeCubic_continuity",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "lem:freezing",
@@ -25412,6 +25439,78 @@
       "declaration": "Burnett.V10.actualThinFarCubicCorrection_exact_coefficient",
       "statement_record": "docs/statements/frozen-cubic-transport.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a05:unscaled",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1026,
+        "endline": 1057
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A05.exists_unscaled_radianTrilinearForm_bound",
+      "statement_record": "docs/statements/all-scale-transfer.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a05:factorwise-truncation",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1218,
+        "endline": 1224
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_factorwise_truncation_bound",
+      "statement_record": "docs/statements/all-scale-transfer.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a05:adjacent-cap",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1226,
+        "endline": 1243
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A05.exists_actual_radian_near_field_bound",
+      "statement_record": "docs/statements/all-scale-transfer.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a05:scalar-L3-extension",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "lem:analytic-near",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1026,
+        "endline": 1057
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_Lp3_extension",
+      "statement_record": "docs/statements/all-scale-transfer.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "independent-candidate-readback",
       "does_not_close_parent_claim": true
     }
   ],

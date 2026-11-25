@@ -1,0 +1,18 @@
+{
+  "claim_id": "lem:cubic-continuity",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "statement_and_context_lines": [
+    601,
+    623
+  ],
+  "span_sha256": "107ad03415ebf52164a3569dee69379525d00570baaff53e393f6a941c8fb404",
+  "receipt_sha256": "a8a43e0cc1789db035f9ad87861442ca9f4e13aaa12165bb36e73df7b3940fea",
+  "original_source_sha256": "4ff01623f1f3812fe39dc720c931eda124895ab043ece143c16534037e188a95",
+  "published_source_sha256": "74c31d44bd189912cf46ab949abdcb787e0819e799e792224f15b5ccf0067c65",
+  "source_path": "Burnett/Analysis/CubicEnergy/CompleteEnergy/PaperCubicContinuity.lean",
+  "target": {
+    "claim_id": "lem:cubic-continuity",
+    "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.PaperCubicContinuity",
+    "declaration": "Burnett.A02.FrequencySplit.paper_completeCubic_continuity"
+  }
+}

@@ -45,7 +45,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 2.1 | theorem | `thm:quadratic` | 354–356 | Not modeled |
 | 2.2 | corollary | `cor:base-marginal` | 487–506 | [Proof implemented](base-marginal-and-angular-disintegration.en.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | Not modeled |
-| 3.2 | lemma | `lem:cubic-continuity` | 613–623 | Not modeled |
+| 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [Proof implemented](paper-cubic-continuity.en.md) |
 | 3.3 | lemma | `lem:freezing` | 736–764 | Not modeled |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | Not modeled |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | Not modeled |
@@ -94,3 +94,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Positive null second moments](quadratic-null-second-moments.en.md)
 - [Original projected patch sources and wide frozen errors](original-transport-patch-estimates.en.md)
 - [Frozen cubic action, thin-screen replacement, and the physical far symbol](frozen-cubic-transport.en.md)
+- [All-scale and adjacent-cap trilinear estimates](all-scale-transfer.en.md)

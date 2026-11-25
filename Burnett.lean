@@ -418,3 +418,8 @@ import Burnett.Analysis.FrozenTransport.NormalizedPhysicalCubicProfile
 import Burnett.Analysis.FrozenTransport.CompactFarCorrectionProfile
 import Burnett.Analysis.FrozenTransport.FarPhysicalCubicCorrection
 import Burnett.Analysis.FrozenTransport.ActualThinFarCubicProfile
+import Burnett.Analysis.CubicEnergy.CompleteEnergy.PaperCubicContinuity
+import Burnett.Analysis.AllScaleTransfer.ActualUnscaledEstimate
+import Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation
+import Burnett.Analysis.AllScaleTransfer.ActualNearWithProfiles
+import Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension
