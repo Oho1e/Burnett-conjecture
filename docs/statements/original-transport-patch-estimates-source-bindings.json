@@ -714,11 +714,12 @@
       "input_receipt": "pr-patch-source-wide-joint-independent-2026-11-25/FROZEN-JOINT-REVIEW.json",
       "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
       "imports": [
+        "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
         "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
         "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer"
       ],
-      "sha256": "e9f437723c3b8659ad210f8914889cff7cd9e9a41a1e7966b904cc3d5fdb059a",
-      "candidate_changes": "Expose both actual wide-error MemLp results, all cutoff jets and the same coefficient bounds.",
+      "sha256": "94d0c8cd855abb84cb2d582bae5dd908120b3611911752087b54ffba221476da",
+      "candidate_changes": "Expose both actual wide-error MemLp results, all cutoff jets and the same coefficient bounds. Import the existing compact first-jet estimate explicitly for a clean Lake build.",
       "candidate_replay_sha256": "288fc0e182a9d01e3608de332fb04fb62ab53b49d2411dac299d2d6964125344"
     },
     "Burnett/Analysis/TransportPatches/ActualThinConeL2.lean": {

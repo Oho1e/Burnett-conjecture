@@ -1,3 +1,4 @@
+import Burnett.Analysis.GaugeProjection.MaximalChartFirstJet
 import Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource
 import Burnett.Analysis.TransportPatches.OriginalWideC03Consumer
 
