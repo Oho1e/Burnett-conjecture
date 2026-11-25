@@ -1,6 +1,7 @@
 import Burnett.Analysis.GaugeProjection.MaximalChartFirstJet
 import Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource
 import Burnett.Analysis.TransportPatches.OriginalWideC03Consumer
+import Burnett.Geometry.MaximalChart.VacuumTransfer
 
 set_option autoImplicit false
 set_option maxHeartbeats 3000000

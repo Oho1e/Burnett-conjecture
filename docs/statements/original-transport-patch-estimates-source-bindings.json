@@ -716,10 +716,11 @@
       "imports": [
         "Burnett.Analysis.GaugeProjection.MaximalChartFirstJet",
         "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
-        "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer"
+        "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer",
+        "Burnett.Geometry.MaximalChart.VacuumTransfer"
       ],
-      "sha256": "94d0c8cd855abb84cb2d582bae5dd908120b3611911752087b54ffba221476da",
-      "candidate_changes": "Expose both actual wide-error MemLp results, all cutoff jets and the same coefficient bounds. Import the existing compact first-jet estimate explicitly for a clean Lake build.",
+      "sha256": "3c49dd93f6b3de15e3c25e1d4e5494863ca8ceace5c627eef7ccb89df34de49c",
+      "candidate_changes": "Expose both actual wide-error MemLp results, all cutoff jets and the same coefficient bounds. Import the compact first-jet estimate and intrinsic-to-coordinate vacuum transfer explicitly for a clean Lake build.",
       "candidate_replay_sha256": "288fc0e182a9d01e3608de332fb04fb62ab53b49d2411dac299d2d6964125344"
     },
     "Burnett/Analysis/TransportPatches/ActualThinConeL2.lean": {
