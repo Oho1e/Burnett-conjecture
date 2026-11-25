@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `15d4b762884ac6ce09d7a6738181505bd54e64d6f2f862bd975f94b092d4e945`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `d7a430f554939baf753e661adec54424a67819cc76a6cd27ef4ea0fc001758ee`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1085,7 +1085,7 @@ Boundaries:
 
 Consumers: C02 (proof-input), C03 (proof-input), C04 (proof-input).
 
-Next: Write the exact identity and error bounds from the variable-background residual to the finite frozen sum. Register tau, cutoff derivatives, smoothing tails, and B_ell terms, then prove the volume-normalized whole-space multiplier estimate.
+Next: The scaled cubic partition, derivative cancellation and outer-window volume budget are implemented. Use these cutoffs to localize the actual variable-background residual and bound the freezing error.
 
 <a id="c02"></a>
 
@@ -1116,7 +1116,7 @@ Boundaries:
 
 Consumers: C03 (proof-input), C04 (proof-input).
 
-Next: Establish the independent global L2 formula with sigma_dx and the Euclidean basis. Use the actual defect range for both L2 estimates and the thin-cone complement. Then interpolate with the fixed p_*.
+Next: The same original covariance gives the two wide errors and both thin-cone combinations. Attach the low-frequency comparison between realizations and the cubic and Ward replacements.
 
 <a id="c03"></a>
 
@@ -1148,7 +1148,7 @@ Boundaries:
 
 Consumers: C04 (proof-input).
 
-Next: For both corrections track the same parameters, substitute each of the three energy estimates, check the 1/2+1/4+1/4 volume power, and take limsup_n at fixed ell,delta after summing.
+Next: The original physical projection has a whole-space divergence source on the same patch selected by the cubic partition. Attach both complete frozen corrections and sum before the sequence limit.
 
 <a id="c04"></a>
 

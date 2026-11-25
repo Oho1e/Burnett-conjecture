@@ -404,3 +404,6 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPai
 import Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem
 import Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange
 import Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder
+
+import Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily
+import Burnett.Analysis.TransportPatches.OriginalThinC03Consumer
