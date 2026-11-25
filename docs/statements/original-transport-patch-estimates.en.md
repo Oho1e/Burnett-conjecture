@@ -10,6 +10,6 @@ The physical and gauge fields and their first derivatives carry patch-volume bou
 
 The same cutoff, $\sigma$ and $A$ give whole-space $L^3$ estimates for the actual wide screen and phase errors. Each has the eventual bound $C_p\ell^\alpha |P_j|^{1/3}+\varepsilon$, where $\alpha=2(p-3)/(3(p-2))$ and $\varepsilon>0$ is arbitrary. The constants and scale threshold are fixed before the patch and sequence limits. The ordered gradient vectors from both wide operators have actual $L^3$ integrability.
 
-This contribution supplies these local inputs for variable-background transport. The thin-cone composition, exact localization of the variable-background residual, complete frozen corrections and global transport remain open. Author confirmation of the new declarations is pending.
+Fixing the thin-cone width before selecting the patch scale also gives both actual thin-screen gradient estimates in lines 2830–2834. The thin-screen proof uses a single wide-screen window for its two input errors. The full cubic replacement, localization of the variable-background residual, complete frozen corrections and global transport remain open. Author confirmation of the new declarations is pending.
 
 [Source bindings](original-transport-patch-estimates-source-bindings.json)

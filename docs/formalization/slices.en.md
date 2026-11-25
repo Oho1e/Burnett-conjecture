@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `4738ee52e61e5f2f744ba0c9c9eea12f4559ac654ce2594f9c599919c3fa03f4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `d7a430f554939baf753e661adec54424a67819cc76a6cd27ef4ea0fc001758ee`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1116,7 +1116,7 @@ Boundaries:
 
 Consumers: C03 (proof-input), C04 (proof-input).
 
-Next: The whole-cosphere defect identity and both wide frozen errors are implemented on the selected original patch field. Attach the thin-cone composition on the same covariance and subsequence.
+Next: The same original covariance gives the two wide errors and both thin-cone combinations. Attach the low-frequency comparison between realizations and the cubic and Ward replacements.
 
 <a id="c03"></a>
 

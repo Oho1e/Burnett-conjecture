@@ -726,4 +726,4 @@ One original subsequence gives the actual bundle pairings, Ricci kernel and posi
 
 ## 70. Original projected patch sources and wide frozen errors
 
-One original cubic partition gives the same cutoff for the whole-space projected source and both wide frozen multiplier errors. At fixed p > 3, their eventual L³ bounds carry the same patch volume to the one-third power. The thin-cone assembly and final transport remain open. [Original projected patch sources and wide frozen errors](../statements/original-transport-patch-estimates.en.md)
+One original cubic partition gives the same cutoff for the whole-space projected source and both wide frozen multiplier errors. At fixed p > 3, their eventual L³ bounds carry the same patch volume to the one-third power. At fixed thin-cone width the same original projected field gives both thin-screen gradient error estimates. The full cubic replacement and final transport remain open. [Original projected patch sources and wide frozen errors](../statements/original-transport-patch-estimates.en.md)

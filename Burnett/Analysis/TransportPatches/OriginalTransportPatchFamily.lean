@@ -44,7 +44,9 @@ theorem exists_originalTransportPatchFamily
     (p : ℝ) (hp : 3 < p) (e : ℕ → ℝ) (en : ∀ n, 0 ≤ e n) (he : Tendsto e atTop (𝓝 0))
     (herr : ∀ n x, x ∈ Kplus →
       ‖metricComponents (fixedForm (g n) c) x - metricComponents (fixedForm B c) x‖ ≤ e n) :
-    ∃ (ℓ₁ Msrc C i o : ℝ) (Cp : {q : ℝ // 1 < q} → ℝ), 0 < ℓ₁ ∧ 0 < i ∧ i < o ∧
+    ∃ (ℓ₁ Msrc C i o Ccoeff : ℝ) (Ccut : ℕ → ℝ) (Cp : {q : ℝ // 1 < q} → ℝ),
+      0 < ℓ₁ ∧ 0 < i ∧ i < o ∧ 0 ≤ Msrc ∧ 0 ≤ C ∧ 0 ≤ Ccoeff ∧
+      (∀ k, 0 ≤ Ccut k) ∧ (∀ q, 0 ≤ Cp q) ∧
       ∀ (ℓ : ℝ), 0 < ℓ → ℓ < ℓ₁ →
       ∃ (s : Finset LatticeIndex) (χ χplus : LatticeIndex → E → ℝ),
         (∀ x ∈ thickening ℓ K, ∑ j ∈ s, χ j x ^ 3 = 1) ∧
@@ -56,27 +58,40 @@ theorem exists_originalTransportPatchFamily
         let m := chartInverseMetric B c x₀
         ∃ (dχ : D) (hχU : tsupport (dχ : E → ℝ) ⊆ c.chart.target)
           (hm : WideScreenFrequencySmooth i o m),
-          (dχ : E → ℝ) = χ j ∧ tsupport (χplus j) ⊆ P ∧ P ⊆ interior Kplus ∧
+          (dχ : E → ℝ) = χ j ∧ ContDiff ℝ ∞ (χplus j) ∧
+          (∀ x, 0 ≤ χ j x ∧ χplus j x ∈ Icc (0 : ℝ) 1) ∧
+          tsupport (χ j) ⊆ closedBall x₀ (4 * ℓ) ∧
+          tsupport (χplus j) ⊆ P ∧ P ⊆ interior Kplus ∧
           (∀ x ∈ thickening ℓ (tsupport (χ j)), χplus j x = 1) ∧
+          (∀ k x, ‖iteratedFDeriv ℝ k (χ j) x‖ ≤ Ccut k * ℓ⁻¹ ^ k ∧
+            ‖iteratedFDeriv ℝ k (χplus j) x‖ ≤ Ccut k * ℓ⁻¹ ^ k) ∧
           let z := receivingCutoffFluctuation B g hB hg c dχ hχU
           (∀ᶠ n in atTop, ∃ (a : ProjectedSourceCoefficients) (d : Index → Index → SchwartzMap E ℝ),
             (∀ k l x, a.entry k l x = ((m k l + d k l x : ℝ) : ℂ)) ∧
             (∀ k l x, d k l x = correctionCoefficientPart (χplus j)
               (matrixInverse ∘ metricComponents (fixedForm (g (σ n)) c)) m x k l) ∧
+            (∀ k l, d k l = d l k) ∧
+            (∀ k l x, |d k l x| ≤ Ccoeff * (ℓ + e (σ n))) ∧
+            (∀ k l x, ‖fderiv ℝ (d k l : E → ℝ) x‖ ≤ 4 * Ccoeff * (1 + e (σ n) / ℓ)) ∧
             ‖projectedSourceDivergenceL2 a (projectionFullSchwartz (z (σ n)))‖ ≤
               Msrc * (volume P ^ ((1 : ℝ) / 2)).toReal * (1 + ℓ⁻¹ + (ℓ ^ 2)⁻¹ * e (σ n)) ∧
             ∀ q : {q : ℝ // 1 < q}, ProjectedPatchLpBounds q.val (z (σ n)) P
               (Cp q * e (σ n)) (Cp q * (1 + e (σ n) / ℓ))) ∧
+          let T₁ := actualFrozenScreenErrorMultiplier i o m hm
+          let T₂ := actualFrozenPhaseErrorMultiplier i o m hm
+          (∀ n, MemLp (orderedGradientValue (fun a : Index × OrderedPair =>
+              multiplierCoordinateDerivative T₁ (z (σ n)) a.1 a.2)) 3 volume ∧
+            MemLp (orderedGradientValue (fun a : Index × OrderedPair =>
+              multiplierCoordinateDerivative T₂ (z (σ n)) a.1 a.2)) 3 volume) ∧
           ∀ ε > 0, ∀ᶠ n in atTop,
-            max (wideErrorGradientL3Norm (actualFrozenScreenErrorMultiplier i o m hm) (z (σ n)))
-              (wideErrorGradientL3Norm (actualFrozenPhaseErrorMultiplier i o m hm) (z (σ n))) ≤
+            max (wideErrorGradientL3Norm T₁ (z (σ n))) (wideErrorGradientL3Norm T₂ (z (σ n))) ≤
               C * ℓ ^ frozenErrorExponent p * ((volume : Measure E) P).toReal ^ (1 / 3 : ℝ) + ε := by
   let G := fun n => metricComponents (fixedForm (g n) c)
   let G₀ := metricComponents (fixedForm B c)
   have hKU := hVK.trans hVU
   obtain ⟨D₀, hD₀, hJ⟩ := fixedForm_firstJet_uniform_bound_on_compact r g B hg hB
     hSig.isNondegenerate hconv hDh c hKp hKU
-  obtain ⟨ℓ₀, Msrc, _, _, Cp, hℓ₀, _, _, _, hCp, patches⟩ :=
+  obtain ⟨ℓ₀, Msrc, Ccoeff, Ccut, Cp, hℓ₀, hMsrc, hCcoeff, hCcut, hCp, patches⟩ :=
     exists_original_projectedPatchSource_family c.chart.target K Kplus c.chart.open_target hK hKp
       hnested hKU G₀ G (fixedForm_components_smooth B hB c)
       (fun n => fixedForm_components_smooth (g n) (hg n) c)
@@ -87,13 +102,13 @@ theorem exists_originalTransportPatchFamily
       (fun n x hx => fixedForm_coordinateVacuum_of_intrinsic (g n) (hg n) (hsg n) (hnd n) (hv n) c x hx)
       (fixed_components_uniform_of_physical_C0loc r g B hconv c Kplus hKp hKU)
       D₀ hD₀ hJ e en he herr
-  obtain ⟨i, o, L, C, η, hf, hi, ho, hL, _, hη, wide⟩ :=
+  obtain ⟨i, o, L, C, η, hf, hi, ho, hL, hC, hη, wide⟩ :=
     exists_originalWideL3_consumeC03Source r B g hB hg hSig hconv σ hσ A hA hPair
       c V hV hVcv hVU p hp e he Cp hCp
   let b := min ℓ₀ (min (1 / 6 : ℝ) (η / (6 * (L + 1))))
   have hL₁ : 0 < 6 * (L + 1) := by positivity
   have hb : 0 < b := lt_min hℓ₀ (lt_min (by norm_num) (div_pos hη hL₁))
-  refine ⟨b, Msrc, C, i, o, Cp, hb, hi, ho, ?_⟩
+  refine ⟨b, Msrc, C, i, o, Ccoeff, Ccut, Cp, hb, hi, ho, hMsrc, hC, hCcoeff, hCcut, hCp, ?_⟩
   intro ℓ hℓ hbℓ
   have hsmall : ℓ < ℓ₀ := hbℓ.trans_le (min_le_left _ _)
   have h₆ : ℓ < (1 / 6 : ℝ) := hbℓ.trans_le ((min_le_right _ _).trans (min_le_left _ _))
@@ -102,7 +117,7 @@ theorem exists_originalTransportPatchFamily
   obtain ⟨s, χ, χplus, cube, cancel, sum, cuts, eventual⟩ := patches ℓ hℓ hsmall
   refine ⟨s, χ, χplus, cube, cancel, sum, ?_⟩
   intro j hj x₀ P m
-  obtain ⟨hχ, _, _, innerSupport, outerSupport, inside, plateau, _⟩ := cuts j hj
+  obtain ⟨hχ, hχplus, hPos, innerSupport, outerSupport, inside, plateau, hJets⟩ := cuts j hj
   have hP : P ⊆ V := inside.trans (interior_subset.trans hVK)
   have hχP : tsupport (χ j) ⊆ P := innerSupport.trans (closedBall_subset_closedBall (by linarith))
   let dχ : D := ⟨χ j, hχ, (isCompact_closedBall _ _).of_isClosed_subset isClosed_closure hχP⟩
@@ -118,12 +133,13 @@ theorem exists_originalTransportPatchFamily
     obtain ⟨_, w, _, _, _, _, _, _, hw, _, hpq⟩ := hn j hj
     exact ⟨w, hw, hpq⟩
   have both := wide ℓ hℓ (by linarith) hband j hP (χ j) hχ hχP c02Input
-  refine ⟨dχ, hχU, hm, rfl, outerSupport, inside, plateau, ?_, ?_⟩
+  refine ⟨dχ, hχU, hm, rfl, hχplus, hPos, innerSupport, outerSupport, inside, plateau, hJets,
+    ?_, both.1, ?_⟩
   · filter_upwards [hσ.tendsto_atTop.eventually eventual] with n hn
-    obtain ⟨coeff, w, d, entry, formula, _, _, _, hw, src, hpq⟩ := hn j hj
+    obtain ⟨coeff, w, d, entry, formula, hSym, hMag, hSlope, hw, src, hpq⟩ := hn j hj
     have hid : z (σ n) = w := receivingCutoffFluctuation_eq_originalSourceInput B g hB hg c dχ hχU (σ n) w hw
     change ∃ (a : ProjectedSourceCoefficients) (d : Index → Index → SchwartzMap E ℝ), _
-    refine ⟨coeff, d, entry, formula, ?_, ?_⟩
+    refine ⟨coeff, d, entry, formula, hSym, hMag, hSlope, ?_, ?_⟩
     · change ‖projectedSourceDivergenceL2 coeff (projectionFullSchwartz (z (σ n)))‖ ≤ _
       rw [hid]
       exact src

@@ -406,3 +406,4 @@ import Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange
 import Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder
 
 import Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily
+import Burnett.Analysis.TransportPatches.OriginalThinC03Consumer

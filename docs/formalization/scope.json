@@ -5343,6 +5343,11 @@
       "claim_id": "c02:original-joint-patch-source-and-wide-errors",
       "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
       "declaration": "Burnett.C02.exists_originalTransportPatchFamily"
+    },
+    {
+      "claim_id": "c02:thin-screen-l3-same-patch",
+      "module": "Burnett.Analysis.TransportPatches.OriginalThinC03Consumer",
+      "declaration": "Burnett.C02.exists_originalThinScreenL3_consumeC03Source"
     }
   ],
   "inventory": [
@@ -25036,6 +25041,23 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "declaration": "Burnett.C02.exists_originalTransportPatchFamily",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:thin-screen-l3-same-patch",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2815,
+        "endline": 2836
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_originalThinScreenL3_consumeC03Source",
       "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true

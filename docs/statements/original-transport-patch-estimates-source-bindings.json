@@ -43,7 +43,8 @@
     "c02-global-defect-norm-prep/NATIVE-REPLAY.json": "9198ba9730019a97fa222b05cc7273b9040f24fd06ce0cfee90acbf56f204b9d",
     "c01-cubic-partition-prep/C01-LOCALIZATION-REPLAY.json": "7202ec890ea9e6b5fa92abff16c65f4d64b99343b64251aefdb682506b67350b",
     "c03-original-source-and-norms-independent/C03-INDEPENDENT-REPLAY.json": "861e63c76714a68b182a72d43b334ef2542992224725452eb50e4540780e7bad",
-    "pr-patch-source-wide-joint-independent-2026-11-25/FROZEN-JOINT-REVIEW.json": "dd7eb68793951715da3186143e3e237ec3a6f2468879213845084c53ce165c69"
+    "pr-patch-source-wide-joint-independent-2026-11-25/FROZEN-JOINT-REVIEW.json": "dd7eb68793951715da3186143e3e237ec3a6f2468879213845084c53ce165c69",
+    "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json": "554cf9f33d84100407741d8ed5ed87b0173d66821428825000ed9c16495db9c3"
   },
   "sources": {
     "Burnett/Analysis/TransportPatches/LocalizedSourceScale.lean": {
@@ -716,7 +717,113 @@
         "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
         "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer"
       ],
-      "sha256": "068583b7af955e16a33c4a9e93cb8b3c56826932405491b63cc3b4b820f667a7"
+      "sha256": "e9f437723c3b8659ad210f8914889cff7cd9e9a41a1e7966b904cc3d5fdb059a",
+      "candidate_changes": "Expose both actual wide-error MemLp results, all cutoff jets and the same coefficient bounds.",
+      "candidate_replay_sha256": "288fc0e182a9d01e3608de332fb04fb62ab53b49d2411dac299d2d6964125344"
+    },
+    "Burnett/Analysis/TransportPatches/ActualThinConeL2.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ActualThinConeL2.lean",
+      "input_sha256": "4c7a54d5ad656f8cdef5366c4c281b01f7660cc74fd00180eab60e25e58ba771",
+      "input_object_sha256": "8652cdaf849b1a2781594731a36ef8ef1e047bdf4eb976ed358482135e848903",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualThinConeL2",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.IntrinsicProjectedSupport",
+        "Burnett.Analysis.TransportPatches.WholeCosphereDefectNorm",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents"
+      ],
+      "sha256": "6a35edf09cbb90150c2d3d52b0c3783c6f3be32663e6b4d372654ae5b728a1c4"
+    },
+    "Burnett/Analysis/TransportPatches/ThinComplementPatchL2.lean": {
+      "input_source": "c02-thin-combination-prep/ThinComplementPatchL2.lean",
+      "input_sha256": "3acb8d8db9ea7d0bbff71a8f014177ff75577efc108d61770612a5e06d0f6a0c",
+      "input_object_sha256": "af33e62e20bdcc9ec377928954cd5a64dcc64b2fe95462b1fa1d83e16d4010c9",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ThinComplementPatchL2",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinConeL2",
+        "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm"
+      ],
+      "sha256": "d2dfa7e44c6c5e1939e52f372d15062cb01d8d32196bacb47a5ce80d2e806950"
+    },
+    "Burnett/Analysis/TransportPatches/ActualThinConeLp.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ActualThinConeLp.lean",
+      "input_sha256": "d45512337fcfca611ddefe6ed3c44d4f959f812f09efb6fe778163547a1359db",
+      "input_object_sha256": "1e1a339dbdad344cfa98e2d2e11459ebf1ae8babea50c0ae41a944df032f0061",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualThinConeLp",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinConeL2",
+        "Burnett.Analysis.TransportPatches.FrozenErrorInterpolation",
+        "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp",
+        "Burnett.Analysis.CubicEnergy.BilinearMultiplier.MikhlinApplications"
+      ],
+      "sha256": "900647855f238baa987aa621ebdb262ac8133044c1479760db45b2d1f7e770d9"
+    },
+    "Burnett/Analysis/TransportPatches/ThinComplementPatchStrong3.lean": {
+      "input_source": "c02-thin-combination-prep/ThinComplementPatchStrong3.lean",
+      "input_sha256": "91ec26b46d08c953e9a22bb8135ba343a526982bb0553ae7e6af343811c579b2",
+      "input_object_sha256": "681861b69fecfe5bcd07efa06b23e0f2ee7ed7018441bfd2610b534ca1908559",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ThinComplementPatchStrong3",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinConeLp",
+        "Burnett.Analysis.TransportPatches.WideGradientVectorL3",
+        "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities"
+      ],
+      "sha256": "0a54aa103b0d2ba5cb9d0609cfc8b9a9ea0125252af886aa88d9c0f741fde07d"
+    },
+    "Burnett/Analysis/TransportPatches/ActualThinScreenCombination.lean": {
+      "input_source": "c02-thin-combination-prep/ActualThinScreenCombination.lean",
+      "input_sha256": "3a9ff163aa9985207b8395d0ebce7aa1378cb7ed181a042363d712de254fb98b",
+      "input_object_sha256": "f30c5c64ebb9ac150030fb6d184a539a331b9ae95fbd22d022b01915f79e7c4b",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualThinScreenCombination",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinConeLp",
+        "Burnett.Analysis.TransportPatches.WideBaselineL2"
+      ],
+      "sha256": "a21d3cae4458c6e6166342f19b93252c6feeb807e84255a9726f31c5e4b4fc2a"
+    },
+    "Burnett/Analysis/TransportPatches/ThinConeWindowLp.lean": {
+      "input_source": "c02-thin-combination-prep/ThinConeWindowLp.lean",
+      "input_sha256": "3536a5edddb3d05658312622c63b7ebcd853d138c8e3d17c92f9e0f29c6011ea",
+      "input_object_sha256": "194b53fa624052e5f33aab8e4567d4f12ba91d2af66ec722ec3de4816b95fc99",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ThinConeWindowLp",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinScreenCombination",
+        "Burnett.Analysis.TransportPatches.WideWindowSphereJets",
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.QuantitativeMikhlinApplications"
+      ],
+      "sha256": "66d6305b52159be6a4a5e886c6cdb2ae0b5065ae2ae1be936a1d33748d61a828"
+    },
+    "Burnett/Analysis/TransportPatches/ThinScreenErrorLpAssembly.lean": {
+      "input_source": "c02-thin-combination-prep/ThinScreenErrorLpAssembly.lean",
+      "input_sha256": "a9172cc5c3c991275fb448c30993e959952b11ad71bad67a23ea68cca8f73c86",
+      "input_object_sha256": "a49ed2e783e16beb67bed26fc6036c3f9de12dbeeebe8898a5a8b91d5bbc45f7",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ThinScreenErrorLpAssembly",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualThinScreenCombination",
+        "Burnett.Analysis.TransportPatches.WideGradientVectorL3"
+      ],
+      "sha256": "5e3e5cc8300fd0c7ee29e92d69278986bbd379098108dbb7b6270b1d48edade5"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalThinC03Consumer.lean": {
+      "input_source": "c02-thin-combination-prep/OriginalThinC03Consumer.lean",
+      "input_sha256": "4eba0b2902a9a3a38a7ffedfcdec2cc0d4f2bac871b21e3dba917d560ee15b18",
+      "input_object_sha256": "845e7ef214610e310843f65c63d4b0a94dd406004e86ed2fa2a6f5d6786fb2d1",
+      "input_receipt": "c02-thin-combination-prep/C02-ORIGINAL-THIN-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalThinC03Consumer",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer",
+        "Burnett.Analysis.TransportPatches.ThinComplementPatchL2",
+        "Burnett.Analysis.TransportPatches.ThinComplementPatchStrong3",
+        "Burnett.Analysis.TransportPatches.ThinConeWindowLp",
+        "Burnett.Analysis.TransportPatches.ThinScreenErrorLpAssembly"
+      ],
+      "sha256": "85ac488977345eacd7524d9a2bdd0bbd9cd79e8433406e80ce20282a9d6dd925"
     }
   },
   "targets": [
@@ -764,6 +871,18 @@
       "claim_id": "c02:original-joint-patch-source-and-wide-errors",
       "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
       "declaration": "Burnett.C02.exists_originalTransportPatchFamily"
+    },
+    {
+      "claim_id": "c02:thin-screen-l3-same-patch",
+      "module": "Burnett.Analysis.TransportPatches.OriginalThinC03Consumer",
+      "declaration": "Burnett.C02.exists_originalThinScreenL3_consumeC03Source"
     }
-  ]
+  ],
+  "thin_consumer_span": {
+    "lines": [
+      2815,
+      2836
+    ],
+    "sha256": "e9a792cd7ec4fdabb810f00aa5fd1bb079d12cd1d70e655ae6dabe2e886b9004"
+  }
 }
