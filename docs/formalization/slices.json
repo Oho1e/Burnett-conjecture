@@ -1044,7 +1044,7 @@
         "C_ell可能随ell爆炸，o_n(1)必须在ell固定时先消去。",
         "不能把投影后的场重新截断而未计入新的非局部误差。"
       ],
-      "next_action": "先写变背景残差到有限完整冻结能量的精确恒等式及误差合同，逐类登记tau、切断导数、平滑尾部与B_ell项；随后单独证明体积归一的全空间乘子界。",
+      "next_action": "已实现伸缩后的三次分割、导数消去和外窗体积预算。用同一截断局部化实际变背景残差并控制冻结误差。",
       "supplementary_obligations": []
     },
     {
@@ -1072,7 +1072,7 @@
         "屏幕在冻结度规下通常不固定实际缺陷；只能由O(ell)度规变化加有限指数插值获得L3误差。",
         "Pi_T宽锥与总薄锥乘子范数的角色必须分开，后者可依赖delta。"
       ],
-      "next_action": "将全空间L2缺陷公式先建成独立接口，明确sigma_dx与Euclidean张量基；再以原始缺陷值域压缩证明两个L2界和薄锥补误差，最后统一作有限p_*插值。",
+      "next_action": "已在选定原补丁场上实现全余球缺陷范数恒等式及两项宽冻结误差。接续同一协方差和子列上的薄锥组合。",
       "supplementary_obligations": []
     },
     {
@@ -1101,7 +1101,7 @@
         "逐补丁错误收费全局Lp范数会导致补丁数爆炸，无法推得最终界。",
         "修正完整Hermitian形式、因子3、三散度交换子、角级数/频率切断移除均有共同闭合责任。"
       ],
-      "next_action": "为每种实际修正建立同一参数账本，逐项代入三行修正能量估计并核对1/2+1/4+1/4体积幂；仅在完整求和后计算固定ell、delta的limsup_n。",
+      "next_action": "原物理投影在三次分割选定的同一补丁具有全空间散度源。接续两项完整冻结修正，先求和再取序列极限。",
       "supplementary_obligations": []
     },
     {
@@ -8302,6 +8302,62 @@
       "claim_id": "f05:compact-input-separated-global-limit",
       "source_slices": [
         "F05"
+      ]
+    },
+    {
+      "claim_id": "c01:scaled-cubic-cutoffs",
+      "source_slices": [
+        "C01"
+      ]
+    },
+    {
+      "claim_id": "c01:cubic-partition-derivative-cancellation",
+      "source_slices": [
+        "C01"
+      ]
+    },
+    {
+      "claim_id": "c01:cubed-patch-trilinear-density",
+      "source_slices": [
+        "C01"
+      ]
+    },
+    {
+      "claim_id": "c01:outer-patch-volume-budget",
+      "source_slices": [
+        "C01"
+      ]
+    },
+    {
+      "claim_id": "c02:original-whole-cosphere-defect",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:wide-frozen-l2-volume",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c02:wide-frozen-l3-same-patch",
+      "source_slices": [
+        "C02"
+      ]
+    },
+    {
+      "claim_id": "c03:original-projected-patch-source",
+      "source_slices": [
+        "C03"
+      ]
+    },
+    {
+      "claim_id": "c02:original-joint-patch-source-and-wide-errors",
+      "source_slices": [
+        "C01",
+        "C02",
+        "C03"
       ]
     }
   ],

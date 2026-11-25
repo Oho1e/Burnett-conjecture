@@ -5298,6 +5298,51 @@
       "claim_id": "f05:compact-input-separated-global-limit",
       "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetCompactInputGlobalTail",
       "declaration": "Burnett.Microlocal.Overlap.tendsto_symmetricJetGlobalForm_originalFull_sub_near_of_compactInput"
+    },
+    {
+      "claim_id": "c01:scaled-cubic-cutoffs",
+      "module": "Burnett.Analysis.TransportPatches.ScaledCubicPartition",
+      "declaration": "Burnett.C01.exists_scaled_cubic_cutoffs"
+    },
+    {
+      "claim_id": "c01:cubic-partition-derivative-cancellation",
+      "module": "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+      "declaration": "Burnett.C01.cubed_partition_first_derivative_zero"
+    },
+    {
+      "claim_id": "c01:cubed-patch-trilinear-density",
+      "module": "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+      "declaration": "Burnett.C01.sum_cubed_patch_trilinear_density"
+    },
+    {
+      "claim_id": "c01:outer-patch-volume-budget",
+      "module": "Burnett.Analysis.TransportPatches.CubicPartitionVolume",
+      "declaration": "Burnett.C01.sum_scaled_patch_measure_le"
+    },
+    {
+      "claim_id": "c02:original-whole-cosphere-defect",
+      "module": "Burnett.Analysis.TransportPatches.WholeCosphereDefectNorm",
+      "declaration": "Burnett.C02.tendsto_originalGlobalDefectNorm_wholeCosphere"
+    },
+    {
+      "claim_id": "c02:wide-frozen-l2-volume",
+      "module": "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm",
+      "declaration": "Burnett.C02.exists_actualWideL2_convexWindow_volume"
+    },
+    {
+      "claim_id": "c02:wide-frozen-l3-same-patch",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer",
+      "declaration": "Burnett.C02.exists_originalWideL3_consumeC03Source"
+    },
+    {
+      "claim_id": "c03:original-projected-patch-source",
+      "module": "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
+      "declaration": "Burnett.C03.exists_original_projectedPatchSource_family"
+    },
+    {
+      "claim_id": "c02:original-joint-patch-source-and-wide-errors",
+      "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
+      "declaration": "Burnett.C02.exists_originalTransportPatchFamily"
     }
   ],
   "inventory": [
@@ -24839,6 +24884,159 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.tendsto_symmetricJetGlobalForm_originalFull_sub_near_of_compactInput",
       "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c01:scaled-cubic-cutoffs",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2653,
+        "endline": 2667
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C01.exists_scaled_cubic_cutoffs",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c01:cubic-partition-derivative-cancellation",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2653,
+        "endline": 2693
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C01.cubed_partition_first_derivative_zero",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c01:cubed-patch-trilinear-density",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2673,
+        "endline": 2693
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C01.sum_cubed_patch_trilinear_density",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c01:outer-patch-volume-budget",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2721,
+        "endline": 2729
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C01.sum_scaled_patch_measure_le",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:original-whole-cosphere-defect",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2731,
+        "endline": 2759
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.tendsto_originalGlobalDefectNorm_wholeCosphere",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:wide-frozen-l2-volume",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2760,
+        "endline": 2797
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_actualWideL2_convexWindow_volume",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:wide-frozen-l3-same-patch",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2786,
+        "endline": 2814
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_originalWideL3_consumeC03Source",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c03:original-projected-patch-source",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2852,
+        "endline": 2899
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C03.exists_original_projectedPatchSource_family",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:original-joint-patch-source-and-wide-errors",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2647,
+        "endline": 2887
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_originalTransportPatchFamily",
+      "statement_record": "docs/statements/original-transport-patch-estimates.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

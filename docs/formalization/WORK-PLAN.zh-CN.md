@@ -728,3 +728,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 69. 正零余向量二阶矩
 
 原度规列的同一子列给出实际束配对、Ricci 核及满足全部 Einstein 矩和固定换图相容性的正零壳测度。二次定理陈述的作者确认待登记。 [正零余向量二阶矩](../statements/quadratic-null-second-moments.zh-CN.md)
+
+## 70. 原投影补丁源与宽截断误差
+
+原三次分割的同一截断供全空间投影源和两项宽冻结乘子误差使用。固定 p > 3 后，两项最终 L³ 上界均含同一补丁的体积立方根。薄锥装配与完整输运仍待完成。 [原投影补丁源与宽截断误差](../statements/original-transport-patch-estimates.zh-CN.md)

@@ -1,0 +1,769 @@
+{
+  "parent_claim": "thm:variational-transport",
+  "closes_parent_claim": false,
+  "full_paper_verified": false,
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "joint_consumer_spans": [
+    {
+      "lines": [
+        2647,
+        2670
+      ],
+      "sha256": "5038c10261f1918eb1c814371aa50601570f9dc964a6bf4b1c6d8cd9aa03944e"
+    },
+    {
+      "lines": [
+        2714,
+        2729
+      ],
+      "sha256": "815d3400a1100b6547beb5e7ed9b5a7329977898a26a282c6b45c52671723767"
+    },
+    {
+      "lines": [
+        2731,
+        2814
+      ],
+      "sha256": "4364b9dce88fc75975ddc48c72f613a8bfa8933f3915cbf7bb7ee7f03698521e"
+    },
+    {
+      "lines": [
+        2852,
+        2887
+      ],
+      "sha256": "cee7f9bda340d620966efd6833b9b8fea93fa1b80a906dfecd3c7aa87a6cc9cb"
+    }
+  ],
+  "lean_toolchain_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+  "lake_manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "frozen_replay_receipts": {
+    "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json": "c976e952be119fd8742dc3725014e89681883836e7d028650b05bd1b8eae50a0",
+    "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json": "6c1f2dce72c95d8d5fa8c2aaf7b2fa5e4948820a696d2ac99d9af0ed1e635521",
+    "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json": "365e6b94f5d1baf649af8c1d1b19f3d5154eb59f29c136103bfb7e8acd660289",
+    "c02-frozen-screen-phase-prep/ActualWideOrderedSymbols-REPLAY.json": "aecfaf55e3d396c44478c926ebf65d894a66c2921b04099704603a3011845449",
+    "c02-global-defect-norm-prep/NATIVE-REPLAY.json": "9198ba9730019a97fa222b05cc7273b9040f24fd06ce0cfee90acbf56f204b9d",
+    "c01-cubic-partition-prep/C01-LOCALIZATION-REPLAY.json": "7202ec890ea9e6b5fa92abff16c65f4d64b99343b64251aefdb682506b67350b",
+    "c03-original-source-and-norms-independent/C03-INDEPENDENT-REPLAY.json": "861e63c76714a68b182a72d43b334ef2542992224725452eb50e4540780e7bad",
+    "pr-patch-source-wide-joint-independent-2026-11-25/FROZEN-JOINT-REVIEW.json": "dd7eb68793951715da3186143e3e237ec3a6f2468879213845084c53ce165c69"
+  },
+  "sources": {
+    "Burnett/Analysis/TransportPatches/LocalizedSourceScale.lean": {
+      "input_source": "c03-patch-coefficient-prep/LocalizedSourceScale.lean",
+      "input_sha256": "3cc117d2c6c8ce04da45888cec650e68c3e3783d31ac02091c41df33f78f2217",
+      "input_object_sha256": "1406af1c9b1b8219da44b80170c6048d172f3a8554c9ce547bf87fc878d66f62",
+      "input_receipt": "c03-patch-coefficient-prep/LOCALIZED-SOURCE-SCALE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.LocalizedSourceScale",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource",
+        "Burnett.Geometry.InversePerturbation"
+      ],
+      "sha256": "1dc65f43fa27fcc56e11d2ec37b8f2ddc50bbfc7fcd961fa135a10d2d4765c68"
+    },
+    "Burnett/Analysis/TransportPatches/SourceJetConstants.lean": {
+      "input_source": "c03-patch-coefficient-prep/SourceJetConstants.lean",
+      "input_sha256": "6259fa7a72cbadbf3f5832919b31626850bf6e6cb33b944c8c005ba4eca29fce",
+      "input_object_sha256": "b25b89e6a2483d97ec84a748df3eb047256379a69f51ffe05231fddee45d10a4",
+      "input_receipt": "c03-patch-coefficient-prep/SOURCE-JET-CONSTANTS-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.SourceJetConstants",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.LocalizedSourceScale",
+        "Burnett.Analysis.GaugeProjection.LocalizedVacuumSourceBound"
+      ],
+      "sha256": "660e6b9f7281b1dea43a0e8e0c8e117346b2510e393ae223ac5872a1c70e2ce8"
+    },
+    "Burnett/Analysis/TransportPatches/QuantitativeSourceRemainder.lean": {
+      "input_source": "c03-patch-coefficient-prep/QuantitativeSourceRemainder.lean",
+      "input_sha256": "1d4dd13cc78640d66564c484cf1c95ee06564834b0d738f9f42c17f36a2d23de",
+      "input_object_sha256": "3ced19ce3430c99d43e3b9d3ed06d9d6d9cbd6d812614297da55c8c16ccd75c8",
+      "input_receipt": "c03-patch-coefficient-prep/QUANTITATIVE-SOURCE-REMAINDER-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.QuantitativeSourceRemainder",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.SourceJetConstants",
+        "Burnett.Analysis.GaugeProjection.ProjectedVacuumSourceOnChart"
+      ],
+      "sha256": "38cfb59ddd59926c2188bdc1da15b3ff1c1424529600ca141c9bb84d946ee301"
+    },
+    "Burnett/Analysis/TransportPatches/ProjectedSourcePatchMeasure.lean": {
+      "input_source": "c03-patch-coefficient-prep/ProjectedSourcePatchMeasure.lean",
+      "input_sha256": "cdedcfc7d9b0e9dec80c0f9e5241e1fe1c2aa8d05308f677d03cc020886adc6b",
+      "input_object_sha256": "072c01418c41dcdce0531599571a0b07a91749f6a4a6f596d4902acade91a8b8",
+      "input_receipt": "c03-patch-coefficient-prep/PROJECTED-SOURCE-PATCH-MEASURE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ProjectedSourcePatchMeasure",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedVacuumSourceOnChart"
+      ],
+      "sha256": "8b3f4c2ec5c52a96c7a4e16fabd271297663375bb76db12caae85f73d608975c"
+    },
+    "Burnett/Analysis/TransportPatches/ProjectedRemainderScale.lean": {
+      "input_source": "c03-patch-coefficient-prep/ProjectedRemainderScale.lean",
+      "input_sha256": "75b0249cc69fc473ceea98b87b2c61aac8981bf2775795f26ac40dedbfa2755d",
+      "input_object_sha256": "cf36c0218a1cb5dc08876c091221e0f2a28cfab53806b4955aadb69bb468c48b",
+      "input_receipt": "c03-patch-coefficient-prep/PROJECTED-REMAINDER-SCALE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ProjectedRemainderScale",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.QuantitativeSourceRemainder",
+        "Burnett.Analysis.TransportPatches.ProjectedSourcePatchMeasure",
+        "Mathlib.Analysis.Calculus.ContDiff.Bounds"
+      ],
+      "sha256": "c48dd3102af51b518658ec0dd9a01fa823ec9775d0de0de4050318bbb7c4471d"
+    },
+    "Burnett/Analysis/TransportPatches/PatchGradientMass.lean": {
+      "input_source": "c03-patch-coefficient-prep/PatchGradientMass.lean",
+      "input_sha256": "7b68b91d973062739125adb4abbbf9f544464bdc371e7eeb8c4ff29882843dce",
+      "input_object_sha256": "a0a5dd35966e92f6aeb4bdb0dd6a94c3e34550e60b81ee0788ca899d1674b840",
+      "input_receipt": "c03-patch-coefficient-prep/PATCH-GRADIENT-MASS-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.PatchGradientMass",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ProjectedRemainderScale",
+        "Burnett.Analysis.GaugeProjection.WholeSpaceProjectedVacuumSource"
+      ],
+      "sha256": "64342e6956b87a1fc97758d5aac32139a4ac401bccec5283345ec139c3b17a47"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalInverseJetControl.lean": {
+      "input_source": "c03-patch-coefficient-prep/OriginalInverseJetControl.lean",
+      "input_sha256": "7798fc6758ffc807928aa2469b0f4891dcc03d14da086a5b54ef9749e370a965",
+      "input_object_sha256": "b48f2b40696c5b09a1c2e6feeb1d06067ecaa02d6cc28586beac13c9e3e523ee",
+      "input_receipt": "c03-patch-coefficient-prep/ORIGINAL-INVERSE-JET-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalInverseJetControl",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.LocalizedVacuumSourceBound",
+        "Burnett.Geometry.InverseField",
+        "Burnett.Geometry.SmoothMetricConnection"
+      ],
+      "sha256": "f8e039a21a8a6f9b01c38b8bc1b25aeaff48d4cf2846974c8f871b67e621597d"
+    },
+    "Burnett/Analysis/TransportPatches/ProjectedDivergenceScale.lean": {
+      "input_source": "c03-patch-coefficient-prep/ProjectedDivergenceScale.lean",
+      "input_sha256": "2038aefcadc12e38ab299f0c859b0c30f6326e1b09f76dcaccb3e4d54d480b03",
+      "input_object_sha256": "82239af0c59800f5160f340edbebfdac5a2e3177a6745cdac9190e95df87c74a",
+      "input_receipt": "c03-patch-coefficient-prep/PROJECTED-DIVERGENCE-SCALE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ProjectedDivergenceScale",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.PatchGradientMass",
+        "Burnett.Analysis.TransportPatches.OriginalInverseJetControl"
+      ],
+      "sha256": "fc0387a44f1bffc3883cbf90a148814c8d7b157e76f37d2c15a4884d6a6ea663"
+    },
+    "Burnett/Analysis/TransportPatches/CorrectionCoefficientCutoff.lean": {
+      "input_source": "c03-patch-coefficient-prep/CorrectionCoefficientCutoff.lean",
+      "input_sha256": "49330b7ef0faa8fc479b289ca40a8e3b6fc754ee3631e0f60e34d606d285d07c",
+      "input_object_sha256": "87857e21b65b550f26f151620662d768f745ede9826f2c713f519ab71ec04907",
+      "input_receipt": "c03-patch-coefficient-prep/CORRECTION-COEFFICIENT-CUTOFF-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.CorrectionCoefficientCutoff",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalInverseJetControl",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ],
+      "sha256": "756673377b3cd890bba2b68397c262ba0437d75b8f8041945e58a19fcbd41dc7"
+    },
+    "Burnett/Analysis/TransportPatches/ExtendedPatchDivergenceCoefficient.lean": {
+      "input_source": "c03-patch-coefficient-prep/ExtendedPatchDivergenceCoefficient.lean",
+      "input_sha256": "85bb46db3eae2593e4ed0c48fee8b838bb7453c6fb1c8c0cd197fdb27cff3cbc",
+      "input_object_sha256": "d4fea543c79e207e05920344d6803c859d1b302ddff6dcee6bb60c505390f58d",
+      "input_receipt": "c03-patch-coefficient-prep/EXTENDED-PATCH-DIVERGENCE-COEFFICIENT-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ExtendedPatchDivergenceCoefficient",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.CorrectionCoefficientCutoff",
+        "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
+        "Burnett.Analysis.GaugeProjection.ProjectedDivergenceDefinitions",
+        "Burnett.Analysis.LocalWeakDerivative"
+      ],
+      "sha256": "470664703c2bc9e127a992f89b77a9cbf6d185798d5b18a1fe5626bd7a94f91c"
+    },
+    "Burnett/Analysis/TransportPatches/CubicPartitionProfile.lean": {
+      "input_source": "c01-cubic-partition-prep/CubicPartitionProfile.lean",
+      "input_sha256": "9e026bc4aaf3d90a499e6ddad139cf2150db79d72889541fa318596381a9d671",
+      "input_object_sha256": "0dd169d422e6fa078e0b93513b833bc7d6da2f4e63c6303940a3cfaa13395e52",
+      "input_receipt": "c01-cubic-partition-prep/CUBIC-PARTITION-PROFILE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.CubicPartitionProfile",
+      "imports": [
+        "Burnett.Analysis.PrincipalEnergy.Localization.FixedLatticeCutoffs",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Deriv"
+      ],
+      "sha256": "59120b3d1c3e58f3e0f98c20c8103e0d58afd7abf94136b032b49fe224100976"
+    },
+    "Burnett/Analysis/TransportPatches/ScaledCubicPartition.lean": {
+      "input_source": "c01-cubic-partition-prep/ScaledCubicPartition.lean",
+      "input_sha256": "8355c3a3e9c1d58df80a1ce5528e4f7b73533f1a4a8e442dbb3d32492aaaa702",
+      "input_object_sha256": "2d89ed5bf7e773e844a9d9984ac099c20d9e50572eb8aeb71c2029f162cf9840",
+      "input_receipt": "c01-cubic-partition-prep/SCALED-CUBIC-PARTITION-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ScaledCubicPartition",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.CubicPartitionProfile",
+        "Mathlib.Topology.MetricSpace.Thickening"
+      ],
+      "sha256": "99d83e5c02e4cba80a2862b216fdbeb3fa6e2c9e87a6d34995f079d297059146"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalPatchCoefficientBounds.lean": {
+      "input_source": "c03-patch-coefficient-prep/OriginalPatchCoefficientBounds.lean",
+      "input_sha256": "7bfb64676cc5b3e727001d48fa267f4d180acfd36b47167e6705e8f9493ab2f2",
+      "input_object_sha256": "df11484023621ed238703df7b5a38963945f1944836f74b08e9b4a34d51e14e6",
+      "input_receipt": "c03-patch-coefficient-prep/ORIGINAL-PATCH-COEFFICIENT-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalPatchCoefficientBounds",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.CorrectionCoefficientCutoff",
+        "Burnett.Analysis.TransportPatches.ScaledCubicPartition"
+      ],
+      "sha256": "57548f44a570d239ed23caa05428d2ad84e3726437e90073146f07f818dbdf21"
+    },
+    "Burnett/Analysis/TransportPatches/PatchCorrectionSchwartz.lean": {
+      "input_source": "c03-patch-coefficient-prep/PatchCorrectionSchwartz.lean",
+      "input_sha256": "e3ddc6b476cc15feda3d58025b9f8723dfe17935db101112dab0c0292c81f7e0",
+      "input_object_sha256": "b99a7e018dcfaa9ad462b8728a7d144b0ecf266025307d24d492afb246ec404c",
+      "input_receipt": "c03-patch-coefficient-prep/PATCH-CORRECTION-SCHWARTZ-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.PatchCorrectionSchwartz",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.CorrectionCoefficientCutoff",
+        "Burnett.Analysis.GaugeProjection.ProjectedChartRepresentatives",
+        "Burnett.Analysis.GaugeProjection.IntrinsicChartProjectedNorms",
+        "Burnett.Analysis.LocalWeakDerivative"
+      ],
+      "sha256": "8f65fb7ecda12f502486be8bb1a95bd4539416fb684f96f46f5dd837fc81d5fb"
+    },
+    "Burnett/Analysis/TransportPatches/PatchLpInput.lean": {
+      "input_source": "c03-patch-coefficient-prep/PatchLpInput.lean",
+      "input_sha256": "14e0cb935ba4863b2e791a6272c1a1df498919e78613e736b7a6e63878b0cb6c",
+      "input_object_sha256": "c6c73b7d56835af561934b7149ace3f827f56b32abed88780bccfee64022179d",
+      "input_receipt": "c03-patch-coefficient-prep/PATCH-LP-INPUT-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.PatchLpInput",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ProjectedRemainderScale",
+        "Burnett.Analysis.GaugeProjection.LocalizedProjectedFiniteLp",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectLocalizationError"
+      ],
+      "sha256": "ad37a9700df6e2f5ccf1561280850aa02585c1a292a7a75e7a61db2d1cadc9a7"
+    },
+    "Burnett/Analysis/TransportPatches/ActualPatchPhysicalGaugeLp.lean": {
+      "input_source": "c03-patch-coefficient-prep/ActualPatchPhysicalGaugeLp.lean",
+      "input_sha256": "4e90819b1330be850a3c3d62a1761a9c592b9bf470f3237ea99eff6a5131c50d",
+      "input_object_sha256": "e4351afe8938de89369c1cf533bf7d4704e33c2c8a3beb4b0ed1a013d0132a69",
+      "input_receipt": "c03-patch-coefficient-prep/ACTUAL-PATCH-PHYSICAL-GAUGE-LP-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualPatchPhysicalGaugeLp",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp"
+      ],
+      "sha256": "cf0527f547ca0ef571f007c6d59ea5e6f766def76aea9152f998e83998e86ed3"
+    },
+    "Burnett/Analysis/TransportPatches/PatchProjectedLpScale.lean": {
+      "input_source": "c03-patch-coefficient-prep/PatchProjectedLpScale.lean",
+      "input_sha256": "d19eccc07e6ec4eda1069fe4f79230ca918d315d54b01659f0224a5dff0eed7a",
+      "input_object_sha256": "778ccf582fc7b267465e4016d0d09f0c5113e1648ee63ffdf442e3093ce92e91",
+      "input_receipt": "c03-patch-coefficient-prep/PATCH-PROJECTED-LP-SCALE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.PatchProjectedLpScale",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.PatchLpInput",
+        "Burnett.Analysis.TransportPatches.ActualPatchPhysicalGaugeLp"
+      ],
+      "sha256": "d5478fa2f9159c4995f53ae95121d061177584666d82e81c33a9596581000721"
+    },
+    "Burnett/Analysis/TransportPatches/CubicPartitionVolume.lean": {
+      "input_source": "c01-cubic-partition-prep/CubicPartitionVolume.lean",
+      "input_sha256": "634152aa5ba02993be0672c2caceb56607dbd301c08615190334ddbd8a95c12d",
+      "input_object_sha256": "9a760c187097bb43226d80f1ee263f10cb2fe85aaeb8ff4aa98549750e298e33",
+      "input_receipt": "c01-cubic-partition-prep/CUBIC-PARTITION-VOLUME-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.CubicPartitionVolume",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ScaledCubicPartition",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Add"
+      ],
+      "sha256": "5e7fbc4a321cd2bd55f26e654ed329842251f838d47be05648b79b091fb03514"
+    },
+    "Burnett/Analysis/TransportPatches/CubicPatchProductRule.lean": {
+      "input_source": "c01-cubic-partition-prep/CubicPatchProductRule.lean",
+      "input_sha256": "524fdfca79b95313b3d35dc0aee87b4bbc32921177e971d3238fd3a05486d56c",
+      "input_object_sha256": "2da10e6e57712726f5bc8e9576069bd2e8016175fb33bf8d2749186ae330822e",
+      "input_receipt": "c01-cubic-partition-prep/CUBIC-PATCH-PRODUCT-RULE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ScaledCubicPartition",
+        "Mathlib.Analysis.Calculus.FDeriv.Pow"
+      ],
+      "sha256": "b51e9ae8a1461dc52969ae585710bfca498309f68d1eb96f92c8e309f85efeca"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalProjectedPatchSource.lean": {
+      "input_source": "c03-patch-coefficient-prep/OriginalProjectedPatchSource.lean",
+      "input_sha256": "e349fe061ccd4470cd3dfd65f05a778e319e52caf28b924c96d3b2408e428d2c",
+      "input_object_sha256": "7b34a662b22f77c5e3d80419dc5cafca936fc284c3328fc4f0c1c841be2c5883",
+      "input_receipt": "c03-patch-coefficient-prep/ORIGINAL-PROJECTED-PATCH-SOURCE-RECEIPT.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ProjectedDivergenceScale",
+        "Burnett.Analysis.TransportPatches.ExtendedPatchDivergenceCoefficient",
+        "Burnett.Analysis.TransportPatches.OriginalPatchCoefficientBounds",
+        "Burnett.Analysis.TransportPatches.PatchCorrectionSchwartz",
+        "Burnett.Analysis.TransportPatches.PatchProjectedLpScale",
+        "Burnett.Analysis.TransportPatches.CubicPartitionVolume",
+        "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+        "Burnett.Analysis.GaugeProjection.ProjectedChartSourceBound"
+      ],
+      "sha256": "af65c2c9c421ab43a29799b5515473c6d952cd093d121e39d22aa16a0e2a947d"
+    },
+    "Burnett/Analysis/TransportPatches/ClassicalMatrixMultiplier.lean": {
+      "input_source": "c02-global-defect-norm-prep/ClassicalMatrixMultiplier.lean",
+      "input_sha256": "4520a726e030503160560cea916a587f0a8d5a217b09e89e304099205e34c71c",
+      "input_object_sha256": "ed4348a1329b94deaa39ed61bbe24bd59a40b748c076b0a78630b512dc692985",
+      "input_receipt": "c02-global-defect-norm-prep/NATIVE-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ClassicalMatrixMultiplier",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.ProjectionEnergyPairing",
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.HomogeneousProjectionWeakDerivative"
+      ],
+      "sha256": "d71248a23d914ad29a5b1b7f5aed3cbe196300498e895ef09a1fc148f99a81ed"
+    },
+    "Burnett/Analysis/TransportPatches/SharedInfraredAngularMatrix.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/SharedInfraredAngularMatrix.lean",
+      "input_sha256": "2030f7b3c3cd8938df2964c51eb6e8f3535a622c08c446fd814ebf92fd13bff5",
+      "input_object_sha256": "4e511e98b09f6662427f311f65c9db78b4c741f31b2fe357265635e927b36fa8",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.SharedInfraredAngularMatrix",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ClassicalMatrixMultiplier",
+        "Burnett.Analysis.GaugeProjection.ProjectedDefectActualComponents"
+      ],
+      "sha256": "bdc065b81b694c94a2702066431facd8c3c2b424f5646e04f4e08bb2b85f5437"
+    },
+    "Burnett/Analysis/TransportPatches/FrozenChartPhase.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/FrozenChartPhase.lean",
+      "input_sha256": "f1faa3e6bfbc73e70baff12dacf90b09fd494fa00d308b9dd8a504d45cff6cf5",
+      "input_object_sha256": "7d645185b7d51bc39d9971a5d398e59c473fcc5bfc634527dda2125d2814dbca",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.FrozenChartPhase",
+      "imports": [
+        "Burnett.Analysis.AngularCaps.SmoothCapProfiles",
+        "Burnett.Analysis.Microlocal.Overlap.AtlasAngularPhaseEncoding",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicRicciFiberSymbol",
+        "Burnett.Geometry.SmoothMetricConnection",
+        "Mathlib.Analysis.Calculus.MeanValue"
+      ],
+      "sha256": "3ca4cd8c35001b57d82bf906247e5810b9aab22a8818c2feb60544dc67c99e57"
+    },
+    "Burnett/Analysis/TransportPatches/ScreenSmoothSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ScreenSmoothSupport.lean",
+      "input_sha256": "c243f4cd02acf5bd2c6ab026f3e8c9ed2d8be33c505956d0fb506ca260cd845f",
+      "input_object_sha256": "2ef3666555d4a4f1509230c9c3c586de6a54e3761f4c5630a4b4a7d87054b47c",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ScreenSmoothSupport",
+      "imports": [
+        "Burnett.Analysis.FrozenScreen.Symbol",
+        "Mathlib.Analysis.Calculus.ContDiff.Operations",
+        "Mathlib.Analysis.SpecialFunctions.Sqrt"
+      ],
+      "sha256": "c243f4cd02acf5bd2c6ab026f3e8c9ed2d8be33c505956d0fb506ca260cd845f"
+    },
+    "Burnett/Analysis/TransportPatches/ScreenWideSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ScreenWideSupport.lean",
+      "input_sha256": "a17e4a33ce69aa8b11082c51359c1c6022a86dc91254fe6cd50bfff74f7ddb00",
+      "input_object_sha256": "f058961d17492463ad01c2baa7f96d18c436c2a2e70b65aa28b4d07cc1d35020",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ScreenWideSupport",
+      "imports": [
+        "Burnett.Analysis.FrozenScreen.CompactFamily",
+        "Burnett.Analysis.FrozenScreen.Symbol"
+      ],
+      "sha256": "cfb7662c86d5e2f51572d4c5f7c3c99e68bddc7d0e1ddbc53e3369e5a4fd9018"
+    },
+    "Burnett/Analysis/TransportPatches/ScreenGlobalCutoffSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ScreenGlobalCutoffSupport.lean",
+      "input_sha256": "5ff125735a7cf49aa7f8f0261d3c6ece1631600ae9ffc8450338690fd9778e82",
+      "input_object_sha256": "a357abda51c5c680c6442f116d8b09b1ecc6fc190791483c2bcc2c04da41e6b3",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ScreenGlobalCutoffSupport",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ScreenSmoothSupport",
+        "Burnett.Analysis.TransportPatches.ScreenWideSupport",
+        "Mathlib.Analysis.SpecialFunctions.SmoothTransition"
+      ],
+      "sha256": "d6340b9da501be4fcb2088d15ce1de37bde49470545800a74b280ede6f9db553"
+    },
+    "Burnett/Analysis/TransportPatches/ActualWideScreenLipschitz.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ActualWideScreenLipschitz.lean",
+      "input_sha256": "468a01edd3bd3229e6c6babdb05342333c7f47fd4a9b053635741e75db5ac86d",
+      "input_object_sha256": "b80a7b44301a0849220b5a0736387dd408b3e9304772df4e08d5a0a74bbf65c4",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualWideScreenLipschitz",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.FrozenChartPhase",
+        "Burnett.Analysis.TransportPatches.ScreenGlobalCutoffSupport",
+        "Burnett.Geometry.ManifoldLorentzSignature",
+        "Mathlib.Topology.MetricSpace.Thickening"
+      ],
+      "sha256": "1b139e836a7b3e0955720da5befcb87dbeffa85f774dbca862b8675390de405f"
+    },
+    "Burnett/Analysis/TransportPatches/ProjectedNullScreenSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ProjectedNullScreenSupport.lean",
+      "input_sha256": "704fb4db6556432202b25d71300b474d5e4403df2506382bdab4be80a6b34725",
+      "input_object_sha256": "986e78edf32d315a4bb48cad56a7c35df628564c46481aca6e113f47d425044c",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ProjectedNullScreenSupport",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.PrincipalGaugeProjectionAlgebra"
+      ],
+      "sha256": "25c63c82e07fe4f03841ae6a53b2729bc6f512153a37bafa2df207ecfb7fc142"
+    },
+    "Burnett/Analysis/TransportPatches/ScreenFixedSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ScreenFixedSupport.lean",
+      "input_sha256": "a8234a51c53c89527fc0ce550ab75aef95e6d131606ce584ed9e6fce882a2ebc",
+      "input_object_sha256": "17d5e6f67a6a24015d4ae9c0c0304364205bb88c4ab4302563c33eacdaf55f5c",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ScreenFixedSupport",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ProjectedNullScreenSupport",
+        "Burnett.Analysis.FrozenScreen.Invertibility",
+        "Burnett.Analysis.FrozenScreen.Constraints",
+        "Burnett.Analysis.FrozenScreen.Symbol",
+        "Burnett.Analysis.Microlocal.AuxiliaryCovectorScale"
+      ],
+      "sha256": "02cc034c692415bb3d185591d307908e931a7022163b1c000eface26408e6791"
+    },
+    "Burnett/Analysis/TransportPatches/IntrinsicProjectedSupport.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/IntrinsicProjectedSupport.lean",
+      "input_sha256": "f6f70c379654617d64e20b5e8bcfc71245ac2730800780bee7b088cce3c44aff",
+      "input_object_sha256": "3ce2a5199c63c94c29b93f4c527034c1be3751dfd7b28871f1957310b5f8be9e",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.IntrinsicProjectedSupport",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.FrozenChartPhase",
+        "Burnett.Analysis.GaugeProjection.ProjectedAmplitudeCovariance",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalVacuumIntrinsicAmplitude",
+        "Burnett.Analysis.Microlocal.Overlap.AtlasChartAmplitudeIntegrability"
+      ],
+      "sha256": "246f1a76d682a9a777d92c126c3a8594f24bf1791e029639b01092c472ebe462"
+    },
+    "Burnett/Analysis/TransportPatches/ActualFrozenErrors.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ActualFrozenErrors.lean",
+      "input_sha256": "4519cb33db499a1c37f3d8b29cb86953499882096918f7281523380c8f1f4962",
+      "input_object_sha256": "309d22d2c0d2c24ced0ea3c9a1cffe2634fdca4386dd0b19abf81ca70e3dff13",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualFrozenErrors",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualWideScreenLipschitz",
+        "Burnett.Analysis.TransportPatches.ScreenFixedSupport",
+        "Burnett.Analysis.TransportPatches.IntrinsicProjectedSupport"
+      ],
+      "sha256": "e11bec752e3d109b1a1edb4196f74ba0c73103f2f58b3f0ed167b782a385d5b8"
+    },
+    "Burnett/Analysis/TransportPatches/FrozenErrorCompression.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/FrozenErrorCompression.lean",
+      "input_sha256": "3c2c778700e5536aaeffc9ca3bde3e3b097de8ffe4337dae8a939822a093cda5",
+      "input_object_sha256": "139773bf04974c15efeab4d85efa384319f06d04a83fcc5f28d94ecf25d7b926",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.FrozenErrorCompression",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualFrozenErrors",
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.ReceivingPhysicalCovariance"
+      ],
+      "sha256": "e87f1e9dce3e0229a130755554966e738ce1ea1aaa823b47b34f824b9b59eb75"
+    },
+    "Burnett/Analysis/TransportPatches/ReceivingMatrixMultiplierEnergy.lean": {
+      "input_source": "c02-global-defect-norm-prep/ReceivingMatrixMultiplierEnergy.lean",
+      "input_sha256": "68856d230fab907a2554e6981f947e0097b7af32fbbde299688ba570031f022b",
+      "input_object_sha256": "b08b1c0279c6140bf9d3c6ce0cef7a63a02c4c5bd2fc70d033ddbc7402ae14eb",
+      "input_receipt": "c02-global-defect-norm-prep/NATIVE-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ReceivingMatrixMultiplierEnergy",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ClassicalMatrixMultiplier",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly"
+      ],
+      "sha256": "500c585f666b4dd79ed8926e7f4fd4748af211f4ae0f1fb9bf44d59b58b6dbe7"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalGlobalDefectNorm.lean": {
+      "input_source": "c02-global-defect-norm-prep/OriginalGlobalDefectNorm.lean",
+      "input_sha256": "87b95aa3c1430e2917a2743b6f0d6c00ddeb5247438682991d6b3f5e99630cf8",
+      "input_object_sha256": "c0d2720f537e624484bad91d4ecb90273d92294c9e237d7e6f31d0f271e511b8",
+      "input_receipt": "c02-global-defect-norm-prep/NATIVE-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalGlobalDefectNorm",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ReceivingMatrixMultiplierEnergy",
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.HomogeneousReceivingBridge"
+      ],
+      "sha256": "ddc0ec47f57d9c4f9cc88a8685b222e337ef96b512ffb528491f6bf77a554667"
+    },
+    "Burnett/Analysis/TransportPatches/WholeCosphereDefectNorm.lean": {
+      "input_source": "c02-global-defect-norm-prep/WholeCosphereDefectNorm.lean",
+      "input_sha256": "920626e518176ca6414d5fd9116344ecc1700252053c3638c7017d4765295069",
+      "input_object_sha256": "bf69289a170f60a7e2698a883603d9c86293509049ce31edb193c84a7e859614",
+      "input_receipt": "c02-global-defect-norm-prep/NATIVE-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WholeCosphereDefectNorm",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalGlobalDefectNorm"
+      ],
+      "sha256": "47cb5175be38934f5db36e01c3a9350b70e65407593013454167e92a1be872dc"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalWeightedFrozenCompression.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/OriginalWeightedFrozenCompression.lean",
+      "input_sha256": "7c0b6514dbfcc93986859b0ecbc8642bcc3778d7d6883f16c39e016295be9b4d",
+      "input_object_sha256": "61326aaf0776e0779bc606d925d585451a2c6f5c559a52d48f22296d1fee9ae6",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWeightedFrozenCompression",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.FrozenErrorCompression",
+        "Burnett.Analysis.TransportPatches.WholeCosphereDefectNorm"
+      ],
+      "sha256": "f8bcc368350a892805659c6c66bcb3abdbda32f1f38b2f52112e0cb232352e0a"
+    },
+    "Burnett/Analysis/TransportPatches/ActualWideOrderedSymbols.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/ActualWideOrderedSymbols.lean",
+      "input_sha256": "a58dd4ecf5e70e68c7bdd5bd556b4aa54cf6d74ab46dce8dccea85ce4c286692",
+      "input_object_sha256": "1b5a0b84b7e73f73e8abc498eface1eae2d047046d0705b4fe3544c715357ba3",
+      "input_receipt": "c02-frozen-screen-phase-prep/ActualWideOrderedSymbols-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualWideOrderedSymbols",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalWeightedFrozenCompression"
+      ],
+      "sha256": "4eb3fe0713e65781d18a6caf020aec9a10a3cfe3c146e5f9852be8bf696ed593"
+    },
+    "Burnett/Analysis/TransportPatches/ActualWideInfraredMultipliers.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/ActualWideInfraredMultipliers.lean",
+      "input_sha256": "19391d317baae20673d23dd0571fac2a1931252f01c861f2160c0da60227c4a7",
+      "input_object_sha256": "1490c720c73ad8b1861999a6be64cd21a05f8160b656db154394b4df37347dca",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.ActualWideInfraredMultipliers",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.SharedInfraredAngularMatrix",
+        "Burnett.Analysis.TransportPatches.ActualWideOrderedSymbols"
+      ],
+      "sha256": "4c09ca5cf36be2ed729b65731d2169ea59a538f269e13387971343e500abe2d2"
+    },
+    "Burnett/Analysis/TransportPatches/WideCompatibleWindow.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/WideCompatibleWindow.lean",
+      "input_sha256": "d5afbfb54f5e6feedaf5e8e70c34e3c99f25c8e6a76c5c5db2fedd0efd4f0d47",
+      "input_object_sha256": "9bfbd7cc9b54bb0e8a1787615d57c615759f0e921e97b13b5621b6e1b76845b5",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.WideCompatibleWindow",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualWideInfraredMultipliers"
+      ],
+      "sha256": "75895ca8085a0e30dd65f9561c1eee989347c0d59ed0beaf2c45aa3adca5ea11"
+    },
+    "Burnett/Analysis/TransportPatches/WideBaselineL2.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/WideBaselineL2.lean",
+      "input_sha256": "20e4333b508a4dc064814246e3873030a17466bba3f895755822ec545ac5c882",
+      "input_object_sha256": "deab4cc756aa1dbebe612b062b0b16954b8fa298a82ae9ec5403c38a91992bd3",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.WideBaselineL2",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualWideInfraredMultipliers",
+        "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp"
+      ],
+      "sha256": "bfd9b8fc4d91298f98c567efe9aa71205cc0da4beac06febccab8ebf448cc693"
+    },
+    "Burnett/Analysis/TransportPatches/ReceivingPatchGradientVolume.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/ReceivingPatchGradientVolume.lean",
+      "input_sha256": "69f08c320ec9bc516232e0248a407e651d3106977329d62b543d5df84a33730c",
+      "input_object_sha256": "a5f9d14ff421435363e2cb19517bb8d4478725ccc9a5b5d141d9ab6a7115ba90",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.ReceivingPatchGradientVolume",
+      "imports": [
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.HomogeneousReceivingBridge",
+        "Burnett.Analysis.GaugeProjection.ProjectedFiniteLp"
+      ],
+      "sha256": "7190a7303f236bb0aec7be8d99ca00787e8ef4c5d6e6254e540be09953aea4ce"
+    },
+    "Burnett/Analysis/TransportPatches/WideCompatibleWindowNorm.lean": {
+      "input_source": "c02-wide-multiplier-assembly-prep/WideCompatibleWindowNorm.lean",
+      "input_sha256": "2b6d3169a594d938a266721f902cfc7b4621770b838e3b67876f5d7105592be9",
+      "input_object_sha256": "6829d699761bbf2bbbeb043a50d4782600359230536933fd4a68efacb12853e7",
+      "input_receipt": "c02-wide-multiplier-assembly-prep/C02-NATIVE-STAGE.json",
+      "module": "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideCompatibleWindow",
+        "Burnett.Analysis.TransportPatches.WideBaselineL2",
+        "Burnett.Analysis.TransportPatches.ReceivingPatchGradientVolume"
+      ],
+      "sha256": "8b96e6d19aef7791b425fa12d051148ac4ebef1d26c7f43b31f0bd718144ea88"
+    },
+    "Burnett/Analysis/TransportPatches/WideJointWindow.lean": {
+      "input_source": "c02-original-wide-l3-prep/WideJointWindow.lean",
+      "input_sha256": "d4c722e22643e1ad34a83ad2d47543835029a6f4faa9b7e2be6da6a1bcf453c1",
+      "input_object_sha256": "3c59837645650d349f1810946a615d97532a62f2eda3419864a1918e1ec08bcc",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WideJointWindow",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideCompatibleWindow",
+        "Mathlib.Topology.MetricSpace.Thickening"
+      ],
+      "sha256": "e1976f2c9496c7f7587ef33e010bbc217a71dc6f649a82833af54357e474caaf"
+    },
+    "Burnett/Analysis/TransportPatches/WidePatchGradientL2.lean": {
+      "input_source": "c02-original-wide-l3-prep/WidePatchGradientL2.lean",
+      "input_sha256": "0fb445826be9af6ae825d83b1a873888ab4220b932394e8c37d8be77f91c1c0e",
+      "input_object_sha256": "2ffcd8e90e426d9611c6d294bef1c0c0aa64cc09036b01809fe36da1c97a4225",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WidePatchGradientL2",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm",
+        "Burnett.Analysis.TransportPatches.WideJointWindow"
+      ],
+      "sha256": "079ad9b40c142a3ef6901023b5a1e018f25f4eb8b83eb02d409dd46030a287b3"
+    },
+    "Burnett/Analysis/TransportPatches/CompactFrequencyJets.lean": {
+      "input_source": "c02-original-wide-l3-prep/CompactFrequencyJets.lean",
+      "input_sha256": "e0a8b7c1af6d25fb69f5a6b4559939eee493cbfd2490fb293984fe440e7208b9",
+      "input_object_sha256": "a400514fe76214214ee9d25892addb0018e067d7139f642f05539be6e59cf3c9",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.CompactFrequencyJets",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.ActualWideInfraredMultipliers",
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.QuantitativeMikhlinApplications"
+      ],
+      "sha256": "5a58dd34c3e476db0de23116144fe42c3caf02126ac424d644a396b357648183"
+    },
+    "Burnett/Analysis/TransportPatches/WideWindowSphereJets.lean": {
+      "input_source": "c02-original-wide-l3-prep/WideWindowSphereJets.lean",
+      "input_sha256": "b8f179cf6bab7be0ff83195e8bb553b202f13e2ca8cbb8fabd93505436f733e6",
+      "input_object_sha256": "a3aef608f6fbadb4baecc187ccc664b710368d437fdcec4841eaf27361000c66",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WideWindowSphereJets",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideJointWindow",
+        "Burnett.Analysis.TransportPatches.CompactFrequencyJets"
+      ],
+      "sha256": "66479d8c84a95e08b7bd56b9a03969429b260b15892c386d203024f802fd4ff3"
+    },
+    "Burnett/Analysis/TransportPatches/WideProjectedGradientLp.lean": {
+      "input_source": "c02-original-wide-l3-prep/WideProjectedGradientLp.lean",
+      "input_sha256": "fe676f22283ca8d3e208c320be2fa286a5e21ef742eac079fc054509db9e1f48",
+      "input_object_sha256": "2b755efefb180337f34d390cbf62f9d33a1ff218c85547c8491f9f1a40b7d4a7",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WideProjectedGradientLp",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideBaselineL2",
+        "Burnett.Analysis.GaugeProjection.ProjectedSchwartzIdentities",
+        "Burnett.Analysis.CubicEnergy.CompleteEnergy.QuantitativeMikhlinApplications"
+      ],
+      "sha256": "3a72ca3e320720f8dc5cf90c219b730f48359bd319d3fbc2622ce2ff9015f2cb"
+    },
+    "Burnett/Analysis/TransportPatches/FrozenErrorInterpolation.lean": {
+      "input_source": "c02-frozen-screen-phase-prep/FrozenErrorInterpolation.lean",
+      "input_sha256": "d13ebf509d65b46cf432e53660e21ceff1c989e36f1e887d8dbb64cf269b8ed3",
+      "input_object_sha256": "ebb9d1c7bf8148804210aa60b9a2635098a9bb8ee711b7b06feddf053c5bf3f9",
+      "input_receipt": "c02-frozen-screen-phase-prep/NATIVE-COMPOSITION.json",
+      "module": "Burnett.Analysis.TransportPatches.FrozenErrorInterpolation",
+      "imports": [
+        "Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Continuity"
+      ],
+      "sha256": "e50faf900287efa73887169b251b9567459a5d29ef3c9c3a0ae3f5e811bc8c6f"
+    },
+    "Burnett/Analysis/TransportPatches/WidePatchErrorInterpolation.lean": {
+      "input_source": "c02-original-wide-l3-prep/WidePatchErrorInterpolation.lean",
+      "input_sha256": "4c915d37e6b082d95490f9e258f409b78ed36ac300b8e9ae5a3d00810950f1ec",
+      "input_object_sha256": "7125d0e9bc4a3b181727d7709589882f255583538b168cf4421c2a5b840ec687",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WidePatchErrorInterpolation",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm",
+        "Burnett.Analysis.TransportPatches.WideProjectedGradientLp",
+        "Burnett.Analysis.TransportPatches.PatchProjectedLpScale",
+        "Burnett.Analysis.TransportPatches.FrozenErrorInterpolation"
+      ],
+      "sha256": "1d2fc49341cca67e4ff45f7da98fbfb958a4500a5ae0b430c582ce53d610d44d"
+    },
+    "Burnett/Analysis/TransportPatches/WideGradientVectorL3.lean": {
+      "input_source": "c02-original-wide-l3-prep/WideGradientVectorL3.lean",
+      "input_sha256": "4f0fdaaefcb2ad10562115be4810576a1e0e90096b5b2f65dbae9b179cf6066b",
+      "input_object_sha256": "261594b8c1cb13e942222450514211321375a80b39402797ecfa3353cf1cc8c3",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.WideGradientVectorL3",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WidePatchErrorInterpolation"
+      ],
+      "sha256": "cf45e446ed3c728e864bdb6f5b645e5378ff3665604d8fea7fc76dc50b571b02"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalWideCubicPatchL3.lean": {
+      "input_source": "c02-original-wide-l3-prep/OriginalWideCubicPatchL3.lean",
+      "input_sha256": "35aae81c802700b6f43454d69e3c2a290b3c671f1e8b2961913b50dc83fa94da",
+      "input_object_sha256": "4f8444410cad8c428ea1ab21f69336e7b3877fa8c7f55cc0c132d17474f05af3",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWideCubicPatchL3",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WidePatchGradientL2",
+        "Burnett.Analysis.TransportPatches.WideWindowSphereJets",
+        "Burnett.Analysis.TransportPatches.WideGradientVectorL3"
+      ],
+      "sha256": "addd1ccce90dc92c58f7b82855ba75a874df1cb24d3ad01483901f8b2a107308"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalC03PatchFiniteEndpoints.lean": {
+      "input_source": "c02-original-wide-l3-prep/OriginalC03PatchFiniteEndpoints.lean",
+      "input_sha256": "8b653d58ed0189c348a71d3144fae17483684be0884d1fc9cd0abbc8b12e5756",
+      "input_object_sha256": "d1bad36a44e26604711462b765b6f08daa82f037893fdab6f058b7988068077e",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalC03PatchFiniteEndpoints",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.WideBaselineL2",
+        "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource"
+      ],
+      "sha256": "4b98dc6decb72ea9cbb06607cbe38f4a2f10bb714693d07e94e13686c667f53a"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalWideC03Consumer.lean": {
+      "input_source": "c02-original-wide-l3-prep/OriginalWideC03Consumer.lean",
+      "input_sha256": "e57bca12a0f9171b9e67ee9bf83df6bd7b564e7be77eeb6c25e50d3941f8c739",
+      "input_object_sha256": "523eb27fe2944fa44be9cb7218165c61ba324b2b2d51701f1517f2d099e26d26",
+      "input_receipt": "c02-original-wide-l3-prep/C02-ORIGINAL-WIDE-L3-REPLAY.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalWideCubicPatchL3",
+        "Burnett.Analysis.TransportPatches.OriginalC03PatchFiniteEndpoints"
+      ],
+      "sha256": "a4ae75f3735eeadfbf848f3f4cce49eaffc8c1a44d26ce9bab0cce60846aaaad"
+    },
+    "Burnett/Analysis/TransportPatches/OriginalTransportPatchFamily.lean": {
+      "input_source": "pr-patch-source-wide-joint-independent-2026-11-25/IndependentJointPatch.lean",
+      "input_sha256": "8bcf9d40ae2acd30e3f62b35a43655c4b568a6a3c65bd70dc101f8ac9f307b26",
+      "input_object_sha256": "8fdc15f6ae992b58c9d303669a96a0be1d3fbb9ea88b70b266ee78ab4a12158d",
+      "input_receipt": "pr-patch-source-wide-joint-independent-2026-11-25/FROZEN-JOINT-REVIEW.json",
+      "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
+      "imports": [
+        "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
+        "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer"
+      ],
+      "sha256": "068583b7af955e16a33c4a9e93cb8b3c56826932405491b63cc3b4b820f667a7"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "c01:scaled-cubic-cutoffs",
+      "module": "Burnett.Analysis.TransportPatches.ScaledCubicPartition",
+      "declaration": "Burnett.C01.exists_scaled_cubic_cutoffs"
+    },
+    {
+      "claim_id": "c01:cubic-partition-derivative-cancellation",
+      "module": "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+      "declaration": "Burnett.C01.cubed_partition_first_derivative_zero"
+    },
+    {
+      "claim_id": "c01:cubed-patch-trilinear-density",
+      "module": "Burnett.Analysis.TransportPatches.CubicPatchProductRule",
+      "declaration": "Burnett.C01.sum_cubed_patch_trilinear_density"
+    },
+    {
+      "claim_id": "c01:outer-patch-volume-budget",
+      "module": "Burnett.Analysis.TransportPatches.CubicPartitionVolume",
+      "declaration": "Burnett.C01.sum_scaled_patch_measure_le"
+    },
+    {
+      "claim_id": "c02:original-whole-cosphere-defect",
+      "module": "Burnett.Analysis.TransportPatches.WholeCosphereDefectNorm",
+      "declaration": "Burnett.C02.tendsto_originalGlobalDefectNorm_wholeCosphere"
+    },
+    {
+      "claim_id": "c02:wide-frozen-l2-volume",
+      "module": "Burnett.Analysis.TransportPatches.WideCompatibleWindowNorm",
+      "declaration": "Burnett.C02.exists_actualWideL2_convexWindow_volume"
+    },
+    {
+      "claim_id": "c02:wide-frozen-l3-same-patch",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWideC03Consumer",
+      "declaration": "Burnett.C02.exists_originalWideL3_consumeC03Source"
+    },
+    {
+      "claim_id": "c03:original-projected-patch-source",
+      "module": "Burnett.Analysis.TransportPatches.OriginalProjectedPatchSource",
+      "declaration": "Burnett.C03.exists_original_projectedPatchSource_family"
+    },
+    {
+      "claim_id": "c02:original-joint-patch-source-and-wide-errors",
+      "module": "Burnett.Analysis.TransportPatches.OriginalTransportPatchFamily",
+      "declaration": "Burnett.C02.exists_originalTransportPatchFamily"
+    }
+  ]
+}
