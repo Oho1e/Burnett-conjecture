@@ -1,0 +1,71 @@
+{
+  "slices": [
+    "F08"
+  ],
+  "base": "e3a82586ed7fd0060988d255c2a6291a904e0b6a",
+  "base_tree": "3ce17574576df4616a91e187e4cd017b20a35fe0",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_statement_lines": [
+    487,
+    506
+  ],
+  "paper_proof_lines": [
+    507,
+    517
+  ],
+  "paper_statement_and_proof_sha256": "67a2f135d476b4798b05ddb076691af4a3b153c31e2f7ab06f2b01643a41fd48",
+  "compiler_sha256": "20bc808248e38cf072f84f4eb389f8f98e5925d703bcbfa400d9dd44f310c4db",
+  "lean_toolchain_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+  "lake_manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "production_replay_sha256": "9997b7287de86caeea6f93ca79ffe4622ff71ecfd4375206a5c529de14b9e0a6",
+  "reference_freeze_sha256": "4504530b7ea0afd8c9e9320ea4df40bed5beb12d6a6d2fe3706ebe3978a5de5b",
+  "earlier_comparison_sha256": "d1b43762e14eb0a67373c1861fa8adcb4540dc2f18c153a1e647de76628a0879",
+  "verified_input_objects": {
+    "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly": "66f86931446d08eda3329b60c1403b877412d1418cc77f96efa138e70a02d581",
+    "Burnett.Analysis.BaseMarginal.OriginalEinsteinSymmetry": "2ed4d309135e098cf8349ada55c78023ff38656dffdfaa7f7787ca170714042f",
+    "Burnett.Analysis.BaseMarginal.IntrinsicVacuumMarginal": "b162f45aeeac36c33368fc0f249487e954b822f26097606df50867c8ab375ccd",
+    "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginal": "277bd7ab9f04ef35afec277b6432af319ad8001945f308b7133648325a8db1fc",
+    "Burnett.Analysis.BaseMarginal.IntrinsicBaseEnergy": "98d140553fa2516c14f7688dee6ffb0417163e9f3747f18ebba94bec592c8461",
+    "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments": "86e48b511694a3cc959aaf12826fbce044841fe088346e9c2d3899b57d96dc30",
+    "Burnett.Analysis.BaseMarginal.IntrinsicAngularFrameMoments": "8a5d513d9dd21e0056eeec4e4341681c77b9939170d9779a82a8a24f356b8f13",
+    "Burnett.Analysis.BaseMarginal.IntrinsicFrameTensorTests": "f64d05e408deafb606b6be319800dbd21d8db308d13467bac83a26e0bc655a2c",
+    "Burnett.Analysis.BaseMarginal.IntrinsicAngularTestedMoments": "6cdc1590248af52fcbb17bacde4cac0407267e39aa6b3b9152536ab057bfbbda",
+    "Burnett.Analysis.BaseMarginal.IntrinsicSmoothDensityTests": "29889a30fa7baea4024591659d337f84de01fb74c5391bc093f6aeeba8217303",
+    "Burnett.Analysis.BaseMarginal.IntrinsicAngularDisintegration": "75b9c27cd340a9d049af83d7eceff244e0a23a446059efe4e6b70e5347d3b1e3",
+    "Burnett.Analysis.BaseMarginal.CompactTargetDisintegration": "0db5c5c03f68178cdc5757c6d06bae2df15d8de0045e5c41687299f16427807d"
+  },
+  "sources": {
+    "Burnett/Analysis/BaseMarginal/DependentUnitNullFibers.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.DependentUnitNullFibers",
+      "sha256": "84c970b7cf7dcd659c987626007c3a37cff8080a156b763809c3be3de21876e3",
+      "replay_object_sha256": "827c2eb02b31dbb03f1d817d6bec0f9ddf866f93f26c4dc8b757e17a891e6ffc",
+      "direct_imports": {
+        "Burnett.Analysis.BaseMarginal.IntrinsicAngularPointwiseMoments": "86e48b511694a3cc959aaf12826fbce044841fe088346e9c2d3899b57d96dc30",
+        "Mathlib.MeasureTheory.Measure.GiryMonad": "7a90c68f7fef0806bef5678401a4b353af40f83be43c37ec378698dbe8c21ffc"
+      }
+    },
+    "Burnett/Analysis/BaseMarginal/IntrinsicBaseMarginalCorollary.lean": {
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary",
+      "sha256": "6eb32fe1ca32b4cf04bc5743ff4beb47cb95631e8ed2163cc3f5e42110026efd",
+      "replay_object_sha256": "6bdad13b7053cbf8b0c0f77b02e896208014e5f6d6adb301e23b05d7f12f7287",
+      "direct_imports": {
+        "Burnett.Analysis.BaseMarginal.DependentUnitNullFibers": "827c2eb02b31dbb03f1d817d6bec0f9ddf866f93f26c4dc8b757e17a891e6ffc",
+        "Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly": "66f86931446d08eda3329b60c1403b877412d1418cc77f96efa138e70a02d581"
+      }
+    }
+  },
+  "roots": [
+    "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary"
+  ],
+  "targets": [
+    {
+      "claim_id": "cor:base-marginal",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration"
+    }
+  ],
+  "documents": {
+    "en": "44c02126d24db54ec167e72e9b68d3eaff8d2d12301406e2f4c01e6e3fe39b91",
+    "zh-CN": "8ac7f72ba61b78633cb821e0e524e976e4e38193e8c662692d51120e5b171b86"
+  }
+}

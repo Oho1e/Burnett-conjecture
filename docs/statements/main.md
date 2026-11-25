@@ -86,11 +86,9 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-局部支持引理涵盖光滑试验及给定有限联合测度的加权分解。原度量的实际边缘和完整推论仍待证明。[F08 局部测度分解](local-disintegration.zh-CN.md)
+`Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration` 证明同一固定二次测度的光滑非负基底边际、实际单位零纤维上的解体和重构、共同满测集上的全部切向量矩、解体几乎处处唯一、基底无集中与真空开区消失。作者确认待登记。[陈述与核验证据](base-marginal-and-angular-disintegration.zh-CN.md)
 
-F08 的支持结果在可数可测覆盖上分解给定的联合测度。本推论的内禀边缘与张量矩仍待证明。[可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md)
-
-四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](angular-kernel-transforms.zh-CN.md)
+[局部测度分解](local-disintegration.zh-CN.md) · [可数覆盖测度分解](countable-fiber-disintegration.zh-CN.md) · [条件角核的变换](angular-kernel-transforms.zh-CN.md)
 
 ## T04
 

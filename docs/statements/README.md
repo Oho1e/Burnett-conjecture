@@ -43,7 +43,7 @@
 | --- | --- | --- | --- | --- |
 | 1.1 | theorem | `thm:main` | 139–168 | 未建模 |
 | 2.1 | theorem | `thm:quadratic` | 354–356 | 未建模 |
-| 2.2 | corollary | `cor:base-marginal` | 487–506 | 未建模 |
+| 2.2 | corollary | `cor:base-marginal` | 487–506 | [已有 Lean 证明](base-marginal-and-angular-disintegration.zh-CN.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | 未建模 |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | 未建模 |
 | 3.3 | lemma | `lem:freezing` | 736–764 | 未建模 |
