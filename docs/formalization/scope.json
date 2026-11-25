@@ -5663,6 +5663,66 @@
       "claim_id": "c04:actual-summed-correction-limit",
       "module": "Burnett.Analysis.TransportClosure.CorrectionTail",
       "declaration": "Burnett.C04.fixed_patch_summed_residual_bound_of_actualCorrectionSum"
+    },
+    {
+      "claim_id": "lem:lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_regularIntrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:ambient-closed-cone-momentum-lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:actual-complete-null-time",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.CompleteNullTimeFromCausality",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_completeNullTime_of_chartGlobalHyperbolicity"
+    },
+    {
+      "claim_id": "l01:actual-pulse-first-integral",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.CanonicalPulseFirstIntegral",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_smooth_canonicalPulseFirstIntegral"
+    },
+    {
+      "claim_id": "l01:actual-pulse-momentum-lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.ActualPulseMomentumLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_actualFullMomentumLift_of_completeNullTime"
+    },
+    {
+      "claim_id": "l01:intrinsic-causal-relation",
+      "module": "Burnett.Geometry.Causality.IntrinsicPiecewiseCausalEquivalence",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_intrinsicPiecewiseCausalRelation"
+    },
+    {
+      "claim_id": "l01:intrinsic-global-hyperbolicity",
+      "module": "Burnett.Geometry.Causality.IntrinsicPiecewiseStrongCausality",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartGlobalHyperbolicity_iff_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:regular-causal-relation",
+      "module": "Burnett.Geometry.Causality.IntrinsicRegularPiecewiseCausality",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_regularIntrinsicPiecewiseCausalRelation_of_compactDiamonds"
+    },
+    {
+      "claim_id": "l02:restricted-einstein-moments",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.EinsteinMoments",
+      "declaration": "Burnett.Geometry.OpenRegion.hasCosphereEinsteinMoments_openSubtype"
+    },
+    {
+      "claim_id": "l02:restricted-unit-null-transport",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.Transport",
+      "declaration": "Burnett.Geometry.OpenRegion.unitNullMeasureOfOpen_transport"
+    },
+    {
+      "claim_id": "l02:open-globally-hyperbolic-lift",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l02:open-regular-globally-hyperbolic-lift",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_regularIntrinsicPiecewise"
     }
   ],
   "inventory": [
@@ -5822,9 +5882,11 @@
         "endline": 2991
       },
       "disposition": "formalize",
-      "modeling_status": "partially_modeled",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_regularIntrinsicPiecewise",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "cor:strong",
@@ -26477,6 +26539,204 @@
       "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:ambient-closed-cone-momentum-lift",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2989,
+        "endline": 2991
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_intrinsicPiecewise",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:actual-complete-null-time",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2995,
+        "endline": 3005
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_completeNullTime_of_chartGlobalHyperbolicity",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:actual-pulse-first-integral",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2995,
+        "endline": 3005
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_smooth_canonicalPulseFirstIntegral",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:actual-pulse-momentum-lift",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2995,
+        "endline": 3037
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_actualFullMomentumLift_of_completeNullTime",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:intrinsic-causal-relation",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2989,
+        "endline": 2991
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_intrinsicPiecewiseCausalRelation",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:intrinsic-global-hyperbolicity",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2989,
+        "endline": 2991
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartGlobalHyperbolicity_iff_intrinsicPiecewise",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l01:regular-causal-relation",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:lift",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2989,
+        "endline": 2991
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_regularIntrinsicPiecewiseCausalRelation_of_compactDiamonds",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l02:restricted-einstein-moments",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3057,
+        "endline": 3061
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OpenRegion.hasCosphereEinsteinMoments_openSubtype",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l02:restricted-unit-null-transport",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3057,
+        "endline": 3061
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OpenRegion.unitNullMeasureOfOpen_transport",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l02:open-globally-hyperbolic-lift",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3057,
+        "endline": 3061
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_intrinsicPiecewise",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "l02:open-regular-globally-hyperbolic-lift",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:main",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 3057,
+        "endline": 3061
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_regularIntrinsicPiecewise",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
       "does_not_close_parent_claim": true
     }
   ],

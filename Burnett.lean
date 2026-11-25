@@ -448,3 +448,13 @@ import Burnett.Analysis.TransportClosure.CorrectionTail
 import Burnett.Analysis.FrozenTransport.OriginalThinCubicReceivingFamily
 import Burnett.Analysis.FrozenTransport.OriginalThinCubicGradientPair
 import Burnett.Analysis.FrozenTransport.OriginalThinCubicReceivingGradientPair
+import Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift
+import Burnett.Geometry.Cotangent.CausalPulse.CompleteNullTimeFromCausality
+import Burnett.Geometry.Cotangent.CausalPulse.CanonicalPulseFirstIntegral
+import Burnett.Geometry.Cotangent.CausalPulse.ActualPulseMomentumLift
+import Burnett.Geometry.Causality.IntrinsicPiecewiseCausalEquivalence
+import Burnett.Geometry.Causality.IntrinsicPiecewiseStrongCausality
+import Burnett.Geometry.Causality.IntrinsicRegularPiecewiseCausality
+import Burnett.Geometry.Cotangent.OpenRegion.EinsteinMoments
+import Burnett.Geometry.Cotangent.OpenRegion.Transport
+import Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift

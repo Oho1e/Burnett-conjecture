@@ -1,0 +1,329 @@
+{
+  "base": "3fa9bde9e05f102ae505343ac20448a86c0cb9bd",
+  "base_tree": "cf8d3dacb6ea0a15ed19160c29754a3adc136c62",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "ordinary_replay_root_sha256": "5515c3661ec213f09aaffc85c5506e0e52fe7220593888ec939701afc270aacf",
+  "replay_receipts": {
+    "l01-global-causality-production-prep/native/PRODUCTION-REPLAY.json": "39a89e7f0f0797ce16a5a1a4243697de7d0fb4321601a90ecc6347306795db3c",
+    "l02-region-transport-production-prep/native/PRODUCTION-REPLAY.json": "b40f4dc75fba93cad44caf0a9e1c6c94644bf4d024cafe91d4b75ad4e81513a1",
+    "forward-kinetic-assembly-prep/region-causality-native/REGION-CAUSAL-LIFT-REPLAY.json": "a7e9157b3604153edd5f7f56776582a312566b25e43ec14c2f36619ab57da370",
+    "l01-global-causality-independent-review-2026-11-26/canonical-replay/INTRINSIC-REGION-LIFT-REPLAY.json": "7d302440d268309395c2d2a9b51295f616d3ead107296576b0b7114d1e1fdc00",
+    "l01-global-causality-independent-review-2026-11-26/ambient-replay/AMBIENT-EINSTEIN-LIFT-REPLAY.json": "da4de591a2ca6b00b46894e1c45671b7ba87c3236aa2ddb8c584d95740f6afea"
+  },
+  "sources": {
+    "Burnett/Geometry/Cotangent/OpenRegion/IntrinsicPiecewiseLift.lean": {
+      "production": "f8bdedf2ae169a87f1c914da24410744793b0a42f10ada3c0cdd6c56d94422d3",
+      "replay": "f8bdedf2ae169a87f1c914da24410744793b0a42f10ada3c0cdd6c56d94422d3"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/GloballyHyperbolicLift.lean": {
+      "production": "7ab0f9a4221ff62c407b3b3bf13b0216866448ac107f55eb1ee063ad22e0edce",
+      "replay": "544c8e8047b55a5a4a337252fdb5dfc7160bacc81142a3427a3874e692d38a32"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CompleteNullTimeFromCausality.lean": {
+      "production": "d063ebf188c4e13752eeef51be121d25dfd8ff753b2dc9203602279501a42a05",
+      "replay": "d063ebf188c4e13752eeef51be121d25dfd8ff753b2dc9203602279501a42a05"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CanonicalOrbitCompleteness.lean": {
+      "production": "22fe8536b82efa5846a1da622af720af10b2c7f9d4c080c03398a8288d5f6fac",
+      "replay": "22fe8536b82efa5846a1da622af720af10b2c7f9d4c080c03398a8288d5f6fac"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CanonicalPulseFromTime.lean": {
+      "production": "915ed1b251f0acbb3e2ac916a2a3e1515caf864d57575c9fd90675d2834e76c4",
+      "replay": "915ed1b251f0acbb3e2ac916a2a3e1515caf864d57575c9fd90675d2834e76c4"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/OrbitTimeStripWindow.lean": {
+      "production": "1b4bbfb429092061d65503cc42b2cf7ee18780a2993a209e9e6b501b5f853f0a",
+      "replay": "1b4bbfb429092061d65503cc42b2cf7ee18780a2993a209e9e6b501b5f853f0a"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CausalOrbitPulse.lean": {
+      "production": "baabd194d075e7c4d48c5934abd62553d7d8cac89276b7ebd2b435ccbd9b5ee8",
+      "replay": "baabd194d075e7c4d48c5934abd62553d7d8cac89276b7ebd2b435ccbd9b5ee8"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CanonicalFlowPulseSmooth.lean": {
+      "production": "c2b5b3565883d2e750e653c963357255258ac8abc64210002074dbff2334f89f",
+      "replay": "c2b5b3565883d2e750e653c963357255258ac8abc64210002074dbff2334f89f"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CompactParameterIntegral.lean": {
+      "production": "f473da09b609f0e4dd801f229c187dfc7fe8dab132a2a101c4af8c20ce0a22d1",
+      "replay": "f473da09b609f0e4dd801f229c187dfc7fe8dab132a2a101c4af8c20ce0a22d1"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CanonicalOrbitPulse.lean": {
+      "production": "44bf58121d4fc34ae6fbf2c8bcb04360e872ef2a9d8f83fb9161dc485ed48a6a",
+      "replay": "44bf58121d4fc34ae6fbf2c8bcb04360e872ef2a9d8f83fb9161dc485ed48a6a"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/AffineEndSubtype.lean": {
+      "production": "6aa4d090a0d424bc6df6a17981be73c6a1e3a1e70148ba7affb7ddc7a5b533a4",
+      "replay": "6aa4d090a0d424bc6df6a17981be73c6a1e3a1e70148ba7affb7ddc7a5b533a4"
+    },
+    "Burnett/Geometry/Causality/CausalVolumeTimeOnPaths.lean": {
+      "production": "be85164c3e5bde9bf9ffb672fad18cda4c1aa1d244ba9f81a2f880fe569300e3",
+      "replay": "be85164c3e5bde9bf9ffb672fad18cda4c1aa1d244ba9f81a2f880fe569300e3"
+    },
+    "Burnett/Geometry/Causality/CausalPathVolumeEnds.lean": {
+      "production": "dc62644371e20562ec406ea6878b55073f5a6e30a5ff2398d4d562e6b85d232b",
+      "replay": "dc62644371e20562ec406ea6878b55073f5a6e30a5ff2398d4d562e6b85d232b"
+    },
+    "Burnett/Geometry/Causality/VolumeTimeEnds.lean": {
+      "production": "bffa534210c81f08ab0f25a954559a970d04ec6d6434e2afa915a4af83f3e953",
+      "replay": "bffa534210c81f08ab0f25a954559a970d04ec6d6434e2afa915a4af83f3e953"
+    },
+    "Burnett/Geometry/Causality/ChronologicalVolume.lean": {
+      "production": "59783aefda9be91369159f0bed2d15e606a7bfd624bc65973ccf6d8e23869326",
+      "replay": "59783aefda9be91369159f0bed2d15e606a7bfd624bc65973ccf6d8e23869326"
+    },
+    "Burnett/Geometry/Causality/ChartChronologicalNull.lean": {
+      "production": "9fd8ec395b8ba0447b872032ea2abb9087f988681b27181f8ad20920d86f60ae",
+      "replay": "9fd8ec395b8ba0447b872032ea2abb9087f988681b27181f8ad20920d86f60ae"
+    },
+    "Burnett/Geometry/Causality/CausalVolumeContinuity.lean": {
+      "production": "5144d825716984c9881ce86add2677ead515b241cc2fe860a55b48dedb25624a",
+      "replay": "5144d825716984c9881ce86add2677ead515b241cc2fe860a55b48dedb25624a"
+    },
+    "Burnett/Geometry/Causality/FiniteCausalVolume.lean": {
+      "production": "335a10798b4f7504485ddb7905769b1cd17de988ddb50754d59bfa6d1d7176a8",
+      "replay": "335a10798b4f7504485ddb7905769b1cd17de988ddb50754d59bfa6d1d7176a8"
+    },
+    "Burnett/Geometry/Causality/CausalCompactEnds.lean": {
+      "production": "0ee71eb8583428826464741f396de0130903d5b2d999f937dbaf31287634502f",
+      "replay": "0ee71eb8583428826464741f396de0130903d5b2d999f937dbaf31287634502f"
+    },
+    "Burnett/Geometry/Causality/CausalChartRelation.lean": {
+      "production": "ef6d2c2d6e367928f305a1d1f285a0cadc4f7d88bf06f36a30fdda2d67fc429e",
+      "replay": "ef6d2c2d6e367928f305a1d1f285a0cadc4f7d88bf06f36a30fdda2d67fc429e"
+    },
+    "Burnett/Geometry/Causality/CausalVolumeAssembly.lean": {
+      "production": "1020036e5fdba7c47e46fd599781054b8caab10e9bd18d6ce4b37f437ae336e7",
+      "replay": "1020036e5fdba7c47e46fd599781054b8caab10e9bd18d6ce4b37f437ae336e7"
+    },
+    "Burnett/Geometry/Causality/CausalVolumeStrict.lean": {
+      "production": "be62faf7609084e90f5177fde7d5a5f086bd224f4c94bf6dbf053a76074274d2",
+      "replay": "be62faf7609084e90f5177fde7d5a5f086bd224f4c94bf6dbf053a76074274d2"
+    },
+    "Burnett/Geometry/Causality/ClosedCausalDiamonds.lean": {
+      "production": "5683a367a93aebd30b0b0bdffa50c881f1b7ea17e638697998f866e5ca18faf9",
+      "replay": "5683a367a93aebd30b0b0bdffa50c881f1b7ea17e638697998f866e5ca18faf9"
+    },
+    "Burnett/Geometry/Causality/ChartChronologicalNeighborhoods.lean": {
+      "production": "e84d68746137a4de23db63323eb150c09b65e62f7b45d0f9960a34608503b98c",
+      "replay": "e84d68746137a4de23db63323eb150c09b65e62f7b45d0f9960a34608503b98c"
+    },
+    "Burnett/Geometry/Causality/ChartChronologicalSteps.lean": {
+      "production": "fe4868bf02496065895d29b80bce4569e4a8b717c592d07b7b2b77519bbb6d22",
+      "replay": "fe4868bf02496065895d29b80bce4569e4a8b717c592d07b7b2b77519bbb6d22"
+    },
+    "Burnett/Geometry/Causality/FutureTimelikeChords.lean": {
+      "production": "381e7cc7c4866bb12187aec7e3f6d24fd058d1fe6bc6beb3c6c020da63965f9a",
+      "replay": "381e7cc7c4866bb12187aec7e3f6d24fd058d1fe6bc6beb3c6c020da63965f9a"
+    },
+    "Burnett/Geometry/Causality/ChartTimeOrientation.lean": {
+      "production": "a6575b0e468a3c27cb4af92881ef2e657ea787a462a5380d2d3394670c4162c9",
+      "replay": "a6575b0e468a3c27cb4af92881ef2e657ea787a462a5380d2d3394670c4162c9"
+    },
+    "Burnett/Geometry/Causality/TimelikeOrthogonalLevels.lean": {
+      "production": "ebbb59885505e7ec364ba56a25f66eef4c433e551b2f7223b65e9e5a6216526f",
+      "replay": "ebbb59885505e7ec364ba56a25f66eef4c433e551b2f7223b65e9e5a6216526f"
+    },
+    "Burnett/Geometry/Causality/ChartCausalFuture.lean": {
+      "production": "6c16a9ea3ffedab8de905f64f34aae5d94c1c2182fa0a991af6bc7c8b0f6b2f9",
+      "replay": "6c16a9ea3ffedab8de905f64f34aae5d94c1c2182fa0a991af6bc7c8b0f6b2f9"
+    },
+    "Burnett/Geometry/Causality/ChartCausalChronology.lean": {
+      "production": "977954f8d6d5e40c717460231e61e65c0676a1dd43f25cf816072c2618decc83",
+      "replay": "977954f8d6d5e40c717460231e61e65c0676a1dd43f25cf816072c2618decc83"
+    },
+    "Burnett/Geometry/Causality/IntrinsicChronologicalCurves.lean": {
+      "production": "83f9b4beae6ada9c634f105d8263ce701fb8363e372d730e4932de04ff8a026d",
+      "replay": "83f9b4beae6ada9c634f105d8263ce701fb8363e372d730e4932de04ff8a026d"
+    },
+    "Burnett/Geometry/Causality/FutureCurveSecants.lean": {
+      "production": "7a07613b495940ea3a000a6a22eaa5d609330ad4f9f7a78bc2c42cc1704585c4",
+      "replay": "7a07613b495940ea3a000a6a22eaa5d609330ad4f9f7a78bc2c42cc1704585c4"
+    },
+    "Burnett/Geometry/Causality/CausalTimeDirectionChange.lean": {
+      "production": "b21ab3165f25fc09c69366c7fec6f6128ff1c26ba8367fef6e2f1442251b7ad9",
+      "replay": "b21ab3165f25fc09c69366c7fec6f6128ff1c26ba8367fef6e2f1442251b7ad9"
+    },
+    "Burnett/Geometry/Causality/ChartCausalCurvePush.lean": {
+      "production": "8d1c8b415d3b5600924218185be751b328efdb21a9bef9a0754a2e15ba441dd7",
+      "replay": "8d1c8b415d3b5600924218185be751b328efdb21a9bef9a0754a2e15ba441dd7"
+    },
+    "Burnett/Geometry/Causality/ChartCausalPushUp.lean": {
+      "production": "a42b9391e7d67be5bc0b690b773f8ec348460e35161f8e4fbc0f409a01f34edb",
+      "replay": "a42b9391e7d67be5bc0b690b773f8ec348460e35161f8e4fbc0f409a01f34edb"
+    },
+    "Burnett/Geometry/Causality/CausalPushUpEstimate.lean": {
+      "production": "bd93f2a46cd0e9b4a694f94a816898fc5504b36bcd795c6041f277d0214a0cff",
+      "replay": "bd93f2a46cd0e9b4a694f94a816898fc5504b36bcd795c6041f277d0214a0cff"
+    },
+    "Burnett/Geometry/Causality/ChartMetricLipschitz.lean": {
+      "production": "7a48f63d1d24dee940eb84beb38cc9189c35b34516c68a1bbe55f6215a81fc9e",
+      "replay": "7a48f63d1d24dee940eb84beb38cc9189c35b34516c68a1bbe55f6215a81fc9e"
+    },
+    "Burnett/Geometry/Causality/ChartCausalConeMargin.lean": {
+      "production": "cc85eb39e762154c31fa16e8e4be95b9cab4baae65270267ace18e8726259345",
+      "replay": "cc85eb39e762154c31fa16e8e4be95b9cab4baae65270267ace18e8726259345"
+    },
+    "Burnett/Geometry/Causality/RegularCausalOrientation.lean": {
+      "production": "6812e81921197db02adb4525148438b2cf76d313d862bc5b4fd9c37aaa4707ac",
+      "replay": "6812e81921197db02adb4525148438b2cf76d313d862bc5b4fd9c37aaa4707ac"
+    },
+    "Burnett/Geometry/Causality/IntrinsicCausalChartSegments.lean": {
+      "production": "4a107778fa0907debce349de56a8e0d7b25947e1168d687a315f248918ccb6f5",
+      "replay": "4a107778fa0907debce349de56a8e0d7b25947e1168d687a315f248918ccb6f5"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/PulseEinsteinLift.lean": {
+      "production": "248a7cf8746671274eae147fc9ba3027222e5772410387f7792b1a854af7c3c1",
+      "replay": "16949e851fb5bd01ee4c0657f4262d5fa04c2e99f648786e2c257c39b1714d64"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/ActualPulseMomentumLift.lean": {
+      "production": "0aa2b518cd48d672a65e0aafe6b6f12761c0a54b02c17d5b72d5277de8e18e62",
+      "replay": "0aa2b518cd48d672a65e0aafe6b6f12761c0a54b02c17d5b72d5277de8e18e62"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/CanonicalPulseFirstIntegral.lean": {
+      "production": "790fa110bedfad6dc50cde88e1581b231f93deb8eea902723390702691cc2fa2",
+      "replay": "790fa110bedfad6dc50cde88e1581b231f93deb8eea902723390702691cc2fa2"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Transport.lean": {
+      "production": "5e281bb2595329240f3d495a2adc609895f33376ae32ee5a22178dc768b4f471",
+      "replay": "5e281bb2595329240f3d495a2adc609895f33376ae32ee5a22178dc768b4f471"
+    },
+    "Burnett/Geometry/Cotangent/CosphereNullInclusion.lean": {
+      "production": "97d2d640c8325c641ddf4260424bceb88c5e64cbc4e29dd7ef5c48f16064c8f5",
+      "replay": "97d2d640c8325c641ddf4260424bceb88c5e64cbc4e29dd7ef5c48f16064c8f5"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/TestExtension.lean": {
+      "production": "a559b1a3165b2c79ed4ed93e1a038cde75e93b40fec1a506e492a8376a25d378",
+      "replay": "a559b1a3165b2c79ed4ed93e1a038cde75e93b40fec1a506e492a8376a25d378"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/CotangentHomeomorph.lean": {
+      "production": "1538a115d4ccf0fda5bcfeecda06f12ea7d157f6f62b927a0c80a531e8c39f8d",
+      "replay": "1538a115d4ccf0fda5bcfeecda06f12ea7d157f6f62b927a0c80a531e8c39f8d"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Cotangent.lean": {
+      "production": "190c96898bfe9d442e02c6cd5d034dbda721abd90ca145e53d5c29d852eb06d3",
+      "replay": "190c96898bfe9d442e02c6cd5d034dbda721abd90ca145e53d5c29d852eb06d3"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Metrics.lean": {
+      "production": "39b86339875979ca451c72956d7c2f45bbd12144e333009e34a7b32808699877",
+      "replay": "39b86339875979ca451c72956d7c2f45bbd12144e333009e34a7b32808699877"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Inclusion.lean": {
+      "production": "56a0faa63615810b8cfafe203e57f38fe8697cde760bc665f73dc0dc58da6a78",
+      "replay": "56a0faa63615810b8cfafe203e57f38fe8697cde760bc665f73dc0dc58da6a78"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/CosphereMeasure.lean": {
+      "production": "3f1f703097142d1bd5c68aa580ffff9e76146967a21214c51577bd4b3628739b",
+      "replay": "3f1f703097142d1bd5c68aa580ffff9e76146967a21214c51577bd4b3628739b"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Hamilton.lean": {
+      "production": "303bcb74d2a54682b51c0e5361a2655c0d2b9f25bac94ec60f2ef597777e3d1f",
+      "replay": "303bcb74d2a54682b51c0e5361a2655c0d2b9f25bac94ec60f2ef597777e3d1f"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/EinsteinMoments.lean": {
+      "production": "37fc74f4e807652c174208c3b07ef87e87d8008d6364875bd0b6551f9f9542fa",
+      "replay": "37fc74f4e807652c174208c3b07ef87e87d8008d6364875bd0b6551f9f9542fa"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/TensorTests.lean": {
+      "production": "10a1dc22f5e1a9f18aaaf98c8ffc43975700354db2a2951dbc00567834c28593",
+      "replay": "10a1dc22f5e1a9f18aaaf98c8ffc43975700354db2a2951dbc00567834c28593"
+    },
+    "Burnett/Geometry/Cotangent/TensorPhaseTests.lean": {
+      "production": "cd92e2fe99a6beaef1fe123b7cb488aa70fb356234c3895c923e6e03697eb09c",
+      "replay": "cd92e2fe99a6beaef1fe123b7cb488aa70fb356234c3895c923e6e03697eb09c"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/LorentzVolume.lean": {
+      "production": "972d8bfd1b1d72f19a91b3b8275bf36136248ce31652b39ea6620c3314c5bbbe",
+      "replay": "972d8bfd1b1d72f19a91b3b8275bf36136248ce31652b39ea6620c3314c5bbbe"
+    },
+    "Burnett/Geometry/Cotangent/OpenRegion/Curvature.lean": {
+      "production": "6335f02ff3b83631a3af9967332a7e91392416710ceb5c624be7f19c32260b17",
+      "replay": "6335f02ff3b83631a3af9967332a7e91392416710ceb5c624be7f19c32260b17"
+    },
+    "Burnett/Geometry/Causality/IntrinsicRegularPiecewiseCausality.lean": {
+      "production": "81b39913b3f1cc51079f994577d9182e067b3680598d742d8ea5d4d3a2732d8a",
+      "replay": "81b39913b3f1cc51079f994577d9182e067b3680598d742d8ea5d4d3a2732d8a"
+    },
+    "Burnett/Geometry/Causality/IntrinsicPiecewiseStrongCausality.lean": {
+      "production": "7cf5c87d7c477969a70134261781945e8c6b516e20d143cc3b5e9006de91cffb",
+      "replay": "7cf5c87d7c477969a70134261781945e8c6b516e20d143cc3b5e9006de91cffb"
+    },
+    "Burnett/Geometry/Causality/IntrinsicPiecewiseCausalEquivalence.lean": {
+      "production": "96169dfb183faf550ae96112f18bbc9a527f363eba813037e6a8be801464bac7",
+      "replay": "96169dfb183faf550ae96112f18bbc9a527f363eba813037e6a8be801464bac7"
+    },
+    "Burnett/Geometry/Causality/IntrinsicPiecewiseCausalPaths.lean": {
+      "production": "e14078850cfe32748c8976a9f0e155cc3728564d8f6ee529c19e21f7f5a4b939",
+      "replay": "e14078850cfe32748c8976a9f0e155cc3728564d8f6ee529c19e21f7f5a4b939"
+    },
+    "Burnett/Geometry/Cotangent/CausalPulse/AmbientEinsteinLift.lean": {
+      "production": "3602bf20947d8842830067ff485fcb7aeb0d730985e18cba1089dc397861da12",
+      "replay": "3602bf20947d8842830067ff485fcb7aeb0d730985e18cba1089dc397861da12"
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "lem:lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_regularIntrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:ambient-closed-cone-momentum-lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:actual-complete-null-time",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.CompleteNullTimeFromCausality",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_completeNullTime_of_chartGlobalHyperbolicity"
+    },
+    {
+      "claim_id": "l01:actual-pulse-first-integral",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.CanonicalPulseFirstIntegral",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_smooth_canonicalPulseFirstIntegral"
+    },
+    {
+      "claim_id": "l01:actual-pulse-momentum-lift",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.ActualPulseMomentumLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_actualFullMomentumLift_of_completeNullTime"
+    },
+    {
+      "claim_id": "l01:intrinsic-causal-relation",
+      "module": "Burnett.Geometry.Causality.IntrinsicPiecewiseCausalEquivalence",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_intrinsicPiecewiseCausalRelation"
+    },
+    {
+      "claim_id": "l01:intrinsic-global-hyperbolicity",
+      "module": "Burnett.Geometry.Causality.IntrinsicPiecewiseStrongCausality",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartGlobalHyperbolicity_iff_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l01:regular-causal-relation",
+      "module": "Burnett.Geometry.Causality.IntrinsicRegularPiecewiseCausality",
+      "declaration": "Burnett.Geometry.FiniteCausalVolume.chartCausalRelation_eq_regularIntrinsicPiecewiseCausalRelation_of_compactDiamonds"
+    },
+    {
+      "claim_id": "l02:restricted-einstein-moments",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.EinsteinMoments",
+      "declaration": "Burnett.Geometry.OpenRegion.hasCosphereEinsteinMoments_openSubtype"
+    },
+    {
+      "claim_id": "l02:restricted-unit-null-transport",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.Transport",
+      "declaration": "Burnett.Geometry.OpenRegion.unitNullMeasureOfOpen_transport"
+    },
+    {
+      "claim_id": "l02:open-globally-hyperbolic-lift",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_intrinsicPiecewise"
+    },
+    {
+      "claim_id": "l02:open-regular-globally-hyperbolic-lift",
+      "module": "Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift",
+      "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_regularIntrinsicPiecewise"
+    }
+  ],
+  "unused_reviewed_modules": [
+    "Burnett.Geometry.Cotangent.OpenRegion.EinsteinLift",
+    "Burnett.Geometry.Cotangent.OpenRegion.MomentumLift"
+  ]
+}

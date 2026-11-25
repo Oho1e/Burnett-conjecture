@@ -1156,7 +1156,7 @@
         "无权推前或rho径向形式提升均不足；权重与径向漂移必须一起核对。",
         "a的全零锥光滑定义、离锥延拓、紧基支撑及nu的Radon性都属于实际证明义务。"
       ],
-      "next_action": "证明从全局双曲性得到光滑类空Cauchy截面，并将当前提升接到L02上同一个射线测度。",
+      "next_action": "全流形的局部矩提升已接入内禀分段因果的全局双曲性。主定理尚需把原余球面输运结论交给这一入口。",
       "supplementary_obligations": []
     },
     {
@@ -1178,7 +1178,7 @@
         "任意全局双曲开放U的量词必须保留；nu可随U构造，mu不重新选择。",
         "lem:lift消费已闭合ray transport，不是ray transport本体前提。"
       ],
-      "next_action": "写出thm:main完整目标类型，逐项代入真正闭合的thm:quadratic、C04与L01输出，核查同一mu身份及任意U量词。",
+      "next_action": "开子时空限制保留原矩等式和原输运，同一限制测度已有全局双曲提升。主定理尚需提供原余球面输运。",
       "supplementary_obligations": []
     },
     {
@@ -8736,6 +8736,72 @@
       "claim_id": "c04:actual-summed-correction-limit",
       "source_slices": [
         "C04"
+      ]
+    },
+    {
+      "claim_id": "l01:ambient-closed-cone-momentum-lift",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:actual-complete-null-time",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:actual-pulse-first-integral",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:actual-pulse-momentum-lift",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:intrinsic-causal-relation",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:intrinsic-global-hyperbolicity",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l01:regular-causal-relation",
+      "source_slices": [
+        "L01"
+      ]
+    },
+    {
+      "claim_id": "l02:restricted-einstein-moments",
+      "source_slices": [
+        "L02"
+      ]
+    },
+    {
+      "claim_id": "l02:restricted-unit-null-transport",
+      "source_slices": [
+        "L02"
+      ]
+    },
+    {
+      "claim_id": "l02:open-globally-hyperbolic-lift",
+      "source_slices": [
+        "L02"
+      ]
+    },
+    {
+      "claim_id": "l02:open-regular-globally-hyperbolic-lift",
+      "source_slices": [
+        "L02"
       ]
     }
   ],
