@@ -1,0 +1,36 @@
+{
+  "slice": "A05",
+  "source_lines": [
+    1026,
+    1245
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_preflight_sha256": "117d74466bc3453900d46c18574c6327e38fba51e8de73c64dae38879056a565",
+  "native_candidate_sha256": "7886f8341976bbb0302d2a0bec3fd69c69e58ac53184037c7ec6ff6c1d3e339a",
+  "native_axiom_check_sha256": "a8718140951667cc03c0bb0f886c796b61c42b970d0febcd79a5b699b57415e7",
+  "independent_readback_sha256": "b67e505e972c6570fb04037436e1aa8e166bd89d805bf2f66a823bc992024e95",
+  "targets": [
+    {
+      "claim_id": "a05:unscaled",
+      "module": "Burnett.Analysis.AllScaleTransfer.ActualUnscaledEstimate",
+      "declaration": "Burnett.A05.exists_unscaled_radianTrilinearForm_bound"
+    },
+    {
+      "claim_id": "a05:factorwise-truncation",
+      "module": "Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_factorwise_truncation_bound"
+    },
+    {
+      "claim_id": "a05:adjacent-cap",
+      "module": "Burnett.Analysis.AllScaleTransfer.ActualNearWithProfiles",
+      "declaration": "Burnett.A05.exists_actual_radian_near_field_bound"
+    },
+    {
+      "claim_id": "a05:scalar-L3-extension",
+      "module": "Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension",
+      "declaration": "Burnett.A05.exists_radianTrilinearForm_Lp3_extension"
+    }
+  ],
+  "closes_parent_claim": false,
+  "prospective_registration_sha256": "b6bd485a27ecae611fe332a43c6347a38d9f08490b8297c234576a6ee75d304f"
+}

@@ -131,7 +131,7 @@ polarized energy; it does not estimate isolated unsymmetrized pairings.
 \end{lemma}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+The registered theorem `Burnett.A02.FrequencySplit.paper_completeCubic_continuity` gives both estimates for the actual complete energy. Author confirmation is pending. [Continuity of the complete cubic energy](paper-cubic-continuity.en.md)
 
 ## T06
 

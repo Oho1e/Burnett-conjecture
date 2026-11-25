@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `fe58b1072b6256264bbd3dd78f22742eaf42b48a9470d52395e33866c2baf6b5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `2c5ab09aa2193221eae747cf38361dc64df8dc9a5472f7dfd49b9dd305181783`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -462,7 +462,7 @@ Internal refinements (no separate completion status):
 - An independently reusable finite-exponent commutator obligation, not replaceable by A01's Lipschitz-L² version. (Paper lines 626–677)
 - Full symmetric polarization and telescoping continuity. (Paper lines 679–715)
 
-Next: The complete homogeneous and fixed-regularization energies, the finite-exponent commutator, and the mixed coefficient bound have Lean proofs. Original-statement confirmation and the spatially varying applications follow separately.
+Next: Lemma 3.2 has a single entry for both the homogeneous bound and the W¹³ bound for fixed smooth changes at low frequency. Author confirmation and the spatially varying applications follow separately.
 
 <a id="a03"></a>
 
@@ -568,7 +568,7 @@ Internal refinements (no separate completion status):
 - Radial remainder, comparable piece, third-slot support protection, and truncation uniformity. (Paper lines 1148–1224)
 - Cap summation and β_* output. (Paper lines 1226–1243)
 
-Next: Establish the two core obligations—the ρ=0 paraproduct and radial transfer with third-slot annular protection—then combine cap rescaling/summation and verify per-factor truncation uniformity.
+Next: The unscaled estimate, factorwise truncations, adjacent-cap estimate, and L³ extension have Lean proofs. Connect the actual normalized near and Ward symbols to these estimates.
 
 <a id="a06"></a>
 

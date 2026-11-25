@@ -732,3 +732,5 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 70. 原投影补丁源与宽截断误差
 
 原三次分割的同一截断供全空间投影源和两项宽冻结乘子误差使用。固定 p > 3 后，两项最终 L³ 上界均含同一补丁的体积立方根。固定薄锥厚度后，同一原投影场给出两项薄屏梯度误差估计。已实现冻结三次作用量、紧图窗内系数一致的实际薄屏替换和物理远角符号的精确相位恒等式。完整冻结分解、变背景交换子极限和全局输运仍待完成。 [冻结三次作用量、薄屏替换与物理远角符号](../statements/frozen-cubic-transport.zh-CN.md) · [原投影补丁源与宽截断误差](../statements/original-transport-patch-estimates.zh-CN.md)
+
+正式库实现引理 3.2 的两项估计，以及 A05 的未缩放界、截断、相邻帽估计和 L³ 延拓。 [完整三次能量的连续性](../statements/paper-cubic-continuity.zh-CN.md) · [全尺度与相邻帽三线性估计](../statements/all-scale-transfer.zh-CN.md)

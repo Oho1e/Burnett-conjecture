@@ -131,7 +131,7 @@ polarized energy; it does not estimate isolated unsymmetrized pairings.
 \end{lemma}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+`Burnett.A02.FrequencySplit.paper_completeCubic_continuity` 对实际完整三次能量给出两项估计。作者确认待登记。 [完整三次能量的连续性](paper-cubic-continuity.zh-CN.md)
 
 ## T06
 

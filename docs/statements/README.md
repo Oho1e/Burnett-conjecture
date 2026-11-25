@@ -45,7 +45,7 @@
 | 2.1 | theorem | `thm:quadratic` | 354–356 | 未建模 |
 | 2.2 | corollary | `cor:base-marginal` | 487–506 | [已有 Lean 证明](base-marginal-and-angular-disintegration.zh-CN.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | 未建模 |
-| 3.2 | lemma | `lem:cubic-continuity` | 613–623 | 未建模 |
+| 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [已实现](paper-cubic-continuity.zh-CN.md) |
 | 3.3 | lemma | `lem:freezing` | 736–764 | 未建模 |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | 未建模 |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | 未建模 |
@@ -94,3 +94,4 @@
 - [正零余向量二阶矩](quadratic-null-second-moments.zh-CN.md)
 - [原投影补丁源与宽截断误差](original-transport-patch-estimates.zh-CN.md)
 - [冻结三次作用量、薄屏替换与物理远角符号](frozen-cubic-transport.zh-CN.md)
+- [全尺度与相邻帽三线性估计](all-scale-transfer.zh-CN.md)

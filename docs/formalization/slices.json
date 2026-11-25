@@ -331,7 +331,7 @@
         "c_j的乘积频率线性乘子留在双线性算子外；不能假称在乘积频率0光滑。",
         "有限指数条件r>1必须保留，不能外推到未证端点。"
       ],
-      "next_action": "完整齐次及固定正则化能量、有穷指数交换子和混合系数界均有 Lean 证明。原文命题确认及空间变系数应用另有后续工作。",
+      "next_action": "论文引理 3.2 已登记同一条声明，包含齐次界和固定光滑低频修订的 W¹³ 界。作者确认和空间变系数应用另有后续工作。",
       "supplementary_obligations": [
         {
           "id": "local:complete-cubic-energy-definition",
@@ -470,7 +470,7 @@
         "变换矩阵在全频空间不一致可逆；证明只需固定放大锥上的比值符号界。",
         "C^100、Fourier系数衰减与平方函数多项式损失须共同核算，不能凭长度有限宣称一致。"
       ],
-      "next_action": "先落实ρ=0抛物积与含第三槽环保护的径向传递两个核心子义务，再拼接帽重标度/求和并核实逐因子截断一致性。",
+      "next_action": "未缩放界、逐因子截断、相邻帽估计和 L³ 延拓已实现。接续近角及 Ward 实际归一化符号与这些估计的联接。",
       "supplementary_obligations": [
         {
           "id": "local:cap-rescaling-invariant-trilinear-norm",
@@ -8460,6 +8460,30 @@
       "claim_id": "v10:actual-thin-screen-far-coefficient",
       "source_slices": [
         "V10"
+      ]
+    },
+    {
+      "claim_id": "a05:unscaled",
+      "source_slices": [
+        "A05"
+      ]
+    },
+    {
+      "claim_id": "a05:factorwise-truncation",
+      "source_slices": [
+        "A05"
+      ]
+    },
+    {
+      "claim_id": "a05:adjacent-cap",
+      "source_slices": [
+        "A05"
+      ]
+    },
+    {
+      "claim_id": "a05:scalar-L3-extension",
+      "source_slices": [
+        "A05"
       ]
     }
   ],
