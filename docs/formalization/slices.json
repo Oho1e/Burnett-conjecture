@@ -570,7 +570,7 @@
         "d只在高槽；若误置低槽会产生未控制的低角交换子。",
         "T_H*的支撑/高频可比性及低角共轭必须明确。"
       ],
-      "next_action": "基于A06分离逐项证明首界与导数式，再用两个外部指数界闭合原算子及高伴随粗交换子；统一C_δ。",
+      "next_action": "两组高槽交换子指数界和实际高伴随已实现。接续角调和展开与原补丁的截断恢复。",
       "supplementary_obligations": [
         {
           "id": "local:high-adjoint-rough-commutator-duality",
@@ -965,7 +965,7 @@
         "far phase gap仅沿物理流形，独立变量延拓需要额外cutoff构造。",
         "T_F低槽已有S一次，不能再把S u作为外部low amplitude。"
       ],
-      "next_action": "防零有符号商在物理远角支撑上恢复实际三次分子，实际薄屏的系数等式和光滑延拓已实现。接续算子展开、共同系数界和 C03 源配对。",
+      "next_action": "原薄屏远角精确商、红外恒等和高槽伴随已实现。接续同一原补丁的近远分割及投影源配对。",
       "supplementary_obligations": []
     },
     {
@@ -8532,6 +8532,72 @@
       "claim_id": "l01:actual-lift-on-cauchy-slice",
       "source_slices": [
         "L01"
+      ]
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-bound",
+      "source_slices": [
+        "A07"
+      ]
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-angular-jets",
+      "source_slices": [
+        "A07"
+      ]
+    },
+    {
+      "claim_id": "a06:high-slot:common-angular-jets",
+      "source_slices": [
+        "A07"
+      ]
+    },
+    {
+      "claim_id": "a06:high-slot:actual-high-adjoint",
+      "source_slices": [
+        "A07"
+      ]
+    },
+    {
+      "claim_id": "v10:dual-infrared-exact",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:independent-angular-extension",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:correction-angular-window",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:ratio-cutoff-inert",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:exact-physical-far-quotient",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:actual-weighted-numerator-adjoint",
+      "source_slices": [
+        "V10"
+      ]
+    },
+    {
+      "claim_id": "v10:actual-far-radian-adjoint",
+      "source_slices": [
+        "V10"
       ]
     }
   ],

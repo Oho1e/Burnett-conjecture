@@ -5493,6 +5493,61 @@
       "claim_id": "l01:actual-lift-on-cauchy-slice",
       "module": "Burnett.Geometry.Cotangent.ActualCauchyMomentumLift",
       "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_actualFullMomentumLift_of_smooth_spacelike_cauchy"
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-bound",
+      "module": "Burnett.Analysis.CubicEnergy.HighSlotCommutator.FullCartesianHighSlotBound",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_realSchwartz_highSlot_inputL2_bound"
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-angular-jets",
+      "module": "Burnett.Analysis.CubicEnergy.HighSlotCommutator.CartesianHighSlotAngularJets",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highSlot_inputL2_angularJetBound"
+    },
+    {
+      "claim_id": "a06:high-slot:common-angular-jets",
+      "module": "Burnett.Analysis.CubicEnergy.HighSlotCommutator.CartesianHighSlotAngularJets",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highSlot_common_angularJetBound"
+    },
+    {
+      "claim_id": "a06:high-slot:actual-high-adjoint",
+      "module": "Burnett.Analysis.CubicEnergy.HighSlotCommutator.ActualCartesianHighAdjoint",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highAdjoint_rough_angularJetBound"
+    },
+    {
+      "claim_id": "v10:dual-infrared-exact",
+      "module": "Burnett.Analysis.FrozenTransport.ActualV10Infrared",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFar_dual_infrared"
+    },
+    {
+      "claim_id": "v10:independent-angular-extension",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarAngularProfile",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualFarAngularProfile_contDiffOn"
+    },
+    {
+      "claim_id": "v10:correction-angular-window",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarAngularProfile",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.farAngularDomain_contains_correction_window"
+    },
+    {
+      "claim_id": "v10:ratio-cutoff-inert",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarAngularProfile",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFar_ratio_guard_inert"
+    },
+    {
+      "claim_id": "v10:exact-physical-far-quotient",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarPhysicalQuotient",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualThinFar_exact_physicalQuotient"
+    },
+    {
+      "claim_id": "v10:actual-weighted-numerator-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarHighAdjoint",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFarWeightedNumerator_highAdjoint"
+    },
+    {
+      "claim_id": "v10:actual-far-radian-adjoint",
+      "module": "Burnett.Analysis.FrozenTransport.ActualFarHighAdjoint",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualFarRadianKernel_highAdjoint"
     }
   ],
   "inventory": [
@@ -5610,9 +5665,9 @@
         "endline": 1394
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
+      "modeling_status": "partially_modeled",
       "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t08"
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md"
     },
     {
       "claim_id": "prop:general-projection",
@@ -25695,6 +25750,204 @@
       "statement_record": "docs/statements/cauchy-momentum-lift.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "pending-independent-candidate-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-bound",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_realSchwartz_highSlot_inputL2_bound",
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1454,
+        "endline": 1465
+      },
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "semantic_review": "canonical-types-match-independent-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a06:high-slot:inputL2-angular-jets",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highSlot_inputL2_angularJetBound",
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1425,
+        "endline": 1465
+      },
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "semantic_review": "canonical-types-match-independent-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a06:high-slot:common-angular-jets",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highSlot_common_angularJetBound",
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1425,
+        "endline": 1465
+      },
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "semantic_review": "canonical-types-match-independent-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a06:high-slot:actual-high-adjoint",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A06.exists_regularizedLowCartesian_highAdjoint_rough_angularJetBound",
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1441,
+        "endline": 1465
+      },
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "semantic_review": "canonical-types-match-independent-readback",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:dual-infrared-exact",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2543
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFar_dual_infrared",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:independent-angular-extension",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2540,
+        "endline": 2554
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualFarAngularProfile_contDiffOn",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:correction-angular-window",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2540,
+        "endline": 2554
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.farAngularDomain_contains_correction_window",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:ratio-cutoff-inert",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2540,
+        "endline": 2554
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFar_ratio_guard_inert",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:exact-physical-far-quotient",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2554
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualThinFar_exact_physicalQuotient",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:actual-weighted-numerator-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2504,
+        "endline": 2554
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.actualThinFarWeightedNumerator_highAdjoint",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v10:actual-far-radian-adjoint",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2540,
+        "endline": 2556
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualFarRadianKernel_highAdjoint",
+      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "exact-quotient-and-adjoint-public-readback",
       "does_not_close_parent_claim": true
     }
   ],
