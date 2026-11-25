@@ -5263,6 +5263,41 @@
       "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward"
+    },
+    {
+      "claim_id": "thm:quadratic",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem",
+      "declaration": "Burnett.F07.exists_quadraticOriginalMeasure"
+    },
+    {
+      "claim_id": "f05:actual-first-order-system-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsic_symmetricJet_kernel_of_actualFirstOrderAction"
+    },
+    {
+      "claim_id": "f05:windowed-classical-principal-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalSymmetricJetForm",
+      "declaration": "Burnett.Microlocal.Overlap.windowedClassicalFormMatrix_change"
+    },
+    {
+      "claim_id": "f05:windowed-classical-global-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalGlobalLimit",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalCovariantGlobalCutoffTest_windowedClassical"
+    },
+    {
+      "claim_id": "f05:ordinary-local-classical-remainder",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder",
+      "declaration": "Burnett.Microlocal.Overlap.hasOrdinarySymmetricJetWindowSymbols_of_localClassicalExpansion"
+    },
+    {
+      "claim_id": "f05:original-geometric-classical-pairings",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGeometricSymmetricJetOperatorLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_geometricSymmetricJetOperatorPairings_and_EinsteinMoments"
+    },
+    {
+      "claim_id": "f05:compact-input-separated-global-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetCompactInputGlobalTail",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_symmetricJetGlobalForm_originalFull_sub_near_of_compactInput"
     }
   ],
   "inventory": [
@@ -5290,9 +5325,11 @@
         "endline": 356
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t02"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "declaration": "Burnett.F07.exists_quadraticOriginalMeasure",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "cor:base-marginal",
@@ -24700,6 +24737,108 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward",
       "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:actual-first-order-system-kernel",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 412,
+        "endline": 418
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsic_symmetricJet_kernel_of_actualFirstOrderAction",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:windowed-classical-principal-change",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 421,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.windowedClassicalFormMatrix_change",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:windowed-classical-global-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 391,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalCovariantGlobalCutoffTest_windowedClassical",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:ordinary-local-classical-remainder",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 395,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.hasOrdinarySymmetricJetWindowSymbols_of_localClassicalExpansion",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:original-geometric-classical-pairings",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 391,
+        "endline": 428
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_geometricSymmetricJetOperatorPairings_and_EinsteinMoments",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f05:compact-input-separated-global-limit",
+      "kind": "supporting-lemma",
+      "disposition": "formalize",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 398,
+        "endline": 410
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_symmetricJetGlobalForm_originalFull_sub_near_of_compactInput",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "does_not_close_parent_claim": true
     }

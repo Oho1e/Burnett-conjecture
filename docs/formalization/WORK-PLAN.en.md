@@ -719,3 +719,7 @@ The library proves the full corollary from the fixed quadratic measure and its E
 ## 68. Weighted change of auxiliary unit section
 
 The same witnesses for both metrics give the squared-norm weighted pushforwards of the intrinsic covariance and the physical measure. [Weighted change of auxiliary unit section](../statements/weighted-auxiliary-section-change.en.md)
+
+## 69. Positive null second moments
+
+One original subsequence gives the actual bundle pairings, Ricci kernel and positive null measure with all Einstein moments and fixed-chart naturality. Author confirmation of the quadratic theorem is pending. [Positive null second moments](../statements/quadratic-null-second-moments.en.md)

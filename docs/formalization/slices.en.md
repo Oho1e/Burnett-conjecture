@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `0f7e424a6c46325d08aa6bd99193cf8a40e2a2e20f33e5354020bd917aef96c8`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `15d4b762884ac6ce09d7a6738181505bd54e64d6f2f862bd975f94b092d4e945`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The actual local joint classical symbol and compact remainder transform on overlaps, and one refinement gives all such local pairings. Continue with separated-support kernels, bundle frame changes, and finite atlas assembly.
+Next: The same original covariance satisfies general first-order localization and the actual bundle operator pairings. The classical smooth kernel remainder is absorbed into the exact left symbol on each compact window. Separated supports use the actual kernel representation and the principal symbol satisfies fixed-chart naturality.
 
 <a id="f06"></a>
 
@@ -373,7 +373,7 @@ Boundaries:
 
 Consumers: F08 (proof-input), P01 (proof-input), V01 (proof-input), C04 (proof-input), L02 (proof-input), L03 (proof-input), X08 (proof-input), X09 (proof-input), V03 (definition), L01 (application).
 
-Next: On the same original subsequence and chart witnesses, the intrinsic covariance and the physical measure obey the squared-norm weighted pushforwards, with all integrable angular fiber tests. Continue checking the full F05 input and the frozen quadratic statement.
+Next: One original subsequence gives the actual bundle pairings, Ricci kernel and positive null measure with all Einstein moments and fixed-chart naturality. Author confirmation of the quadratic theorem is pending.
 
 <a id="f08"></a>
 

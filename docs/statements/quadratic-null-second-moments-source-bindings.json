@@ -1,0 +1,682 @@
+{
+  "slices": [
+    "F05",
+    "F07"
+  ],
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "statement_lines": [
+    354,
+    356
+  ],
+  "proof_lines": [
+    357,
+    480
+  ],
+  "local_operator_lines": [
+    391,
+    428
+  ],
+  "statement_and_proof_sha256": "53d480e4ea31b8ae813fac70286ebd87e7bf6b64f88830e7906bd9e765cb8ed5",
+  "compiler_sha256": "20bc808248e38cf072f84f4eb389f8f98e5925d703bcbfa400d9dd44f310c4db",
+  "library_entry_replay_sha256": "83ba3fc951ed7cb40c3b5415b35808ec040f05cc0363a4e2547d8dde866e6eea",
+  "lean_toolchain_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+  "lake_manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+  "full_paper_verified": false,
+  "roots": [
+    "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem",
+    "Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange",
+    "Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder"
+  ],
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/ClassicalSymbolSmoothingAddition.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ClassicalSymbolSmoothingAddition",
+      "sha256": "fc38befaa30cadbe1f76d02f02eb9f7855812a11d450fbebb2208287066d7599",
+      "replay_object_sha256": "74658b8785ed3388d26e9c60343d4d0a9f91cf1b1e3f9a4500dc819b819b696b",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactDisplacementKernelAction": "9658b12979239b9a05d28484e7090ef9fb22ef07d35f48664a0b3c95ee7e95ea",
+        "Burnett.Analysis.Microlocal.Overlap.CompactSmoothingKernelSymbol": "1ecd552a820052ff88c65e9d829586ed2a56e284e0ab816a44c29c5aa608519f"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactAngularPrincipalRegularity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactAngularPrincipalRegularity",
+      "sha256": "d6bb4c387290ea0801c463a5e2faa00a97f3db2126d1e46c39597c83a7583937",
+      "replay_object_sha256": "1decc797159d1b0c6d03e9f382c73ff893f0995c2f420b646414ac7cd80fce1b",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactLeftClassicalOperator": "c23a1cc22f5cb5e9f7f8341b82213f56cfd696500655f5815347370239c93e5a",
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralMixing": "e424e3c7c8fcdf83a0f5efe8c5573510e070adc5dd24bd9330a433ef878ccc39"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactDisplacementKernelAction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactDisplacementKernelAction",
+      "sha256": "db8078e4dc218a8b8f3f1e114410cb38bf0343a177e7c4d24d14dbb54563eba6",
+      "replay_object_sha256": "9658b12979239b9a05d28484e7090ef9fb22ef07d35f48664a0b3c95ee7e95ea",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ActualClassicalFullSymbol": "d3fcf20148edc6902d912e572172457f5d5409daa27c6a68a6d4cee11afe0423"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactLeftClassicalOperator.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactLeftClassicalOperator",
+      "sha256": "cbe568809fddf05dd9cb9d1229fd53a874031afafac86d9d91628af5f88fe5c7",
+      "replay_object_sha256": "c23a1cc22f5cb5e9f7f8341b82213f56cfd696500655f5815347370239c93e5a",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization": "ca0c719a195cb14e2bd3d68611680e60bf62c528f913034bcbbb5299f6c4edef",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalPuncturedPrincipal": "93c6d3362e0b73d6a5fb1dedc496af8a939e2c449be2e17779f2939bbe03684b"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactRectangleKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactRectangleKernel",
+      "sha256": "94e12beccaa09f679454facc5da9df28b5fa47e5c74142b8d8b9e9f8ea88cf76",
+      "replay_object_sha256": "703e7708f5eea494a2c0a5f38f13b6cd69cdabbe89e4505b97e7b4ab6745866b",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RectangularKernelWeakLimit": "05f5ab9ea16487522da370c13b30ed0bc8df64448913b96c6e10953cb96bc3e6"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactSmoothingKernelSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactSmoothingKernelSymbol",
+      "sha256": "d71f5b0225e3b639e7900615fbfe956c9c7be43dc4d43e7819d59e32c898a8af",
+      "replay_object_sha256": "1ecd552a820052ff88c65e9d829586ed2a56e284e0ab816a44c29c5aa608519f",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.AngularOrderMinusOneQuantization": "a0f4a1a2b5af4f943ad3bf35862ffdb0b1c2cfc9e5c665e78033aecd2d8eb760",
+        "Burnett.Analysis.Microlocal.Overlap.CompactParameterIntegral": "2d1e4a0e9fd2e5ea858557b3330483ae4e1b281312a01cab761d9050cec9f48a",
+        "Burnett.Analysis.PrincipalEnergy.Localization.IntegratedSymbolJets": "dbd423346edd8173238e9de165c55d9a5e08cb4b2c89305bcaf322ff3fa2eef9",
+        "Burnett.Analysis.PrincipalEnergy.Localization.ProductPartialJets": "3ca65b31588691a9e42b52218ccdff3c971994b10c753390e687d4c89c101800"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactSymmetricJetWindowData.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowData",
+      "sha256": "83706c6492f7db59aa0ebff89123d7c7a9ec645439b5c0755f72ae702cdbcd0c",
+      "replay_object_sha256": "c75c6c079f89daaf44df0d5355cffe48e84b153f46aaa021b0dd04b96b2ceb9f",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetSupportedChartTest": "02e63a6ccc933bc8d05cc7e931aeb9e70a87634279eba38b033400845d51a4d7",
+        "Burnett.Analysis.Microlocal.Overlap.CompactClassicalQuantization": "ca0c719a195cb14e2bd3d68611680e60bf62c528f913034bcbbb5299f6c4edef"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/CompactSymmetricJetWindowLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowLimit",
+      "sha256": "27430b99e30202d661edb8940b56f671171ed964c5493643aa2b6cf9054410ac",
+      "replay_object_sha256": "3b23d094fe34265c338b7b43c40df4b6ff1ea61188e1e6b96dc8f26330ddf3b4",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowData": "c75c6c079f89daaf44df0d5355cffe48e84b153f46aaa021b0dd04b96b2ceb9f",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetActualLocalSymbol": "df557190363b40ce3b89e2d1617db659d1f9d2a79aae5c86bc7e40550b020667"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/FiniteRestrictedDensitySum.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.FiniteRestrictedDensitySum",
+      "sha256": "cf51772b8bdc6f6f7281accd65bb4e32ba94463eed2d291107a3800b17dc73ce",
+      "replay_object_sha256": "82078015a5369f76c80f4924ade9b54914830b23435b7469f237c2b7f9d4213b",
+      "direct_imports": {
+        "Mathlib.MeasureTheory.Integral.Bochner.Set": "c08d108024522603a9f527e12dd0a4479037623e060b92ba54736c37e03e1215"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GeometricClassicalSmoothRemainder.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder",
+      "sha256": "293f828d830a2f862f3d7b40b6246117171b0a50a8ba5cda8720c826a52931fd",
+      "replay_object_sha256": "f10a6b7c4efb22be8728fd312de188e9a7967b203ac521a7114361679bcbbd27",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ClassicalSymbolSmoothingAddition": "74658b8785ed3388d26e9c60343d4d0a9f91cf1b1e3f9a4500dc819b819b696b",
+        "Burnett.Analysis.Microlocal.Overlap.LocalSmoothKernelCutoff": "41202cd9dc3a5da1b99353427e6a2770f30e309f3aafc3d424daa5d04be95433",
+        "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetWindowAdmission": "8dd0c8ef70ce10e82166a7bb2bee5b0b7e76a7538c15f11d3727818c3f2a3203"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GeometricSymmetricJetChartAction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetChartAction",
+      "sha256": "1e7ecae2c87bdea6d0a1021331441aa8ab7e394ae632af6ba39d9338fda31349",
+      "replay_object_sha256": "66d4296a4d437d66b84a6b000c275813e0cc711423acb4a0c5d4660f88b24753",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetOperatorForm": "b9bead13b9307ff621425329c9f6d88b9c6444f8961b568077506b7dec16eed9",
+        "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowData": "c75c6c079f89daaf44df0d5355cffe48e84b153f46aaa021b0dd04b96b2ceb9f"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GeometricSymmetricJetOperatorForm.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetOperatorForm",
+      "sha256": "a42152de794d5b1833583b0c51feb251d3be73117647e14b6896fcb3c0b937ec",
+      "replay_object_sha256": "b9bead13b9307ff621425329c9f6d88b9c6444f8961b568077506b7dec16eed9",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetKernelGram": "512029928c631008a9ce422927296bcda27aed4b308678b627dc7d1ee4431ab4",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetSeparatedChartPairing": "a413d0904b73b30c06885b0429ad95b158e1dd1f4cd18a815797f6bab88e2364",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJetOperatorEntries": "61e6f58d5d2a5a43357d7f11886e3508bd23633859225aa9b85db29cab37c472"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GeometricSymmetricJetWindowAdmission.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetWindowAdmission",
+      "sha256": "dd836c8fba262cf7fc2b729ecefa67db211badbcc7108ce8800aa698c3efbf4a",
+      "replay_object_sha256": "8dd0c8ef70ce10e82166a7bb2bee5b0b7e76a7538c15f11d3727818c3f2a3203",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetChartAction": "66d4296a4d437d66b84a6b000c275813e0cc711423acb4a0c5d4660f88b24753",
+        "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalSymmetricJetForm": "904404f327cde44cc610c135399f3dd246ab71f88889925edb38c047157e8619",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol": "32e7b4affc8f42d9ce28d6c6d3f6881236cfb3604c634bac9468a9d6d79394f9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalOriginalCovariantCutoff.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantCutoff",
+      "sha256": "5aadecd9bdc5eca7de9fed83a53bda7a788382eba5898004aa95851de40c7f16",
+      "replay_object_sha256": "92a747e1fead74bd73ec7c059daf8d73428f2795c0cd1ac035f73222b1450588",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetTestSections": "e71ee6b34b188b95c13a00615fea64bf5935841510c4f23a9ea16ab46de15b6d",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSymmetricJet": "dc2414dc4e5eb20cb4395b7bf40f49c30af1ff09f918402799c7384243e9c528",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient": "30c1b627ab259d1016aab67c93201048116293c67b1e1c3b39a0dc3758659208",
+        "Mathlib.LinearAlgebra.Multilinear.Curry": "4d15cef22700ffe14b28c07900cc46cf347a11c0f19b04260357e99c2ac81761"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalOriginalCovariantPartition.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantPartition",
+      "sha256": "0f429b24ee1b9b2308f2fdb7f2e87c55512aaa774a4f10708926adb761311f51",
+      "replay_object_sha256": "88be5e94b13f98cdc26103773bc2550c2609026c2a7b35fd074b0e85431e7392",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantCutoff": "92a747e1fead74bd73ec7c059daf8d73428f2795c0cd1ac035f73222b1450588",
+        "Burnett.Geometry.Cotangent.CompactTestPartition": "62ea6c25719c055871ead76dbe6bc60c2c1743237490283767c5fd98bcf35119"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/GlobalUnweightedFirstOrderRange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.GlobalUnweightedFirstOrderRange",
+      "sha256": "f9258c9445163887a31956b6a95145e5cee70ea4ca64e4176f1090dcf11b3841",
+      "replay_object_sha256": "94c2f066a9d875056a130bf784ce3cd7fb3c1ac674e4c36fd235204708415dd8",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrderRange": "854c3c667056c8009069d4c2825e48de5e8a081c928a4b55e21995c6d2ce75e1",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection": "94bc4094bd7669e1124ec377b458c0e4883e28f422f170f07d8c67ed4c289174",
+        "Burnett.Analysis.Microlocal.PhysicalChartCover": "ec77e5a628b43259fe40c4666ad75f9d04f2ba8bf2ebdad319c6f890ae38f115"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalBilateralMixing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralMixing",
+      "sha256": "46564394342018502f17b6bfa3320b6543b06a49d920fc876081bffba6000427",
+      "replay_object_sha256": "e424e3c7c8fcdf83a0f5efe8c5573510e070adc5dd24bd9330a433ef878ccc39",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalPrincipalUniqueness": "b6ebfe809b842ce9de0536f7851437e2c6ee6c20ff0b8dfde6c7553737f26cf9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalBilateralToLocal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralToLocal",
+      "sha256": "c2e7441e69ef1078506af33e305bf652c81b131c6ab28d213452038b898f9146",
+      "replay_object_sha256": "58200a4199e05ef71f28d8c2b837afbd388acd7d339900f0c549ca9dbfe8f449",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSourceReplacement": "edf56b1df3a1d6b68b35055154f916a217d51aa1906cdca9e88ac17e8c0a9a22",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol": "32e7b4affc8f42d9ce28d6c6d3f6881236cfb3604c634bac9468a9d6d79394f9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalHighFrequencySymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalHighFrequencySymbol",
+      "sha256": "018bfcfa4321d4dfe61a54779818f99b6e1ea5ba93680bd316ed4afdd0a37ca8",
+      "replay_object_sha256": "6398973eab4e5071d2c777ec92b5a05cc78356e363ab2c1450126dc77a93c152",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.AngularBilateralPrincipal": "8be13fe967987546bd479ace891838e195ac23b8b502ebbde81cff18edf7dbea"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalModulatedLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedLimit",
+      "sha256": "39ccf0095060513ddc6e28f30254e9133aad27cd84bb35f8cd1aeee970104019",
+      "replay_object_sha256": "e74619631d8bb355bae72b283240fdd126abbfaecab168a8ac7171d36dc3f6be",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedPairing": "de28c3cffb7b5e415816d0b5bb8b9d6103e348a67fe1af8b9c5dc838596c4004",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence": "72415958c58e60dd09367fffe390694491a28044121524fafa31e0b4ac317c67"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalModulatedPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedPairing",
+      "sha256": "c549c29e4b09c51822c912a7a66c77aad1dc95bc989919fa564a01de4dc35aac",
+      "replay_object_sha256": "de28c3cffb7b5e415816d0b5bb8b9d6103e348a67fe1af8b9c5dc838596c4004",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedTests": "e422f5e5404586a7cea732c0c1566102b0f0d5a83f136c12125e0a4682bdef6b",
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalHighFrequencySymbol": "6398973eab4e5071d2c777ec92b5a05cc78356e363ab2c1450126dc77a93c152",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol": "32e7b4affc8f42d9ce28d6c6d3f6881236cfb3604c634bac9468a9d6d79394f9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalModulatedTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedTests",
+      "sha256": "8d67c283ffe7deb31c19afd545afc4d0b8572a9104f1b2f625a1555849b3fad2",
+      "replay_object_sha256": "e422f5e5404586a7cea732c0c1566102b0f0d5a83f136c12125e0a4682bdef6b",
+      "direct_imports": {
+        "Burnett.Analysis.Fourier.Modulation": "e6729015acff9d724775d8833a307ad165de1472a146ab159abb38629aa304ac",
+        "Burnett.Analysis.PrincipalEnergy.Localization.FourierPhaseJets": "d3f81c12de4f523d573140261ebfd30a575c78f731ce114f1964435e7d77f64f",
+        "Burnett.Analysis.Microlocal.Overlap.AngularLocalClassical": "398a71e6fad8e9584ab950ff4ccb1ef7e4414f254d601fa6115decac6cf9505e",
+        "Mathlib.Analysis.Fourier.RiemannLebesgueLemma": "3bc778bf2f5ec8a2b475844a61c44b631976b3df6b1cadf8728d7b082f91e95e"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/JointClassicalPrincipalUniqueness.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.JointClassicalPrincipalUniqueness",
+      "sha256": "bb8b6bf49a671f761f4df810811dfaae67a79bc6451a6e47d7c1be779adc08bb",
+      "replay_object_sha256": "b6ebfe809b842ce9de0536f7851437e2c6ee6c20ff0b8dfde6c7553737f26cf9",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalModulatedLimit": "e74619631d8bb355bae72b283240fdd126abbfaecab168a8ac7171d36dc3f6be",
+        "Burnett.Analysis.GaugeProjection.OpenChartMetricRepresentatives": "5e9afeff193ba071b033b83f4ad26e0029996f3707e7dfa624bd06a50ed06991"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/LocalSmoothKernelCutoff.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.LocalSmoothKernelCutoff",
+      "sha256": "d94e2f9f56530e3305934191191a86c5e7bbc7136e379b5c2990b25c5d38d405",
+      "replay_object_sha256": "41202cd9dc3a5da1b99353427e6a2770f30e309f3aafc3d424daa5d04be95433",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol": "32e7b4affc8f42d9ce28d6c6d3f6881236cfb3604c634bac9468a9d6d79394f9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/NestedReceivingFirstOrderLocalization.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.NestedReceivingFirstOrderLocalization",
+      "sha256": "485fb15ecacc10ead0dc8b9886a54286e8ba7a11e88d2656f712c4a6aec5904a",
+      "replay_object_sha256": "7d0f17e4c86b90a8ae4826c4f353cecefabe6dfa0f9e0b12ec1be23fd75b4819",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator": "ed0ecdd54b2fd74083b55cc6dc8fc735e380b1de982b12d96218e5f00b2a8268",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingCovariantCurl": "9ff6dc8d9e82ef374aff1272690c8fa60e7e34dbe5bf3e321496b8340cb5a8bc"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalActualFirstOrderRange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange",
+      "sha256": "201e2feffa2891d710a087ea41471eb72c0b1077106768912902423c26350ca5",
+      "replay_object_sha256": "b800a6e97f4270db8d7a70937ddd78a2021a7dc1546e1cec32dad265b7639ea0",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderActualSectionAction": "b4a6c4029905a5cb77b2bb282aac6b2429a8d5d7865cf70ba62581b1a1aa24c6",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSymmetricJet": "dc2414dc4e5eb20cb4395b7bf40f49c30af1ff09f918402799c7384243e9c528"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalGeometricSymmetricJetOperatorLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGeometricSymmetricJetOperatorLimit",
+      "sha256": "cc042355b7a319387a2e9f420b5c5ae7ffc82bb6835ed28669177bed4e152e0e",
+      "replay_object_sha256": "923238e41458b39f281230177faa0d249da4a23a001f27cf922ea8194fb2fdbb",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.GeometricSymmetricJetWindowAdmission": "8dd0c8ef70ce10e82166a7bb2bee5b0b7e76a7538c15f11d3727818c3f2a3203",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalWindowedClassicalDefectWitness": "9339a41339383faa592d1ca80ecc11bba297d9377f197253eb076f273045de1b"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalQuadraticTheorem.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem",
+      "sha256": "85e84198605f2fd03111385dd2b4b7dd4b16d02c7752ebb8abbe2748f3ee1e5d",
+      "replay_object_sha256": "03ee34f6fc3c80f8c0841c1759aa47f44903ade998ec0de411d1bf4896314524",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.OriginalGeometricSymmetricJetOperatorLimit": "923238e41458b39f281230177faa0d249da4a23a001f27cf922ea8194fb2fdbb"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalSymmetricJetSeparatedGlobalPairings.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetSeparatedGlobalPairings",
+      "sha256": "2c9791fd9669a95f76dccfb0dea704ce6c38d100a0fb09e4f5b07ea224831df3",
+      "replay_object_sha256": "f74550bf9f766a70eb164c8635c0d268980b65580a26cb50da3e0eab88eec5be",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetTestSections": "e71ee6b34b188b95c13a00615fea64bf5935841510c4f23a9ea16ab46de15b6d",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetSeparatedChartPairing": "a413d0904b73b30c06885b0429ad95b158e1dd1f4cd18a815797f6bab88e2364",
+        "Burnett.Analysis.Microlocal.Overlap.CompactRectangleKernel": "703e7708f5eea494a2c0a5f38f13b6cd69cdabbe89e4505b97e7b4ab6745866b",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantPairing": "e814d4a82dec1fd31b7265c6d2d061a00348041671acde1989b31b0aa341eb5c"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalSymmetricJetTestSections.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetTestSections",
+      "sha256": "ea54a5acc8024ca4dbd938385ea17f4dffdfef5ca55f11ccebd47270956d23f9",
+      "replay_object_sha256": "e71ee6b34b188b95c13a00615fea64bf5935841510c4f23a9ea16ab46de15b6d",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SmoothCompactSymmetricJetTests": "1559153443c4c772612a932f25aa4be1567c2512155eb1b27d7ee674fe9e62e3"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/OriginalWindowedClassicalDefectWitness.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalWindowedClassicalDefectWitness",
+      "sha256": "5ad634fe9807145919da2ed6806df3ffb25ab366d7b3c340bd3102e61b4fea5a",
+      "replay_object_sha256": "9339a41339383faa592d1ca80ecc11bba297d9377f197253eb076f273045de1b",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalGlobalLimit": "1d31629c7df4d48e00d8a7a649447ad11533616bcb76c33bd7177b2a9c1af044",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly": "2f520621ec898e3fd067265856235d6a4cf1149324ecd6869a5967b2b750eff6"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderActualSectionAction.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderActualSectionAction",
+      "sha256": "ea14f0c5df4f027c48c6e747b1c96b4317ab635659552be19db81c63ac54dfa3",
+      "replay_object_sha256": "b4a6c4029905a5cb77b2bb282aac6b2429a8d5d7865cf70ba62581b1a1aa24c6",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetRawChartSections": "3146ead078deeb4d2cc97f28fd622b69981f588b0c7b43665075985f5705bd53",
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderProjectedRows": "4c91aa917d92de57c20e9b380cadc08023df2287ac349e6df657e9d2751785b3"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderAtlasChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderAtlasChange",
+      "sha256": "b25cb89108f965661e9db8b3d86f95db5688f877f15f9dff4318f281ac7feeb9",
+      "replay_object_sha256": "37356999013eb5eb8d4c5ac5a76116f15d31c56805cb20086ca3e856b9e00611",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymbolChange": "37fb3b2d503b5fc1487c5d7ff75c8d1d50af2db5086bee2897b356fd3264d5b7",
+        "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrderRange": "854c3c667056c8009069d4c2825e48de5e8a081c928a4b55e21995c6d2ce75e1",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartGeometricBridge": "7c950d74a9287b6ee7425ec823b3ab7cccc260221bbb2095cf3170c614fadabe"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderCompactTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderCompactTests",
+      "sha256": "3a3f2b2f98929781ce43f220f91528e9de97eb265a3950f32f9a7506a1f5e5d4",
+      "replay_object_sha256": "804d0b2c43e18fde3b9000b77879ebd413c9253e1ebcb03ed333a01129ee68d6",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderIntrinsicSymbol": "07e1c49bccf70dd14e7a34bd947e3eb45c9b24d687cdf3b960e1b5e159fd5434",
+        "Mathlib.Analysis.Calculus.BumpFunction.Basic": "38aed1079bef7d0ef205b965093fc380e2465cece4a493714e57fe6f4fb2007d"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderIntrinsicSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderIntrinsicSymbol",
+      "sha256": "3b64dc625d3c8b73b8d31a8405940266c4ae1b8d961950c97ad5682e0d269257",
+      "replay_object_sha256": "07e1c49bccf70dd14e7a34bd947e3eb45c9b24d687cdf3b960e1b5e159fd5434",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderAtlasChange": "37356999013eb5eb8d4c5ac5a76116f15d31c56805cb20086ca3e856b9e00611",
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderJetTransition": "7c391009ef421db32524c6388aba1c6bf7fbdefcdb3bb0c8f082f709f3508a83",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalUnweightedFirstOrderRange": "94c2f066a9d875056a130bf784ce3cd7fb3c1ac674e4c36fd235204708415dd8"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderJetTransition.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderJetTransition",
+      "sha256": "986d981c9100ab87b948c575f7d320ed560f0f487dbd908f9984b4dbae733299",
+      "replay_object_sha256": "7c391009ef421db32524c6388aba1c6bf7fbdefcdb3bb0c8f082f709f3508a83",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetEndomorphism": "ca4c5f27e0ba1bcb3cce324278cdc810075192c5b9239a8ed00c652ef195e1f7",
+        "Burnett.Geometry.MetricJetNaturality": "04b54fb7697443bccbdbb9ae60de265646c7003f4817d89545933135a900e5d7"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderProjectedRows.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderProjectedRows",
+      "sha256": "292aa2e4306dbbacef6ac0f99166b0a8ddda78b8960f02658d4a1644e21060d4",
+      "replay_object_sha256": "4c91aa917d92de57c20e9b380cadc08023df2287ac349e6df657e9d2751785b3",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderCompactTests": "804d0b2c43e18fde3b9000b77879ebd413c9253e1ebcb03ed333a01129ee68d6",
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymmetricProjection": "68cd1dd2a90e4316a876175a911aee52b54aaa3e0a7451bfbc9ce44826152c99"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderSymbolChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymbolChange",
+      "sha256": "df789f5ddbe0453d4069856cc9f858a878ccde36ae7563330a47928c1ac10ecf",
+      "replay_object_sha256": "37fb3b2d503b5fc1487c5d7ff75c8d1d50af2db5086bee2897b356fd3264d5b7",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrder": "7178a2a08985ee7993e502548ea83494eed8744265c732372a963f6b2aa2d826"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RawFirstOrderSymmetricProjection.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymmetricProjection",
+      "sha256": "9405c5a314cdbf1b2e736344d5b9e7d417922c15b5726e7abeb5b674eb8de7b1",
+      "replay_object_sha256": "68cd1dd2a90e4316a876175a911aee52b54aaa3e0a7451bfbc9ce44826152c99",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderJetTransition": "7c391009ef421db32524c6388aba1c6bf7fbdefcdb3bb0c8f082f709f3508a83",
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection": "94bc4094bd7669e1124ec377b458c0e4883e28f422f170f07d8c67ed4c289174"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingOriginalSymmetricJet.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSymmetricJet",
+      "sha256": "68fb4a22b5c85ce4fe8f01ee4931bfb2b826f6cc616e7a94d8ded4308357eff2",
+      "replay_object_sha256": "dc2414dc4e5eb20cb4395b7bf40f49c30af1ff09f918402799c7384243e9c528",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.IntrinsicJetSymmetricProjection": "94bc4094bd7669e1124ec377b458c0e4883e28f422f170f07d8c67ed4c289174",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartCovariantGradient": "30c1b627ab259d1016aab67c93201048116293c67b1e1c3b39a0dc3758659208"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingPhysicalKernelTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingPhysicalKernelTransport",
+      "sha256": "62181c5ad13016a2505177f3e727a1776a9ebba4678fb719cb9d9c004402d64c",
+      "replay_object_sha256": "b0c4c724a0ece0b3a741d574315181b0beacdad2982260a04ad8e3f6b1f0b84e",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingPhysicalVolumeTransport": "ecdc31408f9af545f610a661c889cc54a8f4a4ac5bc71abf7b679c9e52e58d3f",
+        "Burnett.Geometry.ManifoldVolumeRegularity": "52aa0250fc3fec6aef1818a683d60a2d8b9aa52036dc4ba46b308e49f6fefcc6",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap": "cccdbdb5ded7a26c0134537a4a32cb0b933acde8bd726808b4333423de684c36"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingPhysicalVolumeTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingPhysicalVolumeTransport",
+      "sha256": "3281625f6e2eb5ed183cb4190a8d0d5d16e064e3416e78bf9cad34106fd82357",
+      "replay_object_sha256": "ecdc31408f9af545f610a661c889cc54a8f4a4ac5bc71abf7b679c9e52e58d3f",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartVolumeInputs": "b60b62e1a6b2feb8d2bd53bc0995c1b8353ecefd7463aa815866aaa551356255",
+        "Burnett.Geometry.ManifoldVolume": "8be5e0c2f7d71484c449d425f272684ffd0bc9937708bd5c9deadad0f9c7b767"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingRegularScalarTransport.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingRegularScalarTransport",
+      "sha256": "06463fb2c19272eb67d600f7cc2ef4dea6b97a99210bc984229280da504d6750",
+      "replay_object_sha256": "75d023438099c02a13685a7780f33d7fd1a659e652df6b1647c74923d6064e24",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingJointClassicalTransport": "f7630eb2208909be3219ddef100f266ad967f65938f8f29d0a14262d554cdd09",
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralMixing": "e424e3c7c8fcdf83a0f5efe8c5573510e070adc5dd24bd9330a433ef878ccc39",
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralToLocal": "58200a4199e05ef71f28d8c2b837afbd388acd7d339900f0c549ca9dbfe8f449"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/ReceivingScalarHalfDensity.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.ReceivingScalarHalfDensity",
+      "sha256": "c7e6e7b60137ca2a2fa2c90ca5b9fa3dff9f34831ffcae66ec8ec51a1dfce9e4",
+      "replay_object_sha256": "aa5db71e7053ba1e9330a533ef83ffd107e033cf7b6261701612032790aa0463",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartVolumeInputs": "b60b62e1a6b2feb8d2bd53bc0995c1b8353ecefd7463aa815866aaa551356255"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/RectangularKernelWeakLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.RectangularKernelWeakLimit",
+      "sha256": "ca25165c79b16f8726bc2664c86289521c200aecef92559a49affc07c439802f",
+      "replay_object_sha256": "05f5ab9ea16487522da370c13b30ed0bc8df64448913b96c6e10953cb96bc3e6",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.BoundedKernelWeakLimit": "c3684d2f33e3ee28b77744e4cad02fd254bc5d65ea1d250ef7b468a0ad9035be"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SmoothCompactSymmetricJetTests.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SmoothCompactSymmetricJetTests",
+      "sha256": "6d88485a3323c7784f15e516cadf96ae595ba9a62d2c840dd7106bc9b22450bf",
+      "replay_object_sha256": "1559153443c4c772612a932f25aa4be1567c2512155eb1b27d7ee674fe9e62e3",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartSections": "31892368ce018f4e3b36c7bc16824861500ed22e747d3a26ba9fa8261a66d034"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SupportedSymmetricJetOperatorEntries.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SupportedSymmetricJetOperatorEntries",
+      "sha256": "83a1a4426609553f106cf5c92c28b95ec1069c1431d070526499d5aaf3181639",
+      "replay_object_sha256": "e60bf3414035f99349515ceeb051afba4c1da74bc1eb768a62c93c35717d6a6f",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetActualLocalSymbol": "df557190363b40ce3b89e2d1617db659d1f9d2a79aae5c86bc7e40550b020667",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetOverlapWeights": "ba399c8d3b508afd280f9b0ec77130ee5a87d7525cc9691cef28459e6e125210"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetActualLocalSymbol.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetActualLocalSymbol",
+      "sha256": "d0f225ea617c137f079441e115a8061c8dc553d7e104ed5fbba297b1723944a3",
+      "replay_object_sha256": "df557190363b40ce3b89e2d1617db659d1f9d2a79aae5c86bc7e40550b020667",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactLeftClassicalOperator": "c23a1cc22f5cb5e9f7f8341b82213f56cfd696500655f5815347370239c93e5a",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartCompression": "3f7383890ff2c07dde1b4ae52120d613a9211ee16cbf7c850dbd1e4edd018489",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly": "2f520621ec898e3fd067265856235d6a4cf1149324ecd6869a5967b2b750eff6"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetChartCompression.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartCompression",
+      "sha256": "871962eb5208b40d798ad4e09058be0f44a38d731bd68c3691322257ee8d2a96",
+      "replay_object_sha256": "3f7383890ff2c07dde1b4ae52120d613a9211ee16cbf7c850dbd1e4edd018489",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSourceReplacement": "edf56b1df3a1d6b68b35055154f916a217d51aa1906cdca9e88ac17e8c0a9a22",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetPairingKernel": "5d655f9e239c4df7e3ecfd0ab03a361b2461040faf50ae2480a7b2fa0e57d9e6",
+        "Burnett.Analysis.Microlocal.Overlap.FirstOrderCutoffCommutator": "ed0ecdd54b2fd74083b55cc6dc8fc735e380b1de982b12d96218e5f00b2a8268"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetChartLiftChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartLiftChange",
+      "sha256": "77e3b7907494f23d19600dc70c448c6d89a4fe3d01de3124ed1d275d85dcc3e1",
+      "replay_object_sha256": "a6d20ba16428bec83692d29464d409e15e22f747ae21bfdc2321f52f4e1f933a",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartSections": "31892368ce018f4e3b36c7bc16824861500ed22e747d3a26ba9fa8261a66d034",
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymmetricProjection": "68cd1dd2a90e4316a876175a911aee52b54aaa3e0a7451bfbc9ce44826152c99",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartHalfDensity": "bb849fcfb084c8537790d74ced3e205566ba32e9b9c0be6b1bd99101760b63f8"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetChartSections.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartSections",
+      "sha256": "377f5722752031026bcd20b6d60411a4cb0671990b6f3c2e2939601563c05612",
+      "replay_object_sha256": "31892368ce018f4e3b36c7bc16824861500ed22e747d3a26ba9fa8261a66d034",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingScalarHalfDensity": "aa5db71e7053ba1e9330a533ef83ffd107e033cf7b6261701612032790aa0463",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingOriginalSymmetricJet": "dc2414dc4e5eb20cb4395b7bf40f49c30af1ff09f918402799c7384243e9c528"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetCompactInputGlobalTail.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetCompactInputGlobalTail",
+      "sha256": "3dc21a0600db9b6d3af28d78a34fe0aa3b6eda35093ba1ca7761b5fe16f60936",
+      "replay_object_sha256": "e31c4d3c12a857087b446db0f487bdd903b20b7685e355149cbdc1fef27b18ee",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetGlobalTailOriginal": "ec41d1392f8e8e97e9716ceb7591cdc25ed68ffb94607911a4f8ae8f6a6b8dfe",
+        "Burnett.Geometry.Cotangent.CompactTestPartition": "62ea6c25719c055871ead76dbe6bc60c2c1743237490283767c5fd98bcf35119"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetFormCovarianceTrace.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetFormCovarianceTrace",
+      "sha256": "016b33d9653b25cf32e795d001c7b721b4c79f7efd96f289019d12fc836eba16",
+      "replay_object_sha256": "0eed75ca785eed0e1695a81a6e7835244550e1b3661860337612a012c7616c52",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.AtlasJetOperatorNaturality": "be5c4ce0dd5c36c681bb13c7bf6b349650b5e5ddb55a1b09d0c69b106664737c",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingPaperConvention": "d0afe818f7029534ee2c95d38de781f74ffd4eaf3ac87791173c8e9ddbd5ef67"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetGlobalTailOriginal.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetGlobalTailOriginal",
+      "sha256": "4488a58c8f3cf02baf9c4891a28f0dffd71490c6a2dcdf7094fb1c5a4e4a2e7b",
+      "replay_object_sha256": "ec41d1392f8e8e97e9716ceb7591cdc25ed68ffb94607911a4f8ae8f6a6b8dfe",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantCutoff": "92a747e1fead74bd73ec7c059daf8d73428f2795c0cd1ac035f73222b1450588",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetSeparatedGlobalPairings": "f74550bf9f766a70eb164c8635c0d268980b65580a26cb50da3e0eab88eec5be"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetKernelGram.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetKernelGram",
+      "sha256": "447c50fdcb10b68bc7f7dfdac16be8854e65974f4488f546b444057e37732f7c",
+      "replay_object_sha256": "512029928c631008a9ce422927296bcda27aed4b308678b627dc7d1ee4431ab4",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetPairingKernel": "5d655f9e239c4df7e3ecfd0ab03a361b2461040faf50ae2480a7b2fa0e57d9e6"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetOverlapWeights.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetOverlapWeights",
+      "sha256": "fec7528a1c58dddeb8357140c295091c90006ae48e50affe5e436d7f8a6925e5",
+      "replay_object_sha256": "ba399c8d3b508afd280f9b0ec77130ee5a87d7525cc9691cef28459e6e125210",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartLiftChange": "a6d20ba16428bec83692d29464d409e15e22f747ae21bfdc2321f52f4e1f933a",
+        "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowData": "c75c6c079f89daaf44df0d5355cffe48e84b153f46aaa021b0dd04b96b2ceb9f",
+        "Burnett.Analysis.Microlocal.Overlap.JointClassicalBilateralMixing": "e424e3c7c8fcdf83a0f5efe8c5573510e070adc5dd24bd9330a433ef878ccc39"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetPairingKernel.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetPairingKernel",
+      "sha256": "409be84fe2bab0d7773d61b704b33c69878403972b0ea4d05edc8fd90d9b61d5",
+      "replay_object_sha256": "5d655f9e239c4df7e3ecfd0ab03a361b2461040faf50ae2480a7b2fa0e57d9e6",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SmoothCompactSymmetricJetTests": "1559153443c4c772612a932f25aa4be1567c2512155eb1b27d7ee674fe9e62e3"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetRawChartSections.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetRawChartSections",
+      "sha256": "b9a2f58695140b8615aea25fc032897a94347d34abecf57e95510913cc989d12",
+      "replay_object_sha256": "3146ead078deeb4d2cc97f28fd622b69981f588b0c7b43665075985f5705bd53",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetPairingKernel": "5d655f9e239c4df7e3ecfd0ab03a361b2461040faf50ae2480a7b2fa0e57d9e6",
+        "Burnett.Analysis.Microlocal.Overlap.RawFirstOrderSymmetricProjection": "68cd1dd2a90e4316a876175a911aee52b54aaa3e0a7451bfbc9ce44826152c99"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetSeparatedChartPairing.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetSeparatedChartPairing",
+      "sha256": "02b3bf6b3d48a9048909d52ec7b519f22ecb07e8e3fbbf31a7f9384d6c3ffe7f",
+      "replay_object_sha256": "a413d0904b73b30c06885b0429ad95b158e1dd1f4cd18a815797f6bab88e2364",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetPairingKernel": "5d655f9e239c4df7e3ecfd0ab03a361b2461040faf50ae2480a7b2fa0e57d9e6",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingPhysicalKernelTransport": "b0c4c724a0ece0b3a741d574315181b0beacdad2982260a04ad8e3f6b1f0b84e",
+        "Mathlib.MeasureTheory.Function.LocallyIntegrable": "d37f08583c46c76311bd4dd27c7330c69718b0a3a8dc3db1728be838c3225189",
+        "Mathlib.MeasureTheory.Integral.Prod": "1ee367134696441dc1c14f46205808ac7163cd7935d7343a8d59fc093614d6d0"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetSupportedChartTest.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetSupportedChartTest",
+      "sha256": "b250a744b97c5d0142561db6ddd6b04b8d6a0f485ee440457fba136f65c3257d",
+      "replay_object_sha256": "02e63a6ccc933bc8d05cc7e931aeb9e70a87634279eba38b033400845d51a4d7",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetChartCompression": "3f7383890ff2c07dde1b4ae52120d613a9211ee16cbf7c850dbd1e4edd018489",
+        "Burnett.Analysis.Microlocal.Overlap.OriginalSymmetricJetTestSections": "e71ee6b34b188b95c13a00615fea64bf5935841510c4f23a9ea16ab46de15b6d",
+        "Burnett.Analysis.Microlocal.Overlap.LocalClassicalFullSymbol": "32e7b4affc8f42d9ce28d6c6d3f6881236cfb3604c634bac9468a9d6d79394f9"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/SymmetricJetWindowPrincipalChange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetWindowPrincipalChange",
+      "sha256": "b86b3f0abf6ee452946d3d7f4522893b1d4a9b95db806d6c026d0600a8ef6036",
+      "replay_object_sha256": "69984f6eff984fb07db98aa12d91caa119a1b9cf1c940486eb6664aac6f943c0",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowData": "c75c6c079f89daaf44df0d5355cffe48e84b153f46aaa021b0dd04b96b2ceb9f",
+        "Burnett.Analysis.Microlocal.Overlap.CompactAngularPrincipalRegularity": "1decc797159d1b0c6d03e9f382c73ff893f0995c2f420b646414ac7cd80fce1b",
+        "Burnett.Analysis.Microlocal.Overlap.SupportedSymmetricJetOperatorEntries": "e60bf3414035f99349515ceeb051afba4c1da74bc1eb768a62c93c35717d6a6f",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingRegularScalarTransport": "75d023438099c02a13685a7780f33d7fd1a659e652df6b1647c74923d6064e24"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/UnweightedReceivingFirstOrder.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrder",
+      "sha256": "bd0cb69f0f3130a5846cafc03333920fe8dd51dadc625d4566d557b2d933bccb",
+      "replay_object_sha256": "7178a2a08985ee7993e502548ea83494eed8744265c732372a963f6b2aa2d826",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.NestedReceivingFirstOrderLocalization": "7d0f17e4c86b90a8ae4826c4f353cecefabe6dfa0f9e0b12ec1be23fd75b4819",
+        "Burnett.Analysis.GaugeProjection.StrongCompactness.ReceivingCutoff": "84ab80f96624d7bbd0f96b8e769f358234717b2288f0ca67b76e8530f2f7acc4"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/UnweightedReceivingFirstOrderRange.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrderRange",
+      "sha256": "162cf535f4b012c5615861f57846b5c004369702e4ffd8becee415c4df05abba",
+      "replay_object_sha256": "854c3c667056c8009069d4c2825e48de5e8a081c928a4b55e21995c6d2ce75e1",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.UnweightedReceivingFirstOrder": "7178a2a08985ee7993e502548ea83494eed8744265c732372a963f6b2aa2d826"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/WindowedClassicalChartLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalChartLimit",
+      "sha256": "221253ec7ad11f2edad2c6017882d7d8569daccad05cb78a6dbb85d15ea339cd",
+      "replay_object_sha256": "5a3edb60632731311f4b6a0bbe11a55d6f3d6a41331b5a1f8f18f8a68141e9ce",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalSymmetricJetForm": "904404f327cde44cc610c135399f3dd246ab71f88889925edb38c047157e8619",
+        "Burnett.Analysis.Microlocal.Overlap.CompactSymmetricJetWindowLimit": "3b23d094fe34265c338b7b43c40df4b6ff1ea61188e1e6b96dc8f26330ddf3b4",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantPartition": "88be5e94b13f98cdc26103773bc2550c2609026c2a7b35fd074b0e85431e7392",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetCompactInputGlobalTail": "e31c4d3c12a857087b446db0f487bdd903b20b7685e355149cbdc1fef27b18ee"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/WindowedClassicalGlobalLimit.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalGlobalLimit",
+      "sha256": "7fca410561afbca7c5098e85a1603319f3d4413a0a391723084d9e6695c0b556",
+      "replay_object_sha256": "1d31629c7df4d48e00d8a7a649447ad11533616bcb76c33bd7177b2a9c1af044",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalChartLimit": "5a3edb60632731311f4b6a0bbe11a55d6f3d6a41331b5a1f8f18f8a68141e9ce",
+        "Burnett.Analysis.Microlocal.Overlap.FiniteRestrictedDensitySum": "82078015a5369f76c80f4924ade9b54914830b23435b7469f237c2b7f9d4213b",
+        "Burnett.Analysis.Microlocal.Overlap.GlobalOriginalCovariantPartition": "88be5e94b13f98cdc26103773bc2550c2609026c2a7b35fd074b0e85431e7392"
+      }
+    },
+    "Burnett/Analysis/Microlocal/Overlap/WindowedClassicalSymmetricJetForm.lean": {
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalSymmetricJetForm",
+      "sha256": "256769935c364950b98a2dc8a9fbac3f00c84513b921c16d4e09ff56cca25c5a",
+      "replay_object_sha256": "904404f327cde44cc610c135399f3dd246ab71f88889925edb38c047157e8619",
+      "direct_imports": {
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetWindowPrincipalChange": "69984f6eff984fb07db98aa12d91caa119a1b9cf1c940486eb6664aac6f943c0",
+        "Burnett.Analysis.Microlocal.Overlap.SymmetricJetFormCovarianceTrace": "0eed75ca785eed0e1695a81a6e7835244550e1b3661860337612a012c7616c52",
+        "Burnett.Analysis.Microlocal.Overlap.ReceivingChartGeometricBridge": "7c950d74a9287b6ee7425ec823b3ab7cccc260221bbb2095cf3170c614fadabe"
+      }
+    }
+  },
+  "targets": [
+    {
+      "claim_id": "thm:quadratic",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem",
+      "declaration": "Burnett.F07.exists_quadraticOriginalMeasure"
+    },
+    {
+      "claim_id": "f05:actual-first-order-system-kernel",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange",
+      "declaration": "Burnett.Microlocal.Overlap.original_intrinsic_symmetricJet_kernel_of_actualFirstOrderAction"
+    },
+    {
+      "claim_id": "f05:windowed-classical-principal-change",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalSymmetricJetForm",
+      "declaration": "Burnett.Microlocal.Overlap.windowedClassicalFormMatrix_change"
+    },
+    {
+      "claim_id": "f05:windowed-classical-global-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.WindowedClassicalGlobalLimit",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_originalCovariantGlobalCutoffTest_windowedClassical"
+    },
+    {
+      "claim_id": "f05:ordinary-local-classical-remainder",
+      "module": "Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder",
+      "declaration": "Burnett.Microlocal.Overlap.hasOrdinarySymmetricJetWindowSymbols_of_localClassicalExpansion"
+    },
+    {
+      "claim_id": "f05:original-geometric-classical-pairings",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalGeometricSymmetricJetOperatorLimit",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_geometricSymmetricJetOperatorPairings_and_EinsteinMoments"
+    },
+    {
+      "claim_id": "f05:compact-input-separated-global-limit",
+      "module": "Burnett.Analysis.Microlocal.Overlap.SymmetricJetCompactInputGlobalTail",
+      "declaration": "Burnett.Microlocal.Overlap.tendsto_symmetricJetGlobalForm_originalFull_sub_near_of_compactInput"
+    }
+  ],
+  "documents": {
+    "en": "d687c1f1876006726df436fe702a4bc09c824294bbaae47515add7e587a2c6d6",
+    "zh-CN": "31298411a3e5bab68effecdc465277fdac7d13d6ea58d46dc3b78c2f8fd38036"
+  }
+}

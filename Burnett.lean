@@ -400,3 +400,7 @@ import Burnett.Analysis.GaugeProjection.StrongCompactness.VacuumStrongCompactnes
 
 import Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary
 import Burnett.Analysis.Microlocal.Overlap.OriginalAmplitudeWeightedAuxiliaryPair
+
+import Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem
+import Burnett.Analysis.Microlocal.Overlap.OriginalActualFirstOrderRange
+import Burnett.Analysis.Microlocal.Overlap.GeometricClassicalSmoothRemainder

@@ -55,7 +55,7 @@ Assume \eqref{eq:admissible}. After extraction of one subsequence, there is a gl
 \end{theorem}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+One original subsequence gives the actual bundle pairings, Ricci kernel and positive null measure with all Einstein moments and fixed-chart naturality. Author confirmation of the quadratic theorem is pending. [Positive null second moments](quadratic-null-second-moments.en.md)
 
 ## T03
 
