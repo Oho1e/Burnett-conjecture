@@ -86,11 +86,9 @@ vanishes over every open vacuum region of $g$.
 \end{corollary}
 ```
 
-The local support lemmas cover smooth tests and weighted disintegration for a given finite joint measure. The geometric marginal and the full corollary remain to be proved. [F08 local disintegration](local-disintegration.en.md)
+`Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration` proves the smooth nonnegative base marginal of the fixed quadratic measure, disintegration and reconstruction on the actual unit null fibers, all tangent-vector moments on a common conull set, almost-everywhere uniqueness for this measure, absolute continuity of the base marginal, and vanishing above open vacuum regions. Author confirmation is pending. [Statement and evidence](base-marginal-and-angular-disintegration.en.md)
 
-The F08 supporting results disintegrate a fixed joint measure over a countable measurable cover. The intrinsic marginal and tensor moments remain open in this corollary. [Countable-cover disintegration](countable-fiber-disintegration.en.md)
-
-Four supporting results transport a given angular kernel through measurable coordinates and nonnegative weights. [Angular kernel transforms](angular-kernel-transforms.en.md)
+[Local disintegration](local-disintegration.en.md) · [Countable-cover disintegration](countable-fiber-disintegration.en.md) · [Angular kernel transforms](angular-kernel-transforms.en.md)
 
 ## T04
 

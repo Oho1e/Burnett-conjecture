@@ -5238,6 +5238,11 @@
       "claim_id": "l03:intrinsic-local-l2-controls-cutoff-covariant-gradient",
       "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.ReceivingCovariantL2",
       "declaration": "Burnett.Microlocal.AtlasVolumeGradient.fixedVolumeCovariantGradientSchwartz_tendsto_zero_of_intrinsicL2"
+    },
+    {
+      "claim_id": "cor:base-marginal",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration"
     }
   ],
   "inventory": [
@@ -5279,9 +5284,11 @@
         "endline": 506
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t03"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/base-marginal-and-angular-disintegration.zh-CN.md",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration",
+      "human_semantic_confirmation": "pending"
     },
     {
       "claim_id": "lem:commutator",

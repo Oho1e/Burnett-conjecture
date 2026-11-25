@@ -711,3 +711,7 @@ The actual local joint classical symbol and compact remainder transform on overl
 ## 66. Vacuum regions and full-sequence strong compactness
 
 The full corollary now has a Lean proof in the project library. The proof handles every open region, all compatible charts and cutoffs, and the entire sequence. The unprojected geometric local L² condition gives vacuum and zero restriction of the fixed physical measure. The project entry point and the frozen independent statement passed native replay. Candidate verification and author confirmation have separate receipts. [Vacuum regions and full-sequence strong compactness](../statements/strong-compactness.en.md)
+
+## 67. Base marginal and angular disintegration
+
+The library proves the full corollary from the fixed quadratic measure and its Einstein moments. The measurable family lives on the actual dependent unit null fibers and reconstructs the measure on every Borel set. The native replay and mathematical review checked the frozen statement. Author confirmation is pending. [Base marginal and angular disintegration](../statements/base-marginal-and-angular-disintegration.en.md)

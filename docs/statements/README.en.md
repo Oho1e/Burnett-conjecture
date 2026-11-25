@@ -43,7 +43,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | --- | --- | --- | --- | --- |
 | 1.1 | theorem | `thm:main` | 139–168 | Not modeled |
 | 2.1 | theorem | `thm:quadratic` | 354–356 | Not modeled |
-| 2.2 | corollary | `cor:base-marginal` | 487–506 | Not modeled |
+| 2.2 | corollary | `cor:base-marginal` | 487–506 | [Proof implemented](base-marginal-and-angular-disintegration.en.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | Not modeled |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | Not modeled |
 | 3.3 | lemma | `lem:freezing` | 736–764 | Not modeled |

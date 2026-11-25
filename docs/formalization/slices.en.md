@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `1cffafc4d7b9712462df6a5672fec8a39ad085d4038cac2e7c09f439e34c4677`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `e3715721bd61e78a9394ffd009418b21dfa25b66fa3b45ec12d9077a4afff4dd`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: The same original physical measure gives the base marginal, disintegration on the actual unit null fibers, all tangent-vector moments on a common full-measure set, uniqueness for fixed measure, and vanishing on open vacuum regions. Continue acceptance against the independent corollary statement.
+Next: The library proves cor:base-marginal for the fixed original physical measure. Reconstruction of all Borel sets, all tangent-vector moments on a common full-measure set, uniqueness of the disintegration for the given measure, and vanishing over open vacuum regions passed comparison with the frozen statement. Author confirmation is pending.
 
 <a id="a01"></a>
 

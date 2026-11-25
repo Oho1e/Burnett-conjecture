@@ -397,3 +397,5 @@ import Burnett.Analysis.BaseMarginal.OriginalBaseMarginalPointwiseAssembly
 import Burnett.Analysis.Microlocal.Overlap.OriginalReceivingLocalClassicalAssembly
 import Burnett.Analysis.Microlocal.Overlap.ReceivingJointFullSymbol
 import Burnett.Analysis.GaugeProjection.StrongCompactness.VacuumStrongCompactness
+
+import Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary
