@@ -145,7 +145,7 @@
         "正Hermitian算子测度矩阵与协方差分量不能混同，尤其改变r时。",
         "只证明应力二阶矩不足以识别角测度或其坐标/截面变换。"
       ],
-      "next_action": "已核验实际局部联合经典符号和紧余项的换图。同一细化给出全部此类局部算子配对。接续分离支撑核、束基换图及有限图册装配。",
+      "next_action": "已实现同一原协方差的一般一阶核定位、实际束算子的紧窗全符号配对及跨图主符号关系。局部经典展开中的光滑余核已并入精确左符号，离对角使用实际分离核表示。",
       "supplementary_obligations": [
         {
           "id": "local:single-subsequence-global-angular-functional",
@@ -252,7 +252,7 @@
         "一般角测度不由应力矩唯一决定；输运不得替换成某个同矩测度的输运。",
         "谱分解、Radon局部性、正Hermitian与复共轭约定均是实际依赖。"
       ],
-      "next_action": "已核验同一原子列与逐图见证下内蕴振幅协方差及物理测度的范数平方加权推前，保留任意可积角向纤维试验。继续核对完整 F05 输入与冻结二次题面。",
+      "next_action": "原度规列的同一子列给出实际束配对、Ricci 核及满足全部 Einstein 矩和固定换图相容性的正零壳测度。二次定理陈述的作者确认待登记。",
       "supplementary_obligations": []
     },
     {
@@ -8266,6 +8266,42 @@
       "claim_id": "f07:original-amplitude-weighted-auxiliary-pair",
       "source_slices": [
         "F07"
+      ]
+    },
+    {
+      "claim_id": "f05:actual-first-order-system-kernel",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:windowed-classical-principal-change",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:windowed-classical-global-limit",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:ordinary-local-classical-remainder",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:original-geometric-classical-pairings",
+      "source_slices": [
+        "F05"
+      ]
+    },
+    {
+      "claim_id": "f05:compact-input-separated-global-limit",
+      "source_slices": [
+        "F05"
       ]
     }
   ],

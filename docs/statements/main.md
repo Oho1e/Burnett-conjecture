@@ -55,7 +55,7 @@ Assume \eqref{eq:admissible}. After extraction of one subsequence, there is a gl
 \end{theorem}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+原度规列的同一子列给出实际束配对、Ricci 核及满足全部 Einstein 矩和固定换图相容性的正零壳测度。二次定理陈述的作者确认待登记。 [正零余向量二阶矩](quadratic-null-second-moments.zh-CN.md)
 
 ## T03
 

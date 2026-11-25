@@ -724,3 +724,7 @@ X06 和 X07 模块已分别随 PR #21 和 PR #22 合入 `main`。在这版基线
 ## 68. 辅助单位截面的加权推前
 
 两个辅助度量沿用同一见证，内蕴振幅协方差和物理测度满足范数平方加权推前。 [辅助单位截面的加权推前](../statements/weighted-auxiliary-section-change.zh-CN.md)
+
+## 69. 正零余向量二阶矩
+
+原度规列的同一子列给出实际束配对、Ricci 核及满足全部 Einstein 矩和固定换图相容性的正零壳测度。二次定理陈述的作者确认待登记。 [正零余向量二阶矩](../statements/quadratic-null-second-moments.zh-CN.md)

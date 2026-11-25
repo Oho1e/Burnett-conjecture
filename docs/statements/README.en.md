@@ -91,3 +91,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 
 - [Transport joint classical symbols and disintegrate the original physical measure](joint-classical-tests-and-base-marginal.en.md)
 - [Weighted change of auxiliary unit section](weighted-auxiliary-section-change.en.md)
+- [Positive null second moments](quadratic-null-second-moments.en.md)
