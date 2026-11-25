@@ -93,3 +93,4 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 - [Weighted change of auxiliary unit section](weighted-auxiliary-section-change.en.md)
 - [Positive null second moments](quadratic-null-second-moments.en.md)
 - [Original projected patch sources and wide frozen errors](original-transport-patch-estimates.en.md)
+- [Frozen cubic action, thin-screen replacement, and the physical far symbol](frozen-cubic-transport.en.md)

@@ -93,3 +93,4 @@
 - [辅助单位截面的加权推前](weighted-auxiliary-section-change.zh-CN.md)
 - [正零余向量二阶矩](quadratic-null-second-moments.zh-CN.md)
 - [原投影补丁源与宽截断误差](original-transport-patch-estimates.zh-CN.md)
+- [冻结三次作用量、薄屏替换与物理远角符号](frozen-cubic-transport.zh-CN.md)
