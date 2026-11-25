@@ -35,9 +35,16 @@ def main() -> int:
     parser.add_argument("--repo", default=".")
     parser.add_argument("--lake", default="lake")
     parser.add_argument("--timeout", type=int, default=1800)
+    parser.add_argument(
+        "--build-timeout", type=int,
+        help="time limit in seconds for lake build Burnett (defaults to --timeout)",
+    )
     args = parser.parse_args()
     if args.timeout <= 0:
         parser.error("--timeout must be positive")
+    if args.build_timeout is not None and args.build_timeout <= 0:
+        parser.error("--build-timeout must be positive")
+    build_timeout = args.timeout if args.build_timeout is None else args.build_timeout
     repo = Path(args.repo).resolve()
     output = repo / ".project-verification"
     if path_alias(output):
@@ -51,16 +58,17 @@ def main() -> int:
         "paper_formalization_verified": False,
         "semantic_correspondence_verified": False,
         "paper_hash_verified": False,
+        "build_timeout_seconds": build_timeout,
         "error": "Run has not completed",
     }
     receipt = output / "result.json"
     receipt.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8", newline="\n")
     logs = []
 
-    def command(argv: list[str], filename: str) -> subprocess.CompletedProcess:
+    def command(argv: list[str], filename: str, *, timeout: int = args.timeout) -> subprocess.CompletedProcess:
         print("Running " + json.dumps(argv, ensure_ascii=False), flush=True)
         process = subprocess.run(argv, cwd=repo, capture_output=True, text=True,
-                                 encoding="utf-8", errors="replace", timeout=args.timeout,
+                                 encoding="utf-8", errors="replace", timeout=timeout,
                                  shell=False, check=False)
         (output / filename).write_text(
             "Command: " + json.dumps(argv, ensure_ascii=False) + "\n"
@@ -110,7 +118,7 @@ def main() -> int:
         result["runtime"] = {"lake": lake_version.stdout.strip(), "lean": lean_version.stdout.strip(), "toolchain": pin}
         result["paper_target_count"] = len(targets)
         result["scope_status"] = scope.get("status")
-        command([args.lake, "build", "Burnett"], "build.log")
+        command([args.lake, "build", "Burnett"], "build.log", timeout=build_timeout)
         if targets:
             # The original checker still rejects empty targets. Do not alter it.
             checker = Path(__file__).with_name("check_paper.py")
