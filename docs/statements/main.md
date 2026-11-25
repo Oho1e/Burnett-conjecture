@@ -329,7 +329,7 @@ projection: pure coordinate oscillations may remain.
 \end{corollary}
 ```
 
-数学/Lean对应：待建模；无实际声明、类型或证明。完整上下文、重要定义、隐式参数与额外技术前提尚待核对。独立反向复核及用户/作者确认：未发生。
+`Burnett.P01.vacuumOpen_strongCompactness` 证明任意开集上的逐点真空与全序列物理投影梯度强收敛等价，并给出未投影的内蕴局部强收敛充分条件及固定物理测度的零限制。正式模块已通过本地原生重放，并兑现冻结的独立题面。作者确认待登记。[陈述与核验证据](strong-compactness.zh-CN.md)
 
 ## T13
 

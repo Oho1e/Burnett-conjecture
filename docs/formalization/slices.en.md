@@ -1245,24 +1245,24 @@ Lines 3063–3115; proof-unit. Prove cor:strong without transport, for each open
 Inputs:
 
 - Arbitrary open U and every chart in U and chi∈Cc∞ within the chart. Test ||∂Pi_E(D)(chi h_n)||_L2(R4) on the full sequence after zero extension. Pi_E is homogeneous and its value at frequency zero is immaterial.
-- For each subsequence, cor:base-marginal gives vanishing of the physical measure on vacuum regions. The noncharacteristic Ricci kernel is gauge. On the null cone F is gauge invariant and strictly positive on the physical quotient. Use a uniform finite-dimensional coercivity constant over compact unit null bundles.
+- For each subsequence, cor:base-marginal gives vanishing of the physical measure on vacuum regions. The noncharacteristic Ricci kernel is gauge. On the null cone F is gauge invariant and pointwise strictly positive on the physical quotient.
 
 Outputs:
 
-- Ric(g)=0 on any open U iff, for each chart and cutoff, the physical projected gradient norm tends to zero along the full original sequence. Use F(k,k)=F(Pi_E k,Pi_E k)≥c|Pi_E k|_E² with c>0 uniform on compact unit null bundles. Every subsequence has a further subsequence with zero limit, giving the full sequence conclusion.
+- Ric(g)=0 on any open U iff the physical projected gradient norm for each chart and cutoff tends to zero along the entire sequence. Pointwise positivity identifies the zero sets of the projection energy density and the same physical measure density. Each subsequence has a further refinement with zero limit, giving the full-sequence conclusion.
 - Whole-space Parseval uses Pi_E*=Pi_E=Pi_E² and commutation with derivatives. The squared norm is sum_a <Pi_E∂a(chi h_n),∂a(chi h_n)>. The second factor has fixed compact support, and ∂chi times h_n tends strongly to zero. This accounts for the nonlocal tail. The converse uses vanishing physical defect, gauge invariance of F, and quadratic moments to obtain Ric=0.
 - Strong Dh_n→0 in L2_loc(U) is sufficient for mu|S_r*U=0 and Ric=0. The converse statement concerns the physical projection. cor:strong depends on the quadratic construction alone.
 
 Boundaries:
 
-- The original five real noncharacteristic supporting theorems do not prove null physical coercivity, mixed/Hermitian compression, or the uniform compact-family constant.
+- Use strict positivity on the physical quotient of the same Ricci-kernel positive Hermitian covariance.
 - Use the subsequence argument to pass from a selected sequence to the full sequence.
 - U may be any open set. The equivalence gives no strong convergence claim for the raw gradient in the converse.
 - Use the direct Parseval route at lines 3094–3105. C02's full frozen-phase machinery is independent of this corollary.
 
 Consumers: None.
 
-Next: Prove uniform coercivity on the compact null quotient and the global Parseval defect formula. Then obtain full-sequence convergence by re-extraction and prove the converse and strong-Dh special case.
+Next: The formal candidate proves the full-sequence equivalence and the unprojected geometric local L² sufficient condition on arbitrary open sets. The port satisfies the frozen statement. Independent candidate verification and author confirmation have separate receipts.
 
 <a id="x01"></a>
 

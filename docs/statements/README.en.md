@@ -52,7 +52,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | Not modeled |
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | Not modeled |
 | 6.1 | lemma | `lem:lift` | 2989–2991 | Not modeled |
-| 6.2 | corollary | `cor:strong` | 3063–3078 | Not modeled |
+| 6.2 | corollary | `cor:strong` | 3063–3078 | [Strong compactness on vacuum regions](strong-compactness.en.md) |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [Proof and independent review](harmonic-shear.en.md) |
 | B.1 | proposition | `prop:cubic` | 3175–3181 | Not modeled |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | [Proof and independent review](bianchi-counterexample.en.md) |

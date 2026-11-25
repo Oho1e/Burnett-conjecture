@@ -329,7 +329,7 @@ projection: pure coordinate oscillations may remain.
 \end{corollary}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+`Burnett.P01.vacuumOpen_strongCompactness` gives the equivalence of pointwise vacuum and full-sequence projected gradient convergence on every open set. The unprojected intrinsic sufficient condition gives vacuum and zero restriction of the fixed physical measure. The production modules passed the local native replay and realize the frozen independent statement. Author confirmation is pending. [Statement and evidence](strong-compactness.en.md)
 
 ## T13
 

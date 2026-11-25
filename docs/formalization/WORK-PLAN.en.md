@@ -707,3 +707,7 @@ The actual covariant jet localization, curl and intrinsic Ricci constraints, and
 ## 65. Transport joint classical symbols and disintegrate the original physical measure
 
 The actual local joint classical symbol and compact remainder transform on overlaps, and one refinement gives all such local pairings. Continue with separated-support kernels, bundle frame changes, and finite atlas assembly. The same original physical measure gives the base marginal, disintegration on the actual unit null fibers, all tangent-vector moments on a common full-measure set, uniqueness for fixed measure, and vanishing on open vacuum regions. Continue acceptance against the independent corollary statement. [Transport joint classical symbols and disintegrate the original physical measure](../statements/joint-classical-tests-and-base-marginal.en.md)
+
+## 66. Vacuum regions and full-sequence strong compactness
+
+The full corollary now has a Lean proof in the project library. The proof handles every open region, all compatible charts and cutoffs, and the entire sequence. The unprojected geometric local L² condition gives vacuum and zero restriction of the fixed physical measure. The project entry point and the frozen independent statement passed native replay. Candidate verification and author confirmation have separate receipts. [Vacuum regions and full-sequence strong compactness](../statements/strong-compactness.en.md)
