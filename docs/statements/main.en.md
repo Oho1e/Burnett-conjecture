@@ -300,7 +300,7 @@ Suppose a smooth globally hyperbolic spacetime has a nonnegative locally finite 
 \end{lemma}
 ```
 
-Mathematical/Lean correspondence: not yet modeled; no actual declaration, type, or proof. The full context, important definitions, implicit parameters, and additional technical assumptions remain to be checked. Independent reverse review and user/author confirmation have not taken place.
+The proof constructs the actual crossing norm on maximal null Hamilton trajectories and lifts the original unit transport measure using its reciprocal scale. The global-hyperbolicity implication supplying the slice remains a proof obligation. [Full momentum from a smooth spacelike Cauchy slice](cauchy-momentum-lift.en.md)
 
 ## T12
 

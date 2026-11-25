@@ -1,0 +1,77 @@
+{
+  "claim_id": "lem:lift",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_lines": [
+    2989,
+    3045
+  ],
+  "span_sha256": "af413b1a4767462fe825e42640d9a575ad18e6cfb17345749f0606cab53c3dc2",
+  "sources": {
+    "Burnett/Geometry/Cotangent/HamiltonianCoordinates.lean": "c4458583d0e5ab99e7978e435b69fb352e5484541ef41ff449e6b0075e56c2f1",
+    "Burnett/Geometry/Cotangent/CanonicalTrajectories.lean": "761e154e0bb2041745495df7cf8a06f575bbdff153baca0f2c61dd85e8da2688",
+    "Burnett/Geometry/Cotangent/NullTrajectoryContinuation.lean": "67aa95cfde8063574d64abfa1c73d15bc80a7c5f00f19f9e9d4b2b61e1a4fc90",
+    "Burnett/Geometry/Cotangent/CauchyCrossingEnergy.lean": "630576343015ebd4eddc64bdfcb257ad83148a3b7632103e583c999a0127171f",
+    "Burnett/Geometry/Cotangent/RadialTestCalculus.lean": "1666be26169d39c41d3505d1d80c2e201f97f9bfdd7594dd2d84859092909c5c",
+    "Burnett/Geometry/Cotangent/WeightedMomentumMeasure.lean": "1c90a76d503b40aafd063b8b05e28bb5fb9cffa4913aab71e2c8d12220633e8f",
+    "Burnett/Geometry/Cotangent/WeightedMomentumTransport.lean": "45aac2b08b8b7e09c958f74c6921da708b29bc3503d3063fe7d531f5322e8df7",
+    "Burnett/Geometry/Cotangent/ContinuousPathIntegral.lean": "da3aca11729601b676bbed199b855581c0fc9638355d293d75cfecd4acbfb631",
+    "Burnett/Geometry/Cotangent/PathSuperposition.lean": "f71fd5b53b8c37022fc42d88c372be0cf7f5718feef5f47bc80ebd74986d6d5b",
+    "Burnett/Geometry/Cotangent/ScaledPicardPathIFT.lean": "11b0bb6a76a83a00ce1bd24ddeb498175494feec2f065475df1d3580ccda7267",
+    "Burnett/Geometry/Cotangent/LocalFlowODEUniqueness.lean": "e0e2ba5cc500d2038af50af3779e0aabc0f926cca008e0049b1f95b4a0deadbd",
+    "Burnett/Geometry/Cotangent/ScaledPicardLocalFlow.lean": "f2f7c72ca318f7dcc301deb1e6e5cf83785e77daeec1fbb3a627a8160b1ebf5d",
+    "Burnett/Geometry/Cotangent/LocalChartFieldExtension.lean": "6963682846c01d2105825057d8bc9cdec80c813222c7c957f0c4d4fa869e7813",
+    "Burnett/Geometry/Cotangent/ChartLocalFlowSmoothness.lean": "3aeeaa9b8e336f72e172a1c38cf01a71312d5c321ac7d715c794c963792d41ad",
+    "Burnett/Geometry/Cotangent/SmoothCanonicalLocalFlow.lean": "34ced8d1cd95443090e1b7600d5c96ed8f16d800736036c2036842c48d32144f",
+    "Burnett/Geometry/Cotangent/PuncturedCanonicalFlow.lean": "db3be5c87824e30a82637ff3e2b08a58c8ad8c307dc97162f17f403273a199e3",
+    "Burnett/Geometry/Cotangent/MaximalCanonicalFlowSmoothness.lean": "39e1eb7f0c274933c2508fc552ff0d2c4df5e05cec90e938f8bfdd1bcaf1aa5a",
+    "Burnett/Geometry/Cotangent/MaximalCanonicalCrossing.lean": "3640efd3ee62f5776dc7e7a245d4837da859773d7365202e3195f79b8ee7f098",
+    "Burnett/Geometry/Cotangent/CanonicalTestDerivative.lean": "3fffebfd0c29e7fab3e803d290c1fb74956e244a1539159b982e5fcc3745fe22",
+    "Burnett/Geometry/Cotangent/ActualCrossingFirstIntegral.lean": "152936be6008981f72a7e6f9d003103277051ae276d5661bea75dc160a9e425f",
+    "Burnett/Geometry/Cotangent/ActualWeightedLiftMoments.lean": "1767a7a49fd2a0b5dadff9d24cf8c967be5bf2e907411645e55a5f2c1a3d4b44",
+    "Burnett/Geometry/Cotangent/ActualCauchyMomentumLift.lean": "eb690a473113124302162d63771d1c8464f62b562a631424428203fb2a86d4d9"
+  },
+  "targets": [
+    {
+      "claim_id": "l01:canonical-null-crossing",
+      "module": "Burnett.Geometry.Cotangent.CauchyCrossingEnergy",
+      "declaration": "Burnett.Geometry.CotangentHamiltonCauchySlice.maximal_null_orbit_unique_cauchy_crossing"
+    },
+    {
+      "claim_id": "l01:joint-canonical-flow",
+      "module": "Burnett.Geometry.Cotangent.MaximalCanonicalFlowSmoothness",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.maximalPuncturedFlow_jointSmooth"
+    },
+    {
+      "claim_id": "l01:crossing-energy-germ",
+      "module": "Burnett.Geometry.Cotangent.MaximalCanonicalCrossing",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossingEnergy_germ"
+    },
+    {
+      "claim_id": "l01:crossing-first-integral",
+      "module": "Burnett.Geometry.Cotangent.ActualCrossingFirstIntegral",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_smooth_actualCrossing_firstIntegral"
+    },
+    {
+      "claim_id": "l01:lift-quadratic-pairing",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_quadratic_pairing"
+    },
+    {
+      "claim_id": "l01:lift-local-moment",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_local_second_moment"
+    },
+    {
+      "claim_id": "l01:lift-radon-null-support",
+      "module": "Burnett.Geometry.Cotangent.ActualWeightedLiftMoments",
+      "declaration": "Burnett.Geometry.ActualTestLift.actualWeightedLift_regular_null"
+    },
+    {
+      "claim_id": "l01:actual-lift-on-cauchy-slice",
+      "module": "Burnett.Geometry.Cotangent.ActualCauchyMomentumLift",
+      "declaration": "Burnett.Geometry.CotangentHamiltonInitialFamily.exists_actualFullMomentumLift_of_smooth_spacelike_cauchy"
+    }
+  ],
+  "split_production_replay_sha256": "e3d9dbe787119d923ee9beec7a9f0e852d32c1255ca5831eddf34a3dc96990cf",
+  "source_scope": "conditional proof with an actual smooth spacelike Cauchy slice"
+}
