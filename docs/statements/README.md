@@ -88,3 +88,5 @@
 - [任意接收图中的原梯度协方差与经典算子配对](receiving-chart-jet-covariance.zh-CN.md)
 
 - [真实协变 jet 的定位与全局对称测度](symmetric-jet-localization.zh-CN.md)
+
+- [一般经典符号的局部换图与原物理测度的基底边际](joint-classical-tests-and-base-marginal.zh-CN.md)

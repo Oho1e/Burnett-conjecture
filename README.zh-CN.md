@@ -4,7 +4,7 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 1017 个目标、1082 个库存项和 1045 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 已实现原协变梯度的一阶定位和内蕴对称 jet 测度。一般联合符号的换图、完整几何算子类、论文二次定理验收和输运仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+当前状态为 `development`。本候选累计 1034 个目标、1099 个库存项和 1067 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 已核验一般局部联合经典符号的换图，F08 获得原物理测度的基底边际和逐点角向矩。完整几何算子类、论文级结果验收及输运仍待完成。[Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 四项支持结果证明给定条件角核在可测变换坐标及非负加权后的重构。 [条件角核的变换](docs/statements/angular-kernel-transforms.zh-CN.md)
 
@@ -61,7 +61,7 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 - [`主定理接口`](docs/statements/main-interface.md)、[`主线依赖`](docs/formalization/dependencies.md)、[`库调查`](docs/formalization/library-audit.md) 记录当前对象、量词、消费者和实际库证据。
 - [`docs/statements/`](docs/statements/) 保存原文结果索引与未来数学/Lean对照。
 - [`docs/formalization/scope.json`](docs/formalization/scope.json) 是范围与进度的主清单；完整二次代数父项仍为部分完成。
-- [维护工具与PR交接](docs/formalization/maintenance-1.3.1.md)记录快照边界、完整保护比较和只读就绪判定；最终main合并由用户执行；PR就绪后按[目标续接规则](docs/formalization/GOAL.zh-CN.md)继续独立后继任务。
+- 维护工具记录快照边界、完整保护比较和只读就绪判定。协调者按项目授权和复核流程，将符合条件的 PR squash 合入受保护的 `main`。PR 就绪后按目标续接规则继续独立后继任务。[维护工具与 PR 交接](docs/formalization/maintenance-1.3.1.md) · [目标续接规则](docs/formalization/GOAL.zh-CN.md)
 - [`docs/formalization/review.md`](docs/formalization/review.md) 记录实际复核及发布情况；[1.3版工作流对抗审核与测试](docs/formalization/workflow-review.md) 区分独立审查、模拟场景和真实GitHub检查。
 - [`docs/formalization/standard.zh-CN.md`](docs/formalization/standard.zh-CN.md) 固定 `paper-results` 第1.2版标准。
 - [`tools/lean-paper-results/`](tools/lean-paper-results/) 是1.3.1版skill与工程工作流的文本快照；维护负例套件无需逐篇论文重复运行。
@@ -147,3 +147,5 @@ P01 的有限维规范补投影、固定红外正则化及带权零阶符号估�
 [任意接收图中的原梯度协方差与经典算子配对](docs/statements/receiving-chart-jet-covariance.zh-CN.md)
 
 [真实协变 jet 的定位与全局对称测度](docs/statements/symmetric-jet-localization.zh-CN.md)
+
+[一般经典符号的局部换图与原物理测度的基底边际](docs/statements/joint-classical-tests-and-base-marginal.zh-CN.md)

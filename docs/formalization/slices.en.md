@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `fa48a02a6589a37845ce32521a3885b9ab692a1f611602ef92fe028a31518137`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `0c4cd6b95d1f26334dbc3bf3b251cd9064275ff74956a5b72ecc66843238570e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -311,7 +311,7 @@ Supplementary obligations:
 - Localization under a general first-order constraint, using an external theorem or the direct argument (lines 412–418).
 - Gram conversion, isometric factorization, and natural coordinate changes (lines 421–428).
 
-Next: The actual covariant jet localization, curl and intrinsic Ricci constraints, and symmetric jet measure share the original control. Continue with chart transport of general joint position-frequency symbols and the full geometric test class.
+Next: The actual local joint classical symbol and compact remainder transform on overlaps, and one refinement gives all such local pairings. Continue with separated-support kernels, bundle frame changes, and finite atlas assembly.
 
 <a id="f06"></a>
 
@@ -398,7 +398,7 @@ Boundaries:
 
 Consumers: L03 (proof-input).
 
-Next: Smooth-test positivity and measure determination, local weighted disintegration for a given joint measure and marginal density, and gluing and almost-everywhere uniqueness on a countable cover with local bounds are available. Measurable coordinate change, nonnegative reweighting and reconstruction of every event for a given angular kernel are also proved. Derive the actual base marginal and angular kernel from the same F07 physical measure, establish local bounds and unit null-shell concentration, and verify the Einstein second moments and vanishing on vacuum regions.
+Next: The same original physical measure gives the base marginal, disintegration on the actual unit null fibers, all tangent-vector moments on a common full-measure set, uniqueness for fixed measure, and vanishing on open vacuum regions. Continue acceptance against the independent corollary statement.
 
 <a id="a01"></a>
 

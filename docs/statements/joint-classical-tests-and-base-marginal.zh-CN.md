@@ -1,0 +1,37 @@
+# 一般经典符号的局部换图与原物理测度的基底边际
+
+## 联合符号的实际换图
+
+在任意两张相容光滑图的紧凸交叠窗上，实际零阶算子以同一个半密度输运换图。主符号允许位置与非零频率联合变化。在内窗上，源图主符号由目标位置和实际逆伴随频率给出。源图算子以固定红外正则化实现该符号，其 Schwartz 配对与原目标图算子的搬运配对精确相等。
+
+紧余项的构造使用真实 annular Fourier 核。位置参数在紧集上变化时，核的 Schwartz 半范数给出统一界。实际核与冻结一阶近似的差在算子范数中按尺度可求和。目标图已有的紧余项由同一个局部半密度算子及其伴随搬运。局部全符号接口只要求在目标开集中有真实 Schwartz 配对，并在紧子集上满足高频负一阶余项估计。主符号的光滑性和齐次性在非零频率上表述。
+
+同一个原序列细化、内蕴振幅与物理测度同时给出任意相容接收图的局部全符号配对、对称 jet 测度、Ricci 符号核及全部 Einstein 矩。这些结果覆盖上述局部算子及其换图。完整内蕴测试类还需要分离支撑的核估计、束基变换和有限图册装配。
+
+## 基底边际和逐点角向矩
+
+背景体积下的边际密度是论文的 $e_r=r^{ab}G_{ab}$。它处处光滑且非负。原物理测度的基底推前满足 $\pi_*\mu=e_r\,\mathrm{d}V$，并对背景体积绝对连续。
+
+同一个物理测度的图推前相对于背景体积解体为有限值可测核。在一个底空间满测集上，条件测度集中于对应底点的辅助单位零协向量，质量为 $e_r$。同一满测集上的每个底点和任意两个实际切向量都满足 Einstein 张量矩等式。固定物理测度的解体几乎处处唯一，且物理测度在背景的每个真空开区上消失。该推导使用二次矩和解体，不依赖输运。
+
+这些登记属于 F05 和 F08 的支持结果。论文二次定理及基底边际推论的正式验收继续按独立题面、数学覆盖和作者确认记录。
+
+- Burnett.Microlocal.AtlasOverlapKernel.shellKernel_decay_bounds_uniform_on_compact
+- Burnett.Microlocal.AtlasOverlapKernel.exists_compact_localizedJointAngularDifference
+- Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointPrincipalOperator
+- Burnett.Microlocal.AtlasOverlapKernel.exists_classical_transportedJointAngularOperator
+- Burnett.Microlocal.AtlasOverlapKernel.exists_receivingHalfDensityOperator
+- Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_representation
+- Burnett.Microlocal.AtlasOverlapKernel.exists_receivingJointClassicalOperator_of_targetLocalSymbol
+- Burnett.Microlocal.Overlap.hasOriginalReceivingLocalClassicalPairings_of_intrinsicAmplitude
+- Burnett.Microlocal.Overlap.exists_originalVacuum_symmetricJetMeasure_localClassicalPairings_and_EinsteinMoments
+- Burnett.F08.IntrinsicBaseMarginal.contMDiff_auxiliaryEinsteinDensity
+- Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_nonneg_of_moments
+- Burnett.F08.IntrinsicBaseMarginal.auxiliaryEinsteinDensity_baseMarginal
+- Burnett.F08.IntrinsicBaseMarginal.exists_original_angularDisintegration
+- Burnett.F08.IntrinsicBaseMarginal.ae_intrinsicEinstein_eq_angularFiberMoment
+- Burnett.F08.IntrinsicBaseMarginal.physicalMarginal_absolutelyContinuous
+- Burnett.F08.IntrinsicBaseMarginal.physicalMeasure_zero_over_vacuumOpen
+- Burnett.F08.IntrinsicBaseMarginal.exists_originalVacuum_baseMarginal_and_angularFiberMoments
+
+[源绑定](joint-classical-tests-and-base-marginal-source-bindings.json)

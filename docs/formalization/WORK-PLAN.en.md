@@ -703,3 +703,7 @@ The actual classical pairings in every compatible chart cover operators with the
 ## 64. Localize the original covariant jets and assemble their intrinsic measure
 
 The actual covariant jet localization, curl and intrinsic Ricci constraints, and symmetric jet measure share the original control. Continue with chart transport of general joint position-frequency symbols and the full geometric test class. The same refinement, amplitude and physical measure give the represented covariant pairings, symmetric jet measure, Ricci kernel and Einstein moments. Continue checking the full F05 input and the frozen quadratic statement. [Localize the original covariant jets and assemble their intrinsic measure](../statements/symmetric-jet-localization.en.md)
+
+## 65. Transport joint classical symbols and disintegrate the original physical measure
+
+The actual local joint classical symbol and compact remainder transform on overlaps, and one refinement gives all such local pairings. Continue with separated-support kernels, bundle frame changes, and finite atlas assembly. The same original physical measure gives the base marginal, disintegration on the actual unit null fibers, all tangent-vector moments on a common full-measure set, uniqueness for fixed measure, and vanishing on open vacuum regions. Continue acceptance against the independent corollary statement. [Transport joint classical symbols and disintegrate the original physical measure](../statements/joint-classical-tests-and-base-marginal.en.md)
