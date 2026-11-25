@@ -5548,6 +5548,46 @@
       "claim_id": "v10:actual-far-radian-adjoint",
       "module": "Burnett.Analysis.FrozenTransport.ActualFarHighAdjoint",
       "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualFarRadianKernel_highAdjoint"
+    },
+    {
+      "claim_id": "a08:symmetric-upper-cutoff-strong",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedCutoffRecovery",
+      "declaration": "Burnett.A08.symmetricUpperCutoffOutput_tendsto_of_dual"
+    },
+    {
+      "claim_id": "a08:original-mixed-wave-cutoff",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedCutoffRecovery",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.mixedWavePair_cutoff_recovery"
+    },
+    {
+      "claim_id": "a08:mixed-weak-wave-identity",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedWeakEnergy",
+      "declaration": "Burnett.A08.weakConstantWaveCommutatorPair_eq_mixedSource"
+    },
+    {
+      "claim_id": "a08:original-mixed-weak-energy",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedWeakEnergy",
+      "declaration": "Burnett.A08.exists_originalAngular_mixed_weak_energy"
+    },
+    {
+      "claim_id": "a08:original-projected-source-split",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalProjectedSourceBridge",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_constantWave_add_schwartzDivergence"
+    },
+    {
+      "claim_id": "a08:original-angular-modes",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.exists_originalAngular_hermitian_angular_cutoff"
+    },
+    {
+      "claim_id": "a08:hermitian-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_tail"
+    },
+    {
+      "claim_id": "a08:hermitian-upper-cutoff",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_upperRecovery"
     }
   ],
   "inventory": [
@@ -25948,6 +25988,150 @@
       "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "exact-quotient-and-adjoint-public-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:symmetric-upper-cutoff-strong",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1569,
+        "endline": 1585
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.symmetricUpperCutoffOutput_tendsto_of_dual",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:original-mixed-wave-cutoff",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1543,
+        "endline": 1591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.mixedWavePair_cutoff_recovery",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:mixed-weak-wave-identity",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1503,
+        "endline": 1523
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.weakConstantWaveCommutatorPair_eq_mixedSource",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:original-mixed-weak-energy",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1476,
+        "endline": 1527
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.exists_originalAngular_mixed_weak_energy",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:original-projected-source-split",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2564
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_constantWave_add_schwartzDivergence",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:original-angular-modes",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1543,
+        "endline": 1566
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.exists_originalAngular_hermitian_angular_cutoff",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:hermitian-angular-tail",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1543,
+        "endline": 1566
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_tail",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a08:hermitian-upper-cutoff",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1567,
+        "endline": 1591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_upperRecovery",
+      "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
       "does_not_close_parent_claim": true
     }
   ],

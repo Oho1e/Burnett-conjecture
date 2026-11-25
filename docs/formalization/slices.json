@@ -606,7 +606,7 @@
         "粗交换子界d仅Lipschitz，应用中的光滑d与Schwartz域需另验证；不能以域近似隐匿极限。",
         "精确相位不能用近似相位替代；Hermitian分子/除法符号及延拓必须匹配。"
       ],
-      "next_action": "先装配三项粗交换子与精确配对；再证明固定n域与Λ→∞、L→∞恢复定理，向后续修正能量片交付带明确限序的接口。",
+      "next_action": "同一实际角算子已有混合弱能量估计、固定角阶的上频率恢复和角尾估计。将这些结果接到近远补丁的同一投影源。",
       "supplementary_obligations": [
         {
           "id": "local:fixed-sequence-index-Schwartz-domain",
@@ -8598,6 +8598,54 @@
       "claim_id": "v10:actual-far-radian-adjoint",
       "source_slices": [
         "V10"
+      ]
+    },
+    {
+      "claim_id": "a08:symmetric-upper-cutoff-strong",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:original-mixed-wave-cutoff",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:mixed-weak-wave-identity",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:original-mixed-weak-energy",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:original-projected-source-split",
+      "source_slices": [
+        "V11"
+      ]
+    },
+    {
+      "claim_id": "a08:original-angular-modes",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:hermitian-angular-tail",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:hermitian-upper-cutoff",
+      "source_slices": [
+        "A08"
       ]
     }
   ],

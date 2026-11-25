@@ -426,3 +426,6 @@ import Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension
 import Burnett.Geometry.Cotangent.ActualCauchyMomentumLift
 import Burnett.Analysis.CubicEnergy.HighSlotCommutator
 import Burnett.Analysis.FrozenTransport.ActualFarHighAdjoint
+import Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedCutoffRecovery
+import Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedWeakEnergy
+import Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalProjectedSourceBridge

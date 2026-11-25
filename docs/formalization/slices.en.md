@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `95bf1a49c44aeb4e864f160ddcd9b8a05d05e92c18a220cccaf60bf1a1a211d1`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `0ddd2086239b8ccb786eeb4e20fb169c9c70c2dcf8c90dd65b8e77a5981fde5a`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -667,7 +667,7 @@ Internal refinements (no separate completion status):
 
 - Application domain of formal identities; downstream projection symbols must verify this prerequisite. (Paper lines 1528–1540)
 
-Next: Assemble the three-term rough commutator and exact pairing first. Then prove the fixed-n domain and Λ→∞, L→∞ recovery theorem, giving later correction-energy slices an interface with explicit limit order.
+Next: Apply the checked mixed weak-energy bound, fixed-degree upper-cutoff recovery, and angular tail to the same projected source on the original near and far patches.
 
 <a id="p01"></a>
 

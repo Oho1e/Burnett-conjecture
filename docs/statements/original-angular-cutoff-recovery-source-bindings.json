@@ -1,0 +1,120 @@
+{
+  "base": "78c6392d92a14757111091d1037462de793cad93",
+  "base_tree": "853d967bd45c85549fe9585d3065ce1205a8a7ee",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "map_sha256": "1e9c92e6a0f82d6de34b0a468f3bf8a588e00567007b42f74e1aa1f9c3b13162",
+  "sources": {
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/UpperFrequencyCutoffCanonical.lean": "a3f568cb58039c909f6fce3e47bfd6582db4dee2854ba438c3903c0e4e2d9bb2",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/RadianCoordinateQuotient.lean": "dd89a3295cbde0ee868b3be67dcbaf9771b6e9487afb17aad625c3219d1f5a26",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/CoordinateQuotientCMCore.lean": "5e73e5f93e1deeeb0a2f1816c954cf84794b94f15590302a532d7be82620bd8f",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/CoordinateJetDilation.lean": "42ca501c040edf6cb1871e06ab1660d875289646fe81ed72d98f1b95e5206116",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/CoordinateQuotientProfileJets.lean": "5f957025e4b7d1bd0aa389ea9305d258403c625fe06a4e7ed020e3212f1bee37",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/FixedInfraredSchwartzPairing.lean": "7983a6bd76f482acf839ffbe7fc0af882276be74b308c886a2aac1a272ebaf18",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/RadianHighPairCM.lean": "49a4e50945457ddf44003f701e6111671348c604df36091e30e6b32a7b1afe0e",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/RegularizedFirstOrderPairBound.lean": "ca9ffffbd7d8a487b621218e2f2c03dbcfcd8a599b09c7f579edc7107b8428ff",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/FirstOrderPairL2Extension.lean": "5adc68af19a5c6531ade6823e1aa37f8eaa91cc37ae8c5117172e1aaca906ada",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/SchwartzHighSlotCommutator.lean": "1ce7e52d63578e0b46452204961d70d28a61b567f1b285cbaf75fdf92c18ad7e",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SpherePolynomialLaplacian.lean": "6514cea041501cb2cae7ed1e5dfced3fe261647ee6560326c182e44f6d2e6088",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/LaplacianRadialPowers.lean": "85e9f6012d0ef196d78548d8398fe8629a9fc9111b7a75efb0d38afd1bb9318d",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHomogeneousMonomialBasis.lean": "7ca36868193a0d4bd21c19939d09aff03e06aa4b068f53a00a87f7b6f1c8a6d9",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereFischerDecomposition.lean": "fa3f128c1433a299cbfa4e07ef5d288b8cd7dcebbde952dd621cc3b33d920053",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/RoundSphereRotations.lean": "9b0bec1096cc0337c02543802813257809570b4a0c04215f70b7d4eba187a9f0",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SpherePolynomialRestriction.lean": "0c934c05eb3288954e90234f91b8a291248f7a7ba0d85cbf130abb7c65c2bb00",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicL2.lean": "cdbd61f4c127f521280683bd05e32cf38a5c0dea2a4c04b9dd2b5c722333c183",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/RoundSphereRotationIntegration.lean": "dbcb71b7a93aa64b65cb8f7def3c09318ee3326ae457acd5d5179d05f148297c",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/RoundSphereCasimir.lean": "bfa074c2bb9ed592de4c3ccf731c4860ae6780cd2f452f08f25dae42263cd2b1",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/AmbientPolynomialLaplacian.lean": "ec0fd37ae3fad62e7f6821abf177fbaa5f52334d57e8f438ca7c22bf6d634550",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicOrthogonality.lean": "bcfac85680688ab8efe0f1768298504543a6226c764306c9bbb94430ea15209b",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicCompleteness.lean": "4b485463ee74b1e90922833d2922e993c24d00ba29e9a818869ed5f7044fa868",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicCoefficientDecay.lean": "e0a72fc18253d40968ce911c875d82a80ea75ed3bf9f110121bdb94731f2d820",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicAngularJets.lean": "8101f970c633ccf7b54cc8d1059fb3b24eca5134b3ccd17fd6bdc8daaa891baf",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicParameterCoefficient.lean": "72994dd23cf51351f29f8f9fc723f7ee1dce92ffc8a12f99bfac4b628aaf41e8",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/JointSphereHarmonicCoefficient.lean": "19baa5cb8315052ceb35d459cecfd9d4c3c756d280fed5d11208a3ccfa18e136",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/HarmonicAmbientRotationJets.lean": "5b27be6e83605fec853859ee0da36e90a3ca29c1e4c69a3a7a95c2da80dc6b65",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/JointSphereHarmonicMixedEstimate.lean": "a8b10a4c9b209ce1b0076e8db29870e7d0fc80fa08c6d6afee9274e8598cfb16",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/JointAngularOpenNeighborhood.lean": "f625cd574e2082de2c6c81f727537e9c56dd590292a4b494be2e96241c1a5884",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/JointAngularComplexCoefficient.lean": "5df73f86737c924aaa224921856e1d8ecc8b48a1526d268296374dec017fa29a",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SmoothAngularCoefficient.lean": "099ac98c51348f118d66e5d8ba9e882d8a5d21787bfbdd9c9369aee7dc721239",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicRotationPolynomial.lean": "27078042c77b2151ea9b32ec99a8eadcaeafaa1f0157ed6e01743d08f6dc4c31",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicRotationEnergy.lean": "a507624d29de3d4d6affc561116ee6e10c708b0d56116bed9d95a492490e1f40",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicKernelRotation.lean": "dfd5886d03fe0d6456d7345db6580ef800d570a2b7181e72c2bd582ab4c84b70",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicPointEvaluation.lean": "aa3403f851513f0ae9f7e73ed11e5a8ace09090fa174dc5d5490460ee17e8133",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicCoordinateEnergy.lean": "7c52d409fb2404dc231142aaedaa837f1724252235a0b433236d7c0f8f77e115",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicAmbientJetBounds.lean": "e8e696e08e338803172c4362ea97a9a80528bc2224068da9fcaaa4e7777f1327",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicRadialJetBounds.lean": "ec14046010a1ded024b21ab7c68f6ad5eb09ddce9c0ac749a647731c39dd2dd9",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/SphereHarmonicActualMultiplier.lean": "04ec5b3114de006ced4acb432ff156aa056a9608c7a7fecbd70a0b7647d24d7c",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/HarmonicOperatorSum.lean": "30159cb70d6b956532f22461275946e4779c198c4d5adc746a76996568c2d506",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/ActualAngularFirstOrderBound.lean": "6aaca09c8220d90db0f25d8510544ba3e6bb431776530003e5b5c1cd2af85f7b",
+    "Burnett/Analysis/CubicEnergy/AngularHarmonics/OriginalAngularExpansion.lean": "2a4bc7031786310519d5ad606c272bee4681839e7c72515dd4adc7b863af6374",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularPairing.lean": "c995bb648b6a30aeb53a1a5eae06979d40c300d92bdc377c2c90584c1658de3d",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/PhysicalAngularMultiplierPairing.lean": "63b044714389d5f70a499f53a17d7da85d3e9f3e48ec565fb2a8e022924218d0",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/FirstOrderOriginalAngularPairing.lean": "51408688dfba2cb78b5b8342a4bb89fbc7465276020bc660c615eb562bae8c97",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularSecondExponent.lean": "e1f596a21910515907d3fff4c55c10f16cc117efdcec4c853f106f37070ab769",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularDerivativeCommutator.lean": "43c119b9c69a4c19bed458fd0dbd723814019392e6a376afa33644d06c2e5988",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalHighAdjointFirstOrder.lean": "dd955c62396553b07fde82dc4dfc8b377583963854149163748dac9951c0c682",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularRoughCommutator.lean": "75f80a53c13e6884993b16b1417d5d00781b5294026e5c718851a76df117b7f8",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalWeakDivergenceCommutator.lean": "710c442251510b27bcb9e656a46f12b5056f462a947de41f8c37b583d460c362",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/RadianWavePhase.lean": "e849ca560974b5271f22f0b1b417ceb6c1c8e53f07fc9037e75e38590740089d",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalHermitianWeakEnergy.lean": "fe31341b2888f653c19cfcf4c2decf18802773cdb22ccbc46805aab04a17aeec",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalUpperCutoffL2.lean": "ceb40cdf08d156d2056fcc9b4e2b46ce17aaa7da0264c4cdfeb0fc7b234f8eb9",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalUpperCutoffWeakRecovery.lean": "93ca32b6ddc00ffbc4036a1b5e762ccc6efd8c3d005f1c215fc262ea0c608c65",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularModeBounds.lean": "ece1d151902e4cb981e2016c7cc3f7258cce9d7dadc49773e11b9802f180a2c6",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalAngularCutoff.lean": "f655b38717098ed36b641c46949291e67e5f1cc2ee5f41aa79f6d24a76f7ec62",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalMixedCutoffRecovery.lean": "04caf52e735f5893746e1c560d2bb181c905f97df3079e800b63f22f6de40319",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalMixedWeakEnergy.lean": "e41153bb218e9b2b86ef365e702585d9c65a34682eec2a2a3b33f80123b5da30",
+    "Burnett/Analysis/CubicEnergy/AngularCorrection/OriginalProjectedSourceBridge.lean": "087da19f05e29190aa80d86cb6220cd0dfd11bb0c092ef8020aff25ba377a4ea"
+  },
+  "targets": [
+    {
+      "claim_id": "a08:symmetric-upper-cutoff-strong",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedCutoffRecovery",
+      "declaration": "Burnett.A08.symmetricUpperCutoffOutput_tendsto_of_dual"
+    },
+    {
+      "claim_id": "a08:original-mixed-wave-cutoff",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedCutoffRecovery",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.mixedWavePair_cutoff_recovery"
+    },
+    {
+      "claim_id": "a08:mixed-weak-wave-identity",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedWeakEnergy",
+      "declaration": "Burnett.A08.weakConstantWaveCommutatorPair_eq_mixedSource"
+    },
+    {
+      "claim_id": "a08:original-mixed-weak-energy",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalMixedWeakEnergy",
+      "declaration": "Burnett.A08.exists_originalAngular_mixed_weak_energy"
+    },
+    {
+      "claim_id": "a08:original-projected-source-split",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalProjectedSourceBridge",
+      "declaration": "Burnett.P01.projectedSourceDivergenceL2_eq_constantWave_add_schwartzDivergence"
+    },
+    {
+      "claim_id": "a08:original-angular-modes",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.exists_originalAngular_hermitian_angular_cutoff"
+    },
+    {
+      "claim_id": "a08:hermitian-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_tail"
+    },
+    {
+      "claim_id": "a08:hermitian-upper-cutoff",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_upperRecovery"
+    }
+  ],
+  "production_replay_sha256": "2916b0366a87500038bcf16ccc2fb567d6d039c96a0a66fd42afafef75fa7b91",
+  "source_ranges": [
+    [
+      1476,
+      1591
+    ],
+    [
+      2557,
+      2564
+    ]
+  ]
+}
