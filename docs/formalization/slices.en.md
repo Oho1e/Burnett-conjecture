@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `adb388d98bdbb53d8c2b0d27af2ddf91e46723fb51f54f812bbb186d90dd424c`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `95bf1a49c44aeb4e864f160ddcd9b8a05d05e92c18a220cccaf60bf1a1a211d1`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -633,7 +633,7 @@ Internal refinements (no separate completion status):
 
 - High-adjoint symbol and duality for the second exponent triple. (Paper lines 1441–1465)
 
-Next: Using A06's separation, prove the leading bound and derivative identity term by term, then use both external exponent bounds to close rough commutators for the original operator and high adjoint, with one C_δ.
+Next: Apply the two high-slot commutator bounds and the actual high adjoint to the angular expansion and recover the original patch pairings from the truncated symbols.
 
 <a id="a08"></a>
 
@@ -997,7 +997,7 @@ Boundaries:
 
 Consumers: V11 (proof-input), V12 (proof-input)
 
-Next: The guarded signed quotient recovers the actual cubic numerator on physical far support, and exact coefficients and smoothness are available for the actual thin screen. Continue the operator expansion, its common coefficient bounds, and the C03 source pairing.
+Next: Apply the exact actual far quotient, infrared identities, and high adjoint to the same original patch and its projected sources.
 
 <a id="v11"></a>
 

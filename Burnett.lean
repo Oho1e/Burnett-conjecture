@@ -424,3 +424,5 @@ import Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation
 import Burnett.Analysis.AllScaleTransfer.ActualNearWithProfiles
 import Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension
 import Burnett.Geometry.Cotangent.ActualCauchyMomentumLift
+import Burnett.Analysis.CubicEnergy.HighSlotCommutator
+import Burnett.Analysis.FrozenTransport.ActualFarHighAdjoint
