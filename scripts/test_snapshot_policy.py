@@ -138,6 +138,20 @@ class SnapshotPolicyTests(unittest.TestCase):
         return {"module": name, "source": str(source or self.repo / "Toy.lean"),
                 "olean": str(olean or self.repo / ".lake/build/lib/lean/Toy.olean")}
 
+    def test_windows_lake_batches_preserve_all_build_targets(self):
+        prefix = [r"C:\Lean Tools\lake.exe", "build"]
+        targets = [f"Burnett.Analysis.Deeply.Nested.Project.Module{index:04d}" for index in range(700)]
+        argv = [*prefix, *targets]
+        self.assertGreater(len(subprocess.list2cmdline(argv).encode("utf-16-le")) // 2, 32_767)
+        batches = checker.windows_build_batches(argv)
+        self.assertGreater(len(batches), 1)
+        self.assertEqual([module for batch in batches for module in batch[2:]], targets)
+        for batch in batches:
+            self.assertEqual(batch[:2], prefix)
+            self.assertLess(len(subprocess.list2cmdline(batch).encode("utf-16-le")) // 2, 28_000)
+        short = [*prefix, "Burnett"]
+        self.assertEqual(checker.windows_build_batches(short), [short])
+
     def test_generated_probe_add_modify_delete_preserves_project_snapshot(self):
         before = self.snapshot()
         probe = self.repo / GENERATED / "agent-a/Probe.lean"
