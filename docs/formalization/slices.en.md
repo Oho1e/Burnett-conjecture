@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `3df6a4c0f1a2c9ec3146aa6d7189b610f9560a0fd1c449a247af79a2ba15120e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `e55e2a015a38464e27c3ad7aee113b8cebc45702c9c0167283a3611184a1a561`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1209,7 +1209,7 @@ Boundaries:
 
 Consumers: L02 (proof-input).
 
-Next: Obtain a smooth spacelike Cauchy slice from global hyperbolicity and apply the current lift to the same ray measure in L02.
+Next: The ambient local-moment lift now uses intrinsic piecewise global hyperbolicity. Apply it to the original cosphere transport conclusion in the main theorem.
 
 <a id="l02"></a>
 
@@ -1234,7 +1234,7 @@ Boundaries:
 
 Consumers: None.
 
-Next: State the full actual type of thm:main, assemble the proved outputs of thm:quadratic, C04, and L01, and check the identity of mu and the quantifier over U.
+Next: The open-subspacetime restriction preserves the original moment and transport equations and has a globally hyperbolic lift. The main theorem still needs the original cosphere transport.
 
 <a id="l03"></a>
 
