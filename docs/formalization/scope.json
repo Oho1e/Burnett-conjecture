@@ -5588,6 +5588,81 @@
       "claim_id": "a08:hermitian-upper-cutoff",
       "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAngularCutoff",
       "declaration": "Burnett.A08.OriginalAngularCutoff.partialHermitian_upperRecovery"
+    },
+    {
+      "claim_id": "v08:actual-gauge-entries",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualGaugeSharedEntries",
+      "declaration": "Burnett.V11.originalGaugeTestedOperator_eq_orderedEntries"
+    },
+    {
+      "claim_id": "v11:actual-far-cutoff",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualFarCutoffRecovery",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualFar_cutoff_recovery"
+    },
+    {
+      "claim_id": "v11:actual-gauge-cutoff",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualGaugeCutoffRecovery",
+      "declaration": "Burnett.V11.exists_actualGauge_cutoff_recovery"
+    },
+    {
+      "claim_id": "v11:actual-projected-source-identity",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.OriginalPatchSourceIdentity",
+      "declaration": "Burnett.V11.originalPatchSource_fullIdentity"
+    },
+    {
+      "claim_id": "v11:actual-joint-patch-consumer",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualCorrectionPatchConsumer",
+      "declaration": "Burnett.V11.exists_actualCorrections_consume_sameProjectedPatch"
+    },
+    {
+      "claim_id": "v11:actual-wide-correction-jets",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.IntrinsicCommonWideCorrectionJets",
+      "declaration": "Burnett.V11.exists_intrinsicCorrection_jets_of_jointWideScreen"
+    },
+    {
+      "claim_id": "c02:wide-field-cubic-window",
+      "module": "Burnett.Analysis.TransportPatches.OriginalWideC03Witness",
+      "declaration": "Burnett.C02.exists_originalWideL3_cubicWindow_withJointScreen"
+    },
+    {
+      "claim_id": "c02:thin-field-cubic-replacement",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicFixedJointScreen",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement_withFixedJointScreen"
+    },
+    {
+      "claim_id": "c02:original-test-uniform-jets",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.OriginalFrequencyTestJets",
+      "declaration": "Burnett.V11.exists_uniform_originalFrequencyTest_jets"
+    },
+    {
+      "claim_id": "c02:original-thin-cubic-gradient",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicGradientPair",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement_withFixedJointScreen_andGradientPair"
+    },
+    {
+      "claim_id": "c02:original-thin-family-gradient",
+      "module": "Burnett.Analysis.FrozenTransport.OriginalThinCubicReceivingGradientPair",
+      "declaration": "Burnett.C02.exists_originalThinCubicReceivingFamily_withFixedJointScreen_andGradientPair"
+    },
+    {
+      "claim_id": "c03:original-receiving-patch-family",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.OriginalReceivingPatchFamily",
+      "declaration": "Burnett.V11.exists_receivingPatchFields_of_originalCutoffs"
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-sum",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualPatchFourierSum",
+      "declaration": "Burnett.V11.originalCorrectionFourierSum_of_sharedBudget"
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-tail",
+      "module": "Burnett.Analysis.FrozenTransport.PatchCorrection.ActualCorrectionPatchFourierTail",
+      "declaration": "Burnett.V11.exists_originalCorrectionPatchFourierTail"
+    },
+    {
+      "claim_id": "c04:actual-summed-correction-limit",
+      "module": "Burnett.Analysis.TransportClosure.CorrectionTail",
+      "declaration": "Burnett.C04.fixed_patch_summed_residual_bound_of_actualCorrectionSum"
     }
   ],
   "inventory": [
@@ -26132,6 +26207,276 @@
       "statement_record": "docs/statements/original-angular-cutoff-recovery.zh-CN.md",
       "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
       "semantic_review": "actual-angular-weak-energy-and-cutoff-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v08:actual-gauge-entries",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2263,
+        "endline": 2328
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.originalGaugeTestedOperator_eq_orderedEntries",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v11:actual-far-cutoff",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V10.OriginalGaugeCompatibility.exists_actualFar_cutoff_recovery",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v11:actual-gauge-cutoff",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_actualGauge_cutoff_recovery",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v11:actual-projected-source-identity",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2564
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.originalPatchSource_fullIdentity",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v11:actual-joint-patch-consumer",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_actualCorrections_consume_sameProjectedPatch",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "v11:actual-wide-correction-jets",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2557,
+        "endline": 2591
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_intrinsicCorrection_jets_of_jointWideScreen",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:wide-field-cubic-window",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2731,
+        "endline": 2758
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_originalWideL3_cubicWindow_withJointScreen",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:thin-field-cubic-replacement",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2827,
+        "endline": 2842
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement_withFixedJointScreen",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:original-test-uniform-jets",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2837,
+        "endline": 2839
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_uniform_originalFrequencyTest_jets",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:original-thin-cubic-gradient",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2827,
+        "endline": 2842
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_uniform_originalThinCubicC03Replacement_withFixedJointScreen_andGradientPair",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c02:original-thin-family-gradient",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2827,
+        "endline": 2842
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C02.exists_originalThinCubicReceivingFamily_withFixedJointScreen_andGradientPair",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c03:original-receiving-patch-family",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2852,
+        "endline": 2873
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_receivingPatchFields_of_originalCutoffs",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-sum",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2852,
+        "endline": 2938
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.originalCorrectionFourierSum_of_sharedBudget",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c03:actual-fourier-correction-tail",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2852,
+        "endline": 2938
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.V11.exists_originalCorrectionPatchFourierTail",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "c04:actual-summed-correction-limit",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:variational-transport",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 2943,
+        "endline": 2963
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.C04.fixed_patch_summed_residual_bound_of_actualCorrectionSum",
+      "statement_record": "docs/statements/original-correction-assembly.zh-CN.md",
+      "human_semantic_confirmation": "not-recorded-for-this-new-support-delivery",
+      "semantic_review": "same-source-correction-assembly-readback",
       "does_not_close_parent_claim": true
     }
   ],
