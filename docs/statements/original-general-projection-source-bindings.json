@@ -1,0 +1,39 @@
+{
+  "base": "d36aee5fdb7de9b7dc207e971cd192a2c46b0546",
+  "base_tree": "7d517d799607d01ccefcf78df3ca251ee0fa8841",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "replay_sha256": "48383808193af3bd394d6bf0370edf2155cb5dc9139805b0f862a607129bae52",
+  "replay_ordinary_root_sha256": "5515c3661ec213f09aaffc85c5506e0e52fe7220593888ec939701afc270aacf",
+  "sources": {
+    "Burnett/Analysis/GaugeProjection/OriginalGeneralProjection.lean": "43f1c5a0fea2ea2cfd397d191a663f04e3db2618c54aebd46374087a8a11c8ac",
+    "Burnett/Analysis/GaugeProjection/ReceivingProjectedDerivativePairings.lean": "b0245536f6be4a2aca260d657f923a20b24bfa4715affa06abef584da5a319a2",
+    "Burnett/Analysis/GaugeProjection/ReceivingProjectedPhysicalDefect.lean": "fd8adcae39169813e2676de1b9e6aa558100db3297c6551cdcc6434e84b4f43a"
+  },
+  "targets": [
+    {
+      "claim_id": "prop:general-projection",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalGeneralProjection",
+      "declaration": "Burnett.P01.exists_originalGeneralProjection"
+    },
+    {
+      "claim_id": "p01:same-witness-arbitrary-chart-projection",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalGeneralProjection",
+      "declaration": "Burnett.P01.hasOriginalGeneralProjectionOnChart_of_originalIntrinsicAmplitude"
+    },
+    {
+      "claim_id": "p01:receiving-full-angular-derivative-pairings",
+      "module": "Burnett.Analysis.GaugeProjection.ReceivingProjectedDerivativePairings",
+      "declaration": "Burnett.P01.hasReceivingProjectedDerivativePairings_of_originalIntrinsicAmplitude"
+    },
+    {
+      "claim_id": "p01:receiving-physical-borel-defect",
+      "module": "Burnett.Analysis.GaugeProjection.ReceivingProjectedPhysicalDefect",
+      "declaration": "Burnett.P01.hasReceivingProjectedPhysicalDefect_of_originalIntrinsicAmplitude"
+    }
+  ],
+  "counts": {
+    "targets": 1142,
+    "inventory": 1201,
+    "lean_sources": 1653
+  }
+}

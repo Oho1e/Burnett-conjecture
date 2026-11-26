@@ -49,7 +49,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 3.3 | lemma | `lem:freezing` | 736–764 | Not modeled |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | Not modeled |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [High-slot commutators and the exact physical far symbol](high-slot-and-physical-far-symbol.en.md) · [Original angular correction and cutoff recovery](original-angular-cutoff-recovery.en.md) |
-| 4.1 | proposition | `prop:general-projection` | 1600–1616 | Not modeled |
+| 4.1 | proposition | `prop:general-projection` | 1600–1616 | [Projected source in arbitrary charts](original-general-projection.en.md) |
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | Not modeled · [Assembly of the original gauge and far corrections](original-correction-assembly.en.md) |
 | 6.1 | lemma | `lem:lift` | 2989–2991 | [Full momentum from a smooth spacelike Cauchy slice](cauchy-momentum-lift.en.md) · [Globally hyperbolic full momentum lift](globally-hyperbolic-momentum-lift.en.md) |
 | 6.2 | corollary | `cor:strong` | 3063–3078 | [Strong compactness on vacuum regions](strong-compactness.en.md) |
