@@ -16,6 +16,7 @@ from pathlib import Path
 import re
 import stat
 import subprocess
+from time import monotonic
 import sys
 from typing import Any
 
@@ -391,9 +392,32 @@ def verify_loaded_boundaries(log: Path, repo: Path, output: Path, generated: tup
             "checked_local_sources": sorted(local_sources), "module_paths_sha256": fingerprint(modules)}
 
 
-def command(argv: list[str], repo: Path, log: Path, timeout: int) -> int:
+def windows_build_batches(argv: list[str]) -> list[list[str]]:
+    # CreateProcessW counts UTF-16 code units and limits the command line to 32767.
+    # Leave room below that limit for the executable and any launcher details.
+    limit = 28_000
+    prefix = argv[:2]
+    prefix_units = len(subprocess.list2cmdline(prefix).encode("utf-16-le")) // 2
+    batches: list[list[str]] = []
+    current = prefix.copy()
+    current_units = prefix_units
+    for module in argv[2:]:
+        module_units = 1 + len(subprocess.list2cmdline([module]).encode("utf-16-le")) // 2
+        if prefix_units + module_units >= limit:
+            raise CheckError(f"Lake module name exceeds the Windows command-line limit: {module}")
+        if current_units + module_units >= limit:
+            batches.append(current)
+            current = prefix.copy()
+            current_units = prefix_units
+        current.append(module)
+        current_units += module_units
+    batches.append(current)
+    return batches
+
+
+def command(argv: list[str], repo: Path, log: Path, timeout: float, *, append_log: bool = False) -> int:
     print("Running " + json.dumps(argv, ensure_ascii=False), flush=True)
-    with log.open("w", encoding="utf-8", newline="\n") as stream:
+    with log.open("a" if append_log else "w", encoding="utf-8", newline="\n") as stream:
         stream.write("Command: " + json.dumps(argv, ensure_ascii=False) + "\n")
         stream.flush()
         try:
@@ -493,9 +517,22 @@ def run(args: argparse.Namespace) -> int:
                 raise CheckError(f"Target module must have a local source file: {module}")
         build_command = [args.lake, "build", *modules]
         result["build_command"] = build_command
-        result["build_returncode"] = command(build_command, repo, output / "build.log", args.timeout)
+        builds = windows_build_batches(build_command) if os.name == "nt" else [build_command]
+        build_log = output / "build.log"
+        if len(builds) == 1:
+            result["build_returncode"] = command(builds[0], repo, build_log, args.timeout)
+        else:
+            result["build_commands"] = builds
+            build_deadline = monotonic() + args.timeout
+            for index, argv in enumerate(builds):
+                remaining = build_deadline - monotonic()
+                if remaining <= 0:
+                    raise CheckError(f"Lean build timed out; see {build_log}")
+                result["build_returncode"] = command(argv, repo, build_log, remaining, append_log=index > 0)
+                if result["build_returncode"] != 0:
+                    break
         if result["build_returncode"] != 0:
-            raise CheckError(f"Lean build failed; see {output / 'build.log'}")
+            raise CheckError(f"Lean build failed; see {build_log}")
         audit = output / "CheckTargets.lean"
         audit.write_text(audit_source(manifest["targets"], entry_modules, bool(generated)), encoding="utf-8", newline="\n")
         result["audit_sha256"] = digest(audit)
