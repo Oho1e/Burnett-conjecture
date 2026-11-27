@@ -143,7 +143,7 @@
     "Burnett.Analysis.TransportWard.Weyl.FixedInfraredTestDerivative": "033c2efc41ac2fce705baf965c72c82be74abfc38450dd09f95b56bf06f698c6",
     "Burnett.Analysis.PrincipalEnergy.Freezing.FixedInfraredCubicCoefficients": "27f22728028409c8847b742a1ed541a35fdea0e0f17055b435d6e96061be2e26",
     "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralPrincipalFreezing": "de9b9fd2126c9430ac0c5fa67e3048c15de99af968375edb5dcde8b1e90ac979",
-    "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralLowerCubicAction": "4e0d1632275d1a2a96146f4a534411ef8454cb58341dac72246d03e02679180f",
+    "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralLowerCubicAction": "91db17d1c219612d7351aa3b4973b835283854e15fa39a955b7b26419fd9ee1a",
     "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralFreezingTestL3": "587fed9eae8cc8139dbd91d7e48b739dd9aad97da7013a532c1d6421298fb0bd",
     "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralCubicFreezing": "74033606df8902da77399a65c25b7906082d8528b70276c1fc8f6a95a4daf6d3",
     "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralCubicPolarization": "90b7e98779a73ba6c077998429aa3312752076a58b6e3fc9519298b5140018ca",
@@ -180,5 +180,10 @@
     "targets": 1148,
     "inventory": 1203,
     "lean_sources": 1796
+  },
+  "release_import_repair": {
+    "module": "Burnett.Analysis.PrincipalEnergy.Freezing.GeneralLowerCubicAction",
+    "qualified_source_sha256": "4e0d1632275d1a2a96146f4a534411ef8454cb58341dac72246d03e02679180f",
+    "source_sha256": "91db17d1c219612d7351aa3b4973b835283854e15fa39a955b7b26419fd9ee1a"
   }
 }

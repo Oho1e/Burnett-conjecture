@@ -11,7 +11,6 @@ noncomputable section
 namespace Burnett.A03
 
 open MeasureTheory Metric Set Burnett.RicciSymbol Burnett.A02.FrequencySplit
-open Burnett.A02.FieldAndCoefficientReview (fieldValueArray)
 open scoped BigOperators ENNReal
 
 /-- The integral of one fixed smooth coefficient and three scalar field slots. -/
