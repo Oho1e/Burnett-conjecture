@@ -562,7 +562,7 @@
       "outputs": [
         "||T_Hu||_2≤C_δ||H||_4||∂u||_4；||[∂_a,T_H]u||_2≤C_δ||∂_aH||_4||∂u||_4；||[d,T_H]v||_2≤C_δ||∂d||_∞||H||_4||v||_4。",
         "高槽形式伴随b†(p,ξ)=conj(b(-p,ξ+p))^T、低场变conj(F)；高输入/输出频率仍可比，伴随有同样首项界；[∂_a,T_H]=T_{∂_aH}，伴随导数交换子相同控制。",
-        "实标量d满足[d,T_H*]=-[d,T_H]*；用(4,2,4/3)外部界及对偶性得同样L⁴低场×L⁴高场→L²的伴随粗交换子界。非齐次版只增加u低阶范数。",
+        "实标量d满足[d,T_H*]=-[d,T_H]*；用(4,2,4/3)界及对偶性得同样L⁴低场×L⁴高场→L²的伴随粗交换子界。非齐次版只增加u低阶范数。",
         "常数由A06有限延拓半范数控制，对角有限和一致；完整Hermitian修正由Hermitian部分在算子范数中恢复。"
       ],
       "risks": [
@@ -570,7 +570,7 @@
         "d只在高槽；若误置低槽会产生未控制的低角交换子。",
         "T_H*的支撑/高频可比性及低角共轭必须明确。"
       ],
-      "next_action": "两组高槽交换子指数界和实际高伴随已实现。接续角调和展开与原补丁的截断恢复。",
+      "next_action": "标量引理、有限矩阵伴随与固定径向窗口的非齐次估计已通过具名核验。接续工程构建与作者确认。",
       "supplementary_obligations": [
         {
           "id": "local:high-adjoint-rough-commutator-duality",
@@ -8832,6 +8832,18 @@
       "claim_id": "a01:original-hermitian-lipschitz-energy",
       "source_slices": [
         "A01"
+      ]
+    },
+    {
+      "claim_id": "a07:finite-matrix-correction",
+      "source_slices": [
+        "A07"
+      ]
+    },
+    {
+      "claim_id": "a07:fixed-radial-inhomogeneous-correction",
+      "source_slices": [
+        "A07"
       ]
     }
   ],

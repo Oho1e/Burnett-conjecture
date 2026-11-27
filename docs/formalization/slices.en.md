@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `9a4a79041a5213b9744dacdafadb81a2e4b711c9272afbab4870b1bb7f766404`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `c8756b449dd4684842540e063e825a1dd814c40be0f7c162a99eea2ca65c7bf4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -618,7 +618,7 @@ Outputs:
 
 - ||T_Hu||_2≤C_δ||H||_4||∂u||_4; ||[∂_a,T_H]u||_2≤C_δ||∂_aH||_4||∂u||_4; ||[d,T_H]v||_2≤C_δ||∂d||_∞||H||_4||v||_4.
 - The high-slot formal adjoint has b†(p,ξ)=conj(b(-p,ξ+p))^T and low field conj(F). High input/output frequencies remain comparable; the adjoint has the same leading bound. The identity [∂_a,T_H]=T_{∂_aH} holds, with the same control for the adjoint derivative commutator.
-- For real scalar d, [d,T_H*]=-[d,T_H]*. The external (4,2,4/3) bound and duality give the same L⁴-low-field × L⁴-high-field → L² rough-commutator bound for the adjoint. The inhomogeneous version adds only a lower-order norm of u.
+- For real scalar d, [d,T_H*]=-[d,T_H]*. The (4,2,4/3) bound and duality give the same L⁴-low-field × L⁴-high-field → L² rough-commutator bound for the adjoint. The inhomogeneous version adds only a lower-order norm of u.
 - Constants are controlled by A06's finite extension seminorms and uniform over finite angular sums. Recover the full Hermitian correction through Hermitian parts in operator norm.
 
 Boundaries:
@@ -633,7 +633,7 @@ Internal refinements (no separate completion status):
 
 - High-adjoint symbol and duality for the second exponent triple. (Paper lines 1441–1465)
 
-Next: Apply the two high-slot commutator bounds and the actual high adjoint to the angular expansion and recover the original patch pairings from the truncated symbols.
+The scalar bounds, finite component adjoint, and fixed-window radial inhomogeneous estimates passed qualified native checks. The project audit and author confirmation are recorded separately.
 
 <a id="a08"></a>
 
