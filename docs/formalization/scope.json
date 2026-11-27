@@ -5780,6 +5780,21 @@
       "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds"
     },
     {
+      "claim_id": "unnum:quartic-commutator",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper",
+      "declaration": "Burnett.A08.exists_paperAnalyticLipschitzQuarticBound"
+    },
+    {
+      "claim_id": "a08:weak-commutator-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.originalWeakDivergenceCommutatorPair_angularTail"
+    },
+    {
+      "claim_id": "a08:uniform-weak-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.exists_boundedLipschitzWeakDivergenceAngularTails"
+    },
+    {
       "claim_id": "a07:finite-matrix-correction",
       "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.FiniteMatrixAnalyticCorrectionBounds",
       "declaration": "Burnett.A08.exists_paperFiniteMatrixAnalyticCorrectionBounds"
@@ -6192,16 +6207,18 @@
     },
     {
       "claim_id": "unnum:quartic-commutator",
-      "kind": "unnumbered-result-candidate",
+      "kind": "proof-dependency",
       "source_ref": {
         "path": "paper/burnett.tex",
         "line": 1476,
         "endline": 1504
       },
-      "disposition": "pending-scope-review",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/source-index.json"
+      "disposition": "formalize",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-lipschitz-quartic-commutator.zh-CN.md",
+      "declaration": "Burnett.A08.exists_paperAnalyticLipschitzQuarticBound",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "unnum:exact-correction",
@@ -26931,6 +26948,38 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "a08:weak-commutator-angular-tail",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quartic-commutator",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.originalWeakDivergenceCommutatorPair_angularTail",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1541,
+        "endline": 1558
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-lipschitz-quartic-commutator.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "a08:uniform-weak-angular-tail",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quartic-commutator",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.exists_boundedLipschitzWeakDivergenceAngularTails",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1541,
+        "endline": 1558
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-lipschitz-quartic-commutator.zh-CN.md",
       "human_semantic_confirmation": "pending-author-confirmation"
     }
   ],

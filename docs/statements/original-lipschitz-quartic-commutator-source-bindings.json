@@ -1,0 +1,80 @@
+{
+  "base": "3234dafaec00c0860d0eda0b1259032548ec278f",
+  "base_tree": "4b51da1f7e87d79c11fd925d23d6ced5b2039a90",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_label": "eq:analytic-quartic-bound",
+  "paper_lines": [
+    1476,
+    1504
+  ],
+  "paper_span_sha256": "55f7b02949b040896518563eaa4b51f38e1e73ac3baccd033cb7740b27f15c74",
+  "target": {
+    "claim_id": "unnum:quartic-commutator",
+    "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper",
+    "declaration": "Burnett.A08.exists_paperAnalyticLipschitzQuarticBound"
+  },
+  "ordinary_source_sha256": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakDivergenceForm": "aaf02fb4713b8ebd0c3bdac31caf6c735646ddf81beda1f29a37dbb4c0d2433c",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakCoefficientPair": "61a2dbbd6ad07e702e16b9f3a4453c94c6179e11ab2b0d357fdf53b15ce2325b",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticBound": "c60e2c3f8b75b513e048cc9e8e28e8856346035aa6a87cf5a4f5ea0abea22340",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper": "fad64d824a92866449ca15fd21ae17a26c1868e8a692705a147701aeee7fdd5f"
+  },
+  "immediate_import_source_sha256": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakDivergenceForm": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds": "9a1454527f8958468ac0ede32833ddd4bb5e569249bbe486243804619280ba5e"
+    },
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakCoefficientPair": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakDivergenceForm": "aaf02fb4713b8ebd0c3bdac31caf6c735646ddf81beda1f29a37dbb4c0d2433c"
+    },
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticBound": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakCoefficientPair": "61a2dbbd6ad07e702e16b9f3a4453c94c6179e11ab2b0d357fdf53b15ce2325b"
+    },
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticBound": "c60e2c3f8b75b513e048cc9e8e28e8856346035aa6a87cf5a4f5ea0abea22340"
+    }
+  },
+  "a07_qualified_native_sha256": "3ce98a06639c583c4e50d59578522880a62ff7c8b98da85ef199f0d091f93a8b",
+  "isolated_a08_replay_sha256": "5f526cb00f2c4ea29fb46b2e52baa3afc0ef01c4a0574eb79c53241bce01508c",
+  "qualified_native_sha256": "70023cece03959e90f0cc7e8d14ab567115f4d1b2d9398b8a75c21f57160096d",
+  "axioms": {
+    "Burnett.A08.boundedWeakDivergenceCommutatorPair_eq_schwartz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Burnett.A08.boundedCoefficientCorrectionCommutatorPair_fourier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Burnett.A08.boundedWeakDivergenceCommutatorPair_threeTerms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Burnett.A08.PaperAnalyticCorrectionBounds.boundedWeakDivergenceCommutator_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Burnett.A08.exists_paperAnalyticLipschitzQuarticBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "independent_candidate_review": "pending",
+  "ordinary_project_check": "pending",
+  "author_confirmation": "pending-author-confirmation",
+  "paper_formalization_verified": false,
+  "release_local_instances": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper": {
+      "qualified_native_source_sha256": "fad64d824a92866449ca15fd21ae17a26c1868e8a692705a147701aeee7fdd5f",
+      "source_sha256": "cdacbdbde7bc701cc3f478e208a967cbb4dbce2438307a3e53e2368f2f4b3549"
+    },
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughUpperFrequencyWeakRecovery": {
+      "qualified_native_source_sha256": "918a5f753312e145cfc46207de5fc50c5515ac278b5762f561caa4e71c9ee9bb",
+      "source_sha256": "7b978b058e611e587564937aa551f9157bdfffdc27c8fa5705c23e72f0d519d1"
+    }
+  }
+}

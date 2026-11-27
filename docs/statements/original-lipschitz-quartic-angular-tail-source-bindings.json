@@ -1,0 +1,69 @@
+{
+  "base": "3234dafaec00c0860d0eda0b1259032548ec278f",
+  "base_tree": "4b51da1f7e87d79c11fd925d23d6ced5b2039a90",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_spans": [
+    {
+      "lines": [
+        1541,
+        1552
+      ],
+      "sha256": "86e594fa6625a1934be44e8a40bb05c4a369352229563dcb4c3dcc7286337e01"
+    },
+    {
+      "lines": [
+        1558,
+        1558
+      ],
+      "sha256": "abeedacbf9ce8bce1e6fa8e914a2584d14f77ff8870738da5b51c9239fc6c5f7"
+    }
+  ],
+  "predecessor_candidate_sha256": "20f9fdb28d15f90528dcffd2f9e78277acacf73a64191640fdf6870d849a7f07",
+  "rough_angular_qualified_native_sha256": "41caf03eb0fff233a90e6becaa73c1b966bd101fde089b18a4ebecb0ebe93ebc",
+  "primary_claim_target": {
+    "claim_id": "unnum:quartic-commutator",
+    "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticPaper",
+    "declaration": "Burnett.A08.exists_paperAnalyticLipschitzQuarticBound"
+  },
+  "additional_support_targets": [
+    {
+      "claim_id": "a08:weak-commutator-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.originalWeakDivergenceCommutatorPair_angularTail"
+    },
+    {
+      "claim_id": "a08:uniform-weak-angular-tail",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail",
+      "declaration": "Burnett.A08.OriginalAngularCutoff.exists_boundedLipschitzWeakDivergenceAngularTails"
+    }
+  ],
+  "ordinary_source_sha256": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularCoefficientTail": "24e3c6e94304f9e1e32dc9b0b61a0583ffc1251af8b63d59581a23c7fc0bf125",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail": "65b160d959de7225408e941f2982971b820ca12e72a7522271d12ee2090b49d9"
+  },
+  "immediate_import_source_sha256": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularCoefficientTail": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakCoefficientPair": "61a2dbbd6ad07e702e16b9f3a4453c94c6179e11ab2b0d357fdf53b15ce2325b"
+    },
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularWeakTail": {
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.RoughAngularCoefficientTail": "24e3c6e94304f9e1e32dc9b0b61a0583ffc1251af8b63d59581a23c7fc0bf125",
+      "Burnett.Analysis.CubicEnergy.AngularCorrection.LipschitzWeakQuarticBound": "c60e2c3f8b75b513e048cc9e8e28e8856346035aa6a87cf5a4f5ea0abea22340"
+    }
+  },
+  "axioms": {
+    "Burnett.A08.OriginalAngularCutoff.originalWeakDivergenceCommutatorPair_angularTail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Burnett.A08.OriginalAngularCutoff.exists_boundedLipschitzWeakDivergenceAngularTails": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "scope": "Same original Hermitian angular cutoff, exact weak pairing difference, and three quantitative tails.",
+  "ordinary_project_check": "pending",
+  "independent_candidate_review": "pending",
+  "author_confirmation": "pending-author-confirmation"
+}

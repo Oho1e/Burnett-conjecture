@@ -606,7 +606,7 @@
         "粗交换子界d仅Lipschitz，应用中的光滑d与Schwartz域需另验证；不能以域近似隐匿极限。",
         "精确相位不能用近似相位替代；Hermitian分子/除法符号及延拓必须匹配。"
       ],
-      "next_action": "同一实际角算子已有混合弱能量估计、固定角阶的上频率恢复和角尾估计。将这些结果接到近远补丁的同一投影源。",
+      "next_action": "1476–1504 行的四次界和 1541–1552、1558 行的三项弱角尾已具名实现。普通工程复核沿用同一正向、真实高频伴随和 Hermitian 角和。",
       "supplementary_obligations": [
         {
           "id": "local:fixed-sequence-index-Schwartz-domain",
@@ -8844,6 +8844,18 @@
       "claim_id": "a07:fixed-radial-inhomogeneous-correction",
       "source_slices": [
         "A07"
+      ]
+    },
+    {
+      "claim_id": "a08:weak-commutator-angular-tail",
+      "source_slices": [
+        "A08"
+      ]
+    },
+    {
+      "claim_id": "a08:uniform-weak-angular-tail",
+      "source_slices": [
+        "A08"
       ]
     }
   ],
