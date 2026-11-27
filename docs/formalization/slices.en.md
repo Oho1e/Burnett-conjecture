@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `6ed4dd7f0d8f64f0a4cc31b3cf128fb7658ed4356ec88bd72d9d5e223714e432`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `3cc3a271dcbb46c901617e003d571e4566c97eff48efb4f8cc6ca5fe8ba38b52`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -429,7 +429,7 @@ Internal refinements (no separate completion status):
 
 - Shared analytic objects and uniform finite-symbol-seminorm specifications for this section. (Paper lines 519–537)
 
-Next: The scalar and matrix principal-energy pairings and both fixed-chart density estimates now have Lean proofs for the full left-quantized action under the registered symbol and support assumptions. The remaining work is to identify the manuscript's operator class and downstream Weyl actions with those Lean inputs.
+Next: Both Lebesgue energy estimates for the manuscript's general smooth S¹₁,₀ operators use the original Fourier convention. Fixed-chart densities have their own interfaces. Continue identifying the actual downstream Weyl actions with the full left quantization at each consumer.
 
 <a id="a02"></a>
 
