@@ -225,6 +225,7 @@ import Burnett.Analysis.FrozenScreen.Projection
 import Burnett.Analysis.FrozenScreen.Symbol
 import Burnett.Analysis.PrincipalEnergy
 import Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy
+import Burnett.Analysis.PrincipalEnergy.Freezing.OriginalCubicFreezing
 import Burnett.Analysis.AngularCaps.CapDistribution
 import Burnett.Analysis.AngularCaps.LinearFourierChange
 import Burnett.Analysis.AngularCaps.ProjectiveNullGeometry
@@ -463,3 +464,4 @@ import Burnett.Geometry.Cotangent.OpenRegion.Transport
 import Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift
 import Burnett.Analysis.GaugeProjection.OriginalGeneralProjection
 import Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra
+import Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing

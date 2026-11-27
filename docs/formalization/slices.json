@@ -381,7 +381,7 @@
         "必须同时冻结测试与作用系数，且完整三槽对称性先于估计。",
         "原文固定N的有限符号导数阈值不应误称最优阈值。"
       ],
-      "next_action": "先建有限半范数控制的三槽取消式，再分别验证测试冻结与系数冻结，统一输出A/B_ℓ量词。",
+      "next_action": "完整三次作用的系数与测试冻结已实现，保留 A 和 B_ℓ 的原量词。继续在 C01 使用同一个主项变分。",
       "supplementary_obligations": [
         {
           "id": "local:complete-action-derivative-cancellation",

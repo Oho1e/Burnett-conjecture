@@ -5768,6 +5768,11 @@
       "claim_id": "a01:original-hermitian-lipschitz-energy",
       "module": "Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy",
       "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianHermitianLipschitzEnergy"
+    },
+    {
+      "claim_id": "lem:freezing",
+      "module": "Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing",
+      "declaration": "Burnett.A03.exists_symmetric_action_freezing_of_local_classical_amplitude"
     }
   ],
   "inventory": [
@@ -5859,9 +5864,12 @@
         "endline": 764
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t06"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-cubic-freezing.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "declaration": "Burnett.A03.exists_symmetric_action_freezing_of_local_classical_amplitude",
+      "semantic_review": "independent-source-and-type-readback-passed"
     },
     {
       "claim_id": "lem:analytic-near",

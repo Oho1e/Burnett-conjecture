@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `3cc3a271dcbb46c901617e003d571e4566c97eff48efb4f8cc6ca5fe8ba38b52`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `9a4a79041a5213b9744dacdafadb81a2e4b711c9272afbab4870b1bb7f766404`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -495,7 +495,7 @@ Internal refinements (no separate completion status):
 - Three-slot variation and separated-test estimates. (Paper lines 767–819)
 - ℓ-small spatial expansion and order-zero remainders. (Paper lines 825–865)
 
-Next: Establish the three-slot cancellation with finite-seminorm control, verify test freezing and coefficient freezing separately, then unify the quantifiers for A/B_ℓ.
+Next: The complete cubic coefficient and test freezing has been implemented with the original quantifiers for A and B_ℓ. Use the same principal variation in C01.
 
 <a id="a04"></a>
 
