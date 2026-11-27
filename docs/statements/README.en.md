@@ -46,7 +46,7 @@ The initial index identifies 17 formal result environments (3 theorems, 6 lemmas
 | 2.2 | corollary | `cor:base-marginal` | 487–506 | [Proof implemented](base-marginal-and-angular-disintegration.en.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | [Lipschitz commutator estimate in a symmetric energy pairing](lipschitz-commutator-energy.en.md) |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [Proof implemented](paper-cubic-continuity.en.md) |
-| 3.3 | lemma | `lem:freezing` | 736–764 | Not modeled |
+| 3.3 | lemma | `lem:freezing` | 736–764 | [Quantitative freezing of a complete cubic energy](original-cubic-freezing.en.md) |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | [All-scale transfer and angular summation](analytic-near.en.md) |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [High-slot commutators and the exact physical far symbol](high-slot-and-physical-far-symbol.en.md) · [Original angular correction and cutoff recovery](original-angular-cutoff-recovery.en.md) |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | [Projected source in arbitrary charts](original-general-projection.en.md) |

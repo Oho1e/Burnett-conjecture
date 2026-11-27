@@ -46,7 +46,7 @@
 | 2.2 | corollary | `cor:base-marginal` | 487–506 | [已有 Lean 证明](base-marginal-and-angular-disintegration.zh-CN.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | [对称能量配对的 Lipschitz 交换子估计](lipschitz-commutator-energy.zh-CN.md) |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [已实现](paper-cubic-continuity.zh-CN.md) |
-| 3.3 | lemma | `lem:freezing` | 736–764 | 未建模 |
+| 3.3 | lemma | `lem:freezing` | 736–764 | [完整三次能量的定量冻结](original-cubic-freezing.zh-CN.md) |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | [全尺度传递与近角求和](analytic-near.zh-CN.md) |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [高槽交换子与实际物理远角精确符号](high-slot-and-physical-far-symbol.zh-CN.md) · [原角修正与截断恢复](original-angular-cutoff-recovery.zh-CN.md) |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | [任意坐标图的投影源](original-general-projection.zh-CN.md) |
