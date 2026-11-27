@@ -470,7 +470,7 @@
         "变换矩阵在全频空间不一致可逆；证明只需固定放大锥上的比值符号界。",
         "C^100、Fourier系数衰减与平方函数多项式损失须共同核算，不能凭长度有限宣称一致。"
       ],
-      "next_action": "未缩放界、逐因子截断、相邻帽估计和 L³ 延拓已实现。接续近角及 Ward 实际归一化符号与这些估计的联接。",
+      "next_action": "统一 A05 入口给出原符号的全尺度界与相邻薄锥帽近角界。继续在同一原物理近场、相位和补丁分解中消费这些界。",
       "supplementary_obligations": [
         {
           "id": "local:cap-rescaling-invariant-trilinear-norm",

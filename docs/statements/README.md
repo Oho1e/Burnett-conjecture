@@ -47,7 +47,7 @@
 | 3.1 | lemma | `lem:commutator` | 566–575 | 未建模 |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [已实现](paper-cubic-continuity.zh-CN.md) |
 | 3.3 | lemma | `lem:freezing` | 736–764 | 未建模 |
-| 3.4 | lemma | `lem:analytic-near` | 1026–1057 | 未建模 |
+| 3.4 | lemma | `lem:analytic-near` | 1026–1057 | [全尺度传递与近角求和](analytic-near.zh-CN.md) |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [高槽交换子与实际物理远角精确符号](high-slot-and-physical-far-symbol.zh-CN.md) · [原角修正与截断恢复](original-angular-cutoff-recovery.zh-CN.md) |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | [任意坐标图的投影源](original-general-projection.zh-CN.md) |
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | 未建模 · [原规范修正与远角修正的装配](original-correction-assembly.zh-CN.md) |

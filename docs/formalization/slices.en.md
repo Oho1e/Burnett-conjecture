@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `c044eb91fce121def2f7e12f0e4cb10e2c08efacbfebed86322ff93c4e65d81e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `6ed4dd7f0d8f64f0a4cc31b3cf128fb7658ed4356ec88bd72d9d5e223714e432`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -568,7 +568,7 @@ Internal refinements (no separate completion status):
 - Radial remainder, comparable piece, third-slot support protection, and truncation uniformity. (Paper lines 1148–1224)
 - Cap summation and β_* output. (Paper lines 1226–1243)
 
-Next: The unscaled estimate, factorwise truncations, adjacent-cap estimate, and L³ extension have Lean proofs. Connect the actual normalized near and Ward symbols to these estimates.
+Next: The unified A05 theorem gives the two original estimates. Use the same operators for the normalized physical near field, phase terms, and patch decomposition.
 
 <a id="a06"></a>
 
