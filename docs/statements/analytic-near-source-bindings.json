@@ -1,0 +1,587 @@
+{
+  "base": "8c06ffbc474e9f424f93c924fb1d46d37f32d7ca",
+  "base_tree": "fb1aa3a71310045a5aff4f957f888708abb5b8e9",
+  "paper_label": "lem:analytic-near",
+  "paper_statement_lines": [
+    1026,
+    1057
+  ],
+  "paper_proof_span": [
+    1026,
+    1245
+  ],
+  "paper_span_sha256": "036ab2322b864ed2dd0a7df6fa35ee8ae6eff895a3a101ed8553c1183b923a35",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "scratch_replay_sha256": "13922ec5d60cfd7ca17175ecc9ba024eedaf83fde7845fbc1311458d8d0c0d8c",
+  "author_confirmation": "pending-author-confirmation",
+  "sources": {
+    "Burnett/Analysis/AllScaleTransfer/SphereAtlas.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.SphereAtlas",
+      "scratch_source": "WardSphereAtlas.lean",
+      "scratch_sha256": "191e20c757442eb94c0db565e7ecb0b3b7d8c667616c76c595a4a2b1b20bfff2",
+      "sha256": "94e081f5cb523e10c4cddbf593734ce6e67a494661ba74a85bca8d01b1284e97",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.SignedAnnularCharts",
+        "Burnett.Analysis.AllScaleTransfer.ActualUnscaledEstimate",
+        "Mathlib.Analysis.Calculus.ContDiff.WithLp"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/AnalyticNearUnscaled.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNearUnscaled",
+      "scratch_source": "WardAllScaleUnscaledLemma.lean",
+      "scratch_sha256": "73272e8e699853fee4312b0b3805b84fcac4bd8afc477b54413a05b1ce37fbba",
+      "sha256": "3c5971774853f022b9da2a8444da429aeb6ad5defd06232543cf73c9d13547eb",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.SphereAtlas",
+        "Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/AnalyticNearScalar.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNearScalar",
+      "scratch_source": "WardAllScaleNearLemma.lean",
+      "scratch_sha256": "3b064c22fb07f1300fe6b28bcb8ab1d8ed869515f69786afb4c91ea21f1c5932",
+      "sha256": "6dcc09667ceb844de68d747bbe9583c90f3fd0fb9e15b825c39088606698ba8e",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.ActualNearWithProfiles",
+        "Burnett.Analysis.AllScaleTransfer.RadianFactorwiseTruncation"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/AnalyticNearCapInputs.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNearCapInputs",
+      "scratch_source": "WardAllScaleNearCapInputs.lean",
+      "scratch_sha256": "add902fe00d95d723f6c3752c51454b0bf60a367305ff9f70b25e0589a9b306b",
+      "sha256": "12b410121a36b7fa72fe6ad254f32e787a9ab707bc35c662e8033b6880be1d2c",
+      "imports": [
+        "Burnett.Analysis.AngularCaps.ActualFieldCapAngularL3",
+        "Burnett.Analysis.AngularCaps.UniformNullCapCharts"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/AnalyticNearData.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNearData",
+      "scratch_source": "AnalyticNearPaperData.lean",
+      "scratch_sha256": "32713f19d2dd26a4928a2a230e84d05d05276cdeca8c9537d77bef538e9849a8",
+      "sha256": "6cc5e406adde2822a00ac6583706696bf74fcd27a0b1a8a755a6c14eaa29508b",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearUnscaled",
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearScalar",
+        "Burnett.Analysis.Fourier.FixedInfraredSchwartz"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/AnalyticNear.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNear",
+      "scratch_source": "AnalyticNearPaper.lean",
+      "scratch_sha256": "aa57fc2ac4b90ee61c983e9e4dc8a61b5e9931726219ad9622e7a3ef3bb58ad0",
+      "sha256": "86210a43484472a723275b584aff9426ab2e9d616bc1121f525c42c2e4cb1c02",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearData",
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearCapInputs"
+      ]
+    },
+    "Burnett/Analysis/AllScaleTransfer/UnscaledEndpointTrace.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.UnscaledEndpointTrace",
+      "scratch_source": "UnscaledEndpointTrace.lean",
+      "scratch_sha256": "540f61b9a48decd4e5aa18c4200e257532f1bc7fa7e04065329b3bfb4cb1938e",
+      "sha256": "540f61b9a48decd4e5aa18c4200e257532f1bc7fa7e04065329b3bfb4cb1938e",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearData"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearData": "d83003ef9de516cecc9e6c904376e3ae9d5d223107b015106a1090878bb47293"
+      },
+      "native_object_sha256": "9adbf1bec597145c03c34dde679f5e58e69cdfe63d4d9df0fe9e642c31b0b5d6",
+      "native_log_sha256": "347146c4d27895dca85680c58c54a239471b5a85f0e4c426579e39eefcb8c8ba"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalAtlasRepresentatives.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasRepresentatives",
+      "scratch_source": "OriginalAtlasRepresentatives.lean",
+      "scratch_sha256": "77d6a56727ddb0dc85e26bd02232c75393a55320aa7dceb75adfbff4e6a1ec8b",
+      "sha256": "77d6a56727ddb0dc85e26bd02232c75393a55320aa7dceb75adfbff4e6a1ec8b",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.UnscaledEndpointTrace"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.UnscaledEndpointTrace": "9adbf1bec597145c03c34dde679f5e58e69cdfe63d4d9df0fe9e642c31b0b5d6"
+      },
+      "native_object_sha256": "bac70728c3ec13a98e3c5cf389ac11e14e63b97127ac387884bcabc9194e2240",
+      "native_log_sha256": "b65a82a0daf0c1cbc77dc1ab714e0f6c90087e37bd5252ce9a29288036c50730"
+    },
+    "Burnett/Analysis/AllScaleTransfer/BoundedSignedCapEndpoint.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.BoundedSignedCapEndpoint",
+      "scratch_source": "A05BoundedSignedCapEndpoint.lean",
+      "scratch_sha256": "680e3fb4e13b9fbda6433129b2a457107704821b2d6d7eec82123066c8599a47",
+      "sha256": "680e3fb4e13b9fbda6433129b2a457107704821b2d6d7eec82123066c8599a47",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearData"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNearData": "d83003ef9de516cecc9e6c904376e3ae9d5d223107b015106a1090878bb47293"
+      },
+      "native_object_sha256": "626cd29f612878893aa8cae52802a57ac6ae318324788c768e261c8f139078da",
+      "native_log_sha256": "9422e6e166ce85023a53b21b066f8867a80f4b28b4e533aa1793f19713e86bd0"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalAnalyticNear.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNear",
+      "scratch_source": "OriginalAnalyticNear.lean",
+      "scratch_sha256": "317fd7fd9194a5ab00239966303869dc7e7411828df48ac00eb2455bf7d8a4b7",
+      "sha256": "317fd7fd9194a5ab00239966303869dc7e7411828df48ac00eb2455bf7d8a4b7",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalAtlasRepresentatives",
+        "Burnett.Analysis.AllScaleTransfer.BoundedSignedCapEndpoint",
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNear"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalAtlasRepresentatives": "bac70728c3ec13a98e3c5cf389ac11e14e63b97127ac387884bcabc9194e2240",
+        "Burnett.Analysis.AllScaleTransfer.BoundedSignedCapEndpoint": "626cd29f612878893aa8cae52802a57ac6ae318324788c768e261c8f139078da",
+        "Burnett.Analysis.AllScaleTransfer.AnalyticNear": "82977dbdd9621b6d9908d9bfe25e106759e37d3de4079aee9f94ae50b54d5691"
+      },
+      "native_object_sha256": "8cf5977ed8e60ec6742dce0bc97fd3d71fd6d1d32af9984169bca14934a66d3b",
+      "native_log_sha256": "db475d9aa532f8d52b18dcd432b132fa63e45b7170f94bf6a363483fab22397e"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalBranchRegularity.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalBranchRegularity",
+      "scratch_source": "A05BranchRegularity.lean",
+      "scratch_sha256": "92560e0e4dac8ebc1b1dd07cf376e0807546bb8a409edb5b203ec02decaee6d4",
+      "sha256": "92560e0e4dac8ebc1b1dd07cf376e0807546bb8a409edb5b203ec02decaee6d4",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNear"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNear": "8cf5977ed8e60ec6742dce0bc97fd3d71fd6d1d32af9984169bca14934a66d3b"
+      },
+      "native_object_sha256": "0eab6361bfd05286fd9db8bfe586d0975df20f30369e68a0fa3c0129a9c0cdf5",
+      "native_log_sha256": "9d0ae654eb20af93d799f9bccc030b99b2e126fb8870c19f6937551b219cfd15"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalUnscaledAtlasFormBound.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalUnscaledAtlasFormBound",
+      "scratch_source": "A05UnscaledAtlasFormBound.lean",
+      "scratch_sha256": "0210b98f4a1d57d463fe18eb1e38c7ca365494db1ba6e2ced336e9f02425a275",
+      "sha256": "0210b98f4a1d57d463fe18eb1e38c7ca365494db1ba6e2ced336e9f02425a275",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalBranchRegularity"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalBranchRegularity": "0eab6361bfd05286fd9db8bfe586d0975df20f30369e68a0fa3c0129a9c0cdf5"
+      },
+      "native_object_sha256": "ecfae9bc8cad1a03fc144245cdb8d78ec5636eb49f8303f0cd1f6f2fca8de062",
+      "native_log_sha256": "c4dd247bfe6794d930ffb3199741b0e94884cbb8249d8b2d53c95bdedf48f6e0"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalCapRegularityGeometry.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalCapRegularityGeometry",
+      "scratch_source": "A05CapRegularityGeometry.lean",
+      "scratch_sha256": "e5e7872027c05fbf2285837f0722d289363398246e4febbd01dc43c7fbd99719",
+      "sha256": "e5e7872027c05fbf2285837f0722d289363398246e4febbd01dc43c7fbd99719",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalBranchRegularity"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalBranchRegularity": "0eab6361bfd05286fd9db8bfe586d0975df20f30369e68a0fa3c0129a9c0cdf5"
+      },
+      "native_object_sha256": "01cd7b84ab0c6f56185dde618b91900fccbad312ddcc89d7a0f43cfdc95ac6f1",
+      "native_log_sha256": "2098730c1109dd9478139466aca004d51667044c68049102e285f75667dad427"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalSignedCapRegularity.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalSignedCapRegularity",
+      "scratch_source": "A05SignedCapRegularity.lean",
+      "scratch_sha256": "6d0c65b840bb72217c6cb9ffe7d9d3a7da04cc8c61da13ec0b233c0a28cc1817",
+      "sha256": "6d0c65b840bb72217c6cb9ffe7d9d3a7da04cc8c61da13ec0b233c0a28cc1817",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalCapRegularityGeometry"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalCapRegularityGeometry": "01cd7b84ab0c6f56185dde618b91900fccbad312ddcc89d7a0f43cfdc95ac6f1"
+      },
+      "native_object_sha256": "38295d9e15a9a758941e36dbfef0bb2609406710f440b834420c9d5567c73a10",
+      "native_log_sha256": "713e6b836364be33092baad3221dbbe645c980a4b7716c26b67ffe3a25d6819b"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalAtlasFormBounds.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
+      "scratch_source": "A05OriginalAtlasFormBounds.lean",
+      "scratch_sha256": "9e0de6f51645cc41d9617855dbefb04030286a3e1b0417207c36ffdd86dc544c",
+      "sha256": "9e0de6f51645cc41d9617855dbefb04030286a3e1b0417207c36ffdd86dc544c",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalUnscaledAtlasFormBound",
+        "Burnett.Analysis.AllScaleTransfer.OriginalSignedCapRegularity"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalUnscaledAtlasFormBound": "ecfae9bc8cad1a03fc144245cdb8d78ec5636eb49f8303f0cd1f6f2fca8de062",
+        "Burnett.Analysis.AllScaleTransfer.OriginalSignedCapRegularity": "38295d9e15a9a758941e36dbfef0bb2609406710f440b834420c9d5567c73a10"
+      },
+      "native_object_sha256": "c846055cf77155f7ee57736c7c694a68a295f7fd575a3f1d72124060fc4b06d7",
+      "native_log_sha256": "2d16ecbc56d0272bdc2892bb0dc03991161792b19ce2080a64753f8fef92b001"
+    },
+    "Burnett/Analysis/AllScaleTransfer/OriginalAnalyticNearLp3.lean": {
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNearLp3",
+      "scratch_source": "A05OriginalLp3Extension.lean",
+      "scratch_sha256": "4f3a7d3b9c7dcc5adaaf2c1443ffc62b8d86f8236bd9b174cbc4df207e3558a6",
+      "sha256": "4f3a7d3b9c7dcc5adaaf2c1443ffc62b8d86f8236bd9b174cbc4df207e3558a6",
+      "imports": [
+        "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
+        "Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension"
+      ],
+      "native_direct_import_object_sha256": {
+        "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds": "c846055cf77155f7ee57736c7c694a68a295f7fd575a3f1d72124060fc4b06d7",
+        "Burnett.Analysis.AllScaleTransfer.RadianTrilinearL3Extension": "332145e1a91245e1d9bd30e7807ad2b6c57116d485246c9efa99c3aea96525f2"
+      },
+      "native_object_sha256": "5357216948f259322ecea77c566bf5351b335f49bef336ce2ecd08b42c5ed31b",
+      "native_log_sha256": "813da605c127374bcb4d0d5540f2516046000d7b12e34c468111207de405a92e"
+    }
+  },
+  "target": {
+    "claim_id": "lem:analytic-near",
+    "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
+    "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases"
+  },
+  "base_import_closure_source_sha256": {
+    "Burnett/Algebra/ComplexPolarization.lean": "249ab6adc719f1eac2a1dadc845914a3f8400a983e0ca47ccd0693371e9a37b6",
+    "Burnett/Algebra/HermitianScreen.lean": "ab2e440f28d987ddce05a01d22f3b938fc525b3712d0a947e4b26e8b2060a40d",
+    "Burnett/Algebra/MinkowskiNull.lean": "277fd0d247072e8edac1247a4fc5e727c35ae5e51fdd337a2de81b80a614a99c",
+    "Burnett/Algebra/NullKernel.lean": "972856c53a3f4c61c1f3dccb63c91ffa119b76b2a6e2dd8861af03975cd86b7d",
+    "Burnett/Algebra/NullQuadratic.lean": "3dad381221de18430c5f7127fb496065b5bbcf2f06e43c5c5d2d0be91bbc78e7",
+    "Burnett/Algebra/NullScreen.lean": "dce3555ec1dfab4cffbb30b93e94e90536b8024d4f90d58a582abe79ba136c9c",
+    "Burnett/Algebra/QuadraticDefs.lean": "f6261b4f7d3a926ce44aa07fec7b6b367fa6e376f61ccce52c99b6a65e4e4e09",
+    "Burnett/Algebra/QuadraticExpansion.lean": "fbb166ba88ed619083c283ef4c43650d9e406d199b2d65c538e244cceeca622c",
+    "Burnett/Algebra/RealPolarization.lean": "5993bc6169017387715a3a3e926aa4202ffff3e45ab080414e11f2ef993b7dd4",
+    "Burnett/Algebra/RicciSymbol.lean": "f9cfae66918e599d0fb1fc9380118ca6f3a0c96449dc194d69bbca79fb736bf8",
+    "Burnett/Algebra/TensorFrame.lean": "5cc39a1788c316c9257f9949bc5573ba24b556a1760e480fde94d7a8fbbbc906",
+    "Burnett/Analysis/AllScaleTransfer/ActualAdjacentNearOuter.lean": "f5724d1c06d219727a29135baaf763f4b07d0b300fd7143979a6fe274b71fc15",
+    "Burnett/Analysis/AllScaleTransfer/ActualAtlasBoxProfiles.lean": "4eab108258ee1654d42ec9b1394eaab4b9f63ba39314bd171b1432835f4b61df",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapAxial.lean": "a60af0f3dc0872e651b7c70a7d8dbec4ee0d8aeecb05fe08d1cc5c236892caab",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapAxialWindows.lean": "e2f5a1301464ac2b4d108745d0d539456190a45391cd815004332ec762546559",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapBoxExtension.lean": "721ffc03d74de6af2fa1d432a9b9b8dc4a24a9fb35e51fae4123272ea1783933",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapDyadicRemainderTail.lean": "8de333118f44dd7365d662b2149c10878243c5903eaf9c10bfcee3e317faf464",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapFiniteShiftRemainder.lean": "2ac17e6cbee55b98a7833dcb31aa7c4d276b142e82c39ac3845e7f3d556f821b",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapFirstLow.lean": "8a7b48345400b3186e52856853a8093b1711f2ef4f60af8156218311c72fd19f",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapFullSpectrum.lean": "8daf6e0f33e3ca135ba03fdce4faff95f979207d91bd2bdb3551a66e3022fa42",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapLowBranchData.lean": "fea57e2dee27a91fc2dfc1454f6f984d4bb198ada662561638f9e34cbe35f648",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapLowPassCorrection.lean": "fd5c55149b606de0a30bd8f22bbd756efbafe17861efb8e72cc5f96863dcc07e",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapPositiveM0.lean": "752075e1c3c835e618019330e15c34adcbce7455c9000af631eacdde0a228edc",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapRadialSeminorm.lean": "5ac0e25d6983a0867131be3455410acfd324eeccf6d78b062aa8cc7159aa50fd",
+    "Burnett/Analysis/AllScaleTransfer/ActualCapSignedBoxes.lean": "4aff5d141ab71475ee9056d27d880416e631048586fd7a5b51bb7eb210574cee",
+    "Burnett/Analysis/AllScaleTransfer/ActualComparableAxialBoxBound.lean": "b876e0f0aa7c2a57d9fcba67a3c1afd8f8fe45f51e80e62834d21da27a4483ad",
+    "Burnett/Analysis/AllScaleTransfer/ActualComparableAxialLocalization.lean": "2323c906066a5274bbe022ee254c32fa650403e90447d7f5ed64e291c2819cc0",
+    "Burnett/Analysis/AllScaleTransfer/ActualComparableBoxBound.lean": "9b8bd9762971e41f90247c2450c938fd8277f3983e70fa7db4180132fd2ca16c",
+    "Burnett/Analysis/AllScaleTransfer/ActualComparableBoxPartition.lean": "4258fecc7fe288b4942be4d60b5a27dfe54de412e0fdf56c026d3f6cdf92629d",
+    "Burnett/Analysis/AllScaleTransfer/ActualEnlargedCapFiniteFactor.lean": "885f914b633aaff7d721485381a93958fcd4499250c97b4d02a143a6ded80b5e",
+    "Burnett/Analysis/AllScaleTransfer/ActualFieldRadialLimit.lean": "6e2e998031ea4f9a7493029ec993a50129715bc46e3beaab7a0e734d6101a4e7",
+    "Burnett/Analysis/AllScaleTransfer/ActualFiniteCapTailFactors.lean": "74fe62f8525fb55a172e315ca711fdd6c53ba4688df7464a03bb8a419c52c63b",
+    "Burnett/Analysis/AllScaleTransfer/ActualFiniteShiftRemainder.lean": "4da88fba4e634b8bfe3345296c1d46a1c5a2156fc2a1b40bc655597c7ae04bad",
+    "Burnett/Analysis/AllScaleTransfer/ActualGapBoxSeries.lean": "36a300c4b94deb0afa2a86a2c8a7e42f3b3c60fa45cd5991744cf30359d14433",
+    "Burnett/Analysis/AllScaleTransfer/ActualIntegerRadialPartition.lean": "ee2c74d3c5453e3dd32b93c7f6eb00e70fbc813c1ebd4d74ebd84547cb93c7ce",
+    "Burnett/Analysis/AllScaleTransfer/ActualLowEndpointParaproduct.lean": "9022c0aa48b4d6a3b562fb750b88204c7d1f6676acd872328cb726cdfab372d5",
+    "Burnett/Analysis/AllScaleTransfer/ActualLowEndpointParaproductLp3.lean": "1b91c56c1195d95fbbef0916da0647a2c0551b0f7c707234eb52c57ce6ca927d",
+    "Burnett/Analysis/AllScaleTransfer/ActualLowGapPartition.lean": "fbc038ce35fdca6d4f95a3d7ce6cadbe591eac730572a35333f21150b381da9c",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearAngularSum.lean": "3af0fb17095b8eb17cad9a08554e42e1fc164781b93f7c4fae3ba6a7dbd8a33f",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearCapCoreBound.lean": "f3c2000324ed99421733baa92cbe6dcba3e20afecebc1dd8dc91be65002fb2b4",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearCapDecomposition.lean": "0caf792f2f5ffbba7504644123cf06ae0d5265ea4e494d67a7f3177d18cddce5",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearCoreSymbol.lean": "6aec62876c1fb2fca2c000001be9b7f19fd2758d553b9b04068889f4d0096a32",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearOuterAssembly.lean": "8ae6f5b4fe0cf6947efb06a044b499633b16759af8940994c6a226db2f10220d",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearOuterSpectrum.lean": "a01fb428455321e958cf822e496579c76225c8f61aed75da4bde9ccbb1c3e17b",
+    "Burnett/Analysis/AllScaleTransfer/ActualNearWithProfiles.lean": "866e21841ae3bbf6fe8b26aa572bff76b411c46119cd7e07516f61be29e1763c",
+    "Burnett/Analysis/AllScaleTransfer/ActualRadialModeBound.lean": "97ddbb3c4ebe5c9c829a5cd13866b39fdf5d6fb09a73fb108e4a53d05af0b6ac",
+    "Burnett/Analysis/AllScaleTransfer/ActualRadialWindowFourier.lean": "955c78cee6082a2015e3ce38b9d28ea9d3eda62edd36cfb581520e650439553b",
+    "Burnett/Analysis/AllScaleTransfer/ActualRadialWindowSum.lean": "f9e25b51b1f8b673355e9445466b306b724234dafb4450bfbb9712cbc97f9619",
+    "Burnett/Analysis/AllScaleTransfer/ActualSignedBoxSum.lean": "c18268b6adc01db495d3629fab431feb5508b054a281f852b70a31a7b1979e34",
+    "Burnett/Analysis/AllScaleTransfer/ActualUnscaledAtlasFiniteShiftRemainder.lean": "554f9028e4865144bec99b98d9681938cb69f6759540da186cd047ce4b977d99",
+    "Burnett/Analysis/AllScaleTransfer/ActualUnscaledAtlasTail.lean": "274e91f06d5a119f7496cdff0e48d6b38cc37fbae030fe678d9b66386b730a57",
+    "Burnett/Analysis/AllScaleTransfer/ActualUnscaledCorrection.lean": "2d673bad9168a8f067b3d77a2695704639249be22198977b2e6eb0436da131b3",
+    "Burnett/Analysis/AllScaleTransfer/ActualUnscaledEstimate.lean": "37381224ebfa2b776f993a8b1315cc342ca6744278f28a22e741be14d55ef79c",
+    "Burnett/Analysis/AllScaleTransfer/ActualUnscaledFirstLow.lean": "0d18b335e4d2d0500d41d6bd080462a580582235ade0f84a1aa314ffc6b44c04",
+    "Burnett/Analysis/AllScaleTransfer/AtlasSphereEndpoint.lean": "bfb80216ab9f8d467527107f844efaacd0545c8e8f958d07b674ac8cc17dc168",
+    "Burnett/Analysis/AllScaleTransfer/CapAxialChartBudget.lean": "7072e0786357c378f8f1e743253419fd6a972d7cbe945b0bd3edbdd7c28021f7",
+    "Burnett/Analysis/AllScaleTransfer/CapCorrectionGeometry.lean": "20bac06131c136d9378c89b5acdb514516999fa3e1cfe5bc41a533c566e04038",
+    "Burnett/Analysis/AllScaleTransfer/CapCorrectionRatio.lean": "2227ad0b77acdf7d49a1acaea79b28bdba8cfac31a77ca27398132eee0d74109",
+    "Burnett/Analysis/AllScaleTransfer/CapCorrectionTrace.lean": "53a4e487ec4723839d2079435696d2991889cca021d2e0fd75993d63b3f47328",
+    "Burnett/Analysis/AllScaleTransfer/CapRadialNormJets.lean": "25458d5be2fdff944e8a854a3c00c5b9177e19d0c584a32f9f94de8bbd808217",
+    "Burnett/Analysis/AllScaleTransfer/ComparableAxialBox.lean": "64741556961ffa03b56891f2df3143f4ef796479511cb79b118f1f03c43370ba",
+    "Burnett/Analysis/AllScaleTransfer/ComparableIntegerRadialShifts.lean": "15d0b229232a3234e4a52dfec05cd439576ecf34e74f73c04757edaa4c0c204e",
+    "Burnett/Analysis/AllScaleTransfer/ComparableThirdAnnulus.lean": "dddcfb6e7718fd27ab676dfc728ec1f3b552e1483dfcf70970980e4b1c237c32",
+    "Burnett/Analysis/AllScaleTransfer/EightDimensionalModeSummation.lean": "6dee3005d5fa13d1385daf87e198fca2dbeb9f76b54e9ef17a73f5404116bdba",
+    "Burnett/Analysis/AllScaleTransfer/EndpointAngularModeJets.lean": "cba7b8803672887e492446cca510f6fad377bdd2f0764a721de1761691d15359",
+    "Burnett/Analysis/AllScaleTransfer/EndpointAngularMultiplier.lean": "e32b264af9b8e45dcda8c973048ccabd82f5436d2d81caa211a98ea4966e19b1",
+    "Burnett/Analysis/AllScaleTransfer/EndpointAngularTraceSeries.lean": "6866cbaea741426bcc5be52b6740189424a80a7764f5b8f47b252d7c9b05c4d4",
+    "Burnett/Analysis/AllScaleTransfer/EndpointWindowLp3.lean": "043da1a2e39f6d9ce6a8adc717b0b3bf50b3acd098b6e4c20079695f6be3abeb",
+    "Burnett/Analysis/AllScaleTransfer/FiniteRadialFactorSpectrum.lean": "e2b65472c9a6c46f2fbe955123bb00627f243422b15603946a923a5398116f1e",
+    "Burnett/Analysis/AllScaleTransfer/FiniteRatioIntegral.lean": "3b68ab4c77830a0e09a5d2cddcc2d8b845c3c309aa178085d14bddd51551a54e",
+    "Burnett/Analysis/AllScaleTransfer/FiniteRatioIntegralIoc.lean": "9af5873078eaa53081e0c69d16d9459b420eb04e4eba06afe16a3cc5dafbf438",
+    "Burnett/Analysis/AllScaleTransfer/FiniteShiftRemainderBox.lean": "4ff92e87844946a4f1bcf8bf35a117f7d09728d6ae3cccec45af784dfa3ad219",
+    "Burnett/Analysis/AllScaleTransfer/FiniteShiftRemainderNumerator.lean": "4b182a65868302bc63b9540fcedfb0e0ef28e81b652aa74c9a76342283bc0c06",
+    "Burnett/Analysis/AllScaleTransfer/FixedAnnularCutoff.lean": "c80657d7c25529cd3edce45a4161eef3fa2e190b9a19689ca1954a479ad4ed84",
+    "Burnett/Analysis/AllScaleTransfer/FixedChartGapExtension.lean": "9a8eefbadfae5b7ee6ac340f714cbaef283b5a7a084b12d65abc80b008610bd9",
+    "Burnett/Analysis/AllScaleTransfer/FixedShiftRadianBoxTransfer.lean": "5d410eb33f3ece994693c5f96fff5a4cb8817dd21e3a93471ed9395c40a90779",
+    "Burnett/Analysis/AllScaleTransfer/GapBoxSeries.lean": "adb6a7224cbdcccc76bfec524cf2d2336ed2b9764d5928e61daa57f98f2ffb29",
+    "Burnett/Analysis/AllScaleTransfer/JointCubeDecay.lean": "2b84a50ec558c867d8f108c7d4fe0b5d62b535e45a0c2b8a02a10a8c41b3e8e3",
+    "Burnett/Analysis/AllScaleTransfer/JointCubeFourier.lean": "76a683e949e5c9a4736cc7238c04108ee77af52042ee02015ec1f113cb6fbff7",
+    "Burnett/Analysis/AllScaleTransfer/JointCubeReconstruction.lean": "7128fdf7f2bf076b277f8bce0649eb73a26a34b17fb9894a338404c6edc864bd",
+    "Burnett/Analysis/AllScaleTransfer/JointCubeTorusCoefficients.lean": "35e92a15c34be93d9612c2a0370e4c5265a6ca58fa40869fa6cf2158ac5f02d2",
+    "Burnett/Analysis/AllScaleTransfer/JointCubeTorusLift.lean": "f6c44719363202ab8972ea8ec2ed8b452892c0343c11290cd253f571da896559",
+    "Burnett/Analysis/AllScaleTransfer/JointModeDecay.lean": "73e4306205bc3345e9180746f5df76eb795b3d0dad14245b1d118ffe42382036",
+    "Burnett/Analysis/AllScaleTransfer/LowEndpointWindows.lean": "9d7e3a5095b6fe3e5bcf1b6c71613d31a0ed007f62723deba8859c68253706fb",
+    "Burnett/Analysis/AllScaleTransfer/LowPassCorrectionBound.lean": "53980f62d3ad34d17ca87ccf435afe2d150fe3e34f187dc8dd8661c7714a3685",
+    "Burnett/Analysis/AllScaleTransfer/LowPassCorrectionNormalized.lean": "71bc95d2b5053b6437cba34f1168bc3709d6111ffa8bfd463ee49b89c0943b08",
+    "Burnett/Analysis/AllScaleTransfer/LowPassCorrectionPartition.lean": "fb6b013ff0a5e096b5ea767a4f1e715c8ccea1b51131c73a238481d1ad7d414a",
+    "Burnett/Analysis/AllScaleTransfer/LowRatioAnnularShifts.lean": "b4ce338c71cfdc1dae9a77b0b470a72b887f40b7a843ffa02bf4126507b982f8",
+    "Burnett/Analysis/AllScaleTransfer/LowRatioBounds.lean": "4ad9b61584e2094af19744271cef569a385a995235ccd9691dd1389f95c4261e",
+    "Burnett/Analysis/AllScaleTransfer/LowRatioSplit.lean": "5ed74efa157355a6019370f13bc8970fbb8110904bf5c937c5fba4bb806943d4",
+    "Burnett/Analysis/AllScaleTransfer/ParabolicTrilinearEndpoint.lean": "db1d3f30b7bd3d7fd76daf925edbbc1978fc7cdd317d70dd71915a96b4f952a1",
+    "Burnett/Analysis/AllScaleTransfer/PositiveActualCapBoxExtension.lean": "944c17cc05582df94a1b1bfe73278141dcc30e46c5495b8104ac4c25ea2bf519",
+    "Burnett/Analysis/AllScaleTransfer/PositiveFixedChartGapExtension.lean": "33720b84d27f98042fb74d70340e056da89e6c7869b1989882dd5f106019a527",
+    "Burnett/Analysis/AllScaleTransfer/PositiveRatioFTC.lean": "b974564a01c1077a1ea936beba65333b8b488bff592a93b943d147d0f8e8841f",
+    "Burnett/Analysis/AllScaleTransfer/PositiveRatioRemainderBudget.lean": "4f5da423c30326077797391fd21f1d1238c9637af9dc0bd12e1565b45bd3f027",
+    "Burnett/Analysis/AllScaleTransfer/PositiveRatioTrace.lean": "71b0ec32f1277e8a9c6f75f650269c49f93968998d49ef087644de154ba20bdf",
+    "Burnett/Analysis/AllScaleTransfer/RadialRatioCorrection.lean": "60fcae6b0d701414d6f70ca474d60b43787463243ddc29f6f8a9d030affb96e9",
+    "Burnett/Analysis/AllScaleTransfer/RadialThirdCutoff.lean": "1e779f29f96825dbec21040245ed3120486a1b0c1b688e1b0eac866069c999fe",
+    "Burnett/Analysis/AllScaleTransfer/RadianBoxBlock.lean": "64904c245371c5dfeb1682aa05bf7ceb2793783b10874fcd9de5daa27e7f3251",
+    "Burnett/Analysis/AllScaleTransfer/RadianBoxGapOnSource.lean": "9bff8033f72604af25f27881c838d96253e121b04f05fb695b637d46913293a2",
+    "Burnett/Analysis/AllScaleTransfer/RadianBoxRadialSum.lean": "1333e41d836335002d19bfacc6fc923b4be17abe5d50110a0da420b39e89ea9c",
+    "Burnett/Analysis/AllScaleTransfer/RadianDyadicRemainderTail.lean": "b467f4442bec6c474e8ab666ce64260ce15408a366d11314513df1a6ea186a80",
+    "Burnett/Analysis/AllScaleTransfer/RadianFactorwiseTruncation.lean": "f7fb27d65b7bba02dc3658ae76860a1c0bd2be7ede2dfef238c82eb93e4e253b",
+    "Burnett/Analysis/AllScaleTransfer/RadianFirstLowSupport.lean": "ec50735b7f65192004220952504acbca757ca827ee18100341a02225ea5f2b3a",
+    "Burnett/Analysis/AllScaleTransfer/RadianFourBranchAssembly.lean": "977ea1012dfeb6bb6b813b0a56a547f73c49842d40654bf75b011f515c15c83b",
+    "Burnett/Analysis/AllScaleTransfer/RadianFourBranchProperties.lean": "f654fd7518d612438b83b72f3d212ad23a4f0050b8aa52ef5354a819313bc8ef",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowBranchAssembly.lean": "30249154b0abbddccc27ff73d359d771de13236f582457fb619774eb7f377117",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowBranchComplete.lean": "e036b04ef61ef077cada6939f27b6e00a4019d963514ae77cee0110e12d3b09b",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowEndpointAllScales.lean": "d85118eb066976e15cde8399be58a1973e5562e2ce696f35bc5ee18be504c29b",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowEndpointModes.lean": "0f30214cdbbf6373f4bbefd8c5cf321aa3ba02466236ca7557556c1b13107039",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowEndpointTrace.lean": "664b46370104c373c6aadb216b19bbd2470b10f77120304d8b55f18a884db204",
+    "Burnett/Analysis/AllScaleTransfer/RadianLowGapAssembly.lean": "ffbbc6594f08d40e342b6b68dad9e1dfd9a5efd9d03b7abfc5f2dc7d8181759a",
+    "Burnett/Analysis/AllScaleTransfer/RadianNearProjectedSum.lean": "17835a2b3693edbffa11919e4e07188dea0aa13de92b0beeb3d575dd91e12333",
+    "Burnett/Analysis/AllScaleTransfer/RadianNormalizedFourBranches.lean": "1e2ec2d2330ad9eb11e61c1dc02eace1269758d83ab0a696e98bf3ae9ee59052",
+    "Burnett/Analysis/AllScaleTransfer/RadianRadialBoxGapBound.lean": "705d2ef67d1ec22c76f475e2ff233262feddab3003b4115a9aaeb9dfdcf44ebb",
+    "Burnett/Analysis/AllScaleTransfer/RadianRadialSeries.lean": "ef1535a4c029cab4b0dffffc44214a1638cfe47ec2f88fd7f3ea3a91e094da0b",
+    "Burnett/Analysis/AllScaleTransfer/RadianRemainderGapSplit.lean": "64a8c664d711d2702ad3496ffcdfc9c50e4dff010b038c8132691089f2dee52f",
+    "Burnett/Analysis/AllScaleTransfer/RadianTrilinearChange.lean": "ca06cfaee41978ff76da78e318e4994aab7befcaa68cadf7907261f12760c380",
+    "Burnett/Analysis/AllScaleTransfer/RadianTrilinearModeSeries.lean": "47cba6fa53e68b4b00c792e37c17f360bb7e1712cba56cc8cb29f491fc143d4a",
+    "Burnett/Analysis/AllScaleTransfer/RadianTrilinearSymmetry.lean": "975de5461e09ad986d5647ad0752fcb0b199c4d8ebc75313277e7fc1bac5b0d6",
+    "Burnett/Analysis/AllScaleTransfer/RadianZeroRatioSplit.lean": "a8113fdb879015022f53ab3bf7be7ba24c0a1b343ae5bbac4991a9f23668818a",
+    "Burnett/Analysis/AllScaleTransfer/SignedAnnularCharts.lean": "3b37e26224207c330b9e8a38dddec4c4f7c2a08657f5d950ad4f335d6e3ff926",
+    "Burnett/Analysis/AllScaleTransfer/SignedCapEndpointM0.lean": "a2a5c569f699b06d9ade0bb45af11b0594c13b17b453ffda059516acebf96ffc",
+    "Burnett/Analysis/AllScaleTransfer/SignedEndpointWindows.lean": "88e5efc5b16bc6e8c0f3efddcd3d5bc27a7e35a2b159883dbd439c172607652b",
+    "Burnett/Analysis/AllScaleTransfer/SignedGapFixedShiftTransfer.lean": "7b9dc40df7346edb8470073eff7e92b63ebda30ac99f63d3440d09c9bab95fc9",
+    "Burnett/Analysis/AllScaleTransfer/SignedRadianGapSeries.lean": "7f591fc1c6ae34cfec0542eba8f7043797e59dc1a1c7848b3dd1118285a1aec7",
+    "Burnett/Analysis/AllScaleTransfer/SphereEndpointBox.lean": "f989503aa29839e390ee60bce371c8c710201185beec64b8a30282daca2c5a68",
+    "Burnett/Analysis/AllScaleTransfer/SphereEndpointRadian.lean": "40facc1d7d6e79e4c5d1e346fdd96e43c4c3920880f7afe39be8a4d8cde547eb",
+    "Burnett/Analysis/AllScaleTransfer/SymmetricRadialFourierLimit.lean": "5c12099704eac52415906021fcf1336205ddcf2c8f4f4460118fa14902459f0c",
+    "Burnett/Analysis/AllScaleTransfer/UnscaledPositiveBoxExtension.lean": "337e97771e111554a1d42f6f19b12c635dc2c166d08dba9adf576edd01effc98",
+    "Burnett/Analysis/AllScaleTransfer/WeightedIntegerRadialFactor.lean": "161bc1098552849849468b998f5d4392190b507fbc460be1178129c5361ff160",
+    "Burnett/Analysis/AngularCaps/ActualBaseCapJets.lean": "fcfaddb0b571018a948bed8e2e38ee3cb1262b69316a06e18d1b0f15e9de96eb",
+    "Burnett/Analysis/AngularCaps/ActualCapAngularL3.lean": "a21b79f861658a4729deb3438285c1312af77849048791a921dcb1f9fc806186",
+    "Burnett/Analysis/AngularCaps/ActualEnlargedCapJets.lean": "4e49a0289f0c6932dcc2a23c579dae7511ca9a216e7dec7fe9739878aa896547",
+    "Burnett/Analysis/AngularCaps/ActualFieldCapAngularL3.lean": "ecd25537b8b0b60442fdb9558e23011f33b2eb10ca01c0a4b0549033dfdf893f",
+    "Burnett/Analysis/AngularCaps/AmbientBallPacking.lean": "3d7538b37141c59e7d2516d7ee273c6ad9839c50310eeef3a0022d6a449f6fbc",
+    "Burnett/Analysis/AngularCaps/CapAngularCube.lean": "bedb4c20486c248c998eea90f4a56434cf5bb9d762c31126801adc0fa22861bd",
+    "Burnett/Analysis/AngularCaps/CapAngularL2.lean": "0a54801aca70d7710fcc14119092fd1fb0a2ce286dc8b0cce1c5f99fcc8a812c",
+    "Burnett/Analysis/AngularCaps/CapDistribution.lean": "9b821cd689df7c215a54a8ab85bb59e5dd4899e0187c74a4c2789b14964ee65d",
+    "Burnett/Analysis/AngularCaps/CapFieldLp.lean": "3b4ae338dde9abbbad415ee967f30620ccb7e765e9c001f6460bda0f796aeb07",
+    "Burnett/Analysis/AngularCaps/CapFrequencyCoordinates.lean": "8395be14c631348dbdaf7a20c531912ac402c8833c7b6dffb955bec74117de10",
+    "Burnett/Analysis/AngularCaps/CapMultiplierLp.lean": "a4ba10f0a69120e9ab591bff3c17829a2b2deab7e33d26cd1d04ffb08e12552d",
+    "Burnett/Analysis/AngularCaps/CapSphereJets.lean": "2785235644c69bc4281238e297112bc11de25ac27557c7a5bbae1f7ae063b1f3",
+    "Burnett/Analysis/AngularCaps/ComparableTriadAngle.lean": "bbf144d892e55766987f469ff4933d82b770825bfdb4f7d31097261b59f02df9",
+    "Burnett/Analysis/AngularCaps/FarAngularPhase.lean": "ae0f75281ce5de3946fcd1eddcaeace39defc856df159a311086c631d2088660",
+    "Burnett/Analysis/AngularCaps/FieldLpLift.lean": "84e8afbc06ab705b29db4bf13f95ac707afcc54f2788a7ec83e6c18b18f43736",
+    "Burnett/Analysis/AngularCaps/LinearFourierChange.lean": "68995e99062df47ed0c0ed4ab15ae5e983877e955079e8ebab37c0f400dba7cb",
+    "Burnett/Analysis/AngularCaps/LinearLpPullback.lean": "77ce9a03f44ca9ccbedfcad759358a60d087b02493656568c4608b8ef506897b",
+    "Burnett/Analysis/AngularCaps/LorentzNullLines.lean": "80dc6a1b8d8b7209ae60081f215e6d5b478ca5a8859b693b63ce3bbeca16efbc",
+    "Burnett/Analysis/AngularCaps/NullChartGraph.lean": "cd8acb35c927c137491cbde54b7d0ccf8ff1fab77decf0c085050f281384b34e",
+    "Burnett/Analysis/AngularCaps/NullGridCoordinates.lean": "4426b7170f7f8cf3b29fe14626f50ada26dfb19688096b9e0f6d8f651c63157a",
+    "Burnett/Analysis/AngularCaps/NullScreenBasis.lean": "41332a597d55cb8999269a5ab3f54e0b4b2d05571696990b7d9d78bd9d8098d8",
+    "Burnett/Analysis/AngularCaps/ParabolicBaseNeighbors.lean": "21fd0740a7aee49ac60437166e04586a9bda30eb678234562770863e4563ed90",
+    "Burnett/Analysis/AngularCaps/ParabolicBaseTemplate.lean": "3559d5e5df7c84a77f5512b81da5230c0886633667bc3c69b003039cff14e80a",
+    "Burnett/Analysis/AngularCaps/ParabolicCapAlgebra.lean": "6884fea44e9ba02dee0cbafc8439a78eb3be277bc8e1b023d709f414bdc301ac",
+    "Burnett/Analysis/AngularCaps/ParabolicCapSupport.lean": "6232e77a7b67888f29c5fb327cdefa704d66c68546d015de853d1e71d48ab582",
+    "Burnett/Analysis/AngularCaps/ParabolicProfileJets.lean": "84a6f6d2a82e6b73460ac0d44ee17d0e41273e26e6387f0d6cfdf664cd794221",
+    "Burnett/Analysis/AngularCaps/ParabolicProfileSmoothness.lean": "1fb87f784742ead0d716cafd9a512bfac2c414d0d9acae2c548c4aaacc1c3e78",
+    "Burnett/Analysis/AngularCaps/ProjectiveNullCover.lean": "7cc025bdf5b5330f0fda35820d0a98b96d10ce505ea67b2e3949b6aca5e11eef",
+    "Burnett/Analysis/AngularCaps/ProjectiveNullGeometry.lean": "a4a8d77c8580f3e7e31ac7368bee505a48a4a041cd5a67d5c399997f28600632",
+    "Burnett/Analysis/AngularCaps/ProjectiveSeparated.lean": "9b4df73e97ce6be6cc4fe78f9bf8082ffabb6bb4b97d03e49c1bd19a62979551",
+    "Burnett/Analysis/AngularCaps/ProjectiveWedgeCaps.lean": "40b71bc0b5278d78ba6800df88da40054e40ada7df5605670fff9ab9a903b443",
+    "Burnett/Analysis/AngularCaps/ProjectiveWedgeGeometry.lean": "8ba8c4dbb239d18a93f30a759a8c47b991f857b488bf8d47a446458880e48af6",
+    "Burnett/Analysis/AngularCaps/ScaledCapHeightMoments.lean": "c68288a39e1b618430073cc01f0a80d0b58fe191bcae8daaf7e0224550192d70",
+    "Burnett/Analysis/AngularCaps/SmoothCapFamily.lean": "330f61c13349c0e1b0d4ba46b8fdff2875af8e61730bd5722cb677ee12613f45",
+    "Burnett/Analysis/AngularCaps/SmoothCapProfiles.lean": "26dd3508915cbcf81899dab964c3c13bbcc3279a84321a61d62640fc6376ae86",
+    "Burnett/Analysis/AngularCaps/SmoothCapSupport.lean": "110e63a6e42c13c511654bd877c84aa01fd47d454d0d994f64633a9aafee3db3",
+    "Burnett/Analysis/AngularCaps/SmoothCapSymbols.lean": "ffd32c5540b672e653d6b514453af6b5e70a16f5a031caac68f1c95486d3f44e",
+    "Burnett/Analysis/AngularCaps/ThinConeCaps.lean": "0576270a2ad2901465dc67dafe874fa187b32b49e9cd4a2d64f6e5c2f04da80e",
+    "Burnett/Analysis/AngularCaps/ThinConeProjection.lean": "3f73e769445c8d8048c71f8b02258f7986115f8a06da89d38296073c4e462dde",
+    "Burnett/Analysis/AngularCaps/ThinConeRowBounds.lean": "cbff458d5c754b82358319b892f0797a6a938b5e4ef37f7e8054668f77e0f706",
+    "Burnett/Analysis/AngularCaps/UniformLorentzAngle.lean": "1c78e30f9e3d769fe88aeccf644ec9b79557fb80b18ea483c6208ddb66bb8b90",
+    "Burnett/Analysis/AngularCaps/UniformNullCapCharts.lean": "728df281e64f6f27bbaab915f6fe65e12fb882ef2e4bcfbfefa047c2478f5be1",
+    "Burnett/Analysis/AngularCaps/UniformNullCharts.lean": "41d3549c01014bfe60dc85c4a0ede2e70c9ebc4de68f127fc209ba6da0760b66",
+    "Burnett/Analysis/AngularCaps/UniformNullCompanion.lean": "065bf61c5c238c588f3fe06d67b61d3e103ef82151e1ab120ed99c23c613f0af",
+    "Burnett/Analysis/AngularCaps/UniformProjectiveNullCaps.lean": "4ac06d991ea558e0bc1dbb2e229e44853f693e6fecae10dda74af459ee19267e",
+    "Burnett/Analysis/AngularCaps/UniformScreenPositivity.lean": "33588fc997af0c57ade41d5d70be433617c87e1c107b6405c04b76612465f0b1",
+    "Burnett/Analysis/AngularCaps/WedgeTriad.lean": "c8cbc6897d77213e3435b81e85cb792144225374635dd54e47bcaed23a28ca08",
+    "Burnett/Analysis/CenteredMaximal/MaximalDistribution.lean": "c415e9e634e1fc903b11a26b5e04f899b53ebfb8e222e7c69fcc171fe3bcdf60",
+    "Burnett/Analysis/CenteredMaximal/MaximalLayerBound.lean": "a3a8ba9ec3bc08853d8ca14cefb51dfa6792684626126eccbd4bdefbeb0a40a8",
+    "Burnett/Analysis/CenteredMaximal/MaximalLp.lean": "80fc1b86740e5271fa6efd6758fa1160654337462b7a2d6b4e497bbaebf3b28d",
+    "Burnett/Analysis/CenteredMaximal/MaximalMeasurable.lean": "1ade73de9578dd0257227d5d796ae66a0788acd25cd3ef07eb156d8227996c1b",
+    "Burnett/Analysis/CenteredMaximal/MaximalMoment.lean": "5060bdc2c19cb206e4ce414e8e866796aa5ee10d2a5b0c6cedd41f805e6f3dec",
+    "Burnett/Analysis/CenteredMaximal/MaximalStrong.lean": "dba047dbe2e631bd08f96c5d56c9e763f68a7858c4fc25e6500d9510689528f7",
+    "Burnett/Analysis/CenteredMaximal/MaximalTail.lean": "1d989a22f556d4cc9793e38df15629222020fc354998edc8844de6d093ee5bd7",
+    "Burnett/Analysis/CenteredMaximal/MaximalWeak.lean": "350f399ab8deb08ab50c08d5a9090788ac4d275907e57a6cf6a356e8e777f160",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualDensity.lean": "66f5ea0342d9976ca49073469f8790e7da78a4fe39013c7090f384d4643d762c",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/CMBilinearDualSymbolInputs.lean": "9b5989993d6adbd5c3f1c1433fca8a9e4b4ac4504bd40193d338275fba376dbb",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/FourierConvention.lean": "93b8340442ae59f2569be496454760281f4baa19681c623becf98dd492b93134",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinApplications.lean": "9f52aadb6414058267a67852a592916c5adddfc9ece38e8db0582ee7718b71c6",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinExtension.lean": "38d2c520282d02557bba52b7d9c6b978a02d726b0735667ba9ca5b9c12f643c0",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinFinite.lean": "1adf48cce56559817d9c312715c28b4deaef49b338a1625e67a2edce3edce5e1",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinGradient.lean": "bdda13dae4d1b72f0eb71ebcddbb28b0a7b0624dc132deefe5655e8a58b2af49",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinGradientBound.lean": "ffa8c45f085144ac3a81113957f3d719876c60ef1c958d4e2adcb1902c3d3fbb",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinIntersection.lean": "ec13e58ab84fd12f7c1ccf11766bdef7f6b51e8dac356dccd513b4c4092b745e",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinSchwartz.lean": "da31a8af1e8c3af9c6cb6dcd6b65687fc914f54a1acfb114c4fb61fb8ccced6e",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/MikhlinStrong.lean": "dd6ebc9c84de1720d006550a8530a902ea8284ca650e7c3d945177ae808bc7b6",
+    "Burnett/Analysis/CubicEnergy/BilinearMultiplier/RadianFrequency.lean": "7a9d718c6d2eb90d5991fb3251d7e95fa0e612ef70575e29ccc034d3879b2d0c",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/MikhlinKernelJet.lean": "a7ba8bc5c2e4531512d0ae279de15aec129602d31e949c28ec2c5a4f5e748775",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/MikhlinProfileJet.lean": "d07861e2799f1e33f8ee678934c2d2283cca85e30da65d7e88a1e0767bb915c3",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/QuantitativeMikhlin.lean": "e7973f95100be5a4810ee45c5f90ab13b75e9bd65c823a6be41a823c5d5c5974",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/QuantitativeMikhlinApplications.lean": "18c04c50713b32fba9a380b7fa8acf5d408e4de9057e398cc9e06a424fbc2177",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/QuantitativeWindowHormander.lean": "f78bfd56e96be11234e949d5e9e5676ac729d7f34ef0765900b2513354b39351",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/QuantitativeWindowKernels.lean": "62335025e26bffecb37f831c149ddd5786d18be29e8a4330e6f34eca9672d9f3",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/QuantitativeWindowLp.lean": "f97a01b52a395d9a35331c8a47ec8da8261939ee57903e52c3c8ac78384f3a49",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/SymbolSeminormIntegral.lean": "91dd5db97fb6f6bbe4036ef9b96bbe1f0937f51bae05a888466ee16674b4584a",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/SymbolSeminormLow.lean": "44873f4544c91afaf03d5aabc57c961846e67112a0663b44fb3509cd9d1eff53",
+    "Burnett/Analysis/CubicEnergy/CompleteEnergy/SymbolSeminormLowSegment.lean": "7dbff0ec875b7963dff867541a871f80d8716edec13320c738d12c983251237d",
+    "Burnett/Analysis/CubicEnergy/FourierPairing.lean": "742a4a96dd09dec7401dd9a2b423e1e93d73965b372fa528970f392917df52e0",
+    "Burnett/Analysis/CubicEnergy/FrequencySplit.lean": "bc9e10fe3f1bdd87d361a675b487b6cae2b2ccbbd29a3181f3099033eb565fe2",
+    "Burnett/Analysis/CubicEnergy/HighSymbols.lean": "10841f23923999205e71f7cc458834543f377655c6450d91dcdd818a0b8166a6",
+    "Burnett/Analysis/CubicEnergy/HomogeneousBounds.lean": "46f0e922f13915e2d0a007f84451a868a4205a2950e6e5768d6b481e796adf8e",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/AnnularBound.lean": "44d959e39cc801ef185ee8b28ecb33a4e08e672462aafe13ca0afbdff32bd576",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/BandLimit.lean": "b9ff551c3d2c669eaf978ca717349f66a90caeea4e4fc9f381a9c3abea5163b9",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/BandPartition.lean": "068554a06dcf2f43ef6d161c7230574785e224f25510c8fed0a039c3ee69d460",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/BilinearKernel.lean": "f135e21f5e3e34c9279eab385ccb580c06e9ff496f2b791125613dd043ee91ed",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/BlockMultiplier.lean": "8f24bd8b0e26a6965ea1d5af400943c5431d884489249d66cc5bf35cb171cc07",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/BlockOperator.lean": "44392acf857b0ba28b50a791d9887603c5b77128855317db6c6397918fd4c1c0",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/JointDyadicWindows.lean": "412c22e9055415590cd2c5460bbea320bca954152a06139c97c429b6b4389069",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/JointKernelMoment.lean": "45c6b45c36147becaf6ee08cc4a73d31e3cd61208b8325fb940148cf66376529",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/JointTrilinearFourier.lean": "9c21deae1e96af62c8a32810bea6361b7f48241d9b96e4c15868c036784cc080",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/JointWindowTest.lean": "1759f7b60c6795be46bfd47f3463aaa973ada1752e5d6726b7fe4e564f2194a0",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/KernelHolder.lean": "1188d1f8061a2ef7280e60b0d33ad35fa313c52cce265c8f812839f8e84e4794",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/MikhlinPartition.lean": "aebefe35625257af43e6a44ccd942b8b29c830cf42e90cf10835f954b38dee29",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/PhysicalBandLimit.lean": "c60ff7c107b2840756860d7e68689855b7e670cbc82f3868028b0470955b6936",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormDecay.lean": "dfacc965fd36117e6dc5fd2460fe15a4783ef2e539733864842300cc999cb1ba",
+    "Burnett/Analysis/CubicEnergy/JointMultiplier/SymbolSeminormSphere.lean": "0cb907f7bd2e363c14602679b01e0808a6c609607b4edf0d39ee3097d1f6f087",
+    "Burnett/Analysis/CubicEnergy/LowSymbol.lean": "2e24f3ac37bbfd7a6ba3b9a312a6e7414a242e362a5fde4dc2fc630b232d7008",
+    "Burnett/Analysis/CubicEnergy/SegmentIntegral.lean": "42ef18ed51c82bf53a46acbccfb028b2e6ee7e64c01795efffd61ca24db8bd92",
+    "Burnett/Analysis/CubicEnergy/SymbolDecomposition.lean": "5016ac74bb0412b90e9197d69a0c2e9dab0d7e69df103958d485b5b7fb566b3e",
+    "Burnett/Analysis/DyadicSquare/SquareEnergy.lean": "62a620d0dd0d3e2c1671f5fcb5b64d376c946c07a6014dd3b138f3df34f2b8be",
+    "Burnett/Analysis/DyadicSquare/SquareShell.lean": "acc3c159da92df88a37dc766f0f2e10899f09560cbb252cdd9e5c613da1d7a76",
+    "Burnett/Analysis/Fourier/FixedInfraredSchwartz.lean": "16d083f609a700138262b2fa27ef4e5c5909e75f59e86b35f164f2a564160092",
+    "Burnett/Analysis/Fourier/L2Extension.lean": "50a4e0e3c3b88a8328e84284c38373ac5fe069c3b228cdeb156fe8f093250e20",
+    "Burnett/Analysis/Fourier/Projection.lean": "065b0091b2fc7b04f2f1d09be6728c4ee410bf7d5331d58dd81314ed5df641e7",
+    "Burnett/Analysis/Fourier/SchwartzDensity.lean": "d1ceb830ab5c547461ee22b07bd44c368e231895a0f4ae157363a50d0b3fe094",
+    "Burnett/Analysis/Fourier/SchwartzParseval.lean": "2d729ee3943f10f2fc4f5b5757d7aaeafc82c29599da02f9331c9cad3d37fd1e",
+    "Burnett/Analysis/Fourier/SchwartzTail.lean": "3359c56b998114a9a22d3e651b3df97f1e2d1bd923de79fe9c8cc17447a59a99",
+    "Burnett/Analysis/Fourier/SharpProjection.lean": "793893b17b546d6ce61bdb352dd0f5872b4d208dba5e6e60405064872b058d46",
+    "Burnett/Analysis/H1FourierEnergy.lean": "b9aecd800d5a6fefd89165f9a254d6fb5437617f9ed157001de0881485e14fad",
+    "Burnett/Analysis/Microlocal/AngularCommutator/AngularSymbol.lean": "0e13912e1ffca463dddd36d13ec35bdcd426485e212a5809d9a588cd15a99e19",
+    "Burnett/Analysis/Microlocal/AngularCommutator/FourierRepresentation.lean": "d26777950583514056dad426832e56d59b80f45707f65ec18c7d7faa0b521762",
+    "Burnett/Analysis/Microlocal/AngularCommutator/FrequencyKernel.lean": "ed2fa46abf6977f43d7319a892bed0fe81824dab34ce35bbc3762a7e83e76913",
+    "Burnett/Analysis/ShiftedFourierWindow/KernelMaximal.lean": "16f0c2051e8745f918069dd6446971ceb4a9fa322a9f974dff836c461800c05c",
+    "Burnett/Analysis/ShiftedFourierWindow/LowPassFourier.lean": "17098d80ad6171f7d5c63d2f77529b018255e12dc53a2a9244f88897f04b290e",
+    "Burnett/Analysis/ShiftedFourierWindow/LowPassLp.lean": "a9a14a3bf6faca4cc03064f4601a8334defc252509d7d8f28fe3b913d2ce03d0",
+    "Burnett/Analysis/ShiftedFourierWindow/RadialKernel.lean": "a85659d58e5226e9b36c1df72f6379997b961e271d0dd155d75f68045def017c",
+    "Burnett/Analysis/ShiftedFourierWindow/SchwartzMaximal.lean": "0296731b48172c530657b39f2b6bd0816867e66322a5aafd1ef9e09d6b21bfe7",
+    "Burnett/Analysis/SignedFourierWindow/AnnularSquareLp.lean": "3a931e9f70232c9648d49fa266cfe2ebefb18aa8bb1566794b858a3351c1deac",
+    "Burnett/Analysis/SignedFourierWindow/CalderonBadSum.lean": "477b30e636a26e476e22c34370690b1d2964d3ee9dac4bcca50667518e4143c0",
+    "Burnett/Analysis/SignedFourierWindow/CalderonBalls.lean": "0b76cb494632cd1e642152b042efca4255946e8bf1c350dc173a059da2ee19ca",
+    "Burnett/Analysis/SignedFourierWindow/CalderonBlock.lean": "ee00c350047a2c8be1adfb062168ae0de060a4cdc7831b9ac0326f0611e34b08",
+    "Burnett/Analysis/SignedFourierWindow/CalderonCancellation.lean": "96f43909d41ffeb56ab1d2e00c4cc64cf6169509b8b2f66f1bca7d69b080e0fa",
+    "Burnett/Analysis/SignedFourierWindow/CalderonColumn.lean": "730a9bbff9f2e2e9f9e5fcefc491230bd50eeb5187f4be4e7c0d44a2e69bf14c",
+    "Burnett/Analysis/SignedFourierWindow/CalderonDifferentiation.lean": "4cb4853321ddff011cdb349c8642883e79d4794604af2e1bd401e56b29173c59",
+    "Burnett/Analysis/SignedFourierWindow/CalderonEnergy.lean": "6d792c7944c96ebf1503763acf664a509128ba63c2f70285bc408344b8cd0fc2",
+    "Burnett/Analysis/SignedFourierWindow/CalderonExceptional.lean": "e677db06fc0a0c66caa952a3d0ab8587fd57f8453c076f09ab2450b881ac7840",
+    "Burnett/Analysis/SignedFourierWindow/CalderonFiniteKernel.lean": "b0ced723b734c276a652c99612ccf28b61bbfe505951ce22beef05bddcb6d6fb",
+    "Burnett/Analysis/SignedFourierWindow/CalderonGood.lean": "8c01993337c9df423e62654fa6dfb6df64df67978ca546bde9ea5a4d9f0fdadb",
+    "Burnett/Analysis/SignedFourierWindow/CalderonKernelL2.lean": "941a86765739a7453d3d5546b5bb1cebf61cded69cf6bf79dd723c9f841f0692",
+    "Burnett/Analysis/SignedFourierWindow/CalderonMass.lean": "a07e5a968f5cb92c9c65351c4156235cf70716fc66ce4dc6c0f6e2cbb94ce776",
+    "Burnett/Analysis/SignedFourierWindow/CalderonPartition.lean": "8ec13024aedd25b23db08f01a9472e54cd93023081ad82bdea82931e5f64e0e4",
+    "Burnett/Analysis/SignedFourierWindow/CalderonSplit.lean": "93d8f901f6928c909fa7a7a2a8efdc0824540ee6e5fd4bcf8d14ab07414620a1",
+    "Burnett/Analysis/SignedFourierWindow/CalderonWeakEstimate.lean": "2cf26215f9a6706399d5b2c3004a896146742e4865d73c9809703344ed3fffe5",
+    "Burnett/Analysis/SignedFourierWindow/CalderonWeakType.lean": "61c01e1c9b879333fd66ce0e6e60942ee5e04f434311f29717d214473b3a0c15",
+    "Burnett/Analysis/SignedFourierWindow/DyadicDifferences.lean": "ce9dfd499130fe1ef5609d60c84ec797365d2ab88bf4f9c9b515d729ad923285",
+    "Burnett/Analysis/SignedFourierWindow/FiniteLowWindow.lean": "52799fe070bd6ed2433ce5b437f8416f56cdd4ba0bf213cc87f7d7b03c7ba0ea",
+    "Burnett/Analysis/SignedFourierWindow/HormanderBands.lean": "c057351e57b8b7e1ebed068eccaa0c9cdeadd79a582624017823372e4c45c00e",
+    "Burnett/Analysis/SignedFourierWindow/InterpolationBottom.lean": "26943a18358c0db6fa7cd121899ac441e97216f152ea5acc872d592a9410e350",
+    "Burnett/Analysis/SignedFourierWindow/InterpolationLevel.lean": "5ad79d88fabd73e037f71d74be11358aead40674cb131f5837b11b25d9d99fe0",
+    "Burnett/Analysis/SignedFourierWindow/InterpolationMoment.lean": "17106fb4da785384f386fc9b003a88fc531f65dd4e6fe326f62f1dffbc444706",
+    "Burnett/Analysis/SignedFourierWindow/InterpolationTruncate.lean": "130a2d09105782f8142c40a58a97867d1c88e23b0dbf39b9422d199e783bd83c",
+    "Burnett/Analysis/SignedFourierWindow/KernelBilinearDual.lean": "1992be4549c1586f612a680bc55b368b4ed6a579ac1cac891c5235b704dbc312",
+    "Burnett/Analysis/SignedFourierWindow/KernelDualPairing.lean": "7e31d9ceb750bd72885d12d135810180c84cd0e489cd715ffaffd8e4a56025ed",
+    "Burnett/Analysis/SignedFourierWindow/KernelDualPower.lean": "52b6102c3c630791453d9fd9ef226dd6070165000d73b92e706307b194a46298",
+    "Burnett/Analysis/SignedFourierWindow/KernelLpExhaustion.lean": "c8ab218ae976549e06a9886e6f20c03ffeec7e2392e1f7d63de723076664416e",
+    "Burnett/Analysis/SignedFourierWindow/KernelTranslation.lean": "93054077661dd7a5b8d1e927ae6e6e9830dee85f53da67b0984d759e75a87198",
+    "Burnett/Analysis/SignedFourierWindow/PhysicalDifferences.lean": "e2f0d4314989c450943c30b3a38117825bdf0334eed3e5bcd77d28840ba1b4f7",
+    "Burnett/Analysis/SignedFourierWindow/ShiftedTail.lean": "401a74ecab9633f4d0ee0471cf72ed14fe43cb4f6b629ac91dd3240fa218e75f",
+    "Burnett/Analysis/SignedFourierWindow/SignAverage.lean": "ed0a24cab4f85cbace00d73d7c47fef4029133442a18a59519a11fe7cea7f87b",
+    "Burnett/Analysis/SignedFourierWindow/SignLowerMoment.lean": "27b9cc44b4a0dd9ffc8574885877cdcce169735bf29f440619ea510254422975",
+    "Burnett/Analysis/SignedFourierWindow/SignSquareIntegral.lean": "d963bcad065625cbbbee48f84f620a105cac35c5f104fae948becd697b30175f",
+    "Burnett/Analysis/SignedFourierWindow/SignWindowSum.lean": "eb1265b0870b49df0a2511a68aff27be744fd85808634c6241f13364f4bcdc2a",
+    "Burnett/Analysis/SignedFourierWindow/SignedBands.lean": "9e99e2acfa0f5e8e2c207b7bf14bc3240d40562a23b313515264e2a4012baf04",
+    "Burnett/Analysis/SignedFourierWindow/SignedWindowAllLp.lean": "bc925e1f42f2ec9e9b53e871186527631b2a7eb718158e06d93ab90e300e6d8d",
+    "Burnett/Analysis/SignedFourierWindow/SignedWindowLowerLp.lean": "78f22b5a1baecf41260703ea1dbffe8aed2243c8c2a49eca8b8503be82462f97",
+    "Burnett/Analysis/SignedFourierWindow/SignedWindowOperator.lean": "397a227c1a672c6447fe83e950dbb42f23feacca3d11402d534d42ebd3e36b67",
+    "Burnett/Analysis/SignedFourierWindow/SignedWindowWeak.lean": "187dfa8172d3b93522cf9274caafa48db284ea72707e1955afd9c3beed657c12",
+    "Burnett/Analysis/SignedFourierWindow/SquareProduct.lean": "ff7e1cda8fa7419f4eedec207095f1f5293f121e5341f7f3572cf8f0d18593a4",
+    "Burnett/Analysis/SignedFourierWindow/TwoAnnularOneLow.lean": "eb9b1a00d0ef038e2c418f96968f71e9175dfd3233e8a2e4c646fb7c0b58df71",
+    "Burnett/Analysis/SignedFourierWindow/WindowL2.lean": "8fbad6c16d1444117b86cc73ccc708ea4bfe82892544b258261975dc8d30ffcb",
+    "Burnett/Analysis/SignedFourierWindow/WindowReflection.lean": "45355e76d2600866d17681af65e883a7a0a282e0858b73f0752aba9f08f4cb69",
+    "Burnett/Analysis/Sobolev/GraphDual.lean": "23969ed0f181a613c3f34996faf34be215631552bf9c34518584b81daa1c123b",
+    "Burnett/Analysis/Sobolev/Pairing.lean": "6a526c4b9dc8da69ea7d80aa43475bd1247dac92a4be560f0952e8f61c31a67d",
+    "Burnett/Analysis/Sobolev/TestJet.lean": "3274783bb201b14fa6838ce8e3d58eda4cd504cfbbf5e914b19b8430dd1b6a3b",
+    "Burnett/Analysis/SpatialFreezing/FixedCubeFourier.lean": "ec638019cc19eb295e84a45e4fe7bce34ef100aed29f67f8482e229fa3fd343e",
+    "Burnett/Analysis/SpatialFreezing/SpatialLatticeSummability.lean": "0a081fbda9d502fd97886bb7bc34759189e702e9a5dbcaedef581a90d301f773",
+    "Burnett/Geometry/ConnectionDifference.lean": "062c62f115043a0a4ade85c06bf096f5474380165a70deeaa2bbd6e3645ee7ae",
+    "Burnett/Geometry/FiberMetric.lean": "b574e597c29b8bac5f6f17c09bc1817a87b5ea8bab9f02a4a372c4bb18a8d522",
+    "Burnett/Analysis/AllScaleTransfer/RadianSchwartzTrilinear.lean": "a4c9b257f302566955de0f87e2d5611772aec2a8c28a36ecb7b3381a11f84333",
+    "Burnett/Analysis/AllScaleTransfer/RadianTrilinearL3Extension.lean": "1fc1416efede4c0e52baf5b6dd8d18c37c8dc8593a3a5d124d0d2adbdef4d543"
+  },
+  "counts": {
+    "targets": 1145,
+    "inventory": 1202,
+    "lean_sources": 1670
+  },
+  "previous_registration": {
+    "base": "a60cfb61e4b737ad96326063d22cdee0c4965c86",
+    "base_tree": "7ed1c1d6824fb1541a616b85733ebaca7b92aa8d",
+    "scratch_replay_sha256": "b7c40c92742ac4d2250a8a0b55a13ec5355fd7b418f3464466bb914078a8d43b",
+    "target": {
+      "claim_id": "lem:analytic-near",
+      "module": "Burnett.Analysis.AllScaleTransfer.AnalyticNear",
+      "declaration": "Burnett.A05.exists_analyticNear_allScale_bound"
+    }
+  },
+  "sealed_intermediate_candidate": {
+    "delta_sha256": "0a2812ff41b881cd61474da3e12a18df979f4cf89adbe36f4ebed40f6d7813a1",
+    "patch_sha256": "edb6f9be05df7c5cb4c849783f4310f83e1879b434b17ce9624eb806443220a2",
+    "target": {
+      "claim_id": "lem:analytic-near",
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNear",
+      "declaration": "Burnett.A05.exists_analyticNear_original_allScale_bound"
+    }
+  },
+  "scratch_replay": {
+    "kind": "native-ordinary-imports",
+    "compiler_sha256": "20bc808248e38cf072f84f4eb389f8f98e5925d703bcbfa400d9dd44f310c4db",
+    "source_map_sha256": "e240a6eca4e2a32fe828bc80ade3a993d9dc6d0cba15564d8777fdb41ca30ff5",
+    "target_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lp3_extension": {
+    "module": "Burnett.Analysis.AllScaleTransfer.OriginalAnalyticNearLp3",
+    "declaration": "Burnett.A05.exists_analyticNear_original_allScale_Lp3_of_atlases",
+    "replay_sha256": "510281376a5c23112d875582952f2bf1715bdf2efcbf26cc26d711848ed523ac",
+    "target_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "dense_extension": "Burnett.A05.exists_radianTrilinearForm_Lp3_extension",
+    "coefficients": [
+      "C₀*A",
+      "Cnear(pStar)*A*δ^(2*(pStar-3)/(pStar-2))"
+    ],
+    "full_and_uniform_factorwise_finite": true
+  }
+}

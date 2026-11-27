@@ -5753,6 +5753,11 @@
       "claim_id": "f06:original-receiving-physical-contraction",
       "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra",
       "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra_of_intrinsicAmplitude"
+    },
+    {
+      "claim_id": "lem:analytic-near",
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
+      "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases"
     }
   ],
   "inventory": [
@@ -5856,9 +5861,11 @@
         "endline": 1057
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t07"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/analytic-near.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases"
     },
     {
       "claim_id": "lem:analytic-correction-bounds",
