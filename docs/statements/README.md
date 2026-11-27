@@ -48,7 +48,7 @@
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [已实现](paper-cubic-continuity.zh-CN.md) |
 | 3.3 | lemma | `lem:freezing` | 736–764 | [完整三次能量的定量冻结](original-cubic-freezing.zh-CN.md) |
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | [全尺度传递与近角求和](analytic-near.zh-CN.md) |
-| 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [高槽交换子与实际物理远角精确符号](high-slot-and-physical-far-symbol.zh-CN.md) · [原角修正与截断恢复](original-angular-cutoff-recovery.zh-CN.md) |
+| 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [解析修正及粗交换子的原估计](original-analytic-correction-bounds.zh-CN.md) · [高槽交换子与实际物理远角精确符号](high-slot-and-physical-far-symbol.zh-CN.md) · [原角修正与截断恢复](original-angular-cutoff-recovery.zh-CN.md) |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | [任意坐标图的投影源](original-general-projection.zh-CN.md) |
 | 5.1 | theorem | `thm:variational-transport` | 1729–1735 | 未建模 · [原规范修正与远角修正的装配](original-correction-assembly.zh-CN.md) |
 | 6.1 | lemma | `lem:lift` | 2989–2991 | [光滑类空柯西截面上的全动量提升](cauchy-momentum-lift.zh-CN.md) · [全局双曲时空的全动量提升](globally-hyperbolic-momentum-lift.zh-CN.md) |

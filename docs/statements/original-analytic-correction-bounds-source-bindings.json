@@ -1,0 +1,82 @@
+{
+  "base": "cfbce3eeb690159f4898291e0e983ab7880d7f1a",
+  "base_tree": "40dccf54e82d704e13078ce8b84835107ddb5ae0",
+  "paper_label": "lem:analytic-correction-bounds",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "paper_spans": [
+    {
+      "lines": [
+        1248,
+        1266
+      ],
+      "sha256": "b06d3001d3cff40ea72b26ef5037c44916571f513b07a89fe51f1d64502769c4"
+    },
+    {
+      "lines": [
+        1380,
+        1394
+      ],
+      "sha256": "37b65b5eb25230a71d9420d3d217b8fc73a0b52afaf62ce0e6063e909911420d"
+    },
+    {
+      "lines": [
+        1396,
+        1474
+      ],
+      "sha256": "bd84ff58526fb19d017e6f7f64031baed5474fdbe2c111e4530dd38a5e770777"
+    }
+  ],
+  "target": {
+    "claim_id": "lem:analytic-correction-bounds",
+    "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds",
+    "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds"
+  },
+  "ordinary_source_sha256": {
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionLipschitzDensity": "66d276b73347d4bca2de8d9da1c0234f4991607dd50f768748849a8307d3c112",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionLipschitzFourierLimit": "7894364fccf39da1db652fdaaaffedaa4559373557b6438049c2bb097ff907a9",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionSymbolRepresentative": "44bdcdab86de0db66d330b87e5ec2ce6fe676a1472ce96340665c7874b3cb66c",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionAngularFullBounds": "4a66864ea34472ea425cda1259fda0b1718c0e138e0f2e42bb979fbc88480eee",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionGlobalRoughOutputs": "260d4ff6a0861fd6cba450daaa9622d67df20418145f1baf78eee481d2ad9fad",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.OriginalAnalyticCorrectionBounds": "286dc9f402be8db6a79361e75915437a68d651b87479d98d3ddaa3668287674f",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.CorrectionLipschitzGradientNorm": "31c97b82022b05a7d8d4070356adabf01927e1b1a9f977442c3fd7b8d5c3c52f",
+    "Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds": "9a1454527f8958468ac0ede32833ddd4bb5e569249bbe486243804619280ba5e"
+  },
+  "support_declarations": [
+    "Burnett.A08.exists_originalAnalyticCorrectionBounds",
+    "Burnett.A08.lipschitzWith_lipschitzGradientLInfty",
+    "Burnett.A08.OriginalAnalyticCorrectionBounds.lipschitz_commutator_gradientLInfty"
+  ],
+  "core_isolated_replay_sha256": "a1db175e762e5942ce95fd6ccb4b8cac50e810cecb2f80325c2e5e95bf5ca8f6",
+  "qualified_native_replay_sha256": "3ce98a06639c583c4e50d59578522880a62ff7c8b98da85ef199f0d091f93a8b",
+  "verified_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "ordinary_project_check": "pending",
+  "independent_candidate_review": "scalar-source-readback-complete",
+  "author_confirmation": "pending-author-confirmation",
+  "paper_formalization_verified": false,
+  "independent_candidate_review_sha256": "42bb1524f9b50d20c486befc62a0b83b7f4dd651ee5abbbff7fdd410ed41a19d",
+  "supplementary_targets": [
+    {
+      "claim_id": "a07:finite-matrix-correction",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.FiniteMatrixAnalyticCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperFiniteMatrixAnalyticCorrectionBounds",
+      "source_path": "Burnett/Analysis/CubicEnergy/AngularCorrection/FiniteMatrixAnalyticCorrectionBounds.lean",
+      "source_sha256": "8377769f4fd666b128f0e2326b06f17e634c64ebff7ca661b0bd3cdd3e9b529e",
+      "qualified_native_source_sha256": "df0eee09ea6ccfedb3a39a619fdfb10da106cd7a4482d9cdfb143fea72458e65"
+    },
+    {
+      "claim_id": "a07:fixed-radial-inhomogeneous-correction",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.InhomogeneousRadialCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperRadialInhomogeneousAnalyticCorrectionBounds",
+      "source_path": "Burnett/Analysis/CubicEnergy/AngularCorrection/InhomogeneousRadialCorrectionBounds.lean",
+      "source_sha256": "43d043c329125192b49ea1493f1353b2ecd24704c66adc896c65b003f5e5d253",
+      "qualified_native_source_sha256": "01eb141e70b06e60747ed5223aadd696b549244efd4af0f48903983a2813b7bb"
+    }
+  ],
+  "finite_matrix_replay_sha256": "2a69945e2ec1f157ebcfa1dda5f95fe6b8aa008659454366dc2a608aa711f069",
+  "fixed_radial_replay_sha256": "0386dce98bbb6ac9751fe6062772f8431626605475598d1fa4641a41972e56ec",
+  "supplement_independent_readback_sha256": "e06b0c31dbcf5bf884cdc382b63979b03463755c7ec8cc333d38744ecb7d22bb"
+}

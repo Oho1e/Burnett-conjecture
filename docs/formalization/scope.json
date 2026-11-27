@@ -5773,6 +5773,21 @@
       "claim_id": "lem:freezing",
       "module": "Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing",
       "declaration": "Burnett.A03.exists_symmetric_action_freezing_of_local_classical_amplitude"
+    },
+    {
+      "claim_id": "lem:analytic-correction-bounds",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds"
+    },
+    {
+      "claim_id": "a07:finite-matrix-correction",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.FiniteMatrixAnalyticCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperFiniteMatrixAnalyticCorrectionBounds"
+    },
+    {
+      "claim_id": "a07:fixed-radial-inhomogeneous-correction",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.InhomogeneousRadialCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperRadialInhomogeneousAnalyticCorrectionBounds"
     }
   ],
   "inventory": [
@@ -5897,9 +5912,11 @@
         "endline": 1394
       },
       "disposition": "formalize",
-      "modeling_status": "partially_modeled",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/high-slot-and-physical-far-symbol.zh-CN.md"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
+      "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "prop:general-projection",
@@ -26883,6 +26900,38 @@
       "statement_record": "docs/statements/lipschitz-commutator-energy.zh-CN.md",
       "human_semantic_confirmation": "pending-author-confirmation",
       "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a07:finite-matrix-correction",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A08.exists_paperFiniteMatrixAnalyticCorrectionBounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1441,
+        "endline": 1466
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "a07:fixed-radial-inhomogeneous-correction",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:analytic-correction-bounds",
+      "declaration": "Burnett.A08.exists_paperRadialInhomogeneousAnalyticCorrectionBounds",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1393,
+        "endline": 1393
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation"
     }
   ],
   "coverage_review": {

@@ -464,4 +464,7 @@ import Burnett.Geometry.Cotangent.OpenRegion.Transport
 import Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift
 import Burnett.Analysis.GaugeProjection.OriginalGeneralProjection
 import Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra
+import Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds
 import Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing
+import Burnett.Analysis.CubicEnergy.AngularCorrection.FiniteMatrixAnalyticCorrectionBounds
+import Burnett.Analysis.CubicEnergy.AngularCorrection.InhomogeneousRadialCorrectionBounds
