@@ -5743,6 +5743,16 @@
       "claim_id": "p01:receiving-physical-borel-defect",
       "module": "Burnett.Analysis.GaugeProjection.ReceivingProjectedPhysicalDefect",
       "declaration": "Burnett.P01.hasReceivingProjectedPhysicalDefect_of_originalIntrinsicAmplitude"
+    },
+    {
+      "claim_id": "unnum:quadratic-symbol-algebra",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra",
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra"
+    },
+    {
+      "claim_id": "f06:original-receiving-physical-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra",
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra_of_intrinsicAmplitude"
     }
   ],
   "inventory": [
@@ -6052,10 +6062,11 @@
         "endline": 465
       },
       "disposition": "formalize",
-      "modeling_status": "partially_modeled",
-      "lean_status": "partially_formalized",
-      "statement_record": "docs/statements/hermitian-null-algebra.md",
-      "remaining": "Pointwise F06 algebra is retained. New genuine nondegenerate symmetric metric fibers with a supplied Lorentz-orthonormal basis now produce the old frame certificate. Derivation from an independent geometric Lorentz/signature model, smooth/local/global choice and F05/F07 covariance and measure instantiation remain open; no global smooth frame or uniform parameter estimate is asserted."
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-quadratic-symbol-algebra.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra"
     },
     {
       "claim_id": "unnum:physical-measure-construction",
@@ -26809,6 +26820,23 @@
       "lean_status": "proof-implemented",
       "declaration": "Burnett.P01.hasReceivingProjectedPhysicalDefect_of_originalIntrinsicAmplitude",
       "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "f06:original-receiving-physical-contraction",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "unnum:quadratic-symbol-algebra",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 432,
+        "endline": 465
+      },
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra_of_intrinsicAmplitude",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-quadratic-symbol-algebra.zh-CN.md",
       "human_semantic_confirmation": "pending-author-confirmation",
       "does_not_close_parent_claim": true
     }
