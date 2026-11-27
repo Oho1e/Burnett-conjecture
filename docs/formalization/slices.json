@@ -195,7 +195,7 @@
         "核、规范商与屏幕正范数需严格区分；非零锥上不应宣称F非负。",
         "不能仅证明B(k,k)=0而漏掉协方差所需混合项。"
       ],
-      "next_action": "把已证点态Lorentz证书、Hermitian型及完整两坐标分类接入F02/F05真实几何与协方差对象，再由F07闭合测度配对正性和二次定理；点态反射选择不自动提供V06需要的光滑性/参数一致界。",
+      "next_action": "原二次符号代数已从实际图的 Lorentz 号型导出，并已接收原振幅的物理收缩。继续使用这份收缩处理余球面输运。",
       "supplementary_obligations": [
         {
           "id": "local:full-B-expansion",
@@ -8820,6 +8820,12 @@
       "claim_id": "p01:receiving-physical-borel-defect",
       "source_slices": [
         "P01"
+      ]
+    },
+    {
+      "claim_id": "f06:original-receiving-physical-contraction",
+      "source_slices": [
+        "F06"
       ]
     }
   ],

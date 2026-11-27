@@ -459,3 +459,4 @@ import Burnett.Geometry.Cotangent.OpenRegion.EinsteinMoments
 import Burnett.Geometry.Cotangent.OpenRegion.Transport
 import Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift
 import Burnett.Analysis.GaugeProjection.OriginalGeneralProjection
+import Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra

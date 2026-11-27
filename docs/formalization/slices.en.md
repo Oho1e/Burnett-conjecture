@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `dfd2b7dd30aabe61829e00a3b2f8561f65557fcc484cdc9cf4c676b55c568774`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `c044eb91fce121def2f7e12f0e4cb10e2c08efacbfebed86322ff93c4e65d81e`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -346,7 +346,7 @@ Supplementary obligations:
 - Physical/gauge cross cancellation on the null cone (lines 454–463).
 - Pointwise frame certificates, two-reflection normalization, gauge invariance, positivity and null gauge kernel, and two-way two-parameter classification have proofs. Check geometry and measures and smooth global choices separately (line 465).
 
-Next: Bring the Lorentz certificates, Hermitian form, and full two-coordinate classification into the actual F02/F05 geometry and covariance. Use F07 for positivity of the measure pairing and closure of the quadratic theorem. V06 requires smoothness and uniform parameter estimates beyond the pointwise reflection choice.
+Next: The original algebra now follows from the receiving chart's Lorentz signature and supplies the physical contraction of the original amplitude. Reuse this contraction in cosphere transport.
 
 <a id="f07"></a>
 

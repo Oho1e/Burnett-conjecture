@@ -58,6 +58,8 @@
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | [证明与独立复核](bianchi-counterexample.zh-CN.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [证明与独立复核](rosen-two-polarization.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |
+
+- [原二次符号代数](original-quadratic-symbol-algebra.zh-CN.md)
 - [角帽与有符号相位下界](angular-cap-geometry.zh-CN.md)
 - [固定规范补投影及其零阶符号](fixed-gauge-projection.zh-CN.md)
 - [固定规范补投影的 Fourier 作用](gauge-projection-fourier-action.zh-CN.md)

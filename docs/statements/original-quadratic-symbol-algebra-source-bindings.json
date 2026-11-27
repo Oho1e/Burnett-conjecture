@@ -1,0 +1,28 @@
+{
+  "base": "0060b38441d0f6ba4e174ca86f0b8c2aed3afa8e",
+  "base_tree": "e6e951af2f7fffa00c9f7da096402561ad186b72",
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "replay_sha256": "15fc1035f65ab520ca41914feef79369f4607f50fccc966903cfbc19a12f7172",
+  "replay_ordinary_root_sha256": "5515c3661ec213f09aaffc85c5506e0e52fe7220593888ec939701afc270aacf",
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/OriginalQuadraticSymbolAlgebra.lean": "1e050ab9ae07ad8b4ba21cbd0fb5609af8f90427d7c5bfa3faa0a8be78f27149"
+  },
+  "targets": [
+    {
+      "claim_id": "unnum:quadratic-symbol-algebra",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra",
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra"
+    },
+    {
+      "claim_id": "f06:original-receiving-physical-contraction",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticSymbolAlgebra",
+      "declaration": "Burnett.F06.originalQuadraticSymbolAlgebra_of_intrinsicAmplitude"
+    }
+  ],
+  "counts": {
+    "targets": 1144,
+    "inventory": 1202,
+    "lean_sources": 1654
+  },
+  "replay_source_sha256": "36f1c826eb12a5710d9729bdae8c4948b79267e71a8bf236c9d355506dc5cbdc"
+}
