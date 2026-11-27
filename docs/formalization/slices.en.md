@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `e55e2a015a38464e27c3ad7aee113b8cebc45702c9c0167283a3611184a1a561`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `dfd2b7dd30aabe61829e00a3b2f8561f65557fcc484cdc9cf4c676b55c568774`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -702,7 +702,7 @@ Internal refinements (no separate completion status):
 - The original inventory included only the projection definition and whole proposition, not separate entries for coordinate Ricci expansion after lowering the gauge-source index, the Calderon bound, and the exact whole-space source formula including noncompact tails. (Paper lines 1644–1695)
 - Prove invariance of the full angular measure; stress second moments alone or the existing 5 real-algebra supports are insufficient. (Paper lines 1703–1709)
 
-Next: The same chartwise vacuum Ricci amplitude gives off-cone vanishing and on-cone Lorenz polarization for the fixed projection. The original and projected null-shell physical measures agree on the round angular section. Identify the chart amplitudes across overlaps to construct the global physical measure.
+Next: The original projection proposition has a proof on arbitrary maximal charts. Verify its public entry and reuse its physical angular defect in the transport argument.
 
 <a id="v01"></a>
 

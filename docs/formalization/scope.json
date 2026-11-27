@@ -5723,6 +5723,26 @@
       "claim_id": "l02:open-regular-globally-hyperbolic-lift",
       "module": "Burnett.Geometry.Cotangent.OpenRegion.IntrinsicPiecewiseLift",
       "declaration": "Burnett.Geometry.OpenRegion.exists_openRegionEinsteinLift_of_regularIntrinsicPiecewise"
+    },
+    {
+      "claim_id": "prop:general-projection",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalGeneralProjection",
+      "declaration": "Burnett.P01.exists_originalGeneralProjection"
+    },
+    {
+      "claim_id": "p01:same-witness-arbitrary-chart-projection",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalGeneralProjection",
+      "declaration": "Burnett.P01.hasOriginalGeneralProjectionOnChart_of_originalIntrinsicAmplitude"
+    },
+    {
+      "claim_id": "p01:receiving-full-angular-derivative-pairings",
+      "module": "Burnett.Analysis.GaugeProjection.ReceivingProjectedDerivativePairings",
+      "declaration": "Burnett.P01.hasReceivingProjectedDerivativePairings_of_originalIntrinsicAmplitude"
+    },
+    {
+      "claim_id": "p01:receiving-physical-borel-defect",
+      "module": "Burnett.Analysis.GaugeProjection.ReceivingProjectedPhysicalDefect",
+      "declaration": "Burnett.P01.hasReceivingProjectedPhysicalDefect_of_originalIntrinsicAmplitude"
     }
   ],
   "inventory": [
@@ -5854,9 +5874,11 @@
         "endline": 1616
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t09"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "declaration": "Burnett.P01.exists_originalGeneralProjection",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "thm:variational-transport",
@@ -26737,6 +26759,57 @@
       "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
       "human_semantic_confirmation": "pending-author-confirmation",
       "semantic_review": "intrinsic-causality-and-same-measure-lift-readback",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:same-witness-arbitrary-chart-projection",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1602,
+        "endline": 1615
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.hasOriginalGeneralProjectionOnChart_of_originalIntrinsicAmplitude",
+      "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:receiving-full-angular-derivative-pairings",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1696,
+        "endline": 1717
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.hasReceivingProjectedDerivativePairings_of_originalIntrinsicAmplitude",
+      "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "p01:receiving-physical-borel-defect",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "prop:general-projection",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 1613,
+        "endline": 1616
+      },
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "declaration": "Burnett.P01.hasReceivingProjectedPhysicalDefect_of_originalIntrinsicAmplitude",
+      "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
       "does_not_close_parent_claim": true
     }
   ],
