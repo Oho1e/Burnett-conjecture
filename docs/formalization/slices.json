@@ -298,7 +298,7 @@
         "矩阵系数版本要求B每一符号阶都标量，只有主符号标量不够。",
         "分析配对dx与几何dV_g转换必须显式；r^{ab}本片系数不能混同全篇辅助度规r。"
       ],
-      "next_action": "在登记的符号及支撑假设下，完整左量子化的标量、矩阵主能量配对和两条固定图密度估计已有 Lean 证明。后续须将原文算子类和下游 Weyl 作用与这些 Lean 输入对接。",
+      "next_action": "原文一般光滑 S¹₁,₀ 算子的两种 Lebesgue 能量估计已用原文 Fourier 约定实现。固定图密度已有相应接口。继续在下游核对实际 Weyl 作用与全左量子化的对应。",
       "supplementary_obligations": [
         {
           "id": "local:analytic-symbol-uniformity-conventions",
@@ -8826,6 +8826,12 @@
       "claim_id": "f06:original-receiving-physical-contraction",
       "source_slices": [
         "F06"
+      ]
+    },
+    {
+      "claim_id": "a01:original-hermitian-lipschitz-energy",
+      "source_slices": [
+        "A01"
       ]
     }
   ],

@@ -224,6 +224,7 @@ import Burnett.Analysis.FrozenScreen.Phase
 import Burnett.Analysis.FrozenScreen.Projection
 import Burnett.Analysis.FrozenScreen.Symbol
 import Burnett.Analysis.PrincipalEnergy
+import Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy
 import Burnett.Analysis.AngularCaps.CapDistribution
 import Burnett.Analysis.AngularCaps.LinearFourierChange
 import Burnett.Analysis.AngularCaps.ProjectiveNullGeometry

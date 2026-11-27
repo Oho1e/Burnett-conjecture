@@ -5758,6 +5758,16 @@
       "claim_id": "lem:analytic-near",
       "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
       "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases"
+    },
+    {
+      "claim_id": "lem:commutator",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianScalarLipschitzEnergy"
+    },
+    {
+      "claim_id": "a01:original-hermitian-lipschitz-energy",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianHermitianLipschitzEnergy"
     }
   ],
   "inventory": [
@@ -5817,9 +5827,11 @@
         "endline": 575
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t04"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/lipschitz-commutator-energy.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianScalarLipschitzEnergy"
     },
     {
       "claim_id": "lem:cubic-continuity",
@@ -26844,6 +26856,23 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-quadratic-symbol-algebra.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation",
+      "does_not_close_parent_claim": true
+    },
+    {
+      "claim_id": "a01:original-hermitian-lipschitz-energy",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "lem:commutator",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 573,
+        "endline": 574
+      },
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianHermitianLipschitzEnergy",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/lipschitz-commutator-energy.zh-CN.md",
       "human_semantic_confirmation": "pending-author-confirmation",
       "does_not_close_parent_claim": true
     }
