@@ -1128,7 +1128,7 @@
         "不能用逐测试存在子列替代同一mu对全部测试的结论。",
         "全局分割须分割测试本身，随后对H_P线性求和；不能仅逐图声明而忽略切断导数。"
       ],
-      "next_action": "固定尺度极限已可直接消费两项实际 Fourier 校正的补丁尾界。还需接入原变分残差极限、三次局部化和冻结、实际近角界。",
+      "next_action": "原 C03 实际补丁的两尺度余项已接入原输运定理。沿用二次定理的同一物理测度，后续归档普通公开根模块和作者确认。",
       "supplementary_obligations": []
     },
     {
@@ -1156,7 +1156,7 @@
         "无权推前或rho径向形式提升均不足；权重与径向漂移必须一起核对。",
         "a的全零锥光滑定义、离锥延拓、紧基支撑及nu的Radon性都属于实际证明义务。"
       ],
-      "next_action": "全流形的局部矩提升已接入内禀分段因果的全局双曲性。主定理尚需把原余球面输运结论交给这一入口。",
+      "next_action": "内禀分段因果的全局双曲性给出全动量提升，主定理已供给原余球面输运和 Einstein 矩。",
       "supplementary_obligations": []
     },
     {
@@ -1178,7 +1178,7 @@
         "任意全局双曲开放U的量词必须保留；nu可随U构造，mu不重新选择。",
         "lem:lift消费已闭合ray transport，不是ray transport本体前提。"
       ],
-      "next_action": "开子时空限制保留原矩等式和原输运，同一限制测度已有全局双曲提升。主定理尚需提供原余球面输运。",
+      "next_action": "主定理已将同一原测度的矩等式和输运交给每个全局双曲开子时空上的全动量提升。后续核对正式入口的整库回执与作者确认。",
       "supplementary_obligations": []
     },
     {
@@ -8856,6 +8856,12 @@
       "claim_id": "a08:uniform-weak-angular-tail",
       "source_slices": [
         "A08"
+      ]
+    },
+    {
+      "claim_id": "f07:all-auxiliary-metrics-common-witness",
+      "source_slices": [
+        "F07"
       ]
     }
   ],

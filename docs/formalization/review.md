@@ -232,3 +232,7 @@ PR14实际main167dffe9与受审44e342整树相同；native CI44114590261/artifac
 ## 条件角核变换（F07–F08）
 
 登记的声明使用给定的条件核及可测权或坐标映射。还须对原序列的物理测度应用这些声明，并识别其 Einstein 二阶矩。 [条件角核的变换](../statements/angular-kernel-transforms.zh-CN.md)
+
+## 原变分输运与主定理
+
+两个定理已完成普通具名模块核验。独立复核逐项核对了原文测试类、同一二次测度及全局双曲开区的提升。作者确认与公开根模块的完整项目回执分别登记。 [声明](../statements/original-forward-kinetic-limit.zh-CN.md)

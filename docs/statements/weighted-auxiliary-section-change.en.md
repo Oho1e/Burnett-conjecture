@@ -14,3 +14,7 @@ The shared-witness construction uses a nonempty base and retains all locally rep
 - `Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward`
 
 [Source bindings](weighted-auxiliary-section-change-source-bindings.json)
+
+- `Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_weightedPushforward_allAuxiliaryMetrics`
+
+The original subsequence, covariance and physical measure are selected once. For every receiving auxiliary metric, the same subsequence gives the full complex vector-measure and physical-measure weighted pushforwards. The declaration includes the empty manifold. [Source and review of the auxiliary metric family](all-auxiliary-metrics-source-bindings.json)

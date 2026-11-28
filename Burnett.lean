@@ -471,3 +471,5 @@ import Burnett.Analysis.CubicEnergy.AngularCorrection.RoughUpperFrequencyWeakRec
 import Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing
 import Burnett.Analysis.CubicEnergy.AngularCorrection.FiniteMatrixAnalyticCorrectionBounds
 import Burnett.Analysis.CubicEnergy.AngularCorrection.InhomogeneousRadialCorrectionBounds
+import Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryAmplitudeFamilyAllBases
+import Burnett.Results.PaperResultsBinder

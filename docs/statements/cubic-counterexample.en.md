@@ -53,4 +53,6 @@ The cubic product actually equals the constant −1/4 plus seven nonconstant cos
 
 The user selected2A to require the strong L² off-null gradient-projection property at original line3193, and separately chose fixed Fourier cone projections. It is not an explicit conclusion of the formal proposition, is not consumed by this alternative proof, and remains unformalized at this stage. See [cubic-off-null-localization.md](cubic-off-null-localization.en.md) for its exact target and status. Proving prop:cubic does not prove this additional property or verify every mathematical sentence in X02.
 
-f/w are scalar functions, not exact Einstein solutions; this counterexample does not replace analysis of the complete physical contraction in the Einstein equations. The other16 numbered results and the geometric/measure/transport main argument remain unfinished; whole-paper verified stays false. Lean checks, independent semantic review, user/author confirmation, CI, and PR merging are recorded separately in this batch's review record.
+f/w are scalar functions, not exact Einstein solutions; this counterexample does not replace analysis of the complete physical contraction in the Einstein equations. The forward kinetic limit connects the quadratic measure construction to the transport conclusion. [Original variational transport and forward kinetic limit](original-forward-kinetic-limit.en.md)
+
+Lean checks, independent semantic review, user/author confirmation, CI, and PR merging are recorded separately in this batch's review record.

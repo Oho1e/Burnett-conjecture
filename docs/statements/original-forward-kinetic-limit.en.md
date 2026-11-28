@@ -1,0 +1,9 @@
+# Original variational transport and forward kinetic limit
+
+`Burnett.PaperStatement.variationalTransport` corresponds to manuscript lines 1729–1735. It fixes the subsequence and physical measure of the quadratic construction, with the intrinsic amplitude recorded in the witness. Its conclusion uses every real smooth positively one-homogeneous function on the punctured cotangent bundle with compact base support. The Hamilton derivative is taken before restricting to the unit cosphere.
+
+`Burnett.PaperStatement.forwardKineticLimit` corresponds to lines 139–168. The original assumptions give one subsequence and its nonnegative Radon measure, locally finite over the base and concentrated on the null shell. The measure gives the Einstein tensor moments, vanishing scalar curvature and variational transport. On each intrinsically globally hyperbolic open region, the full-momentum measure comes from the restriction of this cosphere measure. It has finite second moments over compact base sets and satisfies the Einstein equation for all compactly supported smooth symmetric tensor tests and the transport equation for all compactly supported smooth full-momentum tests.
+
+Both results use local uniform convergence of the vacuum sequence and the compact-set first-derivative bound. The quadratic construction first fixes the subsequence, intrinsic amplitude and physical measure. The variational step combines the near, thin replacement, phase, far and gauge terms on the actual C03 patches. It chooses the angular parameter before the spatial scale. The sequence limit is taken with both scales fixed, followed by the spatial scale limit at fixed angular parameter and then the angular limit.
+
+The independent Lean statements and their proofs passed the named-module replay. The statement definitions and the proof binding are in separate modules. Author confirmation is pending.
