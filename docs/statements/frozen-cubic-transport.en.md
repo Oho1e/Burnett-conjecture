@@ -12,6 +12,8 @@ The phase-gradient estimate holds for the same thin-screen field. Given the indi
 
 In lines 2159–2173 and 2504–2556, the cyclic test factor divided by the low frequency extends through $z=0$ by its integral in independent variables $(\omega,z,\theta)$. The phase uses the inverse of the same frozen metric and the exact output-minus-input difference. The actual low-slot and two angular arguments and the guarded reciprocal give a smooth quotient on the compact window. Multiplication by $\mathrm i\Delta$ on physical far support recovers the weighted cubic numerator. The coefficient identity and smoothness apply to the ordered columns of the actual thin screen at the three frequencies. High-slot adjunction of the numerator and signed quotient and finite derivative bounds on the compact window have separate declarations.
 
-The complete Ward classification, common operator and energy bounds for the two corrections, the variable-background residual limit, and global transport remain open. Author confirmation of the new statements is pending.
+The complete Ward classification, common operator and energy bounds for the two corrections, and the variable-background residual limit were further proof obligations at this stage. The original variational theorem gives the assembled global transport proof. [Original variational transport and forward kinetic limit](original-forward-kinetic-limit.en.md)
+
+Author confirmation of the new statements is pending.
 
 [Source and manuscript bindings](frozen-cubic-transport-source-bindings.json)

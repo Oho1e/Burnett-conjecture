@@ -1,0 +1,23 @@
+{
+  "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+  "source_lines": [
+    481,
+    485
+  ],
+  "label": "eq:norm-change",
+  "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_weightedPushforward_allAuxiliaryMetrics",
+  "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryAmplitudeFamilyAllBases",
+  "sources": {
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAuxiliaryAmplitudeFamily.lean": "0d43aaeb98bc83aa5c09e0c1b50e0e0006ebcd248e91f31ac7e0aeea29723713",
+    "Burnett/Analysis/Microlocal/Overlap/OriginalAuxiliaryAmplitudeFamilyAllBases.lean": "298b92678717ffff56ffb4db379313f18dc79df74fe2f1285f810e8d05f97d6e"
+  },
+  "native_replay_pins": {
+    "VERIFICATION.json": "e3da92ea1f9d3c421a30db8d6da4d6e32e1f8a1cd72f4670421e5e39adfdf0c6",
+    "ALL-BASES-VERIFICATION.json": "6d0fb3840e6f1538999f8397217f63930c90963dd82c813badc50f4826a10182"
+  },
+  "independent_readback_pins": {
+    "SOURCE-READBACK.json": "0c866da03e47e217313472f8512657eeb11e86e372b4419bad69b0e33a378e88",
+    "ALL-BASES-SOURCE-READBACK.json": "9290d367d0dd5f3c5d3a27cffef6852dc699a0f9d53b89a6f36dfb85bad2f01a"
+  },
+  "author_confirmation": "pending-author-confirmation"
+}

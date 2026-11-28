@@ -14,3 +14,7 @@
 - `Burnett.Microlocal.Overlap.exists_originalVacuum_sameWitnesses_intrinsicAmplitude_weightedPushforward`
 
 [源码绑定](weighted-auxiliary-section-change-source-bindings.json)
+
+- `Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_weightedPushforward_allAuxiliaryMetrics`
+
+原辅助度量的子列、协方差和物理测度一次选定。随后任取另一辅助度量，两侧仍使用同一子列，完整复向量测度和物理测度满足带权推前等式。该声明涵盖空流形。 [全辅助度量源码与复核](all-auxiliary-metrics-source-bindings.json)

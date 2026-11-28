@@ -6,6 +6,8 @@ One strict subsequence gives the actual intrinsic amplitude covariance and the s
 
 The original gradient pairings and the Lorentzian Ricci constraint use that same subsequence and covariance. The bundle operator tests are represented by their ordinary local classical left symbols, with an order-minus-one remainder after fixed infrared regularization. A local smooth kernel term is incorporated by its exact left symbol on each compact window. The separated kernel represents the same geometric operator through its actual fiber and volume pairing. The change of principal symbol follows from that pairing. A description by a distribution kernel must supply the corresponding local classical expansion and separated kernel representation.
 
-The complete statement and its geometric construction were compared with the independently frozen specification and replayed through the registered library entry. The proof of the transport theorem remains open. Author confirmation of the quadratic statement is pending.
+The complete statement and its geometric construction were compared with the independently frozen specification and replayed through the registered library entry. The original variational transport theorem applies to the same physical measure. [Original variational transport and forward kinetic limit](original-forward-kinetic-limit.en.md)
+
+Author confirmation of the quadratic statement is pending.
 
 [Source bindings](quadratic-null-second-moments-source-bindings.json)

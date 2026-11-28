@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `16ba307a1be24d10aa1c446e14ec08e2d50844387f3dea7f5f754e0d1179f5d5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `370f803ed53c37f831ebe360fcd2c689ed065904d131ba1849cb9853fe9d238b`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -1178,7 +1178,7 @@ Boundaries:
 
 Consumers: L01 (application), L02 (proof-input).
 
-Next: The fixed-scale limit now consumes the patch tails of the two actual Fourier corrections. It still needs the original variational residual limit, cubic localization and freezing, and the actual near estimate.
+The original transport theorem consumes the two-scale tail on the supplied C03 patches and uses the same physical measure as the quadratic theorem.
 
 <a id="l01"></a>
 
@@ -1209,7 +1209,7 @@ Boundaries:
 
 Consumers: L02 (proof-input).
 
-Next: The ambient local-moment lift now uses intrinsic piecewise global hyperbolicity. Apply it to the original cosphere transport conclusion in the main theorem.
+The main theorem supplies the original cosphere transport and Einstein moments to the intrinsic globally hyperbolic lift.
 
 <a id="l02"></a>
 
@@ -1234,7 +1234,7 @@ Boundaries:
 
 Consumers: None.
 
-Next: The open-subspacetime restriction preserves the original moment and transport equations and has a globally hyperbolic lift. The main theorem still needs the original cosphere transport.
+The main theorem uses the same original physical measure for the moment and transport equations and the lift on every globally hyperbolic open subspacetime.
 
 <a id="l03"></a>
 

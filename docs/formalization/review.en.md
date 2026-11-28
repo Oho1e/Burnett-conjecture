@@ -225,3 +225,7 @@ Author confirmation and current combination CI are separate steps. The source bi
 ## Angular kernel transforms (F07–F08)
 
 The registered statements use a given kernel and a measurable weight or coordinate map. Applying them to the actual physical measure and proving its Einstein moments remain separate obligations. [Angular kernel transforms](../statements/angular-kernel-transforms.en.md)
+
+## Original variational transport and the main theorem
+
+The two theorems passed the ordinary named-module check. Independent review compared the manuscript test classes, the common quadratic measure and the lift on globally hyperbolic open regions. Author confirmation and the full public-root project audit have separate records. [Statement](../statements/original-forward-kinetic-limit.en.md)

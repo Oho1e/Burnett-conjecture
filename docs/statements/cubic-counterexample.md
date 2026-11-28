@@ -53,4 +53,6 @@ f_n=a^{-1}\cos(bv)\sin(au),\qquad w_n=(2b)^{-1}\sin(2bv).
 
 原3193行的离零锥梯度投影强L²性质已由用户选择2A纳入最终必做，并另选择固定Fourier锥投影范围。该性质不是上述正式命题的显式结论，本替代证明不消费它，当前仍未形式化。精确目标及状态另见[cubic-off-null-localization.md](cubic-off-null-localization.md)；不能把prop:cubic已证解释为该额外性质已证或X02每句数学均已验证。
 
-f、w是标量函数，不是精确Einstein解；本反例不替代Einstein方程中的完整物理收缩分析。全文其他16项编号结果及几何、测度和输运主线仍待完成，整篇verified保持false。Lean检查、独立语义复核、用户/作者确认、CI及PR合并分别记载，详见本轮复核记录。
+f、w是标量函数，不是精确Einstein解；本反例不替代Einstein方程中的完整物理收缩分析。正向极限定理把二次测度构造与输运结论连接起来。 [原变分输运与正向动理学极限](original-forward-kinetic-limit.zh-CN.md)
+
+Lean检查、独立语义复核、用户/作者确认、CI及PR合并分别记载，详见本轮复核记录。

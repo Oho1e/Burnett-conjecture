@@ -4,4 +4,4 @@ The high-slot proofs correspond to lines 1454–1465 of `lem:analytic-correction
 
 The physical far-symbol proofs correspond to lines 2504–2556 of the variational transport proof. On the actual thin screen, both high-frequency infrared windows and the radial guard obey their exact support identities. The far coefficient extends smoothly in the independent variables on the required angular window. On physical support, the signed phase multiplies the guarded quotient back to the original complete numerator. The highest-slot adjoint keeps the original windows and holds on the frequency axes as well.
 
-Applying these proofs to the common near and far patch estimates requires the angular operator recovery and the paired original projected sources. The complete correction lemma and the variational transport theorem remain open.
+The original variational transport proof combines these local estimates with the other terms on the same patch. [Original variational transport and forward kinetic limit](original-forward-kinetic-limit.en.md)

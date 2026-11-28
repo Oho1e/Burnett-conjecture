@@ -2,11 +2,11 @@
 
 [English](README.en.md)
 
-下文保留初始清点时的状态。当前进度见[范围清单](../formalization/scope.json)与[复核记录](../formalization/review.md)。
+表格链接锁定原文的正式结果及对应 Lean 入口。当前进度见[范围清单](../formalization/scope.json)与[复核记录](../formalization/review.md)。
 
 锁定原文：`paper/burnett.tex`，SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`。行号为该源文件的1起算行号，不是PDF页码。
 
-初始索引定位17个正式结果环境（3 theorem、6 lemma、6 proposition、2 corollary），并登记33项未编号结果候选、15项定义候选。现已实现实非特征消去、完整实B展开、实零锥核/B公式及实规范交叉；一般极化、复Hermitian与商正性仍开放；17项正式结果仍待完成，父依赖仍仅部分形式化。候选范围及必要依赖闭包继续核对。环境编号按TeX计数器推得，尚未经编译PDF核验。
+初始索引定位 17 个正式结果环境、33 项未编号结果候选和 15 项定义候选。当前目标、依赖与确认状态记录在范围清单中。环境编号按 TeX 计数器推得。
 
 - [逐项原文陈述与未来Lean对照](main.md)
 - [机器可读完整索引](source-index.json)
@@ -41,8 +41,8 @@
 
 | 原文预计编号 | 类型 | 标签 | 源码行 | Lean状态 |
 | --- | --- | --- | --- | --- |
-| 1.1 | theorem | `thm:main` | 139–168 | 未建模 |
-| 2.1 | theorem | `thm:quadratic` | 354–356 | 未建模 |
+| 1.1 | theorem | `thm:main` | 139–168 | 已实现，待作者确认 · [原变分输运与正向动理学极限](original-forward-kinetic-limit.zh-CN.md) |
+| 2.1 | theorem | `thm:quadratic` | 354–356 | [正零余向量二阶矩](quadratic-null-second-moments.zh-CN.md) |
 | 2.2 | corollary | `cor:base-marginal` | 487–506 | [已有 Lean 证明](base-marginal-and-angular-disintegration.zh-CN.md) |
 | 3.1 | lemma | `lem:commutator` | 566–575 | [对称能量配对的 Lipschitz 交换子估计](lipschitz-commutator-energy.zh-CN.md) |
 | 3.2 | lemma | `lem:cubic-continuity` | 613–623 | [已实现](paper-cubic-continuity.zh-CN.md) |
@@ -50,11 +50,11 @@
 | 3.4 | lemma | `lem:analytic-near` | 1026–1057 | [全尺度传递与近角求和](analytic-near.zh-CN.md) |
 | 3.5 | lemma | `lem:analytic-correction-bounds` | 1380–1394 | [解析修正及粗交换子的原估计](original-analytic-correction-bounds.zh-CN.md) · [高槽交换子与实际物理远角精确符号](high-slot-and-physical-far-symbol.zh-CN.md) · [原角修正与截断恢复](original-angular-cutoff-recovery.zh-CN.md) · [有界 Lipschitz 系数的四次弱交换子](original-lipschitz-quartic-commutator.zh-CN.md) |
 | 4.1 | proposition | `prop:general-projection` | 1600–1616 | [任意坐标图的投影源](original-general-projection.zh-CN.md) |
-| 5.1 | theorem | `thm:variational-transport` | 1729–1735 | 未建模 · [原规范修正与远角修正的装配](original-correction-assembly.zh-CN.md) |
+| 5.1 | theorem | `thm:variational-transport` | 1729–1735 | 已实现，待作者确认 · [原变分输运与正向动理学极限](original-forward-kinetic-limit.zh-CN.md) · [原规范修正与远角修正的装配](original-correction-assembly.zh-CN.md) |
 | 6.1 | lemma | `lem:lift` | 2989–2991 | [光滑类空柯西截面上的全动量提升](cauchy-momentum-lift.zh-CN.md) · [全局双曲时空的全动量提升](globally-hyperbolic-momentum-lift.zh-CN.md) |
 | 6.2 | corollary | `cor:strong` | 3063–3078 | [真空区上的物理强紧性](strong-compactness.zh-CN.md) |
 | A.1 | proposition | `prop:shear` | 3121–3123 | [证明与独立复核](harmonic-shear.zh-CN.md) |
-| B.1 | proposition | `prop:cubic` | 3175–3181 | 未建模 |
+| B.1 | proposition | `prop:cubic` | 3175–3181 | [三次相互作用反例](cubic-counterexample.md) |
 | C.1 | proposition | `prop:bianchi` | 3245–3247 | [证明与独立复核](bianchi-counterexample.zh-CN.md) |
 | D.1 | proposition | `prop:rosen` | 3307–3312 | [证明与独立复核](rosen-two-polarization.md) |
 | D.2 | proposition | `prop:flat-rigidity` | 3390–3392 | [证明与独立复核](flat-rigidity.zh-CN.md) |

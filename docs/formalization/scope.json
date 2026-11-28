@@ -5803,6 +5803,21 @@
       "claim_id": "a07:fixed-radial-inhomogeneous-correction",
       "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.InhomogeneousRadialCorrectionBounds",
       "declaration": "Burnett.A08.exists_paperRadialInhomogeneousAnalyticCorrectionBounds"
+    },
+    {
+      "claim_id": "thm:main",
+      "module": "Burnett.Results.PaperResultsBinder",
+      "declaration": "Burnett.PaperStatement.forwardKineticLimit"
+    },
+    {
+      "claim_id": "thm:variational-transport",
+      "module": "Burnett.Results.PaperResultsBinder",
+      "declaration": "Burnett.PaperStatement.variationalTransport"
+    },
+    {
+      "claim_id": "f07:all-auxiliary-metrics-common-witness",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalAuxiliaryAmplitudeFamilyAllBases",
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_weightedPushforward_allAuxiliaryMetrics"
     }
   ],
   "inventory": [
@@ -5816,9 +5831,12 @@
         "endline": 168
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t01"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
+      "declaration": "Burnett.PaperStatement.forwardKineticLimit",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "thm:quadratic",
@@ -5959,9 +5977,12 @@
         "endline": 1735
       },
       "disposition": "formalize",
-      "modeling_status": "pending_modeling",
-      "lean_status": "not_formalized",
-      "statement_record": "docs/statements/main.md#t10"
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
+      "declaration": "Burnett.PaperStatement.variationalTransport",
+      "semantic_review": "independent-actual-type-readback-passed",
+      "human_semantic_confirmation": "pending-author-confirmation"
     },
     {
       "claim_id": "lem:lift",
@@ -26980,6 +27001,23 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-lipschitz-quartic-commutator.zh-CN.md",
+      "human_semantic_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "f07:all-auxiliary-metrics-common-witness",
+      "disposition": "formalize",
+      "kind": "supporting-lemma",
+      "parent_claim_id": "thm:quadratic",
+      "source_ref": {
+        "path": "paper/burnett.tex",
+        "line": 481,
+        "endline": 485
+      },
+      "declaration": "Burnett.Microlocal.Overlap.exists_originalVacuum_intrinsicAmplitude_weightedPushforward_allAuxiliaryMetrics",
+      "modeling_status": "implemented",
+      "lean_status": "proof-implemented",
+      "statement_record": "docs/statements/weighted-auxiliary-section-change.zh-CN.md",
+      "semantic_review": "independent-actual-type-readback-passed",
       "human_semantic_confirmation": "pending-author-confirmation"
     }
   ],
