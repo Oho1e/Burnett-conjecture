@@ -6,7 +6,7 @@ This English view describes the same decomposition as the Chinese generated view
 
 Manuscript: `paper/burnett.tex`, 3475 lines. SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`.
 
-Translated slice manifest SHA256: `c8756b449dd4684842540e063e825a1dd814c40be0f7c162a99eea2ca65c7bf4`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
+Translated slice manifest SHA256: `16ba307a1be24d10aa1c446e14ec08e2d50844387f3dea7f5f754e0d1179f5d5`. Update the affected English prose when the underlying interfaces change. Run `python scripts/check_slices.py --repo . --write-view` to refresh the Chinese view.
 
 ## How to use the slice plan
 
@@ -667,7 +667,7 @@ Internal refinements (no separate completion status):
 
 - Application domain of formal identities; downstream projection symbols must verify this prerequisite. (Paper lines 1528–1540)
 
-Next: Apply the checked mixed weak-energy bound, fixed-degree upper-cutoff recovery, and angular tail to the same projected source on the original near and far patches.
+The original weak divergence bound at lines 1476–1504 and the three weak angular tails at lines 1541–1552 and 1558 have named proofs. The ordinary review uses the same forward action, actual high adjoint, and Hermitian angular sum.
 
 <a id="p01"></a>
 
