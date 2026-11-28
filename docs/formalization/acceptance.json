@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "standard": {
+    "id": "paper-results",
+    "version": "1.2",
+    "document_sha256": "8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0"
+  },
+  "accepted_proof_version": {
+    "commit": "208064b36a5fa971ddad2f2f0e946c512d3c44c4",
+    "tree": "5385d6090630f226d63550807d8a4990aa1301b1",
+    "paper_sha256": "e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e",
+    "previous_scope_sha256": "f2695b2370f7d627e3dedf25e070c02dedf9ef6095bfba1e88ecea30279a90d4",
+    "source_index_sha256": "3d80e67ef85036e04249f45a979a8b328ea615c9d62ef6bb75f289a2518af17c",
+    "lean_toolchain": "leanprover/lean4:v4.24.0",
+    "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+    "lake_manifest_sha256": "9de3b9d4ed07859ef9b086b79a49884daffcea2db2340514eb013242fca7aeaa",
+    "lean_sources": 2212,
+    "lean_sources_fingerprint": "991315fc433979d4a49d62a67cf2194363cb5fcca40948146ebb776b866b72a4"
+  },
+  "coverage": {
+    "numbered_results": 17,
+    "approved_unnumbered_results": 3,
+    "trust_policy": "approved-dependency-closure",
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "human_semantic_confirmation": {
+    "status": "human-review-passed-user-reported",
+    "date": "2026-11-28",
+    "reported_by": "project-user",
+    "scope": "the twenty entries and interpretations in the reviewed semantic packet",
+    "packet_sha256": "8697e8a9ef38f3cb9a66260e87c1a5a2ada55dc83ef6e9338bcb1d34bdcaadd8"
+  },
+  "independent_semantic_review": {
+    "status": "passed-for-the-listed-interpretations",
+    "type_probe_sha256": "8a558eb0254ba960489f3d02dcafae4452519c6c25826dce8afb8c350049155d",
+    "type_log_sha256": "98663fe7080c7db0ed9edfe9384e3133981993b956491b3c87f8ed8cdc728e55",
+    "type_receipt_sha256": "a7d64d2d283555fee5efab99cb19144d2b54f4b0ffcfe52f178861af172408dc",
+    "report_sha256": {
+      "analysis.md": "ef6691493d7c90b4387c080d713178b977958c5380479ba0e43b6fe00f319616",
+      "geometry.md": "3b64fb4fe9117a73e437d0653f7f5a5b01973d89b1afa52022e3bbf040cfbf70",
+      "examples.md": "ecbcbf7c6248f20a2cfca17ec40b228ab933ba41d5304c000f1798ea42d05fd7",
+      "strong-compactness.md": "d4aa5c1567881a0f0c81f95546a36d5b41427e10f5f2396f72d1f32168543b33"
+    }
+  },
+  "accepted_proof_version_main_ci": {
+    "url": "https://github.com/Oho1e/Burnett-conjecture/actions/runs/46115144766",
+    "run_id": 46115144766,
+    "artifact_id": 15258270115,
+    "artifact_sha256": "1cbca77453ad9871521065d9926d6338ca0ec5d6fcd884e55ec8c85204af1888",
+    "project_receipt_sha256": "ccefae4445cf9a33af7574d45a36668e433483d072b7d41b5da682f427512ca1",
+    "target_audit_sha256": "3483cc9f6242aac64c00128cd86731e02ed7c9aa94b58a2d1ddb7ece2ac84611",
+    "declared_targets": 1157
+  },
+  "entries": [
+    {
+      "claim_id": "thm:main",
+      "paper_lines": [
+        139,
+        168
+      ],
+      "source_fragment_sha256": "3db4852e464eb8d8321b8eb2c4ca840434affadf30e30a237f6f221438ef1db4",
+      "module": "Burnett.Results.PaperResultsBinder",
+      "declaration": "Burnett.PaperStatement.forwardKineticLimit",
+      "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
+      "semantic_review_report": "geometry.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "thm:quadratic",
+      "paper_lines": [
+        354,
+        356
+      ],
+      "source_fragment_sha256": "4628be3df77239e427488bca78440bb25a1cf40b6aacb2313d44c76b88ec376f",
+      "module": "Burnett.Analysis.Microlocal.Overlap.OriginalQuadraticTheorem",
+      "declaration": "Burnett.F07.exists_quadraticOriginalMeasure",
+      "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
+      "semantic_review_report": "geometry.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "cor:base-marginal",
+      "paper_lines": [
+        487,
+        506
+      ],
+      "source_fragment_sha256": "c79e6f966fb3e417ef9b93269ec12e71f9334cb537974574506917a158825d26",
+      "module": "Burnett.Analysis.BaseMarginal.IntrinsicBaseMarginalCorollary",
+      "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration",
+      "statement_record": "docs/statements/base-marginal-and-angular-disintegration.zh-CN.md",
+      "semantic_review_report": "geometry.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending"
+    },
+    {
+      "claim_id": "lem:commutator",
+      "paper_lines": [
+        566,
+        575
+      ],
+      "source_fragment_sha256": "882c0ffdda3fc88261478d6444fa344ce8169e1e3c32b271dff2f51e19f22ed1",
+      "module": "Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy",
+      "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianScalarLipschitzEnergy",
+      "statement_record": "docs/statements/lipschitz-commutator-energy.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation",
+      "companion_targets": [
+        {
+          "claim_id": "a01:original-hermitian-lipschitz-energy",
+          "module": "Burnett.Analysis.PrincipalEnergy.Energy.OriginalLipschitzEnergy",
+          "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianHermitianLipschitzEnergy"
+        }
+      ]
+    },
+    {
+      "claim_id": "lem:cubic-continuity",
+      "paper_lines": [
+        613,
+        623
+      ],
+      "source_fragment_sha256": "e8c9070177a49062f5a3a98898d2df0ce6ea149a0cbcfd75f5cb584badd70c68",
+      "module": "Burnett.Analysis.CubicEnergy.CompleteEnergy.PaperCubicContinuity",
+      "declaration": "Burnett.A02.FrequencySplit.paper_completeCubic_continuity",
+      "statement_record": "docs/statements/paper-cubic-continuity.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "lem:freezing",
+      "paper_lines": [
+        736,
+        764
+      ],
+      "source_fragment_sha256": "180e528c91fe5f835dfea337b49e601e02f895a0bb264f01093d5bc186827bc2",
+      "module": "Burnett.Analysis.PrincipalEnergy.Freezing.LocalClassicalAmplitudeFreezing",
+      "declaration": "Burnett.A03.exists_symmetric_action_freezing_of_local_classical_amplitude",
+      "statement_record": "docs/statements/original-cubic-freezing.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "lem:analytic-near",
+      "paper_lines": [
+        1026,
+        1057
+      ],
+      "source_fragment_sha256": "4da999171536792a9fdca6f5ec644aecb7ccd459940cccff46a33af452e924e8",
+      "module": "Burnett.Analysis.AllScaleTransfer.OriginalAtlasFormBounds",
+      "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases",
+      "statement_record": "docs/statements/analytic-near.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "lem:analytic-correction-bounds",
+      "paper_lines": [
+        1380,
+        1394
+      ],
+      "source_fragment_sha256": "37b65b5eb25230a71d9420d3d217b8fc73a0b52afaf62ce0e6063e909911420d",
+      "module": "Burnett.Analysis.CubicEnergy.AngularCorrection.PaperAnalyticCorrectionBounds",
+      "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds",
+      "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "prop:general-projection",
+      "paper_lines": [
+        1600,
+        1616
+      ],
+      "source_fragment_sha256": "154a03285778203903b03bb5b398c4da349dd1b018c50e7b042e71b16d14610c",
+      "module": "Burnett.Analysis.GaugeProjection.OriginalGeneralProjection",
+      "declaration": "Burnett.P01.exists_originalGeneralProjection",
+      "statement_record": "docs/statements/original-general-projection.zh-CN.md",
+      "semantic_review_report": "analysis.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "thm:variational-transport",
+      "paper_lines": [
+        1729,
+        1735
+      ],
+      "source_fragment_sha256": "793d5f18ab92b4cf915ebbf03349359f87d4b70fae5293201430ce13794524d5",
+      "module": "Burnett.Results.PaperResultsBinder",
+      "declaration": "Burnett.PaperStatement.variationalTransport",
+      "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
+      "semantic_review_report": "geometry.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "lem:lift",
+      "paper_lines": [
+        2989,
+        2991
+      ],
+      "source_fragment_sha256": "52b4e218aacd0d29f2ff7be3b8577328ab5271fb2355def746498aeb4c501f66",
+      "module": "Burnett.Geometry.Cotangent.CausalPulse.AmbientEinsteinLift",
+      "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_regularIntrinsicPiecewise",
+      "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
+      "semantic_review_report": "geometry.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending-author-confirmation"
+    },
+    {
+      "claim_id": "cor:strong",
+      "paper_lines": [
+        3063,
+        3078
+      ],
+      "source_fragment_sha256": "e27321014e99869c6f7ace8541c828449fb071eb90096af8d7ed1cad56c9819e",
+      "module": "Burnett.Analysis.GaugeProjection.StrongCompactness.VacuumStrongCompactness",
+      "declaration": "Burnett.P01.vacuumOpen_strongCompactness",
+      "statement_record": "docs/statements/strong-compactness.zh-CN.md",
+      "semantic_review_report": "strong-compactness.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending"
+    },
+    {
+      "claim_id": "prop:shear",
+      "paper_lines": [
+        3121,
+        3123
+      ],
+      "source_fragment_sha256": "9f7dc60ce368f959bd5c24937cf30607a01176a82f947e901d1e1667dc7bacb7",
+      "module": "Burnett.Counterexamples.HarmonicShear",
+      "declaration": "Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample",
+      "statement_record": "docs/statements/harmonic-shear.zh-CN.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending"
+    },
+    {
+      "claim_id": "prop:cubic",
+      "paper_lines": [
+        3175,
+        3181
+      ],
+      "source_fragment_sha256": "abb8032d8a5f8d0a1b70284a934c6955bd632fe93fa9695420b23277d9c1d440",
+      "module": "Burnett.Analysis.Cubic.Counterexample",
+      "declaration": "Burnett.CubicCounterexample.auxiliary_trilinear_counterexample",
+      "statement_record": "docs/statements/cubic-counterexample.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "user-delegated-to-root-and-independent-agent",
+      "prior_confirmation_personally_read_lean": false
+    },
+    {
+      "claim_id": "prop:bianchi",
+      "paper_lines": [
+        3245,
+        3247
+      ],
+      "source_fragment_sha256": "8972994a473fca5aab0c424c3f9295ea3be1a01c7179a6d04322a6f7ff4b5c3e",
+      "module": "Burnett.Counterexamples.Bianchi",
+      "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample",
+      "statement_record": "docs/statements/bianchi-counterexample.zh-CN.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending"
+    },
+    {
+      "claim_id": "prop:rosen",
+      "paper_lines": [
+        3307,
+        3312
+      ],
+      "source_fragment_sha256": "c0985afe225ca87c2c3a8e6ceae570060a8ea01bde454fe19b65b0b9c6d08025",
+      "module": "Burnett.Rosen.Closure",
+      "declaration": "Burnett.RosenPlaneWave.two_polarization_rosen_closure",
+      "statement_record": "docs/statements/rosen-two-polarization.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "prop:flat-rigidity",
+      "paper_lines": [
+        3390,
+        3392
+      ],
+      "source_fragment_sha256": "7c47a666ecc17562d89c3b7ee58f279dbf8bac0e1bfe41d68259f14eed0861b9",
+      "module": "Burnett.Geometry.FlatRigidity",
+      "declaration": "Burnett.FlatRigidity.isFlat_of_original_flat_sequence",
+      "statement_record": "docs/statements/flat-rigidity.zh-CN.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "pending"
+    },
+    {
+      "claim_id": "unnum:cubic-off-null-gradient-localization",
+      "paper_lines": [
+        3193,
+        3193
+      ],
+      "source_fragment_sha256": "37afa814ca8d46947b1f0280ddc88d5ac53ca067dc30dfdb4edcd2309f77268d",
+      "module": "Burnett.Analysis.Cubic.OffNullProjection",
+      "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero",
+      "statement_record": "docs/statements/cubic-off-null-localization.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "unnum:rosen-multiscale-example",
+      "paper_lines": [
+        3360,
+        3386
+      ],
+      "source_fragment_sha256": "abd86fe60a5fc9b93e378ce13fc7cc4ee80755fdf4ed52bd1f6d8444c12a5e1d",
+      "module": "Burnett.Counterexamples.Rosen.Closure",
+      "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example",
+      "statement_record": "docs/statements/rosen-multiscale.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "not-recorded-for-new-delivery"
+    },
+    {
+      "claim_id": "unnum:rotating-null-moment-example",
+      "paper_lines": [
+        3215,
+        3239
+      ],
+      "source_fragment_sha256": "c6b945a382bf83ec6bcc8ddc8aa6b4183fbc3a10615deff9ef8d7ee8b18a4c86",
+      "module": "Burnett.Counterexamples.RotatingNull.NoTransport",
+      "declaration": "Burnett.RotatingNullMoments.NoTransport.rotating_null_moment_counterexample",
+      "statement_record": "docs/statements/rotating-null-moment.md",
+      "semantic_review_report": "examples.md",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "prior_confirmation": "not-recorded-for-new-delivery"
+    }
+  ]
+}
