@@ -2,11 +2,15 @@
 
 > Translation note: This is the complete English counterpart of [review.md](review.md), preserving its chronological evidence and historical status statements. Read later dated updates together with the current bilingual goal documents, [English](GOAL.en.md) and [Chinese](GOAL.zh-CN.md); an earlier entry is not a statement of current status.
 
-## Source and Standard
+## 2026-11-28 · Paper Results Acceptance
+
+The project user reported that all 20 results of the pinned version passed human semantic review. The acceptance record binds those results, their interpretations and machine receipts to the pinned manuscript and code. [Acceptance record](acceptance.en.md)
+
+## 2026-11-15 · Source and Standard
 
 Source snapshot: `paper/burnett.tex`, 176424 bytes, SHA256 `e5e9fc351bbd5540884dc7f2fec42cdba94d591a2d4f5ebb4a409f316823904e`; the user’s original file is untouched. The project uses `paper-results` version 1.2, standard SHA256 `8caad6c9439a86c17567c84bcc065c24a44e11830657ff9996bb13f259cae2f0`. The source is a proposed proof; project progress is not a conclusion that the entire paper is correct.
 
-## Mathematical Progress at This Stage
+## 2026-11-15 · Initial Mathematical Progress
 
 2026-11-15: completed the [precise main-theorem interface](../statements/main-interface.en.md), [key dependencies and consumers](dependencies.en.md), and [pinned-library investigation](library-audit.en.md). The 11 main-track interfaces were checked only for source objects, usage locations, constants, and limit order; their analytic conclusions were not proved. Five exact external references still need verification against their original texts.
 
@@ -14,7 +18,7 @@ The first actual Lean module is `Burnett.Algebra.RicciSymbol`, source SHA256 `f9
 
 Project status remains `development`. None of the source’s 17 formal results is complete; the whole `unnum:quadratic-symbol-algebra` item remains partially complete. General polarization/complex Hermitian extension, nonnegativity on the null-cone quotient, measures, transport, global lift, and the main theorem remain unclosed. See this page’s parallel-trial entry for new real-algebra progress.
 
-## Machine and Semantic Evidence
+## 2026-11-15 · Initial Machine and Semantic Evidence
 
 The implementer and independent reviewer separately compiled the actual source/their own probes directly against read-only library paths at the verified pinned version; both exited 0. The actual transitive axiom sets of all five theorems contain only `propext`, `Classical.choice`, and `Quot.sound`, with no sorryAx, new mathematical axioms, or native_decide.
 

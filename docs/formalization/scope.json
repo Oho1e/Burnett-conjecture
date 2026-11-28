@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "development",
+  "status": "verified",
   "standard": {
     "id": "paper-results",
     "version": "1.2",
@@ -5836,7 +5836,7 @@
       "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
       "declaration": "Burnett.PaperStatement.forwardKineticLimit",
       "semantic_review": "independent-actual-type-readback-passed",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "thm:quadratic",
@@ -5852,7 +5852,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/quadratic-null-second-moments.zh-CN.md",
       "declaration": "Burnett.F07.exists_quadraticOriginalMeasure",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "cor:base-marginal",
@@ -5868,7 +5868,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/base-marginal-and-angular-disintegration.zh-CN.md",
       "declaration": "Burnett.F08.IntrinsicBaseMarginal.baseMarginal_and_angularDisintegration",
-      "human_semantic_confirmation": "pending"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "lem:commutator",
@@ -5883,7 +5883,7 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/lipschitz-commutator-energy.zh-CN.md",
-      "human_semantic_confirmation": "pending-author-confirmation",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "declaration": "Burnett.Analysis.CarlesonEmbedding.originalRadianScalarLipschitzEnergy"
     },
     {
@@ -5900,7 +5900,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/paper-cubic-continuity.zh-CN.md",
       "declaration": "Burnett.A02.FrequencySplit.paper_completeCubic_continuity",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "lem:freezing",
@@ -5915,7 +5915,7 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-cubic-freezing.zh-CN.md",
-      "human_semantic_confirmation": "pending-author-confirmation",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "declaration": "Burnett.A03.exists_symmetric_action_freezing_of_local_classical_amplitude",
       "semantic_review": "independent-source-and-type-readback-passed"
     },
@@ -5932,7 +5932,7 @@
       "modeling_status": "implemented",
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/analytic-near.zh-CN.md",
-      "human_semantic_confirmation": "pending-author-confirmation",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "declaration": "Burnett.A05.exists_analyticNear_original_allScale_of_atlases"
     },
     {
@@ -5949,7 +5949,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-analytic-correction-bounds.zh-CN.md",
       "declaration": "Burnett.A08.exists_paperAnalyticCorrectionBounds",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "prop:general-projection",
@@ -5965,7 +5965,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/original-general-projection.zh-CN.md",
       "declaration": "Burnett.P01.exists_originalGeneralProjection",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "thm:variational-transport",
@@ -5982,7 +5982,7 @@
       "statement_record": "docs/statements/original-forward-kinetic-limit.zh-CN.md",
       "declaration": "Burnett.PaperStatement.variationalTransport",
       "semantic_review": "independent-actual-type-readback-passed",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "lem:lift",
@@ -5998,7 +5998,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/globally-hyperbolic-momentum-lift.zh-CN.md",
       "declaration": "Burnett.Geometry.CausalOrbitPulse.exists_fullMomentumEinsteinLift_of_regularIntrinsicPiecewise",
-      "human_semantic_confirmation": "pending-author-confirmation"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "cor:strong",
@@ -6014,7 +6014,7 @@
       "lean_status": "proof-implemented",
       "statement_record": "docs/statements/strong-compactness.zh-CN.md",
       "declaration": "Burnett.P01.vacuumOpen_strongCompactness",
-      "human_semantic_confirmation": "pending"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "prop:shear",
@@ -6032,7 +6032,7 @@
       "declaration": "Burnett.HarmonicShear.Bounds.harmonic_coordinate_source_counterexample",
       "semantic_review_record": "docs/statements/harmonic-shear.zh-CN.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "pending"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "prop:cubic",
@@ -6049,9 +6049,8 @@
       "statement_record": "docs/statements/cubic-counterexample.md",
       "declaration": "Burnett.CubicCounterexample.auxiliary_trilinear_counterexample",
       "semantic_review_record": "docs/statements/cubic-counterexample-review.md",
-      "human_semantic_confirmation": "user-delegated-to-root-and-independent-agent",
-      "semantic_review": "independent-actual-type-readback-passed",
-      "human_personally_read_lean": false
+      "human_semantic_confirmation": "human-review-passed-user-reported",
+      "semantic_review": "independent-actual-type-readback-passed"
     },
     {
       "claim_id": "prop:bianchi",
@@ -6069,7 +6068,7 @@
       "declaration": "Burnett.Bianchi.exists_bianchi_intrinsic_counterexample",
       "semantic_review_record": "docs/statements/bianchi-counterexample.zh-CN.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "pending"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "prop:rosen",
@@ -6086,7 +6085,7 @@
       "statement_record": "docs/statements/rosen-two-polarization.md",
       "semantic_review_record": "docs/statements/rosen-two-polarization-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "declaration": "Burnett.RosenPlaneWave.two_polarization_rosen_closure"
     },
     {
@@ -6105,7 +6104,7 @@
       "declaration": "Burnett.FlatRigidity.isFlat_of_original_flat_sequence",
       "semantic_review_record": "docs/statements/flat-rigidity.zh-CN.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "pending"
+      "human_semantic_confirmation": "human-review-passed-user-reported"
     },
     {
       "claim_id": "unnum:ricci-compactness",
@@ -6470,7 +6469,7 @@
       "declaration": "Burnett.RotatingNullMoments.NoTransport.rotating_null_moment_counterexample",
       "semantic_review_record": "docs/statements/rotating-null-moment-review.md",
       "semantic_review": "independent-complete-counterexample-readback-passed",
-      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "original_folding_proof_route_certified": false,
       "vacuum_sequence_constructed": false
     },
@@ -6494,7 +6493,7 @@
       },
       "semantic_review_record": "docs/statements/rosen-multiscale-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "declaration": "Burnett.RosenMultiscale.rosen_multiscale_full_example"
     },
     {
@@ -8774,7 +8773,7 @@
       "declaration": "Burnett.CubicOffNull.fixed_offNull_gradient_localization_away_zero",
       "semantic_review_record": "docs/statements/second-foundations-review.md",
       "semantic_review": "independent-frozen-source-readback-passed",
-      "human_semantic_confirmation": "not-recorded-for-new-delivery",
+      "human_semantic_confirmation": "human-review-passed-user-reported",
       "source_bindings": "docs/statements/second-foundations-source-bindings.json"
     },
     {
@@ -27022,10 +27021,11 @@
     }
   ],
   "coverage_review": {
-    "status": "pending-independent-review",
+    "status": "independent-review-passed",
     "formal_environment_index": "docs/statements/source-index.json",
-    "unnumbered_results": "pending-independent-review",
-    "necessary_definitions_and_dependencies": "pending-independent-review"
+    "unnumbered_results": "all-three-approved-results-covered",
+    "necessary_definitions_and_dependencies": "closed-under-trust-policy-a-for-accepted-results",
+    "acceptance_record": "docs/formalization/acceptance.json"
   },
   "engineering": {
     "mathlib": {

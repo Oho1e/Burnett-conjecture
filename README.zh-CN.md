@@ -4,7 +4,9 @@
 
 这是论文 **High-frequency vacuum limits with bounded first derivatives: a variational approach to the forward Burnett conjecture** 的 Lean 工程。远程仓库为 [Oho1e/Burnett-conjecture](https://github.com/Oho1e/Burnett-conjecture)，已按用户授权改为**公开**。构建运行见 [GitHub Actions](https://github.com/Oho1e/Burnett-conjecture/actions)，固定提交和实际运行状态由 GitHub 记录。
 
-当前状态为 `development`。本候选累计 1157 个目标、1208 个库存项和 2212 份 Lean 源码。F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 已核验一般局部联合经典符号的换图。正式库证明固定原物理测度的基底边际与角向解体推论。本候选证明任意开集、整个原序列的物理强紧性推论。两个辅助度量沿用同一见证，内蕴振幅协方差和物理测度满足范数平方加权推前。正式库以同一原协方差及物理测度证明二次定理。原三次分割的同一截断供全空间投影源和两项宽冻结乘子误差使用。固定 p > 3 后，两项最终 L³ 上界均含同一补丁的体积立方根。固定薄锥厚度后，同一原投影场给出两项薄屏梯度误差估计。已实现冻结三次作用量、紧图窗内系数一致的实际薄屏替换和物理远角符号的精确相位恒等式。原变分输运和正向动理学极限已实现，且沿用二次定理的同一物理测度。 [原变分输运与正向动理学极限](docs/statements/original-forward-kinetic-limit.zh-CN.md) · [冻结三次作用量、薄屏替换与物理远角符号](docs/statements/frozen-cubic-transport.zh-CN.md) · [原投影补丁源与宽截断误差](docs/statements/original-transport-patch-estimates.zh-CN.md) · [正零余向量二阶矩](docs/statements/quadratic-null-second-moments.zh-CN.md) · [辅助单位截面的加权推前](docs/statements/weighted-auxiliary-section-change.zh-CN.md) · [基底边际与角向解体](docs/statements/base-marginal-and-angular-disintegration.zh-CN.md) · [真空区上的物理强紧性](docs/statements/strong-compactness.zh-CN.md) · [Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
+**已通过 paper-results 1.2 项目验收。** 锁定论文的 17 个编号结果、3 个已批准未编号结果及其必要依赖均已覆盖。工程共有 1,157 个登记目标和 2,212 份 Lean 源码。验收记录绑定实际声明、独立与人类复核和固定版本的机器回执。 [验收记录](docs/formalization/acceptance.md)
+
+F04 的局部结果在显式坐标真空条件下识别弱 Ricci 极限，并证明每张优先图内实际线性化 Ricci 的强 H⁻¹ 收敛。内禀曲率结果识别图内的 Ricci 迹，并从同一内禀真空序列导出上述坐标真空条件。Ward 批次提供有限维变分、Fourier Hessian 与规范消去的八个支持目标。全局 Einstein 张量矩已实现。全局内蕴振幅与原物理测度的收缩关系已实现。F05 已核验一般局部联合经典符号的换图。正式库证明固定原物理测度的基底边际与角向解体推论。本候选证明任意开集、整个原序列的物理强紧性推论。两个辅助度量沿用同一见证，内蕴振幅协方差和物理测度满足范数平方加权推前。正式库以同一原协方差及物理测度证明二次定理。原三次分割的同一截断供全空间投影源和两项宽冻结乘子误差使用。固定 p > 3 后，两项最终 L³ 上界均含同一补丁的体积立方根。固定薄锥厚度后，同一原投影场给出两项薄屏梯度误差估计。已实现冻结三次作用量、紧图窗内系数一致的实际薄屏替换和物理远角符号的精确相位恒等式。原变分输运和正向动理学极限已实现，且沿用二次定理的同一物理测度。 [原变分输运与正向动理学极限](docs/statements/original-forward-kinetic-limit.zh-CN.md) · [冻结三次作用量、薄屏替换与物理远角符号](docs/statements/frozen-cubic-transport.zh-CN.md) · [原投影补丁源与宽截断误差](docs/statements/original-transport-patch-estimates.zh-CN.md) · [正零余向量二阶矩](docs/statements/quadratic-null-second-moments.zh-CN.md) · [辅助单位截面的加权推前](docs/statements/weighted-auxiliary-section-change.zh-CN.md) · [基底边际与角向解体](docs/statements/base-marginal-and-angular-disintegration.zh-CN.md) · [真空区上的物理强紧性](docs/statements/strong-compactness.zh-CN.md) · [Ward 命题](docs/statements/transport-ward.md) · [弱 Ricci](docs/statements/weak-ricci-identification.md) · [局部强 H⁻¹](docs/statements/geometric-Hminus-closure.md) · [内禀曲率](docs/statements/intrinsic-curvature-Ricci.md) · [范围清单](docs/formalization/scope.json)
 
 [完整三次能量的定量冻结](docs/statements/original-cubic-freezing.zh-CN.md)
 
@@ -71,7 +73,7 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 
 此 PATH 设置只影响当前终端，确保缓存程序内部再调用 `lake` 时也使用同一SDK。
 
-入口核对原文身份、标准、固定运行时并构建库入口；对当前真实注册目标再调用 `scripts/check_paper.py` 做存在性、来源和传递公理审计。机器通过仍不能代替结果覆盖、语义对应或作者确认，`paper_formalization_verified` 保持false。没有目标的初始阶段仅输出 `project-setup-passed`。
+入口核对原文身份、标准、固定运行时并构建库入口，再调用 `scripts/check_paper.py` 审计登记目标的存在性、来源和传递公理。登记目标通过后，检查器报 `machine-check-passed`。验收记录绑定范围、语义复核、人类确认和机器回执。 [项目验收](docs/formalization/acceptance.md)
 
 - [`RicciSymbol.lean`](Burnett/Algebra/RicciSymbol.lean) 实现实数非特征核的显式规范表示和二次消去；[数学解释及实际声明](docs/statements/ricci-symbol.md)、[独立回读](docs/statements/ricci-symbol-review.md)。
 - [完整实二次代数与零锥交叉](docs/statements/quadratic-real-algebra.md) 对应两条并行实现及主代理的实际拼接；[独立回读](docs/statements/quadratic-real-algebra-review.md) 记录输入版本、真实类型及未覆盖项。
@@ -90,9 +92,9 @@ python scripts/check_project.py --repo . --lake 'D:\Chatpgt\Lean形式化\.tools
 - [`docs/formalization/standard.zh-CN.md`](docs/formalization/standard.zh-CN.md) 固定 `paper-results` 第1.2版标准。
 - [`tools/lean-paper-results/`](tools/lean-paper-results/) 是1.3.1版skill与工程工作流的文本快照；维护负例套件无需逐篇论文重复运行。
 
-2026-11-16用户选择A：全部数学依赖闭合，只接受scope所列三基础公理，可复用固定库证明。新点态复代数解释按用户明确委托由主代理与独立代理确认；不记为用户/作者本人逐行读过Lean。全文及测度/输运主线仍未完成；本轮X02固定Fourier目标的新增解释不沿用旧prop:cubic确认，后续推进F04分析桥和F05/F07共同协方差对象。
+用户于 2026 年 11 月 16 日选择信任政策 A。验收结果的数学依赖已经闭合，公理限于范围清单中的三项基础公理。本次人类语义确认覆盖 20 项结果。历史复核记录收录此前的委托确认。 [标准 1.2](docs/formalization/standard.zh-CN.md) · [范围](docs/formalization/scope.json) · [复核历史](docs/formalization/review.md)
 
-- [X02三线性反例](docs/statements/cubic-counterexample.md)及[复核](docs/statements/cubic-counterexample-review.md)记录完整正式命题与1A委托确认。[固定 Fourier 离锥目标](docs/statements/cubic-off-null-localization.md)分别记录 2A 批准范围、已实现的证明与尚待确认的新解释。PR5已由用户合并到main `242eebe9d87ef62c15efab8df7741051f0aed260`，[该提交的主线CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43807809558)成功；该次人类操作不增加代理后续合并权限。
+- [X02三线性反例](docs/statements/cubic-counterexample.md)及[复核](docs/statements/cubic-counterexample-review.md)记录完整正式命题与1A委托确认。[固定 Fourier 离锥目标](docs/statements/cubic-off-null-localization.md)记录 2A 批准范围和已实现的证明。本次人类语义确认覆盖这两项结果。PR5已由用户合并到main `242eebe9d87ef62c15efab8df7741051f0aed260`，[该提交的主线CI](https://github.com/Oho1e/Burnett-conjecture/actions/runs/43807809558)成功；该次人类操作不增加代理后续合并权限。
 
 后续 PR 按[双语目标](docs/formalization/GOAL.zh-CN.md#双语交付)同步更新中英文说明。
 
